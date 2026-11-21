@@ -1,6 +1,6 @@
-# Hospitalist Handbook (v2)
+# Wardology
 
-Source for **shabalini.com/handbook**. Library → subject → chapter, with a back arrow on every page.
+*The science of ward medicine.* Source for **[wardology.com](https://wardology.com)** (formerly shabalini.com/handbook). Library → subject → chapter, with a back arrow on every page.
 Educational use only; not medical advice.
 
 ## Folder map
@@ -61,9 +61,20 @@ Mac, Windows, Android, iPhone and every browser — no more empty rectangles (�
 A new emoji is downloaded automatically on the next build; commit the new file in `assets/emoji/`.
 Inside an SVG figure, put an emoji in its own `<text class="emo">` element (not mixed with words).
 
-## Deploy to shabalini.com/handbook
+## Deploy to wardology.com
 
-Upload the contents of `site/` to the server folder for `/handbook/` (FTP in ADM.TOOLS), or use the GitHub Action in `.github/workflows/deploy.yml` (same FTP secrets as before: `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`, `FTP_SERVER_DIR`).
+Cloudflare Pages is connected to this repo. Every push to `main` rebuilds and publishes the site in about a minute.
+
+| Pages setting | Value |
+|---|---|
+| Build command | `pip install -r requirements.txt && python3 build.py` |
+| Build output directory | `site` |
+| Environment variable | `PYTHON_VERSION` = `3.12` |
+
+The GitHub Action in `.github/workflows/build.yml` only checks that the site builds (useful on pull requests).
+Old links on `shabalini.com/handbook/...` are forwarded to `wardology.com/...` by a Cloudflare redirect rule on shabalini.com.
+
+Brand: name, tagline, contact email and logo live at the top of `build.py`; logo files are in `assets/` (`logo.svg`, `favicon.svg`, `apple-touch-icon.png`, `og-image.png`).
 
 ## Quarterly review
 

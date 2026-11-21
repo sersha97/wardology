@@ -1,6 +1,6 @@
 ---
 name: Guideline update
-about: Track a new or changed guideline that affects a handbook page
+about: Track a new or changed guideline that affects a Wardology page
 title: "Update: <diagnosis> — <guideline, year>"
 labels: guideline-update
 ---

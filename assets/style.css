@@ -31,7 +31,10 @@ body.scrolled .ttitle{opacity:.95}
 .hero{margin:18px 0 8px;padding:28px 22px 24px;border-radius:24px;color:#fff;
   background:radial-gradient(120% 140% at 100% 0%,#e4572e 0%,#b5324b 32%,#0f2a43 75%);box-shadow:var(--sh);position:relative;overflow:hidden}
 .hdeco{position:absolute;right:-10px;bottom:-14px;font-size:54px;line-height:1;opacity:.12;letter-spacing:6px;pointer-events:none;white-space:nowrap}
-.hlogo{font-size:34px}
+.hlogo{font-size:34px}.hlogo .wlogo{width:58px;height:58px;display:block;border-radius:15px;box-shadow:0 6px 18px rgba(0,0,0,.28),0 0 0 2px rgba(255,255,255,.18)}
+.wlogo{display:block}.brand .arrow .wlogo{width:28px;height:28px;border-radius:7px}
+.hero .tagline{font:600 13px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);opacity:1;margin:-4px 0 14px}
+.about a,.foot a{color:inherit}
 .hero h1{font:800 40px/1.02 var(--serif);margin:8px 0 10px}.hero h1 span{color:var(--gold)}
 .hero p{max-width:560px;opacity:.92;margin:0 0 16px}
 .bigsearch{display:flex;align-items:center;gap:10px;width:100%;max-width:520px;padding:14px 16px;border:0;border-radius:14px;background:#fff;color:#556;font:500 16px var(--sans);cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.2)}
