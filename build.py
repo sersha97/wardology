@@ -30,6 +30,22 @@ DESCRIPTION = "Wardology — the science of ward medicine. A practical, evidence
 CONTACT = "hello@wardology.com"
 LOGO = '<svg class="wlogo" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="url(#wg)"/><defs><linearGradient id="wg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e4572e"/><stop offset=".45" stop-color="#b5324b"/><stop offset="1" stop-color="#0f2a43"/></linearGradient></defs><path d="M7 19H13L22 47L32 25L42 47L51 19" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="56.5" cy="19" r="3.4" fill="#f2b134"/></svg>'
 PAGES = []  # site-relative URLs for sitemap.xml
+KEYWORDS = "hospital medicine, hospitalist handbook, internal medicine, clinical reference, medical residents, ABIM board review, inpatient medicine, medical education"
+AUTHOR = {"@type": "Person", "name": "Serhii Shabalin, MD", "jobTitle": "Physician, Internal Medicine", "url": "https://www.shabalini.com"}
+PUBLISHER = {"@type": "Organization", "name": SITE_TITLE, "url": SITE_URL, "logo": SITE_URL + "/assets/apple-touch-icon.png", "email": CONTACT}
+SPECIALTY = {"cardiology": "Cardiovascular", "pulmonary": "Pulmonary", "renal": "Renal", "id": "Infectious", "heme": "Hematologic",
+             "gi": "Gastroenterologic", "endo": "Endocrine", "neuro": "Neurologic", "geri": "Geriatric", "nightcalls": "Emergency"}
+
+
+def medical_ld(name, desc, url, extra=None):
+    """schema.org MedicalWebPage JSON-LD so crawlers and URL classifiers see clinician-facing medical reference content."""
+    d = {"@context": "https://schema.org", "@type": "MedicalWebPage", "name": name, "description": desc,
+         "url": f"{SITE_URL}/{url.removesuffix('.html')}", "inLanguage": "en",
+         "audience": {"@type": "MedicalAudience", "audienceType": "Clinician"},
+         "author": AUTHOR, "publisher": PUBLISHER,
+         "isPartOf": {"@type": "WebSite", "name": SITE_TITLE, "url": SITE_URL}}
+    d.update(extra or {})
+    return d
 
 CALLOUTS = {
     "bottom": ("⚡", "Bottom line — first hour"),
@@ -167,23 +183,30 @@ def tables_wrap(h):
 
 
 # ---------- Templates ----------
-def shell(title, body, depth, page_class="", topbar="", url=""):
+def shell(title, body, depth, page_class="", topbar="", url="", desc="", ld=None):
     p = "../" * depth
+    desc = desc or DESCRIPTION
+    ld_html = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in (ld or []))
     PAGES.append(url)
     canon = f"{SITE_URL}/{url.removesuffix('.html')}"
     return emojify.page(f"""<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(title)}</title>
-<meta name="description" content="{html.escape(DESCRIPTION)}">
+<meta name="description" content="{html.escape(desc)}">
+<meta name="keywords" content="{KEYWORDS}">
+<meta name="author" content="Serhii Shabalin, MD">
+<meta name="rating" content="general">
+<meta name="robots" content="index, follow">
 <link rel="canonical" href="{canon}">
 <meta name="theme-color" content="#0f2a43">
 <meta property="og:site_name" content="{SITE_TITLE}"><meta property="og:type" content="website">
-<meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(DESCRIPTION)}">
+<meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:url" content="{canon}"><meta property="og:image" content="{SITE_URL}/assets/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="{p}assets/favicon.svg" type="image/svg+xml"><link rel="icon" href="{p}assets/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="{p}assets/apple-touch-icon.png">
+{ld_html}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{p}assets/style.css?v={ASSET_V}">
@@ -191,7 +214,7 @@ def shell(title, body, depth, page_class="", topbar="", url=""):
 <body class="{page_class}" data-root="{p}">
 {topbar}
 <main id="main">{body}</main>
-<footer class="foot"><p><b>{SITE_TITLE}</b> — {TAGLINE.lower()} · by <a href="https://www.shabalini.com">Serhii Shabalin, MD</a> · educational use only — <a href="{p}tools/disclaimer.html">not medical advice</a>. Check doses and local protocols. · <a href="mailto:{CONTACT}">{CONTACT}</a></p><p class="credit">Emoji: <a href="https://github.com/jdecked/twemoji">Twemoji</a>, CC-BY 4.0</p></footer>
+<footer class="foot"><p><b>{SITE_TITLE}</b> — {TAGLINE.lower()} · by <a href="https://www.shabalini.com">Serhii Shabalin, MD</a> · educational use only — <a href="{p}tools/disclaimer.html">not medical advice</a>. · <a href="{p}tools/about.html">About Wardology</a> Check doses and local protocols. · <a href="mailto:{CONTACT}">{CONTACT}</a></p><p class="credit">Emoji: <a href="https://github.com/jdecked/twemoji">Twemoji</a>, CC-BY 4.0</p></footer>
 <div id="search" class="search" hidden><div class="sbox"><div class="shead"><span>🔍</span><input id="q" type="search" placeholder="Search: AF, hyponatremia, Light's…" autocomplete="off"><button class="sclose" aria-label="Close">✕</button></div><ul id="sres"></ul></div></div>
 <button id="totop" class="totop" aria-label="Back to top" hidden>↑</button>
 <script src="{p}assets/search-index.js?v={ASSET_V}"></script><script src="{p}assets/app.js?v={ASSET_V}"></script>
@@ -267,7 +290,13 @@ def main():
 <div id="tocsheet" class="sheet" hidden><div class="sheetin"><div class="sheethead"><b>On this page</b><button class="sclose" aria-label="Close">✕</button></div>
 {''.join(f'<a href="#{sid}">{html.escape(tt)}</a>' for sid, tt in toc)}</div></div>"""
             page = shell(f"{t['title']} · {SITE_TITLE}", body, 1, "tpage",
-                         topbar("index.html", s["name"], t["title"], 1, True, s["color"]), f"{s['id']}/{t['slug']}.html")
+                         topbar("index.html", s["name"], t["title"], 1, True, s["color"]), f"{s['id']}/{t['slug']}.html",
+                         desc=f"{t['title']} — {t.get('summary', '')} Hospital medicine reference for physicians and residents.",
+                         ld=[medical_ld(t["title"], t.get("summary", ""), f"{s['id']}/{t['slug']}.html", {
+                             "about": {"@type": "MedicalCondition", "name": t["title"]},
+                             "medicalAudience": {"@type": "MedicalAudience", "audienceType": "Clinician"},
+                             **({"specialty": f"https://schema.org/{SPECIALTY[s['id']]}"} if s["id"] in SPECIALTY else {}),
+                             **({"lastReviewed": str(t["reviewed"])} if t.get("reviewed") else {})})])
             (OUT / s["id"] / f"{t['slug']}.html").write_text(page, encoding="utf-8")
             plain = html.unescape(re.sub(r"<[^>]+>", " ", h)).replace("⌄", " ")
             index.append({"t": t["title"], "e": t["emoji"], "s": s["name"], "u": f"{s['id']}/{t['slug']}.html",
@@ -294,7 +323,10 @@ def main():
 </section>
 <div class="gwrap" style="--sc:{s['color']}">{''.join(groups_html)}
 {f'<section class="group planned"><h2>🛠️ Coming next</h2><ul>{planned}</ul></section>' if planned else ''}</div>"""
-        page = shell(f"{s['name']} · {SITE_TITLE}", body, 1, "spage", topbar("../index.html", "Library", s["name"], 1, False, s["color"]), f"{s['id']}/")
+        page = shell(f"{s['name']} · {SITE_TITLE}", body, 1, "spage", topbar("../index.html", "Library", s["name"], 1, False, s["color"]), f"{s['id']}/",
+                     desc=f"{s['name']} — {s['blurb']} Hospital medicine reference for physicians and residents.",
+                     ld=[medical_ld(s["name"], s["blurb"], f"{s['id']}/",
+                                    {"specialty": f"https://schema.org/{SPECIALTY[s['id']]}"} if s["id"] in SPECIALTY else None)])
         (OUT / s["id"] / "index.html").write_text(page, encoding="utf-8")
 
     # tools pages
@@ -311,7 +343,9 @@ def main():
 {f'<div class="chips" id="chips"><button class="chip all" id="toggleall">⇕ Collapse all</button>{chips}</div>' if toc else ''}<article class="topic">{h}</article>
 <a class="backbig" href="../index.html">↩︎ Back to 📚 Library</a>"""
         (OUT / "tools" / f"{f.stem}.html").write_text(
-            shell(f"{fm['title']} · {SITE_TITLE}", b, 1, "tpage", topbar("../index.html", "Library", fm["title"], 1, False), f"tools/{f.stem}.html"), encoding="utf-8")
+            shell(f"{fm['title']} · {SITE_TITLE}", b, 1, "tpage", topbar("../index.html", "Library", fm["title"], 1, False), f"tools/{f.stem}.html",
+                  desc=f"{fm['title']} — {fm.get('summary', '')} {SITE_TITLE}, a hospital medicine reference for physicians and residents.",
+                  ld=[medical_ld(fm["title"], fm.get("summary", ""), f"tools/{f.stem}.html")]), encoding="utf-8")
         if fm.get("show", True):
             tools.append((f.stem, fm))
         index.append({"t": fm["title"], "e": fm["emoji"], "s": "Tools", "u": f"tools/{f.stem}.html", "k": fm.get("summary", ""),
@@ -339,10 +373,14 @@ def main():
 <section class="lib"><h2 class="lh">📚 Library</h2><div class="tiles">{tiles}</div></section>
 <section class="lib"><h2 class="lh">⭐ Start here</h2><div class="feats">{feat_html}</div></section>
 <section class="lib"><h2 class="lh">🧰 Tools</h2><div class="tools">{tool_tiles}</div></section>
-<section class="about"><b>👋 About</b><p>Written by <a href="https://www.shabalini.com">Serhii Shabalin, MD</a> — Internal Medicine resident at a community teaching hospital in New Jersey, trained in Kyiv, first-generation physician. Built for real-life clinical wards and the ABIM boards. Every page lists its sources and review date. Educational use only. Questions or corrections: <a href="mailto:{CONTACT}">{CONTACT}</a>.</p></section>"""
+<section class="about"><b>👋 About</b><p>Written by <a href="https://www.shabalini.com">Serhii Shabalin, MD</a> — Internal Medicine resident at a community teaching hospital in New Jersey, trained in Kyiv, first-generation physician. Built for real-life clinical wards and the ABIM boards. Every page lists its sources and review date. Educational use only. Questions or corrections: <a href="mailto:{CONTACT}">{CONTACT}</a>. <a href="tools/about.html">More about Wardology →</a></p></section>"""
     hdr = f"""<header class="topbar home"><a class="back brand" href="index.html"><span class="arrow">{LOGO}</span><span class="blab">{SITE_TITLE}</span></a><div class="ttitle"></div>
 <div class="tact"><button class="tbtn" id="sbtn" aria-label="Search">🔍</button></div></header>"""
-    (OUT / "index.html").write_text(shell(f"{SITE_TITLE} — {TAGLINE}", body, 0, "home", hdr, ""), encoding="utf-8")
+    home_ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": SITE_TITLE, "url": SITE_URL, "description": DESCRIPTION,
+                "inLanguage": "en", "publisher": PUBLISHER, "author": AUTHOR,
+                "audience": {"@type": "MedicalAudience", "audienceType": "Clinician"}},
+               medical_ld(f"{SITE_TITLE} — {TAGLINE}", DESCRIPTION, "")]
+    (OUT / "index.html").write_text(shell(f"{SITE_TITLE} — {TAGLINE}", body, 0, "home", hdr, "", ld=home_ld), encoding="utf-8")
     write_static()
 
     # emoji used by the search box (results are drawn in the browser)
