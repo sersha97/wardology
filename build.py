@@ -403,6 +403,9 @@ def main():
 
 def write_static():
     """sitemap.xml, robots.txt, 404 page and Cloudflare Pages headers."""
+    # files that must sit at the site root as-is (e.g. Google Search Console verification)
+    for f in (ROOT / "root").glob("*"):
+        shutil.copy(f, OUT / f.name)
     today = date.today().isoformat()
     urls = "".join(f"<url><loc>{SITE_URL}/{u.removesuffix('.html')}</loc><lastmod>{today}</lastmod></url>" for u in sorted(set(PAGES)))
     (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n'
