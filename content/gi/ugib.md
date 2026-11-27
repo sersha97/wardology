@@ -60,7 +60,7 @@ sources: 2021 ACG UGIB guideline · 2024 AASLD portal hypertension guidance · B
 | Drug | Reversal for life-threatening bleed |
 |---|---|
 | Warfarin | **4F-PCC** + vitamin K 10 mg IV |
-| Apixaban / rivaroxaban | **Andexanet alfa** or 4F-PCC |
+| Apixaban / rivaroxaban | **4F-PCC** (andexanet withdrawn from US, Dec 2025) |
 | Dabigatran | **Idarucizumab** |
 | Heparin | Protamine |
 | Antiplatelet | Platelets **not** routinely helpful |

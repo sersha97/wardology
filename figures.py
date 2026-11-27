@@ -942,3 +942,198 @@ def render_fig(name):
 def render_ecg(kind, caption=None):
     cap = f'<figcaption>{caption}</figcaption>' if caption else ""
     return f'<figure class="hbfig ecgfig"><div class="ecgwrap">{ecg(kind)}</div>{cap}<div class="ecgnote">Schematic drawing · 25 mm/s · 10 mm/mV · swipe ↔</div></figure>'
+
+
+# ---------- Neurology (Nov 2026 batch) ----------
+
+@fig("gbs-203040")
+def _():
+    return """<div class="spec">
+<div class="specitem ua"><b>20</b><span>FVC &lt;<b>20 mL/kg</b></span><span>(≈1.4 L for 70 kg)</span></div>
+<div class="specitem nst"><b>30</b><span>NIF weaker than <b>−30 cmH₂O</b></span><span>(e.g., −25)</span></div>
+<div class="specitem st"><b>40</b><span>MEP &lt;<b>40 cmH₂O</b></span><span>(weak cough)</span></div>
+</div>
+<p class="figcap"><b>The 20-30-40 rule.</b> Any one of these, or a <b>fall of &gt;30%</b> from baseline, = call ICU and get ready to intubate. Check FVC/NIF <b>every 4–6 h</b> (every 2 h if falling). SpO₂ and ABG change <b>late</b> — by the time the PaCO₂ rises, the patient is near arrest. Also needs ICU: can't lift head, can't swallow, bilateral facial weakness, autonomic storm.</p>"""
+
+
+@fig("mg-drugs")
+def _():
+    return """<div class="hexgrid">
+<div class="hx">🧪<b>Aminoglycosides</b><small>gentamicin, tobramycin — also IV Mg</small></div>
+<div class="hx">🔬<b>Fluoroquinolones</b><small>cipro, levo, moxi — FDA boxed warning</small></div>
+<div class="hx">💊<b>Macrolides</b><small>azithro, clarithro, erythro</small></div>
+<div class="hx">💗<b>β-blockers, procainamide</b><small>also IV verapamil, quinidine</small></div>
+<div class="hx">🛡️<b>Checkpoint inhibitors</b><small>can cause new MG + myositis + myocarditis</small></div>
+<div class="hx">😴<b>Neuromuscular blockers</b><small>rocuronium: lower dose, use sugammadex; succinylcholine: resistant</small></div>
+</div>
+<p class="figcap">Common drugs that <b>worsen MG</b>. Others: <b>IV magnesium</b>, iodinated contrast (small risk), botulinum toxin, penicillamine, statins (rare), hydroxychloroquine. Not an absolute ban — if a drug is truly needed, give it and <b>watch FVC/NIF</b>. High-dose <b>steroids</b> can cause a transient dip in the first 1–2 weeks.</p>"""
+
+
+@fig("relapse-check")
+def _():
+    return """<ol class="steps">
+<li><b>1. New or worse deficit?</b> — a CNS symptom (vision, weakness, numbness, ataxia, bladder) lasting <b>≥24 h</b></li>
+<li><b>2. Any fever or infection?</b> — check temperature, <b>UA</b>, CXR if cough. Heat, infection and stress cause <b>pseudo-relapse</b> (old lesions "flicker" — Uhthoff)</li>
+<li><b>3. Separated from the last attack by ≥30 days?</b> — yes = true relapse</li>
+<li><b>4. Does it disable?</b> — vision loss, weakness, ataxia, bladder → <b>steroids</b>. Mild sensory only → often observe</li>
+<li><b>5. Not MS?</b> — <b>AQP4-IgG</b> (NMOSD) and <b>MOG-IgG</b> (MOGAD) if severe optic neuritis, long cord lesion or area postrema (hiccups/vomiting)</li>
+</ol>"""
+
+
+@fig("hot-four")
+def _():
+    return """<div class="hexgrid as4">
+<div class="hx">🧊<b>NMS</b><small><b>Dopamine blocker</b> · days · lead-pipe rigidity · <b>slow</b> (bradyreflexia) · CK very ↑ · resolves in ~1–2 weeks</small></div>
+<div class="hx">⚡<b>Serotonin syndrome</b><small><b>Serotonergic</b> · hours · <b>clonus</b> (legs &gt; arms), hyperreflexia · diarrhea · fast in, fast out (~24 h)</small></div>
+<div class="hx">🏜️<b>Anticholinergic</b><small>Dry red skin, <b>no sweat</b> · big pupils · <b>no bowel sounds</b> · retention · normal tone</small></div>
+<div class="hx">🔥<b>Malignant hyperthermia</b><small><b>Volatile gas / succinylcholine</b> · minutes in OR · ↑ EtCO₂ · rigidity · <b>dantrolene</b></small></div>
+</div>
+<p class="figcap">Four hot, confused patients. Ask two questions: <b>which drug?</b> and <b>what do the muscles do?</b> NMS = stiff and slow. Serotonin = twitchy and fast. Anticholinergic = dry and normal tone.</p>"""
+
+
+@fig("men-clock")
+def _():
+    return """<ol class="timeline">
+<li><b>0 min</b> 🩺 Suspect: fever + headache + stiff neck + altered mental status (most have ≥2 of 4)</li>
+<li><b>≤ 10 min</b> 🧫 Blood cultures ×2 (do not wait for anything else)</li>
+<li><b>≤ 30 min</b> 💉 <b>Dexamethasone</b> + <b>antibiotics</b> — before CT, before LP if any delay</li>
+<li><b>Then</b> 🖥️ CT head <b>only if</b> needed (focal deficit, papilledema, seizure, GCS ≤10, immunocompromised, known CNS disease)</li>
+<li><b>Then</b> 💉 LP — cultures still positive ~2–4 h after antibiotics; PCR and antigen stay positive longer</li>
+</ol>
+<p class="figcap">Every hour of delay to antibiotics raises death and disability. <b>The CT never comes before the antibiotics.</b></p>"""
+
+
+@fig("enceph-steps")
+def _():
+    return """<ol class="steps">
+<li><b>1. Fever/confusion + any of:</b> new seizure, focal sign, behavior change, CSF lymphocytes → think <b>encephalitis</b></li>
+<li><b>2. Start acyclovir now</b> — 10 mg/kg IV q8h. Do not wait for MRI or LP</li>
+<li><b>3. MRI brain</b> (temporal lobes, limbic) + <b>EEG</b> (non-convulsive seizures) + <b>LP</b></li>
+<li><b>4. CSF:</b> HSV-1/2 PCR, VZV PCR, enterovirus, arbo IgM (West Nile in season), autoimmune panel (serum + CSF)</li>
+<li><b>5. HSV PCR negative but still suspicious?</b> Repeat LP in 3–7 days before stopping acyclovir</li>
+<li><b>6. Infections ruled out, still no answer?</b> Think <b>autoimmune</b> (anti-NMDAR, LGI1) → steroids/IVIG/PLEX + look for tumor</li>
+</ol>"""
+
+
+@fig("sah-path")
+def _():
+    return """<ol class="steps">
+<li><b>1. Thunderclap headache</b> — worst at onset, peak within <b>1 minute</b>. Apply the <b>Ottawa SAH rule</b> (neurologically normal, alert)</li>
+<li><b>2. Non-contrast CT head</b> — within <b>6 h</b> of onset, read by an experienced radiologist: sensitivity ~100%. Negative = SAH effectively ruled out</li>
+<li><b>3. CT &gt;6 h and negative</b> → <b>LP</b> (xanthochromia, RBC that do not clear) <b>or CTA</b> (shared decision)</li>
+<li><b>4. SAH confirmed</b> → CTA for the aneurysm · neurosurgery/neuro-ICU · secure aneurysm within 24 h</li>
+<li><b>5. Negative but thunderclap persists</b> → think <b>RCVS</b>, dissection, CVT, pituitary apoplexy (CTA/CTV, MRI)</li>
+</ol>"""
+
+
+@fig("snoop")
+def _():
+    return """<div class="hexgrid">
+<div class="hx">🌡️<b>S — Systemic</b><small>fever, weight loss, cancer, HIV, immunosuppressed, pregnancy/post-partum</small></div>
+<div class="hx">🧠<b>N — Neuro signs</b><small>focal deficit, confusion, seizure, papilledema</small></div>
+<div class="hx">⚡<b>O — Onset sudden</b><small>thunderclap: peak in &lt;1 minute</small></div>
+<div class="hx">👴<b>O — Older</b><small>new headache at age &gt;50 → GCA, mass, SDH</small></div>
+<div class="hx">🔁<b>P — Pattern change</b><small>new type, progressive, positional, wakes from sleep, Valsalva</small></div>
+<div class="hx">👁️<b>P — Papilledema / eye</b><small>visual loss, painful red eye (glaucoma), jaw claudication</small></div>
+</div>
+<p class="figcap"><b>SNOOP</b> red flags. Any one = this is a <b>secondary</b> headache until proven otherwise → image and look for the cause.</p>"""
+
+
+@fig("ams-mnem")
+def _():
+    rows = [("A", "Alcohol & ammonia", "intoxication, withdrawal, <b>Wernicke</b>, hepatic encephalopathy"),
+            ("E", "Electrolytes & endocrine", "<b>Na</b>, Ca, glucose (both ways), thyroid, adrenal, uremia"),
+            ("I", "Infection", "sepsis, UTI/pneumonia in the old, <b>meningitis/encephalitis</b>"),
+            ("O", "Oxygen & overdose", "hypoxia, <b>hypercapnia</b>, opioids, benzos, CO"),
+            ("U", "Uremia & urine", "AKI drug build-up (cefepime, gabapentin), retention"),
+            ("T", "Trauma & temperature", "subdural, hypo/hyperthermia"),
+            ("I", "Insulin & iatrogenic", "hypoglycemia; anticholinergics, sedatives, steroids"),
+            ("P", "Psych & poisons", "catatonia, toxic alcohols, serotonin/NMS"),
+            ("S", "Seizure, stroke, shock", "<b>non-convulsive status</b>, basilar stroke, low perfusion")]
+    return ('<div class="mnem amsm"><div class="mnemt">🧭 Why is my patient confused? — <b>AEIOU TIPS</b></div>' + "".join(
+        f'<div class="wl"><span class="big">{l}</span><b>{t}</b><small>{s}</small></div>' for l, t, s in rows) + "</div>")
+
+
+@fig("wernicke-triad")
+def _():
+    return """<div class="pillars p3">
+<div class="pil"><span>😵‍💫</span><b>Confusion</b><small>apathy, inattention, drowsy — most common sign (~80%)</small></div>
+<div class="pil"><span>👀</span><b>Eye signs</b><small>nystagmus, lateral rectus palsy, gaze palsy</small></div>
+<div class="pil"><span>🚶</span><b>Ataxia</b><small>wide-based gait, truncal; may not be tested in bed</small></div>
+</div>
+<div class="roof">⚠️ Only <b>~10–20%</b> have all three. One sign + risk factor = <b>treat</b>. Thiamine is cheap; Korsakoff is forever.</div>"""
+
+
+@fig("dizzy-4")
+def _():
+    return """<div class="hexgrid as4">
+<div class="hx">🌀<b>Acute, continuous (AVS)</b><small>days of constant vertigo, nausea, nystagmus, unsteady → <b>vestibular neuritis vs posterior stroke</b> → <b>HINTS</b></small></div>
+<div class="hx">🛏️<b>Triggered, brief</b><small>&lt;1 min, with head turn or lying down → <b>BPPV</b> → Dix-Hallpike → Epley</small></div>
+<div class="hx">⏱️<b>Spontaneous episodes</b><small>minutes–hours, no trigger → vestibular migraine, Ménière, <b>TIA</b> (posterior)</small></div>
+<div class="hx">🧍<b>Light-headed / near-faint</b><small>orthostatic, arrhythmia, meds, anemia → this is a <b>syncope</b> work-up</small></div>
+</div>
+<p class="figcap"><b>Ask about timing and triggers, not "spinning vs light-headed."</b> Patients describe the same problem in different words; timing and triggers sort it reliably (TiTrATE).</p>"""
+
+
+@fig("bell-faces")
+def _():
+    brows_l = '<path d="M95 98 L135 98" class="ln"/><path d="M95 108 L135 108" class="ln faint"/>'
+    def brows(x):
+        return "".join(f'<path d="M{x-20} {y} Q{x} {y-10} {x+20} {y}" class="ln"/>' for y in (88, 102, 112))
+    def eye(x):
+        return f'<path d="M{x-20} 134 Q{x} 122 {x+20} 134" class="ln"/><path d="M{x-18} 148 Q{x} 142 {x+18} 148" class="ln"/>'
+    mouth = '<path d="M105 215 Q118 222 130 220" class="ln"/><path d="M130 220 Q170 206 212 200" class="ln"/>'
+    face = '<circle cx="160" cy="160" r="100" class="face"/>'
+    left = (f'<svg viewBox="0 0 320 330" class="diag bell" role="img" aria-label="Peripheral facial palsy: whole half of face weak">'
+            f'<text x="160" y="22" class="t1">PERIPHERAL (Bell\'s)</text><text x="160" y="44" class="t3">can\'t raise brow · can\'t close eye</text>'
+            f'{face}<path d="M160 60 A100 100 0 0 0 160 260 Z" class="hit"/>{brows_l}{brows(205)}'
+            f'<path d="M100 138 Q120 132 140 138" class="ln"/><ellipse cx="120" cy="150" rx="17" ry="12" class="eye"/>{eye(200)}{mouth}'
+            f'<text x="160" y="290" class="t2">whole half is weak:</text><text x="160" y="310" class="t2">forehead + eye + mouth</text></svg>')
+    right = (f'<svg viewBox="0 0 320 330" class="diag bell" role="img" aria-label="Central facial palsy: forehead spared">'
+             f'<text x="160" y="22" class="t1">CENTRAL (stroke)</text><text x="160" y="44" class="t3" style="fill:#3f9c5a">brows still wrinkle ✓</text>'
+             f'{face}<path d="M160 145 L160 260 A100 100 0 0 1 62 178 Q100 145 160 145 Z" class="hit"/>{brows(115)}{brows(205)}{eye(120)}{eye(200)}{mouth}'
+             f'<text x="160" y="290" class="t2">lower face only —</text><text x="160" y="310" class="t2">forehead spared</text></svg>')
+    return (f'<div class="alvpair">{left}<div class="alvarrow">vs<span>↔</span></div>{right}</div>'
+            '<p class="figcap">The <b>forehead</b> gets nerve supply from <b>both</b> sides of the brain, so a stroke (upper motor neuron) spares it. Bell\'s palsy hits the <b>nerve itself</b> (lower motor neuron) → the whole half of the face is weak, including the brow and eye closure. <b>Forehead weak = nerve. Forehead works = think brain.</b></p>')
+
+
+@fig("pd-safe")
+def _():
+    return """<div class="hexgrid as4">
+<div class="hx">⛔<b>Avoid — block dopamine</b><small><b>haloperidol</b>, most antipsychotics (risperidone, olanzapine), <b>metoclopramide</b>, <b>prochlorperazine</b>, promethazine, droperidol</small></div>
+<div class="hx">✅<b>Use instead</b><small>Psychosis/agitation: <b>quetiapine</b> (low dose), clozapine, pimavanserin · Nausea: <b>ondansetron</b>, domperidone (not US)</small></div>
+<div class="hx">⏰<b>Never miss a dose</b><small>carbidopa-levodopa <b>on the home schedule</b> (to the minute, not "TID"). Late dose → rigidity, falls, aspiration</small></div>
+<div class="hx">🚫<b>NPO is not "no levodopa"</b><small>give by NG tube (crushed IR), or <b>rotigotine patch</b> bridge. Ask pharmacy early</small></div>
+</div>
+<p class="figcap">The two big hospital harms in Parkinson disease are <b>missed/late levodopa</b> and <b>dopamine-blocking drugs</b>. Both can trigger a crisis that looks like NMS (parkinsonism-hyperpyrexia syndrome).</p>"""
+
+
+@fig("monro-kellie")
+def _():
+    left = """<svg viewBox="0 0 320 300" class="diag mk" role="img" aria-label="Normal skull contents">
+<text x="160" y="22" class="t1">NORMAL</text>
+<rect x="20" y="36" width="280" height="210" rx="70" class="skull"/>
+<rect x="36" y="52" width="170" height="178" rx="60" class="b1"/><text x="121" y="136" class="t1">brain</text><text x="121" y="156" class="t2">~80%</text>
+<rect x="214" y="60" width="72" height="78" rx="14" class="b3"/><text x="250" y="104" class="t2">CSF</text>
+<rect x="214" y="146" width="72" height="76" rx="14" class="b2"/><text x="250" y="189" class="t2">blood</text>
+<text x="160" y="280" class="t2">fixed box: brain + CSF + blood</text></svg>"""
+    right = """<svg viewBox="0 0 320 300" class="diag mk" role="img" aria-label="Mass squeezes CSF and blood">
+<text x="160" y="22" class="t1" style="fill:#d64545">MASS / SWELLING</text>
+<rect x="20" y="36" width="280" height="210" rx="70" class="skull"/>
+<rect x="36" y="52" width="160" height="178" rx="60" class="b1"/><text x="116" y="146" class="t1">brain</text>
+<circle cx="246" cy="98" r="40" class="mass"/><text x="246" y="103" class="t2 wht">mass</text>
+<rect x="206" y="148" width="80" height="30" rx="9" class="b3"/><text x="246" y="168" class="t2">CSF ↓</text>
+<rect x="206" y="186" width="80" height="30" rx="9" class="b2"/><text x="246" y="206" class="t2">blood ↓</text>
+<text x="160" y="272" class="t3">spare room used up →</text><text x="160" y="290" class="t3">ICP climbs fast → brain shifts</text></svg>"""
+    return (f'<div class="alvpair">{left}<div class="alvarrow">+ mass<span>→</span></div>{right}</div>'
+            '<p class="figcap"><b>Monro–Kellie:</b> the skull is a closed box. A new mass (blood, tumor, edema) first pushes out CSF and venous blood. When that reserve is gone, a small extra volume causes a <b>big</b> rise in ICP. Perfusion pressure: <b>CPP = MAP − ICP</b> (goal ≥60).</p>')
+
+
+@fig("sdh-ages")
+def _():
+    return """<div class="spec">
+<div class="specitem ua"><b>Acute</b><span>0–3 days</span><span>CT: <b>bright</b> (hyperdense) crescent</span><span>Trauma, often with other injury</span></div>
+<div class="specitem nst"><b>Subacute</b><span>3 days – 3 weeks</span><span>CT: <b>same gray as brain</b> (isodense) — easy to miss</span><span>Look for midline shift, effaced sulci</span></div>
+<div class="specitem st"><b>Chronic</b><span>&gt;3 weeks</span><span>CT: <b>dark</b> (hypodense) ± layers of new blood</span><span>Old, atrophic, on antithrombotics</span></div>
+</div>
+<p class="figcap">Subdural blood is a <b>crescent</b> that crosses suture lines (tears of bridging veins). Epidural is a <b>lens</b> that stops at sutures (middle meningeal artery) — the "talk and die" lucid interval.</p>"""

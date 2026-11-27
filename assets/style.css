@@ -493,3 +493,16 @@ img.emoji{display:inline-block;width:1.15em;height:1.15em;margin:0 .06em;vertica
 .foot .credit{font-size:11px;opacity:.7;margin-top:4px}
 
 @media (prefers-color-scheme:dark){img.emoji,.diag image{filter:drop-shadow(0 0 1px rgba(255,255,255,.4))}.sbig img.emoji{filter:none}}
+/* Neurology batch (Nov 2026) */
+.pillars.p3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:560px){.pillars.p3{grid-template-columns:1fr}}
+.amsm .wl{background:color-mix(in srgb,#5b6bd6 9%,var(--card))}.amsm .wl .big{color:#5b6bd6}
+.diag.bell .face{fill:color-mix(in srgb,#f2b134 16%,var(--card));stroke:var(--ink2);stroke-width:3}
+.diag.bell .hit{fill:color-mix(in srgb,#d64545 22%,transparent);stroke:none}
+.diag.bell .ln{fill:none;stroke:var(--ink);stroke-width:3.5;stroke-linecap:round}
+.diag.bell .ln.faint{opacity:.25}
+.diag.bell .eye{fill:var(--card);stroke:var(--ink);stroke-width:3}
+.diag.mk .skull{fill:none;stroke:var(--ink2);stroke-width:6}
+.diag.mk .mass{fill:#d64545}
+.diag .wht{fill:#fff}
+@media (max-width:560px){.spec>.specitem:last-child:nth-child(3){grid-column:1/-1}}

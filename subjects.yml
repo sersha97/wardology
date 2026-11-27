@@ -36,7 +36,7 @@
     - {name: Pneumonia, emoji: "🫁"}
     - {name: Urinary tract, emoji: "🚽"}
     - {name: Skin & soft tissue, emoji: "🩹"}
-  planned: [C. difficile, S. aureus bacteremia & endocarditis, Meningitis]
+  planned: [C. difficile, S. aureus bacteremia & endocarditis, Brain abscess]
 
 - id: renal
   name: Renal, Lytes & Acid–Base
@@ -74,13 +74,18 @@
   name: Neurology
   emoji: "🧠"
   color: "#5b6bd6"
-  blurb: Time is brain. Stroke, seizures and withdrawal.
+  blurb: Time is brain. Strokes and bleeds, seizures, weak nerves and muscles, the confused and the dizzy.
   groups:
     - {name: Vascular, emoji: "⏱️"}
+    - {name: Consciousness & dizziness, emoji: "🧭"}
+    - {name: Headache, emoji: "🤕"}
     - {name: Seizures, emoji: "⚡"}
+    - {name: Inflammation & infection, emoji: "🦠"}
+    - {name: Nerve & muscle, emoji: "💪"}
+    - {name: Movement, emoji: "🚶"}
     - {name: Toxic & withdrawal, emoji: "🍸"}
     - {name: Spine, emoji: "🦴"}
-  planned: [Altered mental status approach, Headache red flags]
+  planned: [Delirium vs dementia work-up, Transient global amnesia, PRES, Cerebral venous thrombosis, ALS & motor neuron disease]
 
 - id: heme
   name: Hematology & Oncology
