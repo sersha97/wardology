@@ -64,7 +64,7 @@ sources: 2026 AHA/ASA acute ischemic stroke guideline · 2021 AHA/ASA secondary 
 | PFO + young cryptogenic | PFO closure (selected) |
 === Hemorrhagic stroke (ICH)
 - **SBP target ~140** (keep 130–150; avoid big drops).
-- **Reverse anticoagulation:** warfarin → 4F-PCC + vit K · factor Xa → andexanet or 4F-PCC · dabigatran → idarucizumab.
+- **Reverse anticoagulation:** warfarin → 4F-PCC + vit K · factor Xa → 4F-PCC (andexanet withdrawn from US, Dec 2025) · dabigatran → idarucizumab.
 - No platelet transfusion for antiplatelet ICH (PATCH) unless surgery.
 - Neurosurgery for cerebellar ICH >3 cm, hydrocephalus.
 :::
