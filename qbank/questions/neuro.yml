@@ -1,0 +1,88 @@
+# Neurology — ABIM blueprint 4%
+- id: NR-001
+  topic: High-risk transient ischemic attack
+  task: Treatment/Care Decisions
+  chapters: [neuro/stroke]
+  stem: |
+    A 66-year-old man is evaluated in the emergency department after a 40-minute episode of **weakness of the right hand and slurred speech** that began while he was reading. Symptoms resolved completely 2 hours ago. He has hypertension and type 2 diabetes. He takes lisinopril and metformin.
+
+    Blood pressure is 158/88 mm Hg and pulse is 76/min, regular. Neurologic examination is normal (NIH Stroke Scale score 0).
+  labs:
+    - [Noncontrast head CT, no hemorrhage or acute infarct]
+    - [MRI brain with diffusion-weighted imaging, no infarct]
+    - [CT angiography of head and neck, 30% stenosis of the left internal carotid artery; no large-vessel occlusion]
+    - [ECG and 24-hour telemetry, sinus rhythm]
+    - [LDL cholesterol, 132 mg/dL]
+  lead: In addition to a high-intensity statin, which of the following is the most appropriate antithrombotic therapy?
+  choices:
+    A: Aspirin alone
+    B: Aspirin plus clopidogrel for 21 days, then a single antiplatelet agent
+    C: Apixaban
+    D: Intravenous alteplase
+    E: Aspirin plus clopidogrel indefinitely
+  answer: B
+  explain: |
+    He had a **high-risk TIA**: motor weakness and speech disturbance lasting >10 minutes. His **ABCD² score is 6** (age ≥60 = 1, BP ≥140/90 = 1, unilateral weakness = 2, duration 10–59 min = 1, diabetes = 1). The 90-day stroke risk is highest in the **first 48 hours**.
+
+    For **high-risk TIA (ABCD² ≥4) or minor ischemic stroke (NIHSS ≤3)** without a cardioembolic source, **dual antiplatelet therapy (aspirin + clopidogrel) started within 24 hours and continued for 21 days**, then a single agent, lowers early recurrent stroke (CHANCE, POINT). Longer DAPT adds bleeding without further benefit.
+
+    | ABCD² | Points |
+    |---|---|
+    | **A**ge ≥60 | 1 |
+    | **B**P ≥140/90 at evaluation | 1 |
+    | **C**linical: unilateral weakness 2; speech disturbance without weakness 1 | 1–2 |
+    | **D**uration: ≥60 min 2; 10–59 min 1 | 1–2 |
+    | **D**iabetes | 1 |
+  why:
+    A: Aspirin alone is appropriate for low-risk TIA or after the 21-day DAPT period, but it is less effective early after a high-risk TIA.
+    C: Anticoagulation is for cardioembolic sources such as atrial fibrillation; telemetry showed sinus rhythm. Prolonged monitoring for AF is still reasonable.
+    D: Thrombolysis is for a disabling deficit present at treatment; his symptoms resolved.
+    E: Long-term DAPT increases major bleeding without additional stroke prevention.
+  pearl: |
+    Symptomatic **carotid stenosis 70%–99%** (and selected 50%–69%) on the side of symptoms → **carotid endarterectomy within 2 weeks**. His 30% stenosis does not qualify.
+  objective: |
+    After a high-risk TIA or minor ischemic stroke, start aspirin plus clopidogrel within 24 hours for 21 days, then continue single antiplatelet therapy with a high-intensity statin.
+  refs:
+    - Kleindorfer DO, et al. 2021 guideline for the prevention of stroke in patients with stroke and transient ischemic attack (AHA/ASA). *Stroke* 2021;52:e364.
+    - Johnston SC, et al. Clopidogrel and aspirin in acute ischemic stroke and high-risk TIA (POINT). *N Engl J Med* 2018;379:215.
+
+- id: NR-002
+  topic: Migraine prevention
+  task: Treatment/Care Decisions
+  chapters: [neuro/headache]
+  stem: |
+    A 34-year-old woman comes to the office because of migraines. She has had migraine **without aura** since her teens, but over the past year attacks have become more frequent — now about **8 headache days per month** — and she has missed work several times. Sumatriptan usually relieves an attack within 2 hours; she uses it 6–8 days a month. She also has **hypertension**, diagnosed 6 months ago and not yet treated. She uses a copper IUD.
+
+    Blood pressure is 142/90 mm Hg on two readings and pulse is 82/min. Neurologic examination, including fundoscopy, is normal.
+  lead: Which of the following is the most appropriate preventive treatment?
+  choices:
+    A: Propranolol
+    B: Daily sumatriptan
+    C: Butalbital–acetaminophen–caffeine as needed
+    D: Oxycodone as needed
+    E: Verapamil plus daily ibuprofen
+  answer: A
+  explain: |
+    She needs **migraine prevention**: ≥4 headache days per month with disability (many experts use ≥4 days, or fewer if attacks are severe or acute drugs fail or are overused).
+
+    First-line oral preventives include **propranolol or metoprolol, topiramate, amitriptyline, venlafaxine and candesartan**. Choose by **comorbidity**: her **hypertension** makes a **β-blocker** the natural choice — one drug, two problems. Start low, titrate, and judge benefit after 2–3 months. **CGRP-targeting therapies** (monoclonal antibodies, gepants) are also accepted first-line options, and are especially useful when oral preventives fail or cause side effects.
+
+    | Comorbidity | Good preventive choice | Avoid |
+    |---|---|---|
+    | Hypertension | Propranolol, metoprolol, candesartan | — |
+    | Depression, insomnia | Amitriptyline, venlafaxine | — |
+    | Obesity | Topiramate | Amitriptyline, valproate |
+    | Asthma | Topiramate, candesartan | β-blockers |
+    | Possible pregnancy | — | **Valproate, topiramate** (teratogenic) |
+  why:
+    B: Using a triptan ≥10 days a month causes **medication-overuse headache**; daily use is never a preventive strategy.
+    C: Butalbital combinations cause medication-overuse headache and dependence and are not recommended for migraine.
+    D: Opioids worsen migraine over time, cause medication-overuse headache and carry addiction risk.
+    E: Verapamil has weak evidence for migraine, and daily NSAID use (≥15 days a month) causes medication-overuse headache.
+  pearl: |
+    Combined hormonal contraception is **contraindicated in migraine with aura** (stroke risk). She has migraine without aura, but her untreated hypertension would also argue against estrogen.
+  objective: |
+    Offer migraine prevention for frequent or disabling migraine, selecting the agent by comorbidity (a β-blocker for coexisting hypertension), and avoid frequent acute-drug use that leads to medication-overuse headache.
+  refs:
+    - Ailani J, et al. The American Headache Society consensus statement: update on integrating new migraine treatments into clinical practice. *Headache* 2021;61:1021.
+    - Charles AC, et al. Calcitonin gene-related peptide-targeting therapies are a first-line option for the prevention of migraine: an AHS position statement update. *Headache* 2024;64:333.

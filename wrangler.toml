@@ -1,0 +1,10 @@
+# Cloudflare Pages config for wardology.com (the site build itself is configured in the Pages dashboard).
+# This file adds the QBank database binding used by functions/api/qb.
+name = "wardology"
+pages_build_output_dir = "site"
+compatibility_date = "2025-11-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "wardology-qbank"
+database_id = "9111e833-0c0c-43de-9b28-e1da5c83a98f"

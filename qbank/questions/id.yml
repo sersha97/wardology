@@ -1,0 +1,197 @@
+# Infectious Disease — ABIM blueprint 10%
+- id: ID-001
+  topic: Community-acquired pneumonia — outpatient
+  task: Treatment/Care Decisions
+  chapters: [id/cap]
+  stem: |
+    A 32-year-old man comes to the office with 3 days of fever, productive cough and right-sided pleuritic chest pain. He has no medical problems, takes no medications and has not taken antibiotics in the past year. He has no drug allergies. He does not smoke or drink alcohol heavily.
+
+    Temperature is 38.6 °C (101.5 °F), blood pressure is 124/76 mm Hg, pulse is 98/min, respirations are 20/min and oxygen saturation is 97% on room air. Crackles and bronchial breath sounds are heard at the right base. He is alert and drinking fluids well.
+
+    Chest radiograph shows right lower lobe consolidation. Blood urea nitrogen is 12 mg/dL.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Levofloxacin
+    B: Amoxicillin
+    C: Azithromycin
+    D: Amoxicillin–clavulanate plus azithromycin
+    E: Hospital admission for intravenous ceftriaxone and azithromycin
+  answer: B
+  explain: |
+    He has **community-acquired pneumonia** with **CURB-65 = 0** (no confusion, BUN <20, RR <30, BP normal, age <65) → treat **at home**.
+
+    For an outpatient **without comorbidities or MRSA/Pseudomonas risk factors**, ATS/IDSA recommends **high-dose amoxicillin (1 g three times daily)**, which covers *Streptococcus pneumoniae*, the most common and most lethal bacterial cause. **Doxycycline** is an alternative. A macrolide alone is used only where pneumococcal macrolide resistance is <25%, which is not true in most of the US.
+
+    | Outpatient CAP | Regimen (5 days minimum, until stable) |
+    |---|---|
+    | No comorbidities | Amoxicillin 1 g TID, **or** doxycycline, **or** macrolide (if local resistance <25%) |
+    | Comorbidities (heart, lung, liver, kidney disease, diabetes, alcohol use disorder, cancer, asplenia) | Amoxicillin–clavulanate or a cephalosporin **plus** macrolide or doxycycline, **or** a respiratory fluoroquinolone alone |
+  why:
+    A: Respiratory fluoroquinolones are reserved for patients with comorbidities or beta-lactam allergy because of tendon rupture, aortic aneurysm, QT prolongation, *C. difficile* and resistance concerns.
+    C: Macrolide monotherapy fails against resistant pneumococci; US resistance rates are well above 25%.
+    D: Combination therapy is for outpatients **with** comorbidities. He has none.
+    E: CURB-65 of 0 and normal oxygenation support outpatient care.
+  mnemonic: |
+    **CURB-65**: **C**onfusion, **U**rea (BUN) >19 mg/dL, **R**espiratory rate ≥30, **B**P <90 systolic or ≤60 diastolic, age ≥**65**. 0–1 → home; 2 → consider admission; ≥3 → hospital, think ICU.
+  pearl: |
+    Treat for **at least 5 days** and until afebrile for 48–72 hours with stable vital signs. A follow-up chest film is not routinely needed if he recovers.
+  objective: |
+    Treat outpatient community-acquired pneumonia in a healthy adult without risk factors with high-dose amoxicillin (or doxycycline); reserve fluoroquinolones and combination therapy for patients with comorbidities.
+  refs:
+    - Metlay JP, et al. Diagnosis and treatment of adults with community-acquired pneumonia: an official clinical practice guideline of the ATS and IDSA. *Am J Respir Crit Care Med* 2019;200:e45.
+
+- id: ID-002
+  topic: Acute uncomplicated cystitis
+  task: Treatment/Care Decisions
+  chapters: [id/uti]
+  stem: |
+    A 27-year-old woman comes to the office with 2 days of painful urination, urgency and frequency. She has no fever, chills, flank pain, vaginal discharge or itching. Her last menstrual period was 2 weeks ago and a urine pregnancy test is negative. She had one similar episode 3 years ago. She has no drug allergies.
+
+    Temperature is 36.9 °C (98.4 °F). There is mild suprapubic tenderness and no costovertebral angle tenderness.
+
+    Urine dipstick is positive for leukocyte esterase and nitrite.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Amoxicillin for 7 days
+    B: Ciprofloxacin for 3 days
+    C: Nitrofurantoin for 5 days
+    D: No antibiotic until urine culture results are available
+    E: Ceftriaxone intramuscularly once
+  answer: C
+  explain: |
+    Dysuria and frequency **without vaginal symptoms** in a nonpregnant woman has a >90% probability of **acute uncomplicated cystitis**. No culture is needed before treatment for a typical first or infrequent episode.
+
+    First-line choices (IDSA) are agents with low resistance and little collateral damage to gut flora:
+
+    | First-line | Course |
+    |---|---|
+    | **Nitrofurantoin** monohydrate/macrocrystals 100 mg BID | 5 days |
+    | Trimethoprim–sulfamethoxazole DS BID | 3 days (if local resistance <20%) |
+    | Fosfomycin 3 g | single dose |
+    | Pivmecillinam | 3–5 days |
+
+    Nitrofurantoin reaches high concentrations only in urine, so do **not** use it for **pyelonephritis** or when creatinine clearance is very low.
+  why:
+    A: '*E. coli* resistance to amoxicillin is high; aminopenicillins alone are not recommended for empiric cystitis therapy.'
+    B: Fluoroquinolones work but are reserved for pyelonephritis or when first-line agents cannot be used, because of serious adverse effects and resistance.
+    D: Waiting for culture delays relief. Cultures are for recurrent, complicated or atypical cases, or suspected pyelonephritis.
+    E: Parenteral ceftriaxone is unnecessary for lower-tract infection in an outpatient who can take oral medication.
+  pearl: |
+    Fever, flank pain or CVA tenderness → **pyelonephritis**: get a urine culture and use a fluoroquinolone or TMP-SMX (if susceptible), often after one IV dose of ceftriaxone.
+  objective: |
+    Treat acute uncomplicated cystitis empirically with nitrofurantoin for 5 days (or TMP-SMX, fosfomycin, or pivmecillinam); reserve fluoroquinolones for pyelonephritis.
+  refs:
+    - Gupta K, et al. International clinical practice guidelines for the treatment of acute uncomplicated cystitis and pyelonephritis in women (IDSA/ESCMID). *Clin Infect Dis* 2011;52:e103.
+
+- id: ID-003
+  topic: Adult pneumococcal vaccination
+  task: Treatment/Care Decisions
+  chapters: [id/vaccines]
+  stem: |
+    A 52-year-old man comes for a routine health visit. He feels well. He has no chronic medical conditions, does not smoke and takes no medications. He received a tetanus–diphtheria–pertussis (Tdap) vaccine 5 years ago and an influenza vaccine this fall. He has **never received a pneumococcal vaccine**.
+
+    Examination is normal.
+  lead: Which of the following is the most appropriate pneumococcal vaccination for this patient?
+  choices:
+    A: No pneumococcal vaccine until age 65
+    B: 23-valent pneumococcal polysaccharide vaccine (PPSV23) now
+    C: A single dose of 20-valent pneumococcal conjugate vaccine (PCV20) now
+    D: 15-valent pneumococcal conjugate vaccine (PCV15) now and no further doses
+    E: PPSV23 now and PCV20 in 1 year
+  answer: C
+  explain: |
+    Since late 2024, CDC recommends pneumococcal vaccination for **all adults aged 50 years and older** (and for younger adults with risk conditions), regardless of health.
+
+    For adults who have **never received a conjugate vaccine**, give **one dose of PCV20 or PCV21** — that completes the series. Alternatively, give **PCV15 followed by PPSV23** one year later.
+
+    Conjugate vaccines link the polysaccharide to a protein carrier, which recruits T-cell help and produces **memory** and better immunogenicity than plain polysaccharide vaccines.
+  why:
+    A: The age threshold for routine vaccination was lowered from 65 to 50 years.
+    B: PPSV23 alone is no longer recommended as the first or only vaccine; it gives weaker, shorter immunity than conjugate vaccines.
+    D: PCV15 must be followed by PPSV23 (usually ≥1 year later) to complete the series.
+    E: Starting with PPSV23 is the outdated sequence; when both are needed, the conjugate vaccine goes first.
+  mnemonic: |
+    **"Twenty at fifty"** — PCV20 (or PCV21) once at 50+ and you are done.
+  pearl: |
+    He is also due for **recombinant zoster vaccine (2 doses, 2–6 months apart)** — recommended for all adults ≥50, even with a prior shingles episode.
+  objective: |
+    All adults aged 50 years or older who have not received a pneumococcal conjugate vaccine should get a single dose of PCV20 or PCV21 (or PCV15 followed by PPSV23).
+  refs:
+    - Kobayashi M, et al. Expanded recommendations for use of pneumococcal conjugate vaccines among adults aged ≥50 years: ACIP, 2024. *MMWR Morb Mortal Wkly Rep* 2025;74:1.
+    - CDC. Adult immunization schedule by age, United States, 2025.
+
+- id: ID-004
+  topic: Infective endocarditis prophylaxis
+  task: Treatment/Care Decisions
+  chapters: [cardiology/endocarditis]
+  stem: |
+    A 68-year-old man is scheduled for extraction of a fractured molar next week. Four years ago he had a **bioprosthetic aortic valve replacement** for aortic stenosis. He has hypertension and takes lisinopril and aspirin. He has no drug allergies and no history of endocarditis.
+
+    Examination shows a soft systolic ejection murmur at the right upper sternal border. Echocardiography 6 months ago showed a normally functioning prosthetic valve.
+  lead: Which of the following is the most appropriate recommendation before the procedure?
+  choices:
+    A: No antibiotic prophylaxis
+    B: Amoxicillin 2 g orally 30–60 minutes before the procedure
+    C: Clindamycin 600 mg orally before the procedure
+    D: Amoxicillin 500 mg three times daily for 7 days after the procedure
+    E: Intravenous vancomycin before the procedure
+  answer: B
+  explain: |
+    Antibiotic prophylaxis before dental work is now limited to patients at **highest risk of a bad outcome** from endocarditis, and only for procedures that manipulate the **gingiva or periapical region or perforate the oral mucosa** (extractions qualify).
+
+    **Prosthetic valves of any type** (including bioprosthetic and transcatheter valves, and valve repairs with prosthetic material) are a highest-risk condition. The regimen is a **single dose of amoxicillin 2 g orally 30–60 minutes before** the procedure.
+
+    | Highest-risk conditions (prophylaxis for dental procedures) |
+    |---|
+    | Prosthetic valve or prosthetic material used in valve repair |
+    | Previous infective endocarditis |
+    | Unrepaired cyanotic congenital heart disease; repaired CHD with residual shunt or defect near prosthetic material |
+    | Cardiac transplant with valvulopathy |
+  why:
+    A: A prosthetic valve is one of the few conditions where prophylaxis is still recommended.
+    C: Clindamycin is **no longer recommended** for penicillin-allergic patients because it causes more *C. difficile* infection; azithromycin, clarithromycin or doxycycline are used instead.
+    D: Prophylaxis is a single dose before the procedure; a postprocedure course adds adverse effects without benefit.
+    E: IV vancomycin is unnecessary for an outpatient dental procedure in a patient without penicillin allergy.
+  pearl: |
+    Prophylaxis is **not** recommended for GI or GU procedures (colonoscopy, cystoscopy) in any of these patients, or for mitral valve prolapse, bicuspid aortic valve or native valve regurgitation alone. Good **oral hygiene** prevents far more endocarditis than antibiotics.
+  objective: |
+    Give a single preprocedure dose of amoxicillin 2 g before dental procedures involving the gingiva in patients with prosthetic valves, prior endocarditis, or certain congenital heart disease.
+  refs:
+    - Wilson WR, et al. Prevention of viridans group streptococcal infective endocarditis: a scientific statement from the AHA. *Circulation* 2021;143:e963.
+
+- id: ID-005
+  topic: Nonpurulent cellulitis
+  task: Treatment/Care Decisions
+  chapters: [id/cellulitis]
+  stem: |
+    A 45-year-old woman comes to the office with 2 days of a painful, red, swollen area on her left lower leg. She has no injury, recent travel or prolonged immobility. She has hypertension. She has no drug allergies.
+
+    Temperature is 37.7 °C (99.9 °F), blood pressure is 132/80 mm Hg and pulse is 88/min. There is a 10 × 8 cm warm, tender, poorly demarcated area of erythema on the anterior shin with no fluctuance, drainage, crepitus or bullae. Point-of-care ultrasound shows subcutaneous edema without a fluid collection. Scaling and maceration are present between the toes of the left foot.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Cephalexin
+    B: Trimethoprim–sulfamethoxazole
+    C: Hospital admission for intravenous vancomycin
+    D: Incision and drainage
+    E: Topical mupirocin
+  answer: A
+  explain: |
+    This is **nonpurulent cellulitis** — spreading erythema, warmth and tenderness **without pus or an abscess**. The usual cause is **beta-hemolytic streptococci** (group A and others) entering through broken skin — here **interdigital tinea pedis**.
+
+    Treat mild nonpurulent cellulitis with an oral agent active against streptococci: **cephalexin**, dicloxacillin, penicillin V or amoxicillin, typically for **5–6 days**, extended if not improving. **Elevate** the leg — it speeds resolution.
+
+    | | Nonpurulent (cellulitis/erysipelas) | Purulent (abscess, furuncle) |
+    |---|---|---|
+    | Main organism | Streptococci | *S. aureus* (often MRSA) |
+    | Key treatment | Beta-lactam (cephalexin) | **Incision and drainage** ± TMP-SMX or doxycycline |
+  why:
+    B: TMP-SMX has unreliable activity against streptococci; it is used for purulent infections where MRSA is likely.
+    C: She has no systemic toxicity, hypotension or rapidly spreading infection. IV therapy and MRSA coverage are for moderate–severe or purulent infection.
+    D: There is no abscess to drain on examination or ultrasound.
+    E: Topical antibiotics treat impetigo; they do not reach dermal and subcutaneous infection.
+  pearl: |
+    Prevent recurrence by treating **tinea pedis**, edema and venous insufficiency. Bilateral "cellulitis" is almost always something else — usually **stasis dermatitis**.
+  objective: |
+    Treat mild nonpurulent cellulitis with an oral antistreptococcal beta-lactam such as cephalexin; reserve MRSA-active drugs for purulent infections and drainage for abscesses.
+  refs:
+    - Stevens DL, et al. Practice guidelines for the diagnosis and management of skin and soft tissue infections: 2014 update by the IDSA. *Clin Infect Dis* 2014;59:e10.

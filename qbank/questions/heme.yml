@@ -1,0 +1,88 @@
+# Hematology — ABIM blueprint 4%
+- id: HE-001
+  topic: Iron deficiency anemia in an older man
+  task: Diagnosis/Testing
+  chapters: [heme/anemia-transfusion]
+  stem: |
+    A 67-year-old man comes to the office because of 3 months of fatigue and shortness of breath when climbing stairs. He has no abdominal pain, change in bowel habits, black stools, hematochezia, hematuria or weight loss. He eats meat several times a week. He takes aspirin 81 mg daily for primary prevention. His last colonoscopy was 12 years ago and was normal.
+
+    Pulse is 92/min. The conjunctivae are pale. Abdominal examination is normal. Rectal examination shows brown stool.
+  labs:
+    - [Hemoglobin, 10.1 g/dL]
+    - [Mean corpuscular volume, 74 fL]
+    - [RDW, 17.8%]
+    - [Platelets, "410,000/µL"]
+    - [Ferritin, 8 ng/mL]
+    - [Transferrin saturation, 6%]
+    - [Tissue transglutaminase IgA (with normal total IgA), negative]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Oral iron and recheck hemoglobin in 3 months
+    B: Fecal immunochemical test
+    C: Colonoscopy and upper endoscopy
+    D: Capsule endoscopy
+    E: Bone marrow biopsy
+  answer: C
+  explain: |
+    A ferritin of 8 ng/mL confirms **iron deficiency** (ferritin <45 ng/mL is the AGA threshold in anemic patients). In a **man or a postmenopausal woman**, iron deficiency anemia is **gastrointestinal blood loss — possibly from cancer — until proven otherwise**.
+
+    The evaluation is **bidirectional endoscopy (colonoscopy + upper endoscopy)**, which finds a cause in a large share of patients; colorectal cancer, gastric cancer, peptic ulcer disease and angioectasias are leading causes. Celiac disease (iron malabsorption) should also be tested — done here.
+
+    Replace iron too — but **iron is not a substitute for finding the source**.
+
+    | Iron studies | Iron deficiency | Anemia of inflammation |
+    |---|---|---|
+    | Ferritin | **Low** | Normal or high |
+    | Transferrin saturation | Low | Low–normal |
+    | TIBC | High | Low |
+  why:
+    A: Treating with iron alone may mask an occult GI cancer. Endoscopic evaluation is required.
+    B: A negative stool test does **not** exclude a GI cause because bleeding is intermittent; it has no role in evaluating established iron deficiency anemia.
+    D: Capsule endoscopy evaluates the small bowel **after** a negative bidirectional endoscopy.
+    E: Iron studies already explain the anemia; marrow examination is not needed.
+  pearl: |
+    Platelets are often **mildly high** in iron deficiency (reactive thrombocytosis) — it does not point to a myeloproliferative neoplasm.
+  objective: |
+    Iron deficiency anemia in men and postmenopausal women requires bidirectional endoscopy (and celiac testing) to find a gastrointestinal source, especially cancer.
+  refs:
+    - Ko CW, et al. AGA clinical practice guidelines on the gastrointestinal evaluation of iron deficiency anemia. *Gastroenterology* 2020;159:1085.
+
+- id: HE-002
+  topic: Provoked deep venous thrombosis — duration
+  task: Treatment/Care Decisions
+  chapters: [heme/anticoagulation, pulmonary/pe]
+  stem: |
+    A 54-year-old man comes for follow-up 6 weeks after a **proximal deep venous thrombosis of the left femoral vein**. It was diagnosed 3 weeks after an elective **left total knee arthroplasty**, while he was still using crutches. He has been taking apixaban without bleeding. He now walks normally and has returned to work. He has no history of venous thromboembolism or cancer, and age-appropriate cancer screening is up to date.
+
+    The left calf is minimally swollen and nontender.
+  lead: Which of the following is the most appropriate duration of anticoagulation?
+  choices:
+    A: 6 weeks
+    B: 3 months
+    C: 12 months
+    D: Indefinite
+    E: Decide after a thrombophilia panel
+  answer: B
+  explain: |
+    This DVT was **provoked by a major transient risk factor** — surgery (and immobility) — which has now resolved. The risk of recurrence after stopping anticoagulation is low (about **1% per year**), lower than the bleeding risk of continuing.
+
+    Treat a **provoked proximal DVT or PE for 3 months**, then stop. Longer or indefinite therapy is for **unprovoked** VTE (low bleeding risk), **persistent** risk factors (active cancer, antiphospholipid syndrome) or recurrent VTE.
+
+    | VTE type | Duration |
+    |---|---|
+    | Provoked by surgery or major transient factor | **3 months** |
+    | Provoked by minor transient factor (estrogen, travel, minor injury) | 3 months (consider longer case by case) |
+    | Unprovoked, low–moderate bleeding risk | Extended (indefinite), reassess yearly; reduced-dose DOAC is an option after 6 months |
+    | Active cancer | Extended while cancer is active |
+  why:
+    A: Six weeks is too short for a proximal DVT; it raises recurrence risk. (Isolated distal DVT has different rules.)
+    C: Twelve months adds bleeding risk without meaningful benefit for a surgically provoked clot.
+    D: Indefinite therapy is for unprovoked or recurrent VTE or persistent risk factors.
+    E: Thrombophilia testing does not change management after a clearly provoked first VTE and is not recommended.
+  pearl: |
+    **Do not test for thrombophilia** while the patient is acutely ill or on anticoagulants — heparin lowers antithrombin, warfarin lowers proteins C and S, and DOACs interfere with clotting-based assays.
+  objective: |
+    Treat a first proximal DVT or PE provoked by surgery for 3 months, then stop; reserve extended therapy for unprovoked VTE or persistent risk factors.
+  refs:
+    - Stevens SM, et al. Antithrombotic therapy for VTE disease: second update of the CHEST guideline and expert panel report. *Chest* 2021;160:e545.
+    - Ortel TL, et al. American Society of Hematology 2020 guidelines for management of venous thromboembolism: treatment of DVT and PE. *Blood Adv* 2020;4:4693.

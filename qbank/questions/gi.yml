@@ -1,0 +1,204 @@
+# Gastroenterology & Hepatology — ABIM blueprint 10%
+- id: GI-001
+  topic: Barrett esophagus without dysplasia
+  task: Treatment/Care Decisions
+  chapters: [gi/gerd-barrett]
+  stem: |
+    A 58-year-old man comes to discuss the results of an upper endoscopy done for 10 years of frequent heartburn. He takes omeprazole 20 mg daily, which controls his symptoms well. He has no dysphagia, weight loss or bleeding. He is a former smoker.
+
+    Endoscopy showed salmon-colored mucosa extending **4 cm** above the gastroesophageal junction without nodules or ulceration. Biopsies show **intestinal metaplasia with goblet cells and no dysplasia**, confirmed by a second gastrointestinal pathologist.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Stop omeprazole because symptoms are controlled
+    B: Radiofrequency ablation of the Barrett segment
+    C: Continue omeprazole and repeat endoscopy in 3 years
+    D: Continue omeprazole and repeat endoscopy in 6 months
+    E: Refer for esophagectomy
+  answer: C
+  explain: |
+    **Barrett esophagus** is columnar metaplasia of the distal esophagus (with goblet cells) caused by chronic acid reflux. It is the precursor of **esophageal adenocarcinoma**, but the risk without dysplasia is low — roughly **0.2%–0.5% per year**.
+
+    For **nondysplastic Barrett**, management is:
+    - **Daily PPI** (reduces inflammation; may lower progression).
+    - **Surveillance endoscopy** with biopsies: every **3 years for segments ≥3 cm**, every **5 years for segments <3 cm**.
+
+    Ablation is reserved for **dysplasia**. The pathway escalates with the grade of dysplasia:
+
+    | Biopsy | Plan |
+    |---|---|
+    | No dysplasia, ≥3 cm | PPI + EGD every 3 years |
+    | No dysplasia, <3 cm | PPI + EGD every 5 years |
+    | Indefinite for dysplasia | Optimize PPI, repeat EGD in 6 months |
+    | Low-grade dysplasia (confirmed) | Endoscopic eradication therapy (or surveillance every 12 months) |
+    | High-grade dysplasia / intramucosal cancer | Endoscopic resection of nodules + ablation |
+  why:
+    A: Patients with Barrett esophagus should stay on a PPI even when symptoms are controlled.
+    B: Ablation is for confirmed dysplasia; in nondysplastic Barrett, ablation risks (stricture, bleeding) outweigh the small benefit.
+    D: A 6-month interval is for "indefinite for dysplasia" after optimizing acid suppression, not for nondysplastic Barrett.
+    E: Esophagectomy is reserved for invasive cancer beyond the mucosa that cannot be treated endoscopically.
+  pearl: |
+    Screening endoscopy for Barrett is suggested in patients with chronic GERD **plus ≥3 risk factors**: male sex, age >50, White race, central obesity, smoking, or a first-degree relative with Barrett or esophageal adenocarcinoma.
+  objective: |
+    Nondysplastic Barrett esophagus is managed with a daily PPI and surveillance endoscopy every 3 years (segment ≥3 cm) or 5 years (segment <3 cm); ablation is for dysplasia.
+  refs:
+    - Shaheen NJ, et al. Diagnosis and management of Barrett's esophagus: an updated ACG guideline. *Am J Gastroenterol* 2022;117:559.
+
+- id: GI-002
+  topic: Helicobacter pylori — test of cure
+  task: Diagnosis/Testing
+  chapters: [gi/peptic-hpylori]
+  stem: |
+    A 44-year-old woman was diagnosed with a **duodenal ulcer** 4 weeks ago when she presented with epigastric pain. Biopsies were positive for *Helicobacter pylori*. She completed 14 days of bismuth quadruple therapy (omeprazole, bismuth subsalicylate, tetracycline and metronidazole) **2 weeks ago**. She is still taking omeprazole 40 mg daily and now has no pain.
+
+    Examination is normal. Hemoglobin is 12.9 g/dL.
+  lead: Which of the following is the most appropriate way to confirm eradication of *H. pylori*?
+  choices:
+    A: Serum *H. pylori* IgG antibody now
+    B: Urea breath test now
+    C: Urea breath test at least 4 weeks after antibiotics, after holding omeprazole for 2 weeks
+    D: No testing is needed because her symptoms resolved
+    E: Repeat upper endoscopy with biopsy now
+  answer: C
+  explain: |
+    Every patient treated for *H. pylori* should have a **test of cure** — resistance (especially to clarithromycin and metronidazole) makes treatment failure common, and symptom relief does not prove eradication.
+
+    Use a test of **active infection**: **urea breath test**, **stool antigen**, or biopsy-based tests. Two timing rules prevent **false-negative** results, because PPIs, bismuth and antibiotics suppress the bacteria without killing them:
+    - At least **4 weeks after** finishing antibiotics and bismuth.
+    - **PPI held for 1–2 weeks** before testing (an H₂ blocker can cover symptoms).
+
+    Uncomplicated duodenal ulcer does not need repeat endoscopy. (Gastric ulcers are different — they often need repeat endoscopy to exclude cancer.)
+  why:
+    A: Antibodies stay positive for months to years after cure, so serology cannot confirm eradication. It only proves past exposure.
+    B: Testing now is too soon after antibiotics and while on a PPI — both cause false-negative results.
+    D: Symptom resolution does not mean the bacteria are gone; persistent infection risks recurrent ulcer and bleeding.
+    E: Endoscopy is not needed to confirm cure after an uncomplicated duodenal ulcer; a noninvasive test is preferred.
+  mnemonic: |
+    Test of cure **"4 and 2"**: **4** weeks off antibiotics/bismuth, **2** weeks off PPI.
+  pearl: |
+    First-line therapy in the US is now **bismuth quadruple therapy for 14 days** when clarithromycin susceptibility is unknown. Vonoprazan-based dual or triple therapy is an alternative.
+  objective: |
+    Confirm H. pylori eradication with a urea breath test, stool antigen or biopsy at least 4 weeks after antibiotics and 1–2 weeks after stopping PPIs; serology cannot confirm cure.
+  refs:
+    - Chey WD, et al. ACG clinical guideline: treatment of *Helicobacter pylori* infection. *Am J Gastroenterol* 2024;119:1730.
+
+- id: GI-003
+  topic: Colorectal cancer screening — family history
+  task: Diagnosis/Testing
+  chapters: [heme/cancer-screening]
+  stem: |
+    A 38-year-old man comes to establish care. He feels well. His **father was diagnosed with colorectal cancer at age 46** and is alive after surgery and chemotherapy. No other relatives have had cancer. The patient has no rectal bleeding, change in bowel habits or weight loss.
+
+    Examination is normal. Complete blood count is normal.
+  lead: Which of the following is the most appropriate colorectal cancer screening plan?
+  choices:
+    A: Begin screening at age 45 with annual fecal immunochemical testing
+    B: Begin screening at age 45 with colonoscopy every 10 years
+    C: Colonoscopy now and every 5 years if normal
+    D: CT colonography now and every 10 years
+    E: Stool DNA–FIT test now and every 3 years
+  answer: C
+  explain: |
+    Average-risk adults begin screening at **45**. Family history changes both **when** and **how**.
+
+    With **one first-degree relative diagnosed before age 60** (or two at any age), screening is by **colonoscopy**, starting at **age 40 or 10 years before the relative's age at diagnosis, whichever comes first**, and repeated **every 5 years**. His father was 46 → start at 36. He is already 38, so the first colonoscopy is due **now**.
+
+    | Family history | Start | Test & interval |
+    |---|---|---|
+    | None (average risk) | 45 | Colonoscopy q10y, FIT q1y, stool DNA–FIT q1–3y, CT colonography q5y, sigmoidoscopy q5y |
+    | 1 FDR <60 y, or ≥2 FDRs any age | 40 or 10 y before youngest diagnosis | Colonoscopy q5y |
+    | 1 FDR ≥60 y | 40 | Average-risk tests and intervals |
+  why:
+    A: Age 45 and annual FIT are for average-risk adults. His family history moves him to colonoscopy, starting earlier.
+    B: Starting at 45 is too late and the 10-year interval is too long for his risk.
+    D: CT colonography is an average-risk option. In higher-risk patients, colonoscopy is preferred because it allows biopsy and polypectomy.
+    E: Stool DNA–FIT is not recommended for screening people with a first-degree relative diagnosed young.
+  pearl: |
+    Ask whether the relative's tumor was tested for **mismatch repair deficiency**. A deficient tumor raises concern for **Lynch syndrome**, which needs genetic counseling and colonoscopy every 1–2 years starting at age 20–25.
+  objective: |
+    A first-degree relative with colorectal cancer before age 60 calls for colonoscopy every 5 years starting at age 40 or 10 years before the relative's diagnosis, whichever is earlier.
+  refs:
+    - US Preventive Services Task Force. Screening for colorectal cancer: recommendation statement. *JAMA* 2021;325:1965.
+    - Rex DK, et al. Colorectal cancer screening: recommendations for physicians and patients from the US Multi-Society Task Force. *Gastroenterology* 2017;153:307.
+
+- id: GI-004
+  topic: Cirrhosis — primary prophylaxis of variceal bleeding
+  task: Treatment/Care Decisions
+  chapters: [gi/cirrhosis]
+  stem: |
+    A 57-year-old man with alcohol-associated cirrhosis comes for follow-up. He has not had alcohol for 18 months. He has never had ascites, encephalopathy or gastrointestinal bleeding. Screening upper endoscopy last week showed **large esophageal varices** without red wale signs or stigmata of recent bleeding.
+
+    Blood pressure is 122/74 mm Hg and pulse is 82/min. There is mild splenomegaly and no ascites.
+  labs:
+    - [Platelets, "88,000/µL"]
+    - [Albumin, 3.7 g/dL]
+    - [Bilirubin, total, 1.2 mg/dL]
+    - [INR, 1.2]
+    - [Creatinine, 0.9 mg/dL]
+  lead: Which of the following is the most appropriate treatment to prevent variceal bleeding?
+  choices:
+    A: Metoprolol
+    B: Isosorbide mononitrate
+    C: Carvedilol
+    D: Transjugular intrahepatic portosystemic shunt (TIPS)
+    E: No treatment; repeat endoscopy in 1 year
+  answer: C
+  explain: |
+    Large varices that have **never bled** need **primary prophylaxis**. The options are a **nonselective beta-blocker (NSBB)** or **endoscopic band ligation**. NSBBs are now preferred in compensated cirrhosis because they also lower the risk of first decompensation (ascites), not just bleeding.
+
+    **Carvedilol** is the NSBB of choice: it blocks β₁ (lowers cardiac output), β₂ (unopposed α-constriction of splanchnic vessels → less portal inflow) **and** α₁ (lowers intrahepatic resistance). It lowers portal pressure more than propranolol. Typical dose 6.25 mg daily, increasing to 12.5 mg daily as tolerated.
+
+    Stop or reduce NSBBs if systolic BP falls below 90 mm Hg, or with refractory ascites plus hypotension, AKI or spontaneous bacterial peritonitis.
+  why:
+    A: Metoprolol is **β₁-selective**. It lacks the β₂ effect that reduces splanchnic flow, so it does not lower portal pressure enough.
+    B: Nitrates alone do not prevent variceal bleeding and can worsen hypotension and renal perfusion.
+    D: TIPS is for bleeding that cannot be controlled or recurs despite therapy, and for refractory ascites — not for primary prophylaxis.
+    E: Large varices carry a high bleeding risk (mortality ~15%–20% per bleed); waiting without treatment is not appropriate.
+  pearl: |
+    Patients who cannot take a beta-blocker get **band ligation every 2–8 weeks until varices are eradicated**. Once on carvedilol, no repeat endoscopy is needed to "check" the varices.
+  objective: |
+    Prevent the first variceal bleed in cirrhosis with large varices with a nonselective beta-blocker — carvedilol is preferred — or band ligation if beta-blockers cannot be used.
+  refs:
+    - de Franchis R, et al. Baveno VII — renewing consensus in portal hypertension. *J Hepatol* 2022;76:959.
+    - Kaplan DE, et al. AASLD practice guidance on risk stratification and management of portal hypertension and varices in cirrhosis. *Hepatology* 2024;79:1180.
+
+- id: GI-005
+  topic: Gallstone pancreatitis
+  task: Treatment/Care Decisions
+  chapters: [gi/pancreatitis]
+  stem: |
+    A 48-year-old woman was admitted 3 days ago with severe epigastric pain radiating to the back and vomiting. Lipase was 2,400 U/L. She received intravenous lactated Ringer solution and analgesics. Today she is hungry, her pain is gone, and she is eating a low-fat diet without discomfort. She drinks alcohol rarely.
+
+    Temperature is 37.0 °C (98.6 °F), blood pressure is 124/78 mm Hg and pulse is 80/min. The abdomen is soft with mild epigastric tenderness.
+  labs:
+    - [Admission ALT, 312 U/L]
+    - [Today ALT, 96 U/L]
+    - [Today bilirubin, total, 0.9 mg/dL]
+    - [Triglycerides, 140 mg/dL]
+    - [Calcium, 9.1 mg/dL]
+    - [Right upper quadrant ultrasound, multiple gallstones; common bile duct 5 mm; no pericholecystic fluid]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Discharge home and arrange elective cholecystectomy in 6–8 weeks
+    B: Endoscopic retrograde cholangiopancreatography (ERCP) before discharge
+    C: Laparoscopic cholecystectomy before discharge
+    D: Start ursodeoxycholic acid and discharge
+    E: Start imipenem to prevent infected necrosis
+  answer: C
+  explain: |
+    This is **mild acute biliary pancreatitis**: gallstones, an early transaminase spike (ALT >150 U/L in the first 48 hours strongly suggests a gallstone cause), and normal triglycerides and calcium. A stone passed through the ampulla and caused pancreatitis.
+
+    The key decision is **timing of cholecystectomy**. After mild gallstone pancreatitis, **cholecystectomy during the same admission** cuts the risk of recurrent biliary events — up to about 1 in 5 patients have another episode (pancreatitis, cholecystitis, colic) while waiting weeks for surgery.
+
+    Severe necrotizing pancreatitis is the exception: surgery is delayed until collections resolve or mature (usually >6 weeks).
+  why:
+    A: Delaying cholecystectomy in mild disease leaves a high early risk of recurrent pancreatitis and other gallstone complications.
+    B: ERCP is for **cholangitis** or **persistent biliary obstruction**. Her bilirubin is normal and the duct is not dilated, so the stone has passed.
+    D: Ursodiol dissolves stones slowly and incompletely and does not prevent recurrent pancreatitis; it is for patients who cannot have surgery.
+    E: Prophylactic antibiotics do not prevent infected necrosis and are not recommended in acute pancreatitis.
+  pearl: |
+    The two most common causes of acute pancreatitis are **gallstones and alcohol**. Check **triglycerides** (cause if >1000 mg/dL) and **calcium** in every first episode.
+  objective: |
+    After mild gallstone pancreatitis, perform cholecystectomy during the same admission; reserve ERCP for cholangitis or ongoing biliary obstruction.
+  refs:
+    - Tenner S, et al. American College of Gastroenterology guideline: management of acute pancreatitis. *Am J Gastroenterol* 2024;119:419.
+    - da Costa DW, et al. Same-admission versus interval cholecystectomy for mild gallstone pancreatitis (PONCHO). *Lancet* 2015;386:1261.

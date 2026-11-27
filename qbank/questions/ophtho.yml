@@ -1,0 +1,38 @@
+# Ophthalmology — ABIM blueprint 1%
+- id: OP-001
+  topic: Acute angle-closure glaucoma
+  task: Treatment/Care Decisions
+  chapters: [eye-ent/red-eye]
+  stem: |
+    A 66-year-old woman comes to the emergency department 2 hours after the sudden onset of **severe pain in her right eye**, blurred vision, **halos around lights**, frontal headache, nausea and vomiting. Symptoms began while she was watching a movie in a **dark theater**. She is farsighted. She took an over-the-counter cold remedy containing diphenhydramine this morning.
+
+    Visual acuity is counting fingers in the right eye and 20/25 in the left. The right eye shows conjunctival injection most intense around the cornea, a **hazy cornea** and a **mid-dilated pupil that reacts poorly** to light. The right globe feels **hard** on gentle palpation.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Dilate the pupil with tropicamide to examine the fundus
+    B: Topical prednisolone acetate and follow-up with ophthalmology in 1 week
+    C: Topical ocular hypotensive drops and acetazolamide, with emergency ophthalmology evaluation
+    D: Topical moxifloxacin
+    E: Noncontrast CT of the head
+  answer: C
+  explain: |
+    This is **acute angle-closure glaucoma** — an emergency that can cause **permanent vision loss within hours**. In a predisposed eye (farsighted, shallow anterior chamber, older age), **pupillary dilation** (darkness, anticholinergic or sympathomimetic drugs) pushes the iris against the trabecular meshwork. Aqueous humor cannot drain and **intraocular pressure rises sharply** (often >40–50 mm Hg).
+
+    Treat immediately to lower pressure, then fix the anatomy:
+    - **Aqueous suppressants**: topical **timolol**, an α₂-agonist (apraclonidine/brimonidine), and **acetazolamide** 500 mg IV or orally.
+    - **Pilocarpine** (miotic) once pressure starts falling, to pull the iris away from the angle.
+    - **Hyperosmotic agents** (IV mannitol) if pressure remains very high.
+    - **Emergency ophthalmology** for **laser peripheral iridotomy** — the definitive treatment — and usually prophylactic iridotomy of the other eye.
+  why:
+    A: Dilating the pupil worsens angle closure — the cause of this attack.
+    B: Glucocorticoid drops treat inflammation (for example anterior uveitis) but do not lower the pressure, and a 1-week delay risks blindness.
+    D: Antibiotic drops treat bacterial conjunctivitis or keratitis; vision loss, a hard eye and a fixed pupil are not infection.
+    E: Head imaging delays sight-saving treatment; the eye findings explain the headache and vomiting.
+  mnemonic: |
+    Red-eye red flags — **"VIP-PC"**: **V**ision loss, **I**ntense pain, **P**hotophobia, **P**upil abnormal, **C**orneal haze. Any one → same-day ophthalmology.
+  pearl: |
+    The headache and vomiting can mimic migraine, subarachnoid hemorrhage or an abdominal process — always **look at the eye** in an older adult with sudden headache and nausea.
+  objective: |
+    Acute angle-closure glaucoma presents with a painful red eye, halos, a cloudy cornea and a mid-dilated fixed pupil; lower intraocular pressure immediately and arrange emergency laser iridotomy.
+  refs:
+    - Gedde SJ, et al. Primary angle-closure disease Preferred Practice Pattern (American Academy of Ophthalmology). *Ophthalmology* 2021;128:P30.

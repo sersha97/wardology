@@ -1,0 +1,232 @@
+# Endocrinology, Diabetes & Metabolism — ABIM blueprint 10%
+- id: EN-001
+  topic: Subacute (de Quervain) thyroiditis
+  task: Treatment/Care Decisions
+  chapters: [endo/thyroid]
+  stem: |
+    A 38-year-old woman comes to the office with 10 days of pain in the front of her neck that spreads to her jaw and ears. She also has palpitations, sweating and trouble sleeping. Three weeks ago she had a sore throat and cough that resolved on their own. She takes no medications.
+
+    Temperature is 37.9 °C (100.2 °F), blood pressure is 128/72 mm Hg and pulse is 108/min. The thyroid is mildly enlarged, firm and **exquisitely tender** to palpation. There is a fine tremor of the outstretched hands. There is no proptosis or lid lag.
+  labs:
+    - [TSH, <0.01 µU/mL]
+    - [Free T₄, 3.1 ng/dL]
+    - [Erythrocyte sedimentation rate, 82 mm/h]
+    - [Leukocyte count, "9,800/µL"]
+    - [24-hour radioactive iodine uptake, 1% (normal 10%–30%)]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Methimazole
+    B: Radioactive iodine ablation
+    C: Propranolol and ibuprofen
+    D: Levothyroxine
+    E: Total thyroidectomy
+  answer: C
+  explain: |
+    A **painful, tender thyroid after a viral illness**, fever, a very high ESR, thyrotoxicosis and a **near-zero radioiodine uptake** is **subacute granulomatous (de Quervain) thyroiditis**.
+
+    The problem is **leakage**, not overproduction. Inflammation breaks follicles and releases stored hormone into the blood; the gland is not making new hormone, so uptake is low. The course has three phases: **thyrotoxic (weeks) → hypothyroid (weeks–months) → recovery** in most patients.
+
+    Treatment is supportive: a **beta-blocker** for adrenergic symptoms and an **NSAID** for pain. Use **prednisone** (for example 40 mg/day tapered over weeks) if pain is severe or does not respond to NSAIDs.
+
+    | Low-uptake thyrotoxicosis | Clue |
+    |---|---|
+    | Subacute thyroiditis | Tender gland, fever, high ESR |
+    | Painless / postpartum thyroiditis | Nontender, within 1 year of delivery, TPO antibodies |
+    | Exogenous thyroid hormone | Low **thyroglobulin**, small gland |
+    | Iodine load (amiodarone, contrast) | History |
+  why:
+    A: Thionamides block hormone **synthesis**. Here the gland is not synthesizing extra hormone, so methimazole does not help.
+    B: Radioiodine is not taken up by an inflamed gland (uptake 1%) and the condition is self-limited.
+    D: Levothyroxine may be needed later if the hypothyroid phase is symptomatic or persists, but it worsens the current thyrotoxic phase.
+    E: Surgery has no role in a self-limited inflammatory condition.
+  pearl: |
+    **Thyroglobulin** separates thyroiditis (high) from surreptitious levothyroxine use (low) — both have low uptake.
+  objective: |
+    Subacute thyroiditis causes painful, low-uptake thyrotoxicosis from hormone leakage; treat with a beta-blocker and an NSAID (or glucocorticoids if severe), not antithyroid drugs or radioiodine.
+  refs:
+    - Ross DS, et al. 2016 American Thyroid Association guidelines for diagnosis and management of hyperthyroidism and other causes of thyrotoxicosis. *Thyroid* 2016;26:1343.
+
+- id: EN-002
+  topic: Type 2 diabetes with cardiovascular disease
+  task: Treatment/Care Decisions
+  chapters: [endo/diabetes-outpatient]
+  stem: |
+    A 59-year-old man with type 2 diabetes mellitus comes for follow-up. He had an anterior myocardial infarction 2 years ago. He takes metformin 1000 mg twice daily, aspirin, atorvastatin 80 mg, metoprolol succinate and lisinopril. He has gained 4 kg (8.8 lb) over the past year despite trying to diet. He has no symptoms of heart failure.
+
+    Blood pressure is 128/78 mm Hg and BMI is 33 kg/m². Examination is normal.
+  labs:
+    - [Hemoglobin A1c, 7.9%]
+    - [Creatinine, 1.0 mg/dL (eGFR 82 mL/min/1.73 m²)]
+    - [Urine albumin-to-creatinine ratio, 18 mg/g]
+    - [Echocardiogram (1 year ago), LV ejection fraction 55%]
+  lead: Which of the following is the most appropriate addition to his regimen?
+  choices:
+    A: Glipizide
+    B: Sitagliptin
+    C: Semaglutide
+    D: Insulin glargine
+    E: Pioglitazone
+  answer: C
+  explain: |
+    In type 2 diabetes with **established ASCVD**, add a drug with **proven cardiovascular benefit — a GLP-1 receptor agonist or an SGLT2 inhibitor — regardless of A1c and independent of metformin**. These drugs lower major adverse cardiovascular events (MACE) by about 12%–26% in outcome trials.
+
+    For this patient a **GLP-1 receptor agonist** (semaglutide, dulaglutide, liraglutide) is the best fit: it reduces MACE, lowers A1c about 1%–1.5% and causes meaningful **weight loss**, which he needs. An SGLT2 inhibitor would be preferred first if he had **heart failure or albuminuric CKD**.
+
+    | Comorbidity | First add |
+    |---|---|
+    | ASCVD | GLP-1 RA or SGLT2 inhibitor with proven benefit |
+    | Heart failure (any EF) | SGLT2 inhibitor |
+    | CKD (eGFR ≥20, albuminuria) | SGLT2 inhibitor; GLP-1 RA if needed |
+    | Obesity | GLP-1 RA or dual GIP/GLP-1 RA (tirzepatide) |
+  why:
+    A: Sulfonylureas lower glucose but cause hypoglycemia and weight gain and have no cardiovascular benefit.
+    B: DPP-4 inhibitors are weight-neutral and safe but showed no MACE reduction in outcome trials.
+    D: Basal insulin is not needed at an A1c of 7.9% and adds weight gain and hypoglycemia; GLP-1 RAs are preferred before insulin.
+    E: Pioglitazone causes weight gain and fluid retention (heart-failure risk) and is not a first choice for cardiovascular risk reduction.
+  mnemonic: |
+    **"Hearts love GLP, pumps love SGLT."** Atherosclerosis → GLP-1 RA or SGLT2i; heart failure or kidneys → SGLT2i.
+  pearl: |
+    GLP-1 RAs are contraindicated with a personal or family history of **medullary thyroid cancer or MEN2**. Hold them before procedures with deep sedation because of delayed gastric emptying.
+  objective: |
+    For type 2 diabetes with ASCVD, add a GLP-1 receptor agonist or SGLT2 inhibitor with proven cardiovascular benefit; favor a GLP-1 RA when weight loss is also a goal.
+  refs:
+    - American Diabetes Association Professional Practice Committee. Standards of Care in Diabetes—2026. *Diabetes Care* 2026;49(Suppl 1).
+    - Marso SP, et al. Semaglutide and cardiovascular outcomes in patients with type 2 diabetes (SUSTAIN-6). *N Engl J Med* 2016;375:1834.
+
+- id: EN-003
+  topic: Primary hyperparathyroidism
+  task: Treatment/Care Decisions
+  chapters: [endo/calcium-bone]
+  stem: |
+    A 46-year-old woman is evaluated for a high calcium level found on routine laboratory testing. She feels well. She has no history of kidney stones or fractures. She takes no medications or supplements other than a daily multivitamin.
+
+    Examination is normal.
+  labs:
+    - [Calcium, 11.0 mg/dL]
+    - [Albumin, 4.2 g/dL]
+    - [Phosphorus, 2.4 mg/dL]
+    - [Parathyroid hormone (intact), 94 pg/mL]
+    - [25-Hydroxyvitamin D, 34 ng/mL]
+    - [Creatinine, 0.8 mg/dL]
+    - [24-hour urine calcium, 260 mg]
+    - [DXA (lowest T-score), −1.6 at the distal radius]
+    - [Renal ultrasound, no nephrolithiasis or nephrocalcinosis]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Observation with annual calcium and creatinine measurement
+    B: Alendronate
+    C: Cinacalcet
+    D: Hydrochlorothiazide
+    E: Parathyroidectomy
+  answer: E
+  explain: |
+    High calcium with an **inappropriately normal or high PTH** means **primary hyperparathyroidism** (most often a single adenoma). A 24-hour urine calcium of 260 mg excludes familial hypocalciuric hypercalcemia (FHH), which has very low urinary calcium.
+
+    Surgery cures the disease and is recommended for symptomatic patients and for **asymptomatic** patients who meet **any** of the criteria below. She is **younger than 50**, so she should have a **parathyroidectomy** even though she feels well — young patients face decades of bone and kidney damage.
+
+    | Surgery for asymptomatic PHPT if any of: |
+    |---|
+    | Serum calcium **>1 mg/dL above** the upper limit of normal |
+    | **Age <50** |
+    | **Osteoporosis** (T-score ≤ −2.5 at spine, hip or distal radius) or vertebral fracture |
+    | eGFR **<60** mL/min, nephrolithiasis or nephrocalcinosis, or urine calcium >250 mg/day (women) / >300 mg/day (men) with high stone risk |
+  why:
+    A: Observation is reasonable only when no surgical criterion is met. Her age alone is an indication.
+    B: Bisphosphonates protect bone in patients who cannot have surgery, but they do not treat the cause; her bone density is not in the osteoporotic range.
+    C: Cinacalcet lowers serum calcium in patients who cannot or will not have surgery; it does not improve bone density or cure the disease.
+    D: Thiazides **raise** serum calcium by increasing distal tubular calcium reabsorption and would worsen hypercalcemia.
+  pearl: |
+    Order imaging (sestamibi, 4D-CT or ultrasound) **after** deciding on surgery — to localize the gland for the surgeon, not to make the diagnosis.
+  objective: |
+    Primary hyperparathyroidism is diagnosed biochemically; parathyroidectomy is indicated for asymptomatic patients who are younger than 50 or have marked hypercalcemia, osteoporosis, or kidney involvement.
+  refs:
+    - Bilezikian JP, et al. Evaluation and management of primary hyperparathyroidism: summary statement and guidelines from the Fifth International Workshop. *J Bone Miner Res* 2022;37:2293.
+
+- id: EN-004
+  topic: Osteoporosis — bisphosphonate drug holiday
+  task: Treatment/Care Decisions
+  chapters: [endo/calcium-bone]
+  stem: |
+    A 66-year-old woman comes for follow-up of osteoporosis. Five years ago a DXA scan showed a lumbar spine T-score of −2.6 and a total hip T-score of −2.2, and she started **alendronate** weekly. She has taken it consistently. She has never had a fracture and has not fallen. She does not smoke, drinks rarely, and takes no glucocorticoids. She walks daily and takes calcium in food and vitamin D 1000 units daily.
+
+    Height is unchanged from 5 years ago. Examination is normal.
+  labs:
+    - [DXA today — lumbar spine T-score, −2.1]
+    - [DXA today — total hip T-score, −1.9]
+    - [Calcium, 9.4 mg/dL]
+    - [25-Hydroxyvitamin D, 36 ng/mL]
+    - [Creatinine, 0.8 mg/dL]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Continue alendronate for another 5 years
+    B: Stop alendronate and repeat DXA in 2–3 years
+    C: Switch to denosumab
+    D: Add teriparatide to alendronate
+    E: Switch to raloxifene
+  answer: B
+  explain: |
+    Bisphosphonates bind to bone and **keep working for years after they are stopped**. After **5 years of oral therapy (3 years of IV zoledronic acid)**, reassess fracture risk.
+
+    She is now at **lower risk**: no fractures, hip T-score above −2.5, no new risk factors. For such patients, a **drug holiday of 2–3 years** is recommended — it keeps most of the benefit and lowers the rare but serious risks of long-term use: **atypical femoral fracture** and **osteonecrosis of the jaw**. Restart therapy when bone density falls or a fracture occurs.
+
+    | After 5 y oral / 3 y IV bisphosphonate | Plan |
+    |---|---|
+    | Low risk (no fracture, hip T > −2.5) | Drug holiday, reassess in 2–3 years |
+    | High risk (hip T ≤ −2.5, fracture before or on therapy) | Continue up to 10 y oral / 6 y IV, or switch |
+  why:
+    A: Ten years of therapy is for patients who stay at high risk. In low-risk patients, extended therapy adds little fracture benefit and more atypical femoral fractures.
+    C: Denosumab is a strong option for high-risk patients, but it has no lasting effect — once started, it should not be stopped without follow-up therapy. Not needed here.
+    D: Anabolic therapy is for very high risk (recent fracture, T ≤ −3.0, multiple fractures). Combining with a bisphosphonate is not standard.
+    E: Raloxifene is weaker (vertebral only) and raises the risk of venous thromboembolism and hot flashes. No reason to switch.
+  pearl: |
+    **Never take a holiday from denosumab.** Stopping it causes rapid bone loss and **rebound multiple vertebral fractures** — always follow it with a bisphosphonate.
+  objective: |
+    After 5 years of oral bisphosphonate therapy, offer a 2–3-year drug holiday to women at lower fracture risk (no fracture, hip T-score above −2.5); continue or switch therapy for those at high risk.
+  refs:
+    - Adler RA, et al. Managing osteoporosis in patients on long-term bisphosphonate treatment: report of a task force of the ASBMR. *J Bone Miner Res* 2016;31:16.
+    - Eastell R, et al. Pharmacological management of osteoporosis in postmenopausal women: an Endocrine Society guideline update. *J Clin Endocrinol Metab* 2020;105:587.
+
+- id: EN-005
+  topic: Thiazide-induced hyponatremia
+  task: Treatment/Care Decisions
+  chapters: [renal/hyponatremia]
+  stem: |
+    A 74-year-old woman comes to the office because of 2 weeks of fatigue and mild unsteadiness. Six weeks ago **hydrochlorothiazide** was added to her amlodipine for hypertension. She drinks about 2 L of fluid per day. She has no vomiting, diarrhea, headache or confusion.
+
+    Blood pressure is 132/76 mm Hg without orthostatic change, and pulse is 76/min. Mucous membranes are moist, jugular venous pressure is normal, and there is no edema. She is alert and oriented, and neurologic examination is normal.
+  labs:
+    - [Sodium, 124 mEq/L (6 months ago 139 mEq/L)]
+    - [Potassium, 3.3 mEq/L]
+    - [Serum osmolality, 262 mOsm/kg H₂O]
+    - [Glucose, 96 mg/dL]
+    - [Creatinine, 0.8 mg/dL]
+    - [Urine osmolality, 410 mOsm/kg H₂O]
+    - [Urine sodium, 58 mEq/L]
+    - [TSH, 1.8 µU/mL]
+    - [Cortisol (8 AM), 16 µg/dL]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Intravenous 3% saline 100-mL bolus
+    B: Intravenous 0.9% saline, 2 L over 12 hours
+    C: Stop hydrochlorothiazide
+    D: Start tolvaptan
+    E: Continue hydrochlorothiazide and restrict fluids to 1 L/day
+  answer: C
+  explain: |
+    She has **hypotonic hyponatremia** (osmolality 262) with **mild symptoms** that began after starting a **thiazide**. Thiazides act in the distal convoluted tubule, where they impair the kidney's ability to make dilute urine while leaving the medullary concentrating gradient intact. Older women with low body mass are at highest risk, usually within the first weeks of therapy.
+
+    The fix is to **stop the thiazide** (and replace potassium). Sodium usually recovers over days to weeks. She should not be rechallenged with a thiazide — the problem tends to recur. A different antihypertensive class (for example an ACE inhibitor or ARB) can be used.
+
+    **Correct slowly**: limit the rise to **≤8 mEq/L in 24 hours** in high-risk patients (hypokalemia, alcohol use, malnutrition, advanced liver disease) to avoid **osmotic demyelination syndrome**.
+  why:
+    A: Hypertonic saline boluses are for **severe** symptoms (seizures, obtundation, respiratory distress). She is alert with mild symptoms.
+    B: Isotonic saline helps hypovolemic hyponatremia; she is euvolemic, and with a urine osmolality of 410 the saline load can be partly excreted as concentrated urine, retaining free water.
+    D: Tolvaptan is for persistent euvolemic or hypervolemic hyponatremia when other measures fail; it risks overly rapid correction and liver injury, and the cause here is reversible.
+    E: Fluid restriction alone while continuing the offending drug leaves the cause in place.
+  pearl: |
+    Hyponatremia + **hypokalemia** in an older woman = think **thiazide** first. Hypokalemia also accelerates sodium rise when K⁺ is replaced (K⁺ shifts into cells, Na⁺ out) — watch the overcorrection.
+  objective: |
+    Thiazide-induced hyponatremia with mild symptoms is treated by stopping the thiazide, correcting potassium, and avoiding rapid sodium correction.
+  refs:
+    - Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. *Eur J Endocrinol* 2014;170:G1.
+    - Verbalis JG, et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. *Am J Med* 2013;126:S1.

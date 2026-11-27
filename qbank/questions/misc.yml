@@ -1,0 +1,50 @@
+# Ethics, Safety & Epidemiology — ABIM blueprint 1%
+- id: MS-001
+  topic: Number needed to treat
+  task: Risk Assessment/Prognosis/Epidemiology
+  keep_order: true
+  chapters: [boards/biostatistics]
+  stem: |
+    A randomized controlled trial enrolls 8,000 adults with atrial fibrillation who cannot take anticoagulants. Patients are assigned to a new drug or placebo and followed for 5 years. The primary outcome is stroke.
+
+    | Group | Patients | Strokes at 5 years |
+    |---|---|---|
+    | New drug | 4,000 | 240 (6%) |
+    | Placebo | 4,000 | 400 (10%) |
+  lead: How many patients must be treated with the new drug for 5 years to prevent one stroke?
+  choices:
+    A: "4"
+    B: "10"
+    C: "25"
+    D: "40"
+    E: "60"
+  answer: C
+  explain: |
+    **Number needed to treat (NNT) = 1 ÷ absolute risk reduction (ARR).**
+
+    - Control event rate (CER) = 10% = 0.10
+    - Experimental event rate (EER) = 6% = 0.06
+    - **ARR** = CER − EER = 0.10 − 0.06 = **0.04**
+    - **NNT** = 1 / 0.04 = **25**
+
+    Treating 25 patients for 5 years prevents one stroke. The **relative risk reduction** (RRR) is (0.10 − 0.06) / 0.10 = **40%** — a bigger-sounding number that hides how often the event happens.
+
+    | Measure | Formula | Here |
+    |---|---|---|
+    | Absolute risk reduction | CER − EER | 4% |
+    | Relative risk | EER / CER | 0.6 |
+    | Relative risk reduction | 1 − RR | 40% |
+    | NNT | 1 / ARR | 25 |
+  why:
+    A: '"4" confuses the ARR (4%) with the NNT.'
+    B: '"10" is the placebo event rate expressed as a percentage, not the NNT.'
+    D: '"40" is the relative risk reduction (40%), not the NNT.'
+    E: '"60" reflects the relative risk (0.6) and is not an NNT.'
+  mnemonic: |
+    **"Absolutely flip it"** — NNT is the reciprocal of the **absolute** (not relative) risk reduction. Always round **up** to the next whole patient.
+  pearl: |
+    The same formula gives the **number needed to harm (NNH)**: 1 ÷ absolute risk **increase** of an adverse event. Compare NNT with NNH when weighing a therapy.
+  objective: |
+    Number needed to treat equals 1 divided by the absolute risk reduction; relative risk reduction overstates benefit when baseline risk is low.
+  refs:
+    - Guyatt G, et al. *Users' Guides to the Medical Literature*. 3rd ed. JAMA/McGraw-Hill; 2015.

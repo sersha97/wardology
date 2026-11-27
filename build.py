@@ -34,7 +34,8 @@ KEYWORDS = "hospital medicine, hospitalist handbook, internal medicine, clinical
 AUTHOR = {"@type": "Person", "name": "Serhii Shabalin, MD", "jobTitle": "Physician, Internal Medicine", "url": "https://www.shabalini.com"}
 PUBLISHER = {"@type": "Organization", "name": SITE_TITLE, "url": SITE_URL, "logo": SITE_URL + "/assets/apple-touch-icon.png", "email": CONTACT}
 SPECIALTY = {"cardiology": "Cardiovascular", "pulmonary": "Pulmonary", "renal": "Renal", "id": "Infectious", "heme": "Hematologic",
-             "gi": "Gastroenterologic", "endo": "Endocrine", "neuro": "Neurologic", "geri": "Geriatric", "nightcalls": "Emergency"}
+             "gi": "Gastroenterologic", "endo": "Endocrine", "neuro": "Neurologic", "geri": "Geriatric", "nightcalls": "Emergency",
+             "rheum": "Rheumatologic", "derm": "Dermatologic", "womens": "Obstetric", "psych": "Psychiatric", "eye-ent": "Otolaryngologic"}
 
 
 def medical_ld(name, desc, url, extra=None):
@@ -370,17 +371,20 @@ def main():
 <button class="bigsearch" id="sbtn2">🔍 <span>Search {total} chapters…</span></button>
 <div class="hstats"><span>📚 {len(subjects)} subjects</span><span>📄 {total} chapters</span><span>🗓️ Updated {date.today().isoformat()}</span></div>
 </section>
+<a class="qbankcta" href="qbank/"><span class="qe">🎓</span><span><b>QBank — ABIM Internal Medicine</b><small>Free board-style questions mapped to the ABIM blueprint, with tutor and timed exam modes.</small></span><span class="go">›</span></a>
 <section class="lib"><h2 class="lh">📚 Library</h2><div class="tiles">{tiles}</div></section>
 <section class="lib"><h2 class="lh">⭐ Start here</h2><div class="feats">{feat_html}</div></section>
 <section class="lib"><h2 class="lh">🧰 Tools</h2><div class="tools">{tool_tiles}</div></section>
 <section class="about"><b>👋 About</b><p>Written by <a href="https://www.shabalini.com">Serhii Shabalin, MD</a> — Internal Medicine resident at a community teaching hospital in New Jersey, trained in Kyiv, first-generation physician. Built for real-life clinical wards and the ABIM boards. Every page lists its sources and review date. Educational use only. Questions or corrections: <a href="mailto:{CONTACT}">{CONTACT}</a>. <a href="tools/about.html">More about Wardology →</a></p></section>"""
     hdr = f"""<header class="topbar home"><a class="back brand" href="index.html"><span class="arrow">{LOGO}</span><span class="blab">{SITE_TITLE}</span></a><div class="ttitle"></div>
-<div class="tact"><button class="tbtn" id="sbtn" aria-label="Search">🔍</button></div></header>"""
+<div class="tact"><a class="tbtn" href="qbank/" aria-label="QBank" title="QBank">🎓</a><button class="tbtn" id="sbtn" aria-label="Search">🔍</button></div></header>"""
     home_ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": SITE_TITLE, "url": SITE_URL, "description": DESCRIPTION,
                 "inLanguage": "en", "publisher": PUBLISHER, "author": AUTHOR,
                 "audience": {"@type": "MedicalAudience", "audienceType": "Clinician"}},
                medical_ld(f"{SITE_TITLE} — {TAGLINE}", DESCRIPTION, "")]
     (OUT / "index.html").write_text(shell(f"{SITE_TITLE} — {TAGLINE}", body, 0, "home", hdr, "", ld=home_ld), encoding="utf-8")
+    import qbank_build
+    qbank_build.build(OUT)
     write_static()
 
     # emoji used by the search box (results are drawn in the browser)

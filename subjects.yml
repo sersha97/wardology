@@ -24,6 +24,7 @@
     - {name: Pulmonary vascular, emoji: "🩸"}
     - {name: Pleura, emoji: "💦"}
     - {name: Respiratory failure, emoji: "🆘"}
+    - {name: Nodules & sleep, emoji: "😴"}
   planned: [Hemoptysis, ILD flare, Pneumothorax]
 
 - id: id
@@ -36,6 +37,7 @@
     - {name: Pneumonia, emoji: "🫁"}
     - {name: Urinary tract, emoji: "🚽"}
     - {name: Skin & soft tissue, emoji: "🩹"}
+    - {name: Prevention & vaccines, emoji: "💉"}
   planned: [C. difficile, S. aureus bacteremia & endocarditis, Brain abscess]
 
 - id: renal
@@ -47,6 +49,7 @@
     - {name: Kidney, emoji: "🫘"}
     - {name: Electrolytes, emoji: "⚖️"}
     - {name: Acid–base, emoji: "🧪"}
+    - {name: Urology, emoji: "🚹"}
   planned: [Hypercalcemia, Hypokalemia / Mg, Rhabdomyolysis]
 
 - id: gi
@@ -58,6 +61,7 @@
     - {name: GI bleeding, emoji: "🩸"}
     - {name: Liver, emoji: "🍺"}
     - {name: Pancreas, emoji: "🔥"}
+    - {name: Esophagus & stomach, emoji: "🫗"}
   planned: [Lower GI bleed, Acute liver failure, Alcohol-associated hepatitis]
 
 - id: endo
@@ -68,7 +72,8 @@
   groups:
     - {name: Diabetes, emoji: "🩸"}
     - {name: Adrenal & thyroid, emoji: "🦋"}
-  planned: [Thyroid storm / myxedema coma, Hypoglycemia, Hypercalcemia]
+    - {name: Bone & calcium, emoji: "🦴"}
+  planned: [Thyroid storm / myxedema coma, Hypoglycemia]
 
 - id: neuro
   name: Neurology
@@ -96,7 +101,8 @@
     - {name: Red cells, emoji: "🔴"}
     - {name: Platelets & clotting, emoji: "🧷"}
     - {name: Oncologic emergencies, emoji: "🎗️"}
-  planned: [TTP / HUS, Tumor lysis syndrome, Hypercalcemia of malignancy, Spinal cord compression]
+    - {name: Cancer screening, emoji: "🔬"}
+  planned: [TTP / HUS, Tumor lysis syndrome, Hypercalcemia of malignancy]
 
 - id: geri
   name: Geriatrics & Peri-op
@@ -107,7 +113,66 @@
     - {name: Geriatrics, emoji: "🧓"}
     - {name: Peri-operative, emoji: "🔪"}
     - {name: Goals of care, emoji: "🕊️"}
-  planned: [Falls, Discharge planning]
+  planned: [Discharge planning]
+
+- id: rheum
+  name: Rheumatology & MSK
+  emoji: "🦴"
+  color: "#b5651d"
+  blurb: Hot joints, stiff mornings, inflamed arteries and the aching back and shoulder.
+  groups:
+    - {name: Crystals & inflammatory arthritis, emoji: "💎"}
+    - {name: Vasculitis, emoji: "🩸"}
+    - {name: Musculoskeletal pain, emoji: "🏋️"}
+  planned: [Lupus, Spondyloarthritis, Osteoarthritis, Septic arthritis]
+
+- id: derm
+  name: Dermatology & Allergy
+  emoji: "🧴"
+  color: "#c2477a"
+  blurb: Spots that change, rashes that kill and stings that close the throat.
+  groups:
+    - {name: Skin cancer, emoji: "🔍"}
+    - {name: Drug reactions, emoji: "💊"}
+    - {name: Allergy, emoji: "🐝"}
+  planned: [Psoriasis, Atopic & contact dermatitis, Urticaria & angioedema, Herpes zoster]
+
+- id: womens
+  name: Women's Health
+  emoji: "🌸"
+  color: "#9b4dca"
+  blurb: Contraception, pregnancy, menopause and the medicine of women's health.
+  groups:
+    - {name: Reproductive health, emoji: "🤰"}
+  planned: [Menopause, Medical problems in pregnancy, Abnormal uterine bleeding, Breast mass]
+
+- id: psych
+  name: Psychiatry & Addiction
+  emoji: "🧘"
+  color: "#4a8c8c"
+  blurb: Mood, worry, sleep and substances — the primary-care side of the mind.
+  groups:
+    - {name: Mood & anxiety, emoji: "🌧️"}
+    - {name: Substance use, emoji: "🍺"}
+  planned: [Depression, Insomnia, Opioid use disorder, Tobacco cessation]
+
+- id: eye-ent
+  name: Eye, Ear, Nose & Throat
+  emoji: "👁️"
+  color: "#3a7d44"
+  blurb: The red eye, the sore throat and the spinning room.
+  groups:
+    - {name: Eye, emoji: "👁️"}
+  planned: [Sinusitis, Pharyngitis, Hearing loss, Otitis]
+
+- id: boards
+  name: Biostatistics & Ethics
+  emoji: "⚖️"
+  color: "#5a5f73"
+  blurb: Numbers, capacity and safety — the questions that decide close scores.
+  groups:
+    - {name: Biostatistics, emoji: "📊"}
+  planned: [Decision-making capacity, Surrogates & advance directives, Medical errors & disclosure, Screening test bias]
 
 - id: nightcalls
   name: Night Calls

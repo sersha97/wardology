@@ -506,3 +506,9 @@ img.emoji{display:inline-block;width:1.15em;height:1.15em;margin:0 .06em;vertica
 .diag.mk .mass{fill:#d64545}
 .diag .wht{fill:#fff}
 @media (max-width:560px){.spec>.specitem:last-child:nth-child(3){grid-column:1/-1}}
+
+/* ---------- QBank call-to-action ---------- */
+.qbankcta{display:flex;align-items:center;gap:14px;margin:16px 0 0;padding:16px 18px;border-radius:var(--r);text-decoration:none;color:#fff;
+  background:linear-gradient(120deg,#0f2a43,#1b4b6e);box-shadow:var(--sh);border-left:5px solid var(--gold)}
+.qbankcta .qe{font-size:34px}.qbankcta b{display:block;font:700 18px var(--serif)}.qbankcta small{display:block;opacity:.85;font-size:14px}
+.qbankcta .go{margin-left:auto;font-size:28px;opacity:.7}.qbankcta:hover{filter:brightness(1.1)}

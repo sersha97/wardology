@@ -1,0 +1,382 @@
+# Cardiovascular Disease — ABIM blueprint 15%
+- id: CV-001
+  topic: Essential hypertension
+  task: Treatment/Care Decisions
+  chapters: [cardiology/hypertension]
+  stem: |
+    A 49-year-old man comes to the office to review his blood pressure log. Three months ago his office blood pressure was 158/96 mm Hg. Since then he has cut back on salt, walks 30 minutes most days and has lost 2 kg (4.4 lb). His validated home cuff now shows an average of **156/98 mm Hg** over the last 2 weeks. He has no symptoms. He does not have diabetes and does not smoke. His father had a myocardial infarction at age 61.
+
+    Blood pressure in the office today is 154/97 mm Hg in both arms; pulse is 74/min. BMI is 29 kg/m². Cardiac examination is normal and there is no edema.
+  labs:
+    - [Sodium, 140 mEq/L]
+    - [Potassium, 4.3 mEq/L]
+    - [Creatinine, 0.9 mg/dL]
+    - [Urine albumin-to-creatinine ratio, 12 mg/g]
+    - [LDL cholesterol, 128 mg/dL]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Continue lifestyle changes and recheck blood pressure in 6 months
+    B: Start atenolol
+    C: Start a single-pill combination of an angiotensin receptor blocker and amlodipine
+    D: Start hydralazine
+    E: Start lisinopril plus losartan
+  answer: C
+  explain: |
+    This man has **confirmed stage 2 hypertension** (home average ≥140/90 mm Hg) that persists despite 3 months of lifestyle change. His goal is **<130/80 mm Hg**.
+
+    When blood pressure is ≥140/90 mm Hg (or more than about 20/10 mm Hg above goal), one drug is rarely enough. Current US guidance recommends **starting two first-line drugs from different classes at the same time**, preferably as a **single-pill combination**. Two half-doses lower pressure more than one full dose, cause fewer dose-related side effects, and one pill improves adherence.
+
+    The first-line classes are **thiazide-type diuretics, ACE inhibitors or ARBs, and dihydropyridine calcium channel blockers**. An ARB + amlodipine pill is a standard choice; ACE inhibitor or ARB + thiazide is equally acceptable.
+
+    | Office BP | Plan |
+    |---|---|
+    | 130–139 / 80–89 | Lifestyle; add one drug if CVD, diabetes, CKD or high 10-year risk |
+    | ≥140 / 90 | Lifestyle **plus two first-line drugs**, ideally one pill |
+    | ≥180 / 120 with organ damage | Hypertensive emergency → hospital, IV therapy |
+  why:
+    A: He has already tried lifestyle change for 3 months and remains far above goal. Waiting 6 more months leaves stage 2 hypertension untreated.
+    B: Beta-blockers are not first-line for uncomplicated hypertension. They prevent fewer strokes than the first-line classes; use them when there is another indication (angina, prior MI, HFrEF, rate control).
+    D: Hydralazine is a late add-on (resistant hypertension, pregnancy, HFrEF with nitrate). It causes reflex tachycardia and fluid retention when used alone.
+    E: ACE inhibitor + ARB together (dual RAAS blockade) raises the risk of hyperkalemia and acute kidney injury without cardiovascular benefit. Never combine them.
+  mnemonic: |
+    **"A-C-D"** — the three first-line classes: **A**CE inhibitor/ARB, **C**alcium channel blocker (dihydropyridine), **D**iuretic (thiazide-type). Stage 2 → pick **two** of the three.
+  pearl: |
+    Confirm office readings with **home or ambulatory monitoring** before diagnosing hypertension. Office-only elevation is white-coat hypertension; normal office but high home readings is masked hypertension, which carries the same risk as sustained hypertension.
+  objective: |
+    For confirmed stage 2 hypertension (≥140/90 mm Hg), start two first-line antihypertensives from different classes, preferably as a single-pill combination, and target <130/80 mm Hg.
+  refs:
+    - 2025 AHA/ACC multisociety guideline for the prevention, detection, evaluation and management of high blood pressure in adults. *Hypertension / J Am Coll Cardiol* 2025.
+    - Whelton PK, et al. 2017 ACC/AHA high blood pressure guideline. *J Am Coll Cardiol* 2018;71:e127.
+
+- id: CV-002
+  topic: Severe asymptomatic hypertension
+  task: Treatment/Care Decisions
+  chapters: [cardiology/htn-emergency, cardiology/hypertension]
+  stem: |
+    A 61-year-old woman comes to the office for a routine visit. She ran out of her amlodipine and chlorthalidone 8 days ago and did not refill them. She feels well. She has no headache, chest pain, dyspnea, visual change or weakness.
+
+    Blood pressure is **194/112 mm Hg**, rechecked after 10 minutes of quiet rest at 190/110 mm Hg; pulse is 78/min. She is alert and oriented. Fundoscopic examination shows mild arteriolar narrowing without hemorrhages, exudates or papilledema. Heart and lung examination is normal, and neurologic examination is nonfocal.
+  labs:
+    - [Creatinine, 1.0 mg/dL (baseline 1.0 mg/dL)]
+    - [Urinalysis, no blood or protein]
+    - [ECG, sinus rhythm; left ventricular hypertrophy by voltage (unchanged from 1 year ago)]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Give intravenous labetalol in the emergency department
+    B: Give immediate-release nifedipine sublingually now
+    C: Restart her home medications and recheck blood pressure within 1 week
+    D: Obtain a noncontrast CT scan of the head
+    E: Give oral clonidine every hour until blood pressure is below 140/90 mm Hg
+  answer: C
+  explain: |
+    This is **severe asymptomatic hypertension** (formerly "hypertensive urgency"): blood pressure ≥180/110–120 mm Hg **without acute target-organ damage**. Her fundi, kidneys, ECG and neurologic examination show no acute injury. The cause is obvious — she stopped her medicines.
+
+    The danger in this situation is **lowering the pressure too fast**. Chronic hypertension shifts cerebral and coronary autoregulation to the right. A sudden drop can cause stroke, myocardial ischemia or acute kidney injury. Short-term risk from the elevated pressure itself is low.
+
+    Correct care: restart (or intensify) **oral** therapy, aim to lower blood pressure gradually over **days to weeks**, and arrange close follow-up. ED referral and IV drugs are for **hypertensive emergency**, when organ damage is present.
+
+    | | Severe asymptomatic HTN | Hypertensive emergency |
+    |---|---|---|
+    | Organ damage | None acute | Encephalopathy, stroke, ACS, pulmonary edema, AKI, dissection, retinal hemorrhage/papilledema |
+    | Setting | Office / outpatient | ICU |
+    | Drugs | Oral | IV (nicardipine, clevidipine, labetalol, esmolol) |
+    | Pace | Over days–weeks | ≤25% in the first hour (faster for dissection) |
+  why:
+    A: IV antihypertensives are for hypertensive emergency. Using them without organ damage risks hypotension and hypoperfusion and adds no benefit.
+    B: Immediate-release nifedipine causes abrupt, unpredictable drops in pressure and has caused stroke and MI. It should not be used for this purpose.
+    D: She has no neurologic symptoms or signs. Imaging is not needed without features of encephalopathy or stroke.
+    E: Rapid oral loading to a normal pressure within hours is the same error as IV therapy, and clonidine stacking causes rebound hypertension later.
+  pearl: |
+    The number alone does not make an emergency — **organ damage does**. Look at the eyes, brain, heart, lungs and kidneys before you reach for an IV drug.
+  objective: |
+    Severe hypertension without acute target-organ damage is treated with oral medication and gradual lowering over days to weeks with close outpatient follow-up, not with rapid or IV blood pressure reduction.
+  refs:
+    - 2025 AHA/ACC multisociety high blood pressure guideline. *Hypertension / J Am Coll Cardiol* 2025.
+    - Bress AP, et al. The management of elevated blood pressure in the acute care setting: a scientific statement from the AHA. *Hypertension* 2024;81:e94.
+
+- id: CV-003
+  topic: Complete heart block
+  task: Treatment/Care Decisions
+  chapters: [cardiology/brady, cardiology/syncope, cardiology/devices]
+  stem: |
+    A 79-year-old woman is evaluated after two episodes of sudden loss of consciousness in the past week. Each episode came without warning while she was sitting, and she recovered within a minute. She has hypertension treated with lisinopril. She takes no other medications and has not traveled or had tick bites.
+
+    Blood pressure is 152/64 mm Hg and pulse is **38/min**, regular. Cannon *a* waves are seen in the jugular venous pulse. The first heart sound varies in intensity. A rhythm strip is shown.
+  media:
+    - ecg: chb
+      caption: Lead II rhythm strip
+  labs:
+    - [Potassium, 4.4 mEq/L]
+    - [TSH, 2.1 µU/mL]
+    - [High-sensitivity troponin I, below the 99th percentile]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: 30-day ambulatory event monitor
+    B: Tilt-table testing
+    C: Stop lisinopril and observe
+    D: Permanent pacemaker implantation
+    E: Oral theophylline
+  answer: D
+  explain: |
+    The strip shows **third-degree (complete) AV block**: P waves march at their own regular rate and wide QRS complexes march at a slower, independent rate — there is **no relationship** between them. Bedside clues fit: cannon *a* waves (atria contract against a closed tricuspid valve) and a variable S₁.
+
+    She has **symptomatic** complete heart block with syncope (Stokes-Adams attacks) and a wide escape rhythm, which means the block is below the AV node and the escape is unreliable. Once **reversible causes are excluded**, the treatment is a **permanent pacemaker** (Class 1). Her labs exclude hyperkalemia, hypothyroidism and acute MI, and lisinopril does not slow AV conduction.
+
+    | Reversible causes to check before pacing |
+    |---|
+    | AV-nodal drugs: beta-blockers, nondihydropyridine CCBs, digoxin, amiodarone |
+    | Hyperkalemia |
+    | Acute inferior MI (often transient) |
+    | Lyme carditis (young patient, tick exposure) |
+    | Hypothyroidism, increased vagal tone, obstructive sleep apnea |
+  why:
+    A: The diagnosis is already made on the strip. More monitoring only delays treatment of a rhythm that can cause sudden death.
+    B: Tilt-table testing evaluates reflex (vasovagal) syncope. Her syncope is arrhythmic and already explained.
+    C: ACE inhibitors do not block the AV node. Stopping lisinopril would not correct complete heart block.
+    E: Theophylline is occasionally used for post-transplant bradycardia or as a temporary bridge. It is not a treatment for infranodal complete heart block.
+  mnemonic: |
+    Third-degree block: **"P's and Q's don't agree"** — atria and ventricles keep their own time.
+  pearl: |
+    A **narrow** escape (40–60/min) suggests block in the AV node (more stable). A **wide** escape (20–40/min) suggests infranodal block (His–Purkinje) — unstable, and atropine usually does not help.
+  objective: |
+    Symptomatic complete heart block without a reversible cause is an indication for permanent pacemaker implantation.
+  refs:
+    - Kusumoto FM, et al. 2018 ACC/AHA/HRS guideline on the evaluation and management of patients with bradycardia and cardiac conduction delay. *Circulation* 2019;140:e382.
+
+- id: CV-004
+  topic: Atrial fibrillation — stroke prevention
+  task: Treatment/Care Decisions
+  chapters: [cardiology/af, heme/anticoagulation]
+  stem: |
+    A 70-year-old woman comes for follow-up 1 week after she was found to have atrial fibrillation during a pre-travel visit. She was started on metoprolol and now has no palpitations or dyspnea. She has hypertension treated with chlorthalidone. She has no history of stroke, bleeding, heart failure or diabetes. She drinks one glass of wine per week.
+
+    Blood pressure is 128/76 mm Hg and pulse is 76/min, irregularly irregular. There are no murmurs. The rhythm strip is shown. Echocardiography shows normal left ventricular function, mild left atrial enlargement and no significant valve disease.
+  media:
+    - ecg: af
+      caption: Lead II rhythm strip from her first visit (before metoprolol)
+  labs:
+    - [Hemoglobin, 13.4 g/dL]
+    - [Platelets, "226,000/µL"]
+    - [Creatinine, 0.9 mg/dL (creatinine clearance ≈ 62 mL/min)]
+    - [ALT, 22 U/L]
+  lead: Which of the following is the most appropriate therapy to reduce her risk of stroke?
+  choices:
+    A: Aspirin
+    B: Aspirin plus clopidogrel
+    C: Apixaban
+    D: Warfarin with a target INR of 2.0–3.0
+    E: No antithrombotic therapy because her heart rate is controlled
+  answer: C
+  explain: |
+    The ECG shows **atrial fibrillation**: irregularly irregular R–R intervals and no discrete P waves.
+
+    Stroke risk in AF depends on the patient, not on the rhythm or rate. Her **CHA₂DS₂-VASc score is 3** (age 65–74 = 1, hypertension = 1, female sex = 1). Anticoagulation is recommended when annual stroke risk is ≥2%, which corresponds to a score of **≥2 in men or ≥3 in women** (female sex is a risk *modifier* — it counts only when other factors are present).
+
+    For eligible patients, a **direct oral anticoagulant (DOAC) is preferred over warfarin**: equal or better stroke prevention, about half the intracranial hemorrhage, no INR monitoring. DOACs are not used with a **mechanical valve** or **moderate–severe rheumatic mitral stenosis** — warfarin is the drug there.
+
+    | CHA₂DS₂-VASc | Points |
+    |---|---|
+    | **C**HF or LV dysfunction | 1 |
+    | **H**ypertension | 1 |
+    | **A**ge ≥75 | 2 |
+    | **D**iabetes | 1 |
+    | **S**troke / TIA / thromboembolism | 2 |
+    | **V**ascular disease (MI, PAD, aortic plaque) | 1 |
+    | **A**ge 65–74 | 1 |
+    | **S**ex **c**ategory (female) | 1 |
+  why:
+    A: Aspirin gives little stroke protection in AF and bleeds almost as much as a DOAC. It is not recommended for stroke prevention in AF.
+    B: Dual antiplatelet therapy is inferior to anticoagulation for AF stroke prevention and carries similar bleeding risk.
+    D: Warfarin works, but DOACs are preferred because they cause less intracranial hemorrhage and need no INR monitoring. Warfarin is the right choice only for a mechanical valve or moderate–severe mitral stenosis.
+    E: Rate control treats symptoms, not stroke risk. Stagnant flow in the left atrial appendage persists however well the rate is controlled.
+  pearl: |
+    Calculate **HAS-BLED** to find and fix modifiable bleeding risks (uncontrolled BP, NSAIDs, alcohol, labile INR) — **not** to withhold anticoagulation. A high bleeding score is rarely a reason to skip a DOAC.
+  objective: |
+    In atrial fibrillation, anticoagulate when CHA₂DS₂-VASc is ≥2 in men or ≥3 in women, and prefer a DOAC over warfarin unless the patient has a mechanical valve or moderate–severe mitral stenosis.
+  refs:
+    - Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. *Circulation* 2024;149:e1.
+    - Granger CB, et al. Apixaban versus warfarin in patients with atrial fibrillation (ARISTOTLE). *N Engl J Med* 2011;365:981.
+
+- id: CV-005
+  topic: Aortic stenosis
+  task: Treatment/Care Decisions
+  chapters: [cardiology/aortic-stenosis]
+  stem: |
+    An 82-year-old man is evaluated for 4 months of breathlessness when he climbs one flight of stairs. Last week he felt lightheaded and had to sit down while carrying groceries. He has hypertension and hyperlipidemia. He lives independently, drives and walks his dog daily.
+
+    Blood pressure is 134/78 mm Hg and pulse is 70/min. There is a grade 3/6 **late-peaking crescendo–decrescendo systolic murmur** at the right upper sternal border that radiates to both carotids. The aortic component of S₂ is soft. Carotid upstrokes are delayed and weak.
+  labs:
+    - [Echocardiogram — aortic valve area, 0.7 cm²]
+    - [Echocardiogram — mean gradient, 48 mm Hg]
+    - [Echocardiogram — peak aortic jet velocity, 4.6 m/s]
+    - [Echocardiogram — LV ejection fraction, 60%]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Repeat echocardiography in 12 months
+    B: Start lisinopril to reduce afterload
+    C: Balloon aortic valvuloplasty as definitive therapy
+    D: Start a beta-blocker for exertional symptoms
+    E: Transcatheter aortic valve implantation
+  answer: E
+  explain: |
+    He has **severe aortic stenosis** (AVA ≤1.0 cm², mean gradient ≥40 mm Hg, peak velocity ≥4.0 m/s) and he is **symptomatic** (exertional dyspnea and presyncope). Once symptoms appear, average survival without valve replacement is only a few years, and sudden death becomes a real risk. **Aortic valve replacement is indicated (Class 1).**
+
+    No medicine changes the natural history of AS. The question is only *which* replacement. At **age >80**, transcatheter aortic valve implantation (TAVI) is generally preferred over surgery when anatomy is suitable; for patients **<65** with long life expectancy, surgical AVR is usually favored; between those ages, it is a shared decision by the heart team.
+
+    | Classic symptoms of severe AS | Rough survival without AVR |
+    |---|---|
+    | Angina | ~5 years |
+    | Syncope | ~3 years |
+    | Heart failure | ~2 years |
+  why:
+    A: Watchful waiting with serial echo is for **asymptomatic** severe AS with normal LV function. Symptoms change the indication to valve replacement now.
+    B: Vasodilators can drop blood pressure sharply because cardiac output is fixed by the narrowed valve; they do not treat the obstruction.
+    C: Balloon valvuloplasty gives only temporary relief (restenosis within months). It is a bridge, not definitive therapy.
+    D: Beta-blockers do not relieve the obstruction and can worsen exertional symptoms by limiting the heart rate response.
+  mnemonic: |
+    Symptoms of severe AS — **"SAD"**: **S**yncope, **A**ngina, **D**yspnea. Any one of them with severe AS → replace the valve.
+  pearl: |
+    A **soft or absent A₂** and **late-peaking** murmur mean severe AS. Murmur loudness is misleading — it falls when the LV fails.
+  objective: |
+    Symptomatic severe aortic stenosis requires aortic valve replacement; in patients older than 80 years with suitable anatomy, transcatheter implantation is preferred.
+  refs:
+    - Otto CM, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease. *Circulation* 2021;143:e72.
+
+- id: CV-006
+  topic: Lipid management after myocardial infarction
+  task: Treatment/Care Decisions
+  chapters: [cardiology/lipids, cardiology/nste-acs]
+  stem: |
+    A 62-year-old man comes for follow-up 6 months after a non-ST-elevation myocardial infarction treated with a drug-eluting stent. He takes aspirin, ticagrelor, metoprolol succinate, lisinopril and **atorvastatin 80 mg daily**. He reports taking every dose and has no muscle pain. He walks 40 minutes daily and follows a Mediterranean diet.
+
+    Blood pressure is 124/76 mm Hg. Examination is normal.
+  labs:
+    - [Total cholesterol, 162 mg/dL]
+    - [LDL cholesterol, 88 mg/dL (before the MI 156 mg/dL)]
+    - [HDL cholesterol, 42 mg/dL]
+    - [Triglycerides, 160 mg/dL]
+    - [ALT, 28 U/L]
+    - [Hemoglobin A1c, 5.6%]
+  lead: Which of the following is the most appropriate next step to reduce his cardiovascular risk?
+  choices:
+    A: Continue current therapy unchanged
+    B: Add ezetimibe
+    C: Add niacin
+    D: Add fenofibrate
+    E: Switch to rosuvastatin 5 mg daily
+  answer: B
+  explain: |
+    He has clinical ASCVD with a recent ACS — **very high risk**. He is already on a **maximally tolerated high-intensity statin**, yet his LDL is still **≥70 mg/dL** (current expert pathways aim even lower, at <55 mg/dL, for very-high-risk patients).
+
+    The next step is a **nonstatin drug with outcome data: ezetimibe** first (cheap, oral, well tolerated; IMPROVE-IT showed fewer cardiovascular events after ACS). If LDL remains above threshold, add a **PCSK9 inhibitor** (or inclisiran/bempedoic acid in selected patients).
+
+    **Lower LDL, longer, is better** — every 39 mg/dL (1 mmol/L) reduction in LDL lowers major vascular events by about 20%.
+
+    | Statin intensity | Drug and daily dose | LDL reduction |
+    |---|---|---|
+    | High | Atorvastatin 40–80 mg, rosuvastatin 20–40 mg | ≥50% |
+    | Moderate | Atorvastatin 10–20, rosuvastatin 5–10, simvastatin 20–40 | 30%–49% |
+  why:
+    A: His LDL is above the threshold for adding therapy in very-high-risk ASCVD. Accepting it leaves avoidable risk.
+    C: Niacin raises HDL but did not reduce events on top of a statin (AIM-HIGH, HPS2-THRIVE) and causes flushing, hyperglycemia and myopathy.
+    D: Fibrates lower triglycerides; his triglycerides are only mildly elevated and fibrates added to a statin have not reduced cardiovascular events.
+    E: Rosuvastatin 5 mg is moderate intensity — a step **down** from atorvastatin 80 mg.
+  pearl: |
+    After ACS, check a lipid panel **4–12 weeks** after starting or changing therapy to confirm response and adherence, then every 3–12 months.
+  objective: |
+    In very-high-risk ASCVD with LDL ≥70 mg/dL despite a maximally tolerated statin, add ezetimibe and then a PCSK9 inhibitor if needed.
+  refs:
+    - Grundy SM, et al. 2018 AHA/ACC multisociety guideline on the management of blood cholesterol. *Circulation* 2019;139:e1082.
+    - Lloyd-Jones DM, et al. 2022 ACC expert consensus decision pathway on nonstatin therapies for LDL-C lowering. *J Am Coll Cardiol* 2022;80:1366.
+    - Cannon CP, et al. Ezetimibe added to statin therapy after acute coronary syndromes (IMPROVE-IT). *N Engl J Med* 2015;372:2387.
+
+- id: CV-007
+  topic: Acute pericarditis
+  task: Treatment/Care Decisions
+  chapters: [cardiology/pericarditis]
+  stem: |
+    A 34-year-old man comes to the emergency department with 2 days of sharp, central chest pain. The pain is worse when he lies flat or breathes in and better when he sits up and leans forward. He had a sore throat and runny nose 10 days ago. He takes no medications.
+
+    Temperature is 37.8 °C (100.0 °F), blood pressure is 126/78 mm Hg, pulse is 96/min and respirations are 18/min. A high-pitched, scratchy sound with three components is heard at the left lower sternal border while he leans forward. Jugular venous pressure is normal and there is no pulsus paradoxus.
+
+    The ECG shows ST elevation in most leads with PR depression; lead II is shown. Echocardiography shows normal wall motion and a small pericardial effusion without chamber collapse.
+  media:
+    - ecg: pericarditis
+      caption: Lead II
+  labs:
+    - [High-sensitivity troponin I, below the 99th percentile]
+    - [C-reactive protein, 4.2 mg/dL]
+    - [Leukocyte count, "10,200/µL"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Prednisone 1 mg/kg daily
+    B: Ibuprofen alone
+    C: Ibuprofen plus colchicine
+    D: Pericardiocentesis
+    E: Urgent coronary angiography
+  answer: C
+  explain: |
+    He meets the diagnosis of **acute pericarditis** (≥2 of 4): pleuritic, positional chest pain; a pericardial **friction rub**; **diffuse concave ST elevation with PR depression**; and a new pericardial effusion. Most cases in young adults are **viral or idiopathic**.
+
+    First-line therapy is a **high-dose NSAID (or aspirin) plus colchicine**. Colchicine roughly **halves the recurrence rate** and speeds symptom relief. Typical course: ibuprofen 600 mg three times daily for 1–2 weeks with a taper; colchicine 0.5 mg twice daily (once daily if <70 kg) for **3 months**. Restrict strenuous exercise until symptoms and CRP resolve (at least 3 months for athletes).
+
+    **Admit** if any high-risk feature: fever >38 °C, subacute onset, large effusion or tamponade, failure of NSAIDs after 1 week, immunosuppression, trauma, oral anticoagulation, or myopericarditis (elevated troponin).
+  why:
+    A: Glucocorticoids as first-line therapy **increase** recurrences. Reserve them for NSAID contraindications, failure, or specific causes (autoimmune disease, pregnancy constraints).
+    B: An NSAID alone works but leaves about twice the recurrence risk compared with adding colchicine.
+    D: The effusion is small and there is no tamponade. Pericardiocentesis is for tamponade or suspected bacterial/malignant effusion.
+    E: Normal troponin, normal wall motion, diffuse (not territorial) ST elevation and PR depression point away from STEMI.
+  pearl: |
+    ECG tells pericarditis from STEMI: **concave** ST elevation in many territories, **PR depression**, no reciprocal ST depression (except aVR and V1), and no Q waves.
+  objective: |
+    Treat acute idiopathic or viral pericarditis with a high-dose NSAID plus colchicine for 3 months; avoid first-line glucocorticoids because they increase recurrence.
+  refs:
+    - Adler Y, et al. 2015 ESC guidelines for the diagnosis and management of pericardial diseases. *Eur Heart J* 2015;36:2921.
+    - Imazio M, et al. A randomized trial of colchicine for acute pericarditis (ICAP). *N Engl J Med* 2013;369:1522.
+
+- id: CV-008
+  topic: Heart failure with reduced ejection fraction
+  task: Treatment/Care Decisions
+  chapters: [cardiology/hfref]
+  stem: |
+    A 64-year-old man with ischemic cardiomyopathy comes for follow-up. He gets short of breath after walking about two blocks but has no dyspnea at rest, orthopnea or edema. Over the past 6 months his medicines were titrated to **sacubitril–valsartan** 97/103 mg twice daily, **metoprolol succinate** 200 mg daily, **spironolactone** 25 mg daily and furosemide 20 mg daily. He does not have diabetes.
+
+    Blood pressure is 112/70 mm Hg and pulse is 60/min, regular. Jugular venous pressure is normal and the lungs are clear. There is no edema. Echocardiography last month showed a **left ventricular ejection fraction of 30%**.
+  labs:
+    - [Sodium, 138 mEq/L]
+    - [Potassium, 4.6 mEq/L]
+    - [Creatinine, 1.3 mg/dL (eGFR 58 mL/min/1.73 m²)]
+    - [Hemoglobin A1c, 5.7%]
+  lead: Which of the following drugs should be added to his regimen?
+  choices:
+    A: Dapagliflozin
+    B: Digoxin
+    C: Diltiazem
+    D: Ivabradine
+    E: Hydralazine plus isosorbide dinitrate
+  answer: A
+  explain: |
+    Guideline-directed therapy for HFrEF rests on **four pillars**, each of which lowers mortality: an **ARNI** (or ACE inhibitor/ARB), an evidence-based **beta-blocker**, a **mineralocorticoid receptor antagonist** and an **SGLT2 inhibitor**. He is on three of the four.
+
+    **Dapagliflozin or empagliflozin** reduce cardiovascular death and heart-failure hospitalization by about 25% in HFrEF **with or without diabetes** (DAPA-HF, EMPEROR-Reduced). Benefit appears within weeks. They can be started down to an eGFR of about 20–25 mL/min/1.73 m², cause little hypotension, and slow kidney function decline.
+
+    | Pillar | Examples | Watch for |
+    |---|---|---|
+    | ARNI (or ACEi/ARB) | Sacubitril–valsartan | Hypotension, K⁺, angioedema (36-h ACEi washout) |
+    | Beta-blocker | Carvedilol, metoprolol **succinate**, bisoprolol | Bradycardia, start low when euvolemic |
+    | MRA | Spironolactone, eplerenone | K⁺ >5.0, eGFR <30 |
+    | SGLT2 inhibitor | Dapagliflozin, empagliflozin | Genital mycotic infection, euglycemic DKA, volume |
+  why:
+    B: Digoxin reduces hospitalizations for symptoms but not mortality. It is added only when symptoms persist on full GDMT or for AF rate control.
+    C: Nondihydropyridine calcium channel blockers are negative inotropes and **worsen** HFrEF. Avoid them.
+    D: Ivabradine is for patients in sinus rhythm whose heart rate stays **≥70/min** on a maximally tolerated beta-blocker. His heart rate is 60/min.
+    E: Hydralazine–nitrate is added for self-identified Black patients with persistent NYHA III–IV symptoms on optimal therapy, or for patients who cannot take an ARNI/ACE inhibitor/ARB. He fits neither.
+  mnemonic: |
+    The four pillars: **"Always Be My Shield"** — **A**RNI, **B**eta-blocker, **M**RA, **S**GLT2 inhibitor.
+  pearl: |
+    He also meets criteria for a **primary-prevention ICD**: ischemic cardiomyopathy, EF ≤35%, NYHA II, ≥40 days after MI, on ≥3 months of GDMT, with >1-year expected survival.
+  objective: |
+    Every patient with HFrEF should receive all four mortality-reducing drug classes — ARNI/ACE inhibitor/ARB, beta-blocker, MRA and an SGLT2 inhibitor — regardless of diabetes status.
+  refs:
+    - Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. *Circulation* 2022;145:e895.
+    - McMurray JJV, et al. Dapagliflozin in patients with heart failure and reduced ejection fraction (DAPA-HF). *N Engl J Med* 2019;381:1995.

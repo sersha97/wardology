@@ -1,0 +1,116 @@
+# Medical Oncology — ABIM blueprint 6%
+- id: ON-001
+  topic: Breast cancer screening
+  task: Diagnosis/Testing
+  chapters: [heme/cancer-screening]
+  stem: |
+    A 42-year-old woman comes for a routine health visit. She feels well and has no breast symptoms. She has never had a mammogram. Menarche was at age 13 and she had her first child at 29. She has no history of chest radiation or breast biopsy. Her maternal aunt had breast cancer at age 68; no other relatives have had breast, ovarian, pancreatic or prostate cancer.
+
+    Breast examination is normal.
+  lead: Which of the following is the most appropriate breast cancer screening recommendation?
+  choices:
+    A: Begin mammography at age 50
+    B: Mammography every 2 years starting now
+    C: Annual breast MRI starting now
+    D: Clinical breast examination alone every year
+    E: Genetic testing for BRCA1 and BRCA2
+  answer: B
+  explain: |
+    She is at **average risk**: no personal history of breast cancer or chest radiation, no known high-risk mutation, and only a second-degree relative diagnosed after menopause.
+
+    The **USPSTF (2024)** recommends **biennial screening mammography for all women aged 40–74**. Starting at 40 rather than 50 was adopted because breast cancer rates in women in their 40s are rising and screening in this decade prevents deaths — with the most benefit for Black women, who have higher breast cancer mortality.
+
+    | Risk group | Screening |
+    |---|---|
+    | Average risk | Mammography every 2 years, ages 40–74 (many groups also accept annual) |
+    | Lifetime risk ≥20%, BRCA carrier, chest radiation age 10–30 | Annual mammography **plus annual MRI**, often starting at 25–30 |
+    | Dense breasts | Mammography; evidence for supplemental imaging is insufficient |
+  why:
+    A: Starting at 50 is the older (2016) recommendation; screening now begins at 40.
+    C: Breast MRI is for high-risk women (lifetime risk ≥20%, known mutation, chest radiation), not average-risk screening.
+    D: Clinical breast examination alone is not a substitute for mammography.
+    E: A single second-degree relative with postmenopausal breast cancer does not meet criteria for genetic testing.
+  pearl: |
+    Use a **familial risk tool** (for example, the USPSTF-recommended BRCA risk tools) when a family history includes breast cancer before 50, ovarian cancer, male breast cancer, multiple relatives, or Ashkenazi Jewish ancestry.
+  objective: |
+    Average-risk women should have screening mammography every 2 years from age 40 to 74.
+  refs:
+    - US Preventive Services Task Force. Screening for breast cancer: recommendation statement. *JAMA* 2024;331:1918.
+
+- id: ON-002
+  topic: Lung cancer screening
+  task: Diagnosis/Testing
+  chapters: [heme/cancer-screening]
+  stem: |
+    A 58-year-old man comes for a routine health visit. He smoked 1 pack of cigarettes per day from age 24 to age 49 (**25 pack-years**) and **quit 9 years ago**. He feels well, has no cough, hemoptysis or weight loss, and is active. He has hypertension controlled with lisinopril.
+
+    Examination is normal.
+  lead: Which of the following is the most appropriate lung cancer screening recommendation?
+  choices:
+    A: No screening because he quit smoking more than 5 years ago
+    B: Annual chest radiography
+    C: Annual low-dose CT of the chest
+    D: Sputum cytology every year
+    E: A single low-dose CT of the chest now
+  answer: C
+  explain: |
+    The **USPSTF (2021)** recommends **annual low-dose CT (LDCT)** for adults who:
+    - are **50–80 years old**,
+    - have **≥20 pack-years** of smoking, **and**
+    - **currently smoke or quit within the past 15 years**.
+
+    He meets all three (58 years, 25 pack-years, quit 9 years ago). LDCT screening reduced lung cancer mortality by **20% in NLST** and about 24% in NELSON. Screening stops when the person has not smoked for 15 years, develops a condition that limits life expectancy, or would not want or be fit for curative surgery.
+
+    Start with **shared decision-making** about benefits, false positives, overdiagnosis and radiation.
+  why:
+    A: The cutoff is **15 years** since quitting, not 5.
+    B: Chest radiography does not reduce lung cancer mortality and is not a screening test.
+    D: Sputum cytology misses most early cancers and is not recommended.
+    E: Screening is **annual**; a single scan gives much less benefit.
+  mnemonic: |
+    **"50-20-15"** — age **50**–80, **20** pack-years, quit within **15** years.
+  pearl: |
+    The American Cancer Society (2023) no longer uses the years-since-quitting limit — it recommends screening former smokers with ≥20 pack-years regardless of quit date. Payers usually follow USPSTF.
+  objective: |
+    Screen adults aged 50–80 with ≥20 pack-years who smoke or quit within 15 years with annual low-dose CT.
+  refs:
+    - US Preventive Services Task Force. Screening for lung cancer: recommendation statement. *JAMA* 2021;325:962.
+    - National Lung Screening Trial Research Team. Reduced lung-cancer mortality with low-dose CT screening. *N Engl J Med* 2011;365:395.
+
+- id: ON-003
+  topic: Malignant spinal cord compression
+  task: Treatment/Care Decisions
+  chapters: [heme/onc-emergencies, neuro/cauda-equina]
+  stem: |
+    A 68-year-old man with **metastatic prostate cancer to bone** comes to the emergency department with 2 weeks of worsening mid-back pain that is worse lying down and wakes him at night. Since yesterday his legs feel heavy and he stumbled twice. He has not had urinary retention or incontinence.
+
+    Vital signs are normal. There is tenderness over the T9–T10 spinous processes. Strength is 4/5 in hip flexors and knee extensors bilaterally. Pinprick sensation is reduced **below the umbilicus**. Knee reflexes are brisk and plantar responses are extensor.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Plain radiographs of the thoracic spine
+    B: Oral oxycodone and outpatient MRI within 1 week
+    C: Intravenous dexamethasone and emergency MRI of the entire spine
+    D: Lumbar puncture
+    E: Whole-body bone scan
+  answer: C
+  explain: |
+    New back pain in a patient with cancer, **worse lying down**, plus **leg weakness, a sensory level (T10 = umbilicus) and upper motor neuron signs** = **metastatic epidural spinal cord compression** — an oncologic emergency. Function at the time of treatment predicts function afterward: patients who walk into treatment usually keep walking.
+
+    Steps, without delay:
+    1. **Dexamethasone** IV (commonly 10 mg load, then 4 mg every 6 hours) to reduce vasogenic edema — give it **as soon as the diagnosis is suspected** in a patient with deficits.
+    2. **Emergency MRI of the entire spine** with and without contrast — metastases are often at more than one level.
+    3. Definitive therapy within hours: **surgical decompression + radiation** for selected patients (single-level compression, instability, good prognosis), otherwise **radiation therapy**.
+  why:
+    A: Radiographs miss epidural disease and delay MRI.
+    B: Neurologic deficits make this an emergency; waiting a week risks permanent paralysis.
+    D: Lumbar puncture does not diagnose cord compression and can worsen herniation of a compressed cord.
+    E: A bone scan shows bone metastases but not the epidural space or cord.
+  mnemonic: |
+    Cancers that most often compress the cord — **"Lung, Breast, Prostate"** (each ~15%–20%), then renal cell, lymphoma and myeloma.
+  pearl: |
+    **Thoracic spine** is the most common level (~60%). Back pain that worsens when lying flat or with Valsalva in a cancer patient deserves an MRI even **before** deficits appear.
+  objective: |
+    Suspected malignant spinal cord compression with neurologic deficits requires immediate dexamethasone, emergency whole-spine MRI and urgent radiation or surgery.
+  refs:
+    - Lawton AJ, et al. Assessment and management of patients with metastatic spinal cord compression: a multidisciplinary review. *J Clin Oncol* 2019;37:61.
+    - Patchell RA, et al. Direct decompressive surgical resection in the treatment of spinal cord compression caused by metastatic cancer. *Lancet* 2005;366:643.

@@ -1,0 +1,90 @@
+# Dermatology — ABIM blueprint 3%
+- id: DE-001
+  topic: Suspected melanoma
+  task: Diagnosis/Testing
+  chapters: [derm/skin-cancer]
+  stem: |
+    A 51-year-old man comes to the office because his wife noticed that a mole on his upper back has **grown and darkened** over the past 6 months. It occasionally itches. He had several blistering sunburns as a child and works outdoors. He has no personal or family history of skin cancer.
+
+    On the left upper back there is a **9-mm, asymmetric** pigmented macule with an **irregular, notched border** and **several shades of brown, black and blue-gray**. It looks different from his other moles. There is no palpable axillary or cervical lymphadenopathy.
+  lead: Which of the following is the most appropriate next step?
+  choices:
+    A: Photograph the lesion and re-examine in 3 months
+    B: Superficial shave biopsy
+    C: Excisional biopsy with 1–3-mm margins
+    D: Wide local excision with 2-cm margins
+    E: Cryotherapy
+  answer: C
+  explain: |
+    The lesion has almost every **ABCDE** feature of melanoma plus the **"ugly duckling" sign** — it looks different from the patient's other nevi.
+
+    The best first step is a **full-thickness excisional biopsy with narrow (1–3 mm) clinical margins**, oriented along lymphatic drainage. The pathologist needs the **whole lesion and its full depth** to measure **Breslow thickness** — the most important prognostic factor — which then determines the definitive wide-excision margin and whether sentinel lymph node biopsy is needed.
+
+    | Breslow thickness | Wide excision margin |
+    |---|---|
+    | In situ | 0.5–1 cm |
+    | ≤1.0 mm | 1 cm |
+    | 1.01–2.0 mm | 1–2 cm |
+    | >2.0 mm | 2 cm |
+  why:
+    A: Monitoring is for lesions with low suspicion. A changing, multicolored, asymmetric lesion needs tissue now.
+    B: A superficial shave can transect the base and make accurate Breslow staging impossible. (A deep saucerization that removes the whole lesion is an acceptable alternative.)
+    D: Wide margins are chosen after histologic depth is known; excising first without diagnosis risks wrong margins and disrupts lymphatic mapping.
+    E: Destroying the lesion leaves no tissue for diagnosis or staging.
+  mnemonic: |
+    **ABCDE**: **A**symmetry, **B**order irregularity, **C**olor variation, **D**iameter >6 mm, **E**volution (change in size, shape, color, symptoms).
+  pearl: |
+    **Evolution** is the most sensitive single feature. **Nodular melanoma** often lacks ABCD features — remember "EFG": **E**levated, **F**irm, **G**rowing for more than a month.
+  objective: |
+    A lesion suspicious for melanoma should be removed by full-thickness excisional biopsy with narrow margins so that Breslow depth can guide definitive treatment.
+  refs:
+    - Swetter SM, et al. Guidelines of care for the management of primary cutaneous melanoma (AAD). *J Am Acad Dermatol* 2019;80:208.
+    - 'NCCN Clinical Practice Guidelines in Oncology: Melanoma: Cutaneous, version 2.2025.'
+
+- id: DE-002
+  topic: Drug reaction with eosinophilia and systemic symptoms (DRESS)
+  task: Treatment/Care Decisions
+  chapters: [derm/drug-eruptions, rheum/gout]
+  stem: |
+    A 58-year-old woman comes to the emergency department with 4 days of fever and a spreading itchy rash that began on her face and trunk. **Allopurinol** was started **5 weeks ago** for recurrent gout. She has chronic kidney disease. She takes no other new medications.
+
+    Temperature is 38.9 °C (102.0 °F), blood pressure is 118/70 mm Hg and pulse is 104/min. There is **facial edema** and a confluent erythematous morbilliform eruption covering about 60% of the body surface. There are no blisters, skin sloughing or mucosal erosions. Tender cervical and axillary **lymphadenopathy** is present.
+  labs:
+    - [Leukocyte count, "14,800/µL"]
+    - [Eosinophils, "1,900/µL"]
+    - [Atypical lymphocytes, present]
+    - [ALT, 342 U/L]
+    - [AST, 266 U/L]
+    - [Creatinine, 2.1 mg/dL (baseline 1.5 mg/dL)]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Continue allopurinol and add an oral antihistamine
+    B: Stop allopurinol and start systemic glucocorticoids
+    C: Stop allopurinol and switch to febuxostat
+    D: Stop allopurinol and observe without other treatment
+    E: Continue allopurinol at a lower dose
+  answer: B
+  explain: |
+    Fever, a widespread rash with **facial edema**, **lymphadenopathy**, **eosinophilia**, atypical lymphocytes and **organ involvement (liver, kidney)** starting **2–8 weeks** after a new drug is **DRESS** (drug reaction with eosinophilia and systemic symptoms). Mortality is up to about 10%, mostly from liver failure.
+
+    Management:
+    1. **Stop the culprit drug immediately** — the single most important step.
+    2. With **significant organ involvement** (as here — hepatitis and acute kidney injury), give **systemic glucocorticoids** (for example prednisone 0.5–1 mg/kg/day) with a **slow taper over 6–12 weeks**; tapering too fast causes relapse.
+    3. Monitor for late complications: **autoimmune thyroiditis**, type 1 diabetes and reactivation of HHV-6.
+
+    | Common culprits of DRESS |
+    |---|
+    | Allopurinol, aromatic anticonvulsants (carbamazepine, phenytoin, lamotrigine, phenobarbital) |
+    | Sulfonamides (including sulfasalazine, dapsone), minocycline, vancomycin |
+  why:
+    A: Continuing the culprit drug allows ongoing immune activation and organ damage. Antihistamines only help itch.
+    C: Avoid any urate-lowering therapy until DRESS resolves; restarting a related drug during active disease is unsafe. Febuxostat can be considered later with specialist input.
+    D: Stopping the drug is necessary but not enough with hepatitis and kidney injury; systemic glucocorticoids are recommended for moderate–severe organ involvement.
+    E: Dose reduction does not stop an immune reaction. Allopurinol must never be given again to this patient.
+  pearl: |
+    Timing separates the big drug eruptions: **morbilliform exanthem 1–2 weeks**, **SJS/TEN 4–28 days** (mucosal erosions, skin detachment), **DRESS 2–8 weeks** (eosinophilia, organs), **AGEP within days** (sterile pustules).
+  objective: |
+    DRESS presents 2–8 weeks after drugs such as allopurinol with fever, rash, eosinophilia and organ injury; stop the drug and give systemic glucocorticoids with a slow taper when organs are involved.
+  refs:
+    - Shiohara T, Mizukawa Y. Drug-induced hypersensitivity syndrome (DiHS)/drug reaction with eosinophilia and systemic symptoms (DRESS): an update in 2019. *Allergol Int* 2019;68:301.
+    - Kardaun SH, et al. Drug reaction with eosinophilia and systemic symptoms (DRESS): an original multisystem adverse drug reaction (RegiSCAR). *Br J Dermatol* 2013;169:1071.

@@ -1,0 +1,40 @@
+# Otolaryngology & Dental Medicine — ABIM blueprint 1%
+- id: ET-001
+  topic: Benign paroxysmal positional vertigo
+  task: Treatment/Care Decisions
+  chapters: [neuro/dizziness]
+  stem: |
+    A 58-year-old woman comes to the office with 1 week of brief spells of intense spinning. They happen when she **rolls over in bed to the right**, lies down, or tilts her head back to reach a high shelf, and each lasts **less than a minute**. She has mild nausea during spells but no hearing loss, tinnitus, ear fullness, headache, double vision, slurred speech or weakness. Between spells she feels normal.
+
+    Vital signs are normal. Hearing is grossly normal. With the patient turned to the right during the **Dix–Hallpike maneuver**, after a **5-second delay**, she develops vertigo with **upbeating, torsional nystagmus** toward the right ear that fades after **20 seconds**. Testing to the left is negative. The rest of the neurologic examination, including gait, is normal.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Meclizine daily for 4 weeks
+    B: MRI of the brain
+    C: Canalith repositioning (Epley) maneuver
+    D: Oral prednisone taper
+    E: Vestibular rehabilitation exercises as the only treatment
+  answer: C
+  explain: |
+    Brief positional vertigo with a **positive Dix–Hallpike** — **latency** of a few seconds, **upbeating torsional nystagmus**, **fatigable**, lasting <1 minute — is **benign paroxysmal positional vertigo (BPPV)** of the **right posterior semicircular canal**. Loose otoconia (calcium carbonate crystals) drift into the canal and move with gravity when the head changes position.
+
+    Treat with a **canalith repositioning maneuver (Epley)** in the office. It moves the crystals back into the utricle and cures about **80%** of patients after one to three maneuvers.
+
+    | Positional nystagmus | Peripheral (BPPV) | Central (worrisome) |
+    |---|---|---|
+    | Latency | Yes (2–20 s) | None |
+    | Duration | <1 min | Persistent |
+    | Fatigability | Yes | No |
+    | Direction | Upbeat-torsional (posterior canal) | Pure vertical (often downbeat), changes direction |
+    | Other signs | None | Ataxia, diplopia, dysarthria |
+  why:
+    A: Vestibular suppressants do not fix BPPV, delay central compensation and cause sedation and falls. Use them at most briefly for severe nausea.
+    B: Classic BPPV with a typical Dix–Hallpike and normal neurologic examination does not need imaging.
+    D: Glucocorticoids may help acute **vestibular neuritis** (continuous vertigo for days), not positional vertigo.
+    E: Vestibular rehabilitation is an add-on for persistent imbalance; repositioning is the first-line cure.
+  pearl: |
+    Continuous vertigo for days with nystagmus at rest calls for **HINTS** (head impulse, nystagmus, test of skew) to separate vestibular neuritis from posterior circulation stroke.
+  objective: |
+    Posterior-canal BPPV is diagnosed with the Dix–Hallpike maneuver and treated with canalith repositioning (Epley); avoid routine imaging and vestibular suppressants.
+  refs:
+    - Bhattacharyya N, et al. Clinical practice guideline: benign paroxysmal positional vertigo (update). *Otolaryngol Head Neck Surg* 2017;156:S1.

@@ -1,0 +1,165 @@
+# Pulmonary Disease — ABIM blueprint 8%
+- id: PU-001
+  topic: Stable COPD — escalating inhaled therapy
+  task: Treatment/Care Decisions
+  chapters: [pulmonary/copd]
+  stem: |
+    A 67-year-old man with COPD comes for follow-up. He quit smoking 3 years ago after 45 pack-years. He uses **tiotropium** once daily and albuterol as needed; his inhaler technique is good. He gets short of breath walking about 100 meters on level ground. In the past year he had **two exacerbations** treated with oral prednisone and antibiotics, without hospitalization. He completed pulmonary rehabilitation last year.
+
+    Oxygen saturation is 94% on room air. There are scattered expiratory wheezes and a prolonged expiratory phase.
+  labs:
+    - [Post-bronchodilator FEV₁/FVC, 0.52]
+    - [Post-bronchodilator FEV₁, 48% of predicted]
+    - [Blood eosinophil count, 340/µL]
+  lead: Which of the following is the most appropriate change to his maintenance therapy?
+  choices:
+    A: Add an inhaled glucocorticoid alone to tiotropium
+    B: Switch to a long-acting β₂-agonist–long-acting muscarinic antagonist–inhaled glucocorticoid (triple) inhaler
+    C: Add roflumilast
+    D: Add daily azithromycin
+    E: Add daily oral prednisone 5 mg
+  answer: B
+  explain: |
+    He has COPD with **persistent dyspnea and ≥2 moderate exacerbations a year despite a LAMA**. GOLD escalation depends on the **blood eosinophil count**, a marker of who benefits from inhaled glucocorticoids:
+
+    | On LAMA or LABA, still exacerbating | Escalate to |
+    |---|---|
+    | Eosinophils **<100/µL** | LABA + LAMA |
+    | Eosinophils **≥300/µL** (or ≥100 on LABA+LAMA) | **LABA + LAMA + ICS** (single inhaler) |
+    | Still exacerbating on triple | Add roflumilast (FEV₁ <50% + chronic bronchitis) or azithromycin (former smokers); consider dupilumab/mepolizumab if eosinophils ≥300 |
+
+    With eosinophils of 340/µL, **triple therapy** reduces exacerbations and, in trials, all-cause mortality compared with dual bronchodilators.
+  why:
+    A: ICS should be given with a LABA, not as LAMA + ICS alone. ICS without a LABA is not a recommended COPD combination.
+    C: Roflumilast is a later add-on for patients who still exacerbate on triple therapy, with FEV₁ <50% and chronic bronchitis.
+    D: Azithromycin is also a later add-on after triple therapy (best in former smokers); it can prolong QT and cause hearing loss and resistance.
+    E: Chronic systemic glucocorticoids cause serious harm (osteoporosis, diabetes, myopathy, infection) without benefit in stable COPD.
+  pearl: |
+    **ICS raises pneumonia risk.** Avoid or withdraw ICS when eosinophils are **<100/µL**, with repeated pneumonia, or with mycobacterial infection.
+  objective: |
+    In COPD with exacerbations despite a long-acting bronchodilator, escalate to triple therapy (LABA + LAMA + ICS) when blood eosinophils are ≥300/µL, and to LABA + LAMA when they are low.
+  refs:
+    - Global Initiative for Chronic Obstructive Lung Disease (GOLD). Global strategy for prevention, diagnosis and management of COPD: 2025 report.
+
+- id: PU-002
+  topic: Mild asthma
+  task: Treatment/Care Decisions
+  chapters: [pulmonary/asthma]
+  stem: |
+    A 26-year-old woman comes to the office because she uses her albuterol inhaler **2–3 times per week** for cough, chest tightness and wheezing, especially with exercise and in cold air. She has not woken at night because of asthma and has never needed oral glucocorticoids or emergency care. She has allergic rhinitis.
+
+    Examination is normal.
+  labs:
+    - [Spirometry, FEV₁ 88% of predicted; FEV₁/FVC 0.74]
+    - [After bronchodilator, FEV₁ increases by 15% (420 mL)]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Continue albuterol as needed only
+    B: Low-dose budesonide–formoterol as needed
+    C: Montelukast daily
+    D: Salmeterol twice daily
+    E: Oral prednisone for 5 days
+  answer: B
+  explain: |
+    She has **mild asthma** (symptoms less than daily, no night waking, normal FEV₁, a significant bronchodilator response).
+
+    The biggest change in asthma care: **SABA-only treatment is no longer recommended**. Even mild asthma carries a risk of severe and fatal attacks, and SABA alone does nothing for airway inflammation. **As-needed low-dose ICS–formoterol** (budesonide–formoterol) gives anti-inflammatory therapy every time she treats symptoms; it cuts severe exacerbations by about 60% compared with SABA alone, using far less steroid than daily ICS. Formoterol works within minutes, so it works as a reliever.
+
+    (Daily low-dose ICS with a SABA reliever is an acceptable alternative pathway.)
+  why:
+    A: SABA monotherapy increases the risk of severe exacerbations and death and is no longer recommended at any step.
+    C: Leukotriene receptor antagonists are less effective than ICS and carry an FDA boxed warning for neuropsychiatric effects.
+    D: '**LABA without ICS** increases asthma-related deaths. Never give salmeterol alone in asthma.'
+    E: She is not having an exacerbation. Systemic glucocorticoids are for acute attacks.
+  mnemonic: |
+    **"Every puff gets a steroid."** In asthma, the reliever should carry ICS.
+  pearl: |
+    Before stepping up any asthma therapy, check **inhaler technique, adherence, triggers (smoke, allergens, NSAIDs, β-blockers) and comorbidities** (rhinitis, GERD, obesity, OSA).
+  objective: |
+    Treat mild asthma with as-needed low-dose ICS–formoterol (or daily low-dose ICS); SABA-only therapy and LABA monotherapy are not recommended.
+  refs:
+    - Global Initiative for Asthma (GINA). Global strategy for asthma management and prevention, 2025 update.
+    - Cloutier MM, et al. 2020 focused updates to the asthma management guidelines (NAEPP). *J Allergy Clin Immunol* 2020;146:1217.
+
+- id: PU-003
+  topic: Incidental pulmonary nodule
+  task: Diagnosis/Testing
+  chapters: [pulmonary/nodule]
+  stem: |
+    A 52-year-old woman had a CT scan of the abdomen and pelvis in the emergency department for right flank pain, which showed a 4-mm obstructing ureteral stone that later passed. The lung bases on the scan showed a **7-mm solid nodule** with smooth margins in the right lower lobe. She has **never smoked**, has no history of cancer and no known exposures to asbestos or radon. She feels well and has no cough, hemoptysis or weight loss.
+
+    Examination is normal. There is no prior chest imaging.
+  lead: Which of the following is the most appropriate next step?
+  choices:
+    A: No further follow-up
+    B: CT of the chest in 6–12 months
+    C: CT of the chest in 3 months
+    D: PET-CT now
+    E: CT-guided needle biopsy
+  answer: B
+  explain: |
+    The **Fleischner Society** guidelines apply to **incidental** nodules in adults ≥35 years (not to lung cancer screening, known cancer or immunosuppression). Management depends on **size, type (solid vs subsolid) and patient risk**.
+
+    For a **single solid nodule 6–8 mm in a low-risk patient** (never-smoker, no other risk factors, smooth margins), get a **CT at 6–12 months**, then consider another at 18–24 months. A solid nodule that is unchanged for **2 years** is considered benign.
+
+    | Single solid nodule | Low risk | High risk |
+    |---|---|---|
+    | <6 mm | No routine follow-up | Optional CT at 12 months |
+    | 6–8 mm | **CT at 6–12 months**, then consider 18–24 months | CT at 6–12 months **and** 18–24 months |
+    | >8 mm | CT at 3 months, PET-CT or tissue sampling | Same |
+  why:
+    A: '"No follow-up" applies to nodules <6 mm in low-risk patients.'
+    C: A 3-month CT is for nodules >8 mm.
+    D: PET-CT is unreliable below about 8 mm (false negatives) and is reserved for larger solid nodules.
+    E: Biopsy of a 7-mm low-risk nodule is high-risk and low-yield.
+  pearl: |
+    **Subsolid (ground-glass) nodules** grow slowly — follow them longer (up to 5 years). A growing solid component is the most worrisome change.
+  objective: |
+    A single incidental 6–8-mm solid lung nodule in a low-risk patient needs a follow-up chest CT at 6–12 months (Fleischner Society).
+  refs:
+    - MacMahon H, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. *Radiology* 2017;284:228.
+
+- id: PU-004
+  topic: Obstructive sleep apnea
+  task: Treatment/Care Decisions
+  chapters: [pulmonary/sleep-apnea]
+  stem: |
+    A 50-year-old man comes to discuss the results of a sleep study. His wife reports loud snoring and pauses in his breathing. He falls asleep while watching television and once nodded off at a red light. He has hypertension treated with amlodipine and lisinopril. He drinks 1–2 beers on weekends and takes no sedatives.
+
+    Blood pressure is 146/90 mm Hg. BMI is 34 kg/m² and neck circumference is 45 cm (17.7 in). The oropharynx is crowded.
+
+    A home sleep apnea test shows an **apnea–hypopnea index of 32 events/hour** with oxygen saturation nadir of 81%.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Continuous positive airway pressure (CPAP)
+    B: Mandibular advancement oral appliance
+    C: Modafinil
+    D: Uvulopalatopharyngoplasty
+    E: Zolpidem at bedtime
+  answer: A
+  explain: |
+    He has **severe obstructive sleep apnea** (AHI ≥30) with **excessive daytime sleepiness** — including drowsy driving — and hypertension.
+
+    **CPAP is first-line therapy** for moderate–severe OSA. It splints the upper airway open, abolishes apneas, improves sleepiness and quality of life, lowers motor-vehicle crash risk and modestly lowers blood pressure. Success depends on **adherence** (≥4 hours per night): mask fitting, humidification and early follow-up matter.
+
+    **Weight loss** is recommended for everyone with OSA and obesity; GLP-1-based therapy can reduce AHI in obesity-related OSA and can be added to, not substituted for, CPAP when sleepiness is dangerous.
+
+    | AHI (events/h) | Severity |
+    |---|---|
+    | 5–14 | Mild |
+    | 15–29 | Moderate |
+    | ≥30 | Severe |
+  why:
+    B: Oral appliances are an option for mild–moderate OSA or for patients who cannot tolerate CPAP; they are less effective in severe OSA.
+    C: Modafinil treats **residual** sleepiness in patients already adherent to CPAP; it does not treat apneas or hypoxemia.
+    D: Upper-airway surgery has modest, unpredictable success and is reserved for selected patients who fail or cannot use CPAP.
+    E: Sedative-hypnotics can worsen apneas and oxygen desaturation.
+  mnemonic: |
+    **STOP-BANG** screen: **S**noring, **T**ired, **O**bserved apneas, **P**ressure (hypertension), **B**MI >35, **A**ge >50, **N**eck >40 cm, **G**ender male. ≥5 = high risk.
+  pearl: |
+    Use **in-lab polysomnography** rather than a home test when the patient has significant cardiopulmonary disease, neuromuscular weakness, chronic opioid use, prior stroke or suspected hypoventilation.
+  objective: |
+    CPAP is first-line treatment for moderate–severe obstructive sleep apnea, especially with daytime sleepiness; oral appliances are for mild–moderate disease or CPAP intolerance.
+  refs:
+    - Patil SP, et al. Treatment of adult obstructive sleep apnea with positive airway pressure: an AASM clinical practice guideline. *J Clin Sleep Med* 2019;15:335.
+    - Kapur VK, et al. Clinical practice guideline for diagnostic testing for adult obstructive sleep apnea (AASM). *J Clin Sleep Med* 2017;13:479.

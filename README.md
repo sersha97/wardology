@@ -79,3 +79,40 @@ Brand: name, tagline, contact email and logo live at the top of `build.py`; logo
 ## Quarterly review
 
 Every Jan / Apr / Jul / Oct: check new guidelines, update the chapter, change `reviewed:`, and add a line to `content/tools/guideline-watch.md`.
+
+## 🎓 QBank (wardology.com/qbank)
+
+Free ABIM Internal Medicine question bank with accounts, tutor and exam modes, peer statistics and performance reports.
+
+| Path | What it is |
+|---|---|
+| `qbank/questions/<category>.yml` | Questions, one file per ABIM blueprint category (`cardio`, `endo`, `gi`, `id`, `rheum`, `pulm`, `nephro`, `onc`, `heme`, `neuro`, `derm`, `obgyn`, `psych`, `geri`, `allergy`, `misc`, `ophtho`, `ent`) |
+| `qbank/app/` | The test-taking app (copied to `site/qbank/`) |
+| `qbank/media/` | Images for questions (only self-made or properly licensed; put the credit in the question) |
+| `qbank_build.py` | Validates questions and writes `functions/_lib/bank.json` (the answer key — served only by the API, never public) |
+| `functions/api/qb/[[path]].js` | API: accounts, tests, grading, statistics |
+| `qbank/schema.sql` | Database tables (Cloudflare D1 `wardology-qbank`, binding `DB` in `wrangler.toml`) |
+
+### Add a question
+
+Copy any question in a `qbank/questions/*.yml` file and edit it. Required fields: `id` (unique, e.g. `CV-009`), `topic`, `task`
+(one of `Diagnosis/Testing`, `Treatment/Care Decisions`, `Risk Assessment/Prognosis/Epidemiology`, `Pathophysiology/Basic Science`),
+`chapters` (library links like `cardiology/af` — the chapter must exist), `stem`, `lead`, `choices` (A–E), `answer`, `explain`,
+`why` (one line for every wrong choice), `objective`, `refs`. Optional: `labs`, `media` (`ecg: af` for a drawn strip from `figures.py`,
+`svg:` or `img:` from `qbank/media/` with `credit:`), `table`, `mnemonic`, `pearl`, `keep_order: true` (numeric options).
+
+Write choices in any order — the build spreads correct answers evenly over A–E (fixed per question id, so never re-letter a live question by hand).
+Run `python3 qbank_build.py --check` to validate, then `python3 build.py`. `functions/_lib/bank.json` is rebuilt every time — commit it too.
+
+### Blueprint targets (ABIM IM, Jan 2026) — goal 300 questions
+
+Cardio 45 · Endo 30 · GI 30 · ID 30 · Rheum/Ortho 30 · Pulm 24 · Nephro/Uro 18 · Onc 18 · Heme 12 · Neuro 12 · Derm 9 · OB/GYN 9 · Psych 9 · Geri 9 · Allergy 6 · Misc 3 · Ophtho 3 · ENT 3.
+At least 75% of items on high-importance topics; no more than 18% on low-frequency ("LF") topics.
+
+### Local test
+
+```bash
+npm i -g wrangler
+wrangler d1 execute wardology-qbank --local --file qbank/schema.sql
+python3 build.py && wrangler pages dev site      # then open http://localhost:8788/qbank/
+```

@@ -1,0 +1,142 @@
+# Nephrology & Urology — ABIM blueprint 6%
+- id: NE-001
+  topic: Hyperkalemia with ECG changes
+  task: Treatment/Care Decisions
+  chapters: [renal/hyperkalemia]
+  stem: |
+    A 68-year-old man is brought to the emergency department because of 1 day of generalized weakness. He has heart failure with reduced ejection fraction and chronic kidney disease. His spironolactone dose was doubled 2 weeks ago. Other medications are lisinopril, carvedilol and furosemide.
+
+    Blood pressure is 118/70 mm Hg and pulse is 58/min. He is alert. Muscle strength is 4/5 symmetrically. The rhythm strip is shown.
+  media:
+    - ecg: hyperk
+      caption: Lead II rhythm strip
+  labs:
+    - [Potassium, 7.1 mEq/L (repeat sample without hemolysis 7.0 mEq/L)]
+    - [Creatinine, 2.6 mg/dL (baseline 1.9 mg/dL)]
+    - [Bicarbonate, 19 mEq/L]
+    - [Glucose, 112 mg/dL]
+  lead: Which of the following is the most appropriate first step in management?
+  choices:
+    A: Intravenous calcium gluconate
+    B: Intravenous regular insulin with dextrose
+    C: Sodium zirconium cyclosilicate orally
+    D: Intravenous furosemide
+    E: Emergency hemodialysis
+  answer: A
+  explain: |
+    The strip shows **tall, peaked T waves, flattened P waves and a widened QRS** — hyperkalemia with **ECG changes**, a medical emergency that can deteriorate to sine-wave rhythm, ventricular fibrillation or asystole without warning.
+
+    Treat in **three steps**, and the first is always to **protect the heart**:
+
+    | Step | Drugs | Onset |
+    |---|---|---|
+    | 1. **Stabilize the membrane** | **IV calcium gluconate** 3 g (or calcium chloride 1 g via central line); repeat if ECG unchanged | 1–3 min, lasts 30–60 min |
+    | 2. **Shift K⁺ into cells** | Regular insulin 10 units IV + dextrose (if glucose <250); nebulized albuterol 10–20 mg | 15–30 min |
+    | 3. **Remove K⁺ from the body** | Loop diuretic (if making urine), potassium binder (SZC, patiromer), **dialysis** if refractory or anuric | Hours |
+
+    Calcium does **not** lower potassium — it restores the gap between resting and threshold potential so the heart cannot fire chaotically. Then stop spironolactone and lisinopril and look for the cause.
+  why:
+    B: Insulin–dextrose is essential and comes **right after** calcium; it lowers potassium in 15–30 minutes but does not protect the myocardium immediately.
+    C: Binders take hours to work and are for potassium removal after stabilization.
+    D: Loop diuretics help remove potassium if he is making urine, but they act slowly and do not protect the heart.
+    E: Dialysis is the definitive removal therapy for refractory hyperkalemia or kidney failure; it comes after membrane stabilization and shifting.
+  mnemonic: |
+    **"C-BIG-K-Drop"**: **C**alcium, **B**eta-agonist, **I**nsulin + **G**lucose, **K**ayexalate/binders, **D**iuretics/dialysis.
+  pearl: |
+    In patients on **digoxin** with hyperkalemia, calcium is still given when ECG changes are present; the "stone heart" fear is not supported by modern data.
+  objective: |
+    Hyperkalemia with ECG changes is treated first with intravenous calcium to stabilize the cardiac membrane, then insulin–dextrose and albuterol to shift potassium, and finally measures to remove potassium.
+  refs:
+    - Palmer BF, Clegg DJ. Diagnosis and treatment of hyperkalemia. *Cleve Clin J Med* 2017;84:934.
+    - 'Lindner G, et al. Acute hyperkalemia in the emergency department: a summary from a Kidney Disease: Improving Global Outcomes conference. *Eur J Emerg Med* 2020;27:329.'
+
+- id: NE-002
+  topic: Recurrent calcium nephrolithiasis
+  task: Treatment/Care Decisions
+  chapters: [renal/kidney-stones]
+  stem: |
+    A 44-year-old man comes to the office after passing his **third calcium oxalate kidney stone** in 4 years. To prevent stones he has **stopped eating dairy products**. He drinks about 1.2 L of fluid daily and eats fast food several times a week. He has hypertension and takes no medications.
+
+    Blood pressure is 142/88 mm Hg. Examination is normal.
+  labs:
+    - [Calcium (serum), 9.6 mg/dL]
+    - [Parathyroid hormone, 38 pg/mL]
+    - [Uric acid (serum), 5.8 mg/dL]
+    - [24-hour urine — volume, 1.3 L]
+    - [24-hour urine — calcium, 340 mg (normal <300 mg)]
+    - [24-hour urine — oxalate, 38 mg (normal <45 mg)]
+    - [24-hour urine — citrate, 620 mg (normal >450 mg)]
+    - [24-hour urine — sodium, 230 mEq]
+    - [24-hour urine — uric acid, 610 mg (normal <800 mg)]
+  lead: In addition to increasing fluid intake, which of the following is the most appropriate recommendation?
+  choices:
+    A: Continue avoiding dairy products
+    B: Start allopurinol
+    C: Start chlorthalidone and reduce dietary sodium
+    D: Start vitamin C 1000 mg daily
+    E: Start potassium citrate
+  answer: C
+  explain: |
+    His 24-hour urine shows **idiopathic hypercalciuria** (normal serum calcium and PTH) with **low urine volume** and **high sodium intake** — the drivers of his calcium stones.
+
+    The plan:
+    - **Fluids** to make **>2.5 L of urine per day** (the single most effective measure).
+    - **Thiazide diuretic** (chlorthalidone, indapamide or hydrochlorothiazide): increases distal calcium reabsorption → **lowers urine calcium** and stone recurrence. It also treats his hypertension.
+    - **Low sodium** diet: sodium drags calcium into urine; a high-salt diet blunts the thiazide effect.
+    - **Normal dietary calcium (1000–1200 mg/day)** and moderate animal protein.
+  why:
+    A: 'A **low-calcium diet increases stones**: less calcium in the gut leaves more free oxalate to be absorbed, raising urine oxalate. It also harms bone.'
+    B: Allopurinol is for calcium stones with **hyperuricosuria** (and normal urine calcium) or for uric acid stones. His urine uric acid is normal.
+    D: Vitamin C is metabolized to oxalate and increases calcium oxalate stone risk.
+    E: Potassium citrate is for **hypocitraturia** (or uric acid stones). His citrate is normal; it is also an add-on to offset thiazide-induced hypokalemia.
+  pearl: |
+    Every first stone needs serum calcium and a stone analysis; **recurrent stones** (or a first stone in a high-risk patient) need a **24-hour urine** to pick targeted therapy.
+  objective: |
+    Recurrent calcium stones with idiopathic hypercalciuria are prevented with high fluid intake, a thiazide diuretic, sodium restriction and a normal-calcium diet.
+  refs:
+    - Pearle MS, et al. Medical management of kidney stones: AUA guideline. *J Urol* 2014;192:316.
+    - Qaseem A, et al. Dietary and pharmacologic management to prevent recurrent nephrolithiasis in adults: ACP guideline. *Ann Intern Med* 2014;161:659.
+
+- id: NE-003
+  topic: Benign prostatic hyperplasia
+  task: Treatment/Care Decisions
+  chapters: [renal/bph]
+  stem: |
+    A 64-year-old man comes to the office with 1 year of a weak urinary stream, hesitancy, a feeling of incomplete emptying and getting up **three times a night** to urinate. The symptoms bother him and he wants treatment. He has no dysuria, hematuria, fever, back pain or weight loss. He takes no medications.
+
+    Blood pressure is 134/82 mm Hg. The abdomen is soft without a palpable bladder. Digital rectal examination shows a **smooth, symmetric, nontender, mildly enlarged prostate (estimated 30 g)** without nodules.
+  labs:
+    - [Urinalysis, no blood, leukocytes or glucose]
+    - [Creatinine, 0.9 mg/dL]
+    - [Post-void residual (bladder scan), 60 mL]
+    - [International Prostate Symptom Score, 17 (moderate)]
+  lead: Which of the following is the most appropriate initial treatment?
+  choices:
+    A: Tamsulosin
+    B: Finasteride
+    C: Oxybutynin
+    D: Transurethral resection of the prostate
+    E: Prostate biopsy
+  answer: A
+  explain: |
+    He has bothersome **lower urinary tract symptoms (LUTS) from benign prostatic hyperplasia**, with a normal urinalysis, normal creatinine and a small post-void residual.
+
+    First-line medical therapy is an **α₁-blocker** (tamsulosin, alfuzosin, silodosin, doxazosin, terazosin). Blocking α₁ receptors in prostatic and bladder-neck smooth muscle **relaxes the outlet** and improves symptoms **within days**, regardless of prostate size.
+
+    | Drug | Works on | Onset | Use |
+    |---|---|---|---|
+    | α₁-blocker | Dynamic (muscle tone) | Days | First line for bothersome LUTS |
+    | 5α-reductase inhibitor | Static (gland size) | 6–12 months; shrinks gland ~20%–30% | Prostate **>30–40 g**; reduces retention and surgery risk |
+    | PDE-5 inhibitor (tadalafil) | Smooth muscle | Weeks | LUTS with erectile dysfunction |
+    | Antimuscarinic / β₃-agonist | Bladder overactivity | Weeks | Persistent storage symptoms, PVR <250–300 mL |
+  why:
+    B: 5α-reductase inhibitors take months to work and are reserved for larger prostates (>30–40 g), often combined with an α-blocker.
+    C: Antimuscarinic drugs treat bladder overactivity; alone they are not first-line for obstructive BPH symptoms and can precipitate urinary retention.
+    D: Surgery is for symptoms that fail medical therapy or for complications (retention, recurrent infection, stones, hematuria, upper-tract damage).
+    E: A smooth, symmetric prostate without nodules and no PSA indication does not call for biopsy.
+  pearl: |
+    Warn patients starting tamsulosin about **orthostatic dizziness** and **intraoperative floppy iris syndrome** — tell the eye surgeon before cataract surgery.
+  objective: |
+    An α₁-blocker such as tamsulosin is first-line therapy for bothersome LUTS due to BPH; 5α-reductase inhibitors are added for larger prostates.
+  refs:
+    - Sandhu JS, et al. Management of lower urinary tract symptoms attributed to benign prostatic hyperplasia: AUA guideline amendment 2023. *J Urol* 2024;211:11.

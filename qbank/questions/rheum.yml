@@ -1,0 +1,210 @@
+# Rheumatology & Orthopedics — ABIM blueprint 10%
+- id: RH-001
+  topic: Gout flare during urate-lowering therapy
+  task: Treatment/Care Decisions
+  chapters: [rheum/gout]
+  stem: |
+    A 66-year-old man comes to the office with 1 day of severe pain, redness and swelling of his right first metatarsophalangeal joint. He had two similar episodes last year. **Allopurinol** 100 mg daily was started 4 months ago and increased to 200 mg daily 6 weeks ago. He also has hypertension and chronic kidney disease. Medications are allopurinol, amlodipine and losartan. He stopped taking the colchicine prescribed with allopurinol after 2 months.
+
+    Temperature is 37.4 °C (99.3 °F). The right first MTP joint is red, warm, swollen and too tender to touch. No tophi are seen.
+  labs:
+    - [Creatinine, 1.8 mg/dL (eGFR 38 mL/min/1.73 m²)]
+    - [Serum urate, 7.4 mg/dL]
+    - [Leukocyte count, "9,600/µL"]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Stop allopurinol until the flare resolves; start indomethacin
+    B: Continue allopurinol and start oral prednisone for a short course
+    C: Stop allopurinol and switch to febuxostat
+    D: Increase allopurinol to 600 mg daily as the only change
+    E: Continue allopurinol and start indomethacin
+  answer: B
+  explain: |
+    **Flares are common in the first months of urate-lowering therapy (ULT)** — falling urate levels mobilize crystals from tissue deposits. That is a reason to **keep ULT going**, treat the flare, and use prophylaxis.
+
+    Treat the flare with any of the three anti-inflammatory options, choosing by comorbidities. With **CKD stage 3b**, NSAIDs are a poor choice, so a **short oral glucocorticoid course** (prednisone 30–40 mg/day, then taper over 7–10 days) is best. Low-dose colchicine is an alternative with renal dose adjustment and no interacting drugs.
+
+    Then:
+    - **Restart prophylaxis** (low-dose colchicine or low-dose prednisone) for **3–6 months** after starting ULT.
+    - **Titrate allopurinol** upward every few weeks — even in CKD — to a **serum urate <6 mg/dL**.
+  why:
+    A: Stopping ULT during a flare is unnecessary and causes urate swings that prolong flares; NSAIDs are also risky with CKD.
+    C: Febuxostat is no more effective here and carries a boxed warning for cardiovascular death; the problem is the flare and an unmet urate target, not allopurinol failure.
+    D: Allopurinol should be titrated, but raising the dose does not treat the current flare.
+    E: Continuing allopurinol is correct, but NSAIDs such as indomethacin can worsen kidney function with an eGFR of 38.
+  mnemonic: |
+    **"Start low, go slow, aim below 6"** — allopurinol 100 mg (50 mg in CKD), increase by 100 mg every 2–5 weeks, target urate <6.
+  pearl: |
+    Before allopurinol, test for **HLA-B\*58:01** in patients of Southeast Asian (Han Chinese, Korean, Thai) or African American ancestry — carriers have a high risk of severe cutaneous reactions (SJS/TEN, DRESS).
+  objective: |
+    Continue urate-lowering therapy during a gout flare, treat the flare according to comorbidities (glucocorticoids when NSAIDs are unsafe), add prophylaxis, and titrate to a serum urate below 6 mg/dL.
+  refs:
+    - FitzGerald JD, et al. 2020 American College of Rheumatology guideline for the management of gout. *Arthritis Care Res* 2020;72:744.
+
+- id: RH-002
+  topic: Early rheumatoid arthritis
+  task: Treatment/Care Decisions
+  chapters: [rheum/ra]
+  stem: |
+    A 42-year-old woman comes to the office with 3 months of pain and swelling in both hands and wrists. Her hands are stiff for about **90 minutes** every morning. She has trouble opening jars and typing at work. Ibuprofen helps partly. She does not plan pregnancy and uses a levonorgestrel IUD.
+
+    There is symmetric swelling and tenderness of the 2nd and 3rd **metacarpophalangeal and proximal interphalangeal joints** of both hands and both wrists. The distal interphalangeal joints are spared. There are no rashes, nail changes or nodules.
+  labs:
+    - [Rheumatoid factor, positive (high titer)]
+    - [Anti–cyclic citrullinated peptide antibodies, positive (high titer)]
+    - [C-reactive protein, 2.4 mg/dL]
+    - [Complete blood count, normal]
+    - [ALT, 18 U/L]
+    - [Creatinine, 0.7 mg/dL]
+    - [Hepatitis B surface antigen and core antibody; hepatitis C antibody, negative]
+    - [Hand radiographs, periarticular osteopenia; no erosions]
+  lead: In addition to a short course of low-dose prednisone, which of the following is the most appropriate treatment?
+  choices:
+    A: Methotrexate
+    B: Adalimumab
+    C: Hydroxychloroquine
+    D: Continue ibuprofen alone and reassess in 6 months
+    E: Tofacitinib
+  answer: A
+  explain: |
+    Symmetric small-joint polyarthritis with prolonged morning stiffness, **high-titer RF and anti-CCP** and elevated CRP is **rheumatoid arthritis** with moderate–high disease activity. Anti-CCP is highly specific (~95%) and predicts erosive disease.
+
+    The window to prevent joint damage is early. Start a **conventional synthetic DMARD now — methotrexate is the anchor drug** (start ~15 mg weekly, increase to 20–25 mg weekly, with **daily folic acid**). Treat to target (remission or low disease activity), reassess every 1–3 months, and add a biologic or targeted synthetic DMARD if the target is not reached in 3–6 months.
+
+    Before methotrexate, check CBC, liver tests, creatinine, hepatitis B and C serologies and a chest radiograph; counsel to **limit alcohol** and use **contraception** (methotrexate is teratogenic).
+  why:
+    B: TNF inhibitors are added when methotrexate fails to reach target. Monotherapy as the first DMARD is not preferred, and they cost far more.
+    C: Hydroxychloroquine is used for **low** disease activity or in combination. It is not enough for moderate–high activity RA.
+    D: NSAIDs relieve symptoms but do not stop erosions. Delaying a DMARD for 6 months risks irreversible damage.
+    E: JAK inhibitors are reserved for inadequate response to methotrexate and carry warnings for VTE, MACE and malignancy (especially age ≥50 with risk factors).
+  pearl: |
+    RA spares the **DIP joints**. DIP involvement points to osteoarthritis (Heberden nodes) or psoriatic arthritis (with nail pitting).
+  objective: |
+    Start methotrexate (with folic acid) promptly for newly diagnosed moderate–high activity rheumatoid arthritis, using a short glucocorticoid bridge if needed, and escalate by treat-to-target.
+  refs:
+    - Fraenkel L, et al. 2021 American College of Rheumatology guideline for the treatment of rheumatoid arthritis. *Arthritis Care Res* 2021;73:924.
+
+- id: RH-003
+  topic: Giant cell arteritis
+  task: Treatment/Care Decisions
+  chapters: [rheum/gca-pmr]
+  stem: |
+    A 74-year-old woman comes to the office with 3 weeks of a new headache over her right temple. Combing her hair hurts, and her jaw aches after chewing for a minute. She also has aching and stiffness of her shoulders and hips for 1 hour each morning. She has lost 3 kg (6.6 lb) and has had low-grade fevers. Her vision is normal.
+
+    Temperature is 37.8 °C (100.0 °F) and blood pressure is 138/80 mm Hg in both arms. The right temporal artery is tender and nodular with a reduced pulse. Visual acuity is 20/25 in both eyes; fundi are normal. Shoulder range of motion is limited by pain; strength is normal.
+  labs:
+    - [Erythrocyte sedimentation rate, 88 mm/h]
+    - [C-reactive protein, 6.9 mg/dL]
+    - [Hemoglobin, 11.1 g/dL]
+    - [Platelets, "468,000/µL"]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Temporal artery biopsy, and start prednisone if the biopsy is positive
+    B: Prednisone 15 mg daily
+    C: Prednisone 40–60 mg daily now, then temporal artery biopsy or ultrasound
+    D: MRI of the brain
+    E: Aspirin alone
+  answer: C
+  explain: |
+    New headache after 50, **scalp tenderness, jaw claudication**, a tender temporal artery, polymyalgia symptoms and very high inflammatory markers = **giant cell arteritis (GCA)** until proven otherwise.
+
+    The feared complication is sudden, **permanent vision loss** from anterior ischemic optic neuropathy. So: **start high-dose glucocorticoids immediately** (prednisone 40–60 mg/day; IV methylprednisolone if vision is affected), **then confirm** with temporal artery biopsy or vascular ultrasound. Biopsy stays diagnostic for at least **1–2 weeks** after steroids start.
+
+    Add **tocilizumab** to allow a faster steroid taper (fewer relapses and less steroid toxicity).
+  why:
+    A: Waiting for biopsy before treating risks blindness; biopsy findings persist for weeks after steroids start.
+    B: 15 mg is the dose for **isolated polymyalgia rheumatica**. GCA needs high-dose glucocorticoids.
+    D: Brain MRI does not diagnose GCA and delays treatment. (MRI or CT angiography of the aorta can assess large-vessel GCA later.)
+    E: Aspirin is not a substitute for glucocorticoids; its role in preventing ischemic events in GCA is uncertain.
+  mnemonic: |
+    GCA red flags — **"JAW HuRTS"**: **J**aw claudication, **A**ge >50, **W**orse vision, **H**eadache (new), **R**heumatica (PMR), **T**ender **S**calp.
+  pearl: |
+    About half of patients with GCA have PMR, and about 15% of patients with PMR develop GCA. Ask every PMR patient about headache, jaw claudication and vision **at every visit**.
+  objective: |
+    When giant cell arteritis is suspected, start high-dose glucocorticoids immediately and confirm the diagnosis with temporal artery biopsy or ultrasound afterward.
+  refs:
+    - Maz M, et al. 2021 American College of Rheumatology/Vasculitis Foundation guideline for the management of giant cell arteritis and Takayasu arteritis. *Arthritis Rheumatol* 2021;73:1349.
+    - Stone JH, et al. Trial of tocilizumab in giant-cell arteritis (GiACTA). *N Engl J Med* 2017;377:317.
+
+- id: RH-004
+  topic: Acute low back pain
+  task: Diagnosis/Testing
+  chapters: [rheum/back-shoulder]
+  stem: |
+    A 38-year-old man who works in a warehouse comes to the office with 5 days of low back pain that began after lifting a heavy box. The pain is in the lower lumbar area and right buttock and does not travel below the knee. It is worse with bending and better lying still. He has no fever, weight loss, history of cancer, injection drug use, bowel or bladder changes, or numbness in the groin.
+
+    Temperature is 36.8 °C (98.2 °F). There is right paraspinal muscle tenderness and limited flexion due to pain. Straight-leg raise is negative bilaterally. Strength, sensation and reflexes in both legs are normal.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: MRI of the lumbar spine
+    B: Lumbar spine radiographs
+    C: Nonsteroidal anti-inflammatory drug and advice to stay active
+    D: Bed rest for 1 week
+    E: Oxycodone for 2 weeks
+  answer: C
+  explain: |
+    This is **acute nonspecific (mechanical) low back pain** with **no red flags** and a normal neurologic examination. More than 90% of patients improve within 4–6 weeks regardless of treatment.
+
+    Management:
+    - **No imaging** for the first 6 weeks without red flags — imaging finds incidental degenerative changes, does not improve outcomes, and leads to more procedures.
+    - **Stay active**; return to normal activity as tolerated.
+    - First-line treatments: **superficial heat, massage, acupuncture or spinal manipulation**; if medication is needed, an **NSAID** or a short course of a **skeletal muscle relaxant**.
+
+    | Red flags → image early | Concern |
+    |---|---|
+    | Cancer history, unexplained weight loss | Metastasis |
+    | Fever, injection drug use, recent infection, immunosuppression | Epidural abscess, osteomyelitis |
+    | Saddle anesthesia, urinary retention, bilateral leg weakness | Cauda equina syndrome |
+    | Progressive or severe neurologic deficit | Cord or root compression |
+    | Osteoporosis, glucocorticoid use, older age with trauma | Compression fracture |
+  why:
+    A: MRI without red flags does not change management and often shows disk bulges unrelated to symptoms. Reserve it for red flags or persistent radiculopathy in a surgical or injection candidate.
+    B: Radiographs expose the patient to radiation and add nothing without red flags.
+    D: Bed rest slows recovery compared with staying active.
+    E: Opioids are no better than NSAIDs for acute low back pain and carry risks of dependence and harm.
+  pearl: |
+    Sciatica (pain below the knee with a positive straight-leg raise) without deficits is also treated conservatively first; most cases improve within 6 weeks.
+  objective: |
+    Acute low back pain without red flags needs no imaging; treat with activity, heat and NSAIDs or a short muscle-relaxant course.
+  refs:
+    - Qaseem A, et al. Noninvasive treatments for acute, subacute, and chronic low back pain: a clinical practice guideline from the American College of Physicians. *Ann Intern Med* 2017;166:514.
+
+- id: RH-005
+  topic: Adhesive capsulitis
+  task: Diagnosis/Testing
+  chapters: [rheum/back-shoulder]
+  stem: |
+    A 54-year-old woman with type 2 diabetes mellitus comes to the office with 4 months of gradually worsening pain and stiffness of her left shoulder. She now cannot reach behind her back to fasten her bra or reach a high shelf. The pain wakes her at night when she rolls onto that side. She recalls no injury.
+
+    There is no shoulder swelling or warmth. **Active and passive range of motion are both markedly reduced** in all planes, most severely in **external rotation**. Strength is normal within the available range. Shoulder radiographs are normal.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Rotator cuff tear
+    B: Adhesive capsulitis
+    C: Subacromial impingement syndrome
+    D: Glenohumeral osteoarthritis
+    E: Biceps tendinopathy
+  answer: B
+  explain: |
+    The key finding is **loss of both active AND passive motion**, worst in **external rotation**, with **normal radiographs**. That is **adhesive capsulitis ("frozen shoulder")** — inflammation and fibrosis of the glenohumeral capsule. It is much more common in **diabetes** and thyroid disease and after periods of immobility.
+
+    It runs in phases — **freezing** (painful), **frozen** (stiff), **thawing** — over 1–3 years. Treatment: physical therapy with stretching, NSAIDs, and an **intra-articular glucocorticoid injection** for pain in the early phase.
+
+    | | Active ROM | Passive ROM | Clue |
+    |---|---|---|---|
+    | Rotator cuff tendinopathy / impingement | Painful arc | Normal | Pain on 60–120° abduction |
+    | Rotator cuff tear | **Reduced, weak** | **Normal** | Drop-arm sign |
+    | **Adhesive capsulitis** | **Reduced** | **Reduced** | External rotation worst, normal X-ray |
+    | Glenohumeral OA | Reduced | Reduced | Joint space loss, osteophytes on X-ray |
+  why:
+    A: A rotator cuff tear limits **active** motion and strength, but the examiner can move the arm passively through a normal range.
+    C: Impingement causes a painful arc with preserved passive motion.
+    D: Osteoarthritis also limits both active and passive motion, but radiographs would show joint-space narrowing and osteophytes.
+    E: Biceps tendinopathy causes anterior shoulder pain with tenderness in the bicipital groove and does not restrict passive motion.
+  pearl: |
+    If passive motion is lost after a fall in an older adult, get an axillary view — a **posterior shoulder dislocation** is easily missed and also blocks external rotation.
+  objective: |
+    Loss of both active and passive shoulder motion, especially external rotation, with normal radiographs indicates adhesive capsulitis, which is associated with diabetes.
+  refs:
+    - Kelley MJ, et al. Shoulder pain and mobility deficits: adhesive capsulitis. Clinical practice guidelines (APTA Orthopaedic Section). *J Orthop Sports Phys Ther* 2013;43:A1.
+    - Redler LH, Dennis ER. Treatment of adhesive capsulitis of the shoulder. *J Am Acad Orthop Surg* 2019;27:e544.

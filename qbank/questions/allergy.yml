@@ -1,0 +1,41 @@
+# Allergy & Immunology — ABIM blueprint 2%
+- id: AL-001
+  topic: Systemic reaction to an insect sting
+  task: Treatment/Care Decisions
+  chapters: [derm/anaphylaxis]
+  stem: |
+    A 42-year-old man comes to the office 1 week after an emergency department visit. While gardening he was stung on the hand by a **yellow jacket**. Within 10 minutes he developed **generalized hives, throat tightness, wheezing and lightheadedness**. Paramedics gave intramuscular epinephrine, and he recovered fully after observation. He had local swelling after a bee sting as a child. He has hypertension treated with amlodipine.
+
+    Examination today is normal.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Prescribe an oral antihistamine to take after any future sting
+    B: Prescribe an epinephrine autoinjector and refer for venom skin testing and immunotherapy
+    C: Prescribe daily oral prednisone during the summer months
+    D: Prescribe an epinephrine autoinjector only; no further evaluation is needed
+    E: Advise avoidance of outdoor activity; no prescription is needed
+  answer: B
+  explain: |
+    He had **anaphylaxis** from a hymenoptera sting: skin involvement plus **respiratory and cardiovascular symptoms** within minutes. Without treatment, the chance of a similar or worse reaction to a future sting is about **30%–60%** in adults.
+
+    Two steps protect him:
+    1. **Epinephrine autoinjector** (two devices), with training to use it **immediately** for any systemic reaction and then call emergency services.
+    2. **Referral to an allergist** for venom-specific IgE or skin testing and **venom immunotherapy (VIT)**. VIT reduces the risk of a future systemic reaction to **under 5%** and is usually continued for **3–5 years**.
+
+    | Reaction to a sting | Venom testing & immunotherapy? |
+    |---|---|
+    | Large local reaction (swelling >10 cm, contiguous) | Not routinely |
+    | Cutaneous-only systemic reaction (adults) | Consider (shared decision) |
+    | **Anaphylaxis** (respiratory or cardiovascular) | **Yes** |
+  why:
+    A: Antihistamines treat itching and hives but do not reverse airway edema or hypotension; they are never a substitute for epinephrine.
+    C: Prophylactic glucocorticoids do not prevent sting anaphylaxis and cause harm.
+    D: An autoinjector alone leaves him at high risk; immunotherapy is the only treatment that changes the natural history.
+    E: Avoidance is advised but not reliable, and he needs epinephrine available.
+  pearl: |
+    Beta-blockers can make anaphylaxis harder to treat (epinephrine resistance — give **glucagon**); ACE inhibitors may worsen reactions during venom immunotherapy. Review his medications before VIT.
+  objective: |
+    After a systemic (anaphylactic) reaction to an insect sting, prescribe an epinephrine autoinjector and refer for venom testing and venom immunotherapy.
+  refs:
+    - Golden DBK, et al. Stinging insect hypersensitivity: a practice parameter update 2016. *Ann Allergy Asthma Immunol* 2017;118:28.
+    - Golden DBK, et al. Anaphylaxis: a 2023 practice parameter update. *Ann Allergy Asthma Immunol* 2024;132:124.

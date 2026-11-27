@@ -1,0 +1,83 @@
+# Psychiatry — ABIM blueprint 3%
+- id: PS-001
+  topic: Alcohol use disorder — pharmacotherapy
+  task: Treatment/Care Decisions
+  chapters: [psych/alcohol-use, neuro/alcohol-withdrawal]
+  stem: |
+    A 45-year-old man comes to the office because he wants help to stop drinking. He drinks 8–10 beers daily and has failed to cut down several times. He finished a supervised outpatient withdrawal 1 week ago and has not had a drink since. He has **opioid use disorder in remission** and has taken **buprenorphine–naloxone** daily for 3 years. He attends weekly counseling.
+
+    Vital signs are normal. There is no tremor, jaundice or stigmata of chronic liver disease.
+  labs:
+    - [ALT, 48 U/L]
+    - [AST, 66 U/L]
+    - [Bilirubin, total, 0.8 mg/dL]
+    - [Albumin, 4.1 g/dL]
+    - [Creatinine, 0.9 mg/dL (eGFR >90 mL/min/1.73 m²)]
+  lead: Which of the following is the most appropriate medication to help him maintain abstinence from alcohol?
+  choices:
+    A: Naltrexone
+    B: Acamprosate
+    C: Disulfiram
+    D: Diazepam daily
+    E: No medication; counseling alone
+  answer: B
+  explain: |
+    Medications for **alcohol use disorder (AUD)** are underused even though they reduce relapse. The two **first-line** drugs are **naltrexone** and **acamprosate**; the choice depends on the patient.
+
+    He takes **buprenorphine**, an opioid. **Naltrexone is an opioid antagonist** — it would block buprenorphine's effect and can precipitate **opioid withdrawal**, risking relapse to opioid use. **Acamprosate** (a glutamate modulator that eases protracted withdrawal) has no opioid interaction and is **cleared by the kidneys**, not the liver — a good fit for him.
+
+    | Drug | Best when | Avoid when |
+    |---|---|---|
+    | **Naltrexone** (oral or monthly IM) | Reducing heavy drinking; craving | **Any opioid use**, acute hepatitis or liver failure |
+    | **Acamprosate** | Maintaining abstinence after withdrawal; liver disease | **CrCl ≤30**; reduce dose CrCl 30–50 |
+    | Disulfiram | Highly motivated, supervised dosing | Heart disease, psychosis, poor adherence |
+    | Gabapentin, topiramate | Second line | — |
+  why:
+    A: Naltrexone is contraindicated with ongoing opioid therapy such as buprenorphine.
+    C: Disulfiram works only with supervised adherence and has weaker evidence; it is not first-line.
+    D: Benzodiazepines treat acute withdrawal; long-term use is addictive and dangerous with alcohol and buprenorphine (respiratory depression).
+    E: Combining medication with counseling works better than counseling alone; he should be offered pharmacotherapy.
+  pearl: |
+    Mild aminotransferase elevation (AST > ALT, as here) is **not** a reason to avoid naltrexone in other patients — the risk is in acute hepatitis or decompensated cirrhosis.
+  objective: |
+    Offer naltrexone or acamprosate to patients with alcohol use disorder; choose acamprosate when the patient takes opioids (including buprenorphine) and avoid it in severe kidney disease.
+  refs:
+    - Reus VI, et al. The American Psychiatric Association practice guideline for the pharmacological treatment of patients with alcohol use disorder. *Am J Psychiatry* 2018;175:86.
+
+- id: PS-002
+  topic: Generalized anxiety disorder
+  task: Treatment/Care Decisions
+  chapters: [psych/anxiety-depression]
+  stem: |
+    A 31-year-old woman comes to the office because she "can't turn her brain off." For the past 8 months she has worried almost every day about her job, finances and her parents' health, even when things are going well. She feels restless and tense, has trouble concentrating, tires easily and lies awake worrying. She has no panic attacks, no thoughts of self-harm and no prior psychiatric treatment. She drinks one glass of wine on weekends and does not use other substances. She does not plan pregnancy and uses an IUD.
+
+    Vital signs and examination are normal. Her GAD-7 score is 15 (moderate–severe). PHQ-9 score is 6.
+  labs:
+    - [TSH, 1.6 µU/mL]
+    - [Complete blood count and metabolic panel, normal]
+  lead: In addition to referral for cognitive behavioral therapy, which of the following is the most appropriate treatment?
+  choices:
+    A: Alprazolam as needed
+    B: Sertraline
+    C: Propranolol
+    D: Quetiapine
+    E: Hydroxyzine nightly as the only medication
+  answer: B
+  explain: |
+    Excessive, hard-to-control worry about many things on most days for **≥6 months**, with restlessness, fatigue, poor concentration, muscle tension and insomnia, is **generalized anxiety disorder (GAD)**. Hyperthyroidism and substances are excluded.
+
+    First-line treatment is **cognitive behavioral therapy and/or an SSRI or SNRI** (sertraline, escitalopram, venlafaxine XR, duloxetine). Start at a **low dose** (anxious patients feel early activation side effects), increase after 1–2 weeks, and allow **4–6 weeks** for effect. Continue for **6–12 months after response** before tapering.
+  why:
+    A: Benzodiazepines relieve anxiety quickly but cause dependence, tolerance, falls and cognitive effects, and do not treat co-occurring depression; they are at most a short-term bridge, never first-line.
+    C: Propranolol blunts physical symptoms of **performance anxiety** but does not treat GAD.
+    D: Atypical antipsychotics have some efficacy but cause weight gain, metabolic syndrome and other adverse effects; they are not first-line.
+    E: Hydroxyzine is a second-line option with sedation and anticholinergic effects; on its own it is not the preferred first treatment.
+  mnemonic: |
+    GAD — **"Worried WARRIORS"**: **W**orry, **A**nxious, **R**estless, **R**educed concentration, **I**rritability, **O**n edge/muscle tension, **R**est disturbed (sleep), **S**ix months.
+  pearl: |
+    Screen all adults for anxiety (USPSTF 2023 recommends screening adults <65 years) and always ask about **suicidal thoughts** when starting an antidepressant in young adults.
+  objective: |
+    Treat generalized anxiety disorder with CBT and/or an SSRI or SNRI; avoid benzodiazepines as first-line therapy.
+  refs:
+    - US Preventive Services Task Force. Screening for anxiety disorders in adults: recommendation statement. *JAMA* 2023;329:2163.
+    - DeMartini J, et al. Generalized anxiety disorder. *Ann Intern Med* 2019;170:ITC49.

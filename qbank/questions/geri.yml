@@ -1,0 +1,82 @@
+# Geriatric Syndromes — ABIM blueprint 3%
+- id: GE-001
+  topic: Fall prevention
+  task: Treatment/Care Decisions
+  chapters: [geri/falls]
+  stem: |
+    A 78-year-old woman comes for an annual visit. She has fallen **twice in the past year** while walking in her home — once tripping on a rug, once turning quickly in the kitchen — without serious injury. She now worries about falling and walks less. She has hypertension treated with amlodipine and takes no sedatives or other medications. Her eyeglasses were updated 6 months ago.
+
+    Blood pressure is 132/74 mm Hg supine and 130/72 mm Hg standing, without symptoms. Corrected visual acuity is 20/30 in both eyes. She needs to push with her arms to rise from a chair. The **Timed Up and Go test takes 16 seconds** (normal <12 seconds) with a slow, cautious gait. Sensation and reflexes in the feet are normal.
+  labs:
+    - [25-Hydroxyvitamin D, 34 ng/mL]
+    - [Hemoglobin, 13.1 g/dL]
+    - [TSH, 2.2 µU/mL]
+  lead: Which of the following is the most effective intervention to reduce her risk of further falls?
+  choices:
+    A: Vitamin D 2000 units daily
+    B: Hip protectors
+    C: Exercise program with balance and strength training
+    D: Advise her to limit walking to reduce exposure
+    E: Stop amlodipine
+  answer: C
+  explain: |
+    She screens **positive for fall risk**: two falls, fear of falling, slow Timed Up and Go and **proximal leg weakness** (needs arms to rise). Orthostatic hypotension, poor vision, medications and vitamin D deficiency are not the problem here.
+
+    The single best-proven intervention for community-dwelling older adults is **exercise** — especially programs that combine **balance, gait and strength training** (for example physical therapy, Otago, tai chi). Exercise reduces falls by about 20%–35%. Add a **home safety assessment** (rugs, lighting, grab bars).
+
+    Multifactorial assessment and intervention is also recommended for patients at high risk.
+  why:
+    A: In older adults **without** vitamin D deficiency, supplementation does **not** prevent falls (USPSTF recommends against it for this purpose).
+    B: Hip protectors may reduce hip fractures in nursing-home residents with good adherence; they do not prevent falls.
+    D: Restricting activity worsens deconditioning and fear of falling and increases fall risk.
+    E: Her blood pressure is well controlled without orthostatic drop; amlodipine is not contributing to her falls.
+  mnemonic: |
+    Fall risk review — **"I HATE FALLING"**: **I**nflammation of joints, **H**ypotension (orthostatic), **A**uditory/visual impairment, **T**remor, **E**quilibrium problems, **F**oot problems, **A**rrhythmia, **L**eg-length mismatch, **L**ack of conditioning, **I**llness, **N**utrition, **G**ait disturbance.
+  pearl: |
+    The **"STEADI"** approach: ask every patient ≥65 three questions — fallen in the past year? feel unsteady? worry about falling? A yes leads to gait, strength and balance testing.
+  objective: |
+    Exercise programs with balance and strength training are the most effective intervention to prevent falls in community-dwelling older adults; vitamin D does not prevent falls in those without deficiency.
+  refs:
+    - US Preventive Services Task Force. Interventions to prevent falls in community-dwelling older adults: recommendation statement. *JAMA* 2024;332:51.
+    - Montero-Odasso M, et al. World guidelines for falls prevention and management for older adults. *Age Ageing* 2022;51:afac205.
+
+- id: GE-002
+  topic: Drug-induced delirium (anticholinergic)
+  task: Treatment/Care Decisions
+  chapters: [geri/delirium]
+  stem: |
+    An 82-year-old man is brought to the office by his daughter because he has been confused for 4 days. He has mild Alzheimer dementia and normally manages his own dressing and meals. Since earlier this week he has been drowsy during the day, awake and agitated at night, and at times does not recognize his grandson. **Oxybutynin** was started 6 days ago for urinary urgency. Other medications are donepezil and lisinopril.
+
+    Temperature is 37.0 °C (98.6 °F), blood pressure is 128/70 mm Hg and pulse is 84/min. He is inattentive and cannot name the months backward. Mucous membranes are dry. There is no focal neurologic deficit and no suprapubic tenderness; bladder scan shows 90 mL.
+  labs:
+    - [Glucose, sodium, calcium and creatinine, normal]
+    - [Complete blood count, normal]
+    - [Urinalysis, no leukocytes or nitrite]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Haloperidol at bedtime
+    B: Stop oxybutynin
+    C: Noncontrast CT of the head
+    D: Lorazepam as needed for agitation
+    E: Add memantine
+  answer: B
+  explain: |
+    Acute onset of **fluctuating inattention and altered consciousness** = **delirium** (superimposed on dementia). The timing points to a cause: **oxybutynin**, a strongly **anticholinergic** drug, started 2 days before symptoms. Anticholinergics cross the blood–brain barrier and directly worsen cognition — and they **oppose donepezil**.
+
+    The most effective treatment of delirium is to **find and remove the cause**. Stop oxybutynin; confusion usually clears over days. Use nondrug measures (reorientation, sleep hygiene, glasses and hearing aids, family presence). If urgency still needs treatment, try **behavioral therapy** or a **β₃-agonist (mirabegron, vibegron)** rather than another antimuscarinic.
+
+    Oxybutynin is on the **AGS Beers Criteria** list of drugs to avoid in older adults — especially with dementia.
+  why:
+    A: Antipsychotics do not shorten delirium and add risks (falls, QT prolongation, higher mortality in dementia). Reserve them for severe agitation that endangers the patient.
+    C: There is no trauma, focal deficit or anticoagulation, and a clear drug cause is present; imaging is low-yield.
+    D: Benzodiazepines worsen delirium (except in alcohol or benzodiazepine withdrawal).
+    E: Memantine treats moderate–severe Alzheimer disease, not delirium.
+  mnemonic: |
+    Anticholinergic toxicity — **"Mad as a hatter, dry as a bone, blind as a bat, red as a beet, hot as a hare, full as a flask."**
+  pearl: |
+    Common anticholinergic culprits in older adults: **diphenhydramine and other first-generation antihistamines, oxybutynin, tolterodine, tricyclic antidepressants, paroxetine, cyclobenzaprine**.
+  objective: |
+    Delirium in older adults is often drug-induced; stop strongly anticholinergic drugs such as oxybutynin and use nonpharmacologic measures rather than antipsychotics or benzodiazepines.
+  refs:
+    - 2023 American Geriatrics Society Beers Criteria Update Expert Panel. American Geriatrics Society 2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults. *J Am Geriatr Soc* 2023;71:2052.
+    - Marcantonio ER. Delirium in hospitalized older adults. *N Engl J Med* 2017;377:1456.
