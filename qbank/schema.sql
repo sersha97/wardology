@@ -5,7 +5,9 @@ CREATE TABLE IF NOT EXISTS users (
   name TEXT NOT NULL DEFAULT '',
   pw_hash TEXT NOT NULL,
   pw_salt TEXT NOT NULL,
-  created_at INTEGER NOT NULL
+  created_at INTEGER NOT NULL,
+  terms_version TEXT,
+  terms_accepted_at INTEGER
 );
 
 CREATE TABLE IF NOT EXISTS sessions (

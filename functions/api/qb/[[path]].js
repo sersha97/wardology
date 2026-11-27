@@ -9,6 +9,7 @@ const ALL_IDS = Object.keys(Q);
 const SESSION_DAYS = 60;
 const MAX_ITEMS = 60;              // ABIM: max 60 questions per session
 const SEC_PER_Q = 120;             // ABIM pace: up to 2 h per 60-question session
+const TERMS_VERSION = "2026-11-27"; // bump when /tools/terms or /tools/privacy change materially
 
 // ---------- helpers ----------
 const json = (data, status = 200, headers = {}) =>
@@ -78,7 +79,7 @@ async function choiceStats(db, ids) {
 async function getUser(req, db) {
   const t = cookie(req, "qb_s");
   if (!t || !/^[0-9a-f]{64}$/.test(t)) return null;
-  return db.prepare("SELECT u.id, u.email, u.name FROM sessions s JOIN users u ON u.id = s.user_id WHERE s.token = ? AND s.expires > ?")
+  return db.prepare("SELECT u.id, u.email, u.name, u.terms_version FROM sessions s JOIN users u ON u.id = s.user_id WHERE s.token = ? AND s.expires > ?")
     .bind(t, now()).first();
 }
 
@@ -141,10 +142,11 @@ export async function onRequest(ctx) {
       const pw = String(body.password || "");
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 200) return err("Please enter a valid email.");
       if (pw.length < 8) return err("Password must be at least 8 characters.");
+      if (body.agree !== true) return err("Please agree to the Terms of Use and Privacy Policy to create an account.");
       if (await db.prepare("SELECT id FROM users WHERE email=?").bind(email).first()) return err("An account with this email already exists. Log in instead.", 409);
       const salt = randHex(16);
       const h = await hashPw(pw, salt);
-      const r = await db.prepare("INSERT INTO users (email, name, pw_hash, pw_salt, created_at) VALUES (?,?,?,?,?)").bind(email, name, h, salt, now()).run();
+      const r = await db.prepare("INSERT INTO users (email, name, pw_hash, pw_salt, created_at, terms_version, terms_accepted_at) VALUES (?,?,?,?,?,?,?)").bind(email, name, h, salt, now(), TERMS_VERSION, now()).run();
       const uid = r.meta.last_row_id;
       const token = randHex(32);
       await db.prepare("INSERT INTO sessions (token, user_id, expires) VALUES (?,?,?)").bind(token, uid, now() + SESSION_DAYS * 86400).run();
@@ -172,7 +174,25 @@ export async function onRequest(ctx) {
     const uid = user.id;
 
     if (path === "me" && method === "GET") {
-      return json({ user, bank: { total: ALL_IDS.length, categories: CATS } });
+      const { terms_version, ...u } = user;
+      return json({ user: u, needs_terms: terms_version !== TERMS_VERSION, terms_version: TERMS_VERSION, bank: { total: ALL_IDS.length, categories: CATS } });
+    }
+    if (path === "terms/accept" && method === "POST") {
+      await db.prepare("UPDATE users SET terms_version=?, terms_accepted_at=? WHERE id=?").bind(TERMS_VERSION, now(), uid).run();
+      return json({ ok: true });
+    }
+    if (path === "account/delete" && method === "POST") {
+      const u = await db.prepare("SELECT * FROM users WHERE id=?").bind(uid).first();
+      if (!safeEq(await hashPw(String(body.password || ""), u.pw_salt), u.pw_hash)) return err("Password is not correct.", 401);
+      await db.batch([
+        db.prepare("DELETE FROM test_items WHERE test_id IN (SELECT id FROM tests WHERE user_id=?)").bind(uid),
+        db.prepare("DELETE FROM tests WHERE user_id=?").bind(uid),
+        db.prepare("DELETE FROM user_q WHERE user_id=?").bind(uid),
+        db.prepare("DELETE FROM feedback WHERE user_id=?").bind(uid),
+        db.prepare("DELETE FROM sessions WHERE user_id=?").bind(uid),
+        db.prepare("DELETE FROM users WHERE id=?").bind(uid),
+      ]);
+      return json({ ok: true }, 200, { "set-cookie": sessionCookie("x", 0) });
     }
 
     // counts per category for the Create Test screen

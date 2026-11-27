@@ -215,7 +215,7 @@ def shell(title, body, depth, page_class="", topbar="", url="", desc="", ld=None
 <body class="{page_class}" data-root="{p}">
 {topbar}
 <main id="main">{body}</main>
-<footer class="foot"><p><b>{SITE_TITLE}</b> — {TAGLINE.lower()} · by <a href="https://www.shabalini.com">Serhii Shabalin, MD</a> · educational use only — <a href="{p}tools/disclaimer.html">not medical advice</a>. · <a href="{p}tools/about.html">About Wardology</a> Check doses and local protocols. · <a href="mailto:{CONTACT}">{CONTACT}</a></p><p class="credit">Emoji: <a href="https://github.com/jdecked/twemoji">Twemoji</a>, CC-BY 4.0</p></footer>
+<footer class="foot"><p><b>{SITE_TITLE}</b> — {TAGLINE.lower()} · by <a href="https://www.shabalini.com">Serhii Shabalin, MD</a> · educational use only — <a href="{p}tools/disclaimer.html">not medical advice</a>. · <a href="{p}tools/about.html">About Wardology</a> · <a href="{p}tools/terms.html">Terms</a> · <a href="{p}tools/privacy.html">Privacy</a> Check doses and local protocols. · <a href="mailto:{CONTACT}">{CONTACT}</a></p><p class="credit">Emoji: <a href="https://github.com/jdecked/twemoji">Twemoji</a>, CC-BY 4.0</p></footer>
 <div id="search" class="search" hidden><div class="sbox"><div class="shead"><span>🔍</span><input id="q" type="search" placeholder="Search: AF, hyponatremia, Light's…" autocomplete="off"><button class="sclose" aria-label="Close">✕</button></div><ul id="sres"></ul></div></div>
 <button id="totop" class="totop" aria-label="Back to top" hidden>↑</button>
 <script src="{p}assets/search-index.js?v={ASSET_V}"></script><script src="{p}assets/app.js?v={ASSET_V}"></script>

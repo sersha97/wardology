@@ -59,7 +59,7 @@
 
   // ---------- boot & routing ----------
   async function boot() {
-    try { const me = await api("me"); S.user = me.user; setBank(me.bank); }
+    try { const me = await api("me"); S.user = me.user; setBank(me.bank); S.needsTerms = me.needs_terms; }
     catch (e) { if (e.status !== 401) { app.innerHTML = `<div class="auth"><div class="authcard"><h1>QBank is offline</h1><p class="sub">${esc(e.message)}</p><a class="btn" href="/">Back to Wardology</a></div></div>`; return; } }
     window.addEventListener("hashchange", route);
     route();
@@ -69,6 +69,7 @@
     stopRunner();
     const h = (location.hash.slice(1) || "/home").split("/").filter(Boolean);
     if (!S.user) return renderAuth();
+    if (S.needsTerms) return renderTerms();
     const [v, a, b] = h;
     if (v === "test" && a) return openRunner(parseInt(a), b != null ? parseInt(b) : null);
     const views = { home: viewHome, create: viewCreate, tests: viewTests, results: () => viewResults(parseInt(a)), overall: viewOverall,
@@ -86,22 +87,38 @@
         ${tab === "signup" ? '<label class="f" for="nm">Name</label><input id="nm" type="text" autocomplete="name" placeholder="Dr. Jane Doe">' : ""}
         <label class="f" for="em">Email</label><input id="em" type="email" autocomplete="email" required>
         <label class="f" for="pw">Password</label><input id="pw" type="password" autocomplete="${tab === "signup" ? "new-password" : "current-password"}" minlength="8" required>
+        ${tab === "signup" ? '<label class="agree"><input type="checkbox" id="agree"> <span>I am 18 or older and agree to the <a href="/tools/terms" target="_blank" rel="noopener">Terms of Use</a> and <a href="/tools/privacy" target="_blank" rel="noopener">Privacy Policy</a>.</span></label>' : ""}
         <button class="btn accent" type="submit">${tab === "signup" ? "Create free account" : "Log in"}</button>
         <div class="err" id="aerr"></div>
       </form>
       <ul class="feat"><li>📝 Tutor and ABIM-style timed exam blocks</li><li>📊 Your score, percentile and weak spots by subject</li><li>📚 Every explanation links to the Wardology library</li></ul>
-      <p class="kbd" style="margin-top:14px"><a href="/">← Back to the Wardology library</a></p>
+      <p class="kbd" style="margin-top:14px"><a href="/">← Back to the Wardology library</a> · <a href="/tools/terms">Terms</a> · <a href="/tools/privacy">Privacy</a></p>
     </div></div>`;
     $$(".authtabs button").forEach((b) => (b.onclick = () => renderAuth(b.dataset.t)));
     $("#af").onsubmit = async (e) => {
       e.preventDefault();
-      const btn = $("#af .btn"); btn.disabled = true; $("#aerr").textContent = "";
+      $("#aerr").textContent = "";
+      if (tab === "signup" && !$("#agree").checked) { $("#aerr").textContent = "Please agree to the Terms of Use and Privacy Policy to create an account."; return; }
+      const btn = $("#af .btn"); btn.disabled = true;
       try {
-        const d = await api("auth/" + tab, { email: $("#em").value, password: $("#pw").value, name: tab === "signup" ? $("#nm").value : undefined });
-        S.user = d.user; const me = await api("me"); setBank(me.bank);
+        const d = await api("auth/" + tab, { email: $("#em").value, password: $("#pw").value, name: tab === "signup" ? $("#nm").value : undefined, agree: tab === "signup" ? true : undefined });
+        S.user = d.user; const me = await api("me"); setBank(me.bank); S.needsTerms = me.needs_terms;
         if (!location.hash) location.hash = "#/home"; route();
       } catch (er) { $("#aerr").textContent = er.message; btn.disabled = false; }
     };
+  }
+
+  function renderTerms() {
+    app.innerHTML = `<div class="auth"><div class="authcard">${logo()}<h1>Updated <span>terms</span></h1>
+      <p class="sub">We updated the Wardology Terms of Use and Privacy Policy. Please review and accept them to keep using the QBank.</p>
+      <label class="agree"><input type="checkbox" id="agree"> <span>I agree to the <a href="/tools/terms" target="_blank" rel="noopener">Terms of Use</a> and <a href="/tools/privacy" target="_blank" rel="noopener">Privacy Policy</a>.</span></label>
+      <button class="btn accent" id="acc">Continue</button><div class="err" id="terr"></div>
+      <p class="kbd" style="margin-top:14px"><a href="#" id="lo2">Log out instead</a></p></div></div>`;
+    $("#acc").onclick = async () => {
+      if (!$("#agree").checked) return ($("#terr").textContent = "Please tick the box to accept.");
+      try { await api("terms/accept", {}); S.needsTerms = false; route(); } catch (e) { $("#terr").textContent = e.message; }
+    };
+    $("#lo2").onclick = async (e) => { e.preventDefault(); await api("auth/logout", {}); S.user = null; renderAuth("login"); };
   }
 
   // ---------- shell ----------
@@ -117,7 +134,7 @@
     app.innerHTML = `<div class="shell">
       <aside class="side"><a class="brandq" href="#/home">${logo()}<span><b>QBank</b><small>Wardology · ABIM IM</small></span></a>
         <nav class="nav">${nav}</nav><div class="spacer"></div>
-        <div class="who">Signed in as <b>${esc(S.user.name || S.user.email)}</b><br><a href="/">📚 Wardology library</a> · <a href="#" id="lo">Log out</a></div></aside>
+        <div class="who">Signed in as <b>${esc(S.user.name || S.user.email)}</b><br><a href="/">📚 Wardology library</a> · <a href="#" id="lo">Log out</a><br><a href="/tools/terms">Terms</a> · <a href="/tools/privacy">Privacy</a></div></aside>
       <main class="content"><div class="mobtop">${logo()}<b>QBank</b><span class="muted" style="margin-left:auto;font-size:13px"><a href="/">Library</a></span></div>
         <div class="ptitle"><h1>${title}</h1><div class="right">${right}</div></div>${body}</main>
       <nav class="mobbar">${[["home", "🏠", "Home"], ["create", "📝", "New test"], ["tests", "🗂️", "Tests"], ["overall", "📈", "Stats"], ["search", "🔍", "Search"], ["account", "👤", "Me"]]
@@ -345,10 +362,16 @@
       <div class="card"><h2>Display</h2><div class="row"><button class="btn ghost" id="th">🌗 Day / night</button><button class="btn ghost" id="fs">🔠 Text size</button></div></div>
       <div class="card"><h2>Change password</h2><form id="pf" style="max-width:420px"><label class="f">Current password</label><input type="password" id="op" autocomplete="current-password">
         <label class="f">New password (8+ characters)</label><input type="password" id="np" autocomplete="new-password"><button class="btn" style="margin-top:12px">Update password</button><div class="err" id="perr"></div></form></div>
-      <div class="card"><h2>Reset QBank</h2><p class="muted">Deletes all your tests, answers and marks so every question becomes unused again. Your account stays. This cannot be undone.</p><button class="btn accent" id="rs">Reset my progress</button></div>`);
+      <div class="card"><h2>Privacy</h2><p class="muted">Read the <a href="/tools/privacy" target="_blank">Privacy Policy</a> and <a href="/tools/terms" target="_blank">Terms of Use</a>. Questions or data requests: <a href="mailto:hello@wardology.com">hello@wardology.com</a>.</p></div>
+      <div class="card"><h2>Reset QBank</h2><p class="muted">Deletes all your tests, answers and marks so every question becomes unused again. Your account stays. This cannot be undone.</p><button class="btn accent" id="rs">Reset my progress</button></div>
+      <div class="card"><h2>Delete account</h2><p class="muted">Permanently deletes your account, name, email, tests, answers, marks and feedback. Anonymous answer counts used for peer statistics stay. This cannot be undone.</p><button class="btn accent" id="del">Delete my account</button></div>`);
     $("#th").onclick = cycleTheme; $("#fs").onclick = () => { cycleFont(); toast("Text size " + localStorage.getItem("qb_font") + " px"); };
     $("#pf").onsubmit = async (e) => { e.preventDefault(); $("#perr").textContent = "";
       try { await api("account/password", { old: $("#op").value, password: $("#np").value }); toast("Password updated"); $("#pf").reset(); } catch (er) { $("#perr").textContent = er.message; } };
+    $("#del").onclick = () => modal(`<h3>Delete your account?</h3><p class="muted">Enter your password to permanently delete your account and all of your QBank data.</p><input type="password" id="dpw" autocomplete="current-password"><div class="err" id="derr"></div>
+      <div class="acts"><button class="btn ghost" data-close>Cancel</button><button class="btn accent" id="dgo">Delete forever</button></div>`, (m, close) => {
+      $("#dgo", m).onclick = async () => { try { await api("account/delete", { password: $("#dpw", m).value }); close(); S.user = null; location.hash = ""; renderAuth(); toast("Your account was deleted"); } catch (er) { $("#derr", m).textContent = er.message; } };
+    });
     $("#rs").onclick = () => modal(`<h3>Reset QBank?</h3><p class="muted">Type <b>RESET</b> to delete all your tests and answers.</p><input type="text" id="rc" autocomplete="off"><div class="err" id="rerr"></div>
       <div class="acts"><button class="btn ghost" data-close>Cancel</button><button class="btn accent" id="rgo">Reset</button></div>`, (m, close) => {
       $("#rgo", m).onclick = async () => { try { await api("reset", { confirm: $("#rc", m).value.trim() }); close(); toast("Your QBank was reset"); location.hash = "#/home"; } catch (er) { $("#rerr", m).textContent = er.message; } };
