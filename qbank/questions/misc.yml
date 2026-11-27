@@ -1,4 +1,4 @@
-# Ethics, Safety & Epidemiology — ABIM blueprint 1%
+# Ethics, Safety & Epidemiology — ABIM CERT blueprint
 - id: MS-001
   topic: Number needed to treat
   task: Risk Assessment/Prognosis/Epidemiology
@@ -48,3 +48,160 @@
     Number needed to treat equals 1 divided by the absolute risk reduction; relative risk reduction overstates benefit when baseline risk is low.
   refs:
     - Guyatt G, et al. *Users' Guides to the Medical Literature*. 3rd ed. JAMA/McGraw-Hill; 2015.
+
+
+- id: MS-002
+  topic: Predictive value and prevalence
+  task: Risk Assessment/Prognosis/Epidemiology
+  keep_order: true
+  chapters: [boards/biostatistics]
+  stem: |
+    A new blood test for colorectal cancer has a sensitivity of 90% and a specificity of 90%. It is used to screen an average-risk population of 10,000 adults in which the prevalence of colorectal cancer is 1%.
+
+    A 58-year-old man in this population has a positive test result.
+  lead: Which of the following is closest to the probability that he has colorectal cancer?
+  choices:
+    A: 8%
+    B: 50%
+    C: 82%
+    D: 90%
+    E: 99%
+  answer: A
+  explain: |
+    Build a **2 × 2 table** for 10,000 people with 1% prevalence:
+
+    | | Cancer (100) | No cancer (9,900) | |
+    |---|---|---|---|
+    | **Test +** | 90 (TP) | 990 (FP) | 1,080 |
+    | **Test −** | 10 (FN) | 8,910 (TN) | 8,920 |
+
+    - True positives = 90% × 100 = **90**
+    - False positives = 10% × 9,900 = **990**
+    - **Positive predictive value (PPV)** = TP / all positives = 90 / 1,080 ≈ **8%**
+
+    **Sensitivity and specificity are properties of the test. PPV and NPV depend on prevalence.** When a disease is rare, even a good test produces mostly false positives. This is why screening tests are followed by a confirmatory test (here, colonoscopy).
+
+    | Prevalence ↑ | PPV ↑ | NPV ↓ |
+    |---|---|---|
+    | Prevalence ↓ | PPV ↓ | NPV ↑ |
+  why:
+    B: Fifty percent would require the true and false positives to be equal, which needs a much higher prevalence.
+    C: This value has no basis in the calculation.
+    D: Ninety percent is the sensitivity — the probability of a positive test in someone with cancer — not the probability of cancer after a positive test.
+    E: Ninety-nine percent approximates the negative predictive value (8,910 / 8,920 ≈ 99.9%).
+  mnemonic: |
+    **SnNout, SpPin** — a **Sen**sitive test, when **N**egative, rules **out**; a **Sp**ecific test, when **P**ositive, rules **in** (but only if the disease is not too rare).
+  objective: |
+    Positive predictive value depends on disease prevalence; in a low-prevalence population, most positive results are false positives even with a sensitive and specific test.
+  refs:
+    - Trevethan R. Sensitivity, specificity, and predictive values: foundations, pliabilities, and pitfalls in research and practice. *Front Public Health* 2017;5:307.
+
+- id: MS-003
+  topic: Lead-time bias in screening
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [boards/biostatistics]
+  stem: |
+    A new imaging test detects pancreatic cancer at an earlier stage than symptoms do. In an observational study, patients whose cancer was found by screening lived an average of 3.5 years from diagnosis, compared with 1.5 years for patients diagnosed after symptoms appeared. Age at death was the same in both groups.
+  lead: Which of the following best explains the difference in survival?
+  choices:
+    A: Confounding by smoking status
+    B: Lead-time bias
+    C: Length-time bias
+    D: Overdiagnosis
+    E: The screening test reduces mortality
+  answer: B
+  explain: |
+    **Lead-time bias**: screening finds a disease **earlier** in its course, so **survival measured from diagnosis looks longer** — even if **death occurs at the same time**. Patients simply know about their cancer longer.
+
+    The tell-tale sign: **survival from diagnosis improves, but age at death (or disease-specific mortality) does not**.
+
+    | Bias | What happens | Fix |
+    |---|---|---|
+    | **Lead-time** | Earlier diagnosis inflates survival time | Compare **mortality rates**, not survival from diagnosis |
+    | **Length-time** | Screening picks up **slow-growing**, less aggressive tumors (long preclinical phase) | Randomized trials |
+    | **Overdiagnosis** | Detects cancers that would **never** cause symptoms or death | Randomized trials; long follow-up |
+    | **Healthy-volunteer** (selection) | People who choose screening are healthier | Randomization |
+
+    The only reliable proof that screening works is a **randomized trial showing reduced disease-specific (ideally all-cause) mortality**.
+  why:
+    A: Confounding could distort survival, but identical age at death with longer survival from diagnosis is the signature of lead time.
+    C: Length-time bias reflects detection of slower-growing tumors; it would make screen-detected patients live longer, not die at the same age.
+    D: Overdiagnosis detects cancers that would never cause death; here everyone died of the disease at the same age.
+    E: If screening reduced mortality, screened patients would die later.
+  objective: |
+    Lead-time bias makes survival from diagnosis appear longer with screening without changing the time of death; screening benefit must be shown by reduced mortality in randomized trials.
+  refs:
+    - Welch HG, Black WC. Overdiagnosis in cancer. *J Natl Cancer Inst* 2010;102:605.
+
+- id: MS-004
+  topic: Disclosure of a medical error
+  task: Treatment/Care Decisions
+  chapters: [boards/ethics]
+  stem: |
+    A 74-year-old man is hospitalized with cellulitis. He has a documented penicillin allergy with anaphylaxis. Because of an order entry error, he receives one dose of piperacillin-tazobactam. Within minutes he develops hives and wheezing; he is treated promptly with epinephrine and recovers fully within 2 hours. He asks the resident what happened.
+  lead: Which of the following is the most appropriate response?
+  choices:
+    A: Tell him he had a reaction to an antibiotic, without mentioning the error, to avoid upsetting him
+    B: Wait until the hospital's risk management office completes its review before saying anything
+    C: Explain that he received an antibiotic he is allergic to because of an error, apologize, describe what is being done to prevent a recurrence, and report the event
+    D: Tell him the nurse made the error
+    E: Advise him that he should talk to a lawyer
+  answer: C
+  explain: |
+    Physicians have an **ethical duty to disclose** errors that cause harm or could cause harm (ACP Ethics Manual, AMA Code). Effective **disclosure** includes:
+    1. **What happened** — in plain language, promptly (as soon as the patient is stable)
+    2. **An apology** — expression of regret ("I'm sorry this happened")
+    3. **Why it happened**, to the extent known, without speculation or blame
+    4. **What it means for the patient** and how consequences are being managed
+    5. **What will be done to prevent recurrence**
+    6. **Report** through the institution's safety system (and involve risk management, but do not let it delay disclosure)
+
+    Honest disclosure supports trust and is associated with **fewer malpractice claims**, not more. Many states have **"apology laws"** that make expressions of sympathy inadmissible.
+
+    Patient safety culture focuses on **systems** (e.g., allergy alerts, order sets) rather than individual blame.
+  why:
+    A: Withholding the cause of the reaction is deceptive and violates the duty of honesty.
+    B: Risk management can help, but disclosure to the patient should not be delayed for an internal review.
+    D: Blaming an individual is inappropriate; errors usually reflect system failures, and the full analysis is not complete.
+    E: Advising legal action is not the physician's role and undermines the therapeutic relationship.
+  objective: |
+    Disclose medical errors promptly and honestly, including what happened, an apology, the consequences and how recurrence will be prevented, and report them through the institution's safety system.
+  refs:
+    - Sulmasy LS, Bledsoe TA. American College of Physicians Ethics Manual, 7th ed. *Ann Intern Med* 2019;170:S1.
+    - Gallagher TH, et al. Disclosing harmful medical errors to patients. *N Engl J Med* 2007;356:2713.
+
+- id: MS-005
+  topic: Surrogate decision-making
+  task: Treatment/Care Decisions
+  chapters: [boards/ethics, geri/goals-of-care]
+  stem: |
+    An 82-year-old woman with advanced dementia is hospitalized with aspiration pneumonia and is now unable to communicate. Two years ago, while she had capacity, she completed an advance directive stating that if she became unable to recognize her family she would not want feeding tubes, mechanical ventilation or CPR, and she named her son as her health care power of attorney.
+
+    Her son agrees with comfort-focused care. Her daughter, who lives out of state and has just arrived, insists that "everything be done", including a feeding tube and intubation if needed.
+  lead: Which of the following is the most appropriate next step?
+  choices:
+    A: Follow the daughter's wishes because she is requesting more treatment
+    B: Follow the son's decisions, consistent with the patient's advance directive, while supporting and communicating with the daughter
+    C: Obtain a court-appointed guardian before making any decisions
+    D: Place a feeding tube until the family reaches agreement
+    E: Ask the hospital ethics committee to make the decision
+  answer: B
+  explain: |
+    When a patient lacks capacity, decisions follow a clear order:
+    1. **The patient's own expressed wishes** — **advance directive** (living will) or prior clear statements
+    2. **The designated health care proxy** (durable power of attorney for health care)
+    3. If none, a **surrogate** by state hierarchy (usually spouse → adult children → parents → siblings)
+
+    Surrogates apply **substituted judgment** — what the **patient** would choose — not their own preferences. Only when the patient's wishes are unknown does the **best-interest** standard apply.
+
+    Here, the patient's **written wishes and her chosen proxy agree**. The daughter's disagreement does not override them. The team should **meet with the family**, explain the patient's wishes, acknowledge the daughter's grief, offer **palliative care** support, and consider ethics consultation to help mediate — but the decision follows the patient's directive.
+  why:
+    A: Requests for more treatment do not override the patient's documented wishes or her designated proxy.
+    C: Guardianship is needed only when there is no valid proxy or the proxy is acting against the patient's interests.
+    D: Placing a feeding tube against the patient's directive violates her autonomy, and feeding tubes do not improve survival or prevent aspiration in advanced dementia.
+    E: Ethics committees advise and mediate; they do not replace a valid proxy's decisions.
+  objective: |
+    When a patient lacks capacity, follow her advance directive and her designated health care proxy, who should use substituted judgment; other family members cannot override them.
+  refs:
+    - Sulmasy LS, Bledsoe TA. American College of Physicians Ethics Manual, 7th ed. *Ann Intern Med* 2019;170:S1.
+    - American Geriatrics Society. Feeding tubes in advanced dementia position statement. *J Am Geriatr Soc* 2014;62:1590.

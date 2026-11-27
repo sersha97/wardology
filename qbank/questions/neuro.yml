@@ -1,10 +1,10 @@
-# Neurology — ABIM blueprint 4%
+# Neurology — ABIM CERT blueprint
 - id: NR-001
   topic: High-risk transient ischemic attack
   task: Treatment/Care Decisions
   chapters: [neuro/stroke]
   stem: |
-    A 66-year-old man is evaluated in the emergency department after a 40-minute episode of **weakness of the right hand and slurred speech** that began while he was reading. Symptoms resolved completely 2 hours ago. He has hypertension and type 2 diabetes. He takes lisinopril and metformin.
+    A 66-year-old man is evaluated in the emergency department after a 40-minute episode of weakness of the right hand and slurred speech that began while he was reading. Symptoms resolved completely 2 hours ago. He has hypertension and type 2 diabetes. He takes lisinopril and metformin.
 
     Blood pressure is 158/88 mm Hg and pulse is 76/min, regular. Neurologic examination is normal (NIH Stroke Scale score 0).
   labs:
@@ -51,7 +51,7 @@
   task: Treatment/Care Decisions
   chapters: [neuro/headache]
   stem: |
-    A 34-year-old woman comes to the office because of migraines. She has had migraine **without aura** since her teens, but over the past year attacks have become more frequent — now about **8 headache days per month** — and she has missed work several times. Sumatriptan usually relieves an attack within 2 hours; she uses it 6–8 days a month. She also has **hypertension**, diagnosed 6 months ago and not yet treated. She uses a copper IUD.
+    A 34-year-old woman comes to the office because of migraines. She has had migraine without aura since her teens, but over the past year attacks have become more frequent — now about 8 headache days per month — and she has missed work several times. Sumatriptan usually relieves an attack within 2 hours; she uses it 6–8 days a month. She also has hypertension, diagnosed 6 months ago and not yet treated. She uses a copper IUD.
 
     Blood pressure is 142/90 mm Hg on two readings and pulse is 82/min. Neurologic examination, including fundoscopy, is normal.
   lead: Which of the following is the most appropriate preventive treatment?
@@ -86,3 +86,308 @@
   refs:
     - Ailani J, et al. The American Headache Society consensus statement: update on integrating new migraine treatments into clinical practice. *Headache* 2021;61:1021.
     - Charles AC, et al. Calcitonin gene-related peptide-targeting therapies are a first-line option for the prevention of migraine: an AHS position statement update. *Headache* 2024;64:333.
+
+
+- id: NR-003
+  topic: Acute ischemic stroke — thrombolysis
+  task: Treatment/Care Decisions
+  chapters: [neuro/stroke]
+  stem: |
+    A 68-year-old man is brought to the emergency department 90 minutes after the sudden onset of right arm and leg weakness and difficulty speaking. His wife saw him become symptomatic at breakfast. He has hypertension and takes lisinopril. He takes no anticoagulants and has had no recent surgery, bleeding or head trauma.
+
+    On physical examination, blood pressure is 196/108 mm Hg, pulse rate is 82/min and regular. He has expressive aphasia, a right facial droop and right hemiparesis (NIHSS score 12). Glucose is 128 mg/dL.
+
+    Noncontrast CT of the head shows no hemorrhage or early ischemic changes. CT angiography shows no large-vessel occlusion. Platelet count and INR are pending.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Give alteplase or tenecteplase now without lowering blood pressure
+    B: Lower blood pressure to below 185/110 mm Hg with intravenous labetalol or nicardipine, then give thrombolysis
+    C: Give aspirin, 325 mg, and admit to the stroke unit
+    D: Wait for platelet count and INR before deciding on thrombolysis
+    E: Start a heparin infusion
+  answer: B
+  explain: |
+    He has a disabling acute ischemic stroke within **4.5 hours** of onset, with no hemorrhage on CT. He is a candidate for **IV thrombolysis** — **alteplase** (0.9 mg/kg) or **tenecteplase** (0.25 mg/kg single bolus; noninferior to alteplase in the AcT trial and now used by many centers).
+
+    **Blood pressure must be <185/110 mm Hg before** thrombolysis and **<180/105 mm Hg for 24 hours after**, to lower the risk of intracranial hemorrhage. Use **IV labetalol, nicardipine or clevidipine**.
+
+    **Do not wait for platelets or INR** unless there is reason to suspect an abnormality (anticoagulant use, liver disease, known thrombocytopenia). The only test needed before thrombolysis is the **glucose** (hypoglycemia mimics stroke).
+
+    Without thrombolysis, stroke patients may have BP up to 220/120 mm Hg (permissive hypertension) in the first 48–72 hours.
+
+    **Large-vessel occlusion** → **mechanical thrombectomy** up to **24 hours** in selected patients.
+  why:
+    A: Thrombolysis with BP above 185/110 mm Hg increases the risk of symptomatic intracranial hemorrhage.
+    C: Aspirin is given 24 hours after thrombolysis, or immediately for patients who are not candidates; it is not a substitute for thrombolysis.
+    D: Waiting for coagulation tests delays treatment without reason when there is no suspicion of coagulopathy; "time is brain".
+    E: Heparin has no role in acute ischemic stroke treatment and increases hemorrhage risk.
+  objective: |
+    Lower blood pressure below 185/110 mm Hg before giving IV thrombolysis to eligible patients with acute ischemic stroke within 4.5 hours, without waiting for coagulation tests unless coagulopathy is suspected.
+  refs:
+    - Powers WJ, et al. Guidelines for the early management of patients with acute ischemic stroke: 2019 update. *Stroke* 2019;50:e344.
+    - Menon BK, et al. Intravenous tenecteplase compared with alteplase for acute ischaemic stroke (AcT). *Lancet* 2022;400:161.
+
+- id: NR-004
+  topic: Anti-NMDA receptor encephalitis
+  task: Diagnosis/Testing
+  chapters: [neuro/encephalitis]
+  stem: |
+    A 26-year-old woman is brought to the emergency department by her family for 2 weeks of anxiety, insomnia, paranoid thoughts and bizarre behavior, followed by a generalized seizure today. She had a flulike illness 3 weeks ago. She has no psychiatric history and does not use drugs.
+
+    On physical examination, temperature is 37.9 °C (100.2 °F), blood pressure is 156/94 mm Hg, and pulse rate is 118/min. She is agitated and confused. There are orofacial dyskinesias (lip-smacking and grimacing) and intermittent choreiform arm movements.
+  labs:
+    - ["Cerebrospinal fluid", "34 leukocytes/µL (95% lymphocytes); protein 52 mg/dL; glucose normal"]
+    - ["CSF HSV PCR", "negative"]
+    - ["MRI of the brain", "normal"]
+    - ["EEG", "diffuse slowing with \"extreme delta brush\" pattern"]
+    - ["Urine drug screen", "negative"]
+  lead: Which of the following is the most appropriate test to confirm the diagnosis and guide further evaluation?
+  choices:
+    A: Anti-NMDA receptor antibodies in CSF, followed by pelvic imaging
+    B: Antinuclear antibodies
+    C: Brain biopsy
+    D: Repeat MRI in 6 weeks
+    E: Serum ceruloplasmin
+  answer: A
+  explain: |
+    A young woman with **psychiatric symptoms → seizures → movement disorder (orofacial dyskinesias) → autonomic instability**, with CSF lymphocytic pleocytosis, a normal MRI and the **"extreme delta brush"** EEG pattern = **anti–NMDA receptor encephalitis**, the most common **autoimmune encephalitis**.
+
+    Confirm with **anti-NMDA receptor (GluN1) IgG antibodies in CSF** (more sensitive and specific than serum).
+
+    About **half of women** have an **ovarian teratoma** (which contains neural tissue). Look for it with **pelvic MRI or transvaginal ultrasonography**; removal improves outcomes. HSV encephalitis can **trigger** anti-NMDAR encephalitis weeks later.
+
+    Treatment: **first-line immunotherapy** — high-dose glucocorticoids, IVIG or plasma exchange — and **tumor removal**; **rituximab or cyclophosphamide** if no response. Start treatment while waiting for antibody results when the picture is typical.
+  why:
+    B: ANA testing evaluates SLE; neuropsychiatric lupus can cause psychosis and seizures but not this pattern with orofacial dyskinesias.
+    C: Brain biopsy is rarely needed; antibody testing is diagnostic.
+    D: The MRI is often normal in anti-NMDAR encephalitis; repeating it does not confirm the diagnosis and delays treatment.
+    E: Wilson disease causes neuropsychiatric symptoms but with liver disease and Kayser-Fleischer rings, not acute encephalitis with CSF pleocytosis.
+  objective: |
+    Suspect anti–NMDA receptor encephalitis in a young patient with psychiatric symptoms, seizures, dyskinesias and autonomic instability; confirm with CSF antibodies and screen for ovarian teratoma.
+  refs:
+    - Dalmau J, Graus F. Antibody-mediated encephalitis. *N Engl J Med* 2018;378:840.
+    - Graus F, et al. A clinical approach to diagnosis of autoimmune encephalitis. *Lancet Neurol* 2016;15:391.
+
+- id: NR-005
+  topic: Myasthenia gravis — diagnosis and thymoma
+  task: Diagnosis/Testing
+  chapters: [neuro/myasthenia]
+  stem: |
+    A 34-year-old woman is evaluated for 2 months of double vision and drooping eyelids that worsen in the evening and after reading. She also has difficulty chewing tough meat by the end of a meal. She has no limb weakness or dyspnea.
+
+    On physical examination, there is bilateral asymmetric ptosis that worsens with sustained upgaze for 60 seconds. Extraocular movements show variable weakness. Pupils are normal and reactive. Placing an ice pack over the eyelids for 2 minutes improves the ptosis. Reflexes and sensation are normal.
+  labs:
+    - ["Acetylcholine receptor binding antibodies", "positive"]
+    - ["TSH", "normal"]
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: Chest CT
+    B: Electroencephalography
+    C: Lumbar puncture
+    D: MRI of the brain with contrast
+    E: Muscle biopsy
+  answer: A
+  explain: |
+    **Fatigable** ptosis and diplopia, bulbar fatigue, normal pupils, a positive **ice pack test** (cold improves neuromuscular transmission) and **positive acetylcholine receptor (AChR) antibodies** = **myasthenia gravis (MG)**. AChR antibodies block, cross-link and destroy **postsynaptic** receptors.
+
+    Once MG is diagnosed, obtain **chest CT (or MRI)** for **thymoma**, present in about **10–15%** of patients with MG (and thymic hyperplasia in many more). Thymoma requires resection. Even without thymoma, **thymectomy** improves outcomes in **AChR-positive generalized MG** aged 18–65 (MGTX trial).
+
+    Treatment: **pyridostigmine** (acetylcholinesterase inhibitor) for symptoms; immunotherapy (prednisone, azathioprine, mycophenolate; complement inhibitors and FcRn blockers for refractory disease). Avoid drugs that worsen MG: **aminoglycosides, fluoroquinolones, macrolides, magnesium, β-blockers, neuromuscular blockers**, checkpoint inhibitors.
+  why:
+    B: EEG evaluates seizures; it has no role in MG.
+    C: CSF is normal in MG; lumbar puncture is used for GBS or CNS inflammation.
+    D: Brain MRI is for suspected brainstem lesions; the fatigable pattern with normal pupils and positive antibodies confirms MG.
+    E: Muscle biopsy is for myopathies; MG is a neuromuscular junction disorder.
+  objective: |
+    After diagnosing myasthenia gravis, obtain chest CT or MRI to look for thymoma.
+  refs:
+    - Narayanaswami P, et al. International consensus guidance for management of myasthenia gravis: 2020 update. *Neurology* 2021;96:114.
+    - Wolfe GI, et al. Randomized trial of thymectomy in myasthenia gravis (MGTX). *N Engl J Med* 2016;375:511.
+
+- id: NR-006
+  topic: Guillain-Barré syndrome
+  task: Treatment/Care Decisions
+  chapters: [neuro/gbs]
+  stem: |
+    A 42-year-old man is evaluated for 5 days of progressive leg weakness and tingling in his feet and hands. He had diarrhea 2 weeks ago. Today he has trouble climbing stairs and his voice is weaker.
+
+    On physical examination, blood pressure is 148/92 mm Hg, pulse rate is 108/min, and respiration rate is 22/min. He has bilateral facial weakness. Strength is 3/5 in the legs and 4/5 in the arms. Reflexes are absent throughout. There is mild distal sensory loss.
+  labs:
+    - ["Cerebrospinal fluid", "3 leukocytes/µL; protein 148 mg/dL"]
+    - ["Forced vital capacity", "18 mL/kg (falling from 26 mL/kg 6 hours ago)"]
+    - ["Maximal inspiratory pressure", "−22 cm H₂O"]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: High-dose intravenous methylprednisolone
+    B: Intravenous immune globulin and transfer to the ICU for elective intubation
+    C: Oral prednisone and outpatient follow-up
+    D: Pyridostigmine
+    E: Repeat lumbar puncture in 1 week
+  answer: B
+  explain: |
+    Ascending, symmetric weakness with **areflexia** after a GI infection (*Campylobacter jejuni*), with **albuminocytologic dissociation** (high CSF protein, normal cells) = **Guillain-Barré syndrome (GBS)**.
+
+    The key danger is **respiratory failure** (25–30% need ventilation) and **autonomic instability**. Monitor **FVC and negative inspiratory force**. The **"20/30/40 rule"** signals need for intubation: **FVC <20 mL/kg, MIP weaker than −30 cm H₂O, MEP <40 cm H₂O**. He meets these and is worsening → **ICU and elective intubation** before he crashes. Oxygen saturation falls late and is not reliable.
+
+    **Disease-modifying treatment**: **IVIG** (0.4 g/kg/d × 5 days) or **plasma exchange** — equally effective, best within 2 weeks of onset. Do not combine them.
+  why:
+    A: Glucocorticoids do not help GBS and may delay recovery.
+    C: He is rapidly progressing with respiratory compromise and needs inpatient ICU care.
+    D: Pyridostigmine treats myasthenia gravis, not GBS.
+    E: The diagnosis is clear; delaying treatment worsens outcomes.
+  mnemonic: |
+    **"20/30/40"** — FVC **<20** mL/kg, MIP **>−30** (weaker), MEP **<40** → intubate.
+  objective: |
+    Treat Guillain-Barré syndrome with IVIG or plasma exchange and monitor vital capacity, admitting to the ICU for intubation when FVC falls below 20 mL/kg.
+  refs:
+    - van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. *Eur J Neurol* 2023;30:3646.
+    - Shahrizaila N, et al. Guillain-Barré syndrome. *Lancet* 2021;397:1214.
+
+- id: NR-007
+  topic: Multiple sclerosis — diagnosis
+  task: Diagnosis/Testing
+  chapters: [neuro/ms-relapse]
+  stem: |
+    A 29-year-old woman is evaluated for 5 days of painful loss of vision in her right eye that is worse with eye movement. A year ago she had 3 weeks of numbness from her waist down that resolved on its own.
+
+    On physical examination, visual acuity is 20/200 in the right eye and 20/20 in the left. There is a right relative afferent pupillary defect. Funduscopic examination is normal. Red color desaturation is present on the right. Reflexes are brisk in the legs.
+  lead: Which of the following is the most appropriate diagnostic test?
+  choices:
+    A: CT of the head
+    B: Electromyography
+    C: MRI of the brain and spinal cord with gadolinium
+    D: Serum vitamin B₁₂ level only
+    E: Temporal artery biopsy
+  answer: C
+  explain: |
+    **Optic neuritis** (painful monocular vision loss, worse with eye movement, RAPD, red desaturation; disc often normal — "the patient sees nothing and the doctor sees nothing") in a young woman, with a **prior episode of a spinal cord syndrome**, suggests **multiple sclerosis (MS)**.
+
+    MS is diagnosed by **dissemination in space and time** (McDonald 2017 criteria). **MRI of the brain and spinal cord with gadolinium** is the key test: look for T2 lesions in **periventricular** (Dawson fingers), **juxtacortical**, **infratentorial** and **spinal cord** regions, and simultaneous enhancing and nonenhancing lesions (dissemination in time). **CSF oligoclonal bands** can substitute for dissemination in time.
+
+    Acute optic neuritis is treated with **IV methylprednisolone** (speeds recovery; does not change final vision). Start **disease-modifying therapy** early when MS is confirmed.
+
+    Also consider **NMOSD (aquaporin-4 antibodies)** and **MOG antibody disease**, especially with severe or bilateral optic neuritis or longitudinally extensive myelitis.
+  why:
+    A: CT is insensitive for demyelinating lesions.
+    B: EMG evaluates peripheral nerve and muscle disease, not CNS demyelination.
+    D: B₁₂ deficiency can cause myelopathy and optic neuropathy, but it is painless and bilateral, and it does not explain this relapsing pattern.
+    E: Giant cell arteritis causes painless vision loss in patients older than 50 with headache and jaw claudication.
+  objective: |
+    Evaluate suspected multiple sclerosis after optic neuritis or a prior myelitis with gadolinium-enhanced MRI of the brain and spinal cord to show dissemination in space and time.
+  refs:
+    - Thompson AJ, et al. Diagnosis of multiple sclerosis: 2017 revisions of the McDonald criteria. *Lancet Neurol* 2018;17:162.
+
+- id: NR-008
+  topic: Essential tremor
+  task: Treatment/Care Decisions
+  chapters: [neuro/parkinson-inpatient]
+  stem: |
+    A 62-year-old man is evaluated for a tremor of both hands that has slowly worsened over 10 years. It makes it hard to drink from a cup or sign his name. The tremor improves after a glass of wine. His mother had a similar tremor. He has asthma treated with an inhaled glucocorticoid.
+
+    On physical examination, there is a bilateral postural and action (kinetic) tremor of the hands, worse when he holds his arms outstretched and during finger-to-nose testing. There is a mild head tremor ("no-no"). There is no rest tremor, rigidity or bradykinesia. Gait is normal.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Carbidopa-levodopa
+    B: Primidone
+    C: Propranolol
+    D: Deep brain stimulation as first-line therapy
+    E: Trihexyphenidyl
+  answer: B
+  explain: |
+    A slowly progressive, **bilateral postural and kinetic tremor** of the hands (and head) with a **family history** and **improvement with alcohol** = **essential tremor**, the most common movement disorder.
+
+    | | Essential tremor | Parkinson disease |
+    |---|---|---|
+    | Tremor | **Action/postural** | **Rest** ("pill-rolling") |
+    | Body parts | Hands, **head, voice** | Hands, legs, jaw (not head) |
+    | Symmetry | Bilateral | **Asymmetric** at onset |
+    | Other signs | None | **Bradykinesia, rigidity** |
+    | Alcohol | Improves | No effect |
+
+    First-line drugs: **propranolol** or **primidone**. **Propranolol is contraindicated in his asthma** (nonselective β-blocker), so **primidone** is the right choice. Topiramate and gabapentin are second-line. For disabling, refractory tremor: **deep brain stimulation** or MR-guided focused ultrasound thalamotomy.
+  why:
+    A: Levodopa treats Parkinson disease; it does not help essential tremor.
+    C: Propranolol is first-line for essential tremor, but nonselective β-blockade can cause bronchospasm in asthma.
+    D: DBS is reserved for disabling tremor that does not respond to medication.
+    E: Anticholinergics treat rest tremor in young patients with Parkinson disease or dystonia and cause confusion in older adults.
+  objective: |
+    Treat essential tremor with propranolol or primidone, choosing primidone when β-blockers are contraindicated (e.g., asthma).
+  refs:
+    - Zesiewicz TA, et al. Evidence-based guideline update: treatment of essential tremor. *Neurology* 2011;77:1752.
+    - Haubenberger D, Hallett M. Essential tremor. *N Engl J Med* 2018;378:1802.
+
+- id: NR-009
+  topic: Idiopathic intracranial hypertension
+  task: Diagnosis/Testing
+  chapters: [neuro/headache, neuro/raised-icp]
+  stem: |
+    A 27-year-old woman is evaluated for 2 months of daily headaches that are worse in the morning and when lying down. She hears a "whooshing" sound in both ears in time with her pulse and has brief episodes of her vision "graying out" when she stands up. She has gained 10 kg (22 lb) in the past year. She takes no medications, including tetracyclines, vitamin A or retinoids.
+
+    On physical examination, blood pressure is 124/80 mm Hg. BMI is 38. There is bilateral papilledema. There is a mild left sixth nerve palsy. The remainder of the neurologic examination is normal.
+
+    MRI of the brain with MR venography shows no mass, hydrocephalus or venous sinus thrombosis; there is an empty sella and flattening of the posterior globes.
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: CT angiography of the head and neck
+    B: Electroencephalography
+    C: Lumbar puncture with opening pressure measurement
+    D: Polysomnography
+    E: Serum prolactin
+  answer: C
+  explain: |
+    A young woman with **obesity** and recent weight gain, **headache, pulsatile tinnitus, transient visual obscurations, papilledema** and a **sixth nerve palsy** (a false-localizing sign of raised ICP), with normal neuroimaging except signs of raised pressure (empty sella, flattened globes) → **idiopathic intracranial hypertension (IIH, pseudotumor cerebri)**.
+
+    Confirm with **lumbar puncture**: **opening pressure >25 cm H₂O** (measured lateral decubitus, legs extended) with **normal CSF composition**. Imaging must be done **first** (mass, hydrocephalus) and must include **venography** to exclude **cerebral venous sinus thrombosis**, which can mimic IIH.
+
+    The main risk is **permanent vision loss** — get formal visual fields. Treatment: **weight loss** (5–10%; GLP-1 agonists and bariatric surgery help), **acetazolamide**; urgent CSF shunting or optic nerve sheath fenestration for threatened vision.
+  why:
+    A: CTA is used for aneurysm or dissection; venography already excluded venous sinus thrombosis.
+    B: EEG has no role in raised intracranial pressure without seizures.
+    D: OSA is common in obesity and can worsen IIH, but it does not confirm the diagnosis.
+    E: Prolactin is checked for a pituitary adenoma; an empty sella here is a sign of chronically raised CSF pressure, not a tumor.
+  objective: |
+    Confirm idiopathic intracranial hypertension with lumbar puncture showing an opening pressure above 25 cm H₂O and normal CSF after MRI with venography excludes other causes.
+  refs:
+    - Mollan SP, et al. Idiopathic intracranial hypertension: consensus guidelines on management. *J Neurol Neurosurg Psychiatry* 2018;89:1088.
+    - Friedman DI, et al. Revised diagnostic criteria for the pseudotumor cerebri syndrome in adults and children. *Neurology* 2013;81:1159.
+
+- id: NR-010
+  topic: First unprovoked seizure
+  task: Treatment/Care Decisions
+  chapters: [neuro/seizure]
+  stem: |
+    A 32-year-old man is evaluated in the emergency department after a first generalized tonic-clonic seizure witnessed by his wife this morning. It lasted 90 seconds, and he was confused for 20 minutes afterward. He has no history of head trauma, CNS infection or febrile seizures. He drinks alcohol socially and does not use drugs. He slept normally last night. He is now back to his baseline.
+
+    On physical examination, vital signs are normal. Neurologic examination is normal. There is a lateral tongue bite.
+  labs:
+    - ["Glucose", "sodium, calcium, magnesium, normal"]
+    - ["Urine drug screen", "negative"]
+    - ["Noncontrast CT of the head", "normal"]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Begin levetiracetam today
+    B: Lumbar puncture
+    C: Outpatient EEG and brain MRI, counseling on driving restrictions, and no antiseizure medication for now
+    D: Admit for continuous video EEG monitoring
+    E: Begin phenytoin with a loading dose
+  answer: C
+  explain: |
+    He has had a **first unprovoked seizure** with a normal examination, labs and CT, and has returned to baseline.
+
+    The risk of a second seizure is about **30–40% over 5 years** (highest in the first 2 years). Work-up identifies patients at higher risk:
+    - **EEG** — epileptiform discharges raise recurrence risk.
+    - **MRI of the brain** — a structural lesion raises recurrence risk.
+    - Nocturnal seizure, prior brain insult.
+
+    **Immediate antiseizure medication** reduces the 2-year recurrence risk by about 35% but **does not change the long-term prognosis** (remission at 3 years). AAN/AES guidance: individualize; most patients with a first seizure and no risk factors are **not** started on treatment. If EEG or MRI is abnormal, treatment is reasonable (that is effectively epilepsy).
+
+    **Counsel on driving** (state laws, often 3–12 months seizure-free), and safety (no swimming alone, heights, bathing).
+  why:
+    A: Starting medication immediately is reasonable for patients with risk factors but is not required after a first unprovoked seizure with normal evaluation; decisions should follow EEG and MRI.
+    B: LP is indicated for fever, meningismus, immunosuppression or persistent altered mental status; he has none.
+    D: He is at baseline and does not need inpatient monitoring.
+    E: Phenytoin has many drug interactions and adverse effects and is not a preferred first-line agent; loading is for status epilepticus.
+  objective: |
+    After a first unprovoked seizure with normal examination and imaging, obtain EEG and MRI, counsel on driving, and individualize the decision to start antiseizure medication based on recurrence risk.
+  refs:
+    - Krumholz A, et al. Evidence-based guideline: management of an unprovoked first seizure in adults (AAN/AES). *Neurology* 2015;84:1705.

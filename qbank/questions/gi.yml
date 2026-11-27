@@ -1,4 +1,4 @@
-# Gastroenterology & Hepatology — ABIM blueprint 10%
+# Gastroenterology & Hepatology — ABIM CERT blueprint
 - id: GI-001
   topic: Barrett esophagus without dysplasia
   task: Treatment/Care Decisions
@@ -6,7 +6,7 @@
   stem: |
     A 58-year-old man comes to discuss the results of an upper endoscopy done for 10 years of frequent heartburn. He takes omeprazole 20 mg daily, which controls his symptoms well. He has no dysphagia, weight loss or bleeding. He is a former smoker.
 
-    Endoscopy showed salmon-colored mucosa extending **4 cm** above the gastroesophageal junction without nodules or ulceration. Biopsies show **intestinal metaplasia with goblet cells and no dysplasia**, confirmed by a second gastrointestinal pathologist.
+    Endoscopy showed salmon-colored mucosa extending 4 cm above the gastroesophageal junction without nodules or ulceration. Biopsies show intestinal metaplasia with goblet cells and no dysplasia, confirmed by a second gastrointestinal pathologist.
   lead: Which of the following is the most appropriate management?
   choices:
     A: Stop omeprazole because symptoms are controlled
@@ -48,7 +48,7 @@
   task: Diagnosis/Testing
   chapters: [gi/peptic-hpylori]
   stem: |
-    A 44-year-old woman was diagnosed with a **duodenal ulcer** 4 weeks ago when she presented with epigastric pain. Biopsies were positive for *Helicobacter pylori*. She completed 14 days of bismuth quadruple therapy (omeprazole, bismuth subsalicylate, tetracycline and metronidazole) **2 weeks ago**. She is still taking omeprazole 40 mg daily and now has no pain.
+    A 44-year-old woman was diagnosed with a duodenal ulcer 4 weeks ago when she presented with epigastric pain. Biopsies were positive for *Helicobacter pylori*. She completed 14 days of bismuth quadruple therapy (omeprazole, bismuth subsalicylate, tetracycline and metronidazole) 2 weeks ago. She is still taking omeprazole 40 mg daily and now has no pain.
 
     Examination is normal. Hemoglobin is 12.9 g/dL.
   lead: Which of the following is the most appropriate way to confirm eradication of *H. pylori*?
@@ -86,7 +86,7 @@
   task: Diagnosis/Testing
   chapters: [heme/cancer-screening]
   stem: |
-    A 38-year-old man comes to establish care. He feels well. His **father was diagnosed with colorectal cancer at age 46** and is alive after surgery and chemotherapy. No other relatives have had cancer. The patient has no rectal bleeding, change in bowel habits or weight loss.
+    A 38-year-old man comes to establish care. He feels well. His father was diagnosed with colorectal cancer at age 46 and is alive after surgery and chemotherapy. No other relatives have had cancer. The patient has no rectal bleeding, change in bowel habits or weight loss.
 
     Examination is normal. Complete blood count is normal.
   lead: Which of the following is the most appropriate colorectal cancer screening plan?
@@ -125,13 +125,13 @@
   task: Treatment/Care Decisions
   chapters: [gi/cirrhosis]
   stem: |
-    A 57-year-old man with alcohol-associated cirrhosis comes for follow-up. He has not had alcohol for 18 months. He has never had ascites, encephalopathy or gastrointestinal bleeding. Screening upper endoscopy last week showed **large esophageal varices** without red wale signs or stigmata of recent bleeding.
+    A 57-year-old man with alcohol-associated cirrhosis comes for follow-up. He has not had alcohol for 18 months. He has never had ascites, encephalopathy or gastrointestinal bleeding. Screening upper endoscopy last week showed large esophageal varices without red wale signs or stigmata of recent bleeding.
 
     Blood pressure is 122/74 mm Hg and pulse is 82/min. There is mild splenomegaly and no ascites.
   labs:
     - [Platelets, "88,000/µL"]
     - [Albumin, 3.7 g/dL]
-    - [Bilirubin, total, 1.2 mg/dL]
+    - ["Bilirubin, total", "1.2 mg/dL"]
     - [INR, 1.2]
     - [Creatinine, 0.9 mg/dL]
   lead: Which of the following is the most appropriate treatment to prevent variceal bleeding?
@@ -172,7 +172,7 @@
   labs:
     - [Admission ALT, 312 U/L]
     - [Today ALT, 96 U/L]
-    - [Today bilirubin, total, 0.9 mg/dL]
+    - ["Bilirubin, total (today)", "0.9 mg/dL"]
     - [Triglycerides, 140 mg/dL]
     - [Calcium, 9.1 mg/dL]
     - [Right upper quadrant ultrasound, multiple gallstones; common bile duct 5 mm; no pericholecystic fluid]
@@ -202,3 +202,766 @@
   refs:
     - Tenner S, et al. American College of Gastroenterology guideline: management of acute pancreatitis. *Am J Gastroenterol* 2024;119:419.
     - da Costa DW, et al. Same-admission versus interval cholecystectomy for mild gallstone pancreatitis (PONCHO). *Lancet* 2015;386:1261.
+
+
+- id: GI-006
+  topic: Celiac disease — serologic testing
+  task: Diagnosis/Testing
+  chapters: [gi/diarrhea]
+  stem: |
+    A 32-year-old woman is evaluated for 8 months of bloating, loose stools and fatigue. She has lost 3 kg (6.6 lb). She has autoimmune hypothyroidism treated with levothyroxine. She eats a regular diet that includes bread and pasta daily.
+
+    On physical examination, vital signs are normal. BMI is 20. There is a pruritic papulovesicular rash on the extensor surfaces of both elbows. The abdomen is mildly distended and nontender.
+  labs:
+    - ["Hemoglobin", "10.9 g/dL"]
+    - ["MCV", "76 fL"]
+    - ["Ferritin", "6 ng/mL"]
+    - ["Albumin", "3.6 g/dL"]
+    - ["Aminotransferases", "mildly elevated (ALT 58 U/L)"]
+  lead: Which of the following is the most appropriate initial diagnostic test?
+  choices:
+    A: Antigliadin IgG antibodies
+    B: HLA-DQ2/DQ8 genotyping
+    C: Stool culture and ova and parasites
+    D: Tissue transglutaminase IgA antibody with total IgA level
+    E: Trial of a gluten-free diet
+  answer: D
+  explain: |
+    Diarrhea, bloating, weight loss, **iron deficiency anemia unresponsive to diet**, mildly raised aminotransferases, autoimmune thyroid disease and **dermatitis herpetiformis** (itchy vesicles on the extensor surfaces) point to **celiac disease**.
+
+    The best initial test is **tissue transglutaminase IgA (tTG-IgA)** plus a **total IgA level**. Selective IgA deficiency is 10–15 times more common in celiac disease and causes a **false-negative** tTG-IgA; if IgA is low, use **deamidated gliadin peptide IgG** or tTG-IgG.
+
+    The patient must be **eating gluten** when tested. A positive serology is confirmed with **upper endoscopy and duodenal biopsies** (villous atrophy, crypt hyperplasia, intraepithelial lymphocytes) before lifelong gluten-free diet.
+  why:
+    A: Native antigliadin antibodies are inaccurate and no longer recommended.
+    B: HLA-DQ2/DQ8 testing has a high negative predictive value but poor positive predictive value (present in ~30% of the population). It helps exclude celiac disease in unclear cases, not as a first test.
+    C: Chronic diarrhea for 8 months with iron deficiency and a typical rash is not an infection pattern.
+    E: Starting a gluten-free diet before testing makes serology and biopsy falsely negative and prevents a firm diagnosis.
+  pearl: |
+    **Dermatitis herpetiformis is celiac disease of the skin** — almost all patients have gluten-sensitive enteropathy, even without GI symptoms. Treat with gluten-free diet (plus dapsone for the rash).
+  objective: |
+    Screen for celiac disease with tissue transglutaminase IgA and a total IgA level while the patient is eating gluten, and confirm positive results with duodenal biopsy.
+  refs:
+    - Rubio-Tapia A, et al. ACG guidelines update: diagnosis and management of celiac disease. *Am J Gastroenterol* 2023;118:59.
+
+- id: GI-007
+  topic: Clostridioides difficile infection — first episode
+  task: Treatment/Care Decisions
+  chapters: [gi/diarrhea]
+  stem: |
+    A 72-year-old woman is evaluated for 2 days of watery diarrhea (8 stools daily) and crampy abdominal pain. She finished a course of amoxicillin-clavulanate for sinusitis 10 days ago. She has no previous episodes of similar diarrhea.
+
+    On physical examination, temperature is 37.9 °C (100.2 °F), blood pressure is 124/72 mm Hg, and pulse rate is 96/min. The abdomen is soft with mild diffuse tenderness and normal bowel sounds.
+  labs:
+    - ["Leukocyte count", "12,400/µL"]
+    - ["Creatinine", "0.9 mg/dL (baseline 0.8 mg/dL)"]
+    - ["Stool C. difficile PCR", "positive"]
+    - ["Stool C. difficile toxin EIA", "positive"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Oral fidaxomicin
+    B: Oral metronidazole
+    C: Intravenous vancomycin
+    D: Fecal microbiota transplantation
+    E: Loperamide
+  answer: A
+  explain: |
+    She has a **first episode of nonsevere C. difficile infection** (leukocyte count <15,000/µL and creatinine <1.5 mg/dL).
+
+    **Oral fidaxomicin** (200 mg twice daily for 10 days) is preferred over oral vancomycin for an initial episode (IDSA/SHEA 2021): cure rates are similar, but **recurrence is lower** because fidaxomicin is narrow-spectrum and spares the normal colonic flora. **Oral vancomycin** (125 mg four times daily for 10 days) remains an acceptable alternative.
+
+    | Episode | Treatment |
+    |---|---|
+    | First, nonsevere or severe | **Fidaxomicin** (or oral vancomycin) |
+    | Fulminant (hypotension, ileus, megacolon) | Oral vancomycin 500 mg QID + IV metronidazole (± rectal vancomycin); surgery consult |
+    | First recurrence | Fidaxomicin (or vancomycin taper/pulse); consider **bezlotoxumab** |
+    | ≥2 recurrences | **Fecal microbiota–based therapy** |
+  why:
+    B: Metronidazole is less effective than vancomycin or fidaxomicin and is used only when those are unavailable for a nonsevere episode.
+    C: IV vancomycin is not excreted into the colon and does not treat C. difficile.
+    D: Fecal microbiota therapy is for multiple recurrences, not a first episode.
+    E: Antimotility drugs are avoided in active C. difficile infection because they may precipitate toxic megacolon.
+  pearl: |
+    **Test only unformed stools** (≥3 in 24 hours) and do not test for cure. Many hospitalized patients are colonized — a positive PCR in formed stool is not infection.
+  objective: |
+    Treat an initial episode of C. difficile infection with oral fidaxomicin (preferred) or oral vancomycin.
+  refs:
+    - Johnson S, et al. 2021 focused update guidelines on management of Clostridioides difficile infection in adults (IDSA/SHEA). *Clin Infect Dis* 2021;73:e1029.
+    - Kelly CR, et al. ACG clinical guidelines: prevention, diagnosis, and treatment of C. difficile infections. *Am J Gastroenterol* 2021;116:1124.
+
+- id: GI-008
+  topic: Irritable bowel syndrome
+  task: Diagnosis/Testing
+  chapters: [gi/diarrhea]
+  stem: |
+    A 28-year-old woman is evaluated for 1 year of recurrent lower abdominal cramping that occurs about 2 days per week. The pain is relieved by defecation and is associated with loose, frequent stools alternating with days of constipation. Symptoms worsen during stress at work. She has no rectal bleeding, nocturnal diarrhea, fever or weight loss. There is no family history of colon cancer, inflammatory bowel disease or celiac disease.
+
+    On physical examination, vital signs are normal and BMI is 24. The abdomen is soft with mild lower quadrant tenderness. Rectal examination is normal.
+  labs:
+    - ["Complete blood count", "normal"]
+    - ["C-reactive protein", "1 mg/L"]
+  lead: Which of the following is the most appropriate next diagnostic step?
+  choices:
+    A: CT scan of the abdomen and pelvis
+    B: Colonoscopy with random biopsies
+    C: Stool calprotectin and celiac serology
+    D: Hydrogen breath test
+    E: Upper endoscopy
+  answer: C
+  explain: |
+    She meets **Rome IV criteria for irritable bowel syndrome (IBS)**: recurrent abdominal pain ≥1 day/week for ≥3 months, associated with defecation and a change in stool frequency or form — here **IBS with mixed bowel habits**.
+
+    IBS is a **positive diagnosis**, not a diagnosis of exclusion. In a young patient **without alarm features** (age ≥45 at onset, rectal bleeding, weight loss, nocturnal symptoms, anemia, family history of CRC/IBD/celiac), testing is limited to:
+    - **Celiac serology** (tTG-IgA) for IBS with diarrhea or mixed
+    - **Fecal calprotectin** (or lactoferrin) and CRP to screen for IBD
+    - CBC
+
+    Colonoscopy is not needed without alarm features or an age-appropriate screening indication.
+  why:
+    A: Imaging has a very low yield in typical IBS and exposes her to radiation.
+    B: Colonoscopy is reserved for alarm features or age-appropriate screening. She has neither.
+    D: Breath testing for small intestinal bacterial overgrowth or lactose intolerance is not part of the routine IBS evaluation.
+    E: She has no upper GI symptoms or alarm features that would warrant endoscopy.
+  mnemonic: |
+    Rome IV: pain **1 day a week for 3 months** plus **2 of 3** — related to defecation, change in frequency, change in form.
+  objective: |
+    Diagnose IBS by Rome IV criteria and, in the absence of alarm features, limit testing to celiac serology, fecal calprotectin, CRP and a CBC.
+  refs:
+    - Lacy BE, et al. ACG clinical guideline: management of irritable bowel syndrome. *Am J Gastroenterol* 2021;116:17.
+
+- id: GI-009
+  topic: Acute severe ulcerative colitis
+  task: Treatment/Care Decisions
+  chapters: [gi/ibd]
+  stem: |
+    A 26-year-old man with ulcerative colitis diagnosed 2 years ago is hospitalized with 10 days of 9 bloody stools daily, cramping and fatigue. He takes oral mesalamine.
+
+    On physical examination, temperature is 38.2 °C (100.8 °F), blood pressure is 112/68 mm Hg, and pulse rate is 104/min. The abdomen is mildly tender without distension or rebound; bowel sounds are present.
+  labs:
+    - ["Hemoglobin", "9.8 g/dL"]
+    - ["Leukocyte count", "13,600/µL"]
+    - ["C-reactive protein", "64 mg/L"]
+    - ["Albumin", "2.9 g/dL"]
+    - ["Stool C. difficile PCR", "negative"]
+    - ["Abdominal radiograph", "no colonic dilation"]
+  lead: In addition to venous thromboembolism prophylaxis, which of the following is the most appropriate treatment?
+  choices:
+    A: Intravenous methylprednisolone
+    B: Oral budesonide MMX
+    C: Increase oral mesalamine and add mesalamine enemas
+    D: Loperamide and oral iron
+    E: Emergency total colectomy
+  answer: A
+  explain: |
+    He has **acute severe ulcerative colitis** by **Truelove and Witts criteria**: **≥6 bloody stools daily** plus at least one sign of systemic toxicity — fever, tachycardia >90/min, hemoglobin <10.5 g/dL or high ESR/CRP. *C. difficile* is excluded, and there is no toxic megacolon.
+
+    First-line therapy is **IV glucocorticoids** (methylprednisolone 60 mg/d or hydrocortisone 100 mg three times daily). Also give **pharmacologic VTE prophylaxis** — IBD flares are strongly prothrombotic, even with rectal bleeding — and do flexible sigmoidoscopy to exclude CMV.
+
+    Reassess on **day 3**: if there is no response, start **rescue therapy with infliximab or cyclosporine**; colectomy if rescue fails or if perforation, megacolon or uncontrolled bleeding develops.
+  why:
+    B: Budesonide MMX is for mild-to-moderate UC; it is not strong enough for a severe flare with systemic toxicity.
+    C: Escalating mesalamine is appropriate for mild-to-moderate disease, not acute severe colitis.
+    D: Antidiarrheals can precipitate toxic megacolon in severe colitis and should be avoided.
+    E: Emergency colectomy is for perforation, toxic megacolon, massive hemorrhage or failure of medical rescue therapy.
+  objective: |
+    Treat acute severe ulcerative colitis with intravenous glucocorticoids, VTE prophylaxis and exclusion of infection, with infliximab or cyclosporine rescue if there is no response by day 3.
+  refs:
+    - Rubin DT, et al. ACG clinical guideline update: ulcerative colitis in adults. *Am J Gastroenterol* 2025.
+
+- id: GI-010
+  topic: Crohn disease — ileal resection complications
+  task: Pathophysiology/Basic Science
+  chapters: [gi/ibd, renal/kidney-stones]
+  stem: |
+    A 39-year-old woman with Crohn disease had a resection of 80 cm of terminal ileum 3 years ago. She is now evaluated for acute right flank pain radiating to the groin. Noncontrast CT shows a 5-mm obstructing stone in the right ureter. She has chronic loose, greasy stools.
+  labs:
+    - ["Urine pH", "5.8"]
+    - ["24-hour urine oxalate", "78 mg (reference, <45)"]
+    - ["24-hour urine citrate", "low"]
+    - ["Vitamin B₁₂", "168 pg/mL (low)"]
+  lead: Which of the following is the most likely mechanism of her kidney stone?
+  choices:
+    A: Increased intestinal absorption of oxalate due to fat malabsorption
+    B: Increased hepatic production of oxalate
+    C: Increased urinary uric acid from rapid cell turnover
+    D: Infection with urease-producing bacteria
+    E: Primary hyperparathyroidism
+  answer: A
+  explain: |
+    This is **enteric hyperoxaluria**. After ileal resection, **bile acids are lost**, so fat is poorly absorbed (steatorrhea). In the gut lumen, **unabsorbed fatty acids bind calcium** (saponification). Normally calcium binds dietary oxalate and keeps it in the stool; without free calcium, **oxalate stays soluble and is absorbed in the colon** (bile acids also make the colon more permeable). The result is **calcium oxalate stones**.
+
+    Chronic diarrhea adds **low urine volume and low citrate** (bicarbonate loss → hypocitraturia).
+
+    Treatment: high fluid intake, **low-fat, low-oxalate diet**, **calcium supplements taken with meals** (to bind oxalate), and potassium citrate.
+
+    The ileum is also where **vitamin B₁₂** (with intrinsic factor) and **bile acids** are absorbed — explaining her low B₁₂ and, if bile acids spill into the colon, bile acid diarrhea (treated with cholestyramine).
+  why:
+    B: Hepatic overproduction occurs in rare inherited primary hyperoxaluria, not after bowel resection.
+    C: Uric acid stones form in acidic urine and with gout or tumor lysis; her urine oxalate is high.
+    D: Struvite stones form with urease-producing organisms (Proteus, Klebsiella) in alkaline urine.
+    E: Hyperparathyroidism causes hypercalciuria and calcium stones, but the key abnormality here is hyperoxaluria from malabsorption.
+  pearl: |
+    **Do not restrict dietary calcium** in calcium oxalate stone formers — low calcium intake increases oxalate absorption and stone risk.
+  objective: |
+    Fat malabsorption after ileal resection causes enteric hyperoxaluria because unabsorbed fatty acids bind calcium, freeing oxalate for colonic absorption.
+  refs:
+    - Witting C, et al. Pathophysiology and treatment of enteric hyperoxaluria. *Clin J Am Soc Nephrol* 2021;16:487.
+
+- id: GI-011
+  topic: Hepatitis B serologies
+  task: Diagnosis/Testing
+  chapters: [gi/viral-hepatitis]
+  stem: |
+    A 45-year-old man is evaluated before starting rituximab for lymphoma. He has no symptoms of liver disease. He emigrated from Vietnam 20 years ago. He has never been vaccinated against hepatitis B.
+
+    Examination is normal.
+  labs:
+    - ["ALT", "22 U/L"]
+    - ["HBsAg", "negative"]
+    - ["Anti-HBs", "negative"]
+    - ["Anti-HBc (total)", "positive"]
+    - ["HBV DNA", "undetectable"]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Begin entecavir prophylaxis before rituximab
+    B: Give hepatitis B vaccine and proceed without prophylaxis
+    C: Proceed with rituximab without monitoring
+    D: Repeat serologies in 6 months
+    E: Begin interferon alfa
+  answer: A
+  explain: |
+    **Isolated anti-HBc positivity** with negative HBsAg most often means **resolved past HBV infection** (with waning anti-HBs). The virus persists as cccDNA in the liver for life.
+
+    **Rituximab** (anti-CD20) is the highest-risk drug for **HBV reactivation** — even in HBsAg-negative, anti-HBc–positive patients, reactivation can cause fulminant hepatitis and death. **Antiviral prophylaxis with entecavir or tenofovir** is recommended, started before therapy and continued for at least **12–18 months after rituximab** ends.
+
+    | HBsAg | Anti-HBc | Anti-HBs | Meaning |
+    |---|---|---|---|
+    | − | − | + | **Vaccinated** |
+    | − | + | + | Resolved infection (immune) |
+    | + | + (IgM) | − | **Acute** infection |
+    | + | + (IgG) | − | **Chronic** infection (>6 months) |
+    | − | + | − | Resolved with waning anti-HBs, window period, or occult infection |
+
+    Screen everyone with **HBsAg, anti-HBc and anti-HBs** before chemotherapy, immunosuppression, or anti-CD20 therapy.
+  why:
+    B: Vaccination does not protect against reactivation of existing HBV, and he needs prophylaxis given the high-risk drug.
+    C: Proceeding without prophylaxis or monitoring risks severe reactivation with rituximab.
+    D: The decision is needed now, before rituximab.
+    E: Interferon is not used for prophylaxis and is poorly tolerated, and it would worsen cytopenias during chemotherapy.
+  objective: |
+    Give nucleos(t)ide prophylaxis to anti-HBc–positive patients, even if HBsAg-negative, before rituximab or other high-risk immunosuppression.
+  refs:
+    - Terrault NA, et al. Update on prevention, diagnosis, and treatment of chronic hepatitis B: AASLD 2018 hepatitis B guidance. *Hepatology* 2018;67:1560.
+    - Hwang JP, et al. Hepatitis B virus screening and management for patients with cancer prior to therapy: ASCO provisional clinical opinion update. *J Clin Oncol* 2020;38:3698.
+
+- id: GI-012
+  topic: Chronic hepatitis C — treatment
+  task: Treatment/Care Decisions
+  chapters: [gi/viral-hepatitis]
+  stem: |
+    A 52-year-old man is evaluated after one-time screening showed a positive hepatitis C antibody. He used injection drugs 25 years ago and has not used since. He has no symptoms.
+
+    On physical examination, vital signs are normal. There are no stigmata of chronic liver disease.
+  labs:
+    - ["ALT", "64 U/L"]
+    - ["Platelet count", "212,000/µL"]
+    - ["Albumin", "4.1 g/dL"]
+    - ["HCV RNA", "2.4 million IU/mL"]
+    - ["HBsAg", "negative; anti-HBc, negative; anti-HBs, negative"]
+    - ["HIV antibody", "negative"]
+    - ["FIB-4 index", "1.1"]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Liver biopsy before treatment
+    B: Monitor HCV RNA and treat only if ALT rises
+    C: Pegylated interferon plus ribavirin
+    D: Sofosbuvir-velpatasvir for 12 weeks and hepatitis B vaccination
+    E: Repeat HCV RNA in 6 months to confirm chronic infection
+  answer: D
+  explain: |
+    A positive antibody with **detectable HCV RNA** confirms **active hepatitis C**. **Every** patient with chronic HCV should be treated (except those with very limited life expectancy) — treatment cures >95%, prevents cirrhosis and liver cancer, and stops transmission.
+
+    Simplified treatment for **treatment-naive adults without cirrhosis** (FIB-4 <3.25, no clinical cirrhosis):
+    - **Sofosbuvir-velpatasvir** for **12 weeks**, or **glecaprevir-pibrentasvir** for **8 weeks** — pangenotypic, so genotyping is not required.
+    - Before treatment: **HBV serologies** (DAA therapy can **reactivate HBV**), HIV test, drug-interaction check.
+    - Confirm cure with **sustained virologic response** (undetectable RNA) 12 weeks after treatment.
+
+    He is not immune to hepatitis B, so **vaccinate** him (and against hepatitis A).
+  why:
+    A: Noninvasive fibrosis assessment (FIB-4, elastography) has replaced biopsy for staging before HCV treatment.
+    B: Treatment is recommended for all patients with chronic HCV, regardless of ALT or fibrosis stage.
+    C: Interferon-based regimens are obsolete — less effective and far more toxic than DAAs.
+    E: An RNA-positive result after an infection that was acquired decades ago confirms chronic infection; there is no need to wait.
+  pearl: |
+    The USPSTF and CDC recommend **one-time HCV screening for all adults 18–79 years**, and testing during every pregnancy.
+  objective: |
+    Treat all patients with chronic hepatitis C with a pangenotypic direct-acting antiviral regimen after checking for hepatitis B coinfection.
+  refs:
+    - AASLD-IDSA. Recommendations for testing, managing, and treating hepatitis C. hcvguidelines.org (updated 2023).
+    - US Preventive Services Task Force. Screening for hepatitis C virus infection in adolescents and adults. *JAMA* 2020;323:970.
+
+- id: GI-013
+  topic: Hereditary hemochromatosis
+  task: Diagnosis/Testing
+  chapters: [gi/liver-tests]
+  stem: |
+    A 47-year-old man is evaluated for fatigue, joint pains in his hands and mildly elevated aminotransferases found on routine testing. He drinks one beer a week. He takes no medications or supplements. His older brother has "liver problems".
+
+    On physical examination, vital signs are normal. BMI is 25. There is tenderness and bony swelling of the second and third metacarpophalangeal joints of both hands. The liver edge is palpable 2 cm below the costal margin.
+  labs:
+    - ["ALT", "72 U/L"]
+    - ["AST", "58 U/L"]
+    - ["Fasting glucose", "128 mg/dL"]
+    - ["Transferrin saturation", "78%"]
+    - ["Ferritin", "1,480 ng/mL"]
+    - ["Hepatitis B and C serologies", "negative"]
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: Bone marrow biopsy
+    B: HFE gene testing
+    C: Liver biopsy
+    D: MRI of the hands
+    E: Serum ceruloplasmin
+  answer: B
+  explain: |
+    **Second and third MCP arthropathy**, fatigue, elevated aminotransferases, hepatomegaly, new hyperglycemia and a family history of liver disease → **hereditary hemochromatosis**.
+
+    The screening tests are **fasting transferrin saturation (>45%)** and **ferritin**. When the transferrin saturation is elevated, the next step is **HFE gene testing** (C282Y/H63D). **C282Y homozygosity** confirms the diagnosis in most northern European patients.
+
+    **Liver fibrosis assessment**: if C282Y homozygous with **ferritin >1000 ng/mL** or raised aminotransferases, assess for advanced fibrosis (elastography/MRI; biopsy if uncertain) — he will need this. Treatment is **therapeutic phlebotomy** to a ferritin of 50–100 ng/mL. Screen **first-degree relatives**.
+  why:
+    A: Bone marrow biopsy is not used to diagnose iron overload.
+    C: Liver biopsy is no longer needed for diagnosis. It may be used to stage fibrosis when noninvasive tests are inconclusive, after HFE testing.
+    D: Hand imaging shows hook-like osteophytes and chondrocalcinosis but does not establish the diagnosis.
+    E: Ceruloplasmin screens for Wilson disease, which presents in younger patients with neuropsychiatric findings and low ceruloplasmin.
+  mnemonic: |
+    Hemochromatosis = **"bronze diabetes"** — liver, pancreas, skin, heart, gonads and the **"iron fist"** (2nd/3rd MCP arthropathy).
+  objective: |
+    In a patient with elevated transferrin saturation and ferritin, perform HFE genotyping to diagnose hereditary hemochromatosis.
+  refs:
+    - Kowdley KV, et al. ACG clinical guideline: hereditary hemochromatosis. *Am J Gastroenterol* 2019;114:1202.
+
+- id: GI-014
+  topic: MASLD — fibrosis risk assessment
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [gi/liver-tests]
+  stem: |
+    A 56-year-old woman is evaluated for mildly elevated aminotransferases found on routine testing. She has type 2 diabetes, hypertension and obesity. She drinks alcohol rarely. Medications are metformin, lisinopril and atorvastatin.
+
+    On physical examination, BMI is 36. There are no signs of chronic liver disease.
+
+    Ultrasonography shows a diffusely echogenic liver without masses; the spleen is normal in size.
+  labs:
+    - ["AST", "48 U/L"]
+    - ["ALT", "42 U/L"]
+    - ["Platelet count", "168,000/µL"]
+    - ["Albumin", "4.2 g/dL"]
+    - ["Hepatitis B and C serologies", "negative"]
+    - ["Ferritin", "210 ng/mL; transferrin saturation, 28%"]
+    - ["FIB-4 index", "2.1"]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Liver biopsy
+    B: Repeat FIB-4 index in 3 years
+    C: Stop atorvastatin
+    D: Vibration-controlled transient elastography
+    E: Begin vitamin E, 800 IU/d
+  answer: D
+  explain: |
+    She has **metabolic dysfunction–associated steatotic liver disease (MASLD)** — hepatic steatosis plus cardiometabolic risk factors, with other causes excluded.
+
+    The main determinant of outcome is **fibrosis stage**. Use a **two-step approach**:
+    1. **FIB-4** (age, AST, ALT, platelets).
+    2. Second-line test when FIB-4 is not low: **vibration-controlled transient elastography (FibroScan)** or ELF blood test.
+
+    | FIB-4 | Interpretation | Next step |
+    |---|---|---|
+    | **<1.3** | Low risk of advanced fibrosis | Repeat in 1–3 years |
+    | **1.3–2.67** | Indeterminate | **Elastography** (or ELF) |
+    | >2.67 | High risk | Hepatology referral |
+
+    Her FIB-4 of 2.1 is indeterminate. Diabetes makes advanced fibrosis more likely. **Weight loss of 7–10%**, GLP-1 receptor agonists and **resmetirom** (approved for MASH with F2–F3 fibrosis) are treatment options; semaglutide was also approved for MASH with fibrosis in 2025.
+  why:
+    A: Biopsy is reserved for uncertain diagnoses or discordant noninvasive tests; elastography comes first.
+    B: Repeating FIB-4 in 3 years is appropriate only if the score is low (<1.3).
+    C: Statins are safe in MASLD and should be continued — cardiovascular disease is the leading cause of death in these patients.
+    E: Vitamin E is an option for biopsy-proven MASH without diabetes, but it is not the next step and is less favored in patients with diabetes.
+  objective: |
+    In MASLD with an indeterminate FIB-4 index (1.3–2.67), use transient elastography to assess for advanced fibrosis.
+  refs:
+    - Rinella ME, et al. AASLD practice guidance on the clinical assessment and management of nonalcoholic fatty liver disease. *Hepatology* 2023;77:1797.
+    - Harrison SA, et al. A phase 3 trial of resmetirom in NASH with liver fibrosis (MAESTRO-NASH). *N Engl J Med* 2024;390:497.
+
+- id: GI-015
+  topic: Primary biliary cholangitis
+  task: Treatment/Care Decisions
+  chapters: [gi/liver-tests]
+  stem: |
+    A 54-year-old woman is evaluated for 6 months of fatigue and generalized itching that is worse at night. She has hypothyroidism treated with levothyroxine. She takes no other medications or supplements and does not drink alcohol.
+
+    On physical examination, there are excoriations on her arms and back. There are xanthelasmas around both eyes. The liver is not enlarged.
+
+    Ultrasonography of the liver shows normal echotexture and no biliary dilation.
+  labs:
+    - ["Alkaline phosphatase", "386 U/L"]
+    - ["γ-Glutamyltransferase", "410 U/L"]
+    - ["ALT", "52 U/L"]
+    - ["Total bilirubin", "0.9 mg/dL"]
+    - ["Antimitochondrial antibody", "positive (titer 1:640)"]
+    - ["Total cholesterol", "284 mg/dL"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Cholestyramine alone
+    B: Endoscopic retrograde cholangiopancreatography with stenting
+    C: Prednisone
+    D: Liver transplantation referral
+    E: Ursodeoxycholic acid
+  answer: E
+  explain: |
+    A middle-aged woman with **fatigue, pruritus, cholestatic liver tests** (high alkaline phosphatase and GGT), normal bile ducts on imaging and a **positive antimitochondrial antibody (AMA)** has **primary biliary cholangitis (PBC)**. AMA is positive in about 95% of patients; liver biopsy is not needed when AMA is positive and alkaline phosphatase is ≥1.5 times the upper limit.
+
+    **Ursodeoxycholic acid (UDCA)**, 13–15 mg/kg/d, is first-line for all patients. It slows progression and improves transplant-free survival. Assess response at 12 months; if alkaline phosphatase stays high, add a second-line drug — **elafibranor or seladelpar** (PPAR agonists approved in 2024; obeticholic acid is no longer favored because of liver safety concerns).
+
+    Associated problems to look for: **hypothyroidism, Sjögren syndrome, osteoporosis, fat-soluble vitamin deficiency, hypercholesterolemia** (xanthelasma — does not raise cardiovascular risk much).
+  why:
+    A: Cholestyramine relieves pruritus, but it does not treat the disease. UDCA is required.
+    B: ERCP is for large-duct obstruction (stones, strictures, PSC). Her ducts are normal.
+    C: Glucocorticoids treat autoimmune hepatitis (high aminotransferases, anti–smooth muscle antibodies, high IgG), not PBC.
+    D: Transplantation is for decompensated cirrhosis or intractable pruritus; she has early disease.
+  pearl: |
+    **PBC vs PSC**: PBC — middle-aged woman, **AMA+**, small ducts (normal imaging). PSC — younger man with **ulcerative colitis**, "beaded" large ducts on MRCP, p-ANCA.
+  objective: |
+    Treat primary biliary cholangitis with ursodeoxycholic acid and add a second-line agent if biochemical response is inadequate.
+  refs:
+    - Lindor KD, et al. Primary biliary cholangitis: 2018 practice guidance from the AASLD. *Hepatology* 2019;69:394.
+    - Kowdley KV, et al. Efficacy and safety of elafibranor in primary biliary cholangitis (ELATIVE). *N Engl J Med* 2024;390:795.
+
+- id: GI-016
+  topic: Acetaminophen overdose
+  task: Treatment/Care Decisions
+  chapters: [gi/liver-tests]
+  stem: |
+    A 23-year-old woman is brought to the emergency department 5 hours after ingesting about 40 tablets of 500-mg acetaminophen during an argument with her partner. She has had nausea and vomited once. She took no other drugs and drank no alcohol.
+
+    On physical examination, temperature is 36.8 °C (98.2 °F), blood pressure is 118/72 mm Hg, and pulse rate is 96/min. She is alert and tearful. The abdomen is soft and nontender.
+  labs:
+    - ["4-hour acetaminophen level (drawn 4 hours after ingestion)", "210 µg/mL"]
+    - ["ALT", "28 U/L"]
+    - ["INR", "1.0"]
+    - ["Creatinine", "0.7 mg/dL"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Activated charcoal only
+    B: Hemodialysis
+    C: Intravenous N-acetylcysteine
+    D: Observe and repeat liver tests in 24 hours
+    E: Referral for liver transplantation
+  answer: C
+  explain: |
+    She took **20 g** — well above the toxic threshold (~150 mg/kg or >7.5–10 g). Her **4-hour level of 210 µg/mL is above the treatment line (150 µg/mL at 4 h)** on the Rumack-Matthew nomogram. Normal ALT now means nothing — injury does not show until **24–36 hours**.
+
+    **N-acetylcysteine (NAC)** replenishes glutathione, which detoxifies the toxic metabolite **NAPQI**. It is nearly 100% protective when started **within 8 hours** and still helps when given later, even after liver failure develops. Give IV NAC (or oral) now.
+
+    | Phase | Time | Findings |
+    |---|---|---|
+    | I | 0–24 h | Nausea, vomiting, or nothing |
+    | II | 24–72 h | Rising ALT/AST, RUQ pain |
+    | III | 72–96 h | Peak injury: ALT >10,000, INR ↑, encephalopathy, AKI |
+    | IV | >96 h | Recovery or death |
+
+    She also needs **suicide risk assessment** and psychiatric evaluation before discharge.
+  why:
+    A: Activated charcoal helps only within 1–2 hours of ingestion (up to 4 hours for large doses). It is not a substitute for NAC.
+    B: Dialysis is for massive ingestions with coma, severe metabolic acidosis or very high levels, not for a patient who can receive NAC.
+    D: Waiting for liver tests to rise wastes the time window when NAC is most effective.
+    E: Transplant referral is for acute liver failure meeting King's College criteria (pH <7.3, or INR >6.5 + creatinine >3.4 + grade III–IV encephalopathy).
+  objective: |
+    Start N-acetylcysteine for acetaminophen overdose when the serum level is above the treatment line on the nomogram, without waiting for liver enzymes to rise.
+  refs:
+    - Chiew AL, et al. Updated guidelines for the management of paracetamol poisoning in Australia and New Zealand. *Med J Aust* 2020;212:175.
+    - Dart RC, et al. Management of acetaminophen poisoning in the US and Canada: a consensus statement. *JAMA Netw Open* 2023;6:e2327739.
+
+- id: GI-017
+  topic: Spontaneous bacterial peritonitis
+  task: Treatment/Care Decisions
+  chapters: [gi/cirrhosis]
+  stem: |
+    A 58-year-old man with alcohol-associated cirrhosis and ascites is admitted with 2 days of abdominal discomfort and mild confusion. Medications are furosemide, spironolactone and lactulose.
+
+    On physical examination, temperature is 37.9 °C (100.2 °F), blood pressure is 102/60 mm Hg, and pulse rate is 98/min. He is jaundiced and has asterixis. The abdomen is distended with shifting dullness and mild diffuse tenderness.
+
+    Diagnostic paracentesis is performed.
+  labs:
+    - ["Ascitic fluid neutrophil count", "620/µL"]
+    - ["Ascitic fluid total protein", "0.9 g/dL"]
+    - ["Serum-ascites albumin gradient", "1.8 g/dL"]
+    - ["Ascitic fluid Gram stain", "no organisms"]
+    - ["Serum creatinine", "1.4 mg/dL (baseline 0.9 mg/dL)"]
+    - ["Total bilirubin", "4.6 mg/dL"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Intravenous cefotaxime or ceftriaxone plus intravenous albumin
+    B: Intravenous cefotaxime or ceftriaxone alone
+    C: Oral ciprofloxacin
+    D: Large-volume paracentesis with albumin
+    E: Wait for ascitic fluid culture before starting antibiotics
+  answer: A
+  explain: |
+    An **ascitic fluid neutrophil count ≥250/µL** in cirrhosis without a surgical source = **spontaneous bacterial peritonitis (SBP)**. Start treatment **immediately**, without waiting for cultures (which are often negative).
+
+    1. **IV third-generation cephalosporin** (cefotaxime or ceftriaxone) for 5–7 days; broader coverage (e.g., piperacillin-tazobactam or a carbapenem) if nosocomial or recent antibiotics.
+    2. **IV albumin: 1.5 g/kg on day 1 and 1 g/kg on day 3** when **creatinine >1 mg/dL, BUN >30 mg/dL or bilirubin >4 mg/dL**. Albumin cut kidney failure (from about 30% to 10%) and mortality in this group. He has two of the three.
+    3. Hold **diuretics** and nephrotoxins; avoid large-volume paracentesis during active SBP with AKI.
+    4. After recovery: **lifelong secondary prophylaxis** (e.g., ciprofloxacin or TMP-SMX).
+  why:
+    B: Antibiotics without albumin miss the main way to prevent hepatorenal kidney injury in high-risk SBP.
+    C: Oral fluoroquinolone is used for prophylaxis or uncomplicated SBP without AKI, encephalopathy or shock. He has encephalopathy and kidney injury.
+    D: Large-volume paracentesis does not treat infection and may worsen kidney perfusion during SBP.
+    E: Delay increases mortality; the neutrophil count alone is enough to begin therapy.
+  mnemonic: |
+    SBP albumin: **"1.5 then 1, day 1 and day 3"** — if **creatinine >1, BUN >30, bilirubin >4**.
+  objective: |
+    Treat spontaneous bacterial peritonitis with an intravenous third-generation cephalosporin plus intravenous albumin on days 1 and 3 in patients with kidney dysfunction or jaundice.
+  refs:
+    - Biggins SW, et al. Diagnosis, evaluation, and management of ascites, SBP and hepatorenal syndrome: 2021 AASLD practice guidance. *Hepatology* 2021;74:1014.
+    - Sort P, et al. Effect of intravenous albumin on renal impairment and mortality in SBP. *N Engl J Med* 1999;341:403.
+
+- id: GI-018
+  topic: Hepatic encephalopathy
+  task: Treatment/Care Decisions
+  chapters: [gi/cirrhosis, neuro/ams-coma]
+  stem: |
+    A 64-year-old woman with cirrhosis from MASH is brought to the emergency department by her husband for 2 days of increasing sleepiness and confusion. She has been constipated for 4 days. Her medications are furosemide and spironolactone.
+
+    On physical examination, temperature is 36.9 °C (98.4 °F), blood pressure is 112/68 mm Hg, and pulse rate is 84/min. She is drowsy, disoriented to time and place, and has asterixis. There is mild ascites. There are no focal neurologic findings.
+
+    Diagnostic paracentesis shows an ascitic neutrophil count of 80/µL. Blood and urine cultures are pending, and chest radiograph is normal.
+  labs:
+    - ["Sodium", "134 mEq/L"]
+    - ["Potassium", "3.6 mEq/L"]
+    - ["Glucose", "112 mg/dL"]
+    - ["Creatinine", "1.0 mg/dL"]
+    - ["Hemoglobin", "10.8 g/dL (stable)"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Flumazenil
+    B: Lactulose titrated to 2–3 soft stools daily
+    C: Neomycin
+    D: Protein restriction to 20 g/d
+    E: Rifaximin alone
+  answer: B
+  explain: |
+    This is **overt hepatic encephalopathy (grade 2)** triggered by **constipation**. She has no infection (SBP excluded), bleeding, hypoglycemia or electrolyte disturbance — but always look for these.
+
+    **Lactulose** is first-line. It is metabolized by colonic bacteria to acids that convert ammonia (NH₃) to ammonium (NH₄⁺), which is trapped in the colon and excreted; it is also a laxative. Titrate to **2–3 soft bowel movements daily** (orally or by NG tube; enemas if unable to take oral).
+
+    After a recurrence, **add rifaximin** to lactulose for secondary prevention — it reduces recurrence and hospitalization.
+
+    **Ammonia levels** do not need to be checked to diagnose or monitor HE; HE is a clinical diagnosis.
+  why:
+    A: Flumazenil reverses benzodiazepines; she has taken none, and it has only transient effects in HE.
+    C: Neomycin is nephrotoxic and ototoxic and is no longer recommended.
+    D: Protein restriction worsens sarcopenia and malnutrition. Patients with cirrhosis need **1.2–1.5 g/kg/d** of protein.
+    E: Rifaximin is an add-on to lactulose for recurrence prevention, not a replacement for initial therapy.
+  mnemonic: |
+    HE precipitants — **"HEPATICS"**: **H**emorrhage, **E**lectrolytes (low K⁺, low Na⁺), **P**rotein load/constipation, **A**lkalosis, **T**ablets (benzodiazepines, opioids), **I**nfection, **C**onstipation, **S**hunt (TIPS).
+  objective: |
+    Treat overt hepatic encephalopathy with lactulose titrated to 2–3 soft stools daily after identifying the precipitant, and add rifaximin for secondary prevention.
+  refs:
+    - Vilstrup H, et al. Hepatic encephalopathy in chronic liver disease: 2014 practice guideline by AASLD and EASL. *Hepatology* 2014;60:715.
+    - Bass NM, et al. Rifaximin treatment in hepatic encephalopathy. *N Engl J Med* 2010;362:1071.
+
+- id: GI-019
+  topic: Hepatocellular carcinoma surveillance
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [gi/cirrhosis]
+  stem: |
+    A 61-year-old man with compensated cirrhosis from hepatitis C was cured with direct-acting antiviral therapy 2 years ago. He has no ascites, encephalopathy or variceal bleeding. He feels well and works full time. He takes carvedilol.
+
+    On physical examination, there is no jaundice or ascites. Liver tests and platelet count are stable.
+  lead: Which of the following is the most appropriate surveillance for hepatocellular carcinoma?
+  choices:
+    A: No further surveillance because hepatitis C is cured
+    B: Abdominal ultrasonography with or without α-fetoprotein every 6 months
+    C: α-Fetoprotein alone every 12 months
+    D: Contrast CT of the abdomen every 3 months
+    E: Liver biopsy every 2 years
+  answer: B
+  explain: |
+    Patients with **cirrhosis from any cause** have an annual HCC risk of about **1–4%** — high enough to justify surveillance. **Curing hepatitis C reduces but does not eliminate** the risk once cirrhosis is established; surveillance must continue indefinitely.
+
+    AASLD recommends **abdominal ultrasonography, with or without AFP, every 6 months**. Six months reflects the tumor doubling time. Surveillance detects tumors at an early, curable stage (resection, ablation, transplantation).
+
+    **Who needs surveillance:**
+    - Everyone with **cirrhosis** (Child-Pugh A–B, or C if a transplant candidate)
+    - **Chronic hepatitis B without cirrhosis** in high-risk groups: Asian men >40, Asian women >50, Africans/African Americans, family history of HCC, HDV coinfection
+
+    If ultrasound visualization is poor (obesity, MASLD), use **abbreviated MRI or CT**.
+  why:
+    A: The HCC risk persists after SVR in patients with cirrhosis.
+    C: AFP alone is insensitive and is not recommended as the only test.
+    D: CT every 3 months adds radiation and contrast exposure without proven benefit and is not a surveillance strategy.
+    E: Biopsy is not a surveillance tool.
+  objective: |
+    Perform HCC surveillance with ultrasonography, with or without AFP, every 6 months in all patients with cirrhosis, including after hepatitis C cure.
+  refs:
+    - Singal AG, et al. AASLD practice guidance on prevention, diagnosis, and treatment of hepatocellular carcinoma. *Hepatology* 2023;78:1922.
+
+- id: GI-020
+  topic: Hepatorenal syndrome
+  task: Treatment/Care Decisions
+  chapters: [gi/cirrhosis, renal/aki]
+  stem: |
+    A 55-year-old man with alcohol-associated cirrhosis and refractory ascites is hospitalized with rising creatinine. Diuretics were stopped on admission 48 hours ago, and he received IV albumin, 1 g/kg/d, for 2 days. There is no shock, and he has not received nephrotoxic drugs or contrast.
+
+    On physical examination, blood pressure is 98/58 mm Hg and pulse rate is 90/min. Tense ascites is present.
+  labs:
+    - ["Creatinine", "2.6 mg/dL (0.9 mg/dL 2 weeks ago; 2.4 mg/dL on admission)"]
+    - ["Sodium", "128 mEq/L"]
+    - ["Urine sodium", "<10 mEq/L"]
+    - ["Urinalysis", "no protein, blood or casts"]
+    - ["Kidney ultrasonography", "normal"]
+    - ["Ascitic fluid neutrophil count", "40/µL"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Furosemide infusion
+    B: Hemodialysis
+    C: Terlipressin plus intravenous albumin
+    D: Continue intravenous albumin alone for 3 more days
+    E: Transjugular intrahepatic portosystemic shunt (TIPS) as first-line therapy
+  answer: C
+  explain: |
+    He has **hepatorenal syndrome–AKI (HRS-AKI)**: cirrhosis with ascites, AKI by ICA criteria, **no improvement after 2 days of diuretic withdrawal and albumin**, no shock, no nephrotoxins, and no structural kidney disease (bland urine, normal ultrasound). Low urine sodium reflects intense renal vasoconstriction.
+
+    **Pathophysiology:** portal hypertension → splanchnic **vasodilation** → low effective arterial volume → activation of RAAS, sympathetic system and vasopressin → **renal vasoconstriction**.
+
+    Treatment reverses the splanchnic vasodilation:
+    - **Terlipressin** (vasopressin analogue) **plus albumin** — first-line (CONFIRM trial). Avoid if hypoxemic (SpO₂ <90%) or volume overloaded — risk of respiratory failure.
+    - Alternatives: **norepinephrine + albumin** (ICU) or midodrine + octreotide + albumin (less effective).
+    - Definitive treatment: **liver transplantation**.
+  why:
+    A: Diuretics worsen effective arterial underfilling and kidney perfusion.
+    B: Dialysis is a bridge to transplantation for refractory cases or standard indications, not first-line therapy.
+    D: He has already failed a 48-hour albumin challenge; continuing albumin alone without a vasoconstrictor will not reverse HRS.
+    E: TIPS may help selected patients but is not first-line for HRS-AKI and can precipitate encephalopathy.
+  objective: |
+    Treat hepatorenal syndrome–AKI with terlipressin (or norepinephrine) plus intravenous albumin after diuretic withdrawal and an albumin challenge have failed.
+  refs:
+    - Wong F, et al. Terlipressin plus albumin for the treatment of type 1 hepatorenal syndrome (CONFIRM). *N Engl J Med* 2021;384:818.
+    - Biggins SW, et al. 2021 AASLD practice guidance on ascites, SBP and hepatorenal syndrome. *Hepatology* 2021;74:1014.
+
+- id: GI-021
+  topic: Acute variceal hemorrhage
+  task: Treatment/Care Decisions
+  chapters: [gi/ugib, gi/cirrhosis]
+  stem: |
+    A 52-year-old man with alcohol-associated cirrhosis is brought to the emergency department after vomiting bright red blood twice. He has had no previous bleeding.
+
+    On physical examination, blood pressure is 96/58 mm Hg, pulse rate is 118/min, and respiration rate is 20/min. He is alert. There are spider angiomas, palmar erythema and moderate ascites.
+
+    Two large-bore IV lines are placed, and a crystalloid infusion is started.
+  labs:
+    - ["Hemoglobin", "7.2 g/dL"]
+    - ["Platelet count", "72,000/µL"]
+    - ["INR", "1.7"]
+  lead: In addition to transfusion to a hemoglobin of 7 g/dL, which of the following is the most appropriate management before endoscopy?
+  choices:
+    A: Fresh frozen plasma to correct the INR to below 1.5
+    B: Intravenous octreotide and intravenous ceftriaxone
+    C: Intravenous pantoprazole alone
+    D: Nonselective beta-blocker (propranolol)
+    E: Platelet transfusion to more than 100,000/µL
+  answer: B
+  explain: |
+    Suspected **acute variceal hemorrhage** in cirrhosis. The bundle:
+
+    1. **Restrictive transfusion** — target hemoglobin **7–8 g/dL**. Over-transfusion raises portal pressure and rebleeding.
+    2. **Vasoactive drug** — **octreotide** (or terlipressin) started before endoscopy and continued 2–5 days.
+    3. **Antibiotic prophylaxis** — **ceftriaxone 1 g/d** for up to 7 days. Bacterial infection is common and antibiotics **reduce rebleeding and mortality**.
+    4. **Upper endoscopy within 12 hours** with **band ligation**.
+    5. **Pre-emptive TIPS** within 72 hours for high-risk patients (Child-Pugh C 10–13, or B >7 with active bleeding).
+
+    PPIs are often started until endoscopy shows the source, but they are not the key therapy for varices.
+  why:
+    A: The INR does not reflect bleeding risk in cirrhosis (rebalanced hemostasis). FFP adds volume, raises portal pressure and does not reduce bleeding.
+    C: PPIs treat peptic ulcer bleeding. Varices need a vasoactive drug and antibiotics.
+    D: Nonselective beta-blockers are for primary and secondary prophylaxis. They are held during acute bleeding with hypotension because they blunt the compensatory tachycardia.
+    E: There is no evidence-based platelet target in variceal bleeding; routine transfusion is not recommended.
+  mnemonic: |
+    Variceal bleed = **"BOAT"** — **B**anding, **O**ctreotide, **A**ntibiotics, **T**ransfuse low (Hb 7).
+  objective: |
+    In suspected acute variceal hemorrhage, give a vasoactive drug and antibiotic prophylaxis before endoscopy, with restrictive transfusion and band ligation within 12 hours.
+  refs:
+    - Kaplan DE, et al. AASLD practice guidance on risk stratification and management of portal hypertension and varices in cirrhosis. *Hepatology* 2024;79:1180.
+    - de Franchis R, et al. Baveno VII — renewing consensus in portal hypertension. *J Hepatol* 2022;76:959.
+
+- id: GI-022
+  topic: Achalasia
+  task: Diagnosis/Testing
+  chapters: [gi/gerd-barrett]
+  stem: |
+    A 41-year-old woman is evaluated for 1 year of progressive difficulty swallowing both solids and liquids, regurgitation of undigested food at night and a 5-kg (11-lb) weight loss. She drinks large amounts of water to "push food down". She has no heartburn. She was born in the United States and has not traveled to Central or South America.
+
+    Examination is normal.
+
+    Upper endoscopy shows a dilated esophagus with retained food and a "puckered" gastroesophageal junction that the scope passes with a gentle "pop". There is no mass or stricture.
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: 24-hour esophageal pH monitoring
+    B: CT scan of the chest
+    C: Esophageal biopsies for eosinophils
+    D: High-resolution esophageal manometry
+    E: Repeat endoscopy with dilation
+  answer: D
+  explain: |
+    Dysphagia to **solids and liquids from the start** suggests a **motility disorder** (mechanical obstruction typically affects solids first, then progresses). Regurgitation of undigested food, weight loss and a dilated esophagus with a tight GEJ → **achalasia**.
+
+    **High-resolution manometry** is the gold standard: **incomplete relaxation of the lower esophageal sphincter** (elevated integrated relaxation pressure) and **absent peristalsis**. It also gives the Chicago classification subtype (type II responds best to treatment). A barium esophagram shows a **"bird's beak"**.
+
+    Endoscopy is required first to exclude **pseudoachalasia** from a tumor at the GEJ (suspect in older patients with rapid weight loss); here the scope passed easily and no mass was seen.
+
+    Treatment: **pneumatic dilation, laparoscopic Heller myotomy with fundoplication, or peroral endoscopic myotomy (POEM)**; botulinum toxin for poor surgical candidates.
+  why:
+    A: pH monitoring evaluates reflux. She has no heartburn, and achalasia patients can have false-positive pH studies from food fermentation.
+    B: CT is used when pseudoachalasia from malignancy is suspected; it does not confirm achalasia.
+    C: Eosinophilic esophagitis causes solid-food dysphagia and food impactions in young atopic men, with rings and furrows on endoscopy.
+    E: Repeat dilation without a confirmed diagnosis is inappropriate; standard dilation does not treat achalasia (pneumatic dilation does, after diagnosis).
+  objective: |
+    Confirm suspected achalasia with high-resolution esophageal manometry after endoscopy excludes a mechanical cause.
+  refs:
+    - Vaezi MF, et al. ACG clinical guidelines: diagnosis and management of achalasia. *Am J Gastroenterol* 2020;115:1393.
+
+- id: GI-023
+  topic: Eosinophilic esophagitis
+  task: Diagnosis/Testing
+  chapters: [gi/gerd-barrett]
+  stem: |
+    A 24-year-old man is evaluated after an episode of food impaction with steak that required endoscopic removal. He has had intermittent difficulty swallowing solid foods for 3 years and chews his food carefully. He has asthma and seasonal allergic rhinitis. He has no heartburn.
+
+    Examination is normal.
+
+    Upper endoscopy at the time of impaction showed concentric rings, longitudinal furrows and white exudates in the esophagus.
+  lead: Which of the following is the most likely to confirm the diagnosis?
+  choices:
+    A: Barium esophagram
+    B: Esophageal biopsies showing ≥15 eosinophils per high-power field
+    C: Esophageal manometry
+    D: Serum IgE level
+    E: Skin-prick testing for food allergens
+  answer: B
+  explain: |
+    A young man with **atopy, solid-food dysphagia and food impaction**, and the classic endoscopic findings — **rings ("trachealization"), linear furrows and white plaques** — has **eosinophilic esophagitis (EoE)**, a chronic, type 2 (allergic) immune disease.
+
+    The diagnosis requires **esophageal biopsies** (at least 6, from proximal and distal esophagus) showing **≥15 eosinophils per high-power field**, plus symptoms of esophageal dysfunction and exclusion of other causes.
+
+    Treatment (any of three "D"s): **Drugs** — high-dose PPI or swallowed topical steroids (budesonide, fluticasone), or **dupilumab**; **Diet** — empiric elimination (dairy, wheat first); **Dilation** — for strictures.
+  why:
+    A: A barium study may show a narrow-caliber esophagus or rings, but it cannot confirm EoE.
+    C: Manometry evaluates motility disorders such as achalasia; it is not diagnostic for EoE.
+    D: Serum IgE may be elevated in atopic patients but is neither sensitive nor specific for EoE.
+    E: Skin-prick testing performs poorly at identifying EoE food triggers and is not used to diagnose the disease.
+  objective: |
+    Confirm eosinophilic esophagitis with esophageal biopsies showing at least 15 eosinophils per high-power field.
+  refs:
+    - Dellon ES, et al. ACG clinical guideline: diagnosis and management of eosinophilic esophagitis. *Am J Gastroenterol* 2025;120:31.
+    - Hirano I, et al. AGA institute and joint task force guidelines for the management of eosinophilic esophagitis. *Gastroenterology* 2020;158:1776.

@@ -1,10 +1,10 @@
-# Obstetrics & Gynecology — ABIM blueprint 3%
+# Obstetrics & Gynecology — ABIM CERT blueprint
 - id: OB-001
   topic: Cervical cancer screening
   task: Diagnosis/Testing
   chapters: [heme/cancer-screening]
   stem: |
-    A 31-year-old woman comes for a routine health visit. Her last cervical cytology (Pap test) was **3 years ago at age 28** and was normal; she has never had an abnormal result. She received the HPV vaccine series as a teenager. She has one male partner and has never been diagnosed with HIV infection or another immunocompromising condition.
+    A 31-year-old woman comes for a routine health visit. Her last cervical cytology (Pap test) was 3 years ago at age 28 and was normal; she has never had an abnormal result. She received the HPV vaccine series as a teenager. She has one male partner and has never been diagnosed with HIV infection or another immunocompromising condition.
 
     Examination, including pelvic examination, is normal.
   lead: Which of the following is the most appropriate cervical cancer screening?
@@ -43,7 +43,7 @@
   task: Treatment/Care Decisions
   chapters: [womens/contraception, neuro/headache]
   stem: |
-    A 29-year-old woman comes to the office to discuss contraception. She wants to avoid pregnancy for at least 3–4 years. She has **migraine with aura** — about twice a month she sees zigzag lines for 20 minutes before the headache begins. She does not smoke. She has no history of venous thromboembolism or hypertension. She asks about "the pill" because a friend uses it.
+    A 29-year-old woman comes to the office to discuss contraception. She wants to avoid pregnancy for at least 3–4 years. She has migraine with aura — about twice a month she sees zigzag lines for 20 minutes before the headache begins. She does not smoke. She has no history of venous thromboembolism or hypertension. She asks about "the pill" because a friend uses it.
 
     Blood pressure is 116/72 mm Hg. BMI is 24 kg/m². Examination is normal. Urine pregnancy test is negative.
   lead: Which of the following is the most appropriate contraceptive method?
@@ -78,3 +78,245 @@
     Estrogen-containing contraception is contraindicated in migraine with aura; offer a progestin-only or nonhormonal method, preferably a long-acting reversible contraceptive.
   refs:
     - Nguyen AT, et al. U.S. Medical Eligibility Criteria for Contraceptive Use, 2024. *MMWR Recomm Rep* 2024;73(4):1.
+
+
+- id: OB-003
+  topic: Preeclampsia with severe features
+  task: Treatment/Care Decisions
+  chapters: [womens/pregnancy-medicine, cardiology/htn-emergency]
+  stem: |
+    A 31-year-old woman at 35 weeks' gestation in her first pregnancy is evaluated in the obstetric triage unit for 1 day of headache and blurred vision. Her blood pressure was normal at prenatal visits through 28 weeks.
+
+    On physical examination, blood pressure is 168/112 mm Hg (confirmed 15 minutes later at 164/110 mm Hg), and pulse rate is 96/min. She has right upper quadrant tenderness and brisk reflexes. Fetal heart tones are reassuring.
+  labs:
+    - ["Platelet count", "92,000/µL"]
+    - ["AST", "142 U/L"]
+    - ["ALT", "168 U/L"]
+    - ["Creatinine", "1.1 mg/dL"]
+    - ["Urine protein-to-creatinine ratio", "1.8 g/g"]
+  lead: In addition to intravenous labetalol or hydralazine, which of the following is the most appropriate management?
+  choices:
+    A: Intravenous magnesium sulfate and plan delivery after maternal stabilization
+    B: Intravenous magnesium sulfate and continue the pregnancy until 37 weeks
+    C: Oral nifedipine and outpatient follow-up in 1 week
+    D: Intravenous phenytoin for seizure prophylaxis
+    E: Intravenous furosemide
+  answer: A
+  explain: |
+    New hypertension after 20 weeks with proteinuria and **severe features** = **preeclampsia with severe features**:
+    - **BP ≥160/110 mm Hg** on two readings
+    - **New headache or visual disturbance**
+    - **RUQ/epigastric pain, aminotransferases ≥2× normal**
+    - **Platelets <100,000/µL**
+    - Creatinine >1.1 mg/dL or doubling; pulmonary edema
+
+    Her low platelets and liver injury also suggest evolving **HELLP syndrome**.
+
+    Management:
+    1. **Treat severe hypertension within 30–60 minutes** — **IV labetalol, IV hydralazine or immediate-release oral nifedipine** (target <160/110 mm Hg).
+    2. **IV magnesium sulfate** for **seizure (eclampsia) prophylaxis**, continued 24 hours postpartum. Watch for toxicity (loss of reflexes → respiratory depression; antidote **calcium gluconate**).
+    3. **Delivery** — the only cure. With severe features **at ≥34 weeks**, deliver after stabilization. Before 34 weeks, expectant management with steroids for fetal lung maturity may be considered in stable patients at specialized centers.
+
+    Long-term: preeclampsia **doubles lifetime cardiovascular risk** — counts as an ASCVD risk enhancer.
+  why:
+    B: At ≥34 weeks with severe features, continuing the pregnancy increases the risk of eclampsia, stroke, placental abruption and HELLP complications.
+    C: Severe preeclampsia requires inpatient care, magnesium and delivery planning.
+    D: Magnesium is superior to phenytoin for preventing and treating eclampsia.
+    E: Patients with preeclampsia are intravascularly depleted; diuretics are used only for pulmonary edema.
+  objective: |
+    Treat preeclampsia with severe features at 34 weeks or later with antihypertensives, magnesium sulfate seizure prophylaxis and delivery after maternal stabilization.
+  refs:
+    - ACOG Practice Bulletin No. 222. Gestational hypertension and preeclampsia. *Obstet Gynecol* 2020;135:e237.
+
+- id: OB-004
+  topic: Chronic hypertension and pregnancy planning
+  task: Treatment/Care Decisions
+  chapters: [womens/pregnancy-medicine, cardiology/hypertension]
+  stem: |
+    A 33-year-old woman with chronic hypertension tells you she and her partner plan to start trying to conceive in the next few months. She takes lisinopril, 20 mg/d, and her blood pressure is well controlled. She does not use contraception reliably. She has no kidney disease or diabetes.
+
+    On physical examination, blood pressure is 126/80 mm Hg. BMI is 28.
+  labs:
+    - ["Creatinine", "0.7 mg/dL"]
+    - ["Urine albumin-to-creatinine ratio", "8 mg/g"]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Continue lisinopril until pregnancy is confirmed, then stop it
+    B: Stop all antihypertensive medications
+    C: Switch lisinopril to labetalol or extended-release nifedipine now
+    D: Switch lisinopril to losartan
+    E: Switch lisinopril to hydrochlorothiazide and spironolactone
+  answer: C
+  explain: |
+    **ACE inhibitors, ARBs and direct renin inhibitors are teratogenic** — **second- and third-trimester** exposure causes **fetal renal dysgenesis, oligohydramnios, skull hypoplasia, growth restriction and death**. First-trimester risk is less clear. Because she is planning pregnancy and not using reliable contraception, **switch now**.
+
+    Preferred antihypertensives in pregnancy:
+    - **Labetalol**
+    - **Extended-release nifedipine**
+    - Methyldopa (older, less well tolerated)
+
+    In the **CHAP trial**, treating mild chronic hypertension in pregnancy to **<140/90 mm Hg** reduced preeclampsia with severe features, preterm birth and other adverse outcomes, so do not stop treatment. She should also start **low-dose aspirin (81 mg/d) from 12–28 weeks** to reduce preeclampsia risk (chronic hypertension is a high-risk factor) and take folic acid.
+  why:
+    A: Many pregnancies are recognized late; switching before conception avoids fetal exposure and the risks of an abrupt change.
+    B: Stopping treatment leads to uncontrolled hypertension; CHAP showed benefit from treating chronic hypertension in pregnancy.
+    D: ARBs carry the same fetal risks as ACE inhibitors.
+    E: Spironolactone has antiandrogenic effects on a male fetus, and diuretics are not first-line in pregnancy.
+  objective: |
+    Switch ACE inhibitors or ARBs to labetalol or extended-release nifedipine in women with hypertension who are planning pregnancy.
+  refs:
+    - Tita AT, et al. Treatment for mild chronic hypertension during pregnancy (CHAP). *N Engl J Med* 2022;386:1781.
+    - ACOG Practice Bulletin No. 203. Chronic hypertension in pregnancy. *Obstet Gynecol* 2019;133:e26.
+
+- id: OB-005
+  topic: Gestational diabetes — postpartum follow-up
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [womens/pregnancy-medicine, endo/diabetes-outpatient]
+  stem: |
+    A 32-year-old woman is evaluated at her primary care visit 8 weeks after delivering a healthy baby. Her pregnancy was complicated by gestational diabetes diagnosed at 26 weeks and treated with diet and insulin; she stopped insulin after delivery. She is breastfeeding. Her BMI is 30.
+  lead: Which of the following is the most appropriate recommendation?
+  choices:
+    A: Hemoglobin A1c now
+    B: 75-g oral glucose tolerance test now, then diabetes screening every 1–3 years for life
+    C: No further testing because gestational diabetes resolves after delivery
+    D: Fasting glucose in 5 years
+    E: Start metformin for diabetes prevention without testing
+  answer: B
+  explain: |
+    Gestational diabetes (GDM) usually resolves after delivery but signals a **high lifetime risk of type 2 diabetes** — about **50–70% within 10–20 years** (about a 10-fold higher risk than women without GDM). GDM is also a cardiovascular risk enhancer.
+
+    The ADA and ACOG recommend:
+    - A **75-g 2-hour oral glucose tolerance test at 4–12 weeks postpartum**, using **nonpregnant criteria**. The OGTT is preferred over A1c because **A1c is unreliable early postpartum** (blood loss, pregnancy-related red cell turnover).
+    - If normal → **screen every 1–3 years for life** (A1c, fasting glucose or OGTT).
+    - Prediabetes → **intensive lifestyle intervention and/or metformin** (DPP: both reduced progression in women with prior GDM).
+
+    **Breastfeeding** lowers the risk of type 2 diabetes; encourage it.
+  why:
+    A: A1c is less reliable in the early postpartum period and less sensitive than the OGTT in this setting.
+    C: GDM confers a lifelong high risk of type 2 diabetes; follow-up testing is essential.
+    D: Waiting 5 years misses early diabetes and prediabetes, when prevention works.
+    E: Metformin is offered for prediabetes, but testing should come first.
+  objective: |
+    Screen women with gestational diabetes with a 75-g OGTT at 4–12 weeks postpartum and then every 1–3 years for life.
+  refs:
+    - American Diabetes Association. 15. Management of diabetes in pregnancy: Standards of Care in Diabetes—2025. *Diabetes Care* 2025;48:S306.
+
+- id: OB-006
+  topic: Secondary amenorrhea — PCOS
+  task: Diagnosis/Testing
+  chapters: [womens/menstrual-menopause]
+  stem: |
+    A 24-year-old woman is evaluated for irregular periods since menarche, now occurring every 2–4 months, and increased hair on her chin and abdomen. She has gained weight over 3 years. She is not sexually active.
+
+    On physical examination, BMI is 32. There is terminal hair on the upper lip, chin and lower abdomen, acne on the jaw line, and acanthosis nigricans on the neck. There is no clitoromegaly, deepening of the voice or rapid virilization.
+  labs:
+    - ["Urine pregnancy test", "negative"]
+    - ["TSH", "normal"]
+    - ["Prolactin", "normal"]
+    - ["Total testosterone", "68 ng/dL (mildly elevated)"]
+    - ["17-hydroxyprogesterone (morning", "follicular phase), normal"]
+    - ["DHEA-S", "normal"]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Androgen-secreting ovarian tumor
+    B: Cushing syndrome
+    C: Functional hypothalamic amenorrhea
+    D: Nonclassic congenital adrenal hyperplasia
+    E: Polycystic ovary syndrome
+  answer: E
+  explain: |
+    **Polycystic ovary syndrome (PCOS)** is the most common endocrine disorder in reproductive-age women. **Rotterdam criteria** — 2 of 3:
+    1. **Oligo- or anovulation** (irregular cycles) ✔
+    2. **Clinical or biochemical hyperandrogenism** (hirsutism, acne; elevated testosterone) ✔
+    3. **Polycystic ovarian morphology** on ultrasound (or high AMH in adults)
+
+    …after **excluding other causes**: pregnancy, thyroid disease, hyperprolactinemia, **nonclassic CAH** (normal 17-OH-progesterone), Cushing syndrome and androgen-secreting tumors (**rapid virilization, testosterone >150–200 ng/dL, DHEA-S >700 µg/dL**).
+
+    PCOS is a **metabolic** disorder: **insulin resistance** (acanthosis), obesity, type 2 diabetes, dyslipidemia, MASLD, sleep apnea and **endometrial hyperplasia/cancer** (unopposed estrogen). Screen with an **OGTT or A1c** and lipids.
+
+    Treatment: **lifestyle and weight loss**; **combined oral contraceptives** (cycle control, endometrial protection, hirsutism); **spironolactone** for hirsutism (with contraception); **metformin** for metabolic risk; **letrozole** for ovulation induction.
+  why:
+    A: Ovarian tumors cause rapid virilization (clitoromegaly, voice deepening) with very high testosterone.
+    B: Cushing syndrome causes proximal myopathy, wide violaceous striae, easy bruising and hypertension.
+    C: Hypothalamic amenorrhea occurs with low weight, stress or excessive exercise and low estrogen, without hyperandrogenism.
+    D: Nonclassic CAH (21-hydroxylase deficiency) is excluded by a normal morning 17-hydroxyprogesterone.
+  objective: |
+    Diagnose PCOS by Rotterdam criteria (two of oligo-anovulation, hyperandrogenism and polycystic ovaries) after excluding pregnancy, thyroid disease, hyperprolactinemia, nonclassic CAH and androgen-secreting tumors.
+  refs:
+    - Teede HJ, et al. Recommendations from the 2023 international evidence-based guideline for the assessment and management of polycystic ovary syndrome. *J Clin Endocrinol Metab* 2023;108:2447.
+
+- id: OB-007
+  topic: Menopausal hormone therapy
+  task: Treatment/Care Decisions
+  chapters: [womens/menstrual-menopause]
+  stem: |
+    A 51-year-old woman is evaluated for 8 months of frequent, severe hot flashes and night sweats that wake her several times a night and interfere with work. Her last menstrual period was 13 months ago. She has an intact uterus. She has no history of breast cancer, VTE, stroke, coronary disease or liver disease. She does not smoke. Her mother had osteoporosis.
+
+    On physical examination, blood pressure is 122/76 mm Hg. BMI is 25. Mammography 6 months ago was normal. Her 10-year ASCVD risk is 2%.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Black cohosh
+    B: Estrogen alone (unopposed)
+    C: Estrogen plus a progestogen
+    D: Gabapentin, because hormone therapy is contraindicated after age 50
+    E: Vaginal estrogen cream alone
+  answer: C
+  explain: |
+    **Menopausal hormone therapy (MHT)** is the **most effective treatment for vasomotor symptoms**. For healthy women **<60 years or within 10 years of menopause**, without contraindications, **benefits outweigh risks** (NAMS/Menopause Society 2022) — the "timing hypothesis" from re-analysis of the WHI.
+
+    She has an **intact uterus**, so estrogen must be combined with a **progestogen** (or use conjugated estrogens/bazedoxifene) to prevent **endometrial hyperplasia and cancer**. Transdermal estrogen has a lower VTE and stroke risk than oral estrogen. MHT also prevents bone loss.
+
+    | MHT contraindications |
+    |---|
+    | Breast or endometrial cancer (estrogen-sensitive) |
+    | Unexplained vaginal bleeding |
+    | VTE, stroke, CAD/MI |
+    | Active liver disease |
+    | High risk of these (e.g., known thrombophilia) |
+
+    Nonhormonal options for women who cannot or will not take MHT: **fezolinetant** (neurokinin-3 receptor antagonist), **SSRIs/SNRIs** (paroxetine 7.5 mg is FDA-approved), gabapentin, oxybutynin, CBT.
+  why:
+    A: Black cohosh is no better than placebo and has been associated with liver injury.
+    B: Unopposed estrogen in a woman with a uterus causes endometrial hyperplasia and cancer.
+    D: MHT is not contraindicated by age 50; it is appropriate for healthy women younger than 60 or within 10 years of menopause.
+    E: Low-dose vaginal estrogen treats genitourinary syndrome of menopause, not systemic vasomotor symptoms.
+  objective: |
+    For healthy women younger than 60 or within 10 years of menopause with bothersome vasomotor symptoms, offer menopausal hormone therapy, adding a progestogen if the uterus is intact.
+  refs:
+    - The 2022 hormone therapy position statement of The North American Menopause Society. *Menopause* 2022;29:767.
+
+- id: OB-008
+  topic: Emergency contraception
+  task: Treatment/Care Decisions
+  chapters: [womens/contraception]
+  stem: |
+    A 26-year-old woman calls the clinic because a condom broke during intercourse 4 days ago (about 96 hours). Her last menstrual period began 13 days ago, and her cycles are regular. She wants to avoid pregnancy and is interested in long-term contraception afterward. She has no medical problems. Her BMI is 34.
+
+    A urine pregnancy test is negative.
+  lead: Which of the following is the most effective emergency contraception for her?
+  choices:
+    A: Combined oral contraceptive pills (Yuzpe method)
+    B: Copper intrauterine device
+    C: Levonorgestrel 1.5 mg orally
+    D: Mifepristone
+    E: No treatment because more than 72 hours have passed
+  answer: B
+  explain: |
+    The **copper IUD** is the **most effective emergency contraceptive** — >99% effective when inserted **within 5 days (120 hours)** of unprotected intercourse, **regardless of BMI** — and it then provides up to **10–12 years** of highly effective contraception, which she wants. Levonorgestrel 52-mg IUDs are also effective as emergency contraception (noninferior in a 2021 trial).
+
+    | Method | Window | Notes |
+    |---|---|---|
+    | **Copper IUD** | ≤5 days | Most effective; **not affected by weight** |
+    | **Ulipristal** 30 mg (oral) | ≤5 days | More effective than levonorgestrel, especially days 3–5 and BMI >30; delay hormonal contraception 5 days |
+    | Levonorgestrel 1.5 mg | ≤3 days (some effect to 5) | **Less effective if BMI >30**; OTC |
+
+    She is near **ovulation** (cycle day 13), at **BMI 34**, and at day 4 — the setting where oral levonorgestrel works worst. If she declines an IUD, **ulipristal** is the best oral option.
+  why:
+    A: The Yuzpe method is less effective and causes more nausea than dedicated emergency contraceptives.
+    C: Levonorgestrel is less effective beyond 72 hours and in women with BMI above 30.
+    D: Mifepristone is not used for emergency contraception in the United States.
+    E: Effective emergency contraception options exist up to 5 days after intercourse.
+  objective: |
+    The copper IUD, inserted within 5 days of unprotected intercourse, is the most effective emergency contraceptive and is not affected by body weight.
+  refs:
+    - Curtis KM, et al. U.S. selected practice recommendations for contraceptive use, 2024. *MMWR Recomm Rep* 2024;73(3):1.
+    - Turok DK, et al. Levonorgestrel vs copper intrauterine devices for emergency contraception. *N Engl J Med* 2021;384:335.

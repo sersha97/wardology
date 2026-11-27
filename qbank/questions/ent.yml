@@ -1,12 +1,12 @@
-# Otolaryngology & Dental Medicine — ABIM blueprint 1%
+# Otolaryngology & Dental Medicine — ABIM CERT blueprint
 - id: ET-001
   topic: Benign paroxysmal positional vertigo
   task: Treatment/Care Decisions
   chapters: [neuro/dizziness]
   stem: |
-    A 58-year-old woman comes to the office with 1 week of brief spells of intense spinning. They happen when she **rolls over in bed to the right**, lies down, or tilts her head back to reach a high shelf, and each lasts **less than a minute**. She has mild nausea during spells but no hearing loss, tinnitus, ear fullness, headache, double vision, slurred speech or weakness. Between spells she feels normal.
+    A 58-year-old woman comes to the office with 1 week of brief spells of intense spinning. They happen when she rolls over in bed to the right, lies down, or tilts her head back to reach a high shelf, and each lasts less than a minute. She has mild nausea during spells but no hearing loss, tinnitus, ear fullness, headache, double vision, slurred speech or weakness. Between spells she feels normal.
 
-    Vital signs are normal. Hearing is grossly normal. With the patient turned to the right during the **Dix–Hallpike maneuver**, after a **5-second delay**, she develops vertigo with **upbeating, torsional nystagmus** toward the right ear that fades after **20 seconds**. Testing to the left is negative. The rest of the neurologic examination, including gait, is normal.
+    Vital signs are normal. Hearing is grossly normal. With the patient turned to the right during the Dix–Hallpike maneuver, after a 5-second delay, she develops vertigo with upbeating, torsional nystagmus toward the right ear that fades after 20 seconds. Testing to the left is negative. The rest of the neurologic examination, including gait, is normal.
   lead: Which of the following is the most appropriate treatment?
   choices:
     A: Meclizine daily for 4 weeks
@@ -38,3 +38,44 @@
     Posterior-canal BPPV is diagnosed with the Dix–Hallpike maneuver and treated with canalith repositioning (Epley); avoid routine imaging and vestibular suppressants.
   refs:
     - Bhattacharyya N, et al. Clinical practice guideline: benign paroxysmal positional vertigo (update). *Otolaryngol Head Neck Surg* 2017;156:S1.
+
+
+- id: ET-002
+  topic: Sudden sensorineural hearing loss
+  task: Treatment/Care Decisions
+  chapters: [eye-ent/hearing]
+  stem: |
+    A 52-year-old woman is evaluated for hearing loss in her left ear that she noticed on waking 2 days ago, with a feeling of fullness and ringing. She has no ear pain, discharge, vertigo or recent upper respiratory infection. She has no neurologic symptoms.
+
+    On physical examination, the ear canals and tympanic membranes are normal. On Weber testing, the sound lateralizes to the right (unaffected) ear. Rinne test is positive (air conduction > bone conduction) in both ears. Cranial nerves are otherwise normal.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Oral amoxicillin
+    B: Intranasal glucocorticoid spray and decongestants
+    C: Reassurance and follow-up in 1 month
+    D: Urgent audiometry and oral glucocorticoids, with MRI of the internal auditory canals
+    E: Ear irrigation
+  answer: D
+  explain: |
+    Interpret the tuning-fork tests:
+    - **Weber lateralizes away from the affected ear** → the affected ear has **sensorineural** loss (in conductive loss, Weber lateralizes **toward** the bad ear).
+    - **Rinne positive** (AC > BC) in the affected ear → no conductive loss.
+
+    **Sudden sensorineural hearing loss (SSNHL)** — ≥30 dB over 3 consecutive frequencies within **72 hours** — is an **otologic emergency**. Most cases are idiopathic (viral, vascular, autoimmune theories).
+
+    AAO-HNS 2019:
+    - Confirm with **audiometry** promptly.
+    - **Oral glucocorticoids** (e.g., prednisone 1 mg/kg/d, max 60 mg, for 7–14 days) **within 2 weeks** of onset; **intratympanic** steroids as salvage or alternative.
+    - **MRI of the internal auditory canals with gadolinium** to exclude **vestibular schwannoma** (found in 1–5% of SSNHL).
+    - **Do not** order routine CT or broad lab panels; antivirals and vasodilators are not recommended.
+  why:
+    A: Antibiotics treat acute otitis media, which causes conductive loss with an abnormal tympanic membrane.
+    B: Nasal steroids and decongestants are for eustachian tube dysfunction, which causes conductive symptoms.
+    C: Delay reduces the chance of recovery; steroids work best within 2 weeks.
+    E: Irrigation treats cerumen impaction, which causes conductive loss and is visible on otoscopy.
+  mnemonic: |
+    **Weber: "Sensorineural — Sound goes to the Sound ear. Conductive — goes to the Clogged ear."**
+  objective: |
+    Treat sudden sensorineural hearing loss as an emergency with prompt audiometry and oral glucocorticoids, and obtain MRI to exclude vestibular schwannoma.
+  refs:
+    - Chandrasekhar SS, et al. Clinical practice guideline: sudden hearing loss (update). *Otolaryngol Head Neck Surg* 2019;161:S1.

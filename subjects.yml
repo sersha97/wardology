@@ -12,7 +12,7 @@
     - {name: Syncope & pericardium, emoji: "🩺"}
     - {name: Valves & endocarditis, emoji: "🚪"}
     - {name: Aorta & blood pressure, emoji: "🌋"}
-  planned: [Myocarditis, Mitral regurgitation, Hypertrophic cardiomyopathy, Cardiac amyloidosis]
+  planned: [Myocarditis, Cardiac amyloidosis]
 
 - id: pulmonary
   name: Pulmonary & Critical Care
@@ -25,7 +25,8 @@
     - {name: Pleura, emoji: "💦"}
     - {name: Respiratory failure, emoji: "🆘"}
     - {name: Nodules & sleep, emoji: "😴"}
-  planned: [Hemoptysis, ILD flare, Pneumothorax]
+    - {name: Interstitial lung disease, emoji: "🕸️"}
+  planned: [Hemoptysis, ILD flare]
 
 - id: id
   name: Infectious Disease
@@ -38,7 +39,9 @@
     - {name: Urinary tract, emoji: "🚽"}
     - {name: Skin & soft tissue, emoji: "🩹"}
     - {name: Prevention & vaccines, emoji: "💉"}
-  planned: [C. difficile, S. aureus bacteremia & endocarditis, Brain abscess]
+    - {name: HIV & STIs, emoji: "🎗️"}
+    - {name: "TB, ticks & travel", emoji: "✈️"}
+  planned: [S. aureus bacteremia & endocarditis, Brain abscess]
 
 - id: renal
   name: Renal, Lytes & Acid–Base
@@ -62,6 +65,7 @@
     - {name: Liver, emoji: "🍺"}
     - {name: Pancreas, emoji: "🔥"}
     - {name: Esophagus & stomach, emoji: "🫗"}
+    - {name: Bowel, emoji: "🌀"}
   planned: [Lower GI bleed, Acute liver failure, Alcohol-associated hepatitis]
 
 - id: endo
@@ -73,7 +77,8 @@
     - {name: Diabetes, emoji: "🩸"}
     - {name: Adrenal & thyroid, emoji: "🦋"}
     - {name: Bone & calcium, emoji: "🦴"}
-  planned: [Thyroid storm / myxedema coma, Hypoglycemia]
+    - {name: Pituitary & gonads, emoji: "🎯"}
+  planned: [Thyroid storm / myxedema coma]
 
 - id: neuro
   name: Neurology
@@ -102,7 +107,9 @@
     - {name: Platelets & clotting, emoji: "🧷"}
     - {name: Oncologic emergencies, emoji: "🎗️"}
     - {name: Cancer screening, emoji: "🔬"}
-  planned: [TTP / HUS, Tumor lysis syndrome, Hypercalcemia of malignancy]
+    - {name: Blood cancers, emoji: "🧬"}
+    - {name: Solid tumors, emoji: "🧫"}
+  planned: [Tumor lysis syndrome, Hypercalcemia of malignancy]
 
 - id: geri
   name: Geriatrics & Peri-op
@@ -123,8 +130,9 @@
   groups:
     - {name: Crystals & inflammatory arthritis, emoji: "💎"}
     - {name: Vasculitis, emoji: "🩸"}
+    - {name: Connective tissue disease, emoji: "🦋"}
     - {name: Musculoskeletal pain, emoji: "🏋️"}
-  planned: [Lupus, Spondyloarthritis, Osteoarthritis, Septic arthritis]
+  planned: [Inflammatory myopathy deep dive]
 
 - id: derm
   name: Dermatology & Allergy
@@ -135,7 +143,8 @@
     - {name: Skin cancer, emoji: "🔍"}
     - {name: Drug reactions, emoji: "💊"}
     - {name: Allergy, emoji: "🐝"}
-  planned: [Psoriasis, Atopic & contact dermatitis, Urticaria & angioedema, Herpes zoster]
+    - {name: Rashes, emoji: "🩹"}
+  planned: [Atopic & contact dermatitis, Urticaria & angioedema, Herpes zoster]
 
 - id: womens
   name: Women's Health
@@ -144,7 +153,8 @@
   blurb: Contraception, pregnancy, menopause and the medicine of women's health.
   groups:
     - {name: Reproductive health, emoji: "🤰"}
-  planned: [Menopause, Medical problems in pregnancy, Abnormal uterine bleeding, Breast mass]
+    - {name: Menstrual & menopause, emoji: "🌸"}
+  planned: [Abnormal uterine bleeding, Breast mass]
 
 - id: psych
   name: Psychiatry & Addiction
@@ -154,7 +164,8 @@
   groups:
     - {name: Mood & anxiety, emoji: "🌧️"}
     - {name: Substance use, emoji: "🍺"}
-  planned: [Depression, Insomnia, Opioid use disorder, Tobacco cessation]
+    - {name: Serious mental illness, emoji: "🧩"}
+  planned: [Depression, Insomnia, Tobacco cessation]
 
 - id: eye-ent
   name: Eye, Ear, Nose & Throat
@@ -163,7 +174,8 @@
   blurb: The red eye, the sore throat and the spinning room.
   groups:
     - {name: Eye, emoji: "👁️"}
-  planned: [Sinusitis, Pharyngitis, Hearing loss, Otitis]
+    - {name: "Ear, nose & throat", emoji: "👂"}
+  planned: [Sinusitis, Pharyngitis, Otitis]
 
 - id: boards
   name: Biostatistics & Ethics
@@ -172,7 +184,8 @@
   blurb: Numbers, capacity and safety — the questions that decide close scores.
   groups:
     - {name: Biostatistics, emoji: "📊"}
-  planned: [Decision-making capacity, Surrogates & advance directives, Medical errors & disclosure, Screening test bias]
+    - {name: Ethics, emoji: "⚖️"}
+  planned: [Patient safety & quality]
 
 - id: nightcalls
   name: Night Calls

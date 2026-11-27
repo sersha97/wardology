@@ -1,12 +1,12 @@
-# Geriatric Syndromes — ABIM blueprint 3%
+# Geriatric Syndromes — ABIM CERT blueprint
 - id: GE-001
   topic: Fall prevention
   task: Treatment/Care Decisions
   chapters: [geri/falls]
   stem: |
-    A 78-year-old woman comes for an annual visit. She has fallen **twice in the past year** while walking in her home — once tripping on a rug, once turning quickly in the kitchen — without serious injury. She now worries about falling and walks less. She has hypertension treated with amlodipine and takes no sedatives or other medications. Her eyeglasses were updated 6 months ago.
+    A 78-year-old woman comes for an annual visit. She has fallen twice in the past year while walking in her home — once tripping on a rug, once turning quickly in the kitchen — without serious injury. She now worries about falling and walks less. She has hypertension treated with amlodipine and takes no sedatives or other medications. Her eyeglasses were updated 6 months ago.
 
-    Blood pressure is 132/74 mm Hg supine and 130/72 mm Hg standing, without symptoms. Corrected visual acuity is 20/30 in both eyes. She needs to push with her arms to rise from a chair. The **Timed Up and Go test takes 16 seconds** (normal <12 seconds) with a slow, cautious gait. Sensation and reflexes in the feet are normal.
+    Blood pressure is 132/74 mm Hg supine and 130/72 mm Hg standing, without symptoms. Corrected visual acuity is 20/30 in both eyes. She needs to push with her arms to rise from a chair. The Timed Up and Go test takes 16 seconds (normal <12 seconds) with a slow, cautious gait. Sensation and reflexes in the feet are normal.
   labs:
     - [25-Hydroxyvitamin D, 34 ng/mL]
     - [Hemoglobin, 13.1 g/dL]
@@ -45,11 +45,11 @@
   task: Treatment/Care Decisions
   chapters: [geri/delirium]
   stem: |
-    An 82-year-old man is brought to the office by his daughter because he has been confused for 4 days. He has mild Alzheimer dementia and normally manages his own dressing and meals. Since earlier this week he has been drowsy during the day, awake and agitated at night, and at times does not recognize his grandson. **Oxybutynin** was started 6 days ago for urinary urgency. Other medications are donepezil and lisinopril.
+    An 82-year-old man is brought to the office by his daughter because he has been confused for 4 days. He has mild Alzheimer dementia and normally manages his own dressing and meals. Since earlier this week he has been drowsy during the day, awake and agitated at night, and at times does not recognize his grandson. Oxybutynin was started 6 days ago for urinary urgency. Other medications are donepezil and lisinopril.
 
     Temperature is 37.0 °C (98.6 °F), blood pressure is 128/70 mm Hg and pulse is 84/min. He is inattentive and cannot name the months backward. Mucous membranes are dry. There is no focal neurologic deficit and no suprapubic tenderness; bladder scan shows 90 mL.
   labs:
-    - [Glucose, sodium, calcium and creatinine, normal]
+    - ["Glucose, sodium, calcium and creatinine", "normal"]
     - [Complete blood count, normal]
     - [Urinalysis, no leukocytes or nitrite]
   lead: Which of the following is the most appropriate next step in management?
@@ -80,3 +80,207 @@
   refs:
     - 2023 American Geriatrics Society Beers Criteria Update Expert Panel. American Geriatrics Society 2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults. *J Am Geriatr Soc* 2023;71:2052.
     - Marcantonio ER. Delirium in hospitalized older adults. *N Engl J Med* 2017;377:1456.
+
+
+- id: GE-003
+  topic: Preoperative evaluation — low-risk surgery
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [geri/preop]
+  stem: |
+    A 72-year-old woman is evaluated before elective cataract surgery under topical anesthesia. She has hypertension, type 2 diabetes and stable coronary artery disease with a drug-eluting stent placed 4 years ago. She has no chest pain or dyspnea. She gardens and climbs two flights of stairs without symptoms. Medications are aspirin, metoprolol, lisinopril, metformin and atorvastatin.
+
+    On physical examination, blood pressure is 132/78 mm Hg and pulse rate is 64/min. Cardiac and lung examinations are normal.
+  lead: Which of the following is the most appropriate preoperative management?
+  choices:
+    A: Electrocardiogram, chest radiograph and basic metabolic panel
+    B: Pharmacologic stress test
+    C: Proceed with surgery without further testing
+    D: Stop aspirin 7 days before surgery
+    E: Transthoracic echocardiography
+  answer: C
+  explain: |
+    Preoperative cardiac evaluation follows a stepwise approach (ACC/AHA 2024):
+    1. Is the surgery **emergent**? → proceed.
+    2. Active cardiac condition (ACS, decompensated HF, significant arrhythmia, severe valve disease)? → evaluate/treat first.
+    3. **Surgical risk**: **cataract surgery is a low-risk procedure** (<1% risk of major adverse cardiac events), as are endoscopy and superficial procedures.
+    4. If elevated risk: **functional capacity ≥4 METs** (climbing two flights of stairs) → proceed.
+
+    **Routine preoperative tests do not improve outcomes for cataract surgery**, even in older patients with comorbidities (*NEJM* 2000 trial). ECG, chest radiograph, echo and stress testing are indicated only for specific findings.
+
+    Continue **beta-blockers, statins and aspirin** (stopping aspirin in a patient with a stent raises thrombosis risk; cataract surgery has minimal bleeding). Hold metformin the day of surgery only if fasting or receiving contrast.
+  why:
+    A: Routine laboratory tests and imaging do not change management or outcomes for low-risk procedures.
+    B: Stress testing is reserved for elevated-risk surgery in patients with poor or unknown functional capacity when it would change management.
+    D: Aspirin should be continued in patients with coronary stents for low-bleeding-risk procedures like cataract surgery.
+    E: Echocardiography is indicated for unexplained dyspnea, a new murmur or suspected change in heart failure, not routinely.
+  objective: |
+    Proceed without preoperative testing for low-risk surgery such as cataract extraction, and continue aspirin, beta-blockers and statins.
+  refs:
+    - Thompson A, et al. 2024 AHA/ACC/multisociety guideline for perioperative cardiovascular management for noncardiac surgery. *Circulation* 2024;150:e351.
+    - Schein OD, et al. The value of routine preoperative medical testing before cataract surgery. *N Engl J Med* 2000;342:168.
+
+- id: GE-004
+  topic: Urge urinary incontinence in an older woman
+  task: Treatment/Care Decisions
+  chapters: [geri/geri-syndromes]
+  stem: |
+    An 80-year-old woman is evaluated for 1 year of sudden, strong urges to urinate with leakage before she reaches the bathroom, 3–4 times daily, and nocturia twice nightly. She has mild cognitive impairment, hypertension and osteoarthritis. Medications are amlodipine and acetaminophen. She drinks four cups of coffee daily.
+
+    On physical examination, there is no pelvic organ prolapse. A cough stress test is negative.
+  labs:
+    - ["Urinalysis", "normal"]
+    - ["Postvoid residual volume", "40 mL"]
+  lead: Which of the following is the most appropriate initial treatment?
+  choices:
+    A: Bladder training, timed voiding and reducing caffeine
+    B: Indwelling urinary catheter
+    C: Oxybutynin
+    D: Pelvic floor surgery (midurethral sling)
+    E: Tamsulosin
+  answer: A
+  explain: |
+    **Urge incontinence** (overactive bladder): a sudden, compelling need to void with leakage. Infection is excluded and the postvoid residual is normal (<100–150 mL), so this is not overflow.
+
+    **First-line treatment is behavioral** (ACP, AUA):
+    - **Bladder training** — scheduled voiding with gradually longer intervals, urge-suppression techniques
+    - **Timed/prompted voiding** (especially with cognitive impairment)
+    - **Pelvic floor muscle training**
+    - **Reduce caffeine** and evening fluids; weight loss
+
+    If medication is needed: in older adults, especially with **cognitive impairment**, prefer **β₃-agonists (mirabegron, vibegron)**. **Antimuscinics (oxybutynin)** are on the **Beers list** — strongly anticholinergic, they worsen cognition and increase dementia risk.
+
+    | Type | Mechanism | First-line |
+    |---|---|---|
+    | **Stress** | Urethral hypermobility/sphincter weakness | **Pelvic floor muscle training** |
+    | **Urge** | Detrusor overactivity | **Bladder training** |
+    | Overflow | Obstruction / underactive detrusor (high PVR) | Treat cause; catheterization |
+    | Functional | Mobility/cognition | Prompted voiding, environment |
+  why:
+    B: Indwelling catheters cause infection and are not a treatment for urge incontinence.
+    C: Oxybutynin is highly anticholinergic and can worsen her cognitive impairment; behavioral therapy comes first.
+    D: Midurethral slings treat stress incontinence, not urge incontinence.
+    E: Tamsulosin relaxes the bladder outlet in men with BPH; it does not treat urge incontinence.
+  objective: |
+    Treat urge urinary incontinence first with bladder training, timed voiding and caffeine reduction, and prefer β₃-agonists over anticholinergics in older adults if medication is needed.
+  refs:
+    - Qaseem A, et al. Nonsurgical management of urinary incontinence in women: ACP clinical practice guideline. *Ann Intern Med* 2014;161:429.
+    - 2023 American Geriatrics Society Beers Criteria Update Expert Panel. *J Am Geriatr Soc* 2023;71:2052.
+
+- id: GE-005
+  topic: Dementia evaluation
+  task: Diagnosis/Testing
+  chapters: [geri/geri-syndromes, geri/delirium]
+  stem: |
+    A 76-year-old man is brought by his daughter for 1.5 years of gradually worsening memory. He repeats questions, missed several bills and recently got lost driving to a familiar store. He is still independent in bathing and dressing. He has no hallucinations, falls, tremor or urinary incontinence. His mood is good. Medications are amlodipine and atorvastatin.
+
+    On physical examination, vital signs are normal. MoCA score is 20/30, with deficits in delayed recall and executive function. Neurologic examination is otherwise normal. Gait is normal.
+  lead: Which of the following is the most appropriate initial evaluation?
+  choices:
+    A: Amyloid PET scan
+    B: Electroencephalography
+    C: Lumbar puncture for CSF amyloid and tau
+    D: Serum vitamin B₁₂, TSH and brain imaging (MRI or CT)
+    E: APOE genotyping
+  answer: D
+  explain: |
+    He has a progressive decline in memory and executive function affecting **instrumental activities of daily living** (finances, driving) → **mild dementia**, most likely **Alzheimer disease**.
+
+    The standard (AAN) evaluation for **reversible or contributing causes**:
+    - **Vitamin B₁₂** and **TSH** (plus CBC, metabolic panel; others such as syphilis or HIV only if risk factors)
+    - **Structural brain imaging once — MRI (preferred) or noncontrast CT** — to look for subdural hematoma, tumor, normal-pressure hydrocephalus, strokes
+    - Screen for **depression** ("pseudodementia"), hearing and vision loss, sleep apnea, and **medications** (anticholinergics, benzodiazepines)
+
+    **Biomarkers** (amyloid PET, CSF amyloid/tau, plasma p-tau217) are used when the diagnosis is uncertain or when **anti-amyloid therapy** (lecanemab, donanemab) is being considered — not as first-line routine tests. **APOE genotyping** is not a diagnostic test (it informs risk of ARIA with anti-amyloid therapy).
+
+    Treatment: **cholinesterase inhibitors** (donepezil) for mild-to-moderate AD; address **driving safety**, advance care planning and caregiver support.
+  why:
+    A: Amyloid PET confirms amyloid pathology in selected patients (e.g., anti-amyloid therapy candidates) but is not part of the initial evaluation.
+    B: EEG is for suspected seizures or prion disease (rapidly progressive dementia with myoclonus), not typical slowly progressive memory loss.
+    C: CSF biomarkers are reserved for atypical or uncertain cases or treatment eligibility.
+    E: APOE ε4 raises Alzheimer risk but neither confirms nor excludes the diagnosis.
+  objective: |
+    Evaluate new cognitive impairment with vitamin B₁₂, TSH and one-time structural brain imaging, plus screening for depression, sensory loss and offending medications.
+  refs:
+    - Knopman DS, et al. Practice parameter: diagnosis of dementia (AAN). *Neurology* 2001;56:1143.
+    - Jack CR Jr, et al. Revised criteria for diagnosis and staging of Alzheimer's disease: Alzheimer's Association Workgroup. *Alzheimers Dement* 2024;20:5143.
+
+- id: GE-006
+  topic: Pressure injury staging
+  task: Diagnosis/Testing
+  chapters: [geri/geri-syndromes]
+  stem: |
+    An 84-year-old woman with advanced dementia who is bedbound is admitted from a nursing home with pneumonia. Nursing staff note a sacral wound.
+
+    On examination, there is a 4 × 3 cm wound over the sacrum with full-thickness skin loss. Subcutaneous fat is visible in the wound bed, with some granulation tissue and a small amount of slough. Bone, tendon and muscle are not visible or palpable. There is no undermining. The surrounding skin is intact.
+  lead: Which of the following is the stage of this pressure injury?
+  keep_order: true
+  choices:
+    A: Stage 1
+    B: Stage 2
+    C: Stage 3
+    D: Stage 4
+    E: Unstageable
+  answer: C
+  explain: |
+    **Pressure injury staging (NPIAP 2016):**
+
+    | Stage | Definition |
+    |---|---|
+    | **1** | Intact skin with **nonblanchable erythema** |
+    | **2** | **Partial-thickness** loss; exposed **dermis** (pink, moist; or intact/ruptured serum-filled blister) — no fat |
+    | **3** | **Full-thickness skin loss**; **fat visible**; granulation, slough, eschar may be present; **no fascia, muscle, tendon or bone** |
+    | **4** | Full-thickness skin and tissue loss with **exposed or palpable fascia, muscle, tendon, ligament, cartilage or bone** |
+    | **Unstageable** | Base obscured by **slough or eschar** so depth cannot be confirmed |
+    | Deep tissue injury | Intact or nonintact skin with **persistent nonblanchable deep red, maroon or purple** discoloration |
+
+    Visible fat without deeper structures = **stage 3**. The small amount of slough does not obscure the depth.
+
+    Management: **pressure redistribution** (repositioning every 2 hours, support surfaces), moisture management, **nutrition**, wound care (debridement of necrotic tissue), and pain control. Do not reverse-stage as wounds heal.
+  why:
+    A: Stage 1 has intact skin with nonblanchable redness.
+    B: Stage 2 is partial-thickness loss with exposed dermis; fat is not visible.
+    D: Stage 4 requires exposed or palpable bone, tendon, muscle or fascia.
+    E: A wound is unstageable only when slough or eschar hides the base so depth cannot be determined; here the depth is visible.
+  objective: |
+    A pressure injury with full-thickness skin loss and visible subcutaneous fat, but no exposed bone, tendon, muscle or fascia, is stage 3.
+  refs:
+    - Edsberg LE, et al. Revised National Pressure Ulcer Advisory Panel pressure injury staging system. *J Wound Ostomy Continence Nurs* 2016;43:585.
+
+- id: GE-007
+  topic: Deprescribing — Beers criteria
+  task: Treatment/Care Decisions
+  chapters: [geri/geri-syndromes, geri/falls]
+  stem: |
+    An 82-year-old man is evaluated after two episodes in the past month of sweating, shakiness and confusion in the late morning; once he fell. He lives alone. He has type 2 diabetes, CKD (eGFR 38 mL/min/1.73 m²) and benign prostatic hyperplasia. Medications are glyburide, 10 mg twice daily; metformin, 500 mg twice daily; tamsulosin; lisinopril; and diphenhydramine at night for sleep.
+
+    On physical examination, blood pressure is 128/72 mm Hg without orthostatic change. He has mild cognitive impairment.
+  labs:
+    - ["Hemoglobin A1c", "6.1%"]
+    - ["Fingerstick glucose during last episode", "48 mg/dL"]
+  lead: Which of the following is the most appropriate change to his medications?
+  choices:
+    A: Add a bedtime snack and keep the current regimen
+    B: Increase metformin to 1000 mg twice daily
+    C: Stop glyburide and diphenhydramine
+    D: Switch glyburide to insulin glargine
+    E: Switch tamsulosin to doxazosin
+  answer: C
+  explain: |
+    He is having **recurrent hypoglycemia with a fall** from **glyburide** — a long-acting sulfonylurea with **active renally cleared metabolites**, accumulating with his CKD. His A1c of **6.1% is too low** for an older adult with cognitive impairment who lives alone (ADA target **<8.0%**, or <7.0–7.5% for healthy older adults).
+
+    The **AGS Beers Criteria** list as **potentially inappropriate** in older adults:
+    - **Sulfonylureas** — all as first- or second-line (hypoglycemia); **glyburide and glimepiride** worst
+    - **First-generation antihistamines (diphenhydramine)** — strongly anticholinergic: confusion, falls, **urinary retention** (risky with BPH), constipation
+    - Benzodiazepines and Z-drugs, sliding-scale insulin, PPIs >8 weeks without indication, and others
+
+    **Deprescribe**: stop glyburide (his A1c will remain near goal on metformin alone, which is fine at eGFR 30–44 with dose limits), and stop diphenhydramine (use CBT-I or sleep hygiene). If more glucose-lowering is needed later, choose low-hypoglycemia agents (DPP-4 inhibitor, SGLT2 inhibitor, GLP-1 RA).
+  why:
+    A: A snack does not remove the cause; glyburide will keep causing hypoglycemia, and his glycemic target is overtreated.
+    B: Metformin is capped at 1000 mg/d at an eGFR of 30–44.
+    D: Insulin adds hypoglycemia risk and is unnecessary at an A1c of 6.1%.
+    E: Doxazosin is a nonselective α-blocker that causes more orthostatic hypotension and falls than tamsulosin.
+  objective: |
+    Deprescribe Beers-list medications such as glyburide and diphenhydramine in older adults, and relax glycemic targets to avoid hypoglycemia.
+  refs:
+    - 2023 American Geriatrics Society Beers Criteria Update Expert Panel. *J Am Geriatr Soc* 2023;71:2052.
+    - American Diabetes Association. 13. Older adults: Standards of Care in Diabetes—2025. *Diabetes Care* 2025;48:S266.

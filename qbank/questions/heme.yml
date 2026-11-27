@@ -1,4 +1,4 @@
-# Hematology — ABIM blueprint 4%
+# Hematology — ABIM CERT blueprint
 - id: HE-001
   topic: Iron deficiency anemia in an older man
   task: Diagnosis/Testing
@@ -52,7 +52,7 @@
   task: Treatment/Care Decisions
   chapters: [heme/anticoagulation, pulmonary/pe]
   stem: |
-    A 54-year-old man comes for follow-up 6 weeks after a **proximal deep venous thrombosis of the left femoral vein**. It was diagnosed 3 weeks after an elective **left total knee arthroplasty**, while he was still using crutches. He has been taking apixaban without bleeding. He now walks normally and has returned to work. He has no history of venous thromboembolism or cancer, and age-appropriate cancer screening is up to date.
+    A 54-year-old man comes for follow-up 6 weeks after a proximal deep venous thrombosis of the left femoral vein. It was diagnosed 3 weeks after an elective left total knee arthroplasty, while he was still using crutches. He has been taking apixaban without bleeding. He now walks normally and has returned to work. He has no history of venous thromboembolism or cancer, and age-appropriate cancer screening is up to date.
 
     The left calf is minimally swollen and nontender.
   lead: Which of the following is the most appropriate duration of anticoagulation?
@@ -86,3 +86,576 @@
   refs:
     - Stevens SM, et al. Antithrombotic therapy for VTE disease: second update of the CHEST guideline and expert panel report. *Chest* 2021;160:e545.
     - Ortel TL, et al. American Society of Hematology 2020 guidelines for management of venous thromboembolism: treatment of DVT and PE. *Blood Adv* 2020;4:4693.
+
+
+- id: HE-003
+  topic: Heparin-induced thrombocytopenia
+  task: Treatment/Care Decisions
+  chapters: [heme/hit]
+  stem: |
+    A 66-year-old woman is evaluated on postoperative day 7 after a total knee replacement. She has received subcutaneous unfractionated heparin for VTE prophylaxis since surgery. Today she has new left calf swelling and pain.
+
+    On physical examination, the left calf is swollen and tender. There is no bleeding.
+  labs:
+    - ["Platelet count", "62,000/µL (238,000/µL on postoperative day 1)"]
+    - ["Duplex ultrasonography", "acute left popliteal vein thrombosis"]
+    - ["Creatinine", "0.9 mg/dL"]
+    - ["Liver tests", "normal"]
+  lead: In addition to stopping heparin, which of the following is the most appropriate immediate management?
+  choices:
+    A: Begin enoxaparin
+    B: Begin warfarin
+    C: Begin argatroban (or fondaparinux or a DOAC) without waiting for test results
+    D: Platelet transfusion
+    E: Wait for PF4 antibody and serotonin release assay results before anticoagulating
+  answer: C
+  explain: |
+    **Heparin-induced thrombocytopenia (HIT)** — antibodies against **platelet factor 4 (PF4)–heparin complexes** activate platelets, causing **thrombocytopenia and thrombosis** (venous more than arterial).
+
+    Her **4T score is high (8)**: platelets fell >50% (2), onset **day 5–10** (2), new **thrombosis** (2), no other cause (2). With intermediate or high probability:
+    1. **Stop all heparin** (including flushes and heparin-coated catheters).
+    2. **Start a non-heparin anticoagulant immediately** — **argatroban** (hepatic clearance; good in kidney failure), bivalirudin, **fondaparinux**, or a **DOAC** (increasingly used in stable patients).
+    3. Send a **PF4/heparin immunoassay**; confirm a positive with a **functional assay (serotonin release assay)**.
+    4. Anticoagulate **3 months** for HIT with thrombosis (4–6 weeks without thrombosis).
+  why:
+    A: LMWH cross-reacts with HIT antibodies and is contraindicated.
+    B: Starting warfarin during acute HIT can cause **venous limb gangrene and skin necrosis** (protein C depletion). Start it only after the platelet count recovers to ≥150,000/µL, overlapping with a parenteral agent.
+    D: Platelet transfusion is avoided in HIT unless there is serious bleeding; it may fuel thrombosis.
+    E: With a high pretest probability, waiting for tests leaves her at high risk for new thrombosis.
+  mnemonic: |
+    **4 Ts**: **T**hrombocytopenia (>50% fall), **T**iming (day 5–10), **T**hrombosis, o**T**her causes absent.
+  objective: |
+    When HIT is suspected with intermediate or high probability, stop all heparin and start a non-heparin anticoagulant before laboratory confirmation.
+  refs:
+    - Cuker A, et al. American Society of Hematology 2018 guidelines for management of VTE: heparin-induced thrombocytopenia. *Blood Adv* 2018;2:3360.
+
+- id: HE-004
+  topic: Thrombotic thrombocytopenic purpura
+  task: Treatment/Care Decisions
+  chapters: [heme/platelets-bleeding]
+  stem: |
+    A 34-year-old woman is brought to the emergency department with 2 days of confusion, headache and easy bruising. She has no diarrhea. She takes no medications.
+
+    On physical examination, temperature is 37.8 °C (100.0 °F), blood pressure is 136/82 mm Hg. She is confused but has no focal deficits. There are scattered petechiae on her legs.
+  labs:
+    - ["Hemoglobin", "7.6 g/dL"]
+    - ["MCV", "88 fL"]
+    - ["Platelet count", "14,000/µL"]
+    - ["Reticulocyte count", "9%"]
+    - ["Lactate dehydrogenase", "1,240 U/L"]
+    - ["Haptoglobin", "undetectable"]
+    - ["Total bilirubin", "3.1 mg/dL (indirect 2.6 mg/dL)"]
+    - ["Peripheral smear", "many schistocytes"]
+    - ["Direct antiglobulin test", "negative"]
+    - ["PT and aPTT", "normal"]
+    - ["Creatinine", "1.1 mg/dL"]
+    - ["Pregnancy test", "negative"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Eculizumab
+    B: Platelet transfusion
+    C: Therapeutic plasma exchange, glucocorticoids and caplacizumab
+    D: Intravenous immune globulin
+    E: Wait for ADAMTS13 activity before starting therapy
+  answer: C
+  explain: |
+    **Microangiopathic hemolytic anemia (MAHA)** — schistocytes, high LDH, low haptoglobin, negative DAT — plus **severe thrombocytopenia**, **neurologic symptoms**, fever, and **normal coagulation tests** (unlike DIC) = **thrombotic thrombocytopenic purpura (TTP)** until proven otherwise. Kidney injury is usually mild (severe AKI suggests HUS).
+
+    Acquired TTP is caused by **autoantibodies against ADAMTS13**, the protease that cleaves ultra-large von Willebrand factor multimers. Without it, vWF strings trap platelets and form microthrombi. Untreated mortality is ~90%.
+
+    Her **PLASMIC score** is high (platelets <30k, hemolysis, no cancer, no transplant, MCV <90, INR <1.5, creatinine <2) → **start treatment immediately** after drawing ADAMTS13 (activity <10% confirms):
+    - **Therapeutic plasma exchange** (removes antibodies, replaces ADAMTS13)
+    - **Glucocorticoids**
+    - **Caplacizumab** (anti-vWF nanobody) and often **rituximab**
+  why:
+    A: Eculizumab (anti-C5) treats atypical HUS (complement-mediated TMA), which usually causes more severe kidney injury.
+    B: Platelet transfusions are relatively contraindicated in TTP (may worsen thrombosis) except for life-threatening bleeding.
+    D: IVIG is used for ITP; it is not effective for TTP.
+    E: ADAMTS13 results take days; delaying plasma exchange increases mortality.
+  pearl: |
+    TTP classic pentad (fever, MAHA, thrombocytopenia, neurologic and kidney findings) is present in fewer than 10% of patients — **MAHA + thrombocytopenia is enough to act**.
+  objective: |
+    Treat suspected TTP (microangiopathic hemolysis with severe thrombocytopenia and normal coagulation tests) immediately with plasma exchange, glucocorticoids and caplacizumab.
+  refs:
+    - Zheng XL, et al. ISTH guidelines for treatment of thrombotic thrombocytopenic purpura. *J Thromb Haemost* 2020;18:2496.
+
+- id: HE-005
+  topic: Immune thrombocytopenia
+  task: Treatment/Care Decisions
+  chapters: [heme/platelets-bleeding]
+  stem: |
+    A 28-year-old woman is evaluated for 1 week of easy bruising and gum bleeding when brushing her teeth. She takes no medications or supplements. She had a viral upper respiratory infection 3 weeks ago.
+
+    On physical examination, vital signs are normal. There are petechiae on her legs and a few bruises on her arms. There is no lymphadenopathy or splenomegaly.
+  labs:
+    - ["Hemoglobin", "13.2 g/dL"]
+    - ["Leukocyte count", "6,800/µL (normal differential)"]
+    - ["Platelet count", "8,000/µL"]
+    - ["Peripheral smear", "large platelets; no schistocytes; normal red and white cells"]
+    - ["PT and aPTT", "normal"]
+    - ["HIV and hepatitis C antibodies", "negative"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Bone marrow biopsy before treatment
+    B: Observation without treatment
+    C: Platelet transfusion as the main treatment
+    D: Prednisone (or dexamethasone)
+    E: Splenectomy
+  answer: D
+  explain: |
+    **Isolated thrombocytopenia** with **large platelets**, normal other cell lines and smear, no splenomegaly, and no other cause = **immune thrombocytopenia (ITP)** — a diagnosis of exclusion. Check **HIV and HCV** (and *H. pylori* where relevant) in all adults.
+
+    Treat newly diagnosed adult ITP when the **platelet count is <30,000/µL** or there is significant bleeding (ASH 2019):
+    - **First-line: glucocorticoids** — prednisone 1 mg/kg/d (≤6 weeks total) or dexamethasone 40 mg/d × 4 days.
+    - **Add IVIG** (or anti-D in Rh+, non-splenectomized patients) when a **rapid rise** is needed (severe bleeding, before procedures).
+    - Platelet transfusion only for life-threatening bleeding (with IVIG and steroids).
+    - Second-line for persistent ITP: **TPO receptor agonists** (eltrombopag, romiplostim), **rituximab**, fostamatinib, or splenectomy (usually after 12 months).
+  why:
+    A: Bone marrow examination is not needed in typical ITP; it is for atypical features (other cytopenias, abnormal smear, age >60 with systemic symptoms, or failure to respond).
+    B: Observation is appropriate for platelet counts ≥30,000/µL without bleeding; at 8,000/µL with mucosal bleeding she needs treatment.
+    C: Transfused platelets are destroyed rapidly in ITP; transfusion is reserved for life-threatening bleeding.
+    E: Splenectomy is a second-line option for persistent or chronic ITP, not initial therapy.
+  objective: |
+    Treat newly diagnosed ITP in adults with a platelet count below 30,000/µL or bleeding with glucocorticoids, adding IVIG when a rapid response is needed.
+  refs:
+    - Neunert C, et al. American Society of Hematology 2019 guidelines for immune thrombocytopenia. *Blood Adv* 2019;3:3829.
+
+- id: HE-006
+  topic: Vitamin B₁₂ deficiency
+  task: Diagnosis/Testing
+  chapters: [heme/anemia-transfusion]
+  stem: |
+    A 68-year-old man with type 2 diabetes treated with metformin for 12 years is evaluated for 4 months of fatigue and tingling in his feet. He also takes omeprazole for reflux. He eats a varied diet.
+
+    On physical examination, there is reduced vibration sense and proprioception in both feet, and the Romberg test is positive. Ankle reflexes are absent.
+  labs:
+    - ["Hemoglobin", "11.4 g/dL"]
+    - ["MCV", "106 fL"]
+    - ["Peripheral smear", "macro-ovalocytes and hypersegmented neutrophils"]
+    - ["Vitamin B₁₂", "248 pg/mL (reference, 200–900)"]
+    - ["Folate", "normal"]
+    - ["TSH", "normal"]
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: Bone marrow biopsy
+    B: Methylmalonic acid level
+    C: MRI of the spine
+    D: Nerve conduction studies
+    E: Schilling test
+  answer: B
+  explain: |
+    Macrocytic anemia with **hypersegmented neutrophils**, plus **dorsal column findings** (loss of vibration and proprioception, positive Romberg), in a patient on long-term **metformin and a PPI** (both reduce B₁₂ absorption) → **vitamin B₁₂ deficiency**.
+
+    His serum B₁₂ is **low-normal (200–350 pg/mL)** — a gray zone where the level does not exclude deficiency. Measure **methylmalonic acid (MMA)** (± homocysteine):
+    - B₁₂ is a cofactor for **methylmalonyl-CoA mutase** and **methionine synthase**.
+    - **B₁₂ deficiency → high MMA and high homocysteine**.
+    - **Folate deficiency → high homocysteine, normal MMA**.
+
+    Treat with **intramuscular** B₁₂ (or high-dose oral 1,000–2,000 µg/d) — neurologic symptoms may be permanent if treatment is delayed. Check for pernicious anemia (intrinsic factor antibodies). Monitor B₁₂ periodically in patients on long-term metformin (ADA).
+  why:
+    A: Bone marrow biopsy is not needed when the smear and labs point to megaloblastic anemia from B₁₂ deficiency.
+    C: Spinal MRI may show dorsal column T2 hyperintensity but does not confirm the cause.
+    D: Nerve conduction studies characterize neuropathy but do not confirm B₁₂ deficiency.
+    E: The Schilling test is obsolete and no longer available.
+  objective: |
+    When serum vitamin B₁₂ is low-normal but deficiency is suspected, measure methylmalonic acid (elevated in B₁₂ deficiency, normal in folate deficiency).
+  refs:
+    - Stabler SP. Vitamin B12 deficiency. *N Engl J Med* 2013;368:149.
+    - American Diabetes Association. Standards of Care in Diabetes—2025. *Diabetes Care* 2025;48:S181.
+
+- id: HE-007
+  topic: Warm autoimmune hemolytic anemia
+  task: Diagnosis/Testing
+  chapters: [heme/anemia-transfusion]
+  stem: |
+    A 61-year-old woman is evaluated for 3 weeks of fatigue, exertional dyspnea and dark urine. She has chronic lymphocytic leukemia that has been under observation.
+
+    On physical examination, blood pressure is 118/68 mm Hg and pulse rate is 104/min. There is scleral icterus and mild splenomegaly.
+  labs:
+    - ["Hemoglobin", "7.4 g/dL"]
+    - ["MCV", "104 fL"]
+    - ["Reticulocyte count", "12%"]
+    - ["Lactate dehydrogenase", "680 U/L"]
+    - ["Haptoglobin", "<10 mg/dL"]
+    - ["Indirect bilirubin", "3.2 mg/dL"]
+    - ["Peripheral smear", "many spherocytes; no schistocytes"]
+    - ["Platelet count", "186,000/µL"]
+  lead: Which of the following tests is most likely to confirm the diagnosis?
+  choices:
+    A: ADAMTS13 activity
+    B: Direct antiglobulin (Coombs) test
+    C: Glucose-6-phosphate dehydrogenase activity
+    D: Hemoglobin electrophoresis
+    E: Osmotic fragility test
+  answer: B
+  explain: |
+    Hemolytic anemia (high reticulocytes, LDH and indirect bilirubin; low haptoglobin) with **spherocytes** in a patient with **CLL** → **warm autoimmune hemolytic anemia (AIHA)**. (The high MCV reflects reticulocytosis — reticulocytes are larger.)
+
+    Confirm with the **direct antiglobulin test (DAT, Coombs)**: **positive for IgG** (± C3) in warm AIHA. IgG-coated red cells lose membrane in the spleen and become **spherocytes**.
+
+    | | Warm AIHA | Cold agglutinin disease |
+    |---|---|---|
+    | Antibody | **IgG**, 37 °C | **IgM**, binds complement |
+    | DAT | IgG ± C3 | **C3 only** |
+    | Site | **Extravascular (spleen)** | Intravascular + liver |
+    | Causes | Idiopathic, **CLL**, lymphoma, **SLE**, drugs | Mycoplasma, EBV, lymphoma, Waldenström |
+    | Treatment | **Glucocorticoids** → rituximab | Avoid cold; rituximab, sutimlimab |
+  why:
+    A: ADAMTS13 testing is for TTP, which causes schistocytes and thrombocytopenia; her platelets are normal and the smear shows spherocytes.
+    C: G6PD deficiency causes episodic hemolysis after oxidant stress (drugs, infection, fava beans) with bite cells and Heinz bodies.
+    D: Hemoglobin electrophoresis evaluates hemoglobinopathies such as sickle cell disease and thalassemia.
+    E: Osmotic fragility (or EMA binding) tests for hereditary spherocytosis, which is DAT negative and begins early in life.
+  objective: |
+    Confirm warm autoimmune hemolytic anemia (hemolysis with spherocytes, often with CLL or SLE) with a positive direct antiglobulin test for IgG.
+  refs:
+    - Jäger U, et al. Diagnosis and treatment of autoimmune hemolytic anemia in adults: recommendations from the First International Consensus Meeting. *Blood Rev* 2020;41:100648.
+
+- id: HE-008
+  topic: Acute chest syndrome in sickle cell disease
+  task: Treatment/Care Decisions
+  chapters: [heme/hemoglobinopathies]
+  stem: |
+    A 24-year-old man with sickle cell anemia (HbSS) is hospitalized with a vaso-occlusive pain crisis in his back and legs. On hospital day 2 he develops fever, cough and right-sided chest pain.
+
+    On physical examination, temperature is 38.7 °C (101.7 °F), pulse rate is 112/min, and respiration rate is 26/min. Oxygen saturation is 88% breathing ambient air. There are crackles at the right base.
+
+    Chest radiograph shows a new right lower lobe infiltrate.
+  labs:
+    - ["Hemoglobin", "6.8 g/dL (baseline 8.2 g/dL)"]
+    - ["Reticulocyte count", "9%"]
+    - ["Leukocyte count", "18,200/µL"]
+  lead: In addition to oxygen, analgesia, incentive spirometry and empiric antibiotics, which of the following is the most appropriate treatment?
+  choices:
+    A: Begin hydroxyurea only
+    B: Intravenous furosemide
+    C: Red blood cell transfusion
+    D: Intravenous fluids at twice the maintenance rate
+    E: Prednisone, 60 mg/d
+  answer: C
+  explain: |
+    A new pulmonary infiltrate plus fever, respiratory symptoms, chest pain or hypoxemia in sickle cell disease = **acute chest syndrome (ACS)**, the leading cause of death in adults with SCD. It often follows a pain crisis (fat embolism from infarcted marrow, infection, hypoventilation from splinting and opioids).
+
+    Treatment:
+    - **Oxygen**, analgesia, **incentive spirometry**.
+    - **Empiric antibiotics**: a third-generation cephalosporin **plus a macrolide** (atypicals).
+    - **Red blood cell transfusion** — **simple transfusion** for hypoxemia or a hemoglobin ≥1 g/dL below baseline (target Hb ~10 g/dL; do not exceed this — hyperviscosity). **Exchange transfusion** for severe or rapidly progressing disease (multilobar, worsening hypoxemia, need for ventilation).
+    - Cautious IV fluids (avoid overload).
+
+    After recovery, start or continue **hydroxyurea** (reduces ACS and pain crises).
+  why:
+    A: Hydroxyurea prevents future ACS but takes weeks to act; it does not treat an acute episode.
+    B: Diuretics have no role unless volume overloaded and may promote sickling through dehydration.
+    D: Aggressive fluids can cause pulmonary edema and worsen ACS; use euvolemic hydration.
+    E: Glucocorticoids may shorten hospital stay but cause rebound pain crises and readmission; they are not standard.
+  objective: |
+    Treat acute chest syndrome in sickle cell disease with oxygen, antibiotics (cephalosporin plus macrolide), incentive spirometry and red cell transfusion (exchange transfusion if severe).
+  refs:
+    - Chou ST, et al. American Society of Hematology 2020 guidelines for sickle cell disease: transfusion support. *Blood Adv* 2020;4:327.
+    - Yawn BP, et al. Management of sickle cell disease: summary of the 2014 evidence-based report by expert panel members. *JAMA* 2014;312:1033.
+
+- id: HE-009
+  topic: Thalassemia trait versus iron deficiency
+  task: Diagnosis/Testing
+  chapters: [heme/hemoglobinopathies, heme/anemia-transfusion]
+  stem: |
+    A 30-year-old woman of Greek descent is evaluated for a mild anemia found on a pre-employment blood test. She feels well. Her menstrual periods are normal. She has taken an iron supplement for 3 months, prescribed by another clinician, without change in her blood counts.
+  labs:
+    - ["Hemoglobin", "11.2 g/dL"]
+    - ["Erythrocyte count", "5.9 million/µL (elevated)"]
+    - ["MCV", "62 fL"]
+    - ["Red cell distribution width", "normal"]
+    - ["Ferritin", "98 ng/mL"]
+    - ["Peripheral smear", "microcytes and target cells"]
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: Bone marrow aspiration with iron stain
+    B: Colonoscopy
+    C: Hemoglobin electrophoresis
+    D: Intravenous iron trial
+    E: Serum lead level
+  answer: C
+  explain: |
+    **Microcytosis out of proportion to the anemia**, a **high red cell count**, normal RDW, target cells, **normal ferritin** and Mediterranean ancestry → **thalassemia trait**.
+
+    The **Mentzer index** (MCV ÷ RBC count in millions) helps: **<13 suggests thalassemia**, >13 suggests iron deficiency. Here: 62 ÷ 5.9 ≈ **10.5**.
+
+    **Hemoglobin electrophoresis** distinguishes the types:
+    - **β-thalassemia trait** → **elevated HbA₂ (>3.5%)** ± high HbF.
+    - **α-thalassemia trait** (one or two gene deletions) → **normal electrophoresis**; diagnosis is by exclusion or DNA testing.
+
+    Thalassemia trait needs **no treatment**, but she should **stop iron** (risk of iron overload) and receive **genetic counseling**, since a partner with trait could have a child with thalassemia major.
+
+    | | Iron deficiency | Thalassemia trait |
+    |---|---|---|
+    | RBC count | Low | **High/normal** |
+    | RDW | **High** | Normal |
+    | Ferritin | **Low** | Normal/high |
+    | Mentzer | >13 | **<13** |
+  why:
+    A: Bone marrow examination is unnecessary; ferritin reliably excludes iron deficiency here.
+    B: She has no iron deficiency, so a GI source of blood loss is not suggested.
+    D: Her ferritin is normal, and she did not respond to oral iron; more iron would risk overload.
+    E: Lead poisoning causes microcytic anemia with basophilic stippling and neurologic or GI symptoms; it does not cause an elevated RBC count.
+  objective: |
+    Suspect thalassemia trait in microcytosis with a high RBC count, normal RDW, normal ferritin and a Mentzer index below 13, and confirm with hemoglobin electrophoresis.
+  refs:
+    - Taher AT, et al. Thalassaemia. *Lancet* 2018;391:155.
+
+- id: HE-010
+  topic: Multiple myeloma — diagnosis
+  task: Diagnosis/Testing
+  chapters: [heme/blood-cancers]
+  stem: |
+    A 68-year-old man is evaluated for 2 months of low back pain and fatigue. He has no history of trauma.
+
+    On physical examination, there is tenderness over the lumbar spine. Neurologic examination is normal.
+  labs:
+    - ["Hemoglobin", "9.4 g/dL"]
+    - ["Calcium", "11.4 mg/dL"]
+    - ["Creatinine", "2.1 mg/dL"]
+    - ["Total protein", "9.8 g/dL"]
+    - ["Albumin", "3.2 g/dL"]
+    - ["Peripheral smear", "rouleaux formation"]
+    - ["Urinalysis (dipstick)", "negative for protein"]
+    - ["Radiograph of the lumbar spine", "lytic lesion in L3"]
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: Bone scan (technetium scintigraphy)
+    B: Kidney biopsy
+    C: Prostate-specific antigen
+    D: Serum protein electrophoresis with immunofixation and serum free light chains
+    E: Urine dipstick for protein repeated in 1 week
+  answer: D
+  explain: |
+    Bone pain with a **lytic lesion**, anemia, **hypercalcemia**, **kidney injury**, a large **protein gap** (total protein − albumin = 6.6 g/dL; >4 is high), and **rouleaux** = **multiple myeloma** until proven otherwise ("**CRAB**").
+
+    Initial testing: **serum protein electrophoresis (SPEP) with immunofixation** plus **serum free light chain (FLC) assay** (and/or 24-h urine protein electrophoresis with immunofixation). This combination detects a monoclonal protein in >97% of myeloma.
+
+    Diagnosis is confirmed by **bone marrow biopsy** (≥10% clonal plasma cells) plus a myeloma-defining event (CRAB, or ≥60% plasma cells, FLC ratio ≥100, >1 focal lesion on MRI). Skeletal survey is replaced by **whole-body low-dose CT, PET-CT or MRI**.
+
+    The **negative urine dipstick** is a classic trap: dipsticks detect **albumin**, not light chains (Bence Jones protein).
+  why:
+    A: Bone scans detect osteoblastic activity; myeloma lesions are purely lytic and are often missed.
+    B: Kidney biopsy may later show cast nephropathy, but noninvasive testing for a monoclonal protein comes first.
+    C: PSA is reasonable when prostate cancer metastases are suspected, but prostate metastases are usually blastic and the protein gap and rouleaux point to myeloma.
+    E: A dipstick cannot detect light chains; repeating it would add nothing.
+  mnemonic: |
+    Myeloma **CRAB**: hyper**C**alcemia, **R**enal failure, **A**nemia, **B**one lesions.
+  objective: |
+    Evaluate suspected multiple myeloma with serum protein electrophoresis with immunofixation and serum free light chains.
+  refs:
+    - Rajkumar SV, et al. International Myeloma Working Group updated criteria for the diagnosis of multiple myeloma. *Lancet Oncol* 2014;15:e538.
+    - Rajkumar SV. Multiple myeloma: 2024 update on diagnosis, risk-stratification, and management. *Am J Hematol* 2024;99:1802.
+
+- id: HE-011
+  topic: MGUS — follow-up
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [heme/blood-cancers]
+  stem: |
+    A 66-year-old woman is evaluated after an SPEP done for an elevated total protein showed a monoclonal IgG κ protein of 0.8 g/dL. She feels well. She has no bone pain.
+  labs:
+    - ["Hemoglobin", "13.6 g/dL"]
+    - ["Calcium", "9.4 mg/dL"]
+    - ["Creatinine", "0.8 mg/dL"]
+    - ["Serum free light chain ratio (κ/λ)", "1.4 (normal)"]
+    - ["Low-dose whole-body CT", "no lytic lesions"]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Bone marrow biopsy now
+    B: Lenalidomide and dexamethasone
+    C: No follow-up is needed
+    D: Repeat SPEP and laboratory tests in 6 months, then annually if stable
+    E: Autologous stem cell transplantation
+  answer: D
+  explain: |
+    She has **monoclonal gammopathy of undetermined significance (MGUS)**: M protein **<3 g/dL**, **<10% marrow plasma cells**, and **no CRAB features or other end-organ damage**. MGUS is present in about **3% of adults >50**.
+
+    MGUS progresses to myeloma or a related disorder at about **1% per year**, lifelong. Risk factors for progression (Mayo model):
+    - **M protein ≥1.5 g/dL**
+    - **Non-IgG isotype** (IgA, IgM)
+    - **Abnormal free light chain ratio**
+
+    She has **none** → **low-risk MGUS** (lifetime risk ~5%). A bone marrow biopsy is **not required** for low-risk IgG MGUS. **Repeat SPEP, CBC, calcium and creatinine at 6 months**, then annually (or less often — some stop surveillance in very low-risk older patients).
+
+    MGUS is never treated with chemotherapy. MGUS can still cause organ damage ("MGRS" — monoclonal gammopathy of renal significance), neuropathy (IgM), and increases fracture risk.
+  why:
+    A: Bone marrow biopsy is not needed in low-risk MGUS (IgG <1.5 g/dL, normal FLC ratio) without CRAB features.
+    B: MGUS is not treated; therapy is for myeloma.
+    C: Lifelong risk of progression justifies follow-up.
+    E: Transplantation is for multiple myeloma, not MGUS.
+  objective: |
+    Monitor low-risk MGUS (IgG <1.5 g/dL, normal free light chain ratio) with repeat SPEP and laboratory tests at 6 months, then annually, without bone marrow biopsy.
+  refs:
+    - Kyle RA, et al. Long-term follow-up of monoclonal gammopathy of undetermined significance. *N Engl J Med* 2018;378:241.
+    - Go RS, Rajkumar SV. How I manage monoclonal gammopathy of undetermined significance. *Blood* 2018;131:163.
+
+- id: HE-012
+  topic: Polycythemia vera
+  task: Diagnosis/Testing
+  chapters: [heme/blood-cancers]
+  stem: |
+    A 58-year-old man is evaluated for headaches and itching after hot showers. He has never smoked and does not have sleep apnea symptoms. He takes no testosterone.
+
+    On physical examination, blood pressure is 146/88 mm Hg. He has facial plethora. The spleen tip is palpable.
+  labs:
+    - ["Hemoglobin", "19.2 g/dL"]
+    - ["Hematocrit", "58%"]
+    - ["Leukocyte count", "13,400/µL"]
+    - ["Platelet count", "612,000/µL"]
+    - ["Oxygen saturation", "98% breathing ambient air"]
+    - ["Serum erythropoietin", "low"]
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: Abdominal CT to look for an erythropoietin-secreting tumor
+    B: BCR-ABL1 fusion testing
+    C: JAK2 V617F mutation testing
+    D: Polysomnography
+    E: Red cell mass measurement
+  answer: C
+  explain: |
+    Erythrocytosis with **aquagenic pruritus**, plethora, splenomegaly, **high WBC and platelets**, normal oxygen saturation and a **low erythropoietin** → **polycythemia vera (PV)**, a myeloproliferative neoplasm. Secondary erythrocytosis (hypoxia, smoking, OSA, testosterone, EPO-secreting tumors) has **normal or high** EPO.
+
+    **JAK2 V617F** is present in **~95%** of PV (exon 12 mutations in most of the rest). A JAK2 mutation plus hemoglobin >16.5 g/dL in men (>16 g/dL in women) meets WHO criteria; bone marrow biopsy completes the diagnosis.
+
+    Treatment: **phlebotomy to hematocrit <45%** (CYTO-PV) plus **low-dose aspirin** for all; **cytoreduction (hydroxyurea, interferon)** for high-risk patients (**age ≥60 or prior thrombosis**). Thrombosis — including **Budd-Chiari syndrome** — is the main cause of morbidity.
+  why:
+    A: A low EPO argues against an EPO-secreting tumor (renal cell carcinoma, hepatoma, cerebellar hemangioblastoma), which raises EPO.
+    B: BCR-ABL1 defines chronic myeloid leukemia, which presents with marked leukocytosis with left shift and basophilia, not isolated erythrocytosis.
+    D: OSA causes secondary erythrocytosis with a normal or high EPO; he has no symptoms and EPO is low.
+    E: Red cell mass measurement is rarely available and is not needed when hemoglobin is this high and JAK2 testing is available.
+  objective: |
+    In a patient with erythrocytosis and a low erythropoietin level, test for the JAK2 V617F mutation to diagnose polycythemia vera.
+  refs:
+    - Tefferi A, Barbui T. Polycythemia vera: 2024 update on diagnosis, risk-stratification, and management. *Am J Hematol* 2023;98:1465.
+    - Marchioli R, et al. Cardiovascular events and intensity of treatment in polycythemia vera (CYTO-PV). *N Engl J Med* 2013;368:22.
+
+- id: HE-013
+  topic: Acute promyelocytic leukemia
+  task: Treatment/Care Decisions
+  chapters: [heme/blood-cancers, heme/onc-emergencies]
+  stem: |
+    A 42-year-old woman is evaluated for 1 week of fatigue, gum bleeding and large bruises. She had a nosebleed that lasted 2 hours yesterday.
+
+    On physical examination, temperature is 37.4 °C (99.3 °F), pulse rate is 104/min. There are ecchymoses on her arms and legs and oozing from her gums.
+  labs:
+    - ["Hemoglobin", "8.1 g/dL"]
+    - ["Leukocyte count", "2,800/µL"]
+    - ["Platelet count", "22,000/µL"]
+    - ["PT", "18 seconds; INR 1.6"]
+    - ["Fibrinogen", "84 mg/dL (low)"]
+    - ["D-dimer", "markedly elevated"]
+    - ["Peripheral smear", "abnormal promyelocytes with multiple Auer rods (\"faggot cells\")"]
+  lead: Which of the following is the most appropriate immediate treatment, before genetic confirmation is available?
+  choices:
+    A: All-trans retinoic acid (ATRA) and blood product support
+    B: Heparin infusion for DIC
+    C: Observation until t(15;17) PML-RARA results are available
+    D: Rituximab
+    E: Tranexamic acid alone
+  answer: A
+  explain: |
+    Pancytopenia, abnormal **promyelocytes with multiple Auer rods (faggot cells)** and **DIC with low fibrinogen and bleeding** = **acute promyelocytic leukemia (APL)**, caused by **t(15;17)** producing the **PML-RARA** fusion protein, which blocks myeloid differentiation at the promyelocyte stage.
+
+    APL is a **medical emergency** — early death is from **hemorrhage** (intracranial, pulmonary). **Start all-trans retinoic acid (ATRA) immediately on suspicion**, without waiting for genetic confirmation. ATRA forces promyelocytes to differentiate and rapidly corrects the coagulopathy.
+
+    Supportive care: **cryoprecipitate** to keep fibrinogen **>150 mg/dL**, **platelets >30,000–50,000/µL**, FFP for high INR. Definitive treatment: **ATRA + arsenic trioxide** (cures >90% of standard-risk patients).
+
+    Watch for **differentiation syndrome** (fever, dyspnea, pulmonary infiltrates, edema, AKI) → **dexamethasone**.
+  why:
+    B: Heparin is not recommended for APL-associated DIC; it increases bleeding risk.
+    C: Delaying ATRA increases the risk of fatal hemorrhage; genetic confirmation can follow.
+    D: Rituximab targets CD20 on B cells; it has no role in APL.
+    E: Antifibrinolytics are not recommended in APL; they may increase thrombosis and do not treat the leukemia.
+  objective: |
+    Start all-trans retinoic acid immediately when acute promyelocytic leukemia is suspected, along with aggressive blood product support for coagulopathy.
+  refs:
+    - Sanz MA, et al. Management of acute promyelocytic leukemia: updated recommendations from an expert panel of the European LeukemiaNet. *Blood* 2019;133:1630.
+
+- id: HE-014
+  topic: Early-stage chronic lymphocytic leukemia
+  task: Treatment/Care Decisions
+  chapters: [heme/blood-cancers]
+  stem: |
+    A 71-year-old man is evaluated after a routine CBC showed lymphocytosis. He feels well, with no fevers, night sweats or weight loss.
+
+    On physical examination, there are several small (1–1.5 cm), nontender cervical lymph nodes. There is no hepatosplenomegaly.
+  labs:
+    - ["Hemoglobin", "14.1 g/dL"]
+    - ["Leukocyte count", "21,400/µL (absolute lymphocyte count 16,800/µL)"]
+    - ["Platelet count", "198,000/µL"]
+    - ["Peripheral smear", "small mature lymphocytes and smudge cells"]
+    - ["Flow cytometry", "clonal B cells expressing CD5, CD19, CD20 (dim) and CD23"]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Allogeneic stem cell transplantation
+    B: Bendamustine and rituximab
+    C: Ibrutinib
+    D: Observation with CBC and examination every 3–6 months
+    E: Radiation therapy to the cervical nodes
+  answer: D
+  explain: |
+    Absolute lymphocytosis (clonal B cells ≥5,000/µL) with **CD5+, CD23+** B cells and **smudge cells** = **chronic lymphocytic leukemia (CLL)**. He has **early-stage disease** (Rai stage I — lymphadenopathy; Binet A) with no symptoms and normal hemoglobin and platelets.
+
+    Early, asymptomatic CLL is managed with **"watch and wait"** — early treatment does not improve survival, even with modern targeted therapies.
+
+    **Treat when there is "active disease" (iwCLL)**:
+    - **Progressive marrow failure** (hemoglobin <10 g/dL or platelets <100,000/µL)
+    - Massive or progressive **splenomegaly** or **lymphadenopathy**
+    - **Lymphocyte doubling time <6 months**
+    - **Constitutional symptoms** (fevers, night sweats, weight loss >10%, fatigue)
+    - Autoimmune cytopenias not responding to steroids
+
+    Modern first-line therapy is **BTK inhibitors** (ibrutinib, acalabrutinib, zanubrutinib) or **venetoclax + obinutuzumab**.
+
+    Also: vaccinate (non-live), watch for infections (hypogammaglobulinemia), AIHA/ITP, and **skin cancers**.
+  why:
+    A: Transplantation is for high-risk relapsed disease in fit patients, not early CLL.
+    B: Chemoimmunotherapy has been largely replaced by targeted therapy, and treatment is not indicated in early asymptomatic disease.
+    C: BTK inhibitors are first-line when treatment is indicated; he does not meet criteria.
+    E: Localized radiation is not used for CLL lymphadenopathy unless bulky and symptomatic.
+  objective: |
+    Observe asymptomatic early-stage CLL without treatment until indications for therapy such as cytopenias, symptoms or rapid progression develop.
+  refs:
+    - Hallek M, et al. iwCLL guidelines for diagnosis, indications for treatment, response assessment, and supportive management of CLL. *Blood* 2018;131:2745.
+
+- id: HE-015
+  topic: Von Willebrand disease
+  task: Diagnosis/Testing
+  chapters: [heme/platelets-bleeding]
+  stem: |
+    A 24-year-old woman is evaluated before a planned wisdom-tooth extraction because of a history of bleeding. She has had heavy menstrual periods since menarche, needing to change pads every hour on heavy days. She had prolonged bleeding after a tonsillectomy at age 8. She bruises easily and has frequent nosebleeds. Her mother also has heavy menses. She takes no medications.
+
+    Examination is normal except for a few small bruises.
+  labs:
+    - ["Hemoglobin", "11.4 g/dL"]
+    - ["MCV", "76 fL"]
+    - ["Platelet count", "228,000/µL"]
+    - ["PT", "normal"]
+    - ["aPTT", "normal to mildly prolonged (36 s; reference 25–35 s)"]
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: Bone marrow biopsy
+    B: Factor IX activity
+    C: Platelet function analyzer only
+    D: Von Willebrand factor antigen, activity (ristocetin cofactor or GPIb binding) and factor VIII activity
+    E: Mixing study for a lupus anticoagulant
+  answer: D
+  explain: |
+    **Mucocutaneous bleeding** — menorrhagia since menarche, epistaxis, easy bruising, bleeding after tonsillectomy — with a family history, normal platelets, normal PT and normal or slightly prolonged aPTT → **von Willebrand disease (VWD)**, the **most common inherited bleeding disorder** (~1% of people; usually type 1, autosomal dominant).
+
+    VWF does two jobs: **platelet adhesion** (bridges platelets to collagen via GPIb) and **carrying factor VIII** (protects it from clearance) — which is why the aPTT may be slightly prolonged.
+
+    Initial panel: **VWF antigen**, **VWF activity** (ristocetin cofactor or GPIbM assay), **factor VIII activity**. VWF levels rise with stress, estrogen, pregnancy and inflammation — repeat if borderline. Blood type O has lower VWF levels.
+
+    Treatment: **desmopressin (DDAVP)** releases stored VWF (type 1), **VWF-containing concentrates** for major surgery or nonresponders, and **tranexamic acid** for mucosal bleeding and menorrhagia (plus hormonal therapy). Treat her iron deficiency.
+  why:
+    A: Bone marrow biopsy has no role in evaluating an inherited bleeding disorder with normal blood counts.
+    B: Hemophilia B (factor IX deficiency) is X-linked, presents in males with joint and muscle bleeds and a prolonged aPTT.
+    C: The PFA-100 is neither sensitive nor specific enough to diagnose or exclude VWD.
+    E: A lupus anticoagulant prolongs the aPTT in vitro but causes thrombosis, not bleeding.
+  pearl: |
+    **Platelet-type bleeding** (mucosal, petechiae, immediate bleeding) → VWD or platelet disorders. **Factor-type bleeding** (joints, muscles, delayed bleeding) → hemophilia.
+  objective: |
+    Evaluate lifelong mucocutaneous bleeding with VWF antigen, VWF activity and factor VIII activity to diagnose von Willebrand disease.
+  refs:
+    - James PD, et al. ASH ISTH NHF WFH 2021 guidelines on the diagnosis of von Willebrand disease. *Blood Adv* 2021;5:280.

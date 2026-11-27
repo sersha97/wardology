@@ -1,12 +1,12 @@
-# Dermatology — ABIM blueprint 3%
+# Dermatology — ABIM CERT blueprint
 - id: DE-001
   topic: Suspected melanoma
   task: Diagnosis/Testing
   chapters: [derm/skin-cancer]
   stem: |
-    A 51-year-old man comes to the office because his wife noticed that a mole on his upper back has **grown and darkened** over the past 6 months. It occasionally itches. He had several blistering sunburns as a child and works outdoors. He has no personal or family history of skin cancer.
+    A 51-year-old man comes to the office because his wife noticed that a mole on his upper back has grown and darkened over the past 6 months. It occasionally itches. He had several blistering sunburns as a child and works outdoors. He has no personal or family history of skin cancer.
 
-    On the left upper back there is a **9-mm, asymmetric** pigmented macule with an **irregular, notched border** and **several shades of brown, black and blue-gray**. It looks different from his other moles. There is no palpable axillary or cervical lymphadenopathy.
+    On the left upper back there is a 9-mm, asymmetric pigmented macule with an irregular, notched border and several shades of brown, black and blue-gray. It looks different from his other moles. There is no palpable axillary or cervical lymphadenopathy.
   lead: Which of the following is the most appropriate next step?
   choices:
     A: Photograph the lesion and re-examine in 3 months
@@ -46,9 +46,9 @@
   task: Treatment/Care Decisions
   chapters: [derm/drug-eruptions, rheum/gout]
   stem: |
-    A 58-year-old woman comes to the emergency department with 4 days of fever and a spreading itchy rash that began on her face and trunk. **Allopurinol** was started **5 weeks ago** for recurrent gout. She has chronic kidney disease. She takes no other new medications.
+    A 58-year-old woman comes to the emergency department with 4 days of fever and a spreading itchy rash that began on her face and trunk. Allopurinol was started 5 weeks ago for recurrent gout. She has chronic kidney disease. She takes no other new medications.
 
-    Temperature is 38.9 °C (102.0 °F), blood pressure is 118/70 mm Hg and pulse is 104/min. There is **facial edema** and a confluent erythematous morbilliform eruption covering about 60% of the body surface. There are no blisters, skin sloughing or mucosal erosions. Tender cervical and axillary **lymphadenopathy** is present.
+    Temperature is 38.9 °C (102.0 °F), blood pressure is 118/70 mm Hg and pulse is 104/min. There is facial edema and a confluent erythematous morbilliform eruption covering about 60% of the body surface. There are no blisters, skin sloughing or mucosal erosions. Tender cervical and axillary lymphadenopathy is present.
   labs:
     - [Leukocyte count, "14,800/µL"]
     - [Eosinophils, "1,900/µL"]
@@ -88,3 +88,200 @@
   refs:
     - Shiohara T, Mizukawa Y. Drug-induced hypersensitivity syndrome (DiHS)/drug reaction with eosinophilia and systemic symptoms (DRESS): an update in 2019. *Allergol Int* 2019;68:301.
     - Kardaun SH, et al. Drug reaction with eosinophilia and systemic symptoms (DRESS): an original multisystem adverse drug reaction (RegiSCAR). *Br J Dermatol* 2013;169:1071.
+
+
+- id: DE-003
+  topic: Stevens-Johnson syndrome / toxic epidermal necrolysis
+  task: Treatment/Care Decisions
+  chapters: [derm/drug-eruptions]
+  stem: |
+    A 38-year-old woman is brought to the emergency department with 2 days of fever, painful skin and a spreading rash. She started lamotrigine for bipolar disorder 3 weeks ago. Before the rash she had a sore throat and burning eyes.
+
+    On physical examination, temperature is 38.8 °C (101.8 °F), blood pressure is 108/64 mm Hg, and pulse rate is 118/min. There are dusky red macules and flaccid blisters on the trunk and face, with areas of epidermal detachment covering about 20% of the body surface area. Gentle lateral pressure on normal-looking skin causes the epidermis to slide off (positive Nikolsky sign). There are erosions of the lips, oral mucosa and conjunctivae.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Continue lamotrigine at a lower dose
+    B: Discharge with oral prednisone and dermatology follow-up
+    C: Start intravenous vancomycin and piperacillin-tazobactam for staphylococcal scalded skin
+    D: Stop lamotrigine and transfer to a burn unit or ICU
+    E: Topical triamcinolone to affected areas
+  answer: D
+  explain: |
+    Fever and a prodrome, then **painful dusky skin with blisters, positive Nikolsky sign and mucosal involvement (≥2 sites)**, 1–3 weeks after starting a high-risk drug → **Stevens-Johnson syndrome/toxic epidermal necrolysis overlap** (SJS <10% BSA; overlap 10–30%; TEN >30%).
+
+    The single most important step is to **stop the culprit drug immediately** — earlier withdrawal lowers mortality. Then **transfer to a burn unit or ICU** for wound care, fluid and electrolyte management, temperature control, nutrition, infection surveillance, and **urgent ophthalmology** (to prevent scarring and blindness). Calculate **SCORTEN** for prognosis.
+
+    Adjunctive therapies such as **cyclosporine** or **etanercept** may reduce mortality; systemic glucocorticoids and IVIG are controversial.
+
+    | High-risk drugs for SJS/TEN |
+    |---|
+    | **Allopurinol** (HLA-B*58:01) |
+    | **Anticonvulsants** — carbamazepine (HLA-B*15:02), phenytoin, **lamotrigine**, phenobarbital |
+    | **Sulfonamides** (TMP-SMX) |
+    | **NSAIDs** (oxicams), nevirapine |
+  why:
+    A: The drug must be stopped permanently; continuing it at any dose causes progression and death.
+    B: SJS/TEN with 20% detachment needs intensive inpatient care; outpatient steroids are unsafe.
+    C: Staphylococcal scalded skin syndrome mostly affects children and adults with kidney failure and spares mucous membranes; prophylactic antibiotics are not recommended in SJS/TEN.
+    E: Topical steroids do not treat SJS/TEN and are not appropriate for extensive denuded skin.
+  objective: |
+    In suspected SJS/TEN, immediately stop the culprit drug and transfer the patient to a burn unit or ICU with urgent ophthalmology involvement.
+  refs:
+    - Frantz R, et al. Stevens–Johnson syndrome and toxic epidermal necrolysis: a review of diagnosis and management. *Medicina* 2021;57:895.
+    - Wang CW, et al. Randomized, controlled trial of TNF-α antagonist in CTL-mediated severe cutaneous adverse reactions. *J Clin Invest* 2018;128:985.
+
+- id: DE-004
+  topic: Psoriasis — comorbidities and treatment
+  task: Treatment/Care Decisions
+  chapters: [derm/common-rashes, rheum/arthritis]
+  stem: |
+    A 44-year-old man is evaluated for a 10-year history of itchy skin plaques. He has used topical clobetasol with partial relief, but the plaques are spreading. For the past 6 months his fingers have become swollen ("like sausages"), and he has morning stiffness in his hands for 1 hour.
+
+    On physical examination, BMI is 33. There are well-demarcated erythematous plaques with silvery scale on the elbows, knees, scalp and lower back covering about 12% of body surface area. There is nail pitting and onycholysis. The second and third fingers of the right hand are diffusely swollen (dactylitis), and there is tenderness at several distal interphalangeal joints.
+  labs:
+    - ["Rheumatoid factor and anti-CCP antibodies", "negative"]
+    - ["Hand radiograph", "DIP erosions"]
+    - ["Hepatitis B and C serologies", "negative"]
+    - ["Interferon-γ release assay", "negative"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Higher-potency topical steroid with occlusion
+    B: Hydroxychloroquine
+    C: Narrowband UVB phototherapy alone
+    D: Oral prednisone taper
+    E: A TNF inhibitor or IL-17 inhibitor
+  answer: E
+  explain: |
+    He has **moderate-to-severe plaque psoriasis** (>10% BSA) and **psoriatic arthritis** — **dactylitis, DIP joint involvement, nail disease**, seronegative, with **erosions**. Up to 30% of people with psoriasis develop psoriatic arthritis; nail disease is the strongest predictor.
+
+    With **erosive** arthritis plus extensive skin disease, the best choice is a **biologic that treats both** — a **TNF inhibitor** (adalimumab, etanercept, infliximab, certolizumab, golimumab) or an **IL-17 inhibitor** (secukinumab, ixekizumab), or an IL-23 inhibitor (guselkumab, risankizumab). Screening for TB and hepatitis B has been done. Methotrexate is an option for skin and peripheral arthritis but is less effective for dactylitis and erosive disease.
+
+    Psoriasis is a **systemic inflammatory disease**: screen for **obesity, metabolic syndrome, diabetes, dyslipidemia, cardiovascular disease, MASLD, depression** and IBD.
+  why:
+    A: Topical therapy is appropriate for limited disease (<3–5% BSA) and does not treat psoriatic arthritis.
+    B: Hydroxychloroquine is ineffective for psoriatic arthritis and can trigger psoriasis flares.
+    C: Phototherapy helps skin disease but does not treat erosive arthritis.
+    D: Systemic glucocorticoids can provoke a severe (pustular or erythrodermic) psoriasis flare when tapered.
+  objective: |
+    Treat moderate-to-severe psoriasis with erosive psoriatic arthritis with a biologic (TNF, IL-17 or IL-23 inhibitor) after screening for TB and hepatitis B, and screen for metabolic and cardiovascular comorbidities.
+  refs:
+    - Menter A, et al. Joint AAD–NPF guidelines of care for the management and treatment of psoriasis with biologics. *J Am Acad Dermatol* 2019;80:1029.
+    - Singh JA, et al. 2018 ACR/NPF guideline for the treatment of psoriatic arthritis. *Arthritis Rheumatol* 2019;71:5.
+
+- id: DE-005
+  topic: Basal cell carcinoma on the face
+  task: Treatment/Care Decisions
+  chapters: [derm/skin-cancer]
+  stem: |
+    A 68-year-old man with a history of extensive sun exposure as a farmer is evaluated for a slowly growing lesion on the side of his nose that occasionally bleeds. It has been present for 1 year.
+
+    On physical examination, there is a 9-mm pearly, translucent papule with rolled borders, telangiectasias and a small central ulcer on the left nasal ala. There is no lymphadenopathy.
+
+    Shave biopsy shows infiltrative basal cell carcinoma.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Cryotherapy
+    B: Mohs micrographic surgery
+    C: Observation, because basal cell carcinoma rarely metastasizes
+    D: Topical 5-fluorouracil
+    E: Vismodegib
+  answer: B
+  explain: |
+    **Basal cell carcinoma (BCC)** is the most common cancer in humans. It rarely metastasizes, but it **invades and destroys local tissue** — especially on the central face.
+
+    **Mohs micrographic surgery** is the treatment of choice for **high-risk BCC**:
+    - Location in the **"H zone" of the face** (nose, eyelids, lips, ears, temples) — the "mask" area
+    - **Aggressive histology** — **infiltrative**, morpheaform/sclerosing, micronodular
+    - Size ≥2 cm on trunk/extremities; recurrent tumors; immunosuppression
+
+    Mohs removes the tumor layer by layer with **complete margin examination**, giving the **highest cure rate (~99%) with the most tissue sparing** — crucial on the nose.
+
+    Low-risk superficial BCC on the trunk can be treated with **curettage and electrodesiccation**, **topical imiquimod or 5-FU**, cryotherapy or standard excision.
+  why:
+    A: Cryotherapy lacks margin control and is used for superficial, low-risk lesions on the trunk, not infiltrative BCC on the nose.
+    C: BCC grows and destroys local tissue; untreated facial BCC can invade cartilage and bone.
+    D: Topical 5-FU is for superficial BCC in low-risk sites, not infiltrative tumors.
+    E: Hedgehog inhibitors are for locally advanced or metastatic BCC that cannot be treated with surgery or radiation.
+  objective: |
+    Treat high-risk basal cell carcinoma (central face, infiltrative histology) with Mohs micrographic surgery.
+  refs:
+    - Bichakjian C, et al. Guidelines of care for the management of basal cell carcinoma (AAD). *J Am Acad Dermatol* 2018;78:540.
+
+- id: DE-006
+  topic: Erythema nodosum — evaluation
+  task: Diagnosis/Testing
+  chapters: [derm/common-rashes]
+  stem: |
+    A 29-year-old woman is evaluated for 1 week of painful red nodules on both shins. Three weeks ago she had a sore throat and fever that resolved without treatment. She takes an oral contraceptive. She has no cough, diarrhea, joint pain, abdominal pain or weight loss.
+
+    On physical examination, temperature is 37.4 °C (99.3 °F). There are several tender, warm, poorly demarcated, erythematous subcutaneous nodules on both anterior shins. There is no ulceration. The remainder of the examination is normal.
+  lead: Which of the following is the most appropriate initial evaluation?
+  choices:
+    A: Antistreptolysin O titer and chest radiograph
+    B: Colonoscopy
+    C: Excisional biopsy of a nodule
+    D: Interferon-γ release assay only
+    E: No evaluation is needed
+  answer: A
+  explain: |
+    **Erythema nodosum (EN)** — tender, red, warm subcutaneous nodules on the **anterior shins** that **do not ulcerate** and heal without scarring (bruise-like) — is a **septal panniculitis**, a hypersensitivity reaction to many triggers. The diagnosis is clinical; biopsy is rarely needed.
+
+    About half of cases are idiopathic, but EN is a **clue to an underlying disease**:
+
+    | Cause | Clues and tests |
+    |---|---|
+    | **Streptococcal infection** (most common identified cause) | Recent pharyngitis — **ASO, anti-DNase B** |
+    | **Sarcoidosis** (Löfgren) | **Chest radiograph** — hilar adenopathy |
+    | **Drugs** | **Oral contraceptives**, sulfonamides, penicillins |
+    | **IBD** (Crohn, UC) | GI symptoms |
+    | TB, fungal (coccidioidomycosis), Yersinia | Exposures |
+    | **Pregnancy**, Behçet, lymphoma | |
+
+    A reasonable initial evaluation is **CBC, ESR/CRP, ASO titer, chest radiograph** (± TB testing). Treat the cause; NSAIDs, rest, leg elevation, and compression for symptoms. Consider stopping the oral contraceptive.
+  why:
+    B: Colonoscopy is indicated only with GI symptoms suggesting IBD.
+    C: Biopsy is reserved for atypical lesions (ulceration, unusual locations, persistence) to exclude other panniculitides.
+    D: TB testing may be included, but the most likely triggers (streptococcal infection, sarcoidosis) are evaluated with ASO and chest radiography.
+    E: EN often signals an underlying disease; a basic evaluation is indicated.
+  objective: |
+    Evaluate erythema nodosum with ASO titers (for streptococcal infection) and a chest radiograph (for sarcoidosis), and review medications such as oral contraceptives.
+  refs:
+    - Pérez-Garza DM, et al. Erythema nodosum: a practical approach and diagnostic algorithm. *Am J Clin Dermatol* 2021;22:367.
+
+- id: DE-007
+  topic: Tinea — KOH preparation
+  task: Diagnosis/Testing
+  chapters: [derm/common-rashes]
+  stem: |
+    A 52-year-old man with type 2 diabetes is evaluated for an itchy rash in his groin and inner thighs for 2 months. A clinician prescribed a topical hydrocortisone and clotrimazole-betamethasone cream, and the rash briefly improved, then spread.
+
+    On physical examination, there are annular, erythematous plaques with a raised scaly advancing border and central clearing on the inner thighs. The scrotum is spared. There are no satellite pustules. His toenails are thick and yellow, and there is scaling between the toes.
+  lead: Which of the following is the most appropriate diagnostic test?
+  choices:
+    A: Bacterial culture of the rash
+    B: Patch testing
+    C: Potassium hydroxide (KOH) preparation of scale from the border
+    D: Punch biopsy for direct immunofluorescence
+    E: Wood lamp examination
+  answer: C
+  explain: |
+    Annular scaly plaques with an **active scaly border and central clearing** in the groin, **sparing the scrotum**, with **onychomycosis and tinea pedis** (the usual source) → **tinea cruris** (dermatophyte, usually *Trichophyton rubrum*). Topical steroids partly suppress and then spread dermatophyte infection (**tinea incognito**).
+
+    Confirm with a **KOH preparation** of scale scraped from the **advancing edge**: **septate branching hyphae**. Fungal culture can identify the species.
+
+    | | Tinea cruris | Candidal intertrigo | Erythrasma |
+    |---|---|---|---|
+    | Scrotum | **Spared** | **Involved** | Variable |
+    | Border | Raised, scaly | Beefy red with **satellite pustules** | Brown, no active border |
+    | Test | **KOH: hyphae** | KOH: pseudohyphae, yeast | **Wood lamp: coral-red** |
+
+    Treat with a topical **allylamine (terbinafine)** or azole for 2–4 weeks; **stop topical steroids**; treat the feet to prevent recurrence. Oral terbinafine for onychomycosis (after nail testing).
+  why:
+    A: Bacterial cultures do not diagnose a dermatophyte infection.
+    B: Patch testing evaluates allergic contact dermatitis, which does not have central clearing with an advancing scaly border.
+    D: Direct immunofluorescence is for autoimmune blistering diseases.
+    E: Wood lamp shows coral-red fluorescence in erythrasma (Corynebacterium); dermatophytes of the groin do not fluoresce.
+  objective: |
+    Confirm tinea with a KOH preparation of scale from the advancing border showing septate hyphae, and avoid topical steroids.
+  refs:
+    - Ely JW, et al. Diagnosis and management of tinea infections. *Am Fam Physician* 2014;90:702.

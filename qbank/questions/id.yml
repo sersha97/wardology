@@ -1,4 +1,4 @@
-# Infectious Disease — ABIM blueprint 10%
+# Infectious Disease — ABIM CERT blueprint
 - id: ID-001
   topic: Community-acquired pneumonia — outpatient
   task: Treatment/Care Decisions
@@ -88,7 +88,7 @@
   task: Treatment/Care Decisions
   chapters: [id/vaccines]
   stem: |
-    A 52-year-old man comes for a routine health visit. He feels well. He has no chronic medical conditions, does not smoke and takes no medications. He received a tetanus–diphtheria–pertussis (Tdap) vaccine 5 years ago and an influenza vaccine this fall. He has **never received a pneumococcal vaccine**.
+    A 52-year-old man comes for a routine health visit. He feels well. He has no chronic medical conditions, does not smoke and takes no medications. He received a tetanus–diphtheria–pertussis (Tdap) vaccine 5 years ago and an influenza vaccine this fall. He has never received a pneumococcal vaccine.
 
     Examination is normal.
   lead: Which of the following is the most appropriate pneumococcal vaccination for this patient?
@@ -125,7 +125,7 @@
   task: Treatment/Care Decisions
   chapters: [cardiology/endocarditis]
   stem: |
-    A 68-year-old man is scheduled for extraction of a fractured molar next week. Four years ago he had a **bioprosthetic aortic valve replacement** for aortic stenosis. He has hypertension and takes lisinopril and aspirin. He has no drug allergies and no history of endocarditis.
+    A 68-year-old man is scheduled for extraction of a fractured molar next week. Four years ago he had a bioprosthetic aortic valve replacement for aortic stenosis. He has hypertension and takes lisinopril and aspirin. He has no drug allergies and no history of endocarditis.
 
     Examination shows a soft systolic ejection murmur at the right upper sternal border. Echocardiography 6 months ago showed a normally functioning prosthetic valve.
   lead: Which of the following is the most appropriate recommendation before the procedure?
@@ -195,3 +195,692 @@
     Treat mild nonpurulent cellulitis with an oral antistreptococcal beta-lactam such as cephalexin; reserve MRSA-active drugs for purulent infections and drainage for abscesses.
   refs:
     - Stevens DL, et al. Practice guidelines for the diagnosis and management of skin and soft tissue infections: 2014 update by the IDSA. *Clin Infect Dis* 2014;59:e10.
+
+
+- id: ID-006
+  topic: HIV pre-exposure prophylaxis
+  task: Treatment/Care Decisions
+  chapters: [id/hiv]
+  stem: |
+    A 27-year-old man comes to the office asking about ways to prevent HIV infection. He has sex with men, has had four male partners in the past 6 months and uses condoms inconsistently. He was treated for rectal gonorrhea 3 months ago. He has no symptoms.
+
+    Examination is normal.
+  labs:
+    - ["HIV-1/2 antigen/antibody test", "negative"]
+    - ["Creatinine", "0.9 mg/dL"]
+    - ["eGFR", ">90 mL/min/1.73 m²"]
+    - ["HBsAg", "negative; anti-HBs positive (vaccinated)"]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Begin emtricitabine-tenofovir as pre-exposure prophylaxis
+    B: Begin post-exposure prophylaxis for 28 days
+    C: Counsel on condom use and retest for HIV in 1 year
+    D: Begin three-drug antiretroviral therapy
+    E: Repeat HIV testing in 3 months before deciding on prophylaxis
+  answer: A
+  explain: |
+    He is at **substantial risk** of HIV — men who have sex with men with condomless anal sex and a **recent bacterial STI**. The USPSTF gives a **Grade A** recommendation to offer **pre-exposure prophylaxis (PrEP)** to such patients.
+
+    PrEP options:
+    - **Daily oral emtricitabine–tenofovir disoproxil fumarate (F/TDF)** — all populations; ~99% effective for sexual exposure when taken consistently.
+    - Daily **emtricitabine–tenofovir alafenamide (F/TAF)** — not for receptive vaginal sex.
+    - **Injectable cabotegravir** every 2 months, or **lenacapavir** every 6 months (approved 2025).
+
+    Before starting: confirm a **negative HIV test** (ideally antigen/antibody plus RNA if recent exposure), check **creatinine** (TDF requires eGFR ≥60) and **hepatitis B** status (stopping tenofovir can flare HBV). Follow up **every 3 months** with HIV and STI testing.
+  why:
+    B: PEP is for a single high-risk exposure within the last 72 hours. He has ongoing risk, which calls for PrEP.
+    C: Counseling alone leaves him at high ongoing risk; PrEP is strongly recommended in addition to condoms.
+    D: Treatment-dose ART is for people with HIV. He tested negative.
+    E: Delaying PrEP leaves him exposed. Start now, with HIV testing every 3 months.
+  objective: |
+    Offer HIV pre-exposure prophylaxis to people at substantial risk of HIV after confirming a negative HIV test and adequate kidney function.
+  refs:
+    - US Preventive Services Task Force. Preexposure prophylaxis to prevent acquisition of HIV. *JAMA* 2023;330:736.
+    - CDC. Preexposure prophylaxis for the prevention of HIV infection in the United States — 2021 update clinical practice guideline.
+
+- id: ID-007
+  topic: New HIV diagnosis — opportunistic infection prophylaxis
+  task: Treatment/Care Decisions
+  chapters: [id/hiv]
+  stem: |
+    A 38-year-old woman was diagnosed with HIV infection 1 week ago after testing during an emergency department visit. She has had fatigue and a 4-kg (8.8-lb) weight loss. She has no cough, headache or visual symptoms.
+
+    On physical examination, vital signs are normal. Oral thrush is present. There is no lymphadenopathy.
+  labs:
+    - ["CD4 cell count", "140/µL"]
+    - ["HIV RNA", "210,000 copies/mL"]
+    - ["Toxoplasma IgG", "negative"]
+    - ["HBsAg", "negative"]
+    - ["Interferon-γ release assay", "negative"]
+    - ["Chest radiograph", "normal"]
+  lead: In addition to starting antiretroviral therapy, which of the following is the most appropriate prophylaxis?
+  choices:
+    A: Azithromycin weekly
+    B: Fluconazole daily
+    C: Trimethoprim-sulfamethoxazole daily
+    D: Valganciclovir daily
+    E: No prophylaxis until the CD4 count result is repeated
+  answer: C
+  explain: |
+    With a **CD4 count <200/µL** (or oral candidiasis, or CD4 <14%), she needs **Pneumocystis jirovecii pneumonia (PJP) prophylaxis**. The drug of choice is **trimethoprim-sulfamethoxazole** (one double-strength or single-strength tablet daily). It also protects against **toxoplasmosis** when the CD4 is <100/µL and Toxoplasma IgG is positive.
+
+    **Start ART as soon as possible** — ideally within days of diagnosis — for everyone with HIV, regardless of CD4 count. Exceptions where ART is briefly delayed: **cryptococcal meningitis** (wait 4–6 weeks) and **TB meningitis**, because of IRIS risk.
+
+    | CD4 (cells/µL) | Prophylaxis |
+    |---|---|
+    | **<200** (or thrush) | **PJP** — TMP-SMX |
+    | **<100** + Toxoplasma IgG+ | **Toxoplasma** — TMP-SMX (DS) |
+    | <50 | MAC — **not needed** if ART is started promptly |
+
+    Stop PJP prophylaxis when the CD4 count is >200/µL for ≥3 months on ART.
+  why:
+    A: Primary MAC prophylaxis is no longer recommended for patients who start ART immediately, and it is used only when the CD4 count is <50/µL.
+    B: Primary fluconazole prophylaxis for candidiasis or cryptococcus is not recommended; treat thrush, but do not give long-term prophylaxis.
+    D: CMV prophylaxis is not recommended; monitor for retinitis when CD4 is <50/µL.
+    E: The CD4 count is clearly <200/µL and she has thrush; prophylaxis should start now.
+  objective: |
+    Start trimethoprim-sulfamethoxazole for PJP prophylaxis in patients with HIV and a CD4 count below 200/µL or oral candidiasis, and start ART promptly.
+  refs:
+    - Panel on Guidelines for the Prevention and Treatment of Opportunistic Infections in Adults and Adolescents with HIV. NIH/CDC/HIVMA/IDSA, updated 2024.
+    - Gandhi RT, et al. Antiretroviral drugs for treatment and prevention of HIV in adults: 2024 recommendations of the IAS-USA panel. *JAMA* 2025;333:609.
+
+- id: ID-008
+  topic: Acute HIV infection
+  task: Diagnosis/Testing
+  chapters: [id/hiv]
+  stem: |
+    A 24-year-old man is evaluated for 6 days of fever, sore throat, diffuse muscle aches and a rash. He had condomless sex with a new male partner 3 weeks ago.
+
+    On physical examination, temperature is 38.6 °C (101.5 °F). There is a diffuse maculopapular rash on the trunk, shallow oral ulcers, pharyngeal erythema without exudates and diffuse lymphadenopathy.
+  labs:
+    - ["Leukocyte count", "3,200/µL with 18% atypical lymphocytes"]
+    - ["Platelet count", "118,000/µL"]
+    - ["ALT", "96 U/L"]
+    - ["Heterophile antibody (monospot)", "negative"]
+    - ["Rapid streptococcal antigen", "negative"]
+  lead: Which of the following is the most appropriate diagnostic test?
+  choices:
+    A: Epstein-Barr virus viral capsid antigen IgM
+    B: HIV-1/2 antigen/antibody immunoassay and HIV-1 RNA
+    C: HIV-1 antibody–only rapid test
+    D: Rapid plasma reagin
+    E: CD4 cell count
+  answer: B
+  explain: |
+    Fever, pharyngitis, **mucocutaneous ulcers**, rash, lymphadenopathy, cytopenias and mild hepatitis **2–4 weeks after a high-risk exposure** = **acute retroviral syndrome** until proven otherwise. A negative monospot makes EBV less likely.
+
+    During acute infection, antibodies may not yet be detectable. The **fourth-generation HIV-1/2 antigen/antibody assay** detects **p24 antigen** about 2 weeks after infection. Because the result may still be negative very early, also send an **HIV-1 RNA (viral load)** — in acute HIV it is usually very high (>100,000 copies/mL).
+
+    Diagnosing acute HIV matters: viral load and transmission risk are highest now, and **starting ART immediately** limits the viral reservoir.
+
+    | Test | Window period |
+    |---|---|
+    | HIV RNA | ~10 days |
+    | 4th-gen Ag/Ab (p24) | ~18–45 days |
+    | Antibody-only | Up to 90 days |
+  why:
+    A: EBV is possible, but mucocutaneous ulcers, a recent high-risk exposure and a negative monospot make acute HIV the priority; missing it has major consequences.
+    C: Antibody-only tests can be negative for weeks to months in acute infection.
+    D: Secondary syphilis can cause rash and lymphadenopathy and should also be tested, but it does not explain oral ulcers with this acute febrile picture.
+    E: The CD4 count is not a diagnostic test for HIV and can drop transiently in acute infection.
+  objective: |
+    When acute HIV infection is suspected, test with a fourth-generation antigen/antibody assay plus HIV-1 RNA.
+  refs:
+    - CDC. Laboratory testing for the diagnosis of HIV infection: updated recommendations, 2014 (technical update 2018).
+    - Gandhi RT, et al. IAS-USA antiretroviral drug recommendations 2024. *JAMA* 2025;333:609.
+
+- id: ID-009
+  topic: Latent syphilis
+  task: Treatment/Care Decisions
+  chapters: [id/sti]
+  stem: |
+    A 44-year-old man is evaluated after routine screening during a visit for HIV pre-exposure prophylaxis. He has no symptoms. He has had several male partners in the past year. His last syphilis test, 3 years ago, was negative. He has no penicillin allergy.
+
+    Examination shows no rash, chancre, lymphadenopathy or neurologic abnormalities, including no visual or hearing changes.
+  labs:
+    - ["Rapid plasma reagin (RPR)", "reactive (titer 1:32)"]
+    - ["Treponemal antibody", "reactive"]
+    - ["HIV-1/2 antigen/antibody", "negative"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Benzathine penicillin G, 2.4 million units intramuscularly once
+    B: Benzathine penicillin G, 2.4 million units intramuscularly weekly for 3 weeks
+    C: Doxycycline, 100 mg twice daily for 7 days
+    D: Intravenous aqueous penicillin G for 14 days
+    E: Lumbar puncture before treatment
+  answer: B
+  explain: |
+    He has **latent syphilis** (positive nontreponemal and treponemal tests, no signs or symptoms). Because his last negative test was **more than 1 year ago**, the infection cannot be dated: he has **latent syphilis of unknown duration**, which is treated as **late latent**.
+
+    | Stage | Treatment |
+    |---|---|
+    | Primary, secondary, early latent (<1 y) | Benzathine penicillin G 2.4 MU IM **once** |
+    | **Late latent or unknown duration** | Benzathine penicillin G 2.4 MU IM **weekly × 3** |
+    | **Neurosyphilis, ocular, otic** | IV aqueous penicillin G 18–24 MU/d × 10–14 days |
+
+    Follow nontreponemal titers at 6, 12 and 24 months; a **fourfold decline** (e.g., 1:32 → 1:8) indicates response. The treponemal test usually stays positive for life.
+  why:
+    A: A single dose is for early syphilis (infection acquired within 1 year), which cannot be documented here.
+    C: Doxycycline is an alternative only for penicillin allergy, and for late latent syphilis the course is 28 days.
+    D: IV penicillin is for neurosyphilis or ocular/otic syphilis. He has no neurologic findings.
+    E: Lumbar puncture is indicated only for neurologic, ocular or otic signs, or treatment failure — not for asymptomatic latent syphilis, even with HIV.
+  pearl: |
+    The **Jarisch-Herxheimer reaction** — fever, myalgias and headache within 24 hours of treatment, most common in early syphilis — is treated with antipyretics and is **not** a penicillin allergy.
+  objective: |
+    Treat late latent syphilis or latent syphilis of unknown duration with three weekly intramuscular doses of benzathine penicillin G.
+  refs:
+    - Workowski KA, et al. Sexually transmitted infections treatment guidelines, 2021. *MMWR Recomm Rep* 2021;70(4):1.
+
+- id: ID-010
+  topic: Uncomplicated gonococcal urethritis
+  task: Treatment/Care Decisions
+  chapters: [id/sti]
+  stem: |
+    A 22-year-old man is evaluated for 3 days of dysuria and purulent urethral discharge. He has had two female partners in the past month. He has no allergies.
+
+    On physical examination, there is a yellow urethral discharge. The testes are nontender. There is no rash or joint swelling.
+
+    Gram stain of the discharge shows gram-negative intracellular diplococci. Nucleic acid amplification testing for *Neisseria gonorrhoeae* and *Chlamydia trachomatis* is pending, along with HIV and syphilis testing.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Azithromycin, 2 g orally once
+    B: Ceftriaxone, 500 mg intramuscularly once, plus doxycycline, 100 mg twice daily for 7 days
+    C: Ceftriaxone, 250 mg intramuscularly plus azithromycin, 1 g orally once
+    D: Ciprofloxacin, 500 mg orally once
+    E: Cefixime, 400 mg orally once alone
+  answer: B
+  explain: |
+    Gram-negative intracellular diplococci in urethral discharge confirm **gonococcal urethritis**.
+
+    CDC 2020–2021 recommendations:
+    - **Ceftriaxone 500 mg IM once** (1 g if weight ≥150 kg). The dose was raised because of rising MICs.
+    - **If chlamydia has not been excluded**, add **doxycycline 100 mg twice daily for 7 days**. Doxycycline replaced azithromycin as the preferred chlamydia treatment (better for rectal infection; less macrolide resistance pressure).
+    - Treat **partners** (expedited partner therapy where legal), test for HIV and syphilis, and **retest at 3 months**.
+  why:
+    A: Azithromycin monotherapy is not recommended because of rising gonococcal macrolide resistance.
+    C: This was the older regimen (ceftriaxone 250 mg + azithromycin). The current recommendation is a higher ceftriaxone dose and doxycycline for chlamydia.
+    D: Fluoroquinolones have not been recommended for gonorrhea since 2007 because of widespread resistance.
+    E: Oral cefixime is an alternative only if ceftriaxone is unavailable, and chlamydia would still need treatment.
+  objective: |
+    Treat uncomplicated gonorrhea with ceftriaxone 500 mg intramuscularly once, plus doxycycline for 7 days if chlamydia has not been excluded.
+  refs:
+    - St Cyr S, et al. Update to CDC's treatment guidelines for gonococcal infection, 2020. *MMWR* 2020;69:1911.
+    - Workowski KA, et al. Sexually transmitted infections treatment guidelines, 2021. *MMWR Recomm Rep* 2021;70(4):1.
+
+- id: ID-011
+  topic: Latent tuberculosis infection
+  task: Treatment/Care Decisions
+  chapters: [id/tb]
+  stem: |
+    A 34-year-old woman who emigrated from the Philippines 2 years ago is evaluated after a positive interferon-γ release assay (IGRA) on routine testing before starting work as a nurse. She has no cough, fever, night sweats or weight loss. She has no medical problems and takes no medications. She is not pregnant.
+
+    Examination is normal.
+  labs:
+    - ["Interferon-γ release assay", "positive"]
+    - ["Chest radiograph", "normal"]
+    - ["HIV antigen/antibody", "negative"]
+    - ["ALT", "18 U/L"]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Isoniazid, rifampin, pyrazinamide and ethambutol
+    B: Rifampin daily for 4 months
+    C: Repeat IGRA in 1 year
+    D: Sputum acid-fast bacilli smears and cultures, then four-drug therapy
+    E: No treatment because she received BCG vaccine as a child
+  answer: B
+  explain: |
+    A positive IGRA with **no symptoms and a normal chest radiograph** = **latent TB infection (LTBI)**. She was born in a high-incidence country and arrived recently (the first 5 years carry the highest reactivation risk), so treatment is strongly recommended.
+
+    Preferred regimens are **short rifamycin-based**, with better completion and less hepatotoxicity than isoniazid:
+
+    | Regimen | Duration |
+    |---|---|
+    | **Rifampin daily** | **4 months** (4R) |
+    | Isoniazid + rifapentine weekly | 3 months (3HP) |
+    | Isoniazid + rifampin daily | 3 months (3HR) |
+    | Isoniazid daily | 6–9 months (alternative) |
+
+    Rifamycins have **many drug interactions** (oral contraceptives, warfarin, DOACs, antiretrovirals) — check before prescribing, and counsel about backup contraception.
+  why:
+    A: Four-drug therapy is for active TB disease. She has no symptoms and a normal chest radiograph.
+    C: A positive IGRA does not need repeating; she needs treatment.
+    D: Sputum testing is for patients with symptoms or abnormal chest imaging.
+    E: IGRA is not affected by BCG vaccination (unlike the tuberculin skin test), so a positive IGRA indicates true infection.
+  objective: |
+    Treat latent tuberculosis infection with a short rifamycin-based regimen, such as 4 months of daily rifampin, after excluding active disease.
+  refs:
+    - Sterling TR, et al. Guidelines for the treatment of latent tuberculosis infection: recommendations from NTCA and CDC, 2020. *MMWR Recomm Rep* 2020;69(1):1.
+
+- id: ID-012
+  topic: Early Lyme disease
+  task: Treatment/Care Decisions
+  chapters: [id/tick-travel]
+  stem: |
+    A 46-year-old man from Connecticut is evaluated in July for 5 days of fatigue, mild headache and a rash on his thigh. He hikes regularly but does not recall a tick bite.
+
+    On physical examination, temperature is 37.8 °C (100.0 °F). There is a 12-cm, round, erythematous patch on his right thigh with central clearing. There is no facial weakness, meningismus or joint swelling. Heart rate is regular at 76/min.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Doxycycline, 100 mg twice daily for 10 days
+    B: Intravenous ceftriaxone for 14 days
+    C: Lyme serology, and treat if positive
+    D: Single 200-mg dose of doxycycline
+    E: Topical corticosteroid cream
+  answer: A
+  explain: |
+    An expanding annular rash **≥5 cm**, often with central clearing ("bull's-eye"), after outdoor exposure in an endemic area in summer is **erythema migrans** — diagnostic of **early localized Lyme disease**. Most patients do not remember the tick bite.
+
+    **Do not test.** Serology is often **negative in early disease** (antibodies take 2–4 weeks) — the rash is the diagnosis. Treat clinically with **doxycycline 100 mg twice daily for 10 days** (amoxicillin or cefuroxime for 14 days are alternatives, e.g., in pregnancy).
+
+    | Lyme manifestation | Treatment |
+    |---|---|
+    | Erythema migrans | Oral doxycycline 10 d |
+    | Facial palsy, carditis (PR <300 ms) | Oral doxycycline 14–21 d |
+    | Meningitis | Oral doxycycline or IV ceftriaxone 14–21 d |
+    | High-degree AV block | **IV ceftriaxone** + temporary pacing |
+    | Arthritis | Oral doxycycline 28 d |
+  why:
+    B: IV ceftriaxone is reserved for severe disseminated disease (high-degree heart block, some neurologic disease).
+    C: Serologic testing is insensitive in early Lyme disease and not recommended when erythema migrans is present.
+    D: A single dose of doxycycline is used as prophylaxis within 72 hours of removing an engorged *Ixodes* tick, not to treat established infection.
+    E: Erythema migrans is an infection, not dermatitis; steroids would delay treatment.
+  objective: |
+    Diagnose early Lyme disease clinically by erythema migrans and treat with oral doxycycline for 10 days without serologic testing.
+  refs:
+    - Lantos PM, et al. Clinical practice guidelines by IDSA, AAN and ACR: 2020 guidelines for the prevention, diagnosis and treatment of Lyme disease. *Clin Infect Dis* 2021;72:e1.
+
+- id: ID-013
+  topic: Malaria in a returning traveler
+  task: Diagnosis/Testing
+  chapters: [id/tick-travel]
+  stem: |
+    A 36-year-old man is evaluated for 3 days of fever, chills, headache and myalgias. He returned 10 days ago from a 3-week trip to visit family in Nigeria. He did not take malaria prophylaxis because he grew up there.
+
+    On physical examination, temperature is 39.4 °C (102.9 °F), blood pressure is 118/70 mm Hg, and pulse rate is 112/min. He is alert. There is mild scleral icterus and splenomegaly. There is no rash or meningismus.
+  labs:
+    - ["Hemoglobin", "11.2 g/dL"]
+    - ["Platelet count", "62,000/µL"]
+    - ["Total bilirubin", "2.4 mg/dL"]
+    - ["Creatinine", "1.0 mg/dL"]
+    - ["Glucose", "96 mg/dL"]
+  lead: Which of the following is the most appropriate diagnostic test?
+  choices:
+    A: Blood cultures only
+    B: Dengue NS1 antigen
+    C: Thick and thin peripheral blood smears
+    D: Serologic testing for malaria
+    E: Stool ova and parasites
+  answer: C
+  explain: |
+    **Fever in a traveler returning from sub-Saharan Africa is malaria until proven otherwise.** *Plasmodium falciparum* can become life-threatening within hours. "Visiting friends and relatives" travelers who skip prophylaxis are at the highest risk — immunity acquired in childhood fades after a few years away.
+
+    Thrombocytopenia, hyperbilirubinemia (hemolysis) and splenomegaly support the diagnosis.
+
+    The test of choice is **thick and thin peripheral blood smears** (thick = detection; thin = species and **percent parasitemia**) — plus a **rapid antigen test** if available. If negative, **repeat every 12–24 hours for a total of three sets**.
+
+    Severe malaria (parasitemia ≥5%, altered mental status, shock, AKI, acidosis, hypoglycemia, severe anemia, ARDS) is treated with **IV artesunate**.
+  why:
+    A: Blood cultures are appropriate to rule out typhoid and bacteremia, but they will not diagnose malaria, the most urgent consideration.
+    B: Dengue is possible after travel to the tropics, but the incubation and setting (West Africa, splenomegaly, hemolysis) make malaria the priority; dengue does not exclude the need for smears.
+    D: Malaria serology reflects past exposure and is not useful for acute diagnosis.
+    E: Stool testing is for diarrheal illness or eosinophilia, not for acute febrile illness with hemolysis.
+  objective: |
+    Evaluate fever in a traveler returning from a malaria-endemic area with thick and thin blood smears (and a rapid antigen test), repeated up to three times if negative.
+  refs:
+    - CDC. Clinical guidance — malaria diagnosis and treatment in the United States, 2024.
+    - Thwaites GE, Day NPJ. Approach to fever in the returning traveler. *N Engl J Med* 2017;376:548.
+
+- id: ID-014
+  topic: Staphylococcus aureus bacteremia
+  task: Treatment/Care Decisions
+  chapters: [id/sepsis, cardiology/endocarditis]
+  stem: |
+    A 61-year-old man with type 2 diabetes is hospitalized with fever. Two of two blood culture sets grow methicillin-susceptible *Staphylococcus aureus*. He has a tender, erythematous peripheral IV site in his left forearm from a hospitalization 1 week ago; the catheter was removed. He has no prosthetic valves or devices.
+
+    On physical examination, temperature is 38.6 °C (101.5 °F), blood pressure is 126/74 mm Hg, and pulse rate is 98/min. There is no heart murmur. The remainder of the examination is normal.
+
+    He is treated with IV vancomycin, and transthoracic echocardiogram is normal.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Change to intravenous cefazolin, repeat blood cultures and obtain transesophageal echocardiography
+    B: Change to oral linezolid for 14 days
+    C: Continue vancomycin for 5 days
+    D: Continue vancomycin and add gentamicin
+    E: Change to oral dicloxacillin and discharge
+  answer: A
+  explain: |
+    ***S. aureus* bacteremia is never a contaminant** and carries 20–30% mortality. The care bundle improves survival:
+
+    1. **Switch to a β-lactam for MSSA** — **cefazolin** or nafcillin/oxacillin. β-lactams are more effective than vancomycin against MSSA.
+    2. **Repeat blood cultures every 24–48 hours** until negative.
+    3. **Echocardiography in all patients** — **TEE** for most, because TTE misses many vegetations. A negative TTE does not exclude endocarditis.
+    4. **Remove the source** (catheter — done) and look for metastatic foci (spine, joints, abscesses).
+    5. **Infectious disease consultation** — lowers mortality.
+
+    **Duration**: uncomplicated (no endocarditis or implants, cultures negative within 72 h, fever resolved by 72 h, no metastatic infection) → **≥14 days** from first negative culture. Otherwise **4–6 weeks**. Selected stable patients can step down to oral therapy (SABATO).
+  why:
+    B: Linezolid is not first-line for MSSA, and an oral switch is premature before cultures clear and endocarditis is excluded.
+    C: Five days is far too short; even uncomplicated S. aureus bacteremia needs at least 14 days.
+    D: Gentamicin adds nephrotoxicity without benefit in native-valve S. aureus infection.
+    E: Oral dicloxacillin has poor bioavailability, and the evaluation (repeat cultures, TEE) is incomplete.
+  pearl: |
+    Grows ***S. aureus*** in blood? Think **"TEE, ID, β-lactam, repeat cultures."**
+  objective: |
+    Treat MSSA bacteremia with an antistaphylococcal β-lactam, document clearance with repeat blood cultures and obtain transesophageal echocardiography.
+  refs:
+    - Holland TL, et al. Clinical management of Staphylococcus aureus bacteremia: a review. *JAMA* 2014;312:1330.
+    - Kaasch AJ, et al. Early oral switch therapy in low-risk S. aureus bloodstream infection (SABATO). *Lancet Infect Dis* 2024;24:523.
+
+- id: ID-015
+  topic: Bacterial meningitis — empiric therapy
+  task: Treatment/Care Decisions
+  chapters: [neuro/meningitis]
+  stem: |
+    A 66-year-old woman is brought to the emergency department with 12 hours of fever, severe headache and confusion. She has no recent travel, head trauma or neurosurgery. She is not immunocompromised and has no drug allergies.
+
+    On physical examination, temperature is 39.2 °C (102.6 °F), blood pressure is 128/72 mm Hg, and pulse rate is 112/min. She is lethargic and disoriented, with nuchal rigidity. There is no papilledema and no focal neurologic deficit. There is no rash.
+
+    Blood cultures have been drawn. Head CT without contrast is normal.
+  lead: Which of the following is the most appropriate empiric treatment, given before lumbar puncture results are available?
+  choices:
+    A: Ceftriaxone and vancomycin
+    B: Dexamethasone, ceftriaxone, vancomycin and ampicillin
+    C: Ceftriaxone alone
+    D: Acyclovir alone
+    E: Meropenem alone
+  answer: B
+  explain: |
+    Fever, headache, neck stiffness and altered mental status = **acute bacterial meningitis** until proven otherwise. **Do not delay antibiotics** for lumbar puncture or imaging.
+
+    Empiric therapy by age:
+
+    | Patient | Likely organisms | Empiric regimen |
+    |---|---|---|
+    | 2–50 y | *S. pneumoniae*, *N. meningitidis* | **Vancomycin + ceftriaxone** |
+    | **>50 y**, alcohol use, immunocompromised, pregnant | Above + ***Listeria*** | **Vancomycin + ceftriaxone + ampicillin** |
+    | Post-neurosurgery, shunt, penetrating trauma | Staphylococci, gram-negative bacilli (incl. *Pseudomonas*) | Vancomycin + cefepime/ceftazidime/meropenem |
+
+    **Dexamethasone (0.15 mg/kg every 6 h for 4 days)**, given **just before or with the first antibiotic dose**, reduces death and hearing loss in pneumococcal meningitis. Stop it if the organism is not *S. pneumoniae*.
+
+    Add **acyclovir** if HSV encephalitis is suspected (behavioral changes, seizures, temporal lobe findings).
+  why:
+    A: She is over 50, so ampicillin for Listeria is needed; dexamethasone should also be given with the first dose.
+    C: Ceftriaxone alone misses penicillin-resistant pneumococci (vancomycin) and Listeria (ampicillin).
+    D: Acyclovir treats HSV encephalitis but does not cover bacterial meningitis.
+    E: Meropenem does cover Listeria, but monotherapy misses highly penicillin-resistant pneumococci and it is not a standard first-line choice.
+  objective: |
+    Treat suspected bacterial meningitis in adults older than 50 years with vancomycin, ceftriaxone and ampicillin, plus dexamethasone with the first antibiotic dose.
+  refs:
+    - Tunkel AR, et al. Practice guidelines for the management of bacterial meningitis. *Clin Infect Dis* 2004;39:1267.
+    - van de Beek D, et al. ESCMID guideline: diagnosis and treatment of acute bacterial meningitis. *Clin Microbiol Infect* 2016;22:S37.
+
+- id: ID-016
+  topic: Acute pyelonephritis — outpatient
+  task: Treatment/Care Decisions
+  chapters: [id/uti]
+  stem: |
+    A 28-year-old woman is evaluated for 2 days of fever, right flank pain, dysuria and urinary frequency. She has nausea but can keep down fluids and pills. She is not pregnant. She has had no recent antibiotics or hospitalizations. Local fluoroquinolone resistance among *E. coli* is 6%.
+
+    On physical examination, temperature is 38.5 °C (101.3 °F), blood pressure is 118/72 mm Hg, and pulse rate is 98/min. There is right costovertebral angle tenderness.
+  labs:
+    - ["Leukocyte count", "12,800/µL"]
+    - ["Creatinine", "0.8 mg/dL"]
+    - ["Urine pregnancy test", "negative"]
+    - ["Urinalysis", "positive leukocyte esterase and nitrite; many leukocytes and WBC casts"]
+    - ["Urine culture", "pending"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Ciprofloxacin, 500 mg orally twice daily for 7 days
+    B: Fosfomycin, 3 g orally once
+    C: Hospitalization for intravenous piperacillin-tazobactam
+    D: Nitrofurantoin, 100 mg orally twice daily for 7 days
+    E: Trimethoprim-sulfamethoxazole for 3 days
+  answer: A
+  explain: |
+    Fever, flank pain, CVA tenderness and pyuria with **WBC casts** = **acute uncomplicated pyelonephritis**. She is not pregnant, not septic, and can take oral medication, so she can be treated **as an outpatient**.
+
+    Choose a drug that reaches **kidney tissue**:
+    - **Ciprofloxacin 500 mg twice daily for 7 days** (or levofloxacin 750 mg daily for 5–7 days) when local fluoroquinolone resistance is **≤10%**.
+    - **TMP-SMX twice daily for 14 days** if the organism is known to be susceptible.
+    - If resistance is >10% or unknown, give a **single IV dose of ceftriaxone** (or an aminoglycoside) before oral therapy.
+
+    Always send a **urine culture** and adjust therapy to the results.
+  why:
+    B: Fosfomycin does not achieve adequate kidney tissue levels and is used only for cystitis.
+    C: Inpatient care is for sepsis, inability to take oral therapy, pregnancy, obstruction or failed outpatient treatment. Piperacillin-tazobactam is unnecessarily broad.
+    D: Nitrofurantoin concentrates in the bladder only; it does not treat kidney infection.
+    E: Three days is the cystitis course. TMP-SMX for pyelonephritis requires 14 days and known susceptibility.
+  pearl: |
+    **Nitrofurantoin and fosfomycin are "bladder-only" drugs** — never for pyelonephritis, prostatitis or bacteremia.
+  objective: |
+    Treat uncomplicated outpatient pyelonephritis with an oral fluoroquinolone for 5–7 days when local resistance is 10% or less, and avoid nitrofurantoin and fosfomycin.
+  refs:
+    - Gupta K, et al. International clinical practice guidelines for the treatment of acute uncomplicated cystitis and pyelonephritis in women (IDSA/ESCMID). *Clin Infect Dis* 2011;52:e103.
+    - IDSA. Complicated urinary tract infections guideline, 2025.
+
+- id: ID-017
+  topic: Asymptomatic bacteriuria
+  task: Treatment/Care Decisions
+  chapters: [id/uti]
+  stem: |
+    An 84-year-old woman who lives in a nursing home is evaluated because a urine culture sent during a routine monthly assessment grew more than 100,000 CFU/mL of *Escherichia coli*. She has mild dementia and chronic urinary incontinence that is unchanged. She has no fever, dysuria, new urgency, flank pain or change in mental status. She is not scheduled for any procedures.
+
+    On physical examination, temperature is 36.8 °C (98.2 °F). Vital signs are normal. She is at her cognitive baseline. There is no suprapubic or flank tenderness.
+
+    Urinalysis shows moderate leukocyte esterase and 20 leukocytes/hpf.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Cephalexin for 7 days
+    B: Nitrofurantoin for 5 days
+    C: No antibiotic treatment
+    D: Prophylactic daily trimethoprim
+    E: Repeat urine culture in 1 week
+  answer: C
+  explain: |
+    This is **asymptomatic bacteriuria (ASB)** — bacteria in the urine **without** symptoms or signs of UTI. **Pyuria does not change this**: it is common with ASB and is not an indication for treatment.
+
+    ASB affects up to 50% of women in nursing homes. Treating it **does not reduce symptomatic UTI or mortality**, but it **does** cause adverse drug events, *C. difficile* infection and resistant organisms.
+
+    **Screen and treat ASB only in:**
+    - **Pregnancy**
+    - Before **urologic procedures with mucosal trauma** (e.g., TURP)
+
+    Do not treat it in older adults, people with diabetes, catheters, spinal cord injury, or kidney transplant recipients beyond the first month. Nonspecific changes (falls, mild confusion) without other signs should prompt a search for other causes, not reflexive antibiotics.
+  why:
+    A: Antibiotics for ASB cause harm without benefit.
+    B: Treating ASB with any antibiotic, including nitrofurantoin, is not indicated.
+    D: Prophylaxis promotes resistance and is not indicated for ASB.
+    E: Surveillance cultures in asymptomatic patients should not be done; this culture should not have been sent.
+  objective: |
+    Do not screen for or treat asymptomatic bacteriuria (with or without pyuria) except in pregnancy and before urologic procedures that breach the mucosa.
+  refs:
+    - Nicolle LE, et al. Clinical practice guideline for the management of asymptomatic bacteriuria: 2019 update by IDSA. *Clin Infect Dis* 2019;68:e83.
+
+- id: ID-018
+  topic: Diabetic foot osteomyelitis
+  task: Diagnosis/Testing
+  chapters: [id/cellulitis]
+  stem: |
+    A 62-year-old man with type 2 diabetes and peripheral neuropathy is evaluated for an ulcer under his left first metatarsal head that has been present for 6 weeks. It drains a small amount of fluid. He has no fever or pain.
+
+    On physical examination, temperature is 37.0 °C (98.6 °F). There is a 2-cm deep ulcer with minimal surrounding erythema. A sterile metal probe touches bone through the ulcer base. Pedal pulses are palpable.
+  labs:
+    - ["Leukocyte count", "8,600/µL"]
+    - ["Erythrocyte sedimentation rate", "92 mm/h"]
+    - ["Plain radiograph of the foot", "no cortical erosion or periosteal reaction"]
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: Bone scintigraphy (three-phase bone scan)
+    B: MRI of the foot
+    C: Superficial swab culture of the ulcer
+    D: Repeat plain radiograph in 6 months
+    E: CT of the foot
+  answer: B
+  explain: |
+    A chronic diabetic foot ulcer with a **positive probe-to-bone test** and an **ESR >70 mm/h** strongly suggests **osteomyelitis**. Plain radiographs are often normal early: bone changes take **2–3 weeks** to appear (30–50% bone loss is needed).
+
+    **MRI** is the most accurate imaging test (high sensitivity and specificity, shows abscesses and extent for surgical planning). The diagnostic gold standard is **bone biopsy** (percutaneous or surgical) for **culture and histology** — it guides targeted antibiotics.
+
+    Treatment: debridement or resection of infected bone where needed, plus pathogen-directed antibiotics (typically **6 weeks** without resection; shorter if all infected bone is removed), offloading and glucose control.
+  why:
+    A: Three-phase bone scans are sensitive but not specific — neuropathic (Charcot) joints and soft tissue infection also cause uptake.
+    C: Superficial swabs grow colonizers and correlate poorly with bone pathogens; they should not guide therapy.
+    D: Waiting delays diagnosis and treatment of an active bone infection.
+    E: CT shows cortical destruction and sequestra but is less sensitive than MRI for early osteomyelitis and marrow edema.
+  pearl: |
+    **Probe-to-bone + ESR >70** in a diabetic foot ulcer — treat as osteomyelitis until MRI or biopsy says otherwise.
+  objective: |
+    Evaluate suspected diabetic foot osteomyelitis (positive probe-to-bone, high ESR) with MRI when plain radiographs are normal, and obtain bone biopsy for culture.
+  refs:
+    - Senneville É, et al. IWGDF/IDSA guidelines on the diagnosis and treatment of diabetes-related foot infections. *Clin Infect Dis* 2023 (ciad527).
+
+- id: ID-019
+  topic: Necrotizing soft tissue infection
+  task: Diagnosis/Testing
+  chapters: [id/cellulitis, id/sepsis]
+  stem: |
+    A 54-year-old man with type 2 diabetes is brought to the emergency department with 1 day of severe left thigh pain that began after a minor scrape while gardening. The pain is much worse than the appearance of his skin.
+
+    On physical examination, temperature is 38.9 °C (102.0 °F), blood pressure is 92/56 mm Hg, and pulse rate is 124/min. The left thigh has a poorly demarcated area of erythema with tense edema extending beyond the redness, dusky violaceous patches and two hemorrhagic bullae. There is crepitus on palpation. Sensation over the area is reduced.
+  labs:
+    - ["Leukocyte count", "24,800/µL"]
+    - ["Sodium", "128 mEq/L"]
+    - ["Creatinine", "2.1 mg/dL"]
+    - ["Creatine kinase", "1,850 U/L"]
+    - ["Lactate", "4.6 mmol/L"]
+  lead: In addition to fluid resuscitation and broad-spectrum antibiotics, which of the following is the most appropriate next step in management?
+  choices:
+    A: CT of the thigh before deciding on surgery
+    B: Emergency surgical exploration and debridement
+    C: Hyperbaric oxygen therapy
+    D: Intravenous immune globulin
+    E: MRI of the thigh
+  answer: B
+  explain: |
+    **Pain out of proportion to the skin findings**, edema beyond the erythema, bullae, skin discoloration, anesthesia, **crepitus (gas)** and septic shock = **necrotizing soft tissue infection (necrotizing fasciitis)**.
+
+    This is a **surgical emergency**. The key determinant of survival is **time to surgical debridement**. Imaging should **never delay** surgery when the clinical diagnosis is clear. The diagnosis is confirmed at operation (gray, necrotic fascia; "dishwater" fluid; fascia separates easily from muscle — the "finger test").
+
+    Empiric antibiotics: **vancomycin (or linezolid) + piperacillin-tazobactam (or a carbapenem) + clindamycin**. Clindamycin **suppresses toxin production** by streptococci and clostridia.
+
+    Types: **polymicrobial (type I)** — diabetes, perineum (Fournier gangrene); **monomicrobial (type II)** — group A *Streptococcus*, sometimes *S. aureus*.
+  why:
+    A: CT can support the diagnosis in unclear cases, but with crepitus and septic shock it only delays definitive surgery.
+    C: Hyperbaric oxygen has no proven benefit and must never delay debridement.
+    D: IVIG is sometimes used for streptococcal toxic shock syndrome, but it is adjunctive and unproven; it is not the priority.
+    E: MRI takes too long and should not delay surgery in an unstable patient.
+  mnemonic: |
+    Necrotizing infection red flags — **"Pain > skin, gas, shock, bullae."** Operate, don't image.
+  objective: |
+    Suspected necrotizing fasciitis requires emergency surgical exploration and debridement plus broad-spectrum antibiotics with clindamycin; imaging must not delay surgery.
+  refs:
+    - Stevens DL, et al. Practice guidelines for the diagnosis and management of skin and soft tissue infections: 2014 update by IDSA. *Clin Infect Dis* 2014;59:e10.
+    - Stevens DL, Bryant AE. Necrotizing soft-tissue infections. *N Engl J Med* 2017;377:2253.
+
+- id: ID-020
+  topic: Herpes zoster vaccination
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [id/vaccines]
+  stem: |
+    A 52-year-old woman comes for a routine health maintenance visit. She had chickenpox as a child. She had an episode of shingles on her left chest 2 years ago that resolved. She has rheumatoid arthritis treated with methotrexate and low-dose prednisone, and her rheumatologist plans to start tofacitinib.
+
+    Examination is normal.
+  lead: Which of the following is the most appropriate recommendation regarding herpes zoster vaccination?
+  choices:
+    A: No vaccine because she already had shingles
+    B: Live attenuated zoster vaccine once
+    C: Recombinant zoster vaccine, two doses 2–6 months apart
+    D: Recombinant zoster vaccine only after she turns 60 years old
+    E: Varicella-zoster immune globulin
+  answer: C
+  explain: |
+    The **recombinant zoster vaccine (RZV, Shingrix)** is recommended for:
+    - **All adults ≥50 years** — two doses, 2–6 months apart
+    - **Adults ≥19 years who are or will be immunocompromised** (e.g., JAK inhibitors, biologics, transplant, HIV) — doses can be given 1–2 months apart
+
+    RZV is **>90% effective** and is **not live**, so it is safe with immunosuppression. **A history of shingles is not a reason to skip it** — recurrence occurs; give the vaccine once the rash has resolved. People do not need varicella serology before vaccination.
+
+    JAK inhibitors such as **tofacitinib markedly increase zoster risk**, so vaccination before starting is ideal.
+  why:
+    A: Previous zoster does not prevent recurrence; vaccination is still recommended.
+    B: The live zoster vaccine is no longer available in the United States and was contraindicated in immunosuppression.
+    D: She is already 52, and her immunosuppression would justify vaccination even at a younger age.
+    E: VZIG is passive post-exposure prophylaxis for susceptible high-risk people exposed to varicella, not routine prevention.
+  objective: |
+    Give two doses of recombinant zoster vaccine to all adults aged 50 years or older and to immunocompromised adults aged 19 years or older, including those with prior shingles.
+  refs:
+    - CDC. Recommended adult immunization schedule, United States, 2025.
+    - Anderson TC, et al. Use of recombinant zoster vaccine in immunocompromised adults aged ≥19 years: ACIP recommendations. *MMWR* 2022;71:80.
+
+- id: ID-021
+  topic: Influenza in a hospitalized patient
+  task: Treatment/Care Decisions
+  chapters: [id/cap]
+  stem: |
+    A 71-year-old woman with COPD is hospitalized in January with 4 days of fever, myalgias, cough and worsening dyspnea. She received the influenza vaccine this season.
+
+    On physical examination, temperature is 38.7 °C (101.7 °F), blood pressure is 126/74 mm Hg, pulse rate is 104/min, and respiration rate is 24/min. Oxygen saturation is 89% breathing ambient air. There are scattered wheezes. Chest radiograph shows no infiltrate.
+
+    Nasopharyngeal PCR is positive for influenza A.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Amantadine
+    B: No antiviral therapy because symptoms began more than 48 hours ago
+    C: No antiviral therapy because she was vaccinated
+    D: Oral oseltamivir
+    E: Intravenous zanamivir
+  answer: D
+  explain: |
+    **All hospitalized patients with influenza** should receive antiviral therapy **as soon as possible, regardless of symptom duration or vaccination status**. The 48-hour window applies to healthy outpatients; in hospitalized and high-risk patients, treatment even after 48 hours reduces complications and mortality.
+
+    **Oral oseltamivir** (75 mg twice daily for 5 days; adjust for kidney function) is the drug of choice. Baloxavir is an option for uncomplicated outpatient influenza but is not recommended as monotherapy in hospitalized patients.
+
+    Also treat on presentation — regardless of 48 hours — anyone at **high risk**: age ≥65, pregnancy, chronic lung/heart/kidney/liver disease, diabetes, immunosuppression, obesity (BMI ≥40), nursing home residents.
+
+    Watch for **secondary bacterial pneumonia** (*S. aureus*, *S. pneumoniae*), especially if she improves then worsens.
+  why:
+    A: Adamantanes are not recommended because nearly all circulating influenza A strains are resistant.
+    B: The 48-hour rule does not apply to hospitalized patients; benefit persists beyond 48 hours.
+    C: Vaccine failures occur; vaccination does not reduce the indication for treatment.
+    E: IV zanamivir is not available as a standard option and is reserved for special circumstances (e.g., unable to absorb oral drug, resistant virus).
+  objective: |
+    Treat every hospitalized patient with influenza with oseltamivir as soon as possible, regardless of symptom duration or vaccination status.
+  refs:
+    - Uyeki TM, et al. Clinical practice guidelines by IDSA: 2018 update on diagnosis, treatment, chemoprophylaxis and institutional outbreak management of seasonal influenza. *Clin Infect Dis* 2019;68:e1.
+
+- id: ID-022
+  topic: Hospital-acquired pneumonia
+  task: Treatment/Care Decisions
+  chapters: [id/cap]
+  stem: |
+    A 68-year-old man is evaluated on hospital day 7 after admission for a hip fracture repair. He has a new fever, productive cough and increasing oxygen requirement. He received IV cefazolin perioperatively and IV piperacillin-tazobactam for a urinary infection 3 days ago (completed). He is not receiving mechanical ventilation. Local data show that 15% of *S. aureus* isolates in the hospital are methicillin-resistant.
+
+    On physical examination, temperature is 38.8 °C (101.8 °F), blood pressure is 118/68 mm Hg, pulse rate is 106/min, and respiration rate is 24/min. Oxygen saturation is 90% on 4 L/min nasal cannula. Crackles are heard at the right base.
+
+    Chest radiograph shows a new right lower lobe consolidation. Sputum culture and an MRSA nasal PCR are sent.
+  lead: Which of the following is the most appropriate empiric antibiotic regimen?
+  choices:
+    A: Ceftriaxone and azithromycin
+    B: Cefepime and vancomycin
+    C: Levofloxacin alone
+    D: Ampicillin-sulbactam alone
+    E: Vancomycin alone
+  answer: B
+  explain: |
+    Pneumonia **≥48 hours after admission** is **hospital-acquired pneumonia (HAP)**. Typical pathogens include ***Pseudomonas aeruginosa***, other gram-negative bacilli and ***S. aureus*** (including MRSA).
+
+    The IDSA/ATS approach:
+    - **Antipseudomonal coverage** for everyone: piperacillin-tazobactam, **cefepime**, levofloxacin, imipenem or meropenem.
+    - **Add MRSA coverage (vancomycin or linezolid)** if **IV antibiotics in the past 90 days**, MRSA prevalence **>20%** or unknown, or high mortality risk (septic shock, ventilation). He received IV antibiotics 3 days ago.
+    - **Two antipseudomonal agents** only if high mortality risk or structural lung disease.
+
+    De-escalate at 48–72 hours: a **negative MRSA nasal PCR** (high negative predictive value) allows vancomycin to be stopped. Treat for **7 days**.
+  why:
+    A: Ceftriaxone and azithromycin are CAP therapy and do not cover Pseudomonas or MRSA.
+    C: Levofloxacin covers Pseudomonas but not MRSA, and he has a risk factor for MRSA (recent IV antibiotics).
+    D: Ampicillin-sulbactam covers neither Pseudomonas nor MRSA.
+    E: Vancomycin alone misses gram-negative pathogens, including Pseudomonas.
+  objective: |
+    Treat hospital-acquired pneumonia empirically with an antipseudomonal β-lactam, and add MRSA coverage when there are risk factors such as intravenous antibiotics in the previous 90 days.
+  refs:
+    - Kalil AC, et al. Management of adults with hospital-acquired and ventilator-associated pneumonia: 2016 IDSA/ATS clinical practice guidelines. *Clin Infect Dis* 2016;63:e61.

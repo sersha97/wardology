@@ -1,4 +1,4 @@
-# Medical Oncology — ABIM blueprint 6%
+# Medical Oncology — ABIM CERT blueprint
 - id: ON-001
   topic: Breast cancer screening
   task: Diagnosis/Testing
@@ -42,7 +42,7 @@
   task: Diagnosis/Testing
   chapters: [heme/cancer-screening]
   stem: |
-    A 58-year-old man comes for a routine health visit. He smoked 1 pack of cigarettes per day from age 24 to age 49 (**25 pack-years**) and **quit 9 years ago**. He feels well, has no cough, hemoptysis or weight loss, and is active. He has hypertension controlled with lisinopril.
+    A 58-year-old man comes for a routine health visit. He smoked 1 pack of cigarettes per day from age 24 to age 49 (25 pack-years) and quit 9 years ago. He feels well, has no cough, hemoptysis or weight loss, and is active. He has hypertension controlled with lisinopril.
 
     Examination is normal.
   lead: Which of the following is the most appropriate lung cancer screening recommendation?
@@ -82,9 +82,9 @@
   task: Treatment/Care Decisions
   chapters: [heme/onc-emergencies, neuro/cauda-equina]
   stem: |
-    A 68-year-old man with **metastatic prostate cancer to bone** comes to the emergency department with 2 weeks of worsening mid-back pain that is worse lying down and wakes him at night. Since yesterday his legs feel heavy and he stumbled twice. He has not had urinary retention or incontinence.
+    A 68-year-old man with metastatic prostate cancer to bone comes to the emergency department with 2 weeks of worsening mid-back pain that is worse lying down and wakes him at night. Since yesterday his legs feel heavy and he stumbled twice. He has not had urinary retention or incontinence.
 
-    Vital signs are normal. There is tenderness over the T9–T10 spinous processes. Strength is 4/5 in hip flexors and knee extensors bilaterally. Pinprick sensation is reduced **below the umbilicus**. Knee reflexes are brisk and plantar responses are extensor.
+    Vital signs are normal. There is tenderness over the T9–T10 spinous processes. Strength is 4/5 in hip flexors and knee extensors bilaterally. Pinprick sensation is reduced below the umbilicus. Knee reflexes are brisk and plantar responses are extensor.
   lead: Which of the following is the most appropriate next step in management?
   choices:
     A: Plain radiographs of the thoracic spine
@@ -114,3 +114,482 @@
   refs:
     - Lawton AJ, et al. Assessment and management of patients with metastatic spinal cord compression: a multidisciplinary review. *J Clin Oncol* 2019;37:61.
     - Patchell RA, et al. Direct decompressive surgical resection in the treatment of spinal cord compression caused by metastatic cancer. *Lancet* 2005;366:643.
+
+
+- id: ON-004
+  topic: Tumor lysis syndrome
+  task: Treatment/Care Decisions
+  chapters: [heme/onc-emergencies]
+  stem: |
+    A 34-year-old man with newly diagnosed Burkitt lymphoma and bulky abdominal disease received his first cycle of chemotherapy 36 hours ago. He was given IV fluids and allopurinol beforehand. He now reports muscle cramps and has had low urine output for 6 hours.
+
+    On physical examination, blood pressure is 142/88 mm Hg and pulse rate is 96/min. Chvostek sign is positive.
+  labs:
+    - ["Potassium", "6.1 mEq/L"]
+    - ["Phosphorus", "8.4 mg/dL"]
+    - ["Calcium", "6.8 mg/dL"]
+    - ["Uric acid", "13.6 mg/dL"]
+    - ["Creatinine", "2.6 mg/dL (0.9 mg/dL before chemotherapy)"]
+    - ["ECG", "peaked T waves; QRS 100 ms"]
+    - ["G6PD activity", "normal"]
+  lead: In addition to treating hyperkalemia, which of the following is the most appropriate treatment?
+  choices:
+    A: Increase the allopurinol dose
+    B: Intravenous calcium gluconate to correct the calcium to normal
+    C: Rasburicase
+    D: Sodium bicarbonate infusion to alkalinize the urine
+    E: Stop IV fluids to avoid volume overload
+  answer: C
+  explain: |
+    **Clinical tumor lysis syndrome (TLS)**: after chemotherapy for a **highly proliferative, bulky tumor** (Burkitt, ALL, AML with high WBC), cell breakdown releases **potassium, phosphate and nucleic acids (→ uric acid)**. Phosphate binds calcium → **hypocalcemia**. Uric acid and calcium phosphate crystals cause **AKI**.
+
+    **Rasburicase** (recombinant urate oxidase) converts uric acid to soluble **allantoin** and **lowers uric acid within hours**. Allopurinol only prevents new uric acid formation and does nothing for uric acid that is already there. Check **G6PD** first — rasburicase causes hemolysis and methemoglobinemia in G6PD deficiency.
+
+    Other measures: **aggressive IV fluids** (target urine output 80–100 mL/m²/h), treat hyperkalemia, **phosphate binders**, and **early dialysis** for refractory hyperkalemia, volume overload or worsening AKI.
+  why:
+    A: Allopurinol blocks new uric acid production but does not lower existing levels quickly; it also increases xanthine, which can crystallize.
+    B: Treat hypocalcemia only if symptomatic (tetany, arrhythmia) — giving calcium with a high phosphate promotes calcium phosphate precipitation in the kidneys and tissues.
+    D: Urine alkalinization is no longer recommended — it promotes calcium phosphate and xanthine crystal deposition.
+    E: IV fluids are the cornerstone of TLS treatment; stop only if overload develops despite diuretics, in which case dialysis is needed.
+  mnemonic: |
+    TLS labs — **"three highs and a low"**: high **K⁺, phosphate, uric acid**, low **calcium**.
+  objective: |
+    Treat established tumor lysis syndrome with hyperuricemia using rasburicase (after excluding G6PD deficiency), IV fluids and electrolyte management.
+  refs:
+    - Howard SC, et al. The tumor lysis syndrome. *N Engl J Med* 2011;364:1844.
+    - Jones GL, et al. Guidelines for the management of tumour lysis syndrome in adults and children with haematological malignancies. *Br J Haematol* 2015;169:661.
+
+- id: ON-005
+  topic: Prostate cancer screening
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [heme/cancer-screening]
+  stem: |
+    A 58-year-old man asks whether he should have a "PSA test". He feels well and has no urinary symptoms. His father was diagnosed with prostate cancer at age 78. He is not of African descent and has no known BRCA mutation. He has never had a PSA test.
+
+    Examination is normal.
+  lead: Which of the following is the most appropriate response?
+  choices:
+    A: Discuss the benefits and harms of PSA screening and decide together
+    B: Order a PSA and a digital rectal examination every year
+    C: Recommend against screening because the harms outweigh the benefits at any age
+    D: Order an MRI of the prostate
+    E: Screening is not appropriate until age 70
+  answer: A
+  explain: |
+    The **USPSTF** recommends **individual decision-making** about PSA screening for men **aged 55–69 years** (**Grade C**), and **against** screening men **≥70** (Grade D).
+
+    **Benefit**: screening prevents about **1 prostate cancer death per 1,000 men** screened over 13 years and reduces metastatic disease.
+    **Harms**: false positives, **biopsy complications** (pain, infection, bleeding), and **overdiagnosis** of indolent cancers → treatment with risks of **erectile dysfunction and urinary incontinence**.
+
+    **Shared decision-making** is the recommended approach — his values decide. Men at **higher risk** (Black men, BRCA2 carriers, father or brother diagnosed **before 65**) may benefit more and start earlier (some guidelines: age 40–45). His father was diagnosed at 78, which raises his risk only slightly.
+
+    A DRE adds little and is not recommended as a screening test by the USPSTF. If the PSA is elevated, MRI before biopsy reduces unnecessary biopsies.
+  why:
+    B: Screening should follow an informed discussion; routine yearly PSA plus DRE without discussion is not recommended, and DRE is not a recommended screening test.
+    C: For men 55–69, screening is a choice, not a recommendation against; the recommendation against applies at ≥70.
+    D: MRI is used after an abnormal PSA, not as an initial screening test.
+    E: The USPSTF recommends against screening at 70 and older, not starting there.
+  objective: |
+    For men aged 55 to 69 years, PSA-based prostate cancer screening is an individual decision made after discussing benefits and harms.
+  refs:
+    - US Preventive Services Task Force. Screening for prostate cancer. *JAMA* 2018;319:1901.
+    - Wei JT, et al. Early detection of prostate cancer: AUA/SUO guideline. *J Urol* 2023;210:46.
+
+- id: ON-006
+  topic: Lynch syndrome
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [heme/cancer-screening, heme/solid-tumors]
+  stem: |
+    A 38-year-old woman has a right colectomy for adenocarcinoma of the ascending colon. Immunohistochemistry of the tumor shows loss of MLH1 and PMS2 expression; the tumor is microsatellite instability–high and has no BRAF V600E mutation, and MLH1 promoter is not hypermethylated. Her mother had endometrial cancer at age 46 and her maternal uncle had colon cancer at age 50.
+  lead: Which of the following is the most appropriate next step?
+  choices:
+    A: Annual CA-125 and transvaginal ultrasonography only
+    B: Germline genetic testing for Lynch syndrome
+    C: Colonoscopy every 10 years
+    D: No further evaluation because sporadic MSI-high tumors are common
+    E: Total proctocolectomy for her siblings
+  answer: B
+  explain: |
+    **All colorectal and endometrial cancers should be tested for mismatch repair (MMR) deficiency** (IHC or MSI). Loss of **MLH1/PMS2** can be **sporadic** (MLH1 promoter hypermethylation, often with **BRAF V600E**) or **germline**.
+
+    Here: MSI-high, MLH1 loss, **no BRAF mutation**, **no promoter hypermethylation**, young age and a family history of colon and **endometrial** cancer → high probability of **Lynch syndrome** (autosomal dominant germline mutation in MLH1, MSH2, MSH6, PMS2 or EPCAM). Next step: **germline testing** (with genetic counseling).
+
+    If confirmed:
+    - **Colonoscopy every 1–2 years** (start at 20–25 for MLH1/MSH2).
+    - Endometrial and ovarian cancer risk reduction: **hysterectomy and bilateral salpingo-oophorectomy** after childbearing (~age 40); daily **aspirin** reduces colorectal cancer risk (CAPP2).
+    - **Cascade testing** of first-degree relatives.
+
+    MSI-high/MMR-deficient tumors also respond to **immune checkpoint inhibitors**.
+  why:
+    A: Gynecologic screening alone is insufficient and of uncertain benefit; diagnosis should be confirmed first, and surgery is the main risk reduction.
+    C: Lynch syndrome requires colonoscopy every 1–2 years, not 10.
+    D: Sporadic MSI-high tumors are usually explained by MLH1 hypermethylation or BRAF mutation, which are absent here.
+    E: Relatives need germline testing first; prophylactic colectomy is not standard for Lynch syndrome.
+  mnemonic: |
+    Lynch cancers — **"CEO" + more**: **C**olon, **E**ndometrium, **O**vary, plus stomach, small bowel, urinary tract (ureter/renal pelvis), biliary, brain, skin (sebaceous).
+  objective: |
+    Refer patients with MMR-deficient colorectal cancer without BRAF mutation or MLH1 promoter hypermethylation for germline testing for Lynch syndrome.
+  refs:
+    - National Comprehensive Cancer Network. Genetic/familial high-risk assessment: colorectal, endometrial and gastric. Version 2025.
+    - Syngal S, et al. ACG clinical guideline: genetic testing and management of hereditary GI cancer syndromes. *Am J Gastroenterol* 2015;110:223.
+
+- id: ON-007
+  topic: Aromatase inhibitor–associated bone loss
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [heme/solid-tumors, endo/calcium-bone]
+  stem: |
+    A 63-year-old postmenopausal woman is starting anastrozole after lumpectomy and radiation for a stage I, estrogen receptor–positive, HER2-negative breast cancer. She has no history of fractures. She takes no other medications.
+
+    Examination is normal.
+  lead: Which of the following is the most appropriate baseline evaluation?
+  choices:
+    A: Dual-energy x-ray absorptiometry (DXA) scan
+    B: Echocardiogram
+    C: Endometrial biopsy
+    D: Annual CT of the chest, abdomen and pelvis
+    E: Serum CA 15-3 every 3 months
+  answer: A
+  explain: |
+    **Aromatase inhibitors (anastrozole, letrozole, exemestane)** block peripheral conversion of androgens to estrogen. In postmenopausal women, this drops estrogen to very low levels and **accelerates bone loss** (2–3% per year) and **fracture risk**. They also cause **arthralgias** and hypercholesterolemia.
+
+    Obtain a **baseline DXA scan** before starting, and repeat every 1–2 years. Give calcium, vitamin D and weight-bearing exercise. Start **bisphosphonates (or denosumab)** for osteoporosis or high fracture risk; adjuvant bisphosphonates also reduce breast cancer recurrence in bone in postmenopausal women.
+
+    | | Tamoxifen (SERM) | Aromatase inhibitor |
+    |---|---|---|
+    | Use | Pre- and postmenopausal | **Postmenopausal** (or premenopausal + ovarian suppression) |
+    | Bone | **Protects** (postmenopausal) | **Loss**, fractures |
+    | Uterus | **Endometrial cancer**, polyps | No effect |
+    | Clots | **VTE**, stroke | Less |
+    | Joints | — | **Arthralgias** |
+  why:
+    B: Echocardiography is needed before trastuzumab or anthracyclines, not aromatase inhibitors.
+    C: Endometrial evaluation is for tamoxifen users with abnormal bleeding; aromatase inhibitors do not stimulate the endometrium.
+    D: Routine imaging after curative-intent treatment of early breast cancer does not improve survival; surveillance is history, examination and annual mammography.
+    E: Tumor markers are not recommended for surveillance of early-stage breast cancer.
+  objective: |
+    Obtain a baseline DXA scan in women starting an aromatase inhibitor because of accelerated bone loss and fracture risk.
+  refs:
+    - Shapiro CL, et al. Management of osteoporosis in survivors of adult cancers with nonmetastatic disease: ASCO clinical practice guideline. *J Clin Oncol* 2019;37:2916.
+
+- id: ON-008
+  topic: Immune checkpoint inhibitor colitis
+  task: Treatment/Care Decisions
+  chapters: [heme/solid-tumors, gi/diarrhea]
+  stem: |
+    A 66-year-old man with metastatic melanoma began ipilimumab plus nivolumab 6 weeks ago. He now has 4 days of 8 watery stools daily above his baseline, abdominal cramping and blood in the stool.
+
+    On physical examination, temperature is 37.8 °C (100.0 °F), blood pressure is 112/70 mm Hg, and pulse rate is 104/min. The abdomen is diffusely tender without rebound.
+  labs:
+    - ["Leukocyte count", "11,800/µL"]
+    - ["C-reactive protein", "82 mg/L"]
+    - ["Stool C. difficile PCR and enteric pathogen panel", "negative"]
+    - ["CT of the abdomen", "diffuse colonic wall thickening without perforation"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Continue immunotherapy and give loperamide
+    B: Hold immunotherapy and start intravenous methylprednisolone, 1–2 mg/kg/d
+    C: Oral vancomycin
+    D: Oral budesonide and continue immunotherapy
+    E: Emergency colectomy
+  answer: B
+  explain: |
+    **Immune checkpoint inhibitors** (anti–CTLA-4 ipilimumab, anti–PD-1 nivolumab/pembrolizumab, anti–PD-L1) remove the brakes on T cells and can cause **immune-related adverse events (irAEs)** in any organ — colitis, hepatitis, pneumonitis, endocrinopathies, dermatitis, myocarditis. **Combination CTLA-4 + PD-1** therapy has the highest risk.
+
+    He has **grade 3 colitis** (≥7 stools/day over baseline, with systemic symptoms). Infection is excluded. Management:
+    - **Hold** the checkpoint inhibitor.
+    - **High-dose glucocorticoids** — IV methylprednisolone 1–2 mg/kg/d, then a slow taper over **4–6 weeks**.
+    - If no response in **48–72 hours**: **infliximab** or **vedolizumab**.
+    - Endoscopy helps grade severity.
+
+    | Grade | Stools over baseline | Action |
+    |---|---|---|
+    | 1 | <4 | Continue ICI; antidiarrheals, fluids |
+    | 2 | 4–6 | Hold; oral prednisone 1 mg/kg |
+    | **3–4** | **≥7**, severe/life-threatening | **Hold (stop CTLA-4); IV steroids**; infliximab/vedolizumab if refractory |
+  why:
+    A: Continuing immunotherapy with antidiarrheals is appropriate only for grade 1 diarrhea; loperamide can mask worsening colitis.
+    C: C. difficile testing is negative; this is immune-mediated colitis.
+    D: Budesonide is not adequate for grade 3 colitis, and immunotherapy must be held.
+    E: Surgery is for perforation or toxic megacolon; he has neither.
+  objective: |
+    Treat grade 3 or higher immune checkpoint inhibitor colitis by holding immunotherapy and giving high-dose intravenous glucocorticoids, adding infliximab or vedolizumab if refractory.
+  refs:
+    - Schneider BJ, et al. Management of immune-related adverse events in patients treated with immune checkpoint inhibitor therapy: ASCO guideline update. *J Clin Oncol* 2021;39:4073.
+
+- id: ON-009
+  topic: Superior vena cava syndrome
+  task: Treatment/Care Decisions
+  chapters: [heme/onc-emergencies]
+  stem: |
+    A 61-year-old man with a 50 pack-year smoking history is evaluated for 3 weeks of progressive facial swelling, a sense of fullness in his head that worsens when he bends forward, and dyspnea. He has no stridor, confusion or syncope.
+
+    On physical examination, blood pressure is 138/84 mm Hg, pulse rate is 92/min, and respiration rate is 18/min. Oxygen saturation is 95% breathing ambient air. There is facial and neck swelling, plethora and dilated veins over the upper chest.
+
+    CT of the chest with contrast shows a 6-cm right paratracheal mass compressing the superior vena cava, with mediastinal lymphadenopathy. There is no tissue diagnosis.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Emergency radiation therapy before biopsy
+    B: Empiric high-dose dexamethasone
+    C: Tissue diagnosis by bronchoscopy, EBUS or mediastinoscopy
+    D: Empiric chemotherapy for small cell lung cancer
+    E: Thrombolytic therapy
+  answer: C
+  explain: |
+    **Superior vena cava (SVC) syndrome** today is usually caused by **malignancy** (non–small cell and small cell lung cancer, lymphoma) and increasingly by **intravascular devices** (catheters, pacemaker leads).
+
+    Most patients are **not** in immediate danger; collateral veins develop over weeks. **Emergencies** are **stridor (laryngeal edema or airway compression), cerebral edema (confusion, coma) or hemodynamic compromise** — these need urgent **endovascular stenting** (fastest relief) ± radiation.
+
+    He has no emergency features, so the priority is a **tissue diagnosis** before treatment: histology determines therapy. **Small cell lung cancer and lymphoma** respond rapidly to chemotherapy; NSCLC may need stenting and chemoradiation. **Empiric radiation or steroids can obscure the diagnosis** (especially lymphoma).
+
+    Supportive measures: elevate the head of the bed; steroids only for lymphoma, thymoma or radiation-related edema.
+  why:
+    A: Radiation before biopsy can make histology uninterpretable and is reserved for life-threatening presentations when stenting is unavailable.
+    B: Empiric glucocorticoids may obscure a lymphoma diagnosis and have no proven benefit in most SVC syndromes.
+    D: Chemotherapy requires a histologic diagnosis; treating the wrong tumor type causes harm without benefit.
+    E: Thrombolysis is for catheter-related SVC thrombosis, not extrinsic tumor compression.
+  objective: |
+    In SVC syndrome without stridor, cerebral edema or hemodynamic compromise, obtain a tissue diagnosis before starting treatment.
+  refs:
+    - Wilson LD, et al. Superior vena cava syndrome with malignant causes. *N Engl J Med* 2007;356:1862.
+    - Azizi AH, et al. Superior vena cava syndrome. *JACC Cardiovasc Interv* 2020;13:2896.
+
+- id: ON-010
+  topic: Febrile neutropenia — empiric therapy
+  task: Treatment/Care Decisions
+  chapters: [heme/neutropenic-fever, id/sepsis]
+  stem: |
+    A 56-year-old woman receiving chemotherapy for acute myeloid leukemia is evaluated for a temperature of 38.6 °C (101.5 °F). She feels tired but otherwise well. She has a tunneled central venous catheter. She has no allergies.
+
+    On physical examination, blood pressure is 118/72 mm Hg, pulse rate is 104/min, and respiration rate is 18/min. Oxygen saturation is 97% breathing ambient air. There is mild oral mucositis. The catheter site is clean. Lungs are clear and the abdomen is soft.
+  labs:
+    - ["Leukocyte count", "400/µL"]
+    - ["Absolute neutrophil count", "80/µL"]
+    - ["Platelet count", "22,000/µL"]
+    - ["Creatinine", "0.8 mg/dL"]
+    - ["Chest radiograph", "normal"]
+  lead: After blood cultures are drawn from the catheter and a peripheral vein, which of the following is the most appropriate empiric antibiotic therapy?
+  choices:
+    A: Cefepime
+    B: Cefepime plus vancomycin
+    C: Ceftriaxone plus azithromycin
+    D: Oral ciprofloxacin and amoxicillin-clavulanate as an outpatient
+    E: No antibiotics until cultures return
+  answer: A
+  explain: |
+    **Febrile neutropenia**: a single temperature **≥38.3 °C** (or ≥38.0 °C sustained for 1 hour) with an **ANC <500/µL**. It is a medical emergency; start **IV antibiotics within 60 minutes**.
+
+    She is **high risk** (AML induction, profound and prolonged neutropenia expected, inpatient), so she needs inpatient **IV monotherapy with an antipseudomonal β-lactam**: **cefepime**, piperacillin-tazobactam, or meropenem/imipenem.
+
+    **Add vancomycin (or other gram-positive coverage) only for specific indications**:
+    - Hemodynamic instability
+    - Suspected **catheter-related infection** (site erythema/drainage, tunnel infection)
+    - **Skin or soft tissue infection**
+    - Pneumonia
+    - Known MRSA colonization
+    - Gram-positive cocci in blood culture before identification
+
+    She has none of these, so vancomycin is not needed. Mucositis alone is not an indication.
+  why:
+    B: Empiric vancomycin without a specific indication does not improve outcomes and increases toxicity and resistance.
+    C: Ceftriaxone does not cover Pseudomonas, the key pathogen in febrile neutropenia.
+    D: Outpatient oral therapy is only for low-risk patients (MASCC ≥21, expected short neutropenia); AML induction is high risk.
+    E: Delaying antibiotics in febrile neutropenia increases mortality.
+  objective: |
+    Treat high-risk febrile neutropenia with an intravenous antipseudomonal β-lactam such as cefepime within 1 hour, adding vancomycin only for specific indications.
+  refs:
+    - Freifeld AG, et al. Clinical practice guideline for the use of antimicrobial agents in neutropenic patients with cancer: 2010 update by IDSA. *Clin Infect Dis* 2011;52:e56.
+    - Taplitz RA, et al. Outpatient management of fever and neutropenia in adults treated for malignancy: ASCO/IDSA guideline update. *J Clin Oncol* 2018;36:1443.
+
+- id: ON-011
+  topic: Stage III colon cancer — adjuvant therapy
+  task: Treatment/Care Decisions
+  chapters: [heme/solid-tumors]
+  stem: |
+    A 59-year-old man undergoes a sigmoid colectomy for adenocarcinoma. Pathology shows a T3 tumor with 3 of 18 lymph nodes positive and negative margins (stage III). The tumor is mismatch repair proficient. CT of the chest, abdomen and pelvis shows no distant metastases. He has recovered well from surgery and has an ECOG performance status of 0.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Adjuvant chemotherapy with a fluoropyrimidine plus oxaliplatin
+    B: Adjuvant radiation therapy to the pelvis
+    C: Immune checkpoint inhibitor therapy
+    D: Observation with colonoscopy in 1 year
+    E: Resection of the liver as a preventive measure
+  answer: A
+  explain: |
+    In **colon cancer**, **lymph node involvement (stage III)** is the main indication for **adjuvant chemotherapy**. **FOLFOX or CAPOX** (fluoropyrimidine + **oxaliplatin**) reduces recurrence and improves survival by about 20–30% relative to surgery alone.
+
+    Duration: **3 months of CAPOX** is noninferior for low-risk stage III (T1–3, N1) (IDEA collaboration) with much less **oxaliplatin neuropathy**; 6 months for high-risk (T4 or N2).
+
+    Surveillance: **CEA** every 3–6 months and **CT** every 6–12 months for 5 years; **colonoscopy at 1 year** after surgery.
+
+    | Stage | Treatment |
+    |---|---|
+    | I | Surgery alone |
+    | II | Surgery; adjuvant chemo for high-risk features |
+    | **III** | **Surgery + FOLFOX/CAPOX** |
+    | IV | Systemic therapy; resection of limited liver/lung metastases may be curative |
+  why:
+    B: Radiation is used for rectal cancer, not colon cancer above the peritoneal reflection.
+    C: Checkpoint inhibitors are used for MMR-deficient/MSI-high metastatic disease; his tumor is MMR proficient.
+    D: Observation alone forgoes the proven survival benefit of chemotherapy in node-positive disease.
+    E: There is no role for prophylactic liver resection.
+  objective: |
+    Offer adjuvant fluoropyrimidine plus oxaliplatin chemotherapy after resection of stage III (node-positive) colon cancer.
+  refs:
+    - Grothey A, et al. Duration of adjuvant chemotherapy for stage III colon cancer (IDEA). *N Engl J Med* 2018;378:1177.
+    - National Comprehensive Cancer Network. Colon cancer guidelines, Version 2025.
+
+- id: ON-012
+  topic: Lambert-Eaton myasthenic syndrome
+  task: Diagnosis/Testing
+  chapters: [heme/solid-tumors, neuro/myasthenia]
+  stem: |
+    A 64-year-old man with an 80 pack-year smoking history is evaluated for 3 months of difficulty climbing stairs and rising from chairs, dry mouth and constipation. He notices that his legs feel stronger after a few seconds of effort. He has erectile dysfunction.
+
+    On physical examination, there is weakness of the hip flexors and shoulder abductors. Deep tendon reflexes are reduced but increase after 10 seconds of maximal voluntary contraction. There is mild bilateral ptosis. Sensation is normal.
+
+    Chest CT shows a 3-cm central hilar mass with bulky mediastinal lymphadenopathy.
+  lead: Which of the following antibodies is most likely to be present?
+  choices:
+    A: Acetylcholine receptor antibodies
+    B: Anti-Hu (ANNA-1)
+    C: Anti-NMDA receptor
+    D: Anti–muscle-specific kinase (MuSK)
+    E: P/Q-type voltage-gated calcium channel antibodies
+  answer: E
+  explain: |
+    **Lambert-Eaton myasthenic syndrome (LEMS)**: autoantibodies against **presynaptic P/Q-type voltage-gated calcium channels** reduce acetylcholine release. About half of cases are **paraneoplastic**, almost always **small cell lung cancer** — a likely diagnosis given his smoking history and central mass.
+
+    Clinical triad:
+    - **Proximal leg weakness** that **improves with repeated effort** (facilitation)
+    - **Reduced reflexes** that **increase after exercise**
+    - **Autonomic symptoms** — dry mouth, constipation, erectile dysfunction
+
+    Ocular and bulbar symptoms are milder than in myasthenia gravis. EMG shows a **low CMAP amplitude that increases >100% after 10 seconds of exercise** (or high-frequency stimulation).
+
+    Treat the tumor; **amifampridine (3,4-diaminopyridine)** prolongs presynaptic depolarization and improves strength.
+
+    | | Myasthenia gravis | LEMS |
+    |---|---|---|
+    | Target | Postsynaptic AChR | **Presynaptic VGCC** |
+    | Weakness | Worse with use; ocular/bulbar | **Better with use**; proximal legs |
+    | Reflexes | Normal | **Reduced** (↑ after exercise) |
+    | Autonomic | No | **Yes** |
+    | Associated tumor | Thymoma | **Small cell lung cancer** |
+  why:
+    A: AChR antibodies define myasthenia gravis, in which weakness worsens with repeated use and reflexes are preserved.
+    B: Anti-Hu antibodies with SCLC cause sensory neuronopathy and encephalomyelitis, not facilitating proximal weakness.
+    C: Anti-NMDA receptor encephalitis causes psychiatric symptoms, seizures and dyskinesias, often with ovarian teratoma.
+    D: MuSK antibodies cause a form of myasthenia gravis with prominent bulbar and neck weakness.
+  objective: |
+    Recognize Lambert-Eaton myasthenic syndrome (proximal weakness improving with effort, reduced reflexes, autonomic symptoms) caused by P/Q-type calcium channel antibodies, often with small cell lung cancer.
+  refs:
+    - Titulaer MJ, et al. Lambert-Eaton myasthenic syndrome: from clinical characteristics to therapeutic strategies. *Lancet Neurol* 2011;10:1098.
+
+- id: ON-013
+  topic: Opioid-induced constipation in cancer pain
+  task: Treatment/Care Decisions
+  chapters: [geri/goals-of-care, heme/solid-tumors]
+  stem: |
+    A 72-year-old woman with metastatic pancreatic cancer is evaluated for worsening abdominal and back pain. She takes acetaminophen and ibuprofen, which no longer control her pain (now 8/10). She has never taken opioids. She has had no bowel obstruction. Her kidney function is normal.
+
+    You start oral morphine immediate-release, 5 mg every 4 hours as needed.
+  lead: Which of the following should be started at the same time?
+  choices:
+    A: Docusate alone
+    B: A stimulant laxative such as senna, taken regularly
+    C: Loperamide
+    D: Methylnaltrexone daily
+    E: No bowel regimen until constipation develops
+  answer: B
+  explain: |
+    **Constipation** is the most common opioid adverse effect and — unlike nausea and sedation — **does not improve with time (no tolerance)**. Opioids act on μ receptors in the gut to slow motility and increase fluid absorption.
+
+    Start a **prophylactic bowel regimen with every opioid prescription**: a **stimulant laxative (senna or bisacodyl)**, with or without an **osmotic laxative (polyethylene glycol)**. Titrate to a soft bowel movement at least every 1–2 days.
+
+    For **refractory** opioid-induced constipation: **peripherally acting μ-opioid receptor antagonists (PAMORAs)** — methylnaltrexone, naloxegol, naldemedine — which block gut μ receptors without reversing analgesia (contraindicated in bowel obstruction).
+
+    Other cancer pain principles: around-the-clock dosing for constant pain with breakthrough doses (10–20% of the daily dose), consider adjuvants (for this patient: celiac plexus block), and screen for opioid misuse risk.
+  why:
+    A: Docusate (a stool softener) alone is ineffective for opioid-induced constipation.
+    C: Loperamide is an antidiarrheal and would worsen constipation.
+    D: PAMORAs are second-line for constipation that does not respond to standard laxatives; they are not used for prophylaxis.
+    E: Waiting for constipation leads to suffering, poor adherence to analgesia and impaction. Prevention is standard.
+  objective: |
+    Start a scheduled stimulant laxative with every opioid prescription to prevent opioid-induced constipation.
+  refs:
+    - National Comprehensive Cancer Network. Adult cancer pain guidelines, Version 2025.
+    - Crockett SD, et al. AGA guideline on the medical management of opioid-induced constipation. *Gastroenterology* 2019;156:218.
+
+- id: ON-014
+  topic: Palpable breast mass
+  task: Diagnosis/Testing
+  chapters: [heme/cancer-screening]
+  stem: |
+    A 46-year-old woman is evaluated for a lump in her left breast that she found 2 weeks ago. It has not changed through her menstrual cycle. She has no nipple discharge. Her last screening mammogram 18 months ago was normal. Her aunt had breast cancer at age 65.
+
+    On physical examination, there is a 2-cm firm, mobile, nontender mass in the upper outer quadrant of the left breast. There is no skin change or axillary lymphadenopathy.
+  lead: Which of the following is the most appropriate next step in evaluation?
+  choices:
+    A: Breast MRI
+    B: Diagnostic mammography and targeted ultrasonography
+    C: Reassurance because her last mammogram was normal
+    D: Repeat clinical breast examination after her next menstrual period only
+    E: Screening mammography in 6 months
+  answer: B
+  explain: |
+    A **new, persistent palpable breast mass** needs imaging regardless of a recent normal mammogram — screening mammography misses 10–20% of palpable cancers.
+
+    Imaging depends on age:
+    - **≥30 years**: **diagnostic mammography plus targeted ultrasonography**.
+    - **<30 years**: **ultrasonography first** (dense breasts, radiation concerns), then mammography if suspicious.
+
+    Then: **core needle biopsy** of any suspicious lesion (BI-RADS 4–5). A **clinically suspicious mass needs biopsy even if imaging is negative** ("triple test": examination, imaging, pathology must all agree). A simple cyst on ultrasound can be observed or aspirated.
+  why:
+    A: MRI is for high-risk screening, extent of known cancer, or problem-solving after mammography and ultrasound; it is not the first test.
+    C: A normal mammogram 18 months ago does not exclude cancer in a new palpable mass.
+    D: Re-examining after menses is reasonable for vague nodularity in a young woman, but a discrete persistent mass in a 46-year-old needs imaging now.
+    E: Screening mammography is for asymptomatic women; a palpable mass needs diagnostic imaging now.
+  objective: |
+    Evaluate a palpable breast mass in a woman aged 30 years or older with diagnostic mammography and targeted ultrasonography, followed by biopsy if suspicious.
+  refs:
+    - American College of Radiology. ACR Appropriateness Criteria — palpable breast masses, 2022 revision.
+
+- id: ON-015
+  topic: Trastuzumab cardiotoxicity
+  task: Pathophysiology/Basic Science
+  chapters: [heme/solid-tumors, cardiology/hfref]
+  stem: |
+    A 52-year-old woman with HER2-positive breast cancer is receiving adjuvant trastuzumab after completing doxorubicin and cyclophosphamide. She has mild exertional dyspnea and ankle swelling.
+
+    Echocardiogram shows an LVEF of 42% (62% at baseline). She has no chest pain. ECG shows sinus rhythm without ischemic changes.
+  lead: Compared with anthracycline cardiotoxicity, trastuzumab cardiotoxicity is best characterized by which of the following?
+  choices:
+    A: Cumulative dose-dependent myocyte death that is usually irreversible
+    B: Myocyte dysfunction without necrosis that is often reversible after stopping the drug
+    C: Coronary vasospasm causing ischemia
+    D: Constrictive pericarditis
+    E: Restrictive cardiomyopathy from amyloid deposition
+  answer: B
+  explain: |
+    Two classic chemotherapy cardiotoxicities:
+
+    | | Anthracyclines (doxorubicin) | Trastuzumab (anti-HER2) |
+    |---|---|---|
+    | Mechanism | **Free radicals, topoisomerase IIβ** → **myocyte death** | Blocks **HER2 (ErbB2) survival signaling** in myocytes → **dysfunction** ("stunning") |
+    | Dose relation | **Cumulative**, risk ↑ above 250–400 mg/m² | **Not** dose-dependent |
+    | Histology | Vacuolization, myofibrillar loss | No necrosis |
+    | Reversibility | Usually **irreversible** | Usually **reversible** after holding drug |
+    | Timing | Can appear years later | During treatment |
+
+    Prior anthracycline exposure **increases** the risk of trastuzumab cardiotoxicity.
+
+    Management: **hold trastuzumab** when LVEF falls ≥10 points to <50% (or symptomatic HF), start **guideline-directed HF therapy** (ACE inhibitor/ARB, beta-blocker), recheck LVEF in 3–4 weeks; many patients can resume trastuzumab once function recovers. Monitor LVEF every 3 months during therapy.
+  why:
+    A: Cumulative, irreversible myocyte death describes anthracycline toxicity.
+    C: Coronary vasospasm is a toxicity of fluoropyrimidines (5-FU, capecitabine).
+    D: Constrictive pericarditis is a late complication of chest radiation.
+    E: Amyloid restrictive cardiomyopathy occurs with AL amyloidosis or transthyretin amyloid, not trastuzumab.
+  objective: |
+    Trastuzumab cardiotoxicity is a non–dose-dependent, usually reversible myocardial dysfunction, unlike the cumulative, irreversible damage caused by anthracyclines.
+  refs:
+    - Lyon AR, et al. 2022 ESC guidelines on cardio-oncology. *Eur Heart J* 2022;43:4229.

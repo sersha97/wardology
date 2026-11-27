@@ -1,10 +1,10 @@
-# Allergy & Immunology — ABIM blueprint 2%
+# Allergy & Immunology — ABIM CERT blueprint
 - id: AL-001
   topic: Systemic reaction to an insect sting
   task: Treatment/Care Decisions
   chapters: [derm/anaphylaxis]
   stem: |
-    A 42-year-old man comes to the office 1 week after an emergency department visit. While gardening he was stung on the hand by a **yellow jacket**. Within 10 minutes he developed **generalized hives, throat tightness, wheezing and lightheadedness**. Paramedics gave intramuscular epinephrine, and he recovered fully after observation. He had local swelling after a bee sting as a child. He has hypertension treated with amlodipine.
+    A 42-year-old man comes to the office 1 week after an emergency department visit. While gardening he was stung on the hand by a yellow jacket. Within 10 minutes he developed generalized hives, throat tightness, wheezing and lightheadedness. Paramedics gave intramuscular epinephrine, and he recovered fully after observation. He had local swelling after a bee sting as a child. He has hypertension treated with amlodipine.
 
     Examination today is normal.
   lead: Which of the following is the most appropriate management?
@@ -39,3 +39,161 @@
   refs:
     - Golden DBK, et al. Stinging insect hypersensitivity: a practice parameter update 2016. *Ann Allergy Asthma Immunol* 2017;118:28.
     - Golden DBK, et al. Anaphylaxis: a 2023 practice parameter update. *Ann Allergy Asthma Immunol* 2024;132:124.
+
+
+- id: AL-002
+  topic: Anaphylaxis — first-line treatment
+  task: Treatment/Care Decisions
+  chapters: [derm/anaphylaxis]
+  stem: |
+    A 35-year-old woman develops diffuse hives, throat tightness, wheezing and lightheadedness 10 minutes after receiving intravenous cefazolin in the preoperative area.
+
+    On physical examination, blood pressure is 82/48 mm Hg, pulse rate is 128/min, and respiration rate is 26/min. Oxygen saturation is 91% breathing ambient air. There is diffuse urticaria, lip swelling and expiratory wheezing.
+
+    The cefazolin infusion has been stopped, and she has been placed supine with legs elevated.
+  lead: Which of the following is the most appropriate immediate treatment?
+  choices:
+    A: Intramuscular epinephrine, 0.5 mg, into the anterolateral thigh
+    B: Intravenous diphenhydramine
+    C: Intravenous methylprednisolone
+    D: Nebulized albuterol
+    E: Subcutaneous epinephrine, 1 mg
+  answer: A
+  explain: |
+    **Anaphylaxis** — acute skin/mucosal involvement plus respiratory compromise and hypotension — after a drug exposure.
+
+    **Intramuscular epinephrine** is the **first and most important treatment**, and **delay is the main cause of death**:
+    - **0.01 mg/kg of 1 mg/mL (1:1,000) solution, maximum 0.5 mg in adults**, **IM into the anterolateral thigh** (vastus lateralis — faster, higher peak levels than deltoid or subcutaneous)
+    - Repeat every **5–15 minutes** as needed
+
+    Epinephrine's α₁ effect reverses vasodilation and mucosal edema; β₁ increases cardiac output; β₂ bronchodilates and stabilizes mast cells.
+
+    Then: **oxygen**, **IV fluid bolus** (1–2 L), airway support, and **adjuncts** — H₁/H₂ antihistamines, albuterol, glucocorticoids (which do not prevent biphasic reactions). Refractory hypotension → **epinephrine infusion**; patients on β-blockers → **glucagon**. Observe and prescribe an epinephrine autoinjector if exposure could recur.
+  why:
+    B: Antihistamines help hives and itching but do not treat airway obstruction or shock.
+    C: Glucocorticoids act over hours and do not reverse acute anaphylaxis.
+    D: Albuterol treats bronchospasm but not hypotension or upper airway edema.
+    E: Subcutaneous absorption is slower and less reliable, and 1 mg is twice the maximum IM dose.
+  mnemonic: |
+    Anaphylaxis = **"Epi, IM, thigh, now."**
+  objective: |
+    Treat anaphylaxis immediately with intramuscular epinephrine 0.5 mg (1 mg/mL) in the anterolateral thigh, repeated every 5–15 minutes as needed.
+  refs:
+    - Golden DBK, et al. Anaphylaxis: a 2023 practice parameter update. *Ann Allergy Asthma Immunol* 2024;132:124.
+
+- id: AL-003
+  topic: Low-risk penicillin allergy label
+  task: Treatment/Care Decisions
+  chapters: [derm/anaphylaxis, derm/drug-eruptions]
+  stem: |
+    A 46-year-old woman with recurrent streptococcal pharyngitis has a penicillin allergy listed in her chart. When asked, she says that as a child, more than 20 years ago, she had an itchy rash after taking amoxicillin for an ear infection. She had no swelling, breathing difficulty, blistering, mucosal involvement, organ involvement or hospitalization. She has not taken a penicillin since.
+  lead: Which of the following is the most appropriate next step?
+  choices:
+    A: Avoid all β-lactams for life
+    B: Direct oral amoxicillin challenge under observation
+    C: Penicillin skin testing is required before any challenge
+    D: Prescribe azithromycin and keep the allergy label
+    E: Serum penicillin-specific IgE testing
+  answer: B
+  explain: |
+    About **10% of people report a penicillin allergy**, but **>95% are not allergic** when tested. A penicillin allergy label leads to broader-spectrum, less effective and more expensive antibiotics, more *C. difficile* and MRSA infections, and more surgical site infections.
+
+    Her history is **low risk** by PEN-FAST and AAAAI/ACAAI 2022 criteria: a **remote (>5–10 years) benign rash** (maculopapular or urticaria without other features) and no anaphylaxis, angioedema, SCAR (SJS/TEN, DRESS) or organ involvement. The 2022 practice parameter recommends a **direct oral amoxicillin challenge** (single dose with 30–60 minutes of observation) **without prior skin testing** for low-risk histories (PALACE trial). If tolerated, **remove the allergy label**.
+
+    Skin testing first is recommended for **higher-risk histories** (recent anaphylaxis, urticaria within 5 years). **Never rechallenge** after SJS/TEN or DRESS.
+  why:
+    A: Lifelong β-lactam avoidance is unnecessary for a low-risk history and causes harm.
+    C: Skin testing is not required for low-risk histories; direct oral challenge is safe and effective.
+    D: Keeping the label leads to inferior antibiotic choices; macrolide-resistant streptococci are common.
+    E: Serum specific IgE tests have poor sensitivity and should not be used to clear or confirm allergy.
+  objective: |
+    Delabel low-risk penicillin allergy (remote benign rash) with a direct oral amoxicillin challenge without prior skin testing.
+  refs:
+    - Khan DA, et al. Drug allergy: a 2022 practice parameter update. *J Allergy Clin Immunol* 2022;150:1333.
+    - Copaescu AM, et al. Efficacy of a clinical decision rule to enable direct oral challenge in patients with low-risk penicillin allergy (PALACE). *JAMA Intern Med* 2023;183:944.
+
+- id: AL-004
+  topic: Angioedema without urticaria — bradykinin
+  task: Pathophysiology/Basic Science
+  chapters: [derm/anaphylaxis]
+  stem: |
+    A 28-year-old woman is evaluated for recurrent episodes of swelling of her lips, hands and once her throat, lasting 2–4 days each. Some episodes are accompanied by severe abdominal pain and vomiting. Episodes began in adolescence and worsened after she started an estrogen-containing oral contraceptive. Her father has similar episodes. She never has hives, and antihistamines and steroids have not helped. She takes no ACE inhibitors.
+  labs:
+    - ["C4", "low"]
+    - ["C1 esterase inhibitor level", "low"]
+    - ["C1 esterase inhibitor function", "low"]
+    - ["C1q", "normal"]
+  lead: Which of the following mediators is primarily responsible for her symptoms?
+  choices:
+    A: Bradykinin
+    B: Histamine
+    C: Leukotriene C₄
+    D: Prostaglandin D₂
+    E: Tryptase
+  answer: A
+  explain: |
+    Recurrent **angioedema without urticaria**, abdominal attacks, onset in youth, a **family history** (autosomal dominant), worsening with **estrogen**, no response to antihistamines or steroids, **low C4** and **low C1 inhibitor level and function** with **normal C1q** → **hereditary angioedema (HAE) type 1**.
+
+    C1 inhibitor normally regulates the **contact (kallikrein–kinin) system**. Without it, **plasma kallikrein** cleaves high-molecular-weight kininogen and produces excess **bradykinin**, which increases vascular permeability via **B2 receptors**.
+
+    This is why **mast-cell treatments (epinephrine, antihistamines, steroids) do not work**. Acute attacks: **C1 inhibitor concentrate, icatibant (B2 receptor antagonist) or ecallantide (kallikrein inhibitor)**. Prophylaxis: **lanadelumab, berotralstat**, C1 inhibitor, garadacimab. Avoid estrogens and ACE inhibitors.
+
+    | | Histamine angioedema | Bradykinin angioedema |
+    |---|---|---|
+    | Hives, itch | **Yes** | **No** |
+    | Causes | Allergy, idiopathic | **HAE, ACE inhibitors**, acquired C1-INH deficiency |
+    | Responds to epinephrine/antihistamines | Yes | **No** |
+    | C4 | Normal | **Low** in HAE (normal with ACE inhibitors) |
+
+    **Acquired C1-INH deficiency** (older patient, lymphoma, MGUS) has a **low C1q**.
+  why:
+    B: Histamine-mediated angioedema is accompanied by urticaria and responds to antihistamines and epinephrine.
+    C: Leukotrienes contribute to asthma and aspirin-exacerbated respiratory disease.
+    D: Prostaglandin D₂ is a mast-cell mediator involved in allergic reactions and flushing.
+    E: Tryptase is released by mast cells in anaphylaxis and is a marker of mast-cell activation, not a driver of HAE.
+  objective: |
+    Hereditary angioedema is a bradykinin-mediated disorder caused by C1 inhibitor deficiency, presenting as angioedema without urticaria and unresponsive to antihistamines and epinephrine.
+  refs:
+    - Maurer M, et al. The international WAO/EAACI guideline for the management of hereditary angioedema — the 2021 revision and update. *Allergy* 2022;77:1961.
+    - Busse PJ, Christiansen SC. Hereditary angioedema. *N Engl J Med* 2020;382:1136.
+
+- id: AL-005
+  topic: Chronic spontaneous urticaria
+  task: Treatment/Care Decisions
+  chapters: [derm/anaphylaxis]
+  stem: |
+    A 39-year-old woman is evaluated for daily itchy hives for 10 weeks. Individual wheals last less than 24 hours and resolve without bruising. She has no fever, joint pain or weight loss. She cannot identify any triggers. Cetirizine, 10 mg daily, helps only a little.
+
+    On physical examination, there are several raised erythematous wheals on her trunk and arms. The remainder of the examination is normal.
+  labs:
+    - ["Complete blood count with differential", "normal"]
+    - ["C-reactive protein", "normal"]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Extensive allergy testing for foods and environmental allergens
+    B: Increase cetirizine up to 4 times the standard dose
+    C: Oral prednisone for 3 months
+    D: Skin biopsy
+    E: Start cyclosporine
+  answer: B
+  explain: |
+    **Chronic spontaneous urticaria (CSU)**: hives (± angioedema) **on most days for >6 weeks**, without an identifiable external trigger. It is an autoimmune mast-cell disorder in many patients (IgG against IgE or its receptor). Wheals that each last **<24 hours** and leave no bruising argue against **urticarial vasculitis**.
+
+    **Extensive testing is not recommended** — only a **CBC and ESR or CRP** (international guideline), with more tests only if clinical clues are present.
+
+    Stepwise treatment (EAACI/GA²LEN/WAO 2022):
+    1. **Second-generation H₁ antihistamine** at standard dose
+    2. **Increase up to 4-fold** (e.g., cetirizine 40 mg/d) if not controlled after 2–4 weeks
+    3. Add **omalizumab** (anti-IgE); dupilumab and remibrutinib are newer options
+    4. **Cyclosporine** for refractory disease
+
+    Avoid long-term systemic steroids (short bursts only for severe flares). NSAIDs can worsen CSU. Most patients remit within 1–5 years.
+  why:
+    A: CSU is not caused by allergens; allergy testing has a very low yield and leads to unnecessary diet restrictions.
+    C: Prolonged systemic glucocorticoids have major toxicity and are not recommended for CSU.
+    D: Skin biopsy is reserved for suspected urticarial vasculitis (wheals >24 hours, burning, bruising, systemic symptoms).
+    E: Cyclosporine is a fourth-step option for disease refractory to high-dose antihistamines and omalizumab.
+  objective: |
+    Treat chronic spontaneous urticaria with a second-generation H₁ antihistamine, increasing to up to 4 times the standard dose before adding omalizumab.
+  refs:
+    - Zuberbier T, et al. The international EAACI/GA²LEN/EuroGuiDerm/APAAACI guideline for urticaria. *Allergy* 2022;77:734.

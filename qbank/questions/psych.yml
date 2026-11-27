@@ -1,16 +1,16 @@
-# Psychiatry — ABIM blueprint 3%
+# Psychiatry — ABIM CERT blueprint
 - id: PS-001
   topic: Alcohol use disorder — pharmacotherapy
   task: Treatment/Care Decisions
   chapters: [psych/alcohol-use, neuro/alcohol-withdrawal]
   stem: |
-    A 45-year-old man comes to the office because he wants help to stop drinking. He drinks 8–10 beers daily and has failed to cut down several times. He finished a supervised outpatient withdrawal 1 week ago and has not had a drink since. He has **opioid use disorder in remission** and has taken **buprenorphine–naloxone** daily for 3 years. He attends weekly counseling.
+    A 45-year-old man comes to the office because he wants help to stop drinking. He drinks 8–10 beers daily and has failed to cut down several times. He finished a supervised outpatient withdrawal 1 week ago and has not had a drink since. He has opioid use disorder in remission and has taken buprenorphine–naloxone daily for 3 years. He attends weekly counseling.
 
     Vital signs are normal. There is no tremor, jaundice or stigmata of chronic liver disease.
   labs:
     - [ALT, 48 U/L]
     - [AST, 66 U/L]
-    - [Bilirubin, total, 0.8 mg/dL]
+    - ["Bilirubin, total", "0.8 mg/dL"]
     - [Albumin, 4.1 g/dL]
     - [Creatinine, 0.9 mg/dL (eGFR >90 mL/min/1.73 m²)]
   lead: Which of the following is the most appropriate medication to help him maintain abstinence from alcohol?
@@ -81,3 +81,328 @@
   refs:
     - US Preventive Services Task Force. Screening for anxiety disorders in adults: recommendation statement. *JAMA* 2023;329:2163.
     - DeMartini J, et al. Generalized anxiety disorder. *Ann Intern Med* 2019;170:ITC49.
+
+
+- id: PS-003
+  topic: Depression — screen for bipolar disorder before an antidepressant
+  task: Diagnosis/Testing
+  chapters: [psych/anxiety-depression, psych/serious-mental-illness]
+  stem: |
+    A 31-year-old woman is evaluated for 6 weeks of low mood, loss of interest, poor sleep, low energy and difficulty concentrating. Her PHQ-9 score is 18. She has no suicidal thoughts. She asks to start "an antidepressant, like my sister takes".
+
+    On further questioning, she describes a period 2 years ago when she slept only 3 hours a night for a week without feeling tired, started several business projects, spent $8,000 on clothes and talked so fast that friends could not keep up. She did not seek care.
+
+    Examination, TSH and CBC are normal.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Bipolar I disorder, current episode depressed
+    B: Borderline personality disorder
+    C: Major depressive disorder
+    D: Persistent depressive disorder (dysthymia)
+    E: Cyclothymic disorder
+  answer: A
+  explain: |
+    She meets criteria for a **major depressive episode** now. Her past history shows a **manic episode**: ≥1 week of **decreased need for sleep, grandiosity/increased goal-directed activity, excessive spending and pressured speech** with marked impairment. **A single lifetime manic episode = bipolar I disorder.**
+
+    Why it matters: **antidepressant monotherapy** in bipolar disorder can **trigger mania, mixed states and rapid cycling**. **Always screen for prior mania or hypomania** (and family history of bipolar disorder) before starting an antidepressant — e.g., with the Mood Disorder Questionnaire.
+
+    Bipolar depression is treated with **quetiapine, lurasidone, lumateperone, cariprazine** or **lamotrigine**, or a mood stabilizer (lithium), not an SSRI alone.
+
+    | | Mania (bipolar I) | Hypomania (bipolar II) |
+    |---|---|---|
+    | Duration | **≥7 days** (or hospitalization) | ≥4 days |
+    | Impairment | **Marked**, may have psychosis | No marked impairment |
+  why:
+    B: Borderline personality disorder causes mood shifts lasting hours, with unstable relationships and self-image, not week-long episodes of decreased need for sleep.
+    C: Major depressive disorder requires that there has never been a manic or hypomanic episode.
+    D: Dysthymia is chronic, milder depression for ≥2 years.
+    E: Cyclothymic disorder involves milder hypomanic and depressive symptoms for ≥2 years that never meet full criteria for an episode.
+  objective: |
+    Screen for a history of mania or hypomania before prescribing an antidepressant; one lifetime manic episode establishes bipolar I disorder.
+  refs:
+    - American Psychiatric Association. *Diagnostic and Statistical Manual of Mental Disorders*, 5th ed, text revision (DSM-5-TR). 2022.
+    - Yatham LN, et al. CANMAT and ISBD 2018 guidelines for the management of patients with bipolar disorder. *Bipolar Disord* 2018;20:97.
+
+- id: PS-004
+  topic: Lithium toxicity — drug interaction
+  task: Pathophysiology/Basic Science
+  chapters: [psych/serious-mental-illness, renal/aki]
+  stem: |
+    A 58-year-old woman with bipolar I disorder that has been stable on lithium for 10 years is brought to the emergency department with 3 days of nausea, diarrhea, coarse tremor, unsteady gait and confusion. Two weeks ago her primary care physician started hydrochlorothiazide for hypertension.
+
+    On physical examination, she is disoriented. There is a coarse tremor, ataxia and hyperreflexia with myoclonic jerks.
+  labs:
+    - ["Lithium level", "2.8 mEq/L (therapeutic 0.6–1.2)"]
+    - ["Sodium", "134 mEq/L"]
+    - ["Creatinine", "1.6 mg/dL (baseline 1.0 mg/dL)"]
+  lead: Which of the following is the most likely mechanism of her lithium toxicity?
+  choices:
+    A: Inhibition of lithium metabolism by the liver
+    B: Increased proximal tubular reabsorption of lithium due to volume contraction
+    C: Increased lithium absorption from the gut
+    D: Displacement of lithium from plasma proteins
+    E: Decreased distal tubular secretion of lithium
+  answer: B
+  explain: |
+    Lithium is **not metabolized or protein-bound** — it is handled like **sodium** by the kidney. About 80% is **reabsorbed in the proximal tubule** alongside sodium.
+
+    **Thiazide diuretics** cause mild volume and sodium depletion → the proximal tubule **reabsorbs more sodium — and lithium** → levels rise 25–40%. The same happens with **ACE inhibitors/ARBs, NSAIDs**, dehydration (vomiting, diarrhea, heat) and low-salt diets. Her vomiting and diarrhea made things worse.
+
+    **Chronic lithium toxicity** affects the brain: tremor, **ataxia, confusion, hyperreflexia, myoclonus, seizures**; also nausea, diarrhea and AKI. Long-term toxicity: **nephrogenic diabetes insipidus**, CKD, **hypothyroidism**, hyperparathyroidism.
+
+    Treatment: stop lithium, **isotonic saline**, and **hemodialysis** for severe toxicity (level >4.0 mEq/L, or >2.5 mEq/L with neurologic symptoms or kidney impairment) — she qualifies. Loop diuretics affect lithium the least.
+  why:
+    A: Lithium is not metabolized by the liver.
+    C: Thiazides do not affect gut absorption of lithium.
+    D: Lithium is not protein-bound, so drugs cannot displace it.
+    E: Lithium is reabsorbed, not secreted, and the thiazide effect is mainly on proximal reabsorption.
+  mnemonic: |
+    Drugs that raise lithium — **"NSAIDs, ACE, Thiazides" = "No ACTion"** for safe lithium levels.
+  objective: |
+    Thiazides, ACE inhibitors, ARBs, NSAIDs and volume depletion raise lithium levels by increasing proximal tubular reabsorption along with sodium.
+  refs:
+    - Baird-Gunning J, et al. Lithium poisoning. *J Intensive Care Med* 2017;32:249.
+    - Decker BS, et al. Extracorporeal treatment for lithium poisoning: EXTRIP workgroup recommendations. *Clin J Am Soc Nephrol* 2015;10:875.
+
+- id: PS-005
+  topic: Second-generation antipsychotics — metabolic monitoring
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [psych/serious-mental-illness, cardiology/lipids]
+  stem: |
+    A 28-year-old man with schizophrenia is evaluated in the primary care clinic. His psychiatrist started olanzapine 3 months ago, and his psychotic symptoms have improved. He has gained 7 kg (15.4 lb). He smokes one pack of cigarettes daily.
+
+    On physical examination, blood pressure is 134/86 mm Hg. BMI is 31 (27 before olanzapine). Waist circumference is 104 cm.
+  labs:
+    - ["Fasting glucose", "118 mg/dL"]
+    - ["Triglycerides", "260 mg/dL"]
+    - ["HDL cholesterol", "34 mg/dL"]
+  lead: Which of the following is the most appropriate recommendation regarding his risk?
+  choices:
+    A: Continue olanzapine without monitoring because benefit outweighs risk
+    B: Discuss switching to a lower-risk antipsychotic with his psychiatrist, address smoking, and monitor weight, glucose and lipids
+    C: Stop olanzapine immediately
+    D: Switch to clozapine
+    E: Begin insulin
+  answer: B
+  explain: |
+    He has developed **metabolic syndrome** (abdominal obesity, high triglycerides, low HDL, impaired fasting glucose, elevated BP) on **olanzapine**. People with serious mental illness die **10–20 years earlier** than the general population, mostly from **cardiovascular disease** — antipsychotic metabolic effects and smoking are major contributors.
+
+    Metabolic risk of second-generation antipsychotics:
+    - **Highest**: **clozapine, olanzapine**
+    - Intermediate: quetiapine, risperidone, paliperidone
+    - **Lowest**: **aripiprazole, ziprasidone, lurasidone**, brexpiprazole, cariprazine
+
+    ADA/APA monitoring: weight/BMI at baseline, monthly for 3 months, then quarterly; **glucose/A1c and lipids at baseline, 12 weeks, then annually**; BP at baseline, 12 weeks, annually.
+
+    Management: coordinate with psychiatry about **switching to a lower-risk agent** if psychiatrically safe; **metformin** reduces antipsychotic-induced weight gain; lifestyle; **smoking cessation** (varenicline is safe and effective in schizophrenia). Statins and antihypertensives as indicated.
+  why:
+    A: Monitoring is required with all second-generation antipsychotics; ignoring metabolic effects risks premature cardiovascular death.
+    C: Abrupt discontinuation risks psychotic relapse; any change should be planned with psychiatry.
+    D: Clozapine has the highest metabolic risk and requires ANC monitoring for agranulocytosis; it is reserved for treatment-resistant schizophrenia.
+    E: His glucose is in the prediabetes range; insulin is not indicated.
+  objective: |
+    Monitor weight, glucose, lipids and blood pressure in patients taking second-generation antipsychotics, and consider switching to lower-risk agents when metabolic complications develop.
+  refs:
+    - American Diabetes Association, American Psychiatric Association, et al. Consensus development conference on antipsychotic drugs and obesity and diabetes. *Diabetes Care* 2004;27:596.
+    - Keepers GA, et al. APA practice guideline for the treatment of patients with schizophrenia, 3rd ed. *Am J Psychiatry* 2020;177:868.
+
+- id: PS-006
+  topic: Opioid use disorder — buprenorphine
+  task: Treatment/Care Decisions
+  chapters: [psych/opioid-use]
+  stem: |
+    A 34-year-old man is hospitalized with cellulitis of the left forearm from injection drug use. He injects heroin and fentanyl several times a day. He has tried to stop on his own twice but relapsed within days because of withdrawal and cravings. He wants help to stop.
+
+    On hospital day 2, he has yawning, rhinorrhea, sweating, dilated pupils, gooseflesh, abdominal cramps and anxiety. His last use was 18 hours ago. His Clinical Opiate Withdrawal Scale (COWS) score is 14 (moderate withdrawal).
+
+    His liver tests are mildly elevated. He is not pregnant.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Clonidine alone, followed by outpatient referral
+    B: Begin buprenorphine now and continue it after discharge
+    C: Begin oral naltrexone today
+    D: Treat withdrawal with oxycodone and taper over 5 days
+    E: Wait until he is discharged and refer to a methadone clinic
+  answer: B
+  explain: |
+    He has **opioid use disorder** (OUD), now in **moderate withdrawal** (COWS ≥8–12). Hospitalization is an important opportunity to start **medication for OUD (MOUD)**.
+
+    **Buprenorphine** (partial μ agonist with very high receptor affinity) and **methadone** (full agonist) **reduce overdose deaths by ~50%**, reduce HIV/HCV transmission and improve retention in care. **Detoxification alone** (withdrawal management without maintenance) leads to relapse in most patients and **increases overdose risk** (lost tolerance).
+
+    Buprenorphine must be started **when the patient is in moderate withdrawal** — otherwise its high affinity **displaces full agonists** and causes **precipitated withdrawal**. With **fentanyl**, which lingers in fat tissue, waiting longer or using low-dose ("micro") induction or high-dose induction helps. No special waiver is required to prescribe it (X-waiver eliminated 2023).
+
+    Also: **naloxone** kit at discharge, HIV/HCV testing, vaccination, and linkage to outpatient care.
+  why:
+    A: Clonidine relieves autonomic withdrawal symptoms but does not treat OUD or reduce overdose risk.
+    C: Naltrexone requires **7–10 days of abstinence** before starting (or it precipitates severe withdrawal), and it has lower retention than buprenorphine.
+    D: A short opioid taper (detox) does not treat OUD, and relapse with lost tolerance increases overdose death.
+    E: Delaying treatment misses the opportunity; buprenorphine can be started in the hospital and continued, and methadone can be started in hospital and bridged to a clinic.
+  objective: |
+    Start buprenorphine (or methadone) for opioid use disorder during hospitalization once the patient is in moderate withdrawal, and continue it after discharge.
+  refs:
+    - ASAM. National practice guideline for the treatment of opioid use disorder: 2020 focused update. *J Addict Med* 2020;14:1.
+    - Larochelle MR, et al. Medication for opioid use disorder after nonfatal opioid overdose and mortality. *Ann Intern Med* 2018;169:137.
+
+- id: PS-007
+  topic: Decision-making capacity
+  task: Diagnosis/Testing
+  chapters: [boards/ethics, geri/goals-of-care]
+  stem: |
+    A 78-year-old man with mild Alzheimer dementia is hospitalized with an infected diabetic foot ulcer. The surgeon recommends a below-knee amputation because of osteomyelitis and gangrene. The patient refuses.
+
+    When asked, he correctly explains that his foot has a serious infection, that without surgery the infection may spread and kill him, and that surgery would mean he could not walk without a prosthesis. He says, "I've lived a good life. I would rather die with both legs than live without one. My wife died last year, and I don't want to be in a nursing home." His answers are the same when asked again the next day. He is oriented to person and place but not to the date. His MoCA score is 19/30.
+
+    His daughter insists that "he has dementia, so he can't decide" and asks you to proceed with surgery.
+  lead: Which of the following is the most appropriate next step?
+  choices:
+    A: Obtain a court order for surgery
+    B: Proceed with surgery with the daughter's consent because he has dementia
+    C: Respect his refusal because he has decision-making capacity for this choice
+    D: Request psychiatry to declare him incompetent
+    E: Sedate him and proceed with surgery as an emergency
+  answer: C
+  explain: |
+    **Decision-making capacity** is a **clinical** judgment, made by the treating physician, about a **specific decision at a specific time**. It is different from **competence**, a legal determination by a court.
+
+    The **four elements** (Appelbaum):
+    1. **Communicate a choice** — consistently ✔
+    2. **Understand** the relevant information ✔
+    3. **Appreciate** how it applies to his own situation ✔
+    4. **Reason** — weigh options in line with his values ✔
+
+    **A diagnosis of dementia does not by itself remove capacity**, nor does a low MoCA or disorientation to date. A choice that others disagree with — even one that may lead to death — is not evidence of incapacity if the reasoning is consistent with the patient's values. Capacity is assessed on a **sliding scale**: high-stakes decisions require more certainty, and he meets that standard.
+
+    Respect his informed refusal, explore his fears (nursing home, loss of independence), offer alternatives (antibiotics, palliative care), document carefully, and support the daughter.
+  why:
+    A: Courts are involved when capacity is in doubt and there is unresolvable conflict; he clearly has capacity.
+    B: Surrogates decide only when the patient lacks capacity.
+    D: Any physician can assess capacity; psychiatry may help in difficult cases, but competence is a legal determination, and his capacity is clear.
+    E: Forced treatment of a patient with capacity is battery.
+  mnemonic: |
+    Capacity = **"CURA"** — **C**ommunicate a choice, **U**nderstand, **R**eason, **A**ppreciate.
+  objective: |
+    Assess decision-making capacity for each specific decision using the ability to communicate a choice, understand, appreciate and reason; a diagnosis of dementia alone does not remove capacity.
+  refs:
+    - Appelbaum PS. Assessment of patients' competence to consent to treatment. *N Engl J Med* 2007;357:1834.
+    - American College of Physicians Ethics Manual, 7th ed. *Ann Intern Med* 2019;170:S1.
+
+- id: PS-008
+  topic: Serotonin syndrome
+  task: Diagnosis/Testing
+  chapters: [neuro/nms-serotonin]
+  stem: |
+    A 45-year-old woman with depression treated with sertraline is brought to the emergency department with 6 hours of agitation, sweating, diarrhea and shaking. Two days ago she was given tramadol for back pain, and this morning she took dextromethorphan cough syrup.
+
+    On physical examination, temperature is 38.9 °C (102.0 °F), blood pressure is 162/96 mm Hg, pulse rate is 124/min. She is agitated and diaphoretic. Pupils are dilated. Bowel sounds are hyperactive. There is inducible ankle clonus, ocular clonus and hyperreflexia, more prominent in the legs. There is no lead-pipe rigidity.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Anticholinergic toxicity
+    B: Malignant hyperthermia
+    C: Neuroleptic malignant syndrome
+    D: Serotonin syndrome
+    E: Sympathomimetic toxicity
+  answer: D
+  explain: |
+    **Serotonin syndrome**: within hours of adding serotonergic drugs (**SSRI + tramadol + dextromethorphan**), the triad of:
+    - **Neuromuscular hyperactivity** — **clonus** (inducible, spontaneous, ocular), **hyperreflexia** (legs > arms), tremor
+    - **Autonomic instability** — hyperthermia, tachycardia, hypertension, diaphoresis, mydriasis, **diarrhea/hyperactive bowel sounds**
+    - **Altered mental status** — agitation
+
+    The **Hunter criteria** (serotonergic drug + clonus or hypertonia/hyperthermia) are the most accurate.
+
+    Treat: **stop serotonergic drugs**, supportive care, **benzodiazepines**, and **cyproheptadine** (5-HT2A antagonist) for moderate cases; severe hyperthermia (>41 °C) → sedation, paralysis and intubation. Antipyretics do not help (muscle-generated heat).
+
+    | | Serotonin syndrome | NMS |
+    |---|---|---|
+    | Drug | Serotonergic | **Dopamine antagonist** (or stopping levodopa) |
+    | Onset | **Hours** | Days |
+    | Muscles | **Clonus, hyperreflexia** | **Lead-pipe rigidity**, bradyreflexia |
+    | GI | Diarrhea | Normal |
+    | Treatment | Cyproheptadine, benzos | Dantrolene, bromocriptine |
+  why:
+    A: Anticholinergic toxicity causes dry skin, urinary retention, decreased bowel sounds and no clonus ("dry as a bone").
+    B: Malignant hyperthermia follows volatile anesthetics or succinylcholine.
+    C: NMS develops over days after dopamine antagonists, with lead-pipe rigidity and slow reflexes, not clonus.
+    E: Sympathomimetics (cocaine, amphetamines) cause agitation, mydriasis, sweating and tachycardia, but not clonus or hyperreflexia.
+  objective: |
+    Recognize serotonin syndrome by clonus, hyperreflexia, autonomic instability and agitation shortly after adding serotonergic drugs, and distinguish it from neuroleptic malignant syndrome.
+  refs:
+    - Boyer EW, Shannon M. The serotonin syndrome. *N Engl J Med* 2005;352:1112.
+    - Dunkley EJC, et al. The Hunter serotonin toxicity criteria. *QJM* 2003;96:635.
+
+- id: PS-009
+  topic: Chronic insomnia
+  task: Treatment/Care Decisions
+  chapters: [psych/anxiety-depression]
+  stem: |
+    A 52-year-old woman is evaluated for 8 months of difficulty falling asleep and staying asleep at least 4 nights a week, with daytime fatigue and irritability. She lies in bed worrying about sleep, watches TV in bed and naps in the afternoon. She drinks two cups of coffee in the morning. She does not snore and has no leg discomfort at night. She is perimenopausal without hot flashes. PHQ-9 and GAD-7 scores are low.
+
+    Examination is normal.
+  lead: Which of the following is the most appropriate initial treatment?
+  choices:
+    A: Cognitive behavioral therapy for insomnia (CBT-I)
+    B: Diphenhydramine at bedtime
+    C: Lorazepam at bedtime
+    D: Polysomnography
+    E: Zolpidem nightly for 1 year
+  answer: A
+  explain: |
+    **Chronic insomnia disorder**: difficulty initiating or maintaining sleep **≥3 nights per week for ≥3 months**, with daytime impairment, despite adequate opportunity. Contributing behaviors here: **watching TV in bed, napping, worrying in bed (conditioned arousal)**.
+
+    The ACP and AASM recommend **cognitive behavioral therapy for insomnia (CBT-I)** as **first-line** for all adults — including older adults. It has durable benefits that outlast medications. Components:
+    - **Sleep restriction** (limit time in bed to actual sleep time)
+    - **Stimulus control** (bed only for sleep and sex; get up if not asleep in 20 minutes)
+    - **Cognitive therapy** (catastrophic thoughts about sleep)
+    - Sleep hygiene and relaxation
+
+    Digital CBT-I programs work. Medications (low-dose doxepin, orexin antagonists like suvorexant/daridorexant, short-term Z-drugs) are second-line and short-term.
+  why:
+    B: Diphenhydramine is anticholinergic, causes next-day sedation and confusion, and has little evidence for chronic insomnia.
+    C: Benzodiazepines cause dependence, falls, cognitive impairment and tolerance.
+    D: Polysomnography is for suspected sleep apnea, periodic limb movements or parasomnias, not routine insomnia.
+    E: Long-term hypnotics carry risks (complex sleep behaviors, falls) and do not address the underlying behaviors; CBT-I comes first.
+  objective: |
+    Treat chronic insomnia disorder with cognitive behavioral therapy for insomnia as first-line therapy.
+  refs:
+    - Qaseem A, et al. Management of chronic insomnia disorder in adults: ACP clinical practice guideline. *Ann Intern Med* 2016;165:125.
+    - Edinger JD, et al. Behavioral and psychological treatments for chronic insomnia disorder in adults: AASM clinical practice guideline. *J Clin Sleep Med* 2021;17:255.
+
+- id: PS-010
+  topic: Refeeding syndrome in anorexia nervosa
+  task: Pathophysiology/Basic Science
+  chapters: [renal/hypophosphatemia]
+  stem: |
+    A 22-year-old woman with anorexia nervosa is hospitalized for medical stabilization. Her BMI is 13.8. She has eaten very little for 3 weeks. Nutrition support with oral feeds was started 3 days ago.
+
+    Today she has new weakness, shortness of breath, leg edema and confusion.
+
+    On physical examination, pulse rate is 118/min and respiration rate is 26/min. There is bilateral pitting edema and crackles at the lung bases.
+  labs:
+    - ["Phosphorus", "0.9 mg/dL (3.4 mg/dL on admission)"]
+    - ["Potassium", "2.8 mEq/L"]
+    - ["Magnesium", "1.2 mg/dL"]
+    - ["Glucose", "168 mg/dL"]
+  lead: Which of the following is the primary mechanism of her electrolyte abnormalities?
+  choices:
+    A: Increased urinary losses from diuretic abuse
+    B: Insulin-driven intracellular shift of phosphate, potassium and magnesium
+    C: Primary hyperparathyroidism
+    D: Gastrointestinal losses from self-induced vomiting
+    E: Vitamin D deficiency
+  answer: B
+  explain: |
+    **Refeeding syndrome**: in prolonged starvation, total-body **phosphate, potassium and magnesium are depleted**, though serum levels can be normal. When carbohydrates are reintroduced, **insulin surges**, driving glucose — and with it **phosphate, potassium and magnesium — into cells**. Phosphate is consumed to make **ATP and 2,3-DPG** for glycolysis. **Thiamine** is used up too.
+
+    Severe **hypophosphatemia** (<1 mg/dL) causes **respiratory muscle weakness, heart failure, arrhythmias, rhabdomyolysis, hemolysis, seizures and delirium**. Sodium and fluid retention (insulin effect) add edema and heart failure.
+
+    Prevention (NICE/ASPEN): identify high-risk patients (BMI <16, little intake >10 days, low baseline K/P/Mg), **start feeding slowly (10–20 kcal/kg/d) and advance gradually**, give **thiamine before feeding**, and **monitor and replace** phosphate, potassium and magnesium daily for the first 3–7 days.
+  why:
+    A: Diuretic abuse causes hypokalemia and metabolic alkalosis but does not explain the sharp fall in phosphate after refeeding began.
+    C: Primary hyperparathyroidism causes hypercalcemia with mild hypophosphatemia, not an acute fall after nutrition.
+    D: Vomiting causes hypokalemic metabolic alkalosis but not severe hypophosphatemia timed to refeeding.
+    E: Vitamin D deficiency causes slowly developing hypophosphatemia, not acute symptomatic depletion in days.
+  objective: |
+    Refeeding syndrome results from insulin-driven intracellular shifts of phosphate, potassium and magnesium in previously starved patients; prevent it with slow feeding, thiamine and close electrolyte replacement.
+  refs:
+    - da Silva JSV, et al. ASPEN consensus recommendations for refeeding syndrome. *Nutr Clin Pract* 2020;35:178.
+    - Mehanna HM, et al. Refeeding syndrome: what it is, and how to prevent and treat it. *BMJ* 2008;336:1495.
