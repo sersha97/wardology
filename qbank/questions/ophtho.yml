@@ -1,12 +1,12 @@
-# Ophthalmology — ABIM blueprint 1%
+# Ophthalmology — ABIM CERT blueprint
 - id: OP-001
   topic: Acute angle-closure glaucoma
   task: Treatment/Care Decisions
   chapters: [eye-ent/red-eye]
   stem: |
-    A 66-year-old woman comes to the emergency department 2 hours after the sudden onset of **severe pain in her right eye**, blurred vision, **halos around lights**, frontal headache, nausea and vomiting. Symptoms began while she was watching a movie in a **dark theater**. She is farsighted. She took an over-the-counter cold remedy containing diphenhydramine this morning.
+    A 66-year-old woman comes to the emergency department 2 hours after the sudden onset of severe pain in her right eye, blurred vision, halos around lights, frontal headache, nausea and vomiting. Symptoms began while she was watching a movie in a dark theater. She is farsighted. She took an over-the-counter cold remedy containing diphenhydramine this morning.
 
-    Visual acuity is counting fingers in the right eye and 20/25 in the left. The right eye shows conjunctival injection most intense around the cornea, a **hazy cornea** and a **mid-dilated pupil that reacts poorly** to light. The right globe feels **hard** on gentle palpation.
+    Visual acuity is counting fingers in the right eye and 20/25 in the left. The right eye shows conjunctival injection most intense around the cornea, a hazy cornea and a mid-dilated pupil that reacts poorly to light. The right globe feels hard on gentle palpation.
   lead: Which of the following is the most appropriate management?
   choices:
     A: Dilate the pupil with tropicamide to examine the fundus
@@ -36,3 +36,81 @@
     Acute angle-closure glaucoma presents with a painful red eye, halos, a cloudy cornea and a mid-dilated fixed pupil; lower intraocular pressure immediately and arrange emergency laser iridotomy.
   refs:
     - Gedde SJ, et al. Primary angle-closure disease Preferred Practice Pattern (American Academy of Ophthalmology). *Ophthalmology* 2021;128:P30.
+
+
+- id: OP-002
+  topic: Painful Horner syndrome — carotid dissection
+  task: Diagnosis/Testing
+  chapters: [eye-ent/neuro-eye, neuro/stroke]
+  stem: |
+    A 42-year-old man is evaluated for 2 days of left-sided neck pain and headache that began after a vigorous chiropractic neck manipulation. Today his wife noticed that his left eyelid droops.
+
+    On physical examination, blood pressure is 134/82 mm Hg. There is left ptosis (mild) and a smaller left pupil. The anisocoria is greater in dim light, and the left pupil dilates slowly after the lights are turned off. Both pupils react to light. Extraocular movements are full. There is no facial weakness, limb weakness or sensory loss. Facial sweating is normal.
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: CT or MR angiography of the head and neck
+    B: Chest radiograph only
+    C: Edrophonium test
+    D: MRI of the orbits
+    E: Reassurance and follow-up in 1 month
+  answer: A
+  explain: |
+    **Ptosis + miosis** (anisocoria **worse in the dark**, with **dilation lag**) = **Horner syndrome** (loss of sympathetic input to the eye). With acute **ipsilateral neck pain and headache** after neck manipulation, this is **internal carotid artery dissection until proven otherwise**. The sympathetic fibers run along the internal carotid artery wall. Sweating is spared because facial sweat fibers travel with the external carotid.
+
+    **CT angiography or MR angiography of the head and neck** urgently — dissection is a leading cause of **stroke in young adults**. Treatment: antiplatelet or anticoagulant therapy (similar outcomes in CADISS/TREAT-CAD).
+
+    **Anisocoria rules:**
+    | Anisocoria worse in | Abnormal pupil | Causes |
+    |---|---|---|
+    | **Dark** | **Small** pupil can't dilate | **Horner** (dissection, Pancoast tumor, stroke), physiologic |
+    | **Light** | **Large** pupil can't constrict | **CN III palsy** (aneurysm — "down and out," ptosis), **Adie tonic pupil**, pharmacologic (scopolamine) |
+
+    A **painful third-nerve palsy with a dilated pupil** = posterior communicating artery **aneurysm** → emergency CTA.
+  why:
+    B: A chest radiograph or CT looks for a Pancoast tumor in chronic Horner syndrome with arm pain or smoking history; this acute painful presentation needs vascular imaging.
+    C: Edrophonium testing is for myasthenia gravis, which causes ptosis without pupillary changes.
+    D: Orbital MRI does not assess the carotid artery along the sympathetic pathway.
+    E: Painful acute Horner syndrome is an emergency because of stroke risk.
+  objective: |
+    Acute painful Horner syndrome with neck pain requires urgent CT or MR angiography of the head and neck to exclude carotid artery dissection.
+  refs:
+    - Kedar S, et al. Pupillary abnormalities: Horner syndrome. *Curr Opin Ophthalmol* 2019;30:427.
+    - Debette S, et al. ESO guideline for the management of extracranial and intracranial artery dissection. *Eur Stroke J* 2021;6:XXXIX.
+
+- id: OP-003
+  topic: Central retinal artery occlusion
+  task: Treatment/Care Decisions
+  chapters: [eye-ent/neuro-eye, neuro/stroke]
+  stem: |
+    A 71-year-old man is evaluated for sudden, painless, complete loss of vision in his right eye that began 2 hours ago. He has hypertension, hyperlipidemia and type 2 diabetes, and smokes. He has no headache, jaw pain or scalp tenderness.
+
+    On physical examination, blood pressure is 158/92 mm Hg and pulse rate is 88/min and irregularly irregular. Visual acuity is hand motion in the right eye. There is a right relative afferent pupillary defect. Funduscopy shows a pale, whitened retina with a cherry-red spot at the fovea and a refractile plaque at an arteriolar bifurcation.
+  labs:
+    - ["ESR", "14 mm/h"]
+    - ["C-reactive protein", "normal"]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Emergency referral to a stroke center for evaluation as an acute ischemic stroke
+    B: High-dose oral prednisone
+    C: Ocular massage at home and outpatient ophthalmology follow-up in 1 week
+    D: Outpatient carotid ultrasonography in 2 weeks
+    E: Topical timolol drops
+  answer: A
+  explain: |
+    Sudden painless monocular vision loss with a **cherry-red spot** (the fovea retains its choroidal blood supply while the surrounding ischemic retina turns white) and an embolic **Hollenhorst plaque** = **central retinal artery occlusion (CRAO)** — a **stroke of the eye**.
+
+    CRAO is a **neurologic emergency**: the risk of **cerebral stroke** is highest in the first week. AHA 2021 recommends **immediate referral to an emergency department or stroke center**:
+    - Consider **IV thrombolysis** within 4.5 hours at stroke centers (evidence emerging).
+    - Urgent **stroke work-up**: brain MRI (silent infarcts in ~25%), **carotid imaging**, ECG/telemetry (his irregular pulse suggests **atrial fibrillation**), echocardiography, lipids, A1c.
+    - **Exclude giant cell arteritis** in patients >50 (ESR/CRP; here normal and no symptoms).
+
+    Older "conservative" therapies (ocular massage, paracentesis, lowering intraocular pressure) have no proven benefit.
+  why:
+    B: Glucocorticoids are for arteritic CRAO from giant cell arteritis; his inflammatory markers are normal and he has no GCA symptoms.
+    C: Ocular massage is unproven, and outpatient follow-up misses the window for stroke prevention.
+    D: Carotid imaging is needed, but urgently as part of an inpatient or emergency stroke evaluation.
+    E: Lowering intraocular pressure does not restore retinal perfusion in CRAO.
+  objective: |
+    Treat central retinal artery occlusion as an acute ischemic stroke with emergency referral to a stroke center and an urgent stroke evaluation.
+  refs:
+    - Mac Grory B, et al. Management of central retinal artery occlusion: a scientific statement from the AHA. *Stroke* 2021;52:e282.

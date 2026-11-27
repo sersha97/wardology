@@ -1,10 +1,10 @@
-# Cardiovascular Disease — ABIM blueprint 15%
+# Cardiovascular Disease — ABIM CERT blueprint
 - id: CV-001
   topic: Essential hypertension
   task: Treatment/Care Decisions
   chapters: [cardiology/hypertension]
   stem: |
-    A 49-year-old man comes to the office to review his blood pressure log. Three months ago his office blood pressure was 158/96 mm Hg. Since then he has cut back on salt, walks 30 minutes most days and has lost 2 kg (4.4 lb). His validated home cuff now shows an average of **156/98 mm Hg** over the last 2 weeks. He has no symptoms. He does not have diabetes and does not smoke. His father had a myocardial infarction at age 61.
+    A 49-year-old man comes to the office to review his blood pressure log. Three months ago his office blood pressure was 158/96 mm Hg. Since then he has cut back on salt, walks 30 minutes most days and has lost 2 kg (4.4 lb). His validated home cuff now shows an average of 156/98 mm Hg over the last 2 weeks. He has no symptoms. He does not have diabetes and does not smoke. His father had a myocardial infarction at age 61.
 
     Blood pressure in the office today is 154/97 mm Hg in both arms; pulse is 74/min. BMI is 29 kg/m². Cardiac examination is normal and there is no edema.
   labs:
@@ -55,7 +55,7 @@
   stem: |
     A 61-year-old woman comes to the office for a routine visit. She ran out of her amlodipine and chlorthalidone 8 days ago and did not refill them. She feels well. She has no headache, chest pain, dyspnea, visual change or weakness.
 
-    Blood pressure is **194/112 mm Hg**, rechecked after 10 minutes of quiet rest at 190/110 mm Hg; pulse is 78/min. She is alert and oriented. Fundoscopic examination shows mild arteriolar narrowing without hemorrhages, exudates or papilledema. Heart and lung examination is normal, and neurologic examination is nonfocal.
+    Blood pressure is 194/112 mm Hg, rechecked after 10 minutes of quiet rest at 190/110 mm Hg; pulse is 78/min. She is alert and oriented. Fundoscopic examination shows mild arteriolar narrowing without hemorrhages, exudates or papilledema. Heart and lung examination is normal, and neurologic examination is nonfocal.
   labs:
     - [Creatinine, 1.0 mg/dL (baseline 1.0 mg/dL)]
     - [Urinalysis, no blood or protein]
@@ -101,7 +101,7 @@
   stem: |
     A 79-year-old woman is evaluated after two episodes of sudden loss of consciousness in the past week. Each episode came without warning while she was sitting, and she recovered within a minute. She has hypertension treated with lisinopril. She takes no other medications and has not traveled or had tick bites.
 
-    Blood pressure is 152/64 mm Hg and pulse is **38/min**, regular. Cannon *a* waves are seen in the jugular venous pulse. The first heart sound varies in intensity. A rhythm strip is shown.
+    Blood pressure is 152/64 mm Hg and pulse is 38/min, regular. Cannon *a* waves are seen in the jugular venous pulse. The first heart sound varies in intensity. A rhythm strip is shown.
   media:
     - ecg: chb
       caption: Lead II rhythm strip
@@ -204,7 +204,7 @@
   stem: |
     An 82-year-old man is evaluated for 4 months of breathlessness when he climbs one flight of stairs. Last week he felt lightheaded and had to sit down while carrying groceries. He has hypertension and hyperlipidemia. He lives independently, drives and walks his dog daily.
 
-    Blood pressure is 134/78 mm Hg and pulse is 70/min. There is a grade 3/6 **late-peaking crescendo–decrescendo systolic murmur** at the right upper sternal border that radiates to both carotids. The aortic component of S₂ is soft. Carotid upstrokes are delayed and weak.
+    Blood pressure is 134/78 mm Hg and pulse is 70/min. There is a grade 3/6 late-peaking crescendo–decrescendo systolic murmur at the right upper sternal border that radiates to both carotids. The aortic component of S₂ is soft. Carotid upstrokes are delayed and weak.
   labs:
     - [Echocardiogram — aortic valve area, 0.7 cm²]
     - [Echocardiogram — mean gradient, 48 mm Hg]
@@ -247,7 +247,7 @@
   task: Treatment/Care Decisions
   chapters: [cardiology/lipids, cardiology/nste-acs]
   stem: |
-    A 62-year-old man comes for follow-up 6 months after a non-ST-elevation myocardial infarction treated with a drug-eluting stent. He takes aspirin, ticagrelor, metoprolol succinate, lisinopril and **atorvastatin 80 mg daily**. He reports taking every dose and has no muscle pain. He walks 40 minutes daily and follows a Mediterranean diet.
+    A 62-year-old man comes for follow-up 6 months after a non-ST-elevation myocardial infarction treated with a drug-eluting stent. He takes aspirin, ticagrelor, metoprolol succinate, lisinopril and atorvastatin 80 mg daily. He reports taking every dose and has no muscle pain. He walks 40 minutes daily and follows a Mediterranean diet.
 
     Blood pressure is 124/76 mm Hg. Examination is normal.
   labs:
@@ -339,9 +339,9 @@
   task: Treatment/Care Decisions
   chapters: [cardiology/hfref]
   stem: |
-    A 64-year-old man with ischemic cardiomyopathy comes for follow-up. He gets short of breath after walking about two blocks but has no dyspnea at rest, orthopnea or edema. Over the past 6 months his medicines were titrated to **sacubitril–valsartan** 97/103 mg twice daily, **metoprolol succinate** 200 mg daily, **spironolactone** 25 mg daily and furosemide 20 mg daily. He does not have diabetes.
+    A 64-year-old man with ischemic cardiomyopathy comes for follow-up. He gets short of breath after walking about two blocks but has no dyspnea at rest, orthopnea or edema. Over the past 6 months his medicines were titrated to sacubitril–valsartan 97/103 mg twice daily, metoprolol succinate 200 mg daily, spironolactone 25 mg daily and furosemide 20 mg daily. He does not have diabetes.
 
-    Blood pressure is 112/70 mm Hg and pulse is 60/min, regular. Jugular venous pressure is normal and the lungs are clear. There is no edema. Echocardiography last month showed a **left ventricular ejection fraction of 30%**.
+    Blood pressure is 112/70 mm Hg and pulse is 60/min, regular. Jugular venous pressure is normal and the lungs are clear. There is no edema. Echocardiography last month showed a left ventricular ejection fraction of 30%.
   labs:
     - [Sodium, 138 mEq/L]
     - [Potassium, 4.6 mEq/L]
@@ -380,3 +380,1065 @@
   refs:
     - Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. *Circulation* 2022;145:e895.
     - McMurray JJV, et al. Dapagliflozin in patients with heart failure and reduced ejection fraction (DAPA-HF). *N Engl J Med* 2019;381:1995.
+
+
+- id: CV-009
+  topic: Primary aldosteronism — screening
+  task: Diagnosis/Testing
+  chapters: [cardiology/hypertension, endo/adrenal]
+  stem: |
+    A 52-year-old woman is evaluated during a follow-up visit for hypertension diagnosed 4 years ago. Her blood pressure has remained elevated despite adherence to amlodipine, 10 mg/d; lisinopril, 40 mg/d; and chlorthalidone, 25 mg/d. Home blood pressure readings average 152/94 mm Hg. She reports occasional muscle cramps. She does not drink alcohol or use NSAIDs.
+
+    On physical examination, blood pressure is 156/96 mm Hg and pulse rate is 72/min. BMI is 27. There is no abdominal bruit. The remainder of the examination is unremarkable.
+  labs:
+    - ["Sodium", "143 mEq/L"]
+    - ["Potassium", "3.2 mEq/L"]
+    - ["Bicarbonate", "31 mEq/L"]
+    - ["Creatinine", "0.8 mg/dL"]
+  lead: Which of the following is the most appropriate diagnostic test to perform next?
+  choices:
+    A: 24-hour urine metanephrines
+    B: Adrenal-protocol CT scan
+    C: Kidney artery duplex ultrasonography
+    D: Plasma aldosterone concentration and plasma renin activity
+    E: Overnight 1-mg dexamethasone suppression test
+  answer: D
+  explain: |
+    She has **resistant hypertension** (above goal on three drugs at full dose, one a diuretic) plus **hypokalemia and metabolic alkalosis**. That trio points to **primary aldosteronism**, the most common curable cause of secondary hypertension (about 1 in 10 hypertensive patients, up to 1 in 5 with resistant hypertension).
+
+    Screen with a **morning plasma aldosterone concentration (PAC) and plasma renin activity (PRA)**. A positive screen is a **suppressed renin with a PAC ≥10–15 ng/dL** (aldosterone-to-renin ratio >20–30). Most antihypertensives can be continued for screening; correct hypokalemia first, because low potassium lowers aldosterone and can produce a false-negative result.
+
+    | Step | Test |
+    |---|---|
+    | 1. Screen | PAC + PRA (ratio) |
+    | 2. Confirm | Oral salt loading or saline infusion (skip if K⁺ low, renin suppressed and PAC >20 ng/dL) |
+    | 3. Subtype | Adrenal CT, then **adrenal vein sampling** if surgery is being considered |
+    | 4. Treat | Unilateral → laparoscopic adrenalectomy; bilateral → spironolactone or eplerenone |
+  why:
+    A: Metanephrines screen for pheochromocytoma, which causes paroxysmal symptoms (headache, palpitations, sweating) and does not explain hypokalemic metabolic alkalosis.
+    B: Imaging comes only after biochemical confirmation. Adrenal nodules are common and usually nonfunctioning, so CT first leads to false conclusions.
+    C: Renovascular disease is possible in resistant hypertension, but the hypokalemia and alkalosis make aldosterone excess the first thing to test. There is also no bruit or rise in creatinine with the ACE inhibitor.
+    E: The dexamethasone suppression test screens for cortisol excess. She has no cushingoid features.
+  mnemonic: |
+    **"Low K, high BP, think the A in RAA"** — hypokalemia + hypertension = check **A**ldosterone and renin.
+  pearl: |
+    Current guidance (Endocrine Society 2025) urges screening for primary aldosteronism in **all** patients with hypertension, not only those with resistance or hypokalemia. Most patients with the disease have a **normal** potassium.
+  objective: |
+    Screen for primary aldosteronism with a plasma aldosterone concentration and plasma renin activity in patients with resistant hypertension or hypertension with hypokalemia.
+  refs:
+    - Adler GK, et al. Primary aldosteronism: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2025.
+    - 2025 AHA/ACC multisociety high blood pressure guideline. *Hypertension* 2025.
+
+- id: CV-010
+  topic: Renovascular hypertension — fibromuscular dysplasia
+  task: Diagnosis/Testing
+  chapters: [cardiology/hypertension]
+  stem: |
+    A 31-year-old woman is evaluated for hypertension found at a routine visit 2 months ago and confirmed by home readings averaging 158/100 mm Hg. She has no symptoms. She has never smoked. She takes no medications, including oral contraceptives, and her family history is negative for hypertension.
+
+    On physical examination, blood pressure is 160/102 mm Hg in both arms and pulse rate is 68/min. BMI is 22. A systolic-diastolic bruit is heard in the right upper abdominal quadrant. The remainder of the examination is normal.
+  labs:
+    - ["Potassium", "3.6 mEq/L"]
+    - ["Creatinine", "0.7 mg/dL"]
+    - ["Urinalysis", "normal"]
+    - ["TSH", "1.8 µU/mL"]
+  lead: Which of the following is the most appropriate diagnostic test?
+  choices:
+    A: CT angiography of the abdomen
+    B: Kidney biopsy
+    C: Plasma metanephrines
+    D: Polysomnography
+    E: Kidney scintigraphy with captopril
+  answer: A
+  explain: |
+    New, significant hypertension in a **young woman without risk factors**, with an **abdominal bruit**, is **fibromuscular dysplasia (FMD)** until proven otherwise. FMD is a nonatherosclerotic, noninflammatory disease of medium-sized arteries; the kidney and carotid arteries are most often affected, classically with a **"string of beads"** appearance in the mid-to-distal renal artery.
+
+    Image the renal arteries with **CT angiography** (or MR angiography; duplex ultrasonography in an experienced laboratory is acceptable). Catheter angiography is the reference standard and is usually done when intervention is planned.
+
+    Unlike atherosclerotic renal artery stenosis — where stenting rarely beats medical therapy — FMD responds well to **percutaneous balloon angioplasty without stenting**, and hypertension is often cured. Because FMD is a systemic arteriopathy, a one-time **head-to-pelvis vascular imaging** study looks for aneurysms and dissection elsewhere.
+
+    | | FMD | Atherosclerotic RAS |
+    |---|---|---|
+    | Patient | Woman, 15–50 y | Older, smoker, diffuse atherosclerosis |
+    | Location | Mid/distal renal artery | Ostium/proximal |
+    | Treatment | Angioplasty (no stent) | Medical therapy (statin, antiplatelet, BP control) |
+  why:
+    B: Her urinalysis and kidney function are normal. Nothing suggests parenchymal kidney disease.
+    C: Pheochromocytoma is rare and causes paroxysms; it does not produce an abdominal bruit.
+    D: Sleep apnea is a common cause of secondary hypertension, but she has a normal BMI and the bruit points to a vascular cause.
+    E: Captopril renography has poor sensitivity and specificity and is no longer recommended for diagnosing renovascular disease.
+  pearl: |
+    Clues to renovascular hypertension — onset **<30 or >55 years**, abrupt worsening of previously controlled BP, **creatinine rise >30% after an ACE inhibitor/ARB**, flash pulmonary edema, unexplained small kidney, or an abdominal bruit.
+  objective: |
+    Suspect fibromuscular dysplasia in a young woman with new hypertension and an abdominal bruit, and confirm it with CT or MR angiography.
+  refs:
+    - Gornik HL, et al. First international consensus on the diagnosis and management of fibromuscular dysplasia. *Vasc Med* 2019;24:164.
+    - 2025 AHA/ACC multisociety high blood pressure guideline. *Hypertension* 2025.
+
+- id: CV-011
+  topic: White-coat hypertension
+  task: Diagnosis/Testing
+  chapters: [cardiology/hypertension]
+  stem: |
+    A 46-year-old man is evaluated after three office visits over 2 months with elevated blood pressure. He has no symptoms and no medical history. He does not smoke. He exercises regularly.
+
+    His office readings were 148/92, 150/94 and 146/90 mm Hg. Home readings with a validated upper-arm device, taken twice daily for 1 week, average 122/76 mm Hg.
+
+    On physical examination today, blood pressure is 148/94 mm Hg and pulse rate is 84/min. BMI is 24. The remainder of the examination is normal. Basic metabolic panel, lipid levels and urinalysis are normal; 10-year ASCVD risk is 4%.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Begin chlorthalidone
+    B: Confirm with 24-hour ambulatory blood pressure monitoring
+    C: Obtain an echocardiogram
+    D: Reassure him and stop all future blood pressure checks
+    E: Measure plasma aldosterone and renin
+  answer: B
+  explain: |
+    Office readings are high, home readings are normal: this pattern suggests **white-coat hypertension**. Before labeling and treating — or dismissing — him, confirm the pattern with the reference standard, **24-hour ambulatory blood pressure monitoring (ABPM)**. Thresholds for hypertension on out-of-office testing are lower than in the office.
+
+    | Measurement | Hypertension threshold |
+    |---|---|
+    | Office | ≥130/80 |
+    | Home average | ≥130/80 |
+    | ABPM daytime (awake) | ≥130/80 |
+    | ABPM nighttime | ≥110/65 |
+    | ABPM 24-hour | ≥125/75 |
+
+    If ABPM confirms white-coat hypertension, he does **not** need drug therapy, but he needs **periodic out-of-office monitoring** because about 1 in 5 people with this pattern develop sustained hypertension within a few years.
+  why:
+    A: Treating white-coat hypertension causes hypotension at home and adds no proven benefit. Confirm the diagnosis first.
+    C: Echocardiography is not part of the routine evaluation of newly elevated blood pressure.
+    D: White-coat hypertension carries a modestly higher risk of developing sustained hypertension. He needs ongoing out-of-office monitoring, not discharge from follow-up.
+    E: Secondary-hypertension testing is premature before the diagnosis of hypertension itself is confirmed.
+  pearl: |
+    The mirror image — **normal office, high home readings** — is **masked hypertension**. It carries the same cardiovascular risk as sustained hypertension and is treated as such.
+  objective: |
+    Confirm suspected white-coat hypertension with 24-hour ambulatory blood pressure monitoring before starting or withholding treatment.
+  refs:
+    - 2025 AHA/ACC multisociety high blood pressure guideline. *Hypertension* 2025.
+    - US Preventive Services Task Force. Screening for hypertension in adults. *JAMA* 2021;325:1650.
+
+- id: CV-012
+  topic: Resistant hypertension — fourth drug
+  task: Treatment/Care Decisions
+  chapters: [cardiology/hypertension]
+  stem: |
+    A 64-year-old man is evaluated for uncontrolled hypertension. He takes olmesartan, 40 mg/d; amlodipine, 10 mg/d; and chlorthalidone, 25 mg/d, and his pharmacy confirms on-time refills. Home readings average 148/88 mm Hg. He has type 2 diabetes treated with metformin. He does not take NSAIDs, decongestants or supplements. Polysomnography last year was normal.
+
+    On physical examination, blood pressure is 150/90 mm Hg and pulse rate is 70/min. BMI is 30. The remainder of the examination is unremarkable.
+  labs:
+    - ["Potassium", "4.2 mEq/L"]
+    - ["Creatinine", "1.0 mg/dL"]
+    - ["eGFR", "78 mL/min/1.73 m²"]
+    - ["Plasma aldosterone-to-renin ratio", "8 (not suggestive of primary aldosteronism)"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Add clonidine
+    B: Add lisinopril
+    C: Add spironolactone
+    D: Add hydralazine
+    E: Refer for renal denervation
+  answer: C
+  explain: |
+    He has **true resistant hypertension**: above goal on three drugs of different classes at maximal doses, including a diuretic, with adherence confirmed, white-coat effect excluded by home readings, and common secondary causes (sleep apnea, aldosteronism, interfering drugs) addressed.
+
+    The best fourth drug is a **mineralocorticoid receptor antagonist — spironolactone** (25–50 mg/d). In the PATHWAY-2 trial it lowered blood pressure more than bisoprolol or doxazosin. Many patients with resistant hypertension have relative aldosterone excess and volume expansion even with normal screening.
+
+    Watch potassium and creatinine, especially with an ARB, diabetes or reduced eGFR. If spironolactone causes gynecomastia, switch to **eplerenone**. If potassium is a problem, amiloride is an alternative.
+  why:
+    A: Clonidine causes sedation, dry mouth and rebound hypertension if doses are missed. It is a late option.
+    B: Combining an ACE inhibitor with an ARB (dual RAAS blockade) raises the risk of hyperkalemia and AKI with no outcome benefit.
+    D: Hydralazine causes reflex tachycardia and fluid retention and is reserved for later steps.
+    E: Renal denervation is an option only after optimal medical therapy (including an MRA) fails or is not tolerated, in selected patients at experienced centers.
+  pearl: |
+    Before calling hypertension "resistant", rule out **pseudoresistance** — poor technique (small cuff), white-coat effect, nonadherence, inadequate doses, and interfering substances (NSAIDs, decongestants, stimulants, alcohol, licorice).
+  objective: |
+    Add spironolactone as the fourth drug in true resistant hypertension.
+  refs:
+    - Williams B, et al. Spironolactone versus placebo, bisoprolol, and doxazosin in drug-resistant hypertension (PATHWAY-2). *Lancet* 2015;386:2059.
+    - Carey RM, et al. Resistant hypertension: AHA scientific statement. *Hypertension* 2018;72:e53.
+
+- id: CV-013
+  topic: ACE inhibitor–induced cough
+  task: Pathophysiology/Basic Science
+  chapters: [cardiology/hypertension]
+  stem: |
+    A 58-year-old woman is evaluated for a dry, tickling cough that started 6 weeks ago. She has no fever, wheezing, heartburn or postnasal drip. She does not smoke. Lisinopril was started 2 months ago for hypertension; her blood pressure is now controlled.
+
+    On physical examination, vital signs are normal. Oxygen saturation is 98% breathing ambient air. The oropharynx is clear and the lungs are clear. Chest radiograph is normal.
+  lead: Which of the following is the most likely mechanism of her cough?
+  choices:
+    A: Accumulation of bradykinin and substance P
+    B: Eosinophilic airway inflammation
+    C: Increased angiotensin II activity in the bronchi
+    D: Acid reflux into the larynx
+    E: Mast cell degranulation by IgE
+  answer: A
+  explain: |
+    **ACE is the same enzyme as kininase II.** Blocking it raises angiotensin I and lowers angiotensin II, but it also stops the breakdown of **bradykinin and substance P**. These peptides accumulate in the airway, sensitize cough receptors and stimulate prostaglandin production — a dry cough in about **10%** of patients (more often in women and people of East Asian descent).
+
+    The cough can start days to months after the first dose and usually resolves **1–4 weeks after stopping the drug** (sometimes up to 3 months). The fix is to **switch to an ARB**, which blocks the angiotensin II receptor without affecting bradykinin, so cough is no more common than with placebo.
+
+    The same bradykinin mechanism causes **ACE inhibitor angioedema**. ARBs carry a much smaller risk, but most experts avoid them after ACE inhibitor angioedema.
+  why:
+    B: Eosinophilic airway inflammation underlies cough-variant asthma and nonasthmatic eosinophilic bronchitis. The timing with lisinopril points to the drug.
+    C: ACE inhibitors **lower** angiotensin II. Angiotensin II is not the cause of the cough.
+    D: Reflux-related cough is possible, but she has no reflux symptoms and the cough started after lisinopril.
+    E: ACE inhibitor cough and angioedema are not IgE-mediated, which is also why antihistamines do not help.
+  mnemonic: |
+    ACE inhibitors **"K"eep the **K**inins** — bradykinin up → **cough, angioedema**. ARBs leave kinins alone.
+  objective: |
+    ACE inhibitor cough results from accumulation of bradykinin and substance P; switching to an ARB resolves it.
+  refs:
+    - Dicpinigaitis PV. Angiotensin-converting enzyme inhibitor–induced cough: ACCP evidence-based clinical practice guidelines. *Chest* 2006;129:169S.
+
+- id: CV-014
+  topic: Hypertension in a Black adult
+  task: Treatment/Care Decisions
+  chapters: [cardiology/hypertension]
+  stem: |
+    A 50-year-old Black man is evaluated for hypertension confirmed by home monitoring (average 138/86 mm Hg). He has no symptoms. He has no diabetes, kidney disease or heart failure. He has followed a low-sodium diet and exercised for 6 months. His 10-year ASCVD risk is 11%.
+
+    On physical examination, blood pressure is 140/88 mm Hg and pulse rate is 76/min. BMI is 28. The remainder of the examination is normal.
+  labs:
+    - ["Potassium", "4.1 mEq/L"]
+    - ["Creatinine", "1.0 mg/dL"]
+    - ["Urine albumin-to-creatinine ratio", "10 mg/g"]
+  lead: Which of the following is the most appropriate initial drug therapy?
+  choices:
+    A: Amlodipine
+    B: Doxazosin
+    C: Lisinopril
+    D: Metoprolol succinate
+    E: Spironolactone
+  answer: A
+  explain: |
+    His average blood pressure is in stage 1 range (130–139/80–89 mm Hg) but his **10-year ASCVD risk is ≥10%** (the 2025 guideline uses a PREVENT 10-year risk ≥7.5%), so drug therapy is indicated on top of lifestyle change. Because he is close to goal, one drug is reasonable.
+
+    In Black adults **without CKD or heart failure**, a **thiazide-type diuretic or a dihydropyridine calcium channel blocker** is preferred as initial therapy. In ALLHAT, ACE inhibitor monotherapy in Black patients produced less blood pressure lowering and more strokes and heart failure than chlorthalidone or amlodipine. ACE inhibitors and ARBs still work well **in combination** with these drugs, and they are preferred in anyone with albuminuric CKD or HFrEF, whatever their race.
+  why:
+    B: Alpha-blockers are not first-line; the doxazosin arm of ALLHAT was stopped early for excess heart failure.
+    C: An ACE inhibitor is a first-line class, but as monotherapy in Black patients without CKD it is less effective and was linked to more stroke and angioedema in ALLHAT.
+    D: Beta-blockers are not first-line for uncomplicated hypertension.
+    E: Spironolactone is the add-on for resistant hypertension, not initial therapy.
+  pearl: |
+    **Angioedema** from ACE inhibitors is 3–4 times more common in Black patients — another reason a CCB or thiazide comes first when monotherapy is chosen.
+  objective: |
+    In Black adults with hypertension and no CKD or heart failure, start with a thiazide-type diuretic or a dihydropyridine calcium channel blocker.
+  refs:
+    - ALLHAT Officers. Major outcomes in high-risk hypertensive patients randomized to ACE inhibitor or calcium channel blocker vs diuretic. *JAMA* 2002;288:2981.
+    - 2025 AHA/ACC multisociety high blood pressure guideline. *Hypertension* 2025.
+
+- id: CV-015
+  topic: Intensive blood pressure targets — benefits and harms
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/hypertension, geri/falls]
+  stem: |
+    A 76-year-old man with hypertension, hyperlipidemia and stable coronary artery disease asks about his blood pressure goal. He lives independently, walks a mile daily and has no history of falls or orthostatic symptoms. He takes amlodipine, losartan, atorvastatin and aspirin.
+
+    On physical examination, seated blood pressure is 138/76 mm Hg and standing blood pressure is 134/74 mm Hg; pulse rate is 66/min. The remainder of the examination is normal. eGFR is 64 mL/min/1.73 m².
+
+    You discuss lowering his systolic blood pressure to less than 120 mm Hg, as in the SPRINT trial.
+  lead: Compared with a target of less than 140 mm Hg, an intensive target is most likely to cause which of the following?
+  choices:
+    A: An increase in all-cause mortality
+    B: An increase in injurious falls
+    C: An increase in acute kidney injury and electrolyte abnormalities
+    D: Faster cognitive decline
+    E: More myocardial infarctions owing to diastolic hypotension
+  answer: C
+  explain: |
+    In **SPRINT** (nondiabetic adults at high cardiovascular risk, including those ≥75 years), a systolic target **<120 mm Hg** versus **<140 mm Hg** reduced major cardiovascular events by about 25% and **all-cause mortality** by about 27%. The benefit was at least as large in the ≥75-year subgroup.
+
+    The cost: more **hypotension, syncope, electrolyte abnormalities (hypokalemia, hyponatremia) and acute kidney injury** (mostly reversible eGFR declines). **Injurious falls were not increased**, and intensive control reduced mild cognitive impairment.
+
+    For a fit, independent older adult like this man, guidelines recommend a target of **<130/80 mm Hg**, and lower if tolerated. Frailty, limited life expectancy or orthostatic hypotension call for individualized, less aggressive targets.
+  why:
+    A: Intensive treatment **lowered** all-cause mortality in SPRINT.
+    B: Injurious falls were similar between groups, including in adults ≥75 years.
+    D: Intensive control reduced the risk of mild cognitive impairment (SPRINT MIND); it did not speed cognitive decline.
+    E: The "J-curve" worry about low diastolic pressure was not borne out; myocardial infarction was not increased.
+  pearl: |
+    On the boards, **"older" alone is not a reason** for a looser blood pressure goal. Look for frailty, falls, orthostasis or limited life expectancy before relaxing the target.
+  objective: |
+    Intensive systolic blood pressure lowering reduces cardiovascular events and mortality, including in fit older adults, at the cost of more acute kidney injury, electrolyte abnormalities, hypotension and syncope.
+  refs:
+    - SPRINT Research Group. A randomized trial of intensive versus standard blood-pressure control. *N Engl J Med* 2015;373:2103.
+    - Williamson JD, et al. Intensive vs standard BP control and cardiovascular outcomes in adults aged ≥75 years. *JAMA* 2016;315:2673.
+
+- id: CV-016
+  topic: Stable chest pain — initial testing
+  task: Diagnosis/Testing
+  chapters: [cardiology/sihd, nightcalls/chest-pain]
+  stem: |
+    A 55-year-old woman is evaluated for 2 months of substernal chest pressure that comes on when she climbs two flights of stairs and resolves within 5 minutes of rest. She has hypertension and hyperlipidemia. She does not smoke. Medications are lisinopril and rosuvastatin.
+
+    On physical examination, blood pressure is 132/78 mm Hg and pulse rate is 74/min. BMI is 26. Cardiac examination is normal. Resting ECG shows sinus rhythm with no ST-segment or T-wave abnormalities. She walks briskly every day.
+  lead: Which of the following is the most appropriate diagnostic test?
+  choices:
+    A: Coronary angiography
+    B: Coronary CT angiography
+    C: High-sensitivity troponin measurement now and in 3 hours
+    D: No testing; begin aspirin and observe
+    E: Cardiac magnetic resonance imaging
+  answer: B
+  explain: |
+    She has **typical (cardiac) chest pain** — substernal, provoked by exertion, relieved by rest — and is **stable**: the pattern has not changed, it is not occurring at rest, and the ECG is normal. Her pretest probability of obstructive coronary artery disease is **intermediate**.
+
+    The 2021 AHA/ACC chest pain guideline gives **coronary CT angiography (CCTA)** or **stress testing** equal (Class 1) weight for intermediate-risk stable chest pain. CCTA is favored in **younger patients (<65 years)** without known CAD who are not on optimal preventive therapy, because it shows both stenosis and nonobstructive plaque; stress imaging is favored in older patients with known CAD or heavy calcification. She can exercise and has a normal ECG, so an **exercise ECG** would also be acceptable.
+
+    | Patient | Preferred first test |
+    |---|---|
+    | Low risk, age <40 | Often no test |
+    | Intermediate risk, <65 y, no known CAD | **CCTA** (or stress test) |
+    | Known CAD, heavy calcium, older | Stress imaging (echo, SPECT, PET, CMR) |
+    | Can exercise + interpretable ECG | Exercise ECG acceptable |
+    | High-risk features or refractory symptoms | Invasive angiography |
+  why:
+    A: Invasive angiography is for high-risk noninvasive results, refractory symptoms despite medical therapy, or acute coronary syndrome.
+    C: Serial troponins are for suspected acute coronary syndrome. Her pain is stable and exertional, and she is seen in the office.
+    D: Typical angina at intermediate risk merits testing to define coronary anatomy and guide therapy.
+    E: Stress CMR is an imaging option, but rest CMR without stress is not a test for coronary artery disease.
+  pearl: |
+    **Three features of typical angina** — substernal discomfort, provoked by exertion or emotion, relieved by rest or nitroglycerin. All three = typical; two = atypical; one or none = noncardiac.
+  objective: |
+    For stable chest pain at intermediate risk in a patient younger than 65 years without known CAD, coronary CT angiography (or stress testing) is an appropriate first test.
+  refs:
+    - Gulati M, et al. 2021 AHA/ACC guideline for the evaluation and diagnosis of chest pain. *Circulation* 2021;144:e368.
+    - Virani SS, et al. 2023 AHA/ACC guideline for the management of patients with chronic coronary disease. *Circulation* 2023;148:e9.
+
+- id: CV-017
+  topic: Right ventricular infarction
+  task: Treatment/Care Decisions
+  chapters: [cardiology/stemi]
+  stem: |
+    A 67-year-old man is brought to the emergency department 1 hour after onset of crushing chest pain and diaphoresis. Sublingual nitroglycerin was given by paramedics, and he became lightheaded.
+
+    On physical examination, blood pressure is 82/50 mm Hg, pulse rate is 58/min, and respiration rate is 18/min. Oxygen saturation is 96% breathing ambient air. Jugular venous pressure is elevated, and it rises with inspiration. Lungs are clear. ECG shows 3-mm ST-segment elevation in leads II, III and aVF, with ST elevation of 1 mm in lead V4R. The cardiac catheterization laboratory has been activated.
+  lead: Which of the following is the most appropriate immediate treatment?
+  choices:
+    A: Intravenous furosemide
+    B: Intravenous metoprolol
+    C: Intravenous normal saline bolus
+    D: Repeat sublingual nitroglycerin
+    E: Intravenous morphine
+  answer: C
+  explain: |
+    Inferior STEMI + **hypotension, elevated JVP and clear lungs** = **right ventricular infarction** (seen in up to 40% of inferior STEMIs, usually with proximal right coronary artery occlusion). **ST elevation in V4R** confirms it. Kussmaul sign (JVP rising with inspiration) can occur.
+
+    The infarcted RV cannot pump blood forward, so left ventricular filling depends on **preload**. Nitrates, diuretics and morphine lower preload and can cause profound hypotension — exactly what happened after his nitroglycerin.
+
+    Treat with: **IV isotonic fluids** to raise preload (watch for overload), **avoid nitrates and diuretics**, maintain AV synchrony (pace if heart block), inotropes such as dobutamine if hypotension persists, and — most important — **emergency reperfusion with primary PCI**.
+  why:
+    A: Diuretics reduce preload and worsen hypotension in RV infarction. His lungs are clear; he is not volume overloaded on the left.
+    B: Beta-blockers are contraindicated in hypotension, bradycardia and shock.
+    D: More nitroglycerin would further drop preload. Nitrates are contraindicated in RV infarction.
+    E: Morphine is a venodilator, lowers preload and may delay antiplatelet absorption.
+  mnemonic: |
+    RV infarct triad: **"Hypotension, high JVP, clear lungs."** Treatment: **fluids in, nitrates out.**
+  objective: |
+    Treat hypotension from right ventricular infarction with intravenous fluids and urgent reperfusion while avoiding nitrates, diuretics and other preload-reducing drugs.
+  refs:
+    - Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. *Circulation* 2025.
+
+- id: CV-018
+  topic: NSTEMI — timing of invasive strategy
+  task: Treatment/Care Decisions
+  chapters: [cardiology/nste-acs]
+  stem: |
+    A 63-year-old woman is admitted from the emergency department with 4 hours of intermittent substernal chest pressure at rest. She has type 2 diabetes and hypertension. Her pain resolved after sublingual nitroglycerin, and she is now pain-free.
+
+    On physical examination, blood pressure is 138/80 mm Hg, pulse rate is 82/min, and respiration rate is 16/min. Oxygen saturation is 97% breathing ambient air. Lungs are clear and there is no murmur or edema. ECG shows 1-mm horizontal ST-segment depression in leads V4 through V6.
+  labs:
+    - ["High-sensitivity troponin T at arrival", "48 ng/L (reference <14)"]
+    - ["High-sensitivity troponin T at 2 hours", "112 ng/L"]
+    - ["Creatinine", "0.9 mg/dL"]
+  lead: In addition to aspirin, anticoagulation and high-intensity statin therapy, which of the following is the most appropriate management?
+  choices:
+    A: Coronary angiography within 24 hours
+    B: Emergency coronary angiography within 2 hours
+    C: Exercise stress test before discharge
+    D: Coronary CT angiography
+    E: Fibrinolytic therapy
+  answer: A
+  explain: |
+    She has an **NSTEMI**: rest angina, ST depression and a **rising troponin**. She is now stable — no ongoing pain, no hemodynamic or electrical instability, no heart failure.
+
+    Patients with NSTE-ACS and **high-risk features** — **rising troponin consistent with MI**, dynamic ST changes, or a GRACE score >140 — benefit from an **early invasive strategy within 24 hours**. Others at intermediate risk can have angiography during the hospitalization (within 24–72 hours).
+
+    **Immediate (<2 h) angiography** is reserved for **very-high-risk** features: refractory angina, hemodynamic instability or cardiogenic shock, acute heart failure, life-threatening arrhythmias, or mechanical complications.
+
+    | Risk | Timing |
+    |---|---|
+    | Very high (shock, refractory pain, VT/VF, acute HF) | Immediate, <2 h |
+    | High (NSTEMI by troponin, dynamic ST changes, GRACE >140) | Early, <24 h |
+    | Lower risk | During admission or ischemia-guided |
+  why:
+    B: She is pain-free and stable; none of the very-high-risk criteria for immediate angiography is present.
+    C: Stress testing is for low-risk patients after MI is ruled out. She has an NSTEMI with dynamic ECG changes.
+    D: CCTA is for low-to-intermediate risk chest pain without confirmed MI. Her diagnosis is established; she needs invasive angiography with possible revascularization.
+    E: Fibrinolysis is harmful in NSTE-ACS; it benefits only ST-elevation MI when PCI is not available in time.
+  objective: |
+    In NSTEMI with high-risk features but no very-high-risk features, perform coronary angiography within 24 hours.
+  refs:
+    - Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. *Circulation* 2025.
+
+- id: CV-019
+  topic: Antithrombotic therapy after PCI in atrial fibrillation
+  task: Treatment/Care Decisions
+  chapters: [cardiology/af, cardiology/nste-acs, heme/anticoagulation]
+  stem: |
+    A 72-year-old man underwent PCI with a drug-eluting stent to the left anterior descending artery 2 days ago for NSTEMI. He has persistent atrial fibrillation, hypertension and diabetes; his CHA₂DS₂-VASc score is 4 and his HAS-BLED score is 2. Before admission he took apixaban. During the procedure he received aspirin and a loading dose of clopidogrel. He has no history of bleeding.
+
+    Vital signs and examination are normal. Creatinine is 1.1 mg/dL and hemoglobin is 13.4 g/dL.
+  lead: Which of the following is the most appropriate antithrombotic regimen at discharge?
+  choices:
+    A: Apixaban, aspirin and clopidogrel for 12 months
+    B: Apixaban and clopidogrel, with aspirin stopped at discharge or within 1 week
+    C: Aspirin and clopidogrel; stop apixaban
+    D: Aspirin and ticagrelor plus apixaban
+    E: Warfarin, aspirin and clopidogrel
+  answer: B
+  explain: |
+    After PCI, a patient with AF needs **two different protections**: an anticoagulant against stroke and a P2Y₁₂ inhibitor against stent thrombosis. Triple therapy (anticoagulant + aspirin + P2Y₁₂ inhibitor) roughly **doubles major bleeding** without preventing more ischemic events.
+
+    The default strategy (AUGUSTUS, ENTRUST, PIONEER, RE-DUAL): **DOAC + clopidogrel**, giving aspirin only peri-procedurally (up to 1 week; up to 30 days if thrombotic risk is very high). Continue dual therapy for **12 months after ACS** (6 months after elective PCI), then **anticoagulant alone**.
+
+    | Component | Choice |
+    |---|---|
+    | Anticoagulant | **DOAC** (apixaban had the least bleeding) over warfarin |
+    | P2Y₁₂ inhibitor | **Clopidogrel** (not ticagrelor or prasugrel) |
+    | Aspirin | Stop at discharge or ≤1 week (≤30 days if high thrombotic risk) |
+    | After 12 months | DOAC alone |
+  why:
+    A: Prolonged triple therapy markedly increases bleeding. Aspirin should be stopped early.
+    C: Dual antiplatelet therapy does not protect against AF-related stroke; with a CHA₂DS₂-VASc score of 4 he needs anticoagulation.
+    D: Potent P2Y₁₂ inhibitors (ticagrelor, prasugrel) combined with an anticoagulant and aspirin cause excessive bleeding.
+    E: DOACs cause less bleeding than warfarin in this setting, and the triple combination is the problem.
+  pearl: |
+    **"Drop the aspirin, keep the DOAC, use clopidogrel."** Three drugs = three times the trouble.
+  objective: |
+    After PCI in a patient with atrial fibrillation, use a DOAC plus clopidogrel and stop aspirin at discharge or within 1–4 weeks.
+  refs:
+    - Lopes RD, et al. Antithrombotic therapy after ACS or PCI in atrial fibrillation (AUGUSTUS). *N Engl J Med* 2019;380:1509.
+    - Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. *Circulation* 2024;149:e1.
+
+- id: CV-020
+  topic: Heart failure with preserved ejection fraction
+  task: Treatment/Care Decisions
+  chapters: [cardiology/hfpef]
+  stem: |
+    A 74-year-old woman is evaluated in follow-up 2 weeks after hospitalization for acute decompensated heart failure. She now has dyspnea only when walking up a hill. She has hypertension, obesity and type 2 diabetes. Medications are furosemide, 20 mg/d; amlodipine; losartan; and metformin.
+
+    On physical examination, blood pressure is 128/72 mm Hg and pulse rate is 74/min. BMI is 35. Jugular venous pressure is normal. Lungs are clear. There is trace ankle edema.
+
+    Echocardiogram shows a left ventricular ejection fraction of 60%, left ventricular hypertrophy, grade 2 diastolic dysfunction and an enlarged left atrium. There is no valve disease. eGFR is 58 mL/min/1.73 m².
+  lead: Which of the following is the most appropriate addition to her treatment?
+  choices:
+    A: Digoxin
+    B: Empagliflozin
+    C: Ivabradine
+    D: Isosorbide dinitrate
+    E: Sacubitril-valsartan in place of losartan as the first step
+  answer: B
+  explain: |
+    She has **HFpEF** — heart failure symptoms with LVEF ≥50% and evidence of structural heart disease and raised filling pressures — and the classic phenotype: older, female, hypertensive, obese and diabetic.
+
+    **SGLT2 inhibitors (empagliflozin, dapagliflozin)** are the first disease-modifying drugs for HFpEF. In EMPEROR-Preserved and DELIVER they reduced the composite of **heart failure hospitalization or cardiovascular death** by about 20%, driven by fewer hospitalizations. They are recommended (Class 2a) for all patients with HFpEF, with or without diabetes, and they also protect the kidney.
+
+    The rest of HFpEF care: **diuretics for congestion**, treating hypertension and AF, weight loss (semaglutide or tirzepatide improve symptoms in obese HFpEF), exercise training, and — in selected patients, particularly at the lower end of the EF range — a mineralocorticoid antagonist (spironolactone or finerenone) or an ARNI.
+  why:
+    A: Digoxin does not improve outcomes in HFpEF and has a narrow therapeutic window in older adults with reduced kidney function.
+    C: Ivabradine is used in HFrEF with sinus rhythm and heart rate ≥70/min despite beta-blockade. It has no role in HFpEF.
+    D: Nitrates reduced activity levels in HFpEF (NEAT-HFpEF) and are not recommended.
+    E: Sacubitril-valsartan has only a weak (Class 2b) recommendation in HFpEF, mainly at the lower end of the ejection fraction range. SGLT2 inhibitors have stronger evidence and come first.
+  objective: |
+    Add an SGLT2 inhibitor to diuretic therapy in patients with heart failure with preserved ejection fraction to reduce heart failure hospitalization.
+  refs:
+    - Anker SD, et al. Empagliflozin in heart failure with a preserved ejection fraction (EMPEROR-Preserved). *N Engl J Med* 2021;385:1451.
+    - Kittleson MM, et al. 2023 ACC expert consensus decision pathway on management of HFpEF. *J Am Coll Cardiol* 2023;81:1835.
+
+- id: CV-021
+  topic: Acute decompensated heart failure — diuretic dosing
+  task: Treatment/Care Decisions
+  chapters: [cardiology/adhf]
+  stem: |
+    A 69-year-old man is admitted with 1 week of progressive dyspnea, orthopnea and leg swelling. He has HFrEF (LVEF 30%) and takes furosemide, 40 mg orally twice daily, along with carvedilol, sacubitril-valsartan, spironolactone and dapagliflozin.
+
+    On physical examination, blood pressure is 118/72 mm Hg, pulse rate is 88/min, and respiration rate is 22/min. Oxygen saturation is 93% breathing ambient air. He is warm to the touch. Jugular venous pressure is 14 cm H₂O. There are bibasilar crackles and 3+ pitting edema to the knees.
+  labs:
+    - ["Sodium", "136 mEq/L"]
+    - ["Potassium", "4.4 mEq/L"]
+    - ["Creatinine", "1.3 mg/dL (baseline 1.2 mg/dL)"]
+  lead: Which of the following is the most appropriate initial diuretic regimen?
+  choices:
+    A: Furosemide, 40 mg orally twice daily
+    B: Furosemide, 40 mg intravenously once daily
+    C: Furosemide, 80–100 mg intravenously twice daily
+    D: Hydrochlorothiazide, 25 mg orally once daily
+    E: Tolvaptan, 15 mg orally once daily
+  answer: C
+  explain: |
+    He is **"warm and wet"** — congested but well perfused. The treatment is **IV loop diuretics**, and the dose matters.
+
+    Gut edema reduces oral absorption, so switch to IV. Loop diuretics have a **threshold**: below a certain dose the kidney excretes almost no extra sodium. In DOSE, a **high-dose strategy — IV furosemide at 2.5 times the total daily oral dose** — relieved congestion faster than a low dose, with only small, transient creatinine changes and no worse outcomes. His total daily oral dose is 80 mg, so the starting IV dose is about **200 mg/d (for example, 80–100 mg IV twice daily)**. Bolus versus continuous infusion made no difference.
+
+    Check urine output and **spot urine sodium 2 hours after the dose**: urine sodium <50–70 mEq/L or urine output <100–150 mL/h in the first 6 hours means the dose is too low — **double it**. If loop diuretics alone fail, add a thiazide (metolazone or chlorothiazide) or acetazolamide for **sequential nephron blockade**.
+  why:
+    A: Continuing his outpatient oral dose has already failed; poor absorption and underdosing explain the decompensation.
+    B: IV furosemide 40 mg/d is a lower total dose than his home dose and is likely to fall below the natriuretic threshold.
+    D: A thiazide alone is too weak; thiazides are added to loop diuretics for resistance, not used as initial monotherapy in ADHF.
+    E: Tolvaptan corrects hyponatremia but did not improve outcomes in ADHF (EVEREST); he is not hyponatremic.
+  pearl: |
+    A small rise in creatinine during decongestion ("permissive" worsening kidney function) is **not** a reason to stop diuresis if the patient is still congested. Persistent congestion is what predicts poor outcomes.
+  objective: |
+    Treat congestion in ADHF with intravenous loop diuretics at a total daily dose of about 2–2.5 times the home oral dose, and titrate by urine output and urine sodium.
+  refs:
+    - Felker GM, et al. Diuretic strategies in patients with acute decompensated heart failure (DOSE). *N Engl J Med* 2011;364:797.
+    - Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. *Circulation* 2022;145:e895.
+
+- id: CV-022
+  topic: Primary-prevention ICD in HFrEF
+  task: Treatment/Care Decisions
+  chapters: [cardiology/hfref, cardiology/devices]
+  stem: |
+    A 58-year-old man is evaluated in follow-up for nonischemic dilated cardiomyopathy diagnosed 5 months ago. He has NYHA class II symptoms. Since diagnosis he has taken sacubitril-valsartan, metoprolol succinate, spironolactone and empagliflozin, each titrated to the target dose over the last 4 months. He has had no syncope.
+
+    On physical examination, blood pressure is 108/68 mm Hg and pulse rate is 64/min. The lungs are clear and there is no edema.
+
+    Repeat echocardiogram today shows an LVEF of 30% (35% at diagnosis). ECG shows sinus rhythm with a QRS duration of 104 ms.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Cardiac resynchronization therapy with defibrillator
+    B: Implantable cardioverter-defibrillator
+    C: Wearable cardioverter-defibrillator for 3 months, then repeat echocardiogram
+    D: Continue medical therapy alone
+    E: Amiodarone
+  answer: B
+  explain: |
+    A **primary-prevention ICD** is indicated in HFrEF with **LVEF ≤35%** and **NYHA class II–III** symptoms **despite ≥3 months of guideline-directed medical therapy**, with a reasonable expectation of meaningful survival >1 year. This applies to ischemic and nonischemic cardiomyopathy (waiting ≥40 days after MI and ≥90 days after revascularization for ischemic disease).
+
+    He has completed optimal four-pillar GDMT and his EF remains 30%, so he qualifies for an ICD.
+
+    **CRT** is added when the QRS is wide: LVEF ≤35%, sinus rhythm, and **LBBB with QRS ≥150 ms** (strongest benefit), or 120–149 ms with LBBB. His QRS is narrow, so CRT would not help.
+  why:
+    A: CRT requires a wide QRS (≥120–150 ms, ideally LBBB). His QRS is 104 ms.
+    C: A wearable defibrillator is a bridge during the waiting period (e.g., early after MI or new cardiomyopathy). He has already completed the 3-month GDMT period.
+    D: His EF has stayed ≤35% despite optimal therapy, so his risk of sudden death is high enough to warrant an ICD.
+    E: Amiodarone does not reduce mortality as primary prevention in HFrEF (SCD-HeFT).
+  mnemonic: |
+    ICD **"35-3-2"** — EF ≤**35**%, after **3** months of GDMT, NYHA class **2**–3.
+  objective: |
+    Implant a primary-prevention ICD in patients with HFrEF, LVEF ≤35% and NYHA class II–III symptoms after at least 3 months of guideline-directed medical therapy.
+  refs:
+    - Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. *Circulation* 2022;145:e895.
+    - Bardy GH, et al. Amiodarone or an ICD for congestive heart failure (SCD-HeFT). *N Engl J Med* 2005;352:225.
+
+- id: CV-023
+  topic: Pre-excited atrial fibrillation (WPW)
+  task: Treatment/Care Decisions
+  chapters: [cardiology/svt, cardiology/af]
+  stem: |
+    A 24-year-old man is brought to the emergency department with 2 hours of rapid palpitations. He has had brief episodes of palpitations since his teens but never sought care.
+
+    On physical examination, blood pressure is 118/74 mm Hg, pulse rate is 210/min and irregular, and respiration rate is 18/min. He is alert, and the lungs are clear.
+
+    ECG shows an irregularly irregular, wide-complex tachycardia at 190–260/min, with QRS complexes that vary in width and shape from beat to beat. An ECG from 2 years ago showed a short PR interval and a delta wave.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Adenosine
+    B: Diltiazem
+    C: Digoxin
+    D: Metoprolol
+    E: Procainamide
+  answer: E
+  explain: |
+    This is **atrial fibrillation conducting down an accessory pathway (pre-excited AF)** in Wolff-Parkinson-White syndrome. The clues: an irregular, very fast, wide-complex rhythm with **changing QRS morphology** (variable fusion between the pathway and the AV node), and a baseline delta wave.
+
+    The AV node normally protects the ventricles from fast atrial rates. The accessory pathway has no such brake. **AV-nodal blockers** (adenosine, beta-blockers, nondihydropyridine CCBs, digoxin, IV amiodarone) can shift even more conduction down the pathway and trigger **ventricular fibrillation**.
+
+    Treatment: **synchronized cardioversion** if unstable. If stable, **IV procainamide** (or ibutilide), which slows conduction in the pathway. Definitive therapy is **catheter ablation** of the accessory pathway.
+  why:
+    A: Adenosine blocks the AV node and can accelerate conduction over the accessory pathway, precipitating ventricular fibrillation.
+    B: Diltiazem blocks the AV node and also causes vasodilation, which raises sympathetic tone. It can trigger ventricular fibrillation in pre-excited AF.
+    C: Digoxin shortens the refractory period of the accessory pathway and blocks the AV node — a dangerous combination.
+    D: Beta-blockers favor conduction over the accessory pathway and are contraindicated.
+  mnemonic: |
+    WPW + AF = **"No ABCD"** — no **A**denosine, **B**eta-blockers, **C**alcium channel blockers or **D**igoxin. Give **P**rocainamide or shock.
+  objective: |
+    Treat stable pre-excited atrial fibrillation with intravenous procainamide (or cardioversion), and avoid AV-nodal blocking drugs.
+  refs:
+    - Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. *Circulation* 2024;149:e1.
+    - Page RL, et al. 2015 ACC/AHA/HRS guideline for the management of adult patients with supraventricular tachycardia. *Circulation* 2016;133:e506.
+
+- id: CV-024
+  topic: Atrial fibrillation with rheumatic mitral stenosis
+  task: Treatment/Care Decisions
+  chapters: [cardiology/af, cardiology/valve-disease, heme/anticoagulation]
+  stem: |
+    A 48-year-old woman who emigrated from Guatemala 10 years ago is evaluated for 3 weeks of intermittent palpitations and exertional dyspnea. She had recurrent sore throats and joint pains as a child.
+
+    On physical examination, blood pressure is 118/70 mm Hg and pulse rate is 104/min and irregularly irregular. There is a loud S₁, an opening snap and a low-pitched diastolic rumble at the apex. ECG confirms atrial fibrillation.
+
+    Echocardiogram shows thickened mitral leaflets with commissural fusion, a mitral valve area of 1.2 cm² and an enlarged left atrium. LVEF is 60%.
+  lead: Which of the following is the most appropriate anticoagulant?
+  choices:
+    A: Apixaban
+    B: Aspirin
+    C: Dabigatran
+    D: Rivaroxaban
+    E: Warfarin
+  answer: E
+  explain: |
+    Atrial fibrillation with **moderate-to-severe rheumatic mitral stenosis** carries a very high risk of left atrial thrombus and stroke, **regardless of the CHA₂DS₂-VASc score**. Anticoagulation is indicated, and the drug is **warfarin (target INR 2–3)**.
+
+    In INVICTUS, patients with rheumatic heart disease and AF given rivaroxaban had **more deaths and strokes** than those given warfarin. Patients with moderate-to-severe MS were excluded from the original DOAC trials. The same is true for **mechanical heart valves**, where dabigatran caused more thrombosis and bleeding (RE-ALIGN).
+
+    For all other valve disease — aortic stenosis, mitral regurgitation, bioprosthetic valves after 3 months, TAVR — **DOACs are preferred**.
+
+    She should also have rate control and evaluation for **percutaneous mitral balloon commissurotomy** (symptomatic severe MS with favorable valve anatomy).
+  why:
+    A: DOACs are not recommended in AF with moderate-to-severe rheumatic mitral stenosis.
+    B: Aspirin does not adequately prevent stroke in AF and is not a substitute for anticoagulation.
+    C: Dabigatran has not been shown safe in rheumatic MS and is contraindicated with mechanical valves.
+    D: Rivaroxaban was inferior to warfarin in rheumatic heart disease with AF (INVICTUS).
+  mnemonic: |
+    **"Warfarin for the two Ms"** — **M**echanical valves and **M**itral stenosis (moderate-severe, rheumatic).
+  objective: |
+    Use warfarin, not a DOAC, for atrial fibrillation in patients with moderate-to-severe rheumatic mitral stenosis or a mechanical heart valve.
+  refs:
+    - Connolly SJ, et al. Rivaroxaban in rheumatic heart disease–associated atrial fibrillation (INVICTUS). *N Engl J Med* 2022;387:978.
+    - Otto CM, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease. *Circulation* 2021;143:e72.
+
+- id: CV-025
+  topic: Torsades de pointes
+  task: Treatment/Care Decisions
+  chapters: [cardiology/qt, cardiology/vt]
+  stem: |
+    A 66-year-old woman is hospitalized with pneumonia. On day 3 she has two brief episodes of lightheadedness. Telemetry shows runs of polymorphic ventricular tachycardia in which the QRS axis twists around the baseline, each lasting 10–15 seconds and stopping on its own. Medications are levofloxacin, ondansetron and haloperidol for delirium.
+
+    On physical examination, blood pressure is 124/70 mm Hg and pulse rate is 64/min. She is awake and oriented. Between episodes, the ECG shows sinus rhythm with a corrected QT interval of 590 ms.
+  labs:
+    - ["Potassium", "3.4 mEq/L"]
+    - ["Magnesium", "1.6 mg/dL"]
+  lead: In addition to stopping QT-prolonging drugs and replacing potassium, which of the following is the most appropriate treatment?
+  choices:
+    A: Intravenous amiodarone
+    B: Intravenous lidocaine
+    C: Intravenous magnesium sulfate
+    D: Intravenous procainamide
+    E: Oral metoprolol
+  answer: C
+  explain: |
+    **Torsades de pointes** is polymorphic VT with a "twisting" axis that occurs on a background of a **long QT interval**. Here the cause is acquired: three QT-prolonging drugs (levofloxacin, ondansetron, haloperidol) plus hypokalemia and hypomagnesemia, in an older woman.
+
+    **IV magnesium sulfate (2 g)** is first-line even when the serum magnesium is normal; it suppresses the early afterdepolarizations that trigger torsades. Then:
+    - **Stop all QT-prolonging drugs** and correct potassium to **≥4.0 mEq/L** (ideally 4.5–5.0) and magnesium to ≥2.0 mg/dL.
+    - If torsades recurs, **increase the heart rate** (bradycardia and pauses lengthen the QT): temporary transvenous **overdrive pacing** or isoproterenol.
+    - **Unsynchronized defibrillation** if it degenerates into sustained VT/VF.
+  why:
+    A: Amiodarone prolongs the QT interval and can worsen torsades. It is used for monomorphic VT, not for long-QT torsades.
+    B: Lidocaine (class IB) does not prolong QT and can be tried in refractory cases, but magnesium is first-line.
+    D: Procainamide (class IA) prolongs the QT interval and is contraindicated in torsades.
+    E: Beta-blockers are used for congenital long QT syndrome, but in acquired long QT they slow the rate and can promote pause-dependent torsades.
+  pearl: |
+    Acquired long QT has three common culprits on the wards — **"antis"**: anti-arrhythmics (IA, III), anti-psychotics/anti-emetics (haloperidol, ondansetron), anti-infectives (fluoroquinolones, macrolides, azoles) — plus low K and low Mg.
+  objective: |
+    Treat torsades de pointes with intravenous magnesium, removal of QT-prolonging drugs and correction of electrolytes, followed by overdrive pacing if it recurs.
+  refs:
+    - Al-Khatib SM, et al. 2017 AHA/ACC/HRS guideline for management of patients with ventricular arrhythmias and the prevention of sudden cardiac death. *Circulation* 2018;138:e272.
+    - Drew BJ, et al. Prevention of torsade de pointes in hospital settings: AHA/ACCF scientific statement. *Circulation* 2010;121:1047.
+
+- id: CV-026
+  topic: Vasovagal syncope
+  task: Diagnosis/Testing
+  chapters: [cardiology/syncope]
+  stem: |
+    A 22-year-old woman is evaluated after fainting yesterday while standing in a crowded, hot church service. She felt warm, nauseated and sweaty and her vision "grayed out" just before she fell. A friend says she was pale, had a few jerking movements of her arms for several seconds, and was fully alert within a minute. She did not bite her tongue or lose bladder control. She had a similar episode at age 16 when her blood was drawn. She takes no medications. There is no family history of sudden death.
+
+    On physical examination, blood pressure is 112/68 mm Hg supine and 110/70 mm Hg standing; pulse rate is 68/min supine and 76/min standing. Cardiac and neurologic examinations are normal. ECG is normal, with a normal QT interval.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Electroencephalography
+    B: Echocardiography
+    C: 30-day ambulatory ECG monitoring
+    D: Tilt-table testing
+    E: Reassurance and counter-pressure maneuvers
+  answer: E
+  explain: |
+    This is classic **vasovagal (reflex) syncope**: a trigger (prolonged standing, heat, crowding, blood draw), a **prodrome** of warmth, nausea, sweating and tunnel vision, rapid full recovery, and a young patient with a **normal examination and ECG**.
+
+    The brief jerks are **convulsive syncope** — common with cerebral hypoperfusion and not a sign of epilepsy. Seizures cause prolonged postictal confusion, lateral tongue biting and longer tonic-clonic activity.
+
+    The key tools in syncope are the **history, examination and ECG**. When these give a confident diagnosis of reflex syncope and no high-risk features are present, **no further testing is needed**. Management: reassurance, education about triggers, adequate fluid and salt intake, and **physical counter-pressure maneuvers** (leg crossing, squatting, handgrip) at the first sign of a prodrome.
+  why:
+    A: The brief myoclonic jerks during syncope do not indicate epilepsy; an EEG is not indicated without features of seizure.
+    B: With a normal cardiac examination and ECG and a clear reflex trigger, echocardiography has very low yield.
+    C: Ambulatory monitoring is for suspected arrhythmic syncope (exertional syncope, palpitations, abnormal ECG, structural heart disease).
+    D: Tilt-table testing can help when the diagnosis of reflex syncope is uncertain. Her history is already diagnostic.
+  pearl: |
+    **High-risk syncope features** that need cardiac work-up: syncope during exertion or while supine, no prodrome, palpitations before the event, structural heart disease, abnormal ECG (QT prolongation, Brugada pattern, preexcitation, bundle branch block) and family history of sudden death before age 50.
+  objective: |
+    In typical vasovagal syncope with a normal examination and ECG, no further testing is needed; manage with reassurance, trigger avoidance and counter-pressure maneuvers.
+  refs:
+    - Shen WK, et al. 2017 ACC/AHA/HRS guideline for the evaluation and management of patients with syncope. *Circulation* 2017;136:e60.
+
+- id: CV-027
+  topic: Hypertrophic cardiomyopathy — murmur maneuvers
+  task: Diagnosis/Testing
+  chapters: [cardiology/hcm]
+  stem: |
+    A 19-year-old college basketball player is evaluated after a near-syncopal episode during a game. He has had chest tightness with sprinting for several months. His uncle died suddenly at age 35.
+
+    On physical examination, blood pressure is 122/70 mm Hg and pulse rate is 62/min. There is a grade 3/6 harsh crescendo-decrescendo systolic murmur best heard at the left lower sternal border that does not radiate to the carotid arteries. The murmur becomes louder when the patient stands from a squat and during the strain phase of the Valsalva maneuver, and softer with passive leg raising. Carotid upstroke is brisk.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Bicuspid aortic valve stenosis
+    B: Hypertrophic obstructive cardiomyopathy
+    C: Mitral valve prolapse
+    D: Pulmonic stenosis
+    E: Ventricular septal defect
+  answer: B
+  explain: |
+    A young athlete with exertional symptoms, a family history of sudden death, and a systolic murmur that gets **louder when preload falls** has **hypertrophic obstructive cardiomyopathy (HCM)** until proven otherwise.
+
+    In HCM the hypertrophied septum and the mitral valve (systolic anterior motion) obstruct the left ventricular outflow tract. A **smaller ventricle** brings the septum and valve closer and **worsens obstruction**; a fuller ventricle reduces it. Almost every other murmur does the opposite.
+
+    | Maneuver | Effect on LV volume | HCM murmur | Aortic stenosis murmur |
+    |---|---|---|---|
+    | Valsalva (strain), standing | ↓ preload | **Louder** | Softer |
+    | Squatting, leg raise | ↑ preload | Softer | Louder |
+    | Handgrip | ↑ afterload | Softer | Softer (AS); MR louder |
+
+    The next step is **echocardiography** (wall thickness ≥15 mm, LVOT gradient), with cardiac MRI for risk assessment. He should avoid competitive sports until evaluated. First-degree relatives need screening.
+  why:
+    A: Aortic stenosis murmurs radiate to the carotids, get softer with Valsalva, and produce a delayed, weak carotid upstroke (pulsus parvus et tardus). The brisk upstroke here fits HCM.
+    C: Mitral valve prolapse causes a midsystolic click and late systolic murmur at the apex. Valsalva makes the click earlier and the murmur longer, but the murmur location and click differ.
+    D: Pulmonic stenosis is heard at the left upper sternal border, often with an ejection click, and gets louder with inspiration.
+    E: A VSD gives a holosystolic murmur at the left lower sternal border that gets louder with handgrip and softer with Valsalva.
+  mnemonic: |
+    **Only two murmurs get louder with Valsalva: HCM and MVP** ("**H**ypertrophic and **M**itral prolapse — **H**ow **M**uch less blood").
+  objective: |
+    Recognize hypertrophic obstructive cardiomyopathy by a systolic murmur that increases with maneuvers that reduce left ventricular preload (Valsalva, standing).
+  refs:
+    - Ommen SR, et al. 2024 AHA/ACC/multisociety guideline for the management of hypertrophic cardiomyopathy. *Circulation* 2024;149:e1239.
+
+- id: CV-028
+  topic: Chronic severe aortic regurgitation
+  task: Treatment/Care Decisions
+  chapters: [cardiology/valve-disease]
+  stem: |
+    A 56-year-old man with a known bicuspid aortic valve is evaluated during annual follow-up. He reports no dyspnea, chest pain or decreased exercise tolerance; he runs 3 miles twice a week.
+
+    On physical examination, blood pressure is 152/48 mm Hg and pulse rate is 66/min. There is a bounding carotid pulse and a grade 3/4 high-pitched decrescendo diastolic murmur at the left sternal border, heard best with the patient leaning forward.
+
+    Echocardiogram shows severe aortic regurgitation. The LVEF is 50% (60% one year ago) and the left ventricular end-systolic dimension is 48 mm. The ascending aorta measures 42 mm.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Aortic valve replacement
+    B: Begin nifedipine and repeat echocardiography in 6 months
+    C: Exercise stress test
+    D: Repeat echocardiography in 1 year
+    E: Transcatheter aortic valve replacement
+  answer: A
+  explain: |
+    He has **chronic severe aortic regurgitation** and is **asymptomatic**, but his **LVEF has fallen to ≤55%**. In chronic AR the left ventricle dilates to handle the regurgitant volume; once systolic function falls, damage can become irreversible.
+
+    Indications for **surgical aortic valve replacement** in severe AR:
+    - **Symptoms**, regardless of LV function.
+    - **Asymptomatic with LVEF ≤55%** or **LV end-systolic dimension >50 mm** (or indexed >25 mm/m²).
+    - Undergoing other cardiac surgery.
+    - Reasonable with a progressive decline in LVEF or increase in LV size on serial studies.
+
+    His aorta (42 mm) is below the threshold for repair at the same operation in a bicuspid valve (≥45 mm when already having AVR).
+  why:
+    B: Vasodilators treat hypertension in AR but do not delay surgery; they are not a substitute when surgical criteria are met.
+    C: Exercise testing helps when symptoms are uncertain. Surgery is already indicated by the fall in LVEF.
+    D: Waiting risks irreversible LV dysfunction.
+    E: TAVR is not approved for native-valve pure aortic regurgitation (except in selected inoperable patients with a dedicated device) and is unsuitable for a bicuspid valve with pure AR in a 56-year-old surgical candidate.
+  pearl: |
+    The **"55 rule"** in regurgitant lesions — think about surgery in asymptomatic severe AR when **EF ≤55%**; in severe primary MR the threshold is **EF ≤60%** (or LVESD ≥40 mm).
+  objective: |
+    Recommend aortic valve replacement for asymptomatic chronic severe aortic regurgitation when LVEF falls to 55% or less or the LV end-systolic dimension exceeds 50 mm.
+  refs:
+    - Otto CM, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease. *Circulation* 2021;143:e72.
+
+- id: CV-029
+  topic: Streptococcus gallolyticus endocarditis
+  task: Diagnosis/Testing
+  chapters: [cardiology/endocarditis, heme/cancer-screening]
+  stem: |
+    A 68-year-old man is hospitalized with 3 weeks of fevers, night sweats and fatigue. He has lost 4 kg (8.8 lb).
+
+    On physical examination, temperature is 38.4 °C (101.1 °F), blood pressure is 128/70 mm Hg, and pulse rate is 98/min. There is a new grade 2/6 holosystolic murmur at the apex. Conjunctival petechiae are present.
+
+    Three sets of blood cultures grow *Streptococcus gallolyticus* (formerly *S. bovis* biotype I). Transesophageal echocardiogram shows an 8-mm mobile vegetation on the anterior mitral leaflet. Hemoglobin is 10.8 g/dL with an MCV of 76 fL.
+
+    Appropriate intravenous antibiotic therapy is started.
+  lead: Which of the following is the most appropriate additional diagnostic test?
+  choices:
+    A: Abdominal ultrasonography
+    B: Colonoscopy
+    C: Dental panoramic radiography
+    D: Echocardiography of all first-degree relatives
+    E: Upper endoscopy
+  answer: B
+  explain: |
+    ***Streptococcus gallolyticus*** (*S. bovis* group) bacteremia or endocarditis has a strong association with **colorectal neoplasia** — adenomas or carcinoma in up to 60% of patients. The organism colonizes the colon, and disrupted mucosa over a tumor lets it into the bloodstream.
+
+    Every patient with *S. gallolyticus* bacteremia needs **colonoscopy**, even without GI symptoms. His microcytic anemia adds to the concern. The organism is also associated with chronic liver disease.
+
+    Similar "bug → hidden source" links: ***Clostridium septicum*** → colon cancer; ***Streptococcus anginosus*** group → abscesses; ***Fusobacterium necrophorum*** → Lemierre syndrome; **HACEK** organisms → dental source.
+  why:
+    A: Liver disease is associated with *S. gallolyticus*, but the priority is to look for colorectal neoplasia.
+    C: Viridans group streptococci (not *S. gallolyticus*) suggest a dental source.
+    D: Infective endocarditis is not inherited; relatives do not need echocardiography.
+    E: The association is with colorectal, not upper GI, neoplasia. Microcytic anemia in an older man needs colonoscopy first.
+  mnemonic: |
+    ***S. bovis* — "bovis in the bowel"** → scope the colon.
+  objective: |
+    Perform colonoscopy in patients with Streptococcus gallolyticus (S. bovis) bacteremia or endocarditis because of the strong association with colorectal neoplasia.
+  refs:
+    - Baddour LM, et al. Infective endocarditis in adults: AHA scientific statement. *Circulation* 2015;132:1435.
+    - Boleij A, et al. *Streptococcus bovis/gallolyticus* and colorectal cancer: a meta-analysis. *Clin Infect Dis* 2011;53:870.
+
+- id: CV-030
+  topic: Cardiac tamponade
+  task: Treatment/Care Decisions
+  chapters: [cardiology/pericarditis, nightcalls/hypotension]
+  stem: |
+    A 61-year-old woman with metastatic lung adenocarcinoma is brought to the emergency department with 3 days of progressive dyspnea and lightheadedness.
+
+    On physical examination, blood pressure is 86/64 mm Hg, pulse rate is 124/min, and respiration rate is 26/min. Oxygen saturation is 94% breathing ambient air. Jugular venous pressure is elevated to the angle of the jaw. Heart sounds are muffled. Systolic blood pressure falls by 18 mm Hg during inspiration. Lungs are clear.
+
+    ECG shows sinus tachycardia with low QRS voltage and beat-to-beat variation in QRS amplitude. Bedside echocardiogram shows a large circumferential pericardial effusion with diastolic collapse of the right ventricle and a plethoric inferior vena cava.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Intravenous furosemide
+    B: Intravenous norepinephrine as definitive therapy
+    C: Positive-pressure mechanical ventilation
+    D: Urgent pericardiocentesis
+    E: Colchicine and ibuprofen
+  answer: D
+  explain: |
+    This is **cardiac tamponade**: pericardial fluid under pressure compresses the heart and limits filling. **Beck triad** (hypotension, raised JVP, muffled heart sounds) + **pulsus paradoxus** (>10 mm Hg inspiratory fall in systolic BP) + **electrical alternans** (the heart swinging in the fluid) + echocardiographic **RV diastolic collapse** and a plethoric IVC.
+
+    Tamponade is obstructive shock. The only effective treatment is **urgent drainage — pericardiocentesis** (echo-guided needle) or surgical pericardial window. While preparing, give an IV fluid bolus to support preload. Malignant effusions often recur, so a drain or window may be needed later.
+  why:
+    A: Diuretics lower preload and worsen tamponade physiology.
+    B: Vasopressors may briefly support blood pressure but do not relieve the compression.
+    C: Positive-pressure ventilation raises intrathoracic pressure, reduces venous return and can cause cardiovascular collapse in tamponade.
+    E: Anti-inflammatory therapy treats pericarditis; it does not relieve hemodynamic compromise.
+  pearl: |
+    **Pulsus paradoxus** is an exaggeration of normal physiology: on inspiration the RV fills, and in tamponade the septum bulges into the LV (interventricular dependence), so LV stroke volume falls. It also occurs in severe asthma/COPD, massive PE and RV infarction.
+  objective: |
+    Treat cardiac tamponade with urgent pericardiocentesis; avoid diuretics and positive-pressure ventilation.
+  refs:
+    - Adler Y, et al. 2015 ESC guidelines for the diagnosis and management of pericardial diseases. *Eur Heart J* 2015;36:2921.
+    - Spodick DH. Acute cardiac tamponade. *N Engl J Med* 2003;349:684.
+
+- id: CV-031
+  topic: Uncomplicated type B aortic dissection
+  task: Treatment/Care Decisions
+  chapters: [cardiology/aortic-dissection, cardiology/htn-emergency]
+  stem: |
+    A 64-year-old man with long-standing poorly controlled hypertension presents with sudden, severe tearing pain between his shoulder blades that began 2 hours ago.
+
+    On physical examination, blood pressure is 182/104 mm Hg in the right arm and 176/100 mm Hg in the left arm; pulse rate is 96/min. Pulses are present and equal in all four extremities. Neurologic examination is normal. There is no murmur.
+
+    CT angiography shows a dissection flap starting distal to the left subclavian artery and extending to the level of the renal arteries. The ascending aorta and arch are not involved. There is no malperfusion, rupture or periaortic hematoma. Creatinine is 1.0 mg/dL and lactate is normal.
+  lead: Which of the following is the most appropriate initial management?
+  choices:
+    A: Emergency open surgical repair
+    B: Intravenous esmolol followed by intravenous nicardipine as needed
+    C: Intravenous hydralazine
+    D: Intravenous nicardipine alone
+    E: Heparin infusion
+  answer: B
+  explain: |
+    This is an **acute type B (Stanford) dissection** — it spares the ascending aorta — and it is **uncomplicated** (no malperfusion, rupture, refractory pain or uncontrolled hypertension).
+
+    Uncomplicated type B dissection is treated **medically in the ICU**. The goals are to reduce shear stress (dP/dt) on the aortic wall:
+    1. **IV beta-blocker first** (esmolol or labetalol) → heart rate **<60/min**.
+    2. Then a vasodilator (nicardipine, clevidipine, nitroprusside) if needed → systolic BP **100–120 mm Hg**, within 20 minutes.
+    3. IV opioids for pain.
+
+    **Type A** (ascending aorta) dissection is a surgical emergency. **Complicated type B** dissection is treated with **TEVAR** (thoracic endovascular repair).
+  why:
+    A: Open surgery is for type A dissection. Uncomplicated type B is managed medically, with endovascular repair for complications.
+    C: Hydralazine causes reflex tachycardia, which raises shear stress on the aortic wall.
+    D: A vasodilator given without prior beta-blockade causes reflex tachycardia and increases dP/dt.
+    E: Anticoagulation is contraindicated in acute aortic dissection.
+  mnemonic: |
+    **"Rate before pressure"** — beta-block first (HR <60), then vasodilate (SBP 100–120).
+  objective: |
+    Treat acute uncomplicated type B aortic dissection medically with an intravenous beta-blocker first, then a vasodilator, to a heart rate below 60/min and systolic BP of 100–120 mm Hg.
+  refs:
+    - Isselbacher EM, et al. 2022 ACC/AHA guideline for the diagnosis and management of aortic disease. *Circulation* 2022;146:e334.
+
+- id: CV-032
+  topic: Abdominal aortic aneurysm screening
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/pad-aaa]
+  stem: |
+    A 68-year-old man comes for a routine health maintenance visit. He feels well. He has hypertension and hyperlipidemia. He smoked one pack of cigarettes daily for 30 years and quit 8 years ago. His brother had an abdominal aortic aneurysm repaired at age 70.
+
+    On physical examination, blood pressure is 130/78 mm Hg and pulse rate is 70/min. BMI is 29. Abdominal examination shows no pulsatile mass. Femoral and pedal pulses are normal.
+  lead: Which of the following is the most appropriate screening test?
+  choices:
+    A: Abdominal ultrasonography once
+    B: Abdominal ultrasonography every 2 years
+    C: Ankle-brachial index
+    D: CT angiography of the abdomen
+    E: No screening is indicated
+  answer: A
+  explain: |
+    The USPSTF recommends **one-time ultrasonography screening for abdominal aortic aneurysm (AAA) in men aged 65 to 75 years who have ever smoked** (≥100 cigarettes in a lifetime) — Grade B. Screening this group reduces AAA rupture and AAA-related death. A family history of AAA adds to his risk.
+
+    A normal aorta (<3.0 cm) needs **no further screening**. If an aneurysm is found, surveillance intervals depend on size, and elective repair is recommended at **≥5.5 cm in men** (≥5.0 cm in women), growth >0.5 cm in 6 months, or symptoms.
+
+    | Group | USPSTF |
+    |---|---|
+    | Men 65–75, ever smoked | One-time screen (B) |
+    | Men 65–75, never smoked | Selective (C) — e.g., family history |
+    | Women who never smoked | Do not screen (D) |
+    | Women 65–75 who ever smoked | Insufficient evidence (I) |
+  why:
+    B: Repeated screening after a normal study is not recommended; new large aneurysms rarely develop after a normal scan at this age.
+    C: The ABI detects peripheral artery disease and is not recommended for screening asymptomatic adults.
+    D: CT exposes him to contrast and radiation; ultrasonography is accurate, safe and cheap for screening.
+    E: He is a former smoker in the target age range, the group with the clearest benefit from screening.
+  pearl: |
+    Physical examination is **not** a reliable screen for AAA, especially in patients with obesity — always use ultrasonography.
+  objective: |
+    Screen men aged 65 to 75 years who have ever smoked with a one-time abdominal ultrasound for abdominal aortic aneurysm.
+  refs:
+    - US Preventive Services Task Force. Screening for abdominal aortic aneurysm. *JAMA* 2019;322:2211.
+
+- id: CV-033
+  topic: Peripheral artery disease — claudication
+  task: Treatment/Care Decisions
+  chapters: [cardiology/pad-aaa]
+  stem: |
+    A 66-year-old man is evaluated for 6 months of cramping pain in his right calf that comes on after walking two blocks and resolves within 3 minutes of rest. He has hypertension, type 2 diabetes and a 40 pack-year smoking history; he quit 1 year ago. Medications are lisinopril, metformin and aspirin.
+
+    On physical examination, blood pressure is 136/78 mm Hg. Right popliteal and pedal pulses are diminished. The skin is intact without ulcers, and capillary refill is normal.
+  labs:
+    - ["Ankle-brachial index (right)", "0.68"]
+    - ["Ankle-brachial index (left)", "0.92"]
+    - ["LDL cholesterol", "118 mg/dL"]
+    - ["Hemoglobin A1c", "7.1%"]
+  lead: In addition to continuing aspirin, which of the following is the most appropriate management?
+  choices:
+    A: Begin cilostazol and refer for angiography
+    B: Begin high-intensity statin therapy and supervised exercise therapy
+    C: Begin warfarin
+    D: Refer for endovascular revascularization
+    E: Begin pentoxifylline
+  answer: B
+  explain: |
+    He has **symptomatic peripheral artery disease (PAD)** with intermittent claudication — reproducible exertional calf pain relieved by rest — confirmed by a **resting ABI ≤0.90**. There are no signs of chronic limb-threatening ischemia (rest pain, ulcers, gangrene).
+
+    PAD is a **coronary artery disease equivalent**. Care has two goals:
+    1. **Lower cardiovascular risk**: high-intensity statin, antiplatelet therapy (aspirin or clopidogrel), BP and diabetes control, smoking abstinence. Low-dose rivaroxaban (2.5 mg twice daily) plus aspirin further reduces events in selected patients (COMPASS, VOYAGER-PAD).
+    2. **Improve walking**: **supervised exercise therapy** (30–45 minutes, ≥3 times weekly for ≥12 weeks) improves walking distance as much as revascularization. **Cilostazol** is the drug for persistent symptoms (avoid in heart failure).
+
+    Revascularization is for **lifestyle-limiting claudication despite exercise and medical therapy**, or for chronic limb-threatening ischemia.
+
+    | ABI | Meaning |
+    |---|---|
+    | >1.40 | Noncompressible (calcified) vessels — use toe-brachial index |
+    | 1.00–1.40 | Normal |
+    | 0.91–0.99 | Borderline |
+    | ≤0.90 | PAD |
+  why:
+    A: Cilostazol can be added later for persistent symptoms, but angiography is not needed unless revascularization is planned.
+    C: Full-dose warfarin adds bleeding risk without benefit in PAD.
+    D: Revascularization comes only after a trial of exercise and medical therapy fails, or for limb-threatening ischemia.
+    E: Pentoxifylline is no better than placebo for claudication.
+  objective: |
+    Treat intermittent claudication with high-intensity statin therapy, antiplatelet therapy, risk factor control and supervised exercise therapy before considering revascularization.
+  refs:
+    - Gornik HL, et al. 2024 ACC/AHA/multisociety guideline for the management of lower extremity peripheral artery disease. *Circulation* 2024;149:e1313.
+
+- id: CV-034
+  topic: Familial hypercholesterolemia
+  task: Treatment/Care Decisions
+  chapters: [cardiology/lipids]
+  stem: |
+    A 34-year-old woman is evaluated after a work screening showed high cholesterol. She feels well and exercises regularly. She does not smoke. Her father had a myocardial infarction at age 44. She uses a copper IUD for contraception and does not plan pregnancy in the next few years.
+
+    On physical examination, blood pressure is 118/74 mm Hg. BMI is 23. There are firm nodules on both Achilles tendons. The remainder of the examination is normal.
+  labs:
+    - ["Total cholesterol", "312 mg/dL"]
+    - ["LDL cholesterol", "224 mg/dL"]
+    - ["HDL cholesterol", "58 mg/dL"]
+    - ["Triglycerides", "150 mg/dL"]
+    - ["TSH", "1.6 µU/mL"]
+    - ["Fasting glucose", "88 mg/dL"]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Calculate the 10-year ASCVD risk to decide on statin therapy
+    B: Obtain a coronary artery calcium score
+    C: Begin ezetimibe alone
+    D: Begin high-intensity statin therapy
+    E: Recommend dietary changes and repeat lipids in 6 months
+  answer: D
+  explain: |
+    An **LDL cholesterol ≥190 mg/dL** means **severe primary hypercholesterolemia**. With **tendon xanthomas** and premature CAD in a first-degree relative, she very likely has **heterozygous familial hypercholesterolemia** (LDL-receptor, APOB or PCSK9 variant). Secondary causes — hypothyroidism, nephrotic syndrome, cholestatic liver disease, drugs — have been excluded.
+
+    These patients have had high LDL since birth, so their lifetime risk is high even when a 10-year score looks low. **Risk calculators do not apply**. Start a **high-intensity statin** (atorvastatin 40–80 mg or rosuvastatin 20–40 mg) to reduce LDL by ≥50% (and ideally to <100 mg/dL). Add ezetimibe and then a PCSK9 inhibitor if needed. Offer **cascade screening** of first-degree relatives.
+
+    She must avoid pregnancy while taking a statin; her IUD is appropriate.
+  why:
+    A: Pooled cohort equations are not used when LDL is ≥190 mg/dL; they underestimate risk in familial hypercholesterolemia.
+    B: A calcium score helps decide on statins in borderline-to-intermediate risk. A score of zero is common in young people with FH and would falsely reassure.
+    C: Ezetimibe lowers LDL by about 20% — not enough. It is an add-on to a statin.
+    E: Diet alone cannot lower genetically driven LDL of this degree, and delaying therapy extends her exposure.
+  pearl: |
+    **Dutch Lipid Clinic criteria** for FH: LDL level, tendon xanthomas, corneal arcus before age 45, and premature CAD (men <55, women <60) in the patient or first-degree relatives.
+  objective: |
+    Start high-intensity statin therapy, without risk calculation, in adults with LDL cholesterol of 190 mg/dL or higher.
+  refs:
+    - Grundy SM, et al. 2018 AHA/ACC multisociety guideline on the management of blood cholesterol. *Circulation* 2019;139:e1082.
+
+- id: CV-035
+  topic: Coronary artery calcium score in borderline risk
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/lipids]
+  stem: |
+    A 52-year-old man is evaluated for cardiovascular risk. He feels well. He does not smoke and has no diabetes. His blood pressure is 128/80 mm Hg without treatment. There is no family history of premature coronary disease. He is reluctant to take a "lifelong pill" unless he truly needs it.
+  labs:
+    - ["Total cholesterol", "214 mg/dL"]
+    - ["LDL cholesterol", "136 mg/dL"]
+    - ["HDL cholesterol", "46 mg/dL"]
+    - ["Triglycerides", "160 mg/dL"]
+    - ["10-year ASCVD risk (pooled cohort equations)", "8.2%"]
+  lead: Which of the following is the most appropriate next step to guide the decision about statin therapy?
+  choices:
+    A: Carotid intima-media thickness ultrasonography
+    B: Coronary artery calcium score
+    C: Coronary CT angiography
+    D: Exercise ECG stress test
+    E: High-sensitivity C-reactive protein
+  answer: B
+  explain: |
+    His 10-year ASCVD risk is **intermediate (7.5% to <20%)**, and he is uncertain about starting a statin. When the decision is unclear in **borderline (5% to <7.5%) or intermediate** risk, a **coronary artery calcium (CAC) score** is the best risk "tiebreaker".
+
+    | CAC score | Statin decision |
+    |---|---|
+    | **0** | Reasonable to **withhold** statin (reassess in 5–10 y) unless diabetes, smoking or strong family history |
+    | 1–99 | Favors statin, especially if age ≥55 |
+    | **≥100** or ≥75th percentile | **Start statin** |
+
+    A CAC of zero has a very high negative predictive value for events over the next decade. Other **risk enhancers** (family history of premature ASCVD, LDL ≥160, metabolic syndrome, CKD, inflammatory disease, high lipoprotein(a), high hs-CRP, South Asian ancestry, premature menopause or preeclampsia) also tip the balance toward a statin.
+  why:
+    A: Carotid intima-media thickness adds little to risk prediction and is not recommended.
+    C: CCTA uses contrast and more radiation and is a test for symptomatic patients, not for risk stratification.
+    D: Stress testing is for symptoms; it is not recommended for risk assessment in asymptomatic adults.
+    E: hs-CRP ≥2 mg/L is a risk enhancer, but it reclassifies risk far less than CAC.
+  objective: |
+    Use a coronary artery calcium score to guide statin decisions in asymptomatic adults at borderline or intermediate 10-year ASCVD risk when the decision is uncertain.
+  refs:
+    - Grundy SM, et al. 2018 AHA/ACC multisociety guideline on the management of blood cholesterol. *Circulation* 2019;139:e1082.
+    - Arnett DK, et al. 2019 ACC/AHA guideline on the primary prevention of cardiovascular disease. *Circulation* 2019;140:e596.

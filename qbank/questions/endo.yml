@@ -1,4 +1,4 @@
-# Endocrinology, Diabetes & Metabolism — ABIM blueprint 10%
+# Endocrinology, Diabetes & Metabolism — ABIM CERT blueprint
 - id: EN-001
   topic: Subacute (de Quervain) thyroiditis
   task: Treatment/Care Decisions
@@ -6,7 +6,7 @@
   stem: |
     A 38-year-old woman comes to the office with 10 days of pain in the front of her neck that spreads to her jaw and ears. She also has palpitations, sweating and trouble sleeping. Three weeks ago she had a sore throat and cough that resolved on their own. She takes no medications.
 
-    Temperature is 37.9 °C (100.2 °F), blood pressure is 128/72 mm Hg and pulse is 108/min. The thyroid is mildly enlarged, firm and **exquisitely tender** to palpation. There is a fine tremor of the outstretched hands. There is no proptosis or lid lag.
+    Temperature is 37.9 °C (100.2 °F), blood pressure is 128/72 mm Hg and pulse is 108/min. The thyroid is mildly enlarged, firm and exquisitely tender to palpation. There is a fine tremor of the outstretched hands. There is no proptosis or lid lag.
   labs:
     - [TSH, <0.01 µU/mL]
     - [Free T₄, 3.1 ng/dL]
@@ -147,7 +147,7 @@
   task: Treatment/Care Decisions
   chapters: [endo/calcium-bone]
   stem: |
-    A 66-year-old woman comes for follow-up of osteoporosis. Five years ago a DXA scan showed a lumbar spine T-score of −2.6 and a total hip T-score of −2.2, and she started **alendronate** weekly. She has taken it consistently. She has never had a fracture and has not fallen. She does not smoke, drinks rarely, and takes no glucocorticoids. She walks daily and takes calcium in food and vitamin D 1000 units daily.
+    A 66-year-old woman comes for follow-up of osteoporosis. Five years ago a DXA scan showed a lumbar spine T-score of −2.6 and a total hip T-score of −2.2, and she started alendronate weekly. She has taken it consistently. She has never had a fracture and has not fallen. She does not smoke, drinks rarely, and takes no glucocorticoids. She walks daily and takes calcium in food and vitamin D 1000 units daily.
 
     Height is unchanged from 5 years ago. Examination is normal.
   labs:
@@ -191,7 +191,7 @@
   task: Treatment/Care Decisions
   chapters: [renal/hyponatremia]
   stem: |
-    A 74-year-old woman comes to the office because of 2 weeks of fatigue and mild unsteadiness. Six weeks ago **hydrochlorothiazide** was added to her amlodipine for hypertension. She drinks about 2 L of fluid per day. She has no vomiting, diarrhea, headache or confusion.
+    A 74-year-old woman comes to the office because of 2 weeks of fatigue and mild unsteadiness. Six weeks ago hydrochlorothiazide was added to her amlodipine for hypertension. She drinks about 2 L of fluid per day. She has no vomiting, diarrhea, headache or confusion.
 
     Blood pressure is 132/76 mm Hg without orthostatic change, and pulse is 76/min. Mucous membranes are moist, jugular venous pressure is normal, and there is no edema. She is alert and oriented, and neurologic examination is normal.
   labs:
@@ -230,3 +230,784 @@
   refs:
     - Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. *Eur J Endocrinol* 2014;170:G1.
     - Verbalis JG, et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. *Am J Med* 2013;126:S1.
+
+
+- id: EN-006
+  topic: Subclinical hypothyroidism
+  task: Treatment/Care Decisions
+  chapters: [endo/thyroid]
+  stem: |
+    A 71-year-old woman is evaluated after routine testing showed an abnormal TSH level. She feels well and has no fatigue, cold intolerance, constipation or weight gain. She has hypertension treated with amlodipine. She is not planning pregnancy.
+
+    On physical examination, blood pressure is 132/76 mm Hg and pulse rate is 70/min. BMI is 25. The thyroid gland is normal in size without nodules. The remainder of the examination is normal.
+  labs:
+    - ["TSH", "7.2 µU/mL (repeated 2 months later, 6.8 µU/mL)"]
+    - ["Free thyroxine (T₄)", "1.1 ng/dL (normal)"]
+    - ["Thyroid peroxidase antibodies", "positive"]
+    - ["LDL cholesterol", "112 mg/dL"]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Begin levothyroxine, 25 µg/d
+    B: Begin levothyroxine, 1.6 µg/kg/d
+    C: Begin liothyronine (T₃)
+    D: Measure TSH again in 6 to 12 months
+    E: Obtain thyroid ultrasonography
+  answer: D
+  explain: |
+    She has **subclinical hypothyroidism**: an elevated TSH with a **normal free T₄**, confirmed on repeat testing. Her TSH is **below 10 µU/mL**, she has **no symptoms**, and she is **older**.
+
+    In the TRUST trial (adults ≥65 years with TSH 4.6–19.9), levothyroxine **did not improve symptoms, quality of life or fatigue**. TSH normally drifts upward with age, so a mildly high TSH in an older adult may be physiologic.
+
+    **Monitor TSH every 6–12 months** — positive TPO antibodies mean a higher chance (about 4% per year) of progression to overt hypothyroidism.
+
+    | Treat subclinical hypothyroidism when |
+    |---|
+    | TSH **≥10** µU/mL |
+    | Pregnancy or planning pregnancy (any TSH above trimester range) |
+    | Younger patient with clear symptoms (trial of therapy) |
+    | Goiter or progressive rise in TSH |
+  why:
+    A: Low-dose levothyroxine does not help asymptomatic older adults with TSH <10 µU/mL and risks overtreatment (atrial fibrillation, bone loss).
+    B: Full replacement dosing is for overt hypothyroidism, and an older adult would start low even then.
+    C: Liothyronine is not used for routine replacement because of its short half-life and peaks of T₃.
+    E: Her gland is normal on examination. Ultrasonography is for nodules or goiter, not for evaluating an abnormal TSH.
+  pearl: |
+    Before diagnosing subclinical hypothyroidism, **repeat the TSH in 2–3 months** — transient elevations are common during recovery from illness (nonthyroidal illness) and after thyroiditis.
+  objective: |
+    Do not treat asymptomatic subclinical hypothyroidism with a TSH below 10 µU/mL in older adults; monitor TSH periodically.
+  refs:
+    - Stott DJ, et al. Thyroid hormone therapy for older adults with subclinical hypothyroidism (TRUST). *N Engl J Med* 2017;376:2534.
+    - Bekkering GE, et al. Thyroid hormones treatment for subclinical hypothyroidism: a clinical practice guideline. *BMJ* 2019;365:l2006.
+
+- id: EN-007
+  topic: Hyperthyroidism in early pregnancy
+  task: Treatment/Care Decisions
+  chapters: [endo/thyroid, womens/pregnancy-medicine]
+  stem: |
+    A 29-year-old woman who is 8 weeks pregnant is evaluated for palpitations, heat intolerance and a 3-kg (6.6-lb) weight loss over 2 months. She has no nausea or vomiting.
+
+    On physical examination, blood pressure is 128/66 mm Hg and pulse rate is 112/min. There is a diffusely enlarged, nontender thyroid with a bruit. Mild bilateral proptosis is present. She has a fine tremor.
+  labs:
+    - ["TSH", "<0.01 µU/mL"]
+    - ["Free thyroxine (T₄)", "3.9 ng/dL (normal for trimester, 0.8–1.8)"]
+    - ["TSH receptor antibodies (TRAb)", "elevated"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Methimazole
+    B: Propranolol alone until the second trimester
+    C: Propylthiouracil
+    D: Radioactive iodine ablation
+    E: Total thyroidectomy now
+  answer: C
+  explain: |
+    Diffuse goiter with a bruit, proptosis and **positive TSH receptor antibodies** mean **Graves disease**, not gestational transient thyrotoxicosis (which has no goiter or eye disease, negative TRAb and usually hyperemesis).
+
+    In the **first trimester**, the antithyroid drug of choice is **propylthiouracil (PTU)**. **Methimazole is teratogenic** in weeks 6–10 (aplasia cutis, choanal/esophageal atresia, omphalocele). After the first trimester many experts switch to methimazole because PTU can cause **severe hepatotoxicity**.
+
+    Use the **lowest dose** that keeps free T₄ at or slightly above the upper limit of normal — antithyroid drugs cross the placenta and can cause fetal hypothyroidism and goiter. A beta-blocker can be used briefly for symptoms.
+
+    | Situation | Drug |
+    |---|---|
+    | First trimester / planning pregnancy | **PTU** |
+    | Second and third trimesters | Methimazole |
+    | Thyroid storm | PTU (also blocks T₄→T₃ conversion) |
+    | Everyone else | Methimazole |
+  why:
+    A: Methimazole causes congenital malformations when taken during organogenesis in the first trimester.
+    B: Beta-blockers help symptoms but do not treat the hyperthyroidism, and long-term use in pregnancy is linked to fetal growth restriction.
+    D: Radioactive iodine is absolutely contraindicated in pregnancy; it destroys the fetal thyroid after 10–12 weeks.
+    E: Thyroidectomy is reserved for failure or intolerance of drug therapy and, if needed, is done in the second trimester.
+  mnemonic: |
+    **"PTU for the Pregnant first Trimester; Methimazole for the More common rest."**
+  objective: |
+    Treat Graves hyperthyroidism in the first trimester of pregnancy with propylthiouracil, switching to methimazole after the first trimester.
+  refs:
+    - Alexander EK, et al. 2017 guidelines of the American Thyroid Association for the diagnosis and management of thyroid disease during pregnancy and the postpartum. *Thyroid* 2017;27:315.
+
+- id: EN-008
+  topic: Thyroid nodule with low TSH
+  task: Diagnosis/Testing
+  chapters: [endo/thyroid]
+  stem: |
+    A 54-year-old woman is evaluated for a neck lump she noticed while putting on a necklace. She reports mild palpitations. She has no hoarseness, dysphagia or history of neck irradiation. There is no family history of thyroid cancer.
+
+    On physical examination, pulse rate is 94/min. There is a 2.5-cm firm, mobile nodule in the left thyroid lobe. There is no cervical lymphadenopathy.
+  labs:
+    - ["TSH", "0.08 µU/mL"]
+    - ["Free thyroxine (T₄)", "1.7 ng/dL (normal, 0.8–1.8)"]
+    - ["Thyroid ultrasonography", "2.4-cm solid isoechoic nodule with smooth margins and no microcalcifications"]
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: CT scan of the neck with contrast
+    B: Fine-needle aspiration biopsy
+    C: Radionuclide (I-123) thyroid scan
+    D: Serum calcitonin
+    E: Serum thyroglobulin
+  answer: C
+  explain: |
+    The first step in any thyroid nodule is a **TSH**. When the TSH is **low**, the nodule may be **autonomously functioning ("hot")**, and hot nodules are almost never malignant. Obtain a **radionuclide (I-123 or technetium) uptake scan**:
+
+    - **Hot nodule** (takes up tracer, rest of gland suppressed) → no biopsy; treat the subclinical/overt hyperthyroidism (radioiodine, surgery or antithyroid drug).
+    - **Cold or indeterminate nodule** → proceed to FNA according to ultrasound features.
+
+    When the TSH is **normal or high**, skip the scan and decide on FNA by **ultrasound pattern and size** (e.g., high-suspicion nodule ≥1 cm, low-suspicion ≥1.5 cm).
+  why:
+    A: CT adds nothing to ultrasonography for nodule characterization, and iodinated contrast can worsen hyperthyroidism and interfere with a later radionuclide scan.
+    B: Biopsy of a hyperfunctioning nodule is unnecessary and the cytology can look falsely suspicious ("follicular"). Scan first when TSH is low.
+    D: Routine calcitonin measurement (for medullary cancer) is not recommended in the United States.
+    E: Thyroglobulin is a tumor marker after thyroidectomy for differentiated cancer; it does not distinguish benign from malignant nodules.
+  objective: |
+    In a patient with a thyroid nodule and a low TSH, obtain a radionuclide scan; a hyperfunctioning nodule does not need biopsy.
+  refs:
+    - Haugen BR, et al. 2015 American Thyroid Association management guidelines for adult patients with thyroid nodules and differentiated thyroid cancer. *Thyroid* 2016;26:1.
+
+- id: EN-009
+  topic: Inpatient hyperglycemia — basal-bolus insulin
+  task: Treatment/Care Decisions
+  chapters: [endo/inpatient-glucose]
+  stem: |
+    A 63-year-old man with type 2 diabetes is hospitalized for community-acquired pneumonia. At home he takes metformin, 1000 mg twice daily, and sitagliptin. He is eating full meals. Since admission 24 hours ago he has received sliding-scale regular insulin alone, and his point-of-care glucose values have been 248, 286, 302 and 264 mg/dL.
+
+    On physical examination, temperature is 37.8 °C (100.0 °F). He weighs 90 kg (198 lb). Other vital signs are normal.
+  labs:
+    - ["Hemoglobin A1c", "8.9%"]
+    - ["Creatinine", "1.0 mg/dL"]
+    - ["Anion gap", "10 mEq/L"]
+  lead: Which of the following is the most appropriate insulin regimen?
+  choices:
+    A: Continue sliding-scale insulin and increase the scale
+    B: Continuous intravenous insulin infusion
+    C: Basal insulin glargine, 0.2 units/kg/d, plus prandial rapid-acting insulin and correction doses
+    D: Neutral protamine Hagedorn (NPH) insulin twice daily without prandial insulin
+    E: Resume metformin and sitagliptin
+  answer: C
+  explain: |
+    **Sliding-scale insulin alone** treats hyperglycemia only after it happens and is associated with worse control; guidelines discourage it as the sole regimen. In a noncritically ill patient who is **eating**, use **scheduled basal-bolus insulin**:
+
+    - **Total daily dose** ≈ **0.3–0.5 units/kg** (lower, 0.2–0.3, if older, low eGFR or poor intake). For 90 kg at ~0.4 units/kg → ~36 units/d.
+    - **Half as basal** (glargine or detemir once daily) — about 0.2 units/kg, **half as prandial** rapid-acting insulin split over meals.
+    - Plus **correction doses** for highs.
+    - Target glucose **140–180 mg/dL**.
+
+    If the patient is **not eating**, use basal insulin plus correction only ("basal-plus") — RABBIT 2 trials. Before discharge, his A1c of 8.9% means he needs intensified home therapy.
+  why:
+    A: Sliding-scale insulin alone is reactive and leads to persistent hyperglycemia and swings. A bigger scale does not fix the problem.
+    B: IV insulin infusions are for critical illness, DKA/HHS or perioperative settings, not for a stable patient eating meals.
+    D: NPH without mealtime coverage will not control postprandial hyperglycemia and causes more hypoglycemia between meals.
+    E: Oral agents are usually held in hospitalized patients with acute illness; they act slowly and can't be titrated quickly. Metformin carries a lactic acidosis risk if kidney function or perfusion worsens.
+  objective: |
+    Treat hyperglycemia in noncritically ill hospitalized patients who are eating with scheduled basal-bolus insulin plus correction doses, targeting 140–180 mg/dL, rather than sliding-scale insulin alone.
+  refs:
+    - American Diabetes Association. 16. Diabetes care in the hospital: Standards of Care in Diabetes—2025. *Diabetes Care* 2025;48:S321.
+    - Umpierrez GE, et al. Randomized study of basal-bolus insulin therapy in the inpatient management of type 2 diabetes (RABBIT 2). *Diabetes Care* 2007;30:2181.
+
+- id: EN-010
+  topic: Adrenal incidentaloma
+  task: Diagnosis/Testing
+  chapters: [endo/adrenal]
+  stem: |
+    A 58-year-old man is evaluated after a CT scan done for suspected kidney stones showed a 2.4-cm left adrenal mass. The mass is homogeneous, has smooth borders and has an unenhanced attenuation of 6 Hounsfield units. He has hypertension controlled with amlodipine. He reports no headaches, palpitations, sweating or weight gain.
+
+    On physical examination, blood pressure is 134/82 mm Hg and pulse rate is 72/min. BMI is 27. There are no striae, plethora or proximal muscle weakness.
+  labs:
+    - ["Potassium", "4.3 mEq/L"]
+    - ["Glucose (fasting)", "96 mg/dL"]
+  lead: Which of the following is the most appropriate next step in evaluation?
+  choices:
+    A: Adrenal biopsy
+    B: 1-mg overnight dexamethasone suppression test and plasma free metanephrines
+    C: Repeat CT scan in 6 months only
+    D: MRI of the adrenal glands
+    E: No further evaluation
+  answer: B
+  explain: |
+    Every adrenal incidentaloma raises two questions:
+
+    1. **Is it malignant?** A homogeneous mass **<4 cm** with **≤10 Hounsfield units** on unenhanced CT is a **benign lipid-rich adenoma**. No further imaging is needed.
+    2. **Is it hormonally active?** Test **every** incidentaloma for:
+       - **Autonomous cortisol secretion** → **1-mg overnight dexamethasone suppression test** (morning cortisol >1.8 µg/dL is abnormal).
+       - **Pheochromocytoma** → **plasma free (or 24-h urine) metanephrines** — can be skipped in a clearly lipid-rich adenoma (≤10 HU), but most still test.
+       - **Primary aldosteronism** → aldosterone/renin **only if hypertension or hypokalemia** (he has hypertension, so add this).
+
+    Surgery is for hormonally active tumors or masses with suspicious imaging (>4 cm, heterogeneous, >20 HU).
+  why:
+    A: Biopsy cannot distinguish adrenal adenoma from carcinoma and risks hypertensive crisis if the mass is a pheochromocytoma. It is used only when metastasis is suspected and pheochromocytoma has been excluded.
+    C: The imaging is already diagnostic of a benign adenoma; follow-up CT adds nothing. Hormonal evaluation is what is missing.
+    D: The unenhanced CT has already characterized the lesion as lipid-rich; MRI would not change management.
+    E: Up to 1 in 3 adrenal incidentalomas have mild autonomous cortisol secretion, which is linked to hypertension, diabetes and osteoporosis. All need hormonal testing.
+  pearl: |
+    The **"rule of 4s and 10s"**: <4 cm and <10 HU = benign; >4 cm or >20 HU (or washout delayed) = suspicious.
+  objective: |
+    Evaluate every adrenal incidentaloma for cortisol excess with a 1-mg dexamethasone suppression test and for pheochromocytoma with metanephrines, plus aldosterone and renin if hypertension or hypokalemia is present.
+  refs:
+    - Fassnacht M, et al. European Society of Endocrinology clinical practice guidelines on the management of adrenal incidentalomas. *Eur J Endocrinol* 2023;189:G1.
+
+- id: EN-011
+  topic: Primary adrenal insufficiency
+  task: Diagnosis/Testing
+  chapters: [endo/adrenal]
+  stem: |
+    A 38-year-old woman is evaluated for 4 months of fatigue, nausea, salt craving, lightheadedness on standing and a 6-kg (13.2-lb) weight loss. She has hypothyroidism treated with levothyroxine.
+
+    On physical examination, blood pressure is 98/62 mm Hg supine and 82/54 mm Hg standing; pulse rate is 88/min supine and 112/min standing. There is hyperpigmentation of the palmar creases and buccal mucosa.
+  labs:
+    - ["Sodium", "129 mEq/L"]
+    - ["Potassium", "5.6 mEq/L"]
+    - ["Glucose", "68 mg/dL"]
+    - ["Creatinine", "1.2 mg/dL"]
+    - ["Morning (8 AM) serum cortisol", "4 µg/dL"]
+  lead: Which of the following is the most appropriate test to confirm the diagnosis?
+  choices:
+    A: Adrenal CT scan
+    B: Cosyntropin (ACTH) stimulation test with plasma ACTH
+    C: Insulin tolerance test
+    D: Late-night salivary cortisol
+    E: MRI of the pituitary gland
+  answer: B
+  explain: |
+    Hyperpigmentation, orthostatic hypotension, **hyponatremia, hyperkalemia** and hypoglycemia in a woman with autoimmune hypothyroidism point to **primary adrenal insufficiency (Addison disease)**, most often **autoimmune** in high-income countries.
+
+    A morning cortisol **<5 µg/dL** strongly suggests adrenal insufficiency (>15–18 µg/dL makes it unlikely). Confirm with the **cosyntropin stimulation test**: give 250 µg IV/IM; a peak cortisol **<18 µg/dL** (<14–15 µg/dL with newer specific assays) confirms the diagnosis. A **high plasma ACTH** shows the problem is in the adrenal gland (primary).
+
+    | | Primary (adrenal) | Secondary (pituitary) |
+    |---|---|---|
+    | ACTH | **High** | Low/normal |
+    | Hyperpigmentation | Yes | No |
+    | Aldosterone | Low → **hyperkalemia** | Normal (renin–angiotensin intact) |
+    | Treatment | Hydrocortisone **+ fludrocortisone** | Hydrocortisone only |
+
+    Next step after confirmation: **21-hydroxylase antibodies**. If she becomes unstable, give **hydrocortisone 100 mg IV** immediately — do not wait for test results.
+  why:
+    A: Adrenal imaging is for patients with negative 21-hydroxylase antibodies (looking for TB, hemorrhage, metastases). It does not confirm adrenal insufficiency.
+    C: The insulin tolerance test is the reference test for the HPA axis but is risky (hypoglycemia, seizures) and is rarely used, especially in someone already hypoglycemic.
+    D: Late-night salivary cortisol screens for Cushing syndrome — the opposite problem.
+    E: Pituitary MRI is for secondary adrenal insufficiency. Hyperpigmentation and hyperkalemia point to a primary adrenal cause.
+  pearl: |
+    **Thyroid hormone before steroids is dangerous.** In a patient with both hypothyroidism and possible adrenal insufficiency, replace **cortisol first** — starting levothyroxine alone speeds cortisol clearance and can precipitate adrenal crisis.
+  objective: |
+    Confirm suspected primary adrenal insufficiency with a cosyntropin stimulation test and an elevated plasma ACTH level.
+  refs:
+    - Bornstein SR, et al. Diagnosis and treatment of primary adrenal insufficiency: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2016;101:364.
+
+- id: EN-012
+  topic: Cushing syndrome — screening
+  task: Diagnosis/Testing
+  chapters: [endo/adrenal]
+  stem: |
+    A 41-year-old woman is evaluated for weight gain of 12 kg (26.4 lb) over a year, new hypertension, easy bruising and difficulty climbing stairs. She takes no glucocorticoids by any route, including inhaled, topical or injected. Her menses have become irregular.
+
+    On physical examination, blood pressure is 156/94 mm Hg. BMI is 33. She has facial plethora, supraclavicular fat pads, wide (>1 cm) purple striae on the abdomen and proximal muscle weakness of the hip flexors. Several ecchymoses are present on her forearms.
+  labs:
+    - ["Potassium", "3.4 mEq/L"]
+    - ["Fasting glucose", "132 mg/dL"]
+  lead: Which of the following is the most appropriate initial diagnostic test?
+  choices:
+    A: Late-night salivary cortisol on two occasions
+    B: Morning serum cortisol
+    C: MRI of the pituitary gland
+    D: Plasma ACTH level
+    E: Random serum cortisol
+  answer: A
+  explain: |
+    Easy bruising, facial plethora, **proximal myopathy** and **wide purple striae** are the most specific features of **Cushing syndrome** (obesity, hypertension and diabetes are common but nonspecific). Exogenous glucocorticoids have been excluded.
+
+    **Step 1 — prove cortisol excess** with one or more of three first-line tests (do at least two):
+    - **Late-night salivary cortisol** ×2 — loss of the normal nighttime cortisol nadir
+    - **1-mg overnight dexamethasone suppression test** — morning cortisol >1.8 µg/dL is abnormal
+    - **24-hour urine free cortisol** ×2
+
+    **Step 2 — localize** only after cortisol excess is confirmed: **plasma ACTH** (low → adrenal; normal/high → pituitary or ectopic), then pituitary MRI, high-dose dexamethasone testing or inferior petrosal sinus sampling as needed.
+  why:
+    B: A single morning cortisol is neither sensitive nor specific for Cushing syndrome; cortisol is normally highest in the morning.
+    C: Imaging before biochemical confirmation is a classic error — pituitary incidentalomas are present in about 10% of healthy adults.
+    D: ACTH localizes the cause, but only after hypercortisolism is confirmed.
+    E: Random cortisol varies with stress and time of day and cannot confirm or exclude the diagnosis.
+  mnemonic: |
+    Cushing work-up = **"Prove it, then find it."** Biochemistry first, imaging last.
+  objective: |
+    Screen for Cushing syndrome with late-night salivary cortisol, a 1-mg overnight dexamethasone suppression test or 24-hour urine free cortisol before measuring ACTH or imaging.
+  refs:
+    - Fleseriu M, et al. Consensus on diagnosis and management of Cushing's disease: a guideline update. *Lancet Diabetes Endocrinol* 2021;9:847.
+    - Nieman LK, et al. The diagnosis of Cushing's syndrome: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2008;93:1526.
+
+- id: EN-013
+  topic: Pheochromocytoma — preoperative preparation
+  task: Treatment/Care Decisions
+  chapters: [endo/adrenal]
+  stem: |
+    A 45-year-old man is evaluated for 6 months of episodic pounding headaches, sweating and palpitations lasting 10–20 minutes. Blood pressure during an episode in the emergency department was 210/118 mm Hg.
+
+    On physical examination, blood pressure is 162/98 mm Hg and pulse rate is 102/min. He is thin and tremulous.
+
+    Plasma free normetanephrine is 8 times the upper limit of normal. CT shows a 4.2-cm heterogeneous left adrenal mass with an unenhanced attenuation of 38 Hounsfield units. Laparoscopic adrenalectomy is planned in 3 weeks.
+  lead: Which of the following is the most appropriate preoperative treatment?
+  choices:
+    A: Doxazosin, followed by propranolol after several days
+    B: Metoprolol, followed by doxazosin
+    C: Hydrochlorothiazide
+    D: Labetalol alone
+    E: No preoperative medication; control blood pressure intraoperatively
+  answer: A
+  explain: |
+    Episodic headache, sweating and palpitations with paroxysmal hypertension, **markedly elevated metanephrines** and a dense, heterogeneous adrenal mass = **pheochromocytoma**.
+
+    Surgery without preparation can cause a hypertensive crisis when the tumor is handled. Preoperative care (7–14 days):
+    1. **Alpha-blockade first** — **phenoxybenzamine** or a selective α₁-blocker (**doxazosin**, prazosin); a calcium channel blocker is an add-on or alternative.
+    2. **High-sodium diet and fluids** to re-expand the contracted plasma volume.
+    3. **Beta-blocker only after adequate alpha-blockade** (usually 3–4 days later) to control tachycardia.
+
+    Targets before surgery: seated BP <130/80 mm Hg, mild orthostasis, heart rate 60–70/min.
+  why:
+    B: A beta-blocker first removes β₂-mediated vasodilation and leaves α-mediated vasoconstriction unopposed — a hypertensive crisis and acute heart failure can follow.
+    C: Diuretics worsen the volume contraction that is already present in pheochromocytoma.
+    D: Labetalol has much more beta- than alpha-blocking activity and can cause paradoxical hypertension; it is not a substitute for alpha-blockade.
+    E: Unprepared surgery carries a high risk of intraoperative hypertensive crisis, arrhythmia and death.
+  mnemonic: |
+    **"Alpha before Beta"** — as in the alphabet.
+  pearl: |
+    About **1 in 3** pheochromocytomas and paragangliomas are hereditary (MEN2, VHL, NF1, SDHx). Offer **genetic testing to all patients**.
+  objective: |
+    Before resection of a pheochromocytoma, start alpha-adrenergic blockade with volume repletion and add a beta-blocker only after adequate alpha-blockade.
+  refs:
+    - Lenders JWM, et al. Pheochromocytoma and paraganglioma: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2014;99:1915.
+
+- id: EN-014
+  topic: Prolactinoma
+  task: Treatment/Care Decisions
+  chapters: [endo/pituitary]
+  stem: |
+    A 27-year-old woman is evaluated for 8 months of amenorrhea and a milky nipple discharge. She would like to become pregnant in the next year. She takes no medications, including antipsychotics, metoclopramide or opioids.
+
+    On physical examination, vital signs are normal. Visual fields are full to confrontation. Expressible galactorrhea is present bilaterally.
+  labs:
+    - ["Urine pregnancy test", "negative"]
+    - ["Prolactin", "186 ng/mL"]
+    - ["TSH", "1.9 µU/mL"]
+    - ["Creatinine", "0.7 mg/dL"]
+    - ["MRI of the pituitary", "7-mm pituitary adenoma without optic chiasm compression"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Cabergoline
+    B: Combined oral contraceptive pill
+    C: Pituitary radiation therapy
+    D: Transsphenoidal surgery
+    E: Observation with repeat MRI in 1 year
+  answer: A
+  explain: |
+    She has a **microprolactinoma** (<10 mm) causing **hypogonadism (amenorrhea) and galactorrhea**. Pregnancy, hypothyroidism, kidney failure and dopamine-blocking drugs have been excluded. A prolactin level >150–200 ng/mL is almost always due to a prolactinoma.
+
+    **Dopamine agonists are first-line** for prolactinomas of any size, even macroadenomas with visual field defects: they normalize prolactin, restore ovulation and shrink the tumor. **Cabergoline** is preferred over bromocriptine — it is more effective and better tolerated.
+
+    Once she conceives, the dopamine agonist is usually **stopped** (microadenomas rarely grow in pregnancy). Very high doses (as used in Parkinson disease) are linked to cardiac valve disease; prolactinoma doses carry little risk.
+  why:
+    B: Oral contraceptives restore menses and protect bone in women who do not want pregnancy, but they do not restore fertility, which is her goal.
+    C: Radiation is reserved for aggressive tumors resistant to medical therapy and surgery; it causes hypopituitarism.
+    D: Surgery is second-line — for intolerance or resistance to dopamine agonists, or apoplexy.
+    E: Observation is reasonable only for an asymptomatic microprolactinoma. Her hypogonadism and wish for pregnancy need treatment.
+  pearl: |
+    Two traps with high prolactin: the **"hook effect"** (a giant macroadenoma with falsely normal-ish prolactin — ask the lab to dilute the sample) and **stalk effect** (a nonfunctioning macroadenoma compressing the stalk, with prolactin usually <100–150 ng/mL — surgery, not cabergoline).
+  objective: |
+    Treat a symptomatic prolactinoma with a dopamine agonist, preferably cabergoline.
+  refs:
+    - Petersenn S, et al. Diagnosis and management of prolactin-secreting pituitary adenomas: a Pituitary Society international consensus statement. *Nat Rev Endocrinol* 2023;19:722.
+    - Melmed S, et al. Diagnosis and treatment of hyperprolactinemia: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2011;96:273.
+
+- id: EN-015
+  topic: Male hypogonadism — diagnosis
+  task: Diagnosis/Testing
+  chapters: [endo/pituitary]
+  stem: |
+    A 48-year-old man is evaluated for 1 year of low libido, decreased morning erections and fatigue. He takes no medications or supplements and does not use anabolic steroids or opioids. He drinks alcohol rarely.
+
+    On physical examination, BMI is 28. Testicular volume is normal. There is no gynecomastia. Visual fields are full.
+
+    A total testosterone level drawn at 4:00 PM last week was 230 ng/dL (reference, 264–916 ng/dL).
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Begin testosterone gel
+    B: Measure fasting morning total testosterone on another day
+    C: Obtain MRI of the pituitary gland
+    D: Obtain karyotype analysis
+    E: Measure estradiol level
+  answer: B
+  explain: |
+    Testosterone has a **diurnal rhythm** (highest in the early morning) and is lowered by food, acute illness and sleep loss. An afternoon value can be falsely low.
+
+    The diagnosis of male hypogonadism requires **consistent symptoms plus unequivocally low testosterone on at least two fasting morning (7–10 AM) samples**. Use free testosterone (by equilibrium dialysis) if SHBG may be altered (obesity, diabetes, aging, liver disease, HIV).
+
+    After confirmation, measure **LH and FSH**:
+    - **High LH/FSH** → primary (testicular) — karyotype if Klinefelter suspected.
+    - **Low or normal LH/FSH** → secondary — check prolactin, iron studies, other pituitary hormones; pituitary MRI if testosterone <150 ng/dL, other pituitary deficits, high prolactin or mass symptoms.
+  why:
+    A: Testosterone should not be started on a single afternoon value; treatment without confirmation exposes him to erythrocytosis, infertility and unnecessary lifelong therapy.
+    C: Imaging is premature before biochemical confirmation and gonadotropin measurement.
+    D: Karyotyping is for primary hypogonadism with small testes (suspected Klinefelter syndrome). His testicular volume is normal.
+    E: Estradiol is measured when gynecomastia is present; it does not establish the diagnosis of hypogonadism.
+  pearl: |
+    Exogenous testosterone **suppresses spermatogenesis**. In a man who wants children, treat secondary hypogonadism with clomiphene or hCG instead.
+  objective: |
+    Confirm male hypogonadism with two fasting morning testosterone measurements before evaluation of the cause or treatment.
+  refs:
+    - Bhasin S, et al. Testosterone therapy in men with hypogonadism: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2018;103:1715.
+
+- id: EN-016
+  topic: Metformin and kidney function
+  task: Treatment/Care Decisions
+  chapters: [endo/diabetes-outpatient, renal/ckd]
+  stem: |
+    A 67-year-old woman with type 2 diabetes is evaluated during a routine visit. She takes metformin, 1000 mg twice daily, and her hemoglobin A1c is 7.0%. She has hypertension treated with lisinopril. She has no history of heart failure or atherosclerotic cardiovascular disease.
+
+    On physical examination, blood pressure is 128/76 mm Hg. BMI is 31.
+  labs:
+    - ["Creatinine", "1.5 mg/dL"]
+    - ["eGFR", "38 mL/min/1.73 m² (42 mL/min/1.73 m² 3 months ago)"]
+    - ["Urine albumin-to-creatinine ratio", "260 mg/g"]
+    - ["Potassium", "4.6 mEq/L"]
+  lead: Which of the following is the most appropriate change in her diabetes therapy?
+  choices:
+    A: Continue metformin at the current dose
+    B: Reduce metformin to 500 mg twice daily and add an SGLT2 inhibitor
+    C: Stop metformin and begin glipizide
+    D: Stop metformin and begin pioglitazone
+    E: Stop metformin and begin insulin glargine
+  answer: B
+  explain: |
+    Metformin is cleared by the kidney. FDA labeling:
+
+    | eGFR (mL/min/1.73 m²) | Metformin |
+    |---|---|
+    | ≥45 | Full dose |
+    | **30–44** | Do not start; if already taking, **reduce dose** (max ~1000 mg/d) |
+    | <30 | **Contraindicated** |
+
+    Her eGFR is 38, so **halve the metformin dose**. She also has **diabetic kidney disease with albuminuria**. An **SGLT2 inhibitor** (e.g., empagliflozin, dapagliflozin) slows CKD progression and reduces cardiovascular events and heart failure, independent of glucose lowering, and is recommended when eGFR is ≥20. Continue the ACE inhibitor; a GLP-1 receptor agonist (semaglutide, FLOW trial) or finerenone can be added for further kidney protection.
+  why:
+    A: Full-dose metformin is not recommended at an eGFR below 45 because of drug accumulation and lactic acidosis risk.
+    C: Sulfonylureas cause hypoglycemia, especially with low eGFR, and have no kidney benefit. Glipizide is the safest of the class in CKD but is not the best choice here.
+    D: Pioglitazone causes fluid retention and weight gain and offers no kidney protection.
+    E: Metformin can still be continued at a reduced dose; her A1c is near goal, and insulin adds hypoglycemia and weight gain without organ protection.
+  objective: |
+    Reduce the metformin dose when eGFR falls to 30–44 mL/min/1.73 m², stop it below 30, and add an SGLT2 inhibitor in patients with type 2 diabetes and albuminuric CKD.
+  refs:
+    - American Diabetes Association. 9. Pharmacologic approaches to glycemic treatment and 11. Chronic kidney disease and risk management: Standards of Care in Diabetes—2025. *Diabetes Care* 2025;48:S181, S239.
+    - KDIGO 2022 clinical practice guideline for diabetes management in CKD. *Kidney Int* 2022;102:S1.
+
+- id: EN-017
+  topic: DKA — potassium before insulin
+  task: Treatment/Care Decisions
+  chapters: [endo/dka-hhs]
+  stem: |
+    A 24-year-old man with type 1 diabetes is brought to the emergency department with 2 days of vomiting, abdominal pain and polyuria. He ran out of insulin 3 days ago.
+
+    On physical examination, temperature is 37.2 °C (99.0 °F), blood pressure is 102/64 mm Hg, pulse rate is 118/min, and respiration rate is 28/min with deep breaths. Mucous membranes are dry. He is drowsy but oriented.
+
+    One liter of 0.9% saline has been infused.
+  labs:
+    - ["Sodium", "132 mEq/L"]
+    - ["Potassium", "3.1 mEq/L"]
+    - ["Chloride", "96 mEq/L"]
+    - ["Bicarbonate", "8 mEq/L"]
+    - ["Glucose", "520 mg/dL"]
+    - ["β-Hydroxybutyrate", "7.2 mmol/L"]
+    - ["Arterial pH", "7.08"]
+    - ["Creatinine", "1.6 mg/dL"]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Begin intravenous regular insulin infusion at 0.1 units/kg/h
+    B: Give intravenous sodium bicarbonate
+    C: Give intravenous potassium chloride and hold insulin until potassium is ≥3.3 mEq/L
+    D: Give subcutaneous insulin glargine
+    E: Switch intravenous fluid to 5% dextrose in water
+  answer: C
+  explain: |
+    He has **severe DKA** (pH <7.0–7.24, bicarbonate <10, anion gap 28, ketonemia). Despite the low serum potassium, **total body potassium is profoundly depleted** — lost through osmotic diuresis and vomiting.
+
+    Insulin drives potassium into cells. Starting insulin with a potassium of **<3.3 mEq/L** can cause life-threatening **hypokalemia, arrhythmias and respiratory muscle weakness**.
+
+    | Serum K⁺ (mEq/L) | Action |
+    |---|---|
+    | **<3.3** | **Hold insulin**; give 20–40 mEq KCl/h until ≥3.3 |
+    | 3.3–5.2 | Start insulin; add 20–30 mEq K⁺ to each liter of fluid |
+    | >5.2 | Start insulin; no K⁺; recheck every 2 h |
+
+    Then: IV insulin infusion, fluids, add **dextrose when glucose falls below 250 mg/dL** (keep insulin running until the anion gap closes), and overlap basal subcutaneous insulin by 1–2 hours before stopping the drip.
+  why:
+    A: Insulin is the definitive treatment, but starting it with a potassium of 3.1 mEq/L risks fatal hypokalemia.
+    B: Bicarbonate does not improve outcomes in DKA unless pH is <6.9–7.0, and it worsens hypokalemia.
+    D: Subcutaneous basal insulin is not adequate initial therapy for severe DKA and also lowers potassium.
+    E: Dextrose is added when glucose falls to about 250 mg/dL. He still needs isotonic saline for volume and potassium replacement.
+  mnemonic: |
+    **"K before I"** — potassium ≥3.3 before insulin.
+  objective: |
+    In DKA with a serum potassium below 3.3 mEq/L, replace potassium and hold insulin until potassium is at least 3.3 mEq/L.
+  refs:
+    - Umpierrez GE, et al. Hyperglycemic crises in adults with diabetes: a consensus report (ADA/EASD/JBDS/AACE/DTS). *Diabetes Care* 2024;47:1257.
+
+- id: EN-018
+  topic: Euglycemic DKA from an SGLT2 inhibitor
+  task: Diagnosis/Testing
+  chapters: [endo/dka-hhs, renal/acid-base]
+  stem: |
+    A 56-year-old woman with type 2 diabetes is evaluated on postoperative day 2 after laparoscopic cholecystectomy for nausea, vomiting and malaise. She has eaten little since surgery. Her diabetes medications are metformin and empagliflozin; both were continued until the morning of surgery.
+
+    On physical examination, blood pressure is 112/68 mm Hg, pulse rate is 106/min, and respiration rate is 26/min. The abdomen is soft with healing port sites.
+  labs:
+    - ["Sodium", "138 mEq/L"]
+    - ["Potassium", "4.6 mEq/L"]
+    - ["Chloride", "104 mEq/L"]
+    - ["Bicarbonate", "12 mEq/L"]
+    - ["Glucose", "186 mg/dL"]
+    - ["Lactate", "1.1 mmol/L"]
+    - ["Creatinine", "0.9 mg/dL"]
+    - ["Arterial pH", "7.21"]
+    - ["Urinalysis", "3+ glucose, 3+ ketones"]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Alcoholic ketoacidosis
+    B: Euglycemic diabetic ketoacidosis
+    C: Lactic acidosis from metformin
+    D: Postoperative starvation ketosis
+    E: Normal anion gap acidosis from saline infusion
+  answer: B
+  explain: |
+    She has an **anion gap metabolic acidosis** (gap = 138 − 104 − 12 = **22**), ketonuria, a normal lactate — and a glucose of only 186 mg/dL. This is **euglycemic DKA**, a known complication of **SGLT2 inhibitors**.
+
+    **Mechanism:** SGLT2 inhibitors make the kidney spill glucose, which keeps the blood glucose deceptively near normal. Lower glucose → lower insulin and higher glucagon → lipolysis and ketogenesis. Triggers include **surgery, fasting, acute illness, reduced insulin doses and alcohol**.
+
+    Treat like DKA — fluids, IV insulin **with dextrose from the start** (because glucose is not high), potassium as needed — and stop the SGLT2 inhibitor.
+
+    **Prevention:** hold SGLT2 inhibitors **3 days before surgery** (4 days for ertugliflozin) and during acute illness ("sick day rules").
+  why:
+    A: Alcoholic ketoacidosis follows binge drinking with poor intake; there is no alcohol history here.
+    C: Lactate is normal, so metformin-associated lactic acidosis is excluded.
+    D: Starvation ketosis causes only mild acidosis (bicarbonate rarely <18 mEq/L), not a pH of 7.21.
+    E: The anion gap is elevated (22), so this is not a hyperchloremic normal anion gap acidosis.
+  pearl: |
+    Check **β-hydroxybutyrate and a blood gas** in any patient taking an SGLT2 inhibitor who has nausea, vomiting, abdominal pain or malaise — even if the glucose is normal.
+  objective: |
+    Recognize euglycemic DKA in a patient taking an SGLT2 inhibitor who has an anion gap acidosis and ketosis with near-normal glucose, and hold these drugs 3 days before surgery.
+  refs:
+    - Umpierrez GE, et al. Hyperglycemic crises in adults with diabetes: a consensus report. *Diabetes Care* 2024;47:1257.
+    - US Food and Drug Administration. Drug Safety Communication on SGLT2 inhibitors and ketoacidosis before scheduled surgery, 2020.
+
+- id: EN-019
+  topic: Hypoglycemia in a patient without diabetes
+  task: Diagnosis/Testing
+  chapters: [endo/hypoglycemia]
+  stem: |
+    A 34-year-old nurse is brought to the emergency department after she was found confused at work. Her glucose by fingerstick was 32 mg/dL, and her symptoms resolved with intravenous dextrose. She has had two similar episodes in the past month. She does not have diabetes. Her mother has type 2 diabetes treated with glyburide and insulin.
+
+    Blood was drawn during the hypoglycemic episode, before dextrose was given.
+  labs:
+    - ["Glucose", "34 mg/dL"]
+    - ["Insulin", "48 µU/mL (elevated)"]
+    - ["C-peptide", "<0.1 ng/mL (low)"]
+    - ["Proinsulin", "low"]
+    - ["β-Hydroxybutyrate", "low"]
+    - ["Sulfonylurea screen", "negative"]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Adrenal insufficiency
+    B: Exogenous insulin administration
+    C: Insulinoma
+    D: Insulin autoimmune syndrome
+    E: Surreptitious sulfonylurea use
+  answer: B
+  explain: |
+    Hypoglycemia with **Whipple triad** (symptoms, low glucose, relief with glucose). The key is the pattern of **insulin and C-peptide** during the episode.
+
+    Pancreatic beta cells cleave proinsulin into **insulin + C-peptide in equal amounts**. Pharmaceutical insulin contains **no C-peptide**. So **high insulin with suppressed C-peptide = exogenous insulin**. In a health care worker with access to insulin, this is **factitious hypoglycemia**.
+
+    | Cause | Insulin | C-peptide | Proinsulin | Sulfonylurea screen |
+    |---|---|---|---|---|
+    | **Exogenous insulin** | ↑ | **↓** | ↓ | − |
+    | Sulfonylurea/meglitinide | ↑ | ↑ | ↑ | **+** |
+    | Insulinoma | ↑ | ↑ | ↑ | − |
+    | Non-insulin mediated (IGF-2 tumor, adrenal insufficiency, sepsis) | ↓ | ↓ | ↓ | − |
+  why:
+    A: Adrenal insufficiency causes hypoglycemia with suppressed (not high) insulin.
+    C: Insulinoma secretes endogenous insulin, so C-peptide and proinsulin are elevated.
+    D: Insulin autoimmune syndrome causes very high insulin levels with elevated (not suppressed) C-peptide.
+    E: Sulfonylureas stimulate endogenous secretion, raising C-peptide; the screen is also negative.
+  mnemonic: |
+    **"C-peptide = Calling card of the pancreas."** No calling card → the insulin came from a syringe.
+  objective: |
+    In hypoglycemia, high insulin with suppressed C-peptide and proinsulin indicates exogenous insulin administration.
+  refs:
+    - Cryer PE, et al. Evaluation and management of adult hypoglycemic disorders: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2009;94:709.
+
+- id: EN-020
+  topic: Falsely low hemoglobin A1c
+  task: Pathophysiology/Basic Science
+  chapters: [endo/diabetes-outpatient, heme/anemia-transfusion]
+  stem: |
+    A 60-year-old man with type 2 diabetes is evaluated during a routine visit. His hemoglobin A1c is 5.6%, down from 8.2% 6 months ago, even though he has not changed his diet or medications (metformin and glipizide). His home glucose meter readings average 190 mg/dL with several readings above 250 mg/dL; the meter is accurate when checked against a laboratory glucose.
+
+    Three months ago he had a gastrointestinal bleed from a duodenal ulcer and received 3 units of packed red blood cells. He now takes oral iron.
+  labs:
+    - ["Hemoglobin", "11.6 g/dL"]
+    - ["Reticulocyte count", "4.8%"]
+    - ["Fasting plasma glucose", "182 mg/dL"]
+  lead: Which of the following best explains the discrepancy between his hemoglobin A1c and his glucose values?
+  choices:
+    A: Glycation of hemoglobin is reduced by oral iron
+    B: Metformin directly interferes with the A1c assay
+    C: Red blood cell transfusion and increased red cell turnover lower the A1c
+    D: Hypoglycemic episodes overnight lower the average glucose
+    E: Uremia causes carbamylation of hemoglobin
+  answer: C
+  explain: |
+    Hemoglobin A1c reflects glucose exposure over the **lifespan of the red cell (~120 days)**. Anything that **shortens red cell survival or adds new red cells** gives glucose less time to glycate hemoglobin and **falsely lowers A1c**:
+    - **Blood loss and transfusion** (transfused donor cells were never exposed to his glucose)
+    - **Hemolysis**, reticulocytosis, recovery from iron/B12/folate deficiency (young red cells)
+    - Erythropoiesis-stimulating agents, late pregnancy, CKD on ESA
+
+    Things that **falsely raise A1c**: **iron deficiency** (older red cells live longer), asplenia, B12/folate deficiency before treatment.
+
+    When A1c and glucose disagree, trust the glucose — use **continuous glucose monitoring** or **fructosamine** (glycated albumin, reflects ~2–3 weeks).
+  why:
+    A: Iron replacement leads to a burst of young red cells (reticulocytosis), which lowers A1c, but the main effect here is transfusion plus blood loss — iron itself does not block glycation.
+    B: Metformin does not interfere with A1c measurement.
+    D: His meter readings are high, not low. Hidden hypoglycemia would not explain an A1c this far below his measured glucose.
+    E: Carbamylated hemoglobin in severe uremia can interfere with some older assays, but his kidney function is not described as impaired and modern assays are not affected.
+  objective: |
+    Hemoglobin A1c is falsely low when red blood cell survival is shortened or new red cells are added (blood loss, transfusion, hemolysis, reticulocytosis).
+  refs:
+    - American Diabetes Association. 6. Glycemic goals and hypoglycemia: Standards of Care in Diabetes—2025. *Diabetes Care* 2025;48:S128.
+    - Radin MS. Pitfalls in hemoglobin A1c measurement. *J Gen Intern Med* 2014;29:388.
+
+- id: EN-021
+  topic: Osteomalacia
+  task: Diagnosis/Testing
+  chapters: [endo/calcium-bone]
+  stem: |
+    A 46-year-old woman is evaluated for 6 months of diffuse bone pain and difficulty rising from a chair. She had a Roux-en-Y gastric bypass 8 years ago and stopped taking her supplements 4 years ago. She has dark skin and rarely goes outdoors.
+
+    On physical examination, there is tenderness over the ribs and tibias and proximal muscle weakness. She walks with a waddling gait.
+  labs:
+    - ["Calcium", "8.2 mg/dL"]
+    - ["Phosphorus", "2.1 mg/dL"]
+    - ["Alkaline phosphatase", "340 U/L"]
+    - ["Parathyroid hormone", "168 pg/mL"]
+    - ["25-hydroxyvitamin D", "6 ng/mL"]
+    - ["Creatinine", "0.7 mg/dL"]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Osteomalacia
+    B: Osteoporosis
+    C: Paget disease of bone
+    D: Primary hyperparathyroidism
+    E: Polymyalgia rheumatica
+  answer: A
+  explain: |
+    **Osteomalacia** is defective mineralization of newly formed bone, most often from **severe vitamin D deficiency**. Her risks: gastric bypass (malabsorption), stopped supplements, dark skin and little sun.
+
+    The biochemical pattern:
+    - **Very low 25-hydroxyvitamin D**
+    - **Low-normal calcium and low phosphorus** (poor absorption + PTH-driven phosphaturia)
+    - **High PTH** (secondary hyperparathyroidism)
+    - **High alkaline phosphatase** (active, but failing, bone formation)
+
+    Clinically: **diffuse bone pain and tenderness, proximal myopathy, waddling gait**; radiographs may show **Looser zones (pseudofractures)**. Treat with high-dose vitamin D (e.g., 50,000 IU weekly) plus calcium, then maintenance.
+  why:
+    B: Osteoporosis is painless until fracture and has normal calcium, phosphorus, alkaline phosphatase and PTH.
+    C: Paget disease raises alkaline phosphatase but has normal calcium, phosphorus and vitamin D; pain is focal, not diffuse with myopathy.
+    D: Primary hyperparathyroidism causes **high** calcium. Her calcium is low with high PTH — secondary hyperparathyroidism.
+    E: PMR causes shoulder and hip girdle stiffness with high inflammatory markers, not bone tenderness with mineral abnormalities.
+  objective: |
+    Recognize osteomalacia by bone pain, proximal myopathy, low vitamin D, low phosphorus, high PTH and high alkaline phosphatase.
+  refs:
+    - Holick MF. Vitamin D deficiency. *N Engl J Med* 2007;357:266.
+    - Mechanick JI, et al. Clinical practice guidelines for the perioperative nutrition, metabolic, and nonsurgical support of patients undergoing bariatric procedures—2019 update. *Endocr Pract* 2019;25:1346.
+
+- id: EN-022
+  topic: Hypercalcemia of malignancy
+  task: Treatment/Care Decisions
+  chapters: [endo/calcium-bone, heme/onc-emergencies]
+  stem: |
+    A 66-year-old man with squamous cell carcinoma of the lung is admitted with 1 week of confusion, constipation, polyuria and poor oral intake.
+
+    On physical examination, blood pressure is 104/62 mm Hg and pulse rate is 104/min. Mucous membranes are dry. He is drowsy but arousable and oriented to person only.
+  labs:
+    - ["Calcium", "15.2 mg/dL"]
+    - ["Albumin", "3.6 g/dL"]
+    - ["Phosphorus", "2.2 mg/dL"]
+    - ["Creatinine", "1.6 mg/dL (baseline 0.9 mg/dL)"]
+    - ["Parathyroid hormone", "6 pg/mL (low)"]
+    - ["PTH-related peptide", "elevated"]
+  lead: Which of the following is the most appropriate initial treatment?
+  choices:
+    A: Furosemide alone
+    B: Hemodialysis
+    C: Intravenous isotonic saline, calcitonin and zoledronic acid
+    D: Oral prednisone
+    E: Cinacalcet
+  answer: C
+  explain: |
+    Severe (>14 mg/dL), symptomatic **hypercalcemia of malignancy** from **PTH-related peptide** (humoral hypercalcemia — classic for squamous cell cancers). PTH is appropriately suppressed.
+
+    Three tools, three speeds:
+
+    | Treatment | Onset | Role |
+    |---|---|---|
+    | **IV isotonic saline** (200–300 mL/h) | Hours | Corrects volume depletion; hypercalcemia causes nephrogenic DI |
+    | **Calcitonin** (4 IU/kg SC/IM q12h) | 4–6 h | Quick bridge; tachyphylaxis after 48 h |
+    | **Zoledronic acid** 4 mg IV (or pamidronate) | 2–4 days | Durable; blocks osteoclasts |
+    | **Denosumab** | Days | If bisphosphonate-refractory or eGFR too low |
+
+    Zoledronic acid needs dose adjustment or avoidance in severe kidney injury; denosumab can be used instead. Loop diuretics only after volume is restored and only if overload develops.
+  why:
+    A: Furosemide before volume repletion worsens dehydration and kidney injury; it is not routinely recommended.
+    B: Dialysis is for severe hypercalcemia with kidney failure or heart failure that cannot tolerate saline.
+    D: Glucocorticoids work for calcitriol-mediated hypercalcemia (lymphoma, granulomatous disease), not PTHrP-mediated disease.
+    E: Cinacalcet lowers PTH secretion in parathyroid disease; it does not treat PTHrP-mediated hypercalcemia.
+  pearl: |
+    Three mechanisms of hypercalcemia of malignancy — **PTHrP** (squamous, kidney, bladder, breast), **osteolytic metastases** (breast, myeloma), **calcitriol** (lymphoma).
+  objective: |
+    Treat severe symptomatic hypercalcemia of malignancy with intravenous isotonic saline, calcitonin and a bisphosphonate (or denosumab).
+  refs:
+    - El-Hajj Fuleihan G, et al. Treatment of hypercalcemia of malignancy in adults: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2023;108:507.
+
+- id: EN-023
+  topic: Familial hypocalciuric hypercalcemia
+  task: Pathophysiology/Basic Science
+  chapters: [endo/calcium-bone]
+  stem: |
+    A 36-year-old man is evaluated for mild hypercalcemia found on routine testing. He feels well. He has no kidney stones, fractures or bone pain. His father and sister were told they have "high calcium" but never had treatment.
+
+    Examination is normal.
+  labs:
+    - ["Calcium", "10.9 mg/dL"]
+    - ["Phosphorus", "2.8 mg/dL"]
+    - ["Parathyroid hormone", "62 pg/mL (reference, 10–65)"]
+    - ["25-hydroxyvitamin D", "34 ng/mL"]
+    - ["Creatinine", "0.9 mg/dL"]
+    - ["24-hour urine calcium", "52 mg"]
+    - ["Calcium-to-creatinine clearance ratio", "0.006"]
+  lead: Which of the following is the most likely cause of his hypercalcemia?
+  choices:
+    A: Inactivating mutation of the calcium-sensing receptor
+    B: Parathyroid adenoma
+    C: Excess calcitriol from granulomas
+    D: PTH-related peptide secretion
+    E: Vitamin D intoxication
+  answer: A
+  explain: |
+    **Familial hypocalciuric hypercalcemia (FHH)** is an autosomal dominant disorder, usually from a heterozygous **inactivating mutation of the calcium-sensing receptor (CaSR)**.
+
+    The parathyroid gland and kidney "read" calcium as lower than it really is. So:
+    - The parathyroids keep secreting PTH at a higher calcium set point → **mild hypercalcemia with normal or slightly high PTH**.
+    - The kidney reabsorbs calcium avidly → **low urine calcium**.
+
+    The key test is the **calcium-to-creatinine clearance ratio**: **<0.01 suggests FHH**; >0.02 suggests primary hyperparathyroidism. Family history and lifelong asymptomatic hypercalcemia support the diagnosis; genetic testing confirms it.
+
+    FHH is benign and needs **no treatment**. Parathyroidectomy does not cure it — so the main importance is **avoiding unnecessary surgery**.
+  why:
+    B: A parathyroid adenoma causes primary hyperparathyroidism, which typically has normal or high urine calcium (ratio >0.02).
+    C: Granulomatous disease causes PTH-independent hypercalcemia with suppressed PTH and high urine calcium.
+    D: PTHrP-mediated hypercalcemia occurs with malignancy and suppresses PTH.
+    E: Vitamin D intoxication raises 25-hydroxyvitamin D (often >150 ng/mL) and suppresses PTH.
+  objective: |
+    Familial hypocalciuric hypercalcemia is caused by inactivating calcium-sensing receptor mutations and is identified by a calcium-to-creatinine clearance ratio below 0.01; it does not require surgery.
+  refs:
+    - Bilezikian JP, et al. Evaluation and management of primary hyperparathyroidism: summary statement and guidelines from the Fifth International Workshop. *J Bone Miner Res* 2022;37:2293.

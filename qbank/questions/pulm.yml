@@ -1,10 +1,10 @@
-# Pulmonary Disease — ABIM blueprint 8%
+# Pulmonary Disease — ABIM CERT blueprint
 - id: PU-001
   topic: Stable COPD — escalating inhaled therapy
   task: Treatment/Care Decisions
   chapters: [pulmonary/copd]
   stem: |
-    A 67-year-old man with COPD comes for follow-up. He quit smoking 3 years ago after 45 pack-years. He uses **tiotropium** once daily and albuterol as needed; his inhaler technique is good. He gets short of breath walking about 100 meters on level ground. In the past year he had **two exacerbations** treated with oral prednisone and antibiotics, without hospitalization. He completed pulmonary rehabilitation last year.
+    A 67-year-old man with COPD comes for follow-up. He quit smoking 3 years ago after 45 pack-years. He uses tiotropium once daily and albuterol as needed; his inhaler technique is good. He gets short of breath walking about 100 meters on level ground. In the past year he had two exacerbations treated with oral prednisone and antibiotics, without hospitalization. He completed pulmonary rehabilitation last year.
 
     Oxygen saturation is 94% on room air. There are scattered expiratory wheezes and a prolonged expiratory phase.
   labs:
@@ -46,7 +46,7 @@
   task: Treatment/Care Decisions
   chapters: [pulmonary/asthma]
   stem: |
-    A 26-year-old woman comes to the office because she uses her albuterol inhaler **2–3 times per week** for cough, chest tightness and wheezing, especially with exercise and in cold air. She has not woken at night because of asthma and has never needed oral glucocorticoids or emergency care. She has allergic rhinitis.
+    A 26-year-old woman comes to the office because she uses her albuterol inhaler 2–3 times per week for cough, chest tightness and wheezing, especially with exercise and in cold air. She has not woken at night because of asthma and has never needed oral glucocorticoids or emergency care. She has allergic rhinitis.
 
     Examination is normal.
   labs:
@@ -86,7 +86,7 @@
   task: Diagnosis/Testing
   chapters: [pulmonary/nodule]
   stem: |
-    A 52-year-old woman had a CT scan of the abdomen and pelvis in the emergency department for right flank pain, which showed a 4-mm obstructing ureteral stone that later passed. The lung bases on the scan showed a **7-mm solid nodule** with smooth margins in the right lower lobe. She has **never smoked**, has no history of cancer and no known exposures to asbestos or radon. She feels well and has no cough, hemoptysis or weight loss.
+    A 52-year-old woman had a CT scan of the abdomen and pelvis in the emergency department for right flank pain, which showed a 4-mm obstructing ureteral stone that later passed. The lung bases on the scan showed a 7-mm solid nodule with smooth margins in the right lower lobe. She has never smoked, has no history of cancer and no known exposures to asbestos or radon. She feels well and has no cough, hemoptysis or weight loss.
 
     Examination is normal. There is no prior chest imaging.
   lead: Which of the following is the most appropriate next step?
@@ -128,7 +128,7 @@
 
     Blood pressure is 146/90 mm Hg. BMI is 34 kg/m² and neck circumference is 45 cm (17.7 in). The oropharynx is crowded.
 
-    A home sleep apnea test shows an **apnea–hypopnea index of 32 events/hour** with oxygen saturation nadir of 81%.
+    A home sleep apnea test shows an apnea–hypopnea index of 32 events/hour with oxygen saturation nadir of 81%.
   lead: Which of the following is the most appropriate treatment?
   choices:
     A: Continuous positive airway pressure (CPAP)
@@ -163,3 +163,786 @@
   refs:
     - Patil SP, et al. Treatment of adult obstructive sleep apnea with positive airway pressure: an AASM clinical practice guideline. *J Clin Sleep Med* 2019;15:335.
     - Kapur VK, et al. Clinical practice guideline for diagnostic testing for adult obstructive sleep apnea (AASM). *J Clin Sleep Med* 2017;13:479.
+
+
+- id: PU-005
+  topic: Suspected pulmonary embolism — low pretest probability
+  task: Diagnosis/Testing
+  chapters: [pulmonary/pe]
+  stem: |
+    A 34-year-old woman is evaluated in the emergency department for 1 day of left-sided pleuritic chest pain that began after a long day of moving furniture. She has no dyspnea, hemoptysis or leg swelling. She takes no medications, including estrogen. She has no history of venous thromboembolism, recent surgery or cancer.
+
+    On physical examination, temperature is 37.0 °C (98.6 °F), blood pressure is 122/76 mm Hg, pulse rate is 82/min, and respiration rate is 16/min. Oxygen saturation is 99% breathing ambient air. There is point tenderness over the left fifth rib that reproduces the pain. Legs are normal. ECG and chest radiograph are normal.
+  lead: Which of the following is the most appropriate next step in evaluation?
+  choices:
+    A: CT pulmonary angiography
+    B: D-dimer measurement
+    C: Lower-extremity duplex ultrasonography
+    D: No further testing for pulmonary embolism
+    E: Ventilation-perfusion scan
+  answer: D
+  explain: |
+    The first step in suspected PE is estimating the **pretest probability** (clinical gestalt, Wells or Geneva score). She has a **low** probability: young, normal vital signs, no risk factors, reproducible chest wall pain.
+
+    In low-probability patients, apply the **PERC rule**. If **all 8 criteria** are met, the probability of PE is <2% and **no further testing is needed** — not even a D-dimer:
+
+    | PERC — all must be "no" |
+    |---|
+    | Age ≥50 |
+    | Heart rate ≥100/min |
+    | SpO₂ <95% |
+    | Unilateral leg swelling |
+    | Hemoptysis |
+    | Recent surgery or trauma (≤4 weeks) |
+    | Prior VTE |
+    | Estrogen use |
+
+    She is PERC-negative. Over-testing (D-dimer → CT) leads to false positives, contrast exposure and incidental findings.
+
+    If PERC is positive: **D-dimer** (age-adjusted if >50: age × 10 µg/L) for low/intermediate probability → **CTPA** if positive. **High probability → CTPA directly**.
+  why:
+    A: CTPA is for high pretest probability or a positive D-dimer. It is not appropriate in a PERC-negative patient.
+    B: D-dimer is the next test for low-probability patients who are not PERC-negative; she meets all PERC criteria.
+    C: Leg ultrasonography is used when CT is contraindicated or leg symptoms are present; she has neither.
+    E: A V/Q scan is an alternative to CTPA in pregnancy or contrast allergy, not a test for PERC-negative patients.
+  objective: |
+    In a patient with low clinical probability of pulmonary embolism who meets all PERC criteria, no further testing for PE is needed.
+  refs:
+    - Raja AS, et al. Evaluation of patients with suspected acute pulmonary embolism: best practice advice from the ACP. *Ann Intern Med* 2015;163:701.
+    - Kline JA, et al. Prospective multicenter evaluation of the pulmonary embolism rule-out criteria. *J Thromb Haemost* 2008;6:772.
+
+- id: PU-006
+  topic: High-risk (massive) pulmonary embolism
+  task: Treatment/Care Decisions
+  chapters: [pulmonary/pe, nightcalls/hypotension]
+  stem: |
+    A 58-year-old man is evaluated on postoperative day 6 after a laparoscopic colectomy for sudden dyspnea and lightheadedness. He was receiving enoxaparin prophylaxis.
+
+    On physical examination, blood pressure is 78/50 mm Hg (persisting after a 1-L fluid bolus), pulse rate is 128/min, and respiration rate is 30/min. Oxygen saturation is 86% on 6 L/min oxygen. Jugular venous pressure is elevated. His surgical wounds are healing, with no bleeding.
+
+    Bedside echocardiogram shows a dilated, hypokinetic right ventricle with a flattened septum. CT pulmonary angiography shows bilateral main pulmonary artery emboli.
+  labs:
+    - ["Troponin T", "elevated"]
+    - ["Lactate", "4.2 mmol/L"]
+  lead: In addition to anticoagulation with unfractionated heparin, which of the following is the most appropriate treatment?
+  choices:
+    A: Inferior vena cava filter placement
+    B: Systemic thrombolysis (alteplase)
+    C: Switch to apixaban
+    D: Additional intravenous fluid boluses of 3 L
+    E: Wait 24 hours and repeat echocardiography
+  answer: B
+  explain: |
+    **High-risk (massive) PE**: acute PE with **sustained hypotension** (SBP <90 mm Hg for ≥15 minutes or needing vasopressors) or obstructive shock. In-hospital mortality is >25%.
+
+    The acute RV fails because it cannot handle a sudden rise in afterload. Treatment:
+    - **Anticoagulation with unfractionated heparin** (short half-life, reversible, compatible with thrombolysis or procedures).
+    - **Reperfusion — systemic thrombolysis** (alteplase 100 mg over 2 hours) is recommended unless contraindicated.
+    - His surgery was **6 days ago** — recent surgery is a **relative** contraindication; in a patient in shock the benefit generally outweighs bleeding risk. If thrombolysis is contraindicated or fails: **catheter-directed therapy** or **surgical embolectomy**.
+    - Supportive care: **cautious fluids** (≤500 mL; more can overdistend the RV), **norepinephrine**, avoid intubation if possible (positive pressure can cause collapse).
+
+    | PE risk | Definition | Treatment |
+    |---|---|---|
+    | **High** | Hypotension/shock | **Anticoagulation + thrombolysis** |
+    | Intermediate-high | RV dysfunction + troponin, normotensive | Anticoagulation, monitor; rescue lysis if deteriorates |
+    | Low | Normal RV, normal troponin, sPESI 0 | Anticoagulation; consider outpatient |
+  why:
+    A: IVC filters are for patients who cannot be anticoagulated; they do not treat existing obstruction or shock.
+    C: Oral anticoagulants are for stable patients and do not treat obstructive shock.
+    D: Large fluid volumes worsen RV dilation and septal shift, decreasing LV filling.
+    E: Delaying reperfusion in shock increases mortality.
+  objective: |
+    Treat high-risk pulmonary embolism with hemodynamic instability with anticoagulation plus systemic thrombolysis, unless contraindicated.
+  refs:
+    - Konstantinides SV, et al. 2019 ESC guidelines for acute pulmonary embolism. *Eur Heart J* 2020;41:543.
+    - Stevens SM, et al. Antithrombotic therapy for VTE disease: CHEST guideline second update. *Chest* 2021;160:e545.
+
+- id: PU-007
+  topic: Cancer-associated venous thromboembolism
+  task: Treatment/Care Decisions
+  chapters: [pulmonary/pe, heme/anticoagulation]
+  stem: |
+    A 64-year-old woman with metastatic colon adenocarcinoma receiving chemotherapy is found to have segmental pulmonary emboli on a staging CT scan. She has mild dyspnea on exertion. Her primary tumor was resected 6 months ago; she has no GI bleeding or luminal tumor. She is not taking interacting drugs.
+
+    On physical examination, blood pressure is 132/78 mm Hg, pulse rate is 88/min, and oxygen saturation is 96% breathing ambient air.
+  labs:
+    - ["Hemoglobin", "11.8 g/dL"]
+    - ["Platelet count", "162,000/µL"]
+    - ["Creatinine", "0.8 mg/dL"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Apixaban for at least 6 months
+    B: Aspirin
+    C: Inferior vena cava filter
+    D: Warfarin with enoxaparin bridge
+    E: Anticoagulation for 6 weeks
+  answer: A
+  explain: |
+    Cancer-associated VTE carries high rates of **recurrence and bleeding**. Options for initial and long-term treatment:
+    - **DOACs — apixaban, rivaroxaban, edoxaban** — are recommended over LMWH (ASCO, ASH, CHEST). In trials (Caravaggio, SELECT-D, Hokusai-VTE Cancer), they reduced recurrent VTE as well as or better than dalteparin. Rivaroxaban and edoxaban raised **GI/GU bleeding** in **luminal GI and GU cancers**; **apixaban** did not increase major bleeding in Caravaggio.
+    - **LMWH** remains preferred when there is a **luminal GI/GU tumor in place**, significant drug interactions, or poor oral intake.
+
+    Duration: **at least 6 months**, and **indefinitely while the cancer is active** or under treatment.
+  why:
+    B: Aspirin is far less effective than anticoagulation for treating VTE.
+    C: An IVC filter is only for patients with acute VTE who cannot be anticoagulated.
+    D: Warfarin is inferior to LMWH and DOACs in cancer (more recurrence, unstable INR with chemotherapy and poor intake).
+    E: Cancer-associated VTE requires at least 6 months of therapy, continued while cancer is active.
+  objective: |
+    Treat cancer-associated VTE with a DOAC (or LMWH, preferred for unresected luminal GI/GU tumors) for at least 6 months and as long as the cancer is active.
+  refs:
+    - Key NS, et al. VTE prophylaxis and treatment in patients with cancer: ASCO guideline update. *J Clin Oncol* 2023;41:3063.
+    - Agnelli G, et al. Apixaban for the treatment of VTE associated with cancer (Caravaggio). *N Engl J Med* 2020;382:1599.
+
+- id: PU-008
+  topic: Pleural fluid — Light criteria
+  task: Diagnosis/Testing
+  chapters: [pulmonary/pleural-effusion]
+  stem: |
+    A 72-year-old man with HFrEF (LVEF 30%) is admitted with dyspnea and a large right pleural effusion. He has been receiving IV furosemide for 3 days with improvement in edema but the effusion persists. He has a 50 pack-year smoking history.
+
+    Diagnostic thoracentesis is performed.
+  labs:
+    - Serum
+    - ["Total protein", "6.4 g/dL"]
+    - ["Lactate dehydrogenase", "210 U/L (upper limit of normal, 222)"]
+    - ["Albumin", "3.2 g/dL"]
+    - Pleural fluid
+    - ["Total protein", "3.4 g/dL"]
+    - ["Lactate dehydrogenase", "120 U/L"]
+    - ["Albumin", "1.8 g/dL"]
+    - ["Glucose", "110 mg/dL"]
+    - ["Cell count", "600/µL (80% lymphocytes)"]
+  lead: Which of the following is the most likely cause of the effusion?
+  choices:
+    A: Heart failure
+    B: Malignancy
+    C: Parapneumonic effusion
+    D: Pulmonary embolism
+    E: Tuberculosis
+  answer: A
+  explain: |
+    By **Light criteria**, the fluid is an **exudate** if any one is met:
+    - Pleural/serum **protein >0.5** → 3.4/6.4 = **0.53** ✔
+    - Pleural/serum **LDH >0.6** → 120/210 = 0.57 ✘
+    - Pleural **LDH >2/3** of the upper limit of normal serum LDH → 120 vs 148 ✘
+
+    He barely meets one protein criterion. Light criteria are very sensitive for exudates and **misclassify about 25% of transudates as exudates — especially after diuresis**, which concentrates pleural protein.
+
+    The fix: calculate the **serum-to-pleural albumin gradient**. A gradient **>1.2 g/dL** means the fluid is really a **transudate**. Here: 3.2 − 1.8 = **1.4 g/dL** → **transudate from heart failure**. (A serum-to-pleural **protein** gradient >3.1 g/dL or a high pleural NT-proBNP also helps.)
+  why:
+    B: Malignant effusions are true exudates (often with high LDH and lymphocytes); the albumin gradient shows this is a transudate.
+    C: Parapneumonic effusions are neutrophil-predominant exudates, often with low glucose and pH.
+    D: PE-related effusions are usually small exudates and often bloody.
+    E: Tuberculous effusions are lymphocytic exudates with high protein and adenosine deaminase.
+  mnemonic: |
+    Light criteria **"0.5 – 0.6 – ⅔"**. Diuresed heart failure patient with a "borderline exudate"? Check the **albumin gradient (>1.2 = transudate)**.
+  objective: |
+    In patients with heart failure on diuretics, an effusion that marginally meets Light criteria for exudate is a transudate when the serum-to-pleural albumin gradient exceeds 1.2 g/dL.
+  refs:
+    - Light RW. Pleural effusion. *N Engl J Med* 2002;346:1971.
+    - Feller-Kopman D, Light R. Pleural disease. *N Engl J Med* 2018;378:740.
+
+- id: PU-009
+  topic: Complicated parapneumonic effusion
+  task: Treatment/Care Decisions
+  chapters: [pulmonary/pleural-effusion, id/cap]
+  stem: |
+    A 52-year-old man is hospitalized with right lower lobe pneumonia. After 3 days of IV ceftriaxone and azithromycin, he still has fever and right-sided pleuritic pain.
+
+    On physical examination, temperature is 38.6 °C (101.5 °F), pulse rate is 104/min. There is dullness to percussion and decreased breath sounds at the right base.
+
+    Chest ultrasonography shows a moderate free-flowing effusion with a few septations. Thoracentesis yields cloudy, nonpurulent fluid.
+  labs:
+    - ["Pleural fluid pH", "7.05"]
+    - ["Pleural fluid glucose", "38 mg/dL"]
+    - ["Pleural fluid LDH", "1,450 U/L"]
+    - ["Pleural fluid Gram stain", "no organisms"]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Change antibiotics to piperacillin-tazobactam and observe
+    B: Chest tube drainage
+    C: Repeat thoracentesis in 1 week
+    D: Add intravenous glucocorticoids
+    E: Video-assisted thoracoscopic surgery as the first intervention
+  answer: B
+  explain: |
+    He has a **complicated parapneumonic effusion**: **pH <7.20**, **glucose <60 mg/dL**, high LDH and septations. Bacteria have invaded the pleural space even though the Gram stain is negative. These effusions **will not resolve with antibiotics alone** and progress to empyema and fibrothorax.
+
+    | Effusion | Findings | Management |
+    |---|---|---|
+    | Uncomplicated | pH ≥7.20, glucose ≥60, no organisms | Antibiotics alone |
+    | **Complicated** | **pH <7.20, glucose <60**, LDH >1000, or positive Gram stain/culture | **Chest tube drainage** + antibiotics |
+    | Empyema | Frank pus | Chest tube + antibiotics |
+
+    If drainage is incomplete because of loculations, give **intrapleural tPA plus DNase** (MIST-2); refer for **VATS** if that fails. Broaden antibiotics to cover anaerobes (e.g., ampicillin-sulbactam) for 2–6 weeks.
+  why:
+    A: Changing antibiotics alone does not drain an infected pleural space.
+    C: Delay allows loculation and empyema to develop.
+    D: Glucocorticoids have no role in parapneumonic effusion.
+    E: Surgery is reserved for failure of tube drainage and fibrinolytics, or for organized empyema.
+  objective: |
+    Drain a parapneumonic effusion with a chest tube when the pleural fluid pH is below 7.20, glucose is below 60 mg/dL, or the Gram stain or culture is positive.
+  refs:
+    - Rahman NM, et al. Intrapleural use of tPA and DNase in pleural infection (MIST-2). *N Engl J Med* 2011;365:518.
+    - Roberts ME, et al. British Thoracic Society guideline for pleural disease. *Thorax* 2023;78:s1.
+
+- id: PU-010
+  topic: Primary spontaneous pneumothorax
+  task: Treatment/Care Decisions
+  chapters: [pulmonary/pneumothorax]
+  stem: |
+    A 22-year-old man is evaluated for sudden right-sided chest pain and mild shortness of breath that began 3 hours ago while he was sitting at his desk. He smokes cigarettes and marijuana. He has no lung disease. This is his first episode.
+
+    On physical examination, blood pressure is 124/76 mm Hg, pulse rate is 92/min, and respiration rate is 18/min. Oxygen saturation is 96% breathing ambient air. He is tall and thin. Breath sounds are decreased on the right. The trachea is midline.
+
+    Chest radiograph shows a right apical pneumothorax with a 2.5-cm interpleural distance at the hilum. There is no mediastinal shift.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Emergency needle decompression
+    B: Large-bore (28 F) chest tube and admission
+    C: Video-assisted thoracoscopic surgery with pleurodesis
+    D: Observation or needle aspiration, with outpatient follow-up and smoking cessation
+    E: Admission for 100% oxygen for 1 week
+  answer: D
+  explain: |
+    **Primary spontaneous pneumothorax (PSP)** occurs in **tall, thin young men who smoke**, without known lung disease, from rupture of apical blebs. He is **stable**, with few symptoms.
+
+    Current guidance (BTS 2023) favors **conservative management** for stable PSP:
+    - **Minimal symptoms** → **observation alone**, even for larger pneumothoraces (the PSP trial showed conservative care was noninferior with fewer complications and recurrences).
+    - **Significant symptoms** → **needle aspiration** or a **small-bore (≤14 F) drain/ambulatory device**.
+    - Large-bore chest tubes are rarely needed.
+
+    **Smoking cessation** (tobacco and cannabis) greatly reduces recurrence. Advise no flying until resolved and **no scuba diving** unless definitive surgery is done.
+
+    **Surgery (VATS bullectomy + pleurodesis)** is for **recurrence**, persistent air leak (>3–5 days), bilateral pneumothorax, or high-risk occupations (pilots, divers).
+  why:
+    A: Needle decompression is for **tension pneumothorax** (hypotension, tracheal deviation, hypoxemia), which he does not have.
+    B: Large-bore tubes are more painful and have no advantage over conservative care or small drains in PSP.
+    C: Surgery is not indicated for a first episode of PSP without complications or special occupational needs.
+    E: Supplemental oxygen speeds resorption slightly, but prolonged hospitalization for oxygen alone is not appropriate.
+  objective: |
+    Manage a stable, first primary spontaneous pneumothorax conservatively (observation or needle aspiration/small-bore drainage) and advise smoking cessation.
+  refs:
+    - Roberts ME, et al. British Thoracic Society guideline for pleural disease. *Thorax* 2023;78:s1.
+    - Brown SGA, et al. Conservative versus interventional treatment for spontaneous pneumothorax. *N Engl J Med* 2020;382:405.
+
+- id: PU-011
+  topic: Idiopathic pulmonary fibrosis
+  task: Treatment/Care Decisions
+  chapters: [pulmonary/ild-sarcoid]
+  stem: |
+    A 71-year-old man is evaluated for 18 months of progressive exertional dyspnea and a dry cough. He is a former smoker (30 pack-years). He worked as an accountant and has no birds, mold exposure or relevant medications. He has no joint pain, rash or Raynaud phenomenon.
+
+    On physical examination, oxygen saturation is 94% at rest, falling to 86% after walking. There are bibasilar inspiratory "Velcro" crackles and digital clubbing.
+
+    High-resolution CT shows subpleural, basal-predominant reticulation with honeycombing and traction bronchiectasis, without ground-glass opacity (usual interstitial pneumonia pattern). Autoimmune serologies are negative. Pulmonary function tests show FVC 64% predicted and DLCO 42% predicted.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Azathioprine, prednisone and N-acetylcysteine
+    B: Nintedanib or pirfenidone
+    C: Prednisone, 60 mg/d
+    D: Mycophenolate mofetil
+    E: No treatment until FVC falls below 50% predicted
+  answer: B
+  explain: |
+    Older ex-smoker, progressive dyspnea, Velcro crackles, clubbing, a restrictive pattern with low DLCO, **definite UIP pattern on HRCT** and no exposures or connective tissue disease = **idiopathic pulmonary fibrosis (IPF)**. With a typical clinical picture and definite UIP on HRCT, **lung biopsy is not needed**.
+
+    IPF is fibrosis, not inflammation. **Antifibrotics — nintedanib or pirfenidone** — **slow FVC decline by about 50%** and are recommended for patients with IPF at diagnosis. Newer agents such as nerandomilast (a PDE4B inhibitor) are adding options.
+
+    Supportive care: **supplemental oxygen** for exertional desaturation, pulmonary rehabilitation, vaccinations, treat reflux symptoms, and early **lung transplant referral**.
+  why:
+    A: Triple therapy with azathioprine, prednisone and NAC **increased mortality** in IPF (PANTHER-IPF) and is contraindicated.
+    C: Glucocorticoids do not help IPF and cause harm; they are used only for acute exacerbations (weak evidence).
+    D: Mycophenolate is used for connective tissue disease–associated ILD (e.g., scleroderma), not IPF.
+    E: Antifibrotics slow decline regardless of disease severity; waiting allows irreversible loss of lung function.
+  objective: |
+    Treat idiopathic pulmonary fibrosis with an antifibrotic agent (nintedanib or pirfenidone) and avoid glucocorticoid-based immunosuppression.
+  refs:
+    - Raghu G, et al. Idiopathic pulmonary fibrosis (an update) and progressive pulmonary fibrosis in adults: ATS/ERS/JRS/ALAT clinical practice guideline. *Am J Respir Crit Care Med* 2022;205:e18.
+    - Idiopathic Pulmonary Fibrosis Clinical Research Network. Prednisone, azathioprine, and N-acetylcysteine for pulmonary fibrosis. *N Engl J Med* 2012;366:1968.
+
+- id: PU-012
+  topic: Löfgren syndrome (acute sarcoidosis)
+  task: Treatment/Care Decisions
+  chapters: [pulmonary/ild-sarcoid, derm/common-rashes]
+  stem: |
+    A 32-year-old woman is evaluated for 2 weeks of painful red bumps on her shins, ankle pain and swelling on both sides, and low-grade fevers. She has no cough or dyspnea.
+
+    On physical examination, temperature is 37.8 °C (100.0 °F). There are tender, warm, erythematous nodules on both anterior shins. Both ankles are swollen and tender with periarticular erythema. Lungs are clear.
+
+    Chest radiograph shows bilateral hilar lymphadenopathy without parenchymal opacities.
+  labs:
+    - ["Calcium", "9.6 mg/dL"]
+    - ["Creatinine", "0.7 mg/dL"]
+    - ["Antistreptolysin O", "normal"]
+    - ["Interferon-γ release assay", "negative"]
+    - ["Pulmonary function tests", "normal"]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Endobronchial ultrasound–guided lymph node biopsy
+    B: Methotrexate
+    C: Mediastinoscopy
+    D: NSAIDs and clinical observation
+    E: Prednisone, 40 mg/d for 6 months
+  answer: D
+  explain: |
+    The combination of **erythema nodosum, bilateral hilar lymphadenopathy, acute polyarthritis (classically periarticular ankle inflammation) and fever** is **Löfgren syndrome**, an acute form of sarcoidosis.
+
+    The clinical picture is so specific that **biopsy is not needed** (ATS 2020) once TB, lymphoma, fungal infection and streptococcal infection are reasonably excluded. Löfgren syndrome has an **excellent prognosis**: more than 90% of patients have **spontaneous remission within 1–2 years**.
+
+    Treatment is **supportive — NSAIDs** for joint pain and erythema nodosum. Short-course glucocorticoids are used only for severe symptoms. Monitor with clinical follow-up and chest imaging; screen all sarcoidosis patients for **eye involvement**, **cardiac involvement** (ECG), hypercalcemia and kidney function.
+  why:
+    A: Biopsy is not required for a classic Löfgren presentation; tissue is needed when the presentation is atypical.
+    B: Methotrexate is a glucocorticoid-sparing drug for chronic, symptomatic sarcoidosis.
+    C: Mediastinoscopy is more invasive than EBUS and unnecessary here.
+    E: Prolonged high-dose glucocorticoids are for organ-threatening sarcoidosis (symptomatic lung impairment, heart, eye, CNS, hypercalcemia); Löfgren syndrome resolves on its own.
+  objective: |
+    Diagnose Löfgren syndrome clinically (erythema nodosum, hilar adenopathy, ankle arthritis, fever) and treat with NSAIDs and observation without biopsy.
+  refs:
+    - Crouser ED, et al. Diagnosis and detection of sarcoidosis: an official ATS clinical practice guideline. *Am J Respir Crit Care Med* 2020;201:e26.
+    - Baughman RP, et al. ERS clinical practice guidelines on treatment of sarcoidosis. *Eur Respir J* 2021;58:2004079.
+
+- id: PU-013
+  topic: Hypersensitivity pneumonitis
+  task: Diagnosis/Testing
+  chapters: [pulmonary/ild-sarcoid]
+  stem: |
+    A 56-year-old woman is evaluated for 6 months of cough and exertional dyspnea. She has never smoked. She notices that her symptoms improve when she travels for a week but return after she comes home. She keeps three pet parakeets in her living room and uses a down comforter.
+
+    On physical examination, there are fine inspiratory crackles and inspiratory squeaks. There is no clubbing.
+
+    High-resolution CT shows ground-glass opacities and centrilobular nodules in the upper and mid lungs, with mosaic attenuation and air trapping on expiratory images. Pulmonary function tests show a mild restrictive pattern with a reduced DLCO.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Chronic eosinophilic pneumonia
+    B: Fibrotic hypersensitivity pneumonitis
+    C: Idiopathic pulmonary fibrosis
+    D: Nonfibrotic hypersensitivity pneumonitis
+    E: Sarcoidosis
+  answer: D
+  explain: |
+    **Hypersensitivity pneumonitis (HP)** is an immune reaction (type III and IV) to an **inhaled antigen** — here, bird proteins (**"bird fancier's lung"**; feather bedding counts too). Symptoms that **improve away from home** point to a home exposure.
+
+    HRCT findings typical of HP:
+    - **Centrilobular nodules and ground-glass opacities** (upper/mid zones)
+    - **Mosaic attenuation with air trapping** on expiration (small airway involvement)
+    - The **"three-density" pattern** (normal lung, ground glass, air-trapped lung)
+
+    Without significant fibrosis (no reticulation or honeycombing), this is **nonfibrotic HP**, which has a good prognosis. BAL lymphocytosis (>30%) supports the diagnosis.
+
+    The most important treatment is **antigen avoidance** — remove the birds and feather bedding. Glucocorticoids are used for persistent or severe disease. Fibrotic HP behaves more like IPF.
+  why:
+    A: Chronic eosinophilic pneumonia shows peripheral consolidation ("photographic negative of pulmonary edema") and blood/BAL eosinophilia.
+    B: Fibrotic HP shows reticulation, traction bronchiectasis or honeycombing; these are absent.
+    C: IPF shows basal, subpleural reticulation with honeycombing and no air trapping or centrilobular nodules, and does not improve away from home.
+    E: Sarcoidosis typically shows hilar lymphadenopathy and perilymphatic nodules, not centrilobular nodules with air trapping.
+  objective: |
+    Recognize hypersensitivity pneumonitis by exposure history, centrilobular nodules, ground glass and mosaic attenuation with air trapping, and treat with antigen avoidance.
+  refs:
+    - Raghu G, et al. Diagnosis of hypersensitivity pneumonitis in adults: an official ATS/JRS/ALAT clinical practice guideline. *Am J Respir Crit Care Med* 2020;202:e36.
+
+- id: PU-014
+  topic: Diagnosing COPD — spirometry
+  task: Diagnosis/Testing
+  chapters: [pulmonary/copd]
+  stem: |
+    A 61-year-old woman is evaluated for 2 years of chronic morning cough with sputum and gradually worsening dyspnea when climbing stairs. She has smoked one pack of cigarettes daily for 40 years. A clinician prescribed an albuterol inhaler last year, which she uses twice a day with some relief.
+
+    On physical examination, there is prolonged expiration and scattered wheezes. Oxygen saturation is 95% breathing ambient air.
+  lead: Which of the following is the most appropriate diagnostic test?
+  choices:
+    A: Arterial blood gas
+    B: CT of the chest
+    C: Peak expiratory flow measurement
+    D: Spirometry before and after a bronchodilator
+    E: Chest radiograph
+  answer: D
+  explain: |
+    COPD is suspected in anyone with **dyspnea, chronic cough or sputum and risk factors** (tobacco, biomass, occupational dust). The diagnosis **requires spirometry**: a **post-bronchodilator FEV₁/FVC ratio <0.70** confirms persistent airflow obstruction. Severity (GOLD 1–4) is graded by **FEV₁ % predicted**, while treatment is guided by symptoms and exacerbation history (GOLD groups A, B, E).
+
+    Many patients are labeled with COPD — and treated — without spirometry; up to a third of them do not have airflow obstruction.
+
+    Once COPD is confirmed: **smoking cessation** (with long-term oxygen for resting hypoxemia, one of the few interventions that lowers mortality), vaccinations, a long-acting bronchodilator, pulmonary rehabilitation, and **alpha-1 antitrypsin testing once** for all patients with COPD.
+  why:
+    A: A blood gas assesses gas exchange in severe or acute disease; it does not diagnose COPD.
+    B: CT can show emphysema and screen for lung cancer, but it does not establish airflow obstruction.
+    C: Peak flow is useful for monitoring asthma but is not sensitive or specific enough to diagnose COPD.
+    E: A chest radiograph may show hyperinflation but cannot confirm or exclude COPD.
+  objective: |
+    Confirm COPD with spirometry showing a post-bronchodilator FEV₁/FVC ratio below 0.70 in a symptomatic patient with risk factors.
+  refs:
+    - Global Initiative for Chronic Obstructive Lung Disease (GOLD). Global strategy for prevention, diagnosis and management of COPD: 2025 report.
+
+- id: PU-015
+  topic: COPD exacerbation — hospital management
+  task: Treatment/Care Decisions
+  chapters: [pulmonary/copd, pulmonary/ahrf]
+  stem: |
+    A 67-year-old man with severe COPD (FEV₁ 38% predicted) is brought to the emergency department with 3 days of increased dyspnea, cough and purulent sputum. He uses tiotropium-olodaterol.
+
+    On physical examination, temperature is 37.6 °C (99.7 °F), pulse rate is 108/min, and respiration rate is 28/min. He uses accessory muscles and speaks in short phrases. Oxygen saturation is 84% breathing ambient air. There are diffuse wheezes. He is alert and follows commands.
+
+    Chest radiograph shows hyperinflation without infiltrate.
+  labs:
+    - ["Arterial pH", "7.29"]
+    - ["Arterial Pco₂", "64 mm Hg"]
+    - ["Arterial Po₂", "50 mm Hg"]
+  lead: In addition to inhaled bronchodilators and controlled oxygen to a saturation of 88–92%, which of the following is the most appropriate management?
+  choices:
+    A: Antibiotics, prednisone 40 mg/d for 5 days and noninvasive positive-pressure ventilation
+    B: Endotracheal intubation now
+    C: High-flow oxygen by nonrebreather mask to an SpO₂ of 100%
+    D: Intravenous methylprednisolone 125 mg every 6 hours for 14 days
+    E: Intravenous theophylline
+  answer: A
+  explain: |
+    An **acute COPD exacerbation** with **acute-on-chronic hypercapnic respiratory failure** (pH 7.29, Pco₂ 64). The bundle:
+
+    1. **Controlled oxygen** to **SpO₂ 88–92%** — excess oxygen worsens hypercapnia (V/Q mismatch, Haldane effect).
+    2. **Short-acting bronchodilators** (albuterol ± ipratropium).
+    3. **Systemic glucocorticoids — prednisone 40 mg for 5 days** (REDUCE trial: as good as 14 days).
+    4. **Antibiotics** when sputum is **purulent** plus increased dyspnea or volume, or when ventilatory support is needed (e.g., amoxicillin-clavulanate, doxycycline, azithromycin).
+    5. **Noninvasive ventilation (BiPAP)** for **pH ≤7.35 and Pco₂ >45** — reduces intubation and mortality.
+
+    **Intubate** if NIV fails, or if the patient cannot protect the airway, is obtunded, has hemodynamic instability or copious secretions.
+  why:
+    B: He is alert and cooperative, so NIV should be tried first; it reduces the need for intubation and mortality.
+    C: Uncontrolled high-flow oxygen raises Pco₂ and worsens acidosis in hypercapnic COPD.
+    D: High-dose, prolonged IV glucocorticoids add side effects without better outcomes than 5 days of oral prednisone.
+    E: Theophylline has a narrow therapeutic window and adds toxicity without benefit in exacerbations.
+  mnemonic: |
+    COPD flare = **"ABCDO"** — **A**ntibiotics, **B**ronchodilators, **C**orticosteroids, **D**elivery of NIV, **O**xygen 88–92%.
+  objective: |
+    Treat a COPD exacerbation with hypercapnic acidosis with bronchodilators, 5 days of prednisone, antibiotics for purulent sputum, controlled oxygen and noninvasive ventilation.
+  refs:
+    - GOLD 2025 report.
+    - Leuppi JD, et al. Short-term vs conventional glucocorticoid therapy in acute exacerbations of COPD (REDUCE). *JAMA* 2013;309:2223.
+
+- id: PU-016
+  topic: Long-term oxygen therapy in COPD
+  task: Treatment/Care Decisions
+  chapters: [pulmonary/copd]
+  stem: |
+    A 69-year-old woman with severe COPD is evaluated 6 weeks after hospitalization for an exacerbation. She now feels at her baseline and has stopped smoking. She uses budesonide-glycopyrrolate-formoterol daily.
+
+    On physical examination, she is at rest. Oxygen saturation is 87% breathing ambient air (confirmed on two readings 3 weeks apart). There is mild ankle edema.
+  labs:
+    - ["Arterial Po₂ (ambient air", "at rest), 54 mm Hg"]
+    - ["Hematocrit", "49%"]
+    - ["Echocardiogram", "mild right ventricular dilation"]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Long-term supplemental oxygen for at least 15 hours per day
+    B: Nocturnal oxygen only
+    C: Oxygen only during exertion
+    D: Phlebotomy
+    E: No oxygen because she is no longer in an exacerbation
+  answer: A
+  explain: |
+    **Long-term oxygen therapy (LTOT)** is one of the few treatments that **prolongs survival** in COPD (NOTT and MRC trials) — when given for **≥15 hours per day** (continuous is best).
+
+    **Indications** (resting, stable, ≥30 days after an exacerbation, on ambient air):
+    - **Pao₂ ≤55 mm Hg or SpO₂ ≤88%**, or
+    - **Pao₂ 56–59 mm Hg or SpO₂ 89%** with **cor pulmonale** (edema, RV dysfunction) or **hematocrit >55%**
+
+    She qualifies on the first criterion. Titrate to SpO₂ ≥90% at rest, during exertion and sleep.
+
+    In contrast, the LOTT trial found **no survival benefit** for oxygen in **moderate** resting or exercise-induced desaturation (SpO₂ 89–93%).
+  why:
+    B: Nocturnal oxygen alone did not improve survival in NOTT; patients with resting hypoxemia need ≥15 h/day.
+    C: Exertional oxygen alone does not provide the survival benefit of continuous oxygen in resting hypoxemia.
+    D: Her hematocrit is only mildly raised; secondary polycythemia improves with oxygen, and phlebotomy is not indicated.
+    E: Her hypoxemia persists in the stable state (more than 30 days after the exacerbation), which is the indication for LTOT.
+  objective: |
+    Prescribe long-term oxygen for at least 15 hours daily to stable patients with COPD with resting Pao₂ ≤55 mm Hg or SpO₂ ≤88% (or 56–59 mm Hg with cor pulmonale or erythrocytosis).
+  refs:
+    - Jacobs SS, et al. Home oxygen therapy for adults with chronic lung disease: an official ATS clinical practice guideline. *Am J Respir Crit Care Med* 2020;202:e121.
+    - Long-Term Oxygen Treatment Trial Research Group. A randomized trial of long-term oxygen for COPD with moderate desaturation. *N Engl J Med* 2016;375:1617.
+
+- id: PU-017
+  topic: Alpha-1 antitrypsin deficiency
+  task: Diagnosis/Testing
+  chapters: [pulmonary/copd, gi/liver-tests]
+  stem: |
+    A 44-year-old man is evaluated for 2 years of progressive exertional dyspnea. He smoked 10 cigarettes a day for 15 years and quit 5 years ago. His father died of "emphysema and liver disease" at age 55.
+
+    On physical examination, there is reduced breath sounds and prolonged expiration. Oxygen saturation is 94% breathing ambient air.
+
+    Spirometry shows a post-bronchodilator FEV₁/FVC ratio of 0.52 and an FEV₁ of 48% predicted. Chest radiograph shows hyperlucency at the lung bases.
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: Serum alpha-1 antitrypsin level (with phenotype or genotype)
+    B: Sweat chloride test
+    C: High-resolution CT for bronchiectasis
+    D: Serum IgE level
+    E: Methacholine challenge
+  answer: A
+  explain: |
+    **Early-onset emphysema** (age <45), **modest smoking history**, **basilar-predominant (panlobular) emphysema** and a family history of emphysema and liver disease → **alpha-1 antitrypsin (AAT) deficiency**.
+
+    AAT, made in the liver, protects the lung against **neutrophil elastase**. In the **PiZZ** genotype, misfolded protein is trapped in hepatocytes (→ **cirrhosis, HCC**) and too little reaches the lung (→ **emphysema**).
+
+    Test with a **serum AAT level** plus **phenotype or genotype**. Guidelines recommend testing **every patient with COPD once**, regardless of age or smoking history, and people with unexplained liver disease, bronchiectasis or necrotizing panniculitis.
+
+    For severe deficiency with emphysema: **IV augmentation therapy** (pooled AAT), absolute avoidance of smoking, standard COPD care, and screening of family members.
+  why:
+    B: Sweat chloride testing is for cystic fibrosis, which presents with bronchiectasis, sinusitis and pancreatic insufficiency, not basilar emphysema.
+    C: Bronchiectasis can occur in AAT deficiency, but the key diagnostic test is the AAT level.
+    D: IgE helps evaluate allergic asthma or ABPA, not early emphysema.
+    E: A methacholine challenge tests for asthma in patients with normal spirometry; he already has fixed obstruction.
+  objective: |
+    Test for alpha-1 antitrypsin deficiency in all patients with COPD, especially those with early-onset, basilar-predominant emphysema or a family history.
+  refs:
+    - GOLD 2025 report.
+    - Strnad P, et al. Alpha1-antitrypsin deficiency. *N Engl J Med* 2020;382:1443.
+
+- id: PU-018
+  topic: Severe eosinophilic asthma — biologic therapy
+  task: Treatment/Care Decisions
+  chapters: [pulmonary/asthma]
+  stem: |
+    A 46-year-old woman with asthma is evaluated for frequent exacerbations: she has needed oral prednisone four times in the past year. She uses high-dose fluticasone-salmeterol twice daily and tiotropium, with confirmed good inhaler technique and adherence. She has nasal polyps. She does not smoke. GERD and obesity have been addressed.
+
+    On physical examination, there are scattered expiratory wheezes.
+  labs:
+    - ["Blood eosinophil count", "620/µL"]
+    - ["Total IgE", "80 IU/mL"]
+    - ["FEV₁", "62% predicted with 18% bronchodilator response"]
+  lead: Which of the following is the most appropriate addition to her therapy?
+  choices:
+    A: Daily oral prednisone, 10 mg
+    B: An anti–IL-5 or anti–IL-5 receptor monoclonal antibody
+    C: Montelukast as the next step
+    D: Omalizumab
+    E: Theophylline
+  answer: B
+  explain: |
+    She has **severe asthma**: uncontrolled despite **high-dose ICS–LABA plus a LAMA** (GINA step 5), with adherence, technique and comorbidities addressed. Her **blood eosinophils ≥300/µL**, nasal polyps and frequent exacerbations mark a **type 2 eosinophilic phenotype**.
+
+    **Anti–IL-5 / IL-5R biologics** (mepolizumab, reslizumab, **benralizumab**) reduce exacerbations by about **50%** and cut oral steroid use in eosinophilic asthma. **Dupilumab** (anti–IL-4Rα) and **tezepelumab** (anti-TSLP, works regardless of eosinophils) are also options; dupilumab is attractive with nasal polyps.
+
+    | Biologic | Target | Best fit |
+    |---|---|---|
+    | Omalizumab | IgE | Allergic asthma, IgE 30–700 with perennial sensitization |
+    | **Mepolizumab, benralizumab, reslizumab** | **IL-5 / IL-5R** | **Eosinophils ≥150–300** |
+    | Dupilumab | IL-4Rα | Eosinophilic or allergic; nasal polyps, eczema |
+    | Tezepelumab | TSLP | Broad, incl. low eosinophils |
+  why:
+    A: Maintenance oral glucocorticoids cause cumulative toxicity (osteoporosis, diabetes, cataracts, infection) and are the last resort.
+    C: Montelukast adds little at step 5 and carries a boxed warning for neuropsychiatric effects.
+    D: Omalizumab is for allergic asthma with a documented sensitization and appropriate IgE; her phenotype is eosinophilic with a low IgE.
+    E: Theophylline is a weak bronchodilator with a narrow therapeutic window and is rarely used.
+  objective: |
+    Add an anti–IL-5/IL-5R biologic (or another type 2 biologic) for severe eosinophilic asthma uncontrolled on high-dose ICS–LABA and LAMA.
+  refs:
+    - Global Initiative for Asthma (GINA). Global strategy for asthma management and prevention, 2025 update.
+
+- id: PU-019
+  topic: Allergic bronchopulmonary aspergillosis
+  task: Diagnosis/Testing
+  chapters: [pulmonary/asthma]
+  stem: |
+    A 38-year-old man with asthma since childhood is evaluated for worsening control over the past year. He has had three courses of prednisone. He coughs up brownish mucus plugs. His asthma improved each time he received prednisone.
+
+    On physical examination, there are scattered wheezes.
+
+    High-resolution CT shows central (proximal) bronchiectasis with mucus plugging in the upper lobes.
+  labs:
+    - ["Blood eosinophil count", "1,100/µL"]
+    - ["Total serum IgE", "2,800 IU/mL"]
+    - ["Aspergillus fumigatus–specific IgE", "elevated"]
+    - ["Aspergillus precipitins (IgG)", "positive"]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Allergic bronchopulmonary aspergillosis
+    B: Chronic cavitary pulmonary aspergillosis
+    C: Cystic fibrosis
+    D: Eosinophilic granulomatosis with polyangiitis
+    E: Invasive aspergillosis
+  answer: A
+  explain: |
+    **Allergic bronchopulmonary aspergillosis (ABPA)** is a hypersensitivity (type I and III) reaction to *Aspergillus* colonizing the airways of patients with **asthma or cystic fibrosis**.
+
+    Clues: poorly controlled asthma, **brown mucus plugs**, **central bronchiectasis**, **very high total IgE (>1,000 IU/mL)**, **Aspergillus-specific IgE**, eosinophilia and precipitating IgG antibodies.
+
+    Treatment: **oral glucocorticoids** for flares plus an **azole (itraconazole or voriconazole)** to reduce the fungal burden and steroid needs. Biologics (omalizumab, mepolizumab, dupilumab) are steroid-sparing options. Follow total IgE to monitor activity.
+  why:
+    B: Chronic cavitary aspergillosis occurs in patients with structural lung disease (prior TB, COPD) and causes cavities and aspergillomas, not central bronchiectasis with high IgE.
+    C: Cystic fibrosis can coexist with ABPA but presents in childhood with pancreatic insufficiency and recurrent infections.
+    D: EGPA causes asthma and eosinophilia but also vasculitis (neuropathy, purpura, kidney disease) and is often p-ANCA positive; it does not cause high Aspergillus-specific IgE.
+    E: Invasive aspergillosis occurs in severely immunocompromised patients (neutropenia, transplant) with nodules and a halo sign.
+  objective: |
+    Recognize ABPA in a patient with asthma, central bronchiectasis, mucus plugs, very high total IgE and Aspergillus-specific IgE, and treat with glucocorticoids plus an azole.
+  refs:
+    - Agarwal R, et al. Revised ISHAM-ABPA working group clinical practice guidelines for diagnosing, classifying and treating ABPA. *Eur Respir J* 2024;63:2400061.
+
+- id: PU-020
+  topic: ARDS — lung-protective ventilation
+  task: Treatment/Care Decisions
+  chapters: [pulmonary/ards]
+  stem: |
+    A 54-year-old woman is intubated for septic shock from pneumonia. She is 165 cm (65 in) tall and weighs 110 kg (243 lb). Her predicted body weight is 57 kg.
+
+    Ventilator settings are volume control, tidal volume 700 mL, respiration rate 16/min, PEEP 5 cm H₂O and Fio₂ 0.8.
+
+    Chest radiograph shows bilateral diffuse alveolar opacities. Echocardiogram shows normal left ventricular function.
+  labs:
+    - ["Arterial pH", "7.32"]
+    - ["Arterial Pco₂", "42 mm Hg"]
+    - ["Arterial Po₂", "72 mm Hg"]
+    - ["Plateau pressure", "34 cm H₂O"]
+  lead: Which of the following is the most appropriate ventilator change?
+  choices:
+    A: Decrease tidal volume to 340 mL (6 mL/kg of predicted body weight) and increase PEEP
+    B: Decrease tidal volume to 660 mL (6 mL/kg of actual body weight)
+    C: Increase tidal volume to 800 mL to improve oxygenation
+    D: Decrease PEEP to 0 cm H₂O to lower plateau pressure
+    E: Keep current settings and increase Fio₂ to 1.0
+  answer: A
+  explain: |
+    She has **ARDS** (Berlin definition): acute onset, bilateral opacities not explained by heart failure, and **Pao₂/Fio₂ = 72/0.8 = 90** → **severe** (<100).
+
+    **Lung-protective ventilation** (ARDSNet) saves lives:
+    - **Tidal volume 4–8 mL/kg (target 6) of PREDICTED body weight** — based on **height and sex**, not actual weight (lungs don't grow with obesity). 6 × 57 ≈ **340 mL**. Her 700 mL ≈ 12 mL/kg PBW — the volume that increased mortality in the ARDSNet trial.
+    - **Plateau pressure ≤30 cm H₂O**.
+    - **Higher PEEP** for moderate–severe ARDS, using a PEEP/Fio₂ table.
+    - Accept **permissive hypercapnia** (pH ≥7.20–7.25).
+
+    For severe ARDS (P/F <150): **prone positioning ≥12–16 h/day** (PROSEVA, lowered mortality), and consider neuromuscular blockade or ECMO in refractory cases. Use a **conservative fluid strategy** once shock resolves.
+  why:
+    B: Tidal volume must be calculated from predicted body weight; using actual weight in obesity gives dangerously large volumes.
+    C: Larger tidal volumes cause volutrauma and increase mortality.
+    D: Removing PEEP causes alveolar collapse (atelectrauma) and worsens hypoxemia.
+    E: Raising Fio₂ without reducing tidal volume leaves injurious ventilation in place and risks oxygen toxicity.
+  objective: |
+    Ventilate ARDS with a tidal volume of about 6 mL/kg of predicted body weight, a plateau pressure of 30 cm H₂O or less and adequate PEEP.
+  refs:
+    - ARDS Network. Ventilation with lower tidal volumes as compared with traditional tidal volumes for ALI and ARDS. *N Engl J Med* 2000;342:1301.
+    - Qadir N, et al. An update on management of adult patients with ARDS: an official ATS clinical practice guideline. *Am J Respir Crit Care Med* 2024;209:24.
+
+- id: PU-021
+  topic: Pulmonary hypertension — diagnosis
+  task: Diagnosis/Testing
+  chapters: [pulmonary/pulm-htn]
+  stem: |
+    A 36-year-old woman is evaluated for 1 year of progressive exertional dyspnea and two episodes of near-syncope while climbing stairs. She has no history of lung disease, VTE or connective tissue disease. She used an appetite suppressant (fenfluramine-phentermine) for weight loss 10 years ago.
+
+    On physical examination, there is a loud P₂, a right ventricular heave and a holosystolic murmur at the left lower sternal border that increases with inspiration. There is mild ankle edema. Lungs are clear.
+
+    Transthoracic echocardiogram shows a dilated right ventricle, estimated pulmonary artery systolic pressure 68 mm Hg and normal left ventricular size and function. Pulmonary function tests and HRCT of the chest are normal. Ventilation-perfusion scan is normal.
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: Cardiac MRI
+    B: CT pulmonary angiography
+    C: Exercise echocardiography
+    D: Polysomnography
+    E: Right heart catheterization
+  answer: E
+  explain: |
+    Echocardiography suggests **pulmonary hypertension (PH)**, but it only **estimates** pressures. The diagnosis requires **right heart catheterization (RHC)**:
+    - **Mean pulmonary artery pressure >20 mm Hg**
+    - **Pre-capillary PH** (group 1, 3, 4): **PAWP ≤15 mm Hg** and **PVR >2 Wood units**
+
+    The work-up looks for the **group** first:
+
+    | Group | Cause | Test |
+    |---|---|---|
+    | 1 | **PAH** — idiopathic, heritable, **drugs (fenfluramine, methamphetamine)**, CTD, HIV, portal hypertension | RHC (+ vasoreactivity testing) |
+    | 2 | **Left heart disease** (most common) | Echo |
+    | 3 | Lung disease / hypoxia | PFTs, HRCT, sleep study |
+    | 4 | **CTEPH** | **V/Q scan** (the screening test) |
+    | 5 | Unclear/multifactorial | — |
+
+    Her left heart, lungs and V/Q scan are normal, so group 1 PAH (here likely drug-associated) is most likely; RHC confirms it, measures severity and includes **vasoreactivity testing** (responders can be treated with calcium channel blockers).
+  why:
+    A: Cardiac MRI assesses RV function and prognosis but does not measure pulmonary pressures or PVR.
+    B: The normal V/Q scan already excludes CTEPH, and it is more sensitive than CTPA for chronic thromboembolic disease.
+    C: Exercise echocardiography does not establish the diagnosis of PH.
+    D: Sleep apnea causes mild PH; her pressures and drug history point elsewhere, and RHC is still needed for diagnosis.
+  objective: |
+    Confirm suspected pulmonary hypertension with right heart catheterization after evaluating for left heart disease, lung disease and CTEPH (with a V/Q scan).
+  refs:
+    - Humbert M, et al. 2022 ESC/ERS guidelines for the diagnosis and treatment of pulmonary hypertension. *Eur Heart J* 2022;43:3618.
+
+- id: PU-022
+  topic: Hypoxemia — A–a gradient
+  task: Pathophysiology/Basic Science
+  chapters: [pulmonary/ahrf, renal/acid-base]
+  stem: |
+    A 26-year-old woman is brought to the emergency department after being found unresponsive at a party. Her friends say she took "a handful of pills". She has a respiration rate of 6/min with shallow breaths. Pupils are pinpoint.
+
+    Her lungs are clear and chest radiograph is normal.
+  labs:
+    - ["Arterial pH (ambient air)", "7.21"]
+    - ["Arterial Pco₂", "70 mm Hg"]
+    - ["Arterial Po₂", "58 mm Hg"]
+    - ["Fio₂", "0.21 at sea level"]
+  lead: Which of the following is the most likely mechanism of her hypoxemia?
+  choices:
+    A: Diffusion impairment
+    B: Hypoventilation
+    C: Low inspired oxygen
+    D: Right-to-left shunt
+    E: Ventilation-perfusion mismatch
+  answer: B
+  explain: |
+    Calculate the **alveolar–arterial (A–a) oxygen gradient**:
+
+    PAo₂ = Fio₂ × (760 − 47) − Pco₂/0.8 = 0.21 × 713 − 70/0.8 = 150 − 87.5 = **62.5 mm Hg**
+
+    A–a gradient = 62.5 − 58 = **4.5 mm Hg** — **normal** (normal is <10–15 mm Hg in young adults; roughly age/4 + 4).
+
+    A **normal A–a gradient with hypoxemia** means the lungs are exchanging gas normally; the problem is getting air in. With a high Pco₂, slow respirations and pinpoint pupils, the cause is **hypoventilation from opioid overdose**. Treat with **naloxone** and ventilatory support.
+
+    | Mechanism | A–a gradient | Corrects with O₂? |
+    |---|---|---|
+    | **Hypoventilation** | **Normal** | Yes |
+    | Low inspired O₂ (altitude) | Normal | Yes |
+    | V/Q mismatch (COPD, PE, pneumonia) | ↑ | Yes |
+    | Shunt (ARDS, AVM, intracardiac) | ↑ | **Poorly** |
+    | Diffusion limitation (ILD) | ↑ | Yes |
+  why:
+    A: Diffusion impairment (e.g., ILD) increases the A–a gradient and is worsened by exercise.
+    C: Low inspired oxygen occurs at altitude; she is at sea level breathing room air.
+    D: Shunt widens the A–a gradient and responds poorly to supplemental oxygen.
+    E: V/Q mismatch, the most common cause of hypoxemia, widens the A–a gradient.
+  objective: |
+    Hypoxemia with a normal A–a gradient and hypercapnia indicates hypoventilation, as in opioid overdose.
+  refs:
+    - Sarkar M, et al. Mechanisms of hypoxemia. *Lung India* 2017;34:47.
+
+- id: PU-023
+  topic: Tobacco cessation pharmacotherapy
+  task: Treatment/Care Decisions
+  chapters: [pulmonary/copd, psych/alcohol-use]
+  stem: |
+    A 55-year-old man with COPD and hypertension wants to quit smoking. He smokes 25 cigarettes daily and has his first cigarette within 5 minutes of waking. He tried nicotine patches alone 2 years ago and relapsed after a month. He has no history of seizures, eating disorders or psychiatric illness. He had a myocardial infarction 3 years ago and is now stable.
+
+    On physical examination, blood pressure is 132/80 mm Hg.
+  lead: Which of the following is the most effective pharmacotherapy?
+  choices:
+    A: Bupropion alone
+    B: Electronic cigarettes as first-line therapy
+    C: Nicotine gum alone, as needed
+    D: Nortriptyline
+    E: Varenicline
+  answer: E
+  explain: |
+    **Varenicline** (a partial agonist at the α4β2 nicotinic receptor) is the **most effective single drug** for smoking cessation. It reduces cravings and blunts the reward of smoking. The ATS 2020 guideline recommends **varenicline over nicotine patch and over bupropion** for tobacco-dependent adults.
+
+    Key facts for the boards:
+    - **Safe in stable cardiovascular disease** and in psychiatric illness — EAGLES found **no significant increase in neuropsychiatric events**, and the FDA removed the boxed warning in 2016.
+    - Start **1 week before the quit date** (or use a flexible quit approach); continue for 12 weeks or longer; side effects are nausea and vivid dreams.
+    - **Combination NRT** (patch + short-acting gum/lozenge) is about as effective as varenicline and is a strong alternative; varenicline + patch is even more effective.
+    - Always combine with **behavioral counseling**.
+  why:
+    A: Bupropion is less effective than varenicline; it also lowers the seizure threshold.
+    B: E-cigarettes may help some smokers quit, but they are not FDA-approved cessation aids and are not recommended as first-line therapy over proven drugs.
+    C: As-needed gum alone is less effective than varenicline or combination NRT, especially in heavy, highly dependent smokers.
+    D: Nortriptyline is a second-line agent with anticholinergic and cardiac side effects, a poor choice after MI.
+  objective: |
+    Varenicline is the most effective single pharmacotherapy for tobacco cessation and is safe in patients with stable cardiovascular disease.
+  refs:
+    - Leone FT, et al. Initiating pharmacologic treatment in tobacco-dependent adults: an official ATS clinical practice guideline. *Am J Respir Crit Care Med* 2020;202:e5.
+    - Anthenelli RM, et al. Neuropsychiatric safety and efficacy of varenicline, bupropion and nicotine patch (EAGLES). *Lancet* 2016;387:2507.

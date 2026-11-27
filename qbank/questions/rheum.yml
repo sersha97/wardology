@@ -1,10 +1,10 @@
-# Rheumatology & Orthopedics — ABIM blueprint 10%
+# Rheumatology & Orthopedics — ABIM CERT blueprint
 - id: RH-001
   topic: Gout flare during urate-lowering therapy
   task: Treatment/Care Decisions
   chapters: [rheum/gout]
   stem: |
-    A 66-year-old man comes to the office with 1 day of severe pain, redness and swelling of his right first metatarsophalangeal joint. He had two similar episodes last year. **Allopurinol** 100 mg daily was started 4 months ago and increased to 200 mg daily 6 weeks ago. He also has hypertension and chronic kidney disease. Medications are allopurinol, amlodipine and losartan. He stopped taking the colchicine prescribed with allopurinol after 2 months.
+    A 66-year-old man comes to the office with 1 day of severe pain, redness and swelling of his right first metatarsophalangeal joint. He had two similar episodes last year. Allopurinol 100 mg daily was started 4 months ago and increased to 200 mg daily 6 weeks ago. He also has hypertension and chronic kidney disease. Medications are allopurinol, amlodipine and losartan. He stopped taking the colchicine prescribed with allopurinol after 2 months.
 
     Temperature is 37.4 °C (99.3 °F). The right first MTP joint is red, warm, swollen and too tender to touch. No tophi are seen.
   labs:
@@ -46,9 +46,9 @@
   task: Treatment/Care Decisions
   chapters: [rheum/ra]
   stem: |
-    A 42-year-old woman comes to the office with 3 months of pain and swelling in both hands and wrists. Her hands are stiff for about **90 minutes** every morning. She has trouble opening jars and typing at work. Ibuprofen helps partly. She does not plan pregnancy and uses a levonorgestrel IUD.
+    A 42-year-old woman comes to the office with 3 months of pain and swelling in both hands and wrists. Her hands are stiff for about 90 minutes every morning. She has trouble opening jars and typing at work. Ibuprofen helps partly. She does not plan pregnancy and uses a levonorgestrel IUD.
 
-    There is symmetric swelling and tenderness of the 2nd and 3rd **metacarpophalangeal and proximal interphalangeal joints** of both hands and both wrists. The distal interphalangeal joints are spared. There are no rashes, nail changes or nodules.
+    There is symmetric swelling and tenderness of the 2nd and 3rd metacarpophalangeal and proximal interphalangeal joints of both hands and both wrists. The distal interphalangeal joints are spared. There are no rashes, nail changes or nodules.
   labs:
     - [Rheumatoid factor, positive (high titer)]
     - [Anti–cyclic citrullinated peptide antibodies, positive (high titer)]
@@ -176,7 +176,7 @@
   stem: |
     A 54-year-old woman with type 2 diabetes mellitus comes to the office with 4 months of gradually worsening pain and stiffness of her left shoulder. She now cannot reach behind her back to fasten her bra or reach a high shelf. The pain wakes her at night when she rolls onto that side. She recalls no injury.
 
-    There is no shoulder swelling or warmth. **Active and passive range of motion are both markedly reduced** in all planes, most severely in **external rotation**. Strength is normal within the available range. Shoulder radiographs are normal.
+    There is no shoulder swelling or warmth. Active and passive range of motion are both markedly reduced in all planes, most severely in external rotation. Strength is normal within the available range. Shoulder radiographs are normal.
   lead: Which of the following is the most likely diagnosis?
   choices:
     A: Rotator cuff tear
@@ -208,3 +208,675 @@
   refs:
     - Kelley MJ, et al. Shoulder pain and mobility deficits: adhesive capsulitis. Clinical practice guidelines (APTA Orthopaedic Section). *J Orthop Sports Phys Ther* 2013;43:A1.
     - Redler LH, Dennis ER. Treatment of adhesive capsulitis of the shoulder. *J Am Acad Orthop Surg* 2019;27:e544.
+
+
+- id: RH-006
+  topic: Lupus nephritis
+  task: Diagnosis/Testing
+  chapters: [rheum/sle, renal/glomerular]
+  stem: |
+    A 26-year-old woman with systemic lupus erythematosus diagnosed 2 years ago is evaluated for new leg swelling and foamy urine. Her lupus has been managed with hydroxychloroquine. She has had joint pains and a facial rash in the past month.
+
+    On physical examination, blood pressure is 148/94 mm Hg. There is a malar rash, synovitis of the wrists and 2+ pitting edema of both legs.
+  labs:
+    - ["Creatinine", "1.3 mg/dL (0.8 mg/dL 6 months ago)"]
+    - ["Urinalysis", "3+ protein; 20–30 erythrocytes/hpf with dysmorphic red cells and red cell casts"]
+    - ["Urine protein-to-creatinine ratio", "2.8 g/g"]
+    - ["Anti–double-stranded DNA antibodies", "elevated"]
+    - ["C3 and C4", "low"]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Increase hydroxychloroquine dose
+    B: Kidney biopsy
+    C: Kidney ultrasonography only
+    D: Begin an ACE inhibitor and repeat urinalysis in 3 months
+    E: Begin rituximab
+  answer: B
+  explain: |
+    Active SLE (rash, arthritis, high anti-dsDNA, **low complement**) with **proteinuria >0.5 g/day, an active urine sediment (red cell casts, dysmorphic RBCs) and rising creatinine** → **lupus nephritis**.
+
+    **Kidney biopsy** is indicated for any patient with SLE and proteinuria ≥0.5 g/day, especially with active sediment or a fall in GFR. The **ISN/RPS class** and activity/chronicity drive treatment; clinical findings cannot predict the class reliably.
+
+    | Class | Pattern | Treatment |
+    |---|---|---|
+    | I–II | Mesangial | Usually none beyond SLE care |
+    | **III–IV** | Focal / diffuse proliferative | **Glucocorticoids + mycophenolate or low-dose IV cyclophosphamide**, often + belimumab or voclosporin |
+    | V | Membranous (nephrotic) | Immunosuppression ± ACEi/ARB |
+    | VI | Advanced sclerosis | Prepare for kidney replacement |
+
+    All patients continue **hydroxychloroquine** and get RAAS blockade for proteinuria.
+  why:
+    A: Hydroxychloroquine is continued in all SLE but does not treat active proliferative nephritis; the dose is capped at 5 mg/kg/d to limit retinal toxicity.
+    C: Ultrasonography shows kidney size but cannot determine the class or activity of nephritis.
+    D: An ACE inhibitor treats proteinuria but waiting 3 months without classifying the lesion risks permanent kidney loss.
+    E: Rituximab is used in refractory cases; induction should be chosen after biopsy confirms the class.
+  objective: |
+    Perform kidney biopsy in patients with SLE and proteinuria of 0.5 g/day or more, especially with an active sediment or declining kidney function, to guide treatment.
+  refs:
+    - KDIGO 2024 clinical practice guideline for the management of lupus nephritis. *Kidney Int* 2024;105:S1.
+    - Fanouriakis A, et al. EULAR recommendations for the management of SLE: 2023 update. *Ann Rheum Dis* 2024;83:15.
+
+- id: RH-007
+  topic: Antiphospholipid syndrome — anticoagulation
+  task: Treatment/Care Decisions
+  chapters: [rheum/sle, heme/anticoagulation]
+  stem: |
+    A 39-year-old woman is evaluated 1 week after hospitalization for an unprovoked left femoral deep venous thrombosis. She had a stroke at age 35 that was attributed to "a small-vessel event". She had two miscarriages in the first trimester. She is currently receiving enoxaparin.
+
+    On physical examination, there is livedo reticularis on both thighs. The left leg is mildly swollen.
+  labs:
+    - ["Platelet count", "118,000/µL"]
+    - ["aPTT", "prolonged; does not correct with mixing"]
+    - ["Lupus anticoagulant", "positive (repeated after 12 weeks, positive)"]
+    - ["Anticardiolipin IgG", "80 GPL (high)"]
+    - ["Anti–β₂-glycoprotein I IgG", "high"]
+  lead: Which of the following is the most appropriate long-term anticoagulant?
+  choices:
+    A: Apixaban
+    B: Aspirin alone
+    C: Dabigatran
+    D: Rivaroxaban
+    E: Warfarin with a target INR of 2.0–3.0
+  answer: E
+  explain: |
+    Arterial (stroke) and venous thrombosis, pregnancy morbidity, livedo, mild thrombocytopenia and **persistently positive antiphospholipid antibodies** (≥12 weeks apart) = **antiphospholipid syndrome (APS)**. She is **triple positive** (lupus anticoagulant + anticardiolipin + anti-β₂GPI) — the highest-risk profile. The prolonged aPTT that does not correct is the lupus anticoagulant (an in-vitro artifact; she clots, not bleeds).
+
+    Treatment is **lifelong warfarin, target INR 2–3**. **DOACs should be avoided**, especially in triple-positive or arterial APS — rivaroxaban and apixaban caused **more arterial events (strokes)** than warfarin (TRAPS, ASTRO-APS).
+
+    In pregnancy, warfarin is replaced by **LMWH + low-dose aspirin**.
+  why:
+    A: Apixaban was associated with more strokes than warfarin in APS (ASTRO-APS).
+    B: Aspirin alone is inadequate after a thrombotic event in APS; it may be used for primary prevention in asymptomatic antibody carriers.
+    C: Dabigatran has no supporting evidence in APS and is not recommended.
+    D: Rivaroxaban was inferior to warfarin in triple-positive APS (TRAPS), with excess arterial thrombosis.
+  objective: |
+    Treat thrombotic antiphospholipid syndrome with long-term warfarin (INR 2–3) and avoid DOACs, especially in triple-positive patients or after arterial events.
+  refs:
+    - Pengo V, et al. Rivaroxaban vs warfarin in high-risk patients with antiphospholipid syndrome (TRAPS). *Blood* 2018;132:1365.
+    - Tektonidou MG, et al. EULAR recommendations for the management of antiphospholipid syndrome in adults. *Ann Rheum Dis* 2019;78:1296.
+
+- id: RH-008
+  topic: Scleroderma renal crisis
+  task: Treatment/Care Decisions
+  chapters: [rheum/ssc-sjogren-myositis, cardiology/htn-emergency]
+  stem: |
+    A 48-year-old woman with diffuse cutaneous systemic sclerosis diagnosed 1 year ago is evaluated for 3 days of headache and blurred vision. Her skin thickening has progressed rapidly over the past 6 months. Two months ago she started prednisone, 20 mg/d, for arthritis. She is positive for anti–RNA polymerase III antibodies.
+
+    On physical examination, blood pressure is 192/112 mm Hg (usually 118/70 mm Hg) and pulse rate is 92/min. Funduscopic examination shows flame hemorrhages and cotton-wool spots. There is diffuse skin thickening of the arms, chest and face.
+  labs:
+    - ["Hemoglobin", "9.6 g/dL with schistocytes on peripheral smear"]
+    - ["Platelet count", "96,000/µL"]
+    - ["Creatinine", "2.2 mg/dL (0.8 mg/dL 1 month ago)"]
+    - ["Urinalysis", "1+ protein, few erythrocytes"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Captopril, titrated rapidly
+    B: Intravenous labetalol
+    C: Intravenous methylprednisolone
+    D: Plasma exchange
+    E: Intravenous nitroprusside
+  answer: A
+  explain: |
+    **Scleroderma renal crisis (SRC)**: abrupt **malignant hypertension**, **acute kidney injury** and often **thrombotic microangiopathy** (schistocytes, low platelets) in **early diffuse cutaneous SSc**. Classic risk factors: rapidly progressive skin disease, **anti–RNA polymerase III** antibodies and **glucocorticoids (prednisone >15 mg/d)**.
+
+    The mechanism is intimal proliferation of renal arterioles → renal ischemia → **massive renin release**. **ACE inhibitors** transformed survival: before them, SRC was almost uniformly fatal. Use a **short-acting ACE inhibitor (captopril)**, titrated every few hours to lower blood pressure by about 20 mm Hg/day, and **continue it even if creatinine rises or dialysis is needed** — many patients recover kidney function months later.
+
+    Add a calcium channel blocker if BP stays high. Avoid high-dose glucocorticoids in SSc.
+  why:
+    B: Labetalol may be added but does not block the renin-angiotensin system that drives the crisis.
+    C: Glucocorticoids are a risk factor for SRC and would worsen it.
+    D: Plasma exchange is for TTP. The TMA here is driven by SRC and responds to ACE inhibition.
+    E: Nitroprusside lowers BP but does not address the renin-mediated mechanism and does not improve kidney survival.
+  pearl: |
+    ARBs are **not** an adequate substitute for ACE inhibitors in SRC. And **prophylactic** ACE inhibitors do not prevent SRC — they may even worsen outcomes when it occurs.
+  objective: |
+    Treat scleroderma renal crisis with an ACE inhibitor (captopril) titrated rapidly, continuing it even if dialysis is required.
+  refs:
+    - Kowal-Bielecka O, et al. Update of EULAR recommendations for the treatment of systemic sclerosis. *Ann Rheum Dis* 2017;76:1327.
+    - Denton CP, Khanna D. Systemic sclerosis. *Lancet* 2017;390:1685.
+
+- id: RH-009
+  topic: Systemic sclerosis–associated interstitial lung disease
+  task: Diagnosis/Testing
+  chapters: [rheum/ssc-sjogren-myositis, pulmonary/ild-sarcoid]
+  stem: |
+    A 44-year-old woman with diffuse cutaneous systemic sclerosis diagnosed 6 months ago is evaluated during a routine visit. She has Raynaud phenomenon and skin thickening of her hands, forearms and chest. She has no cough or dyspnea and walks 2 miles a day. Her anti–topoisomerase I (anti–Scl-70) antibody is positive.
+
+    On physical examination, oxygen saturation is 98% breathing ambient air. There are fine bibasilar "Velcro" crackles. Chest radiograph is normal.
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: Bronchoscopy with bronchoalveolar lavage
+    B: High-resolution CT of the chest and pulmonary function tests with DLCO
+    C: Repeat chest radiograph in 1 year
+    D: Six-minute walk test only
+    E: Surgical lung biopsy
+  answer: B
+  explain: |
+    **Interstitial lung disease (ILD)** is the **leading cause of death** in systemic sclerosis. Highest risk: **diffuse cutaneous disease**, **anti–Scl-70 (topoisomerase I)** antibodies, early disease (first 5 years), Black race and male sex.
+
+    **All patients with SSc should be screened for ILD at diagnosis** with **high-resolution CT (HRCT)** — plus PFTs (FVC, DLCO). Chest radiographs and lung examination miss early disease, and symptoms appear late. HRCT typically shows **nonspecific interstitial pneumonia (NSIP)**: basal ground-glass and reticulation with traction bronchiectasis.
+
+    Monitor with **PFTs every 3–6 months** in early disease. Treatment for progressive or significant ILD: **mycophenolate**, tocilizumab, cyclophosphamide, rituximab, or the antifibrotic **nintedanib**.
+
+    Also screen for **pulmonary arterial hypertension** annually (echocardiography, PFTs with DLCO, NT-proBNP) — more common in limited cutaneous SSc (anti-centromere).
+  why:
+    A: Bronchoscopy is not needed to diagnose SSc-ILD; it is used to exclude infection when suspected.
+    C: Chest radiographs are insensitive for early ILD; her crackles already suggest disease.
+    D: A six-minute walk test measures functional capacity but does not detect or characterize ILD.
+    E: Biopsy is rarely needed when the HRCT pattern fits in a patient with known SSc.
+  mnemonic: |
+    SSc antibodies — **Scl-70 = Scarring lungs** (diffuse, ILD); **centromere = CREST** (limited, PAH); **RNA polymerase III = Renal crisis** (and cancer).
+  objective: |
+    Screen all patients with systemic sclerosis for interstitial lung disease with high-resolution CT and pulmonary function tests including DLCO.
+  refs:
+    - Johnson SR, et al. 2023 ACR/CHEST guideline for the screening and monitoring of ILD in people with systemic autoimmune rheumatic diseases. *Arthritis Rheumatol* 2024;76:1182.
+    - Raghu G, et al. Treatment of systemic sclerosis–associated ILD: ATS clinical practice guideline. *Am J Respir Crit Care Med* 2024;209:137.
+
+- id: RH-010
+  topic: Sjögren disease — lymphoma risk
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [rheum/ssc-sjogren-myositis]
+  stem: |
+    A 56-year-old woman with primary Sjögren disease diagnosed 8 years ago is evaluated for persistent painless swelling of the left parotid gland for 4 months. She has longstanding dry eyes and dry mouth managed with artificial tears and pilocarpine. She has had recurrent palpable purpura on her legs.
+
+    On physical examination, the left parotid gland is firm, nontender and enlarged. There is no fever. There is a palpable left cervical lymph node.
+  labs:
+    - ["Anti-Ro/SSA", "positive"]
+    - ["Anti-La/SSB", "positive"]
+    - ["Rheumatoid factor", "high titer"]
+    - ["C4", "low"]
+    - ["Serum protein electrophoresis", "monoclonal IgM κ spike"]
+    - ["Cryoglobulins", "positive"]
+  lead: This patient is at greatest risk for which of the following?
+  choices:
+    A: Bacterial parotitis
+    B: Hepatocellular carcinoma
+    C: Mucosa-associated lymphoid tissue (MALT) lymphoma
+    D: Primary biliary cholangitis
+    E: Squamous cell carcinoma of the oral cavity
+  answer: C
+  explain: |
+    Primary Sjögren disease raises the risk of **non-Hodgkin lymphoma** about **15–20 times** — the highest of any autoimmune disease. Most are **extranodal marginal zone (MALT) lymphomas** of the **salivary glands**. Chronic B-cell stimulation in the inflamed gland drives clonal expansion.
+
+    **Red flags for lymphoma in Sjögren**:
+    - **Persistent salivary gland (parotid) enlargement**
+    - **Palpable purpura / cryoglobulinemic vasculitis**
+    - **Low C4**
+    - **Monoclonal gammopathy**, high-titer RF
+    - Lymphadenopathy, splenomegaly, cytopenias
+
+    She has almost all of them. The next step is **imaging and biopsy** of the parotid gland.
+  why:
+    A: Bacterial parotitis is painful, tender and febrile with purulent discharge; her swelling is painless and persistent.
+    B: Hepatocellular carcinoma is not linked to Sjögren disease.
+    D: PBC is associated with Sjögren disease, but it does not explain a parotid mass with a monoclonal protein and low C4.
+    E: Dry mouth increases dental caries and candidiasis but is not a major cause of oral squamous cell carcinoma.
+  objective: |
+    Patients with Sjögren disease have a high risk of MALT lymphoma; persistent parotid enlargement, purpura, low C4 and a monoclonal protein are warning signs.
+  refs:
+    - Mariette X, Criswell LA. Primary Sjögren's syndrome. *N Engl J Med* 2018;378:931.
+    - Nocturne G, Mariette X. B cells in the pathogenesis of primary Sjögren syndrome. *Nat Rev Rheumatol* 2018;14:133.
+
+- id: RH-011
+  topic: Dermatomyositis and malignancy
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [rheum/ssc-sjogren-myositis]
+  stem: |
+    A 61-year-old woman is evaluated for 2 months of progressive difficulty climbing stairs, getting up from a chair and lifting her arms to wash her hair. She has noticed a rash on her face and hands.
+
+    On physical examination, there is a violaceous rash on the upper eyelids with periorbital edema, scaly violaceous papules over the metacarpophalangeal and interphalangeal joints, and erythema over the upper chest and back. Strength is 4/5 in the hip flexors and deltoids. Distal strength is normal.
+  labs:
+    - ["Creatine kinase", "2,400 U/L"]
+    - ["Aldolase", "elevated"]
+    - ["Anti–TIF1-γ antibody", "positive"]
+  lead: In addition to treating the muscle disease, which of the following is the most appropriate next step?
+  choices:
+    A: Age-appropriate cancer screening only
+    B: Comprehensive evaluation for occult malignancy, including CT of the chest, abdomen and pelvis and pelvic ultrasonography
+    C: Genetic testing for muscular dystrophy
+    D: No further evaluation
+    E: Muscle biopsy every 6 months
+  answer: B
+  explain: |
+    **Heliotrope rash** (eyelids), **Gottron papules** (knuckles), shawl-sign erythema and **proximal muscle weakness** with high CK = **dermatomyositis**.
+
+    Dermatomyositis is a **paraneoplastic disease** in up to **20–25%** of adults, most often within 3 years of diagnosis — **ovarian, lung, pancreatic, stomach, colorectal and non-Hodgkin lymphoma**. Risk is highest with **anti–TIF1-γ** and anti–NXP2 antibodies, older age, rapid onset and cutaneous necrosis.
+
+    In a high-risk patient, guidelines (IMACS 2023) recommend **enhanced screening**: **CT of the chest, abdomen and pelvis**, plus **pelvic/transvaginal ultrasonography and CA-125** in women, mammography, colonoscopy, PSA in men, and consider **PET-CT**. Repeat screening annually for 3 years in high-risk patients.
+
+    Treatment: glucocorticoids plus a steroid-sparing agent (methotrexate, azathioprine, mycophenolate); IVIG is effective for refractory disease.
+  why:
+    A: Routine screening alone is not enough for a high-risk patient (older age, anti–TIF1-γ).
+    C: Muscular dystrophies are inherited and do not cause heliotrope rash or Gottron papules.
+    D: The association with cancer is strong; omitting evaluation can miss a treatable tumor.
+    E: Serial biopsies are not used to monitor dermatomyositis; CK and strength testing are.
+  objective: |
+    Screen adults with dermatomyositis for occult malignancy, with enhanced screening (including CT of the chest, abdomen and pelvis) for high-risk patients such as those with anti–TIF1-γ antibodies.
+  refs:
+    - Mecoli CA, et al. Guideline on cancer screening in idiopathic inflammatory myopathy (IMACS). *Nat Rev Rheumatol* 2023;19:805.
+
+- id: RH-012
+  topic: Axial spondyloarthritis
+  task: Treatment/Care Decisions
+  chapters: [rheum/arthritis, rheum/back-shoulder]
+  stem: |
+    A 27-year-old man is evaluated for 1 year of low back and buttock pain. The pain is worst in the morning, with 1 hour of stiffness, wakes him in the second half of the night and improves with exercise. Rest makes it worse. He had an episode of a painful red eye 6 months ago that was treated with eye drops.
+
+    On physical examination, there is tenderness over both sacroiliac joints and reduced lumbar forward flexion (modified Schober test, 3 cm).
+  labs:
+    - ["C-reactive protein", "18 mg/L"]
+    - ["HLA-B27", "positive"]
+    - ["MRI of the sacroiliac joints", "bilateral bone marrow edema (active sacroiliitis)"]
+  lead: Which of the following is the most appropriate initial treatment?
+  choices:
+    A: Methotrexate
+    B: Naproxen at full dose, plus a physical therapy and exercise program
+    C: Oral prednisone
+    D: Sulfasalazine
+    E: TNF inhibitor as first-line therapy
+  answer: B
+  explain: |
+    **Inflammatory back pain** — onset before 40, insidious, morning stiffness, **better with exercise, worse with rest**, night pain — plus **anterior uveitis**, HLA-B27 and MRI sacroiliitis = **axial spondyloarthritis** (ankylosing spondylitis).
+
+    **First-line: full-dose NSAIDs** (continuously when the disease is active) **plus exercise and physical therapy**. NSAIDs relieve symptoms in most patients.
+
+    If disease stays active after **two different NSAIDs over 4 weeks**, escalate to a **biologic**: **TNF inhibitor** (preferred, especially with uveitis or IBD — use a monoclonal antibody, not etanercept) or **IL-17 inhibitor** (secukinumab, ixekizumab), or a JAK inhibitor.
+
+    Conventional synthetic DMARDs (methotrexate, sulfasalazine) **do not work for axial disease**; sulfasalazine may help peripheral arthritis only.
+  why:
+    A: Methotrexate does not improve axial symptoms or progression.
+    C: Systemic glucocorticoids are not effective for axial spondyloarthritis and are not recommended for long-term use.
+    D: Sulfasalazine helps peripheral arthritis, not axial disease.
+    E: Biologics are for disease that remains active despite at least two NSAID trials; they are not first-line.
+  objective: |
+    Treat axial spondyloarthritis first with full-dose NSAIDs and exercise, escalating to a TNF or IL-17 inhibitor if disease remains active.
+  refs:
+    - Ward MM, et al. 2019 update of the ACR/SAA/SPARTAN recommendations for the treatment of ankylosing spondylitis and nonradiographic axial spondyloarthritis. *Arthritis Rheumatol* 2019;71:1599.
+    - Ramiro S, et al. ASAS-EULAR recommendations for the management of axial spondyloarthritis: 2022 update. *Ann Rheum Dis* 2023;82:19.
+
+- id: RH-013
+  topic: Septic arthritis
+  task: Diagnosis/Testing
+  chapters: [rheum/arthritis, rheum/gout]
+  stem: |
+    A 68-year-old man with rheumatoid arthritis is evaluated for 2 days of a hot, swollen, very painful right knee. He cannot bear weight. He takes methotrexate and adalimumab. He has had no trauma.
+
+    On physical examination, temperature is 38.3 °C (100.9 °F), blood pressure is 128/76 mm Hg, and pulse rate is 102/min. The right knee is warm, red and has a large effusion; any movement causes severe pain. Other joints show no active synovitis.
+  labs:
+    - ["Leukocyte count", "14,200/µL"]
+    - ["C-reactive protein", "186 mg/L"]
+    - ["Serum urate", "7.8 mg/dL"]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Arthrocentesis with synovial fluid cell count, Gram stain, culture and crystal analysis
+    B: Begin colchicine for presumed gout
+    C: Increase methotrexate for an RA flare
+    D: Intra-articular glucocorticoid injection
+    E: MRI of the knee
+  answer: A
+  explain: |
+    **An acute hot, swollen joint is septic arthritis until proven otherwise.** He has major risk factors: **RA (damaged joints)**, **immunosuppression (TNF inhibitor, methotrexate)**, and older age. Septic arthritis destroys cartilage within days and has a mortality of up to 10%.
+
+    **Arthrocentesis is the single most important test** — do it before antibiotics:
+    - **Synovial WBC >50,000/µL** (often >100,000) with >90% neutrophils suggests infection (lower in immunosuppressed patients).
+    - **Gram stain and culture** (and blood cultures).
+    - **Crystal analysis** — but **crystals do not exclude infection**; gout and sepsis can coexist.
+
+    His serum urate is irrelevant to the decision: it can be high without gout and normal during a gout flare.
+
+    Then start empiric IV antibiotics (vancomycin ± ceftriaxone depending on Gram stain) and arrange **joint drainage** (needle, arthroscopic or open).
+  why:
+    B: Treating presumed gout without aspirating risks missing a septic joint; a high urate does not establish gout.
+    C: A single acutely inflamed joint with fever in an immunosuppressed patient is not a typical RA flare and must be aspirated first.
+    D: Injecting glucocorticoids into an infected joint is dangerous; infection must be excluded first.
+    E: MRI can show effusion and osteomyelitis, but it cannot distinguish infection from crystals, and it delays the essential test.
+  objective: |
+    Aspirate an acute hot joint for cell count, Gram stain, culture and crystals before starting treatment, because septic arthritis must be excluded.
+  refs:
+    - Earwood JS, et al. Septic arthritis: diagnosis and treatment. *Am Fam Physician* 2021;104:589.
+    - Mathews CJ, et al. Bacterial septic arthritis in adults. *Lancet* 2010;375:846.
+
+- id: RH-014
+  topic: Calcium pyrophosphate deposition (pseudogout)
+  task: Diagnosis/Testing
+  chapters: [rheum/arthritis, rheum/gout]
+  stem: |
+    A 76-year-old woman is evaluated on postoperative day 3 after a hip replacement for acute pain and swelling of her right wrist. She has hypothyroidism and osteoarthritis.
+
+    On physical examination, temperature is 37.9 °C (100.2 °F). The right wrist is warm, swollen and tender, with limited motion.
+
+    Wrist radiograph shows a linear calcification of the triangular fibrocartilage. Arthrocentesis is performed.
+  labs:
+    - ["Synovial fluid leukocyte count", "22,000/µL (80% neutrophils)"]
+    - ["Synovial fluid Gram stain", "no organisms (culture pending)"]
+    - ["Polarized microscopy", "rhomboid-shaped, weakly positively birefringent crystals"]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Acute calcium pyrophosphate crystal arthritis
+    B: Gout
+    C: Osteoarthritis flare
+    D: Reactive arthritis
+    E: Rheumatoid arthritis
+  answer: A
+  explain: |
+    **Acute CPP crystal arthritis (pseudogout)**: an older patient with an acutely inflamed **wrist or knee**, often triggered by **surgery or acute illness**, with **chondrocalcinosis** on radiographs and **rhomboid, weakly positively birefringent** crystals (blue when parallel to the compensator).
+
+    | | Gout (monosodium urate) | CPPD |
+    |---|---|---|
+    | Crystal shape | **Needle** | **Rhomboid** |
+    | Birefringence | **Strongly negative** (yellow when parallel) | **Weakly positive** (blue when parallel) |
+    | Typical joints | 1st MTP, ankle, knee | **Knee, wrist** |
+    | Radiograph | Punched-out erosions with overhanging edges | **Chondrocalcinosis** |
+
+    In patients <60 or with polyarticular disease, look for associated metabolic disorders: **hemochromatosis, hyperparathyroidism, hypomagnesemia, hypophosphatasia** ("the 4 Hs").
+
+    Treat with joint aspiration, intra-articular glucocorticoids (once infection is excluded), NSAIDs or colchicine.
+  why:
+    B: Gout crystals are needle-shaped and strongly negatively birefringent.
+    C: Osteoarthritis causes a noninflammatory effusion (WBC <2,000/µL) without crystals.
+    D: Reactive arthritis is an asymmetric oligoarthritis of the lower limbs after GI or GU infection, without crystals.
+    E: RA is a symmetric polyarthritis of the small joints; it does not cause a monoarthritis with CPP crystals.
+  mnemonic: |
+    **"P for Pseudogout, Positive and Parallelogram (rhomboid)."** Gout = **N**eedles, **N**egative.
+  objective: |
+    Diagnose acute CPP crystal arthritis by rhomboid, weakly positively birefringent crystals in synovial fluid, often with chondrocalcinosis on radiographs.
+  refs:
+    - Rosenthal AK, Ryan LM. Calcium pyrophosphate deposition disease. *N Engl J Med* 2016;374:2575.
+    - Abhishek A, et al. 2023 ACR/EULAR classification criteria for CPPD disease. *Arthritis Rheumatol* 2023;75:1703.
+
+- id: RH-015
+  topic: Knee osteoarthritis
+  task: Treatment/Care Decisions
+  chapters: [rheum/arthritis]
+  stem: |
+    A 66-year-old woman is evaluated for 2 years of right knee pain that is worse with walking and stairs and better with rest. Morning stiffness lasts less than 15 minutes. She has hypertension and stage 3a chronic kidney disease (eGFR 52 mL/min/1.73 m²). Acetaminophen has not helped.
+
+    On physical examination, BMI is 32. There is bony enlargement and crepitus of the right knee with a small cool effusion. There is no warmth or erythema.
+
+    Radiographs show medial joint space narrowing and osteophytes.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Arthroscopic débridement
+    B: Topical diclofenac and an exercise and weight-loss program
+    C: Oral glucosamine and chondroitin
+    D: Oral tramadol
+    E: Intra-articular hyaluronic acid injection
+  answer: B
+  explain: |
+    Activity-related knee pain, brief morning stiffness, bony enlargement, crepitus and medial joint space narrowing in an older adult = **knee osteoarthritis**.
+
+    The core treatments (ACR 2019) are **exercise (strengthening, aerobic, tai chi)** and **weight loss** (≥5–10% of body weight improves pain and function), plus self-management education.
+
+    For drug therapy, **topical NSAIDs** are recommended first for the knee — they work nearly as well as oral NSAIDs with far less systemic exposure. They are the best choice in **older adults and those with CKD, hypertension or GI risk**, where oral NSAIDs are risky. **Intra-articular glucocorticoid injections** give short-term relief for flares. Total knee replacement is for end-stage disease when conservative care fails.
+  why:
+    A: Arthroscopic débridement and lavage do not help degenerative knee osteoarthritis and are not recommended.
+    C: Glucosamine and chondroitin are no better than placebo and are not recommended.
+    D: Tramadol has modest benefit with risks of dependence, falls and serotonin syndrome; it is conditionally recommended only when other options fail.
+    E: Hyaluronic acid injections have little benefit over placebo and are conditionally recommended against.
+  objective: |
+    Treat knee osteoarthritis with exercise, weight loss and topical NSAIDs, particularly in older adults or patients with chronic kidney disease.
+  refs:
+    - Kolasinski SL, et al. 2019 ACR/Arthritis Foundation guideline for the management of osteoarthritis of the hand, hip and knee. *Arthritis Rheumatol* 2020;72:220.
+
+- id: RH-016
+  topic: Allopurinol hypersensitivity — HLA-B*58:01
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [rheum/gout, derm/drug-eruptions]
+  stem: |
+    A 52-year-old man of Han Chinese descent is evaluated after his third gout flare in a year. He has tophi on both elbows. He has hypertension and chronic kidney disease (eGFR 48 mL/min/1.73 m²). His serum urate is 9.4 mg/dL. You plan to start urate-lowering therapy.
+  lead: Which of the following should be done before starting allopurinol?
+  choices:
+    A: 24-hour urine uric acid
+    B: HLA-B*58:01 testing
+    C: Liver biopsy
+    D: Thiopurine methyltransferase (TPMT) activity
+    E: No testing is needed
+  answer: B
+  explain: |
+    **Allopurinol hypersensitivity syndrome** — including **DRESS and SJS/TEN** — is rare but carries a mortality of up to 25%. The strongest risk factor is **HLA-B*58:01**, which is common in people of **Han Chinese, Korean, Thai and African descent**. CKD and starting at high doses also raise the risk.
+
+    ACR 2020 recommends **testing for HLA-B*58:01 before starting allopurinol** in patients of **Southeast Asian (e.g., Han Chinese, Korean, Thai) or African American descent**. If positive, choose **febuxostat** instead.
+
+    Other allopurinol rules:
+    - **Start low** (≤100 mg/d; ≤50 mg/d in CKD stage 4+) and titrate to **serum urate <6 mg/dL** — higher doses are fine in CKD once titrated slowly.
+    - Give **anti-inflammatory prophylaxis** (colchicine, NSAID or low-dose prednisone) for **3–6 months** when starting.
+  why:
+    A: A 24-hour urine uric acid is rarely needed and does not affect the safety of allopurinol.
+    C: Liver biopsy has no role in starting urate-lowering therapy.
+    D: TPMT testing is done before azathioprine or mercaptopurine. It matters for allopurinol only because allopurinol interacts with those drugs.
+    E: His ancestry calls for HLA-B*58:01 testing to avoid a potentially fatal reaction.
+  objective: |
+    Test for HLA-B*58:01 before starting allopurinol in patients of Southeast Asian or African American descent to reduce the risk of severe hypersensitivity.
+  refs:
+    - FitzGerald JD, et al. 2020 American College of Rheumatology guideline for the management of gout. *Arthritis Care Res* 2020;72:744.
+
+- id: RH-017
+  topic: Polymyalgia rheumatica
+  task: Treatment/Care Decisions
+  chapters: [rheum/gca-pmr]
+  stem: |
+    A 72-year-old woman is evaluated for 6 weeks of aching and stiffness of both shoulders and hips, worst in the morning for about 2 hours. She has trouble getting out of bed and combing her hair. She has no headache, jaw pain with chewing, scalp tenderness or visual symptoms.
+
+    On physical examination, there is reduced active range of motion of both shoulders because of pain; passive motion is better. Strength is normal when tested despite the pain. There is no synovitis of the hands. Temporal arteries are normal.
+  labs:
+    - ["Erythrocyte sedimentation rate", "64 mm/h"]
+    - ["C-reactive protein", "38 mg/L"]
+    - ["Creatine kinase", "normal"]
+    - ["Rheumatoid factor and anti-CCP", "negative"]
+    - ["TSH", "normal"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Prednisone, 12.5–25 mg/d
+    B: Prednisone, 60 mg/d
+    C: Methotrexate alone
+    D: Naproxen alone
+    E: Temporal artery biopsy before any treatment
+  answer: A
+  explain: |
+    An older adult with **bilateral shoulder and hip girdle aching and morning stiffness**, raised inflammatory markers, normal CK and no features of another disease → **polymyalgia rheumatica (PMR)**.
+
+    PMR responds dramatically to **low-dose glucocorticoids**: **prednisone 12.5–25 mg/d** (EULAR/ACR 2015). Improvement within days is so typical that a poor response should make you question the diagnosis. Taper slowly over **at least 1 year** to the lowest effective dose. Add methotrexate (or tocilizumab) for relapses or high risk of glucocorticoid toxicity.
+
+    About **15–20%** of PMR patients have **giant cell arteritis** — always ask about headache, jaw claudication, scalp tenderness and vision. If present, high-dose prednisone (40–60 mg) is needed. She has none.
+  why:
+    B: High-dose prednisone is for giant cell arteritis. Uncomplicated PMR responds to low doses, and higher doses cause more toxicity.
+    C: Methotrexate is a glucocorticoid-sparing add-on, not initial monotherapy.
+    D: NSAIDs may help briefly but are inadequate for PMR and add GI and kidney risk in older adults.
+    E: Temporal artery biopsy is for suspected GCA. She has no cranial or visual symptoms.
+  objective: |
+    Treat polymyalgia rheumatica with low-dose prednisone (12.5–25 mg/d) and screen for symptoms of giant cell arteritis.
+  refs:
+    - Dejaco C, et al. 2015 recommendations for the management of polymyalgia rheumatica: EULAR/ACR collaborative initiative. *Ann Rheum Dis* 2015;74:1799.
+
+- id: RH-018
+  topic: Granulomatosis with polyangiitis
+  task: Diagnosis/Testing
+  chapters: [rheum/vasculitis, renal/glomerular]
+  stem: |
+    A 54-year-old man is evaluated for 3 months of chronic sinus congestion with bloody nasal discharge, ear fullness, cough and, over the past week, hemoptysis. Two courses of antibiotics did not help.
+
+    On physical examination, temperature is 37.9 °C (100.2 °F), blood pressure is 152/90 mm Hg. There are nasal crusts and a saddle-nose deformity is developing. There is palpable purpura on the lower legs.
+  labs:
+    - ["Creatinine", "2.4 mg/dL (1.0 mg/dL 2 months ago)"]
+    - ["Urinalysis", "2+ protein; dysmorphic erythrocytes and red cell casts"]
+    - ["Chest CT", "multiple bilateral cavitating nodules"]
+  lead: Which of the following is the most likely to be positive?
+  choices:
+    A: Anti–glomerular basement membrane antibodies
+    B: Antinuclear antibodies with low complement
+    C: Cytoplasmic ANCA (c-ANCA) with anti–proteinase 3 antibodies
+    D: Perinuclear ANCA (p-ANCA) with anti-myeloperoxidase antibodies and eosinophilia
+    E: Cryoglobulins with hepatitis C viremia
+  answer: C
+  explain: |
+    The triad of **upper airway** (sinusitis, nasal crusting, saddle nose, otitis), **lower airway** (cavitating nodules, hemoptysis) and **kidney** disease (rapidly progressive glomerulonephritis with red cell casts) = **granulomatosis with polyangiitis (GPA)**, a small-vessel ANCA-associated vasculitis.
+
+    About 90% of patients with active, generalized GPA are **c-ANCA / anti–PR3 positive**. Confirm with biopsy of an affected site when feasible (kidney biopsy shows **pauci-immune** necrotizing crescentic GN).
+
+    | Disease | ANCA | Clues |
+    |---|---|---|
+    | **GPA** | **c-ANCA, PR3** | ENT + lung nodules + kidney, granulomas |
+    | Microscopic polyangiitis | p-ANCA, MPO | Lung hemorrhage + kidney, no ENT or granulomas |
+    | EGPA | p-ANCA, MPO (~40%) | **Asthma + eosinophilia**, neuropathy |
+    | Anti-GBM disease | ANCA− (sometimes +), anti-GBM+ | Lung hemorrhage + kidney, linear IgG |
+
+    Induction for organ-threatening disease: **glucocorticoids + rituximab** (or cyclophosphamide); avacopan allows lower steroid doses.
+  why:
+    A: Anti-GBM disease causes pulmonary hemorrhage and GN, but not sinus disease or cavitating nodules.
+    B: Lupus causes immune-complex GN with low complement; ENT destruction and cavitating nodules are not features.
+    D: p-ANCA/MPO with eosinophilia points to EGPA, which presents with asthma and eosinophilia rather than destructive sinus disease.
+    E: Cryoglobulinemic vasculitis causes purpura and GN but not destructive ENT disease or lung cavities.
+  objective: |
+    Recognize granulomatosis with polyangiitis by upper and lower airway disease plus glomerulonephritis and confirm with c-ANCA/anti–PR3 testing and biopsy.
+  refs:
+    - Chung SA, et al. 2021 ACR/Vasculitis Foundation guideline for the management of ANCA-associated vasculitis. *Arthritis Rheumatol* 2021;73:1366.
+
+- id: RH-019
+  topic: Screening before TNF inhibitor therapy
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [rheum/ra, id/tb]
+  stem: |
+    A 45-year-old woman with seropositive rheumatoid arthritis has persistent synovitis of the hands and wrists despite 6 months of methotrexate, 20 mg/wk. Her rheumatologist plans to add a TNF inhibitor. She was born in Mexico and moved to the United States at age 20. She has no symptoms of infection.
+
+    Examination shows synovitis of several MCP joints.
+  lead: Which of the following tests must be performed before starting the TNF inhibitor?
+  choices:
+    A: Antinuclear antibody titer
+    B: Bone density scan
+    C: Echocardiography
+    D: Interferon-γ release assay (or tuberculin skin test) and hepatitis B serologies
+    E: Pulmonary function tests
+  answer: D
+  explain: |
+    **TNF inhibitors** (infliximab, adalimumab, etanercept, golimumab, certolizumab) impair granuloma maintenance and markedly increase the risk of **reactivation of latent tuberculosis** — often extrapulmonary or disseminated. They can also **reactivate hepatitis B**.
+
+    **Before any biologic or JAK inhibitor**, screen for:
+    - **Latent TB** — IGRA (preferred if BCG vaccinated) or tuberculin skin test, ± chest radiograph. If positive, start LTBI treatment ≥1 month before the biologic.
+    - **Hepatitis B** — HBsAg, anti-HBc (and anti-HBs); **hepatitis C** antibody.
+    - Update vaccinations (**non-live** vaccines can be given at any time; live vaccines must be given before starting).
+
+    Other cautions with TNF inhibitors: avoid in **decompensated heart failure (NYHA III–IV)** and **demyelinating disease**.
+  why:
+    A: ANA is not required before TNF inhibitors. They can induce drug-related ANA positivity and lupus-like syndromes, but baseline ANA does not change management.
+    B: Bone density testing is important with long-term glucocorticoids but is not a prerequisite for TNF inhibitors.
+    C: Echocardiography is not routine; TNF inhibitors are avoided in known moderate-to-severe heart failure, which is assessed clinically.
+    E: Pulmonary function tests are not required before TNF inhibitors.
+  objective: |
+    Screen for latent tuberculosis and hepatitis B before starting a TNF inhibitor or other biologic therapy.
+  refs:
+    - Fraenkel L, et al. 2021 ACR guideline for the treatment of rheumatoid arthritis. *Arthritis Care Res* 2021;73:924.
+    - Singh JA, et al. 2015 ACR guideline for the treatment of rheumatoid arthritis. *Arthritis Rheumatol* 2016;68:1.
+
+- id: RH-020
+  topic: Septic olecranon bursitis
+  task: Diagnosis/Testing
+  chapters: [rheum/back-shoulder]
+  stem: |
+    A 58-year-old man who works as a plumber is evaluated for 3 days of painful swelling over the back of his right elbow. He scraped his elbow on a pipe a week ago.
+
+    On physical examination, temperature is 37.9 °C (100.2 °F). There is a fluctuant, warm, red, tender swelling over the olecranon process with a small healing abrasion. Elbow flexion and extension are full and painless except at the extremes when the swelling is compressed.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Aspiration of the bursa with cell count, Gram stain, culture and crystal analysis
+    B: Elbow arthrocentesis through the joint
+    C: Intrabursal glucocorticoid injection
+    D: MRI of the elbow
+    E: Surgical bursectomy
+  answer: A
+  explain: |
+    Superficial **olecranon bursitis** sits over the joint, not in it: the elbow moves freely through most of its range. **Septic arthritis**, by contrast, makes any movement extremely painful.
+
+    Warmth, erythema, tenderness, fever and a **skin break** suggest **septic bursitis**, almost always ***S. aureus*** from skin trauma. **Aspirate the bursa** (approaching from the side, not through inflamed skin) for:
+    - **Cell count** (septic usually >2,000–5,000/µL, often much higher, neutrophil-predominant)
+    - **Gram stain and culture**
+    - **Crystals** (gout is a common cause of olecranon bursitis)
+
+    Treat septic bursitis with **antistaphylococcal antibiotics** (e.g., cephalexin, or doxycycline/TMP-SMX if MRSA risk), repeat aspiration as needed; surgery only for failure.
+
+    **Aseptic (traumatic) bursitis** — chronic leaning ("student's elbow"), no warmth — is treated with compression, padding and avoiding pressure.
+  why:
+    B: The elbow joint itself is not involved (full painless motion); passing a needle through an infected bursa into the joint risks seeding it.
+    C: Glucocorticoid injection is contraindicated until infection is excluded and is generally avoided in olecranon bursitis because of infection and skin atrophy risk.
+    D: The diagnosis is clinical and confirmed by aspiration; MRI is unnecessary.
+    E: Bursectomy is reserved for refractory or recurrent septic bursitis.
+  pearl: |
+    Other bursitis to know for the CERT exam — **prepatellar** ("housemaid's knee," septic risk like olecranon), **trochanteric** (greater trochanteric pain syndrome, lateral hip pain lying on that side), **pes anserine** (medial knee below the joint line in obese women with knee OA).
+  objective: |
+    Aspirate a warm, red olecranon bursa for cell count, Gram stain, culture and crystals to distinguish septic from crystal-induced or traumatic bursitis.
+  refs:
+    - Baumbach SF, et al. Prepatellar and olecranon bursitis: literature review and development of a treatment algorithm. *Arch Orthop Trauma Surg* 2014;134:359.
+
+- id: RH-021
+  topic: Carpal tunnel syndrome
+  task: Diagnosis/Testing
+  chapters: [rheum/back-shoulder]
+  stem: |
+    A 52-year-old woman is evaluated for 4 months of numbness and tingling in her right hand that wakes her at night; she shakes her hand to relieve it. Symptoms involve the thumb, index and middle fingers. She has hypothyroidism and type 2 diabetes. She works as a data entry clerk.
+
+    On physical examination, there is reduced sensation over the palmar aspect of the first three fingers, sparing the thenar eminence. Tapping over the volar wrist reproduces tingling in these fingers, and holding the wrists in full flexion for 60 seconds does the same. There is mild weakness of thumb abduction; there is no thenar atrophy. Sensation over the little finger and the dorsum of the hand is normal.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: C6 cervical radiculopathy
+    B: Carpal tunnel syndrome
+    C: Cubital tunnel syndrome
+    D: De Quervain tenosynovitis
+    E: Thoracic outlet syndrome
+  answer: B
+  explain: |
+    **Carpal tunnel syndrome** — compression of the **median nerve** at the wrist — is the most common entrapment neuropathy. The picture: **nocturnal paresthesias** of the thumb, index, middle (and radial half of ring) fingers, relief by shaking the hand (**"flick sign"**), positive **Tinel** (tapping) and **Phalen** (wrist flexion) signs, and later **weakness of thumb abduction and thenar atrophy**.
+
+    **Sparing of the thenar eminence** is a key localizing clue: the palmar cutaneous branch of the median nerve leaves above the carpal tunnel, so it is spared at the wrist but affected in more proximal lesions.
+
+    Risk factors: **diabetes, hypothyroidism, pregnancy, RA, obesity, amyloidosis, acromegaly**, repetitive wrist use.
+
+    Treat with **nocturnal neutral wrist splinting**, glucocorticoid injection, and surgical release for severe or persistent disease (thenar atrophy, EMG denervation). EMG/nerve conduction confirm the diagnosis and severity when surgery is considered.
+  why:
+    A: C6 radiculopathy causes neck pain radiating down the arm, numbness of the thumb and index finger including the dorsum, and reduced biceps/brachioradialis reflexes.
+    C: Cubital tunnel syndrome (ulnar nerve at the elbow) causes numbness of the little and ring fingers and weakness of the intrinsic hand muscles.
+    D: De Quervain tenosynovitis causes pain (not numbness) over the radial styloid with a positive Finkelstein test.
+    E: Thoracic outlet syndrome usually affects the lower trunk (C8–T1), causing ulnar-sided symptoms, and is worsened by arm elevation.
+  objective: |
+    Recognize carpal tunnel syndrome by nocturnal paresthesias in the median nerve distribution, positive Tinel and Phalen signs and sparing of the thenar eminence sensation.
+  refs:
+    - Padua L, et al. Carpal tunnel syndrome: clinical features, diagnosis, and management. *Lancet Neurol* 2016;15:1273.
+    - American Academy of Orthopaedic Surgeons. Management of carpal tunnel syndrome evidence-based clinical practice guideline.
+
+- id: RH-022
+  topic: Fibromyalgia
+  task: Treatment/Care Decisions
+  chapters: [rheum/arthritis, psych/anxiety-depression]
+  stem: |
+    A 42-year-old woman is evaluated for 1 year of widespread pain above and below the waist on both sides of her body, fatigue, unrefreshing sleep and difficulty concentrating. Pain medicines, including ibuprofen and an opioid prescribed by an urgent care clinic, have not helped.
+
+    On physical examination, vital signs are normal. There is diffuse soft tissue tenderness. Joints show no swelling or synovitis. Strength and reflexes are normal.
+  labs:
+    - ["Complete blood count", "normal"]
+    - ["ESR and C-reactive protein", "normal"]
+    - ["TSH", "normal"]
+    - ["Creatine kinase", "normal"]
+  lead: Which of the following is the most appropriate initial treatment?
+  choices:
+    A: Graded aerobic exercise program and patient education
+    B: Long-acting opioid
+    C: Prednisone, 10 mg/d
+    D: Hydroxychloroquine
+    E: Referral for trigger-point injections every month
+  answer: A
+  explain: |
+    Chronic **widespread pain** for ≥3 months with **fatigue, unrefreshing sleep and cognitive symptoms ("fibro fog")**, normal examination apart from tenderness, and **normal laboratory tests** fits **fibromyalgia** (ACR 2016 criteria). It is a disorder of **central pain processing (nociplastic pain)**, not inflammation or tissue damage.
+
+    The best-supported first-line treatments are **nonpharmacologic**: **patient education**, **graded aerobic exercise** (the most effective single intervention), **cognitive behavioral therapy** and sleep hygiene.
+
+    If drug therapy is needed, use agents that act on central pain pathways: **low-dose amitriptyline** (at bedtime), **duloxetine or milnacipran** (SNRIs), or **pregabalin**.
+
+    **Avoid opioids** — they do not help and may worsen pain sensitivity (opioid-induced hyperalgesia). NSAIDs and glucocorticoids do not work because there is no inflammation.
+  why:
+    B: Opioids are ineffective in fibromyalgia and carry risks of dependence and hyperalgesia.
+    C: There is no inflammation; glucocorticoids do not help and cause harm.
+    D: Hydroxychloroquine treats lupus and RA, not fibromyalgia.
+    E: Trigger-point injections have limited evidence and are not a first-line treatment.
+  objective: |
+    Treat fibromyalgia first with patient education and graded aerobic exercise, adding duloxetine, pregabalin or low-dose amitriptyline if needed, and avoid opioids.
+  refs:
+    - Macfarlane GJ, et al. EULAR revised recommendations for the management of fibromyalgia. *Ann Rheum Dis* 2017;76:318.
+    - Clauw DJ. Fibromyalgia: a clinical review. *JAMA* 2014;311:1547.

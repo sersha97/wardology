@@ -1,4 +1,4 @@
-# Nephrology & Urology — ABIM blueprint 6%
+# Nephrology & Urology — ABIM CERT blueprint
 - id: NE-001
   topic: Hyperkalemia with ECG changes
   task: Treatment/Care Decisions
@@ -55,7 +55,7 @@
   task: Treatment/Care Decisions
   chapters: [renal/kidney-stones]
   stem: |
-    A 44-year-old man comes to the office after passing his **third calcium oxalate kidney stone** in 4 years. To prevent stones he has **stopped eating dairy products**. He drinks about 1.2 L of fluid daily and eats fast food several times a week. He has hypertension and takes no medications.
+    A 44-year-old man comes to the office after passing his third calcium oxalate kidney stone in 4 years. To prevent stones he has stopped eating dairy products. He drinks about 1.2 L of fluid daily and eats fast food several times a week. He has hypertension and takes no medications.
 
     Blood pressure is 142/88 mm Hg. Examination is normal.
   labs:
@@ -102,11 +102,11 @@
   task: Treatment/Care Decisions
   chapters: [renal/bph]
   stem: |
-    A 64-year-old man comes to the office with 1 year of a weak urinary stream, hesitancy, a feeling of incomplete emptying and getting up **three times a night** to urinate. The symptoms bother him and he wants treatment. He has no dysuria, hematuria, fever, back pain or weight loss. He takes no medications.
+    A 64-year-old man comes to the office with 1 year of a weak urinary stream, hesitancy, a feeling of incomplete emptying and getting up three times a night to urinate. The symptoms bother him and he wants treatment. He has no dysuria, hematuria, fever, back pain or weight loss. He takes no medications.
 
-    Blood pressure is 134/82 mm Hg. The abdomen is soft without a palpable bladder. Digital rectal examination shows a **smooth, symmetric, nontender, mildly enlarged prostate (estimated 30 g)** without nodules.
+    Blood pressure is 134/82 mm Hg. The abdomen is soft without a palpable bladder. Digital rectal examination shows a smooth, symmetric, nontender, mildly enlarged prostate (estimated 30 g) without nodules.
   labs:
-    - [Urinalysis, no blood, leukocytes or glucose]
+    - ["Urinalysis", "no blood, leukocytes or glucose"]
     - [Creatinine, 0.9 mg/dL]
     - [Post-void residual (bladder scan), 60 mL]
     - [International Prostate Symptom Score, 17 (moderate)]
@@ -140,3 +140,519 @@
     An α₁-blocker such as tamsulosin is first-line therapy for bothersome LUTS due to BPH; 5α-reductase inhibitors are added for larger prostates.
   refs:
     - Sandhu JS, et al. Management of lower urinary tract symptoms attributed to benign prostatic hyperplasia: AUA guideline amendment 2023. *J Urol* 2024;211:11.
+
+
+- id: NE-004
+  topic: CKD with albuminuria — kidney protection
+  task: Treatment/Care Decisions
+  chapters: [renal/ckd]
+  stem: |
+    A 58-year-old man is evaluated for chronic kidney disease found on routine testing. He has hypertension and does not have diabetes. He takes amlodipine, 10 mg/d.
+
+    On physical examination, blood pressure is 142/86 mm Hg. BMI is 29. There is no edema.
+  labs:
+    - ["Creatinine", "1.6 mg/dL (stable over 1 year)"]
+    - ["eGFR", "48 mL/min/1.73 m²"]
+    - ["Urine albumin-to-creatinine ratio", "640 mg/g (repeated, 590 mg/g)"]
+    - ["Potassium", "4.5 mEq/L"]
+    - ["Hemoglobin A1c", "5.4%"]
+    - ["Urinalysis", "no blood; no casts"]
+    - ["Kidney ultrasonography", "normal-sized kidneys"]
+  lead: Which of the following is the most appropriate addition to his treatment?
+  choices:
+    A: Hydrochlorothiazide
+    B: Lisinopril, and add an SGLT2 inhibitor
+    C: Lisinopril plus losartan
+    D: Low-protein diet of 0.4 g/kg/d
+    E: Spironolactone
+  answer: B
+  explain: |
+    He has **CKD stage G3a A3** — eGFR 45–59 with **severely increased albuminuria (>300 mg/g)** — and uncontrolled blood pressure. Albuminuria is the strongest predictor of progression.
+
+    The KDIGO pillars of kidney protection:
+    1. **RAAS blockade (ACE inhibitor or ARB)** at the **maximally tolerated dose** — for albuminuria ≥300 mg/g (and reasonable at ≥30 mg/g). Check creatinine and potassium in 2–4 weeks; a creatinine rise of **up to 30%** is acceptable.
+    2. **SGLT2 inhibitor** for CKD with eGFR ≥20 — **with or without diabetes** (DAPA-CKD, EMPA-KIDNEY): slows eGFR decline and reduces kidney failure, CV death and hospitalization.
+    3. **Blood pressure target: systolic <120 mm Hg** when tolerated (KDIGO 2021).
+    4. **Statin** for adults ≥50 years with CKD.
+    5. For type 2 diabetes with albuminuria: add **finerenone** and consider a GLP-1 receptor agonist.
+  why:
+    A: A thiazide may help blood pressure later, but it does not reduce albuminuria like RAAS blockade and an SGLT2 inhibitor.
+    C: Dual ACE inhibitor plus ARB therapy increases hyperkalemia and AKI without benefit (ONTARGET, VA NEPHRON-D).
+    D: Very-low-protein diets risk malnutrition; KDIGO suggests about 0.8 g/kg/d in CKD stages 3–5.
+    E: Spironolactone is used for resistant hypertension but is not first-line kidney protection; it raises hyperkalemia risk with CKD.
+  objective: |
+    In CKD with severely increased albuminuria, use an ACE inhibitor or ARB at maximally tolerated dose plus an SGLT2 inhibitor, whether or not diabetes is present.
+  refs:
+    - KDIGO 2024 clinical practice guideline for the evaluation and management of chronic kidney disease. *Kidney Int* 2024;105:S117.
+    - EMPA-KIDNEY Collaborative Group. Empagliflozin in patients with chronic kidney disease. *N Engl J Med* 2023;388:117.
+
+- id: NE-005
+  topic: Membranous nephropathy
+  task: Diagnosis/Testing
+  chapters: [renal/glomerular]
+  stem: |
+    A 54-year-old man is evaluated for 2 months of progressive leg swelling and frothy urine. He has gained 7 kg (15.4 lb). He takes no medications, including NSAIDs. Age-appropriate cancer screening is up to date.
+
+    On physical examination, blood pressure is 134/82 mm Hg. There is 3+ pitting edema to the thighs and periorbital edema.
+  labs:
+    - ["Albumin", "2.1 g/dL"]
+    - ["Total cholesterol", "348 mg/dL"]
+    - ["Creatinine", "1.0 mg/dL"]
+    - ["Urine protein-to-creatinine ratio", "9.6 g/g"]
+    - ["Urinalysis", "4+ protein; oval fat bodies; no red cell casts"]
+    - ["Hepatitis B and C", "HIV, ANA, negative"]
+    - ["Serum and urine immunofixation", "no monoclonal protein"]
+    - ["Anti–phospholipase A₂ receptor (PLA₂R) antibody", "positive (high titer)"]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Focal segmental glomerulosclerosis
+    B: IgA nephropathy
+    C: Minimal change disease
+    D: Primary membranous nephropathy
+    E: AL amyloidosis
+  answer: D
+  explain: |
+    **Nephrotic syndrome** — proteinuria >3.5 g/day, hypoalbuminemia, edema and hyperlipidemia — with a **bland sediment** in a middle-aged adult. **Anti–PLA₂R antibodies** are present in about **70–80% of primary membranous nephropathy** and are highly specific. In the right setting (normal kidney function, secondary causes excluded), a positive anti-PLA₂R test can establish the diagnosis **without kidney biopsy**.
+
+    Membranous nephropathy is the **most common cause of nephrotic syndrome in non-diabetic white adults**. Secondary causes to exclude: **solid tumors** (lung, colon, breast, prostate), hepatitis B, SLE (class V), drugs (NSAIDs, gold, penicillamine).
+
+    Membranous nephropathy carries the **highest risk of VTE** of all nephrotic diseases — especially **renal vein thrombosis** — when albumin is <2.5–2.8 g/dL; consider prophylactic anticoagulation. Treatment: RAAS blockade, statin and diuretics, plus **rituximab** for patients at moderate-to-high risk of progression.
+  why:
+    A: FSGS is a common cause of nephrotic syndrome in Black adults and is associated with obesity, HIV and APOL1 variants; it is anti-PLA₂R negative.
+    B: IgA nephropathy is a nephritic disease with hematuria, often after upper respiratory infection, not massive proteinuria with bland sediment.
+    C: Minimal change disease is the most common cause in children and is associated with NSAIDs and Hodgkin lymphoma in adults; it is anti-PLA₂R negative.
+    E: Amyloidosis was excluded by negative immunofixation.
+  objective: |
+    A positive anti–PLA₂R antibody in an adult with nephrotic syndrome indicates primary membranous nephropathy.
+  refs:
+    - KDIGO 2021 clinical practice guideline for the management of glomerular diseases. *Kidney Int* 2021;100:S1.
+    - Ronco P, et al. Membranous nephropathy. *Nat Rev Dis Primers* 2021;7:69.
+
+- id: NE-006
+  topic: IgA nephropathy versus postinfectious glomerulonephritis
+  task: Diagnosis/Testing
+  chapters: [renal/glomerular]
+  stem: |
+    A 24-year-old man is evaluated for cola-colored urine that began 2 days after the onset of a sore throat and cough. He had a similar episode of dark urine 1 year ago during a cold that resolved on its own. He takes no medications.
+
+    On physical examination, temperature is 37.6 °C (99.7 °F), blood pressure is 136/84 mm Hg. Pharyngeal erythema is present without exudates. There is no edema or rash.
+  labs:
+    - ["Creatinine", "1.1 mg/dL"]
+    - ["Urinalysis", "2+ blood; 1+ protein; dysmorphic erythrocytes and red cell casts"]
+    - ["Urine protein-to-creatinine ratio", "0.6 g/g"]
+    - ["C3", "normal"]
+    - ["C4", "normal"]
+    - ["Antistreptolysin O", "normal"]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Anti–glomerular basement membrane disease
+    B: IgA nephropathy
+    C: Lupus nephritis
+    D: Poststreptococcal glomerulonephritis
+    E: Thin basement membrane nephropathy
+  answer: B
+  explain: |
+    Episodes of **gross hematuria that start within 1–2 days of an upper respiratory infection** ("**synpharyngitic**" hematuria), glomerular sediment, mild proteinuria and **normal complement** → **IgA nephropathy**, the **most common primary glomerulonephritis worldwide**. Mesangial IgA deposits on biopsy confirm it.
+
+    | | IgA nephropathy | Poststreptococcal GN |
+    |---|---|---|
+    | Timing after infection | **1–3 days** (during) | **1–3 weeks** (after pharyngitis); 3–6 weeks after skin infection |
+    | Complement | **Normal** | **Low C3** (normalizes in 6–8 weeks) |
+    | ASO / anti-DNase B | Normal | Elevated |
+    | Recurrence | Yes | Rare |
+
+    Prognosis depends on proteinuria, blood pressure and GFR. Treatment: **ACE inhibitor/ARB** to maximum dose, **SGLT2 inhibitor** if proteinuria persists, plus newer agents (sparsentan, targeted-release budesonide, iptacopan) for persistent proteinuria ≥0.5–1 g/day.
+  why:
+    A: Anti-GBM disease causes rapidly progressive GN, often with pulmonary hemorrhage, and rising creatinine — not recurrent self-limited hematuria.
+    C: Lupus nephritis usually has low C3/C4 and other features of SLE.
+    D: Poststreptococcal GN occurs 1–3 weeks after infection with low C3 and elevated streptococcal antibodies.
+    E: Thin basement membrane disease causes persistent microscopic hematuria with little proteinuria and no red cell casts during infections.
+  mnemonic: |
+    **IgA = "Immediately"** after the sore throat. **PSGN = "Postponed"** by weeks.
+  objective: |
+    Distinguish IgA nephropathy (hematuria within days of infection, normal complement) from poststreptococcal glomerulonephritis (weeks later, low C3).
+  refs:
+    - KDIGO 2025 clinical practice guideline for the management of IgA nephropathy and IgA vasculitis. *Kidney Int* 2025.
+
+- id: NE-007
+  topic: Prevention of contrast-associated AKI
+  task: Treatment/Care Decisions
+  chapters: [renal/aki]
+  stem: |
+    A 72-year-old woman with type 2 diabetes and CKD (eGFR 28 mL/min/1.73 m²) is scheduled for coronary angiography tomorrow for stable angina with an abnormal stress test. Her medications are insulin glargine, lisinopril, atorvastatin and aspirin. She is euvolemic.
+
+    On physical examination, blood pressure is 134/76 mm Hg. Lungs are clear and there is no edema. Echocardiogram shows an LVEF of 55%.
+  lead: Which of the following is most likely to reduce her risk of contrast-associated acute kidney injury?
+  choices:
+    A: Intravenous isotonic fluids before and after the procedure
+    B: Oral N-acetylcysteine
+    C: Intravenous sodium bicarbonate in place of saline
+    D: Prophylactic hemodialysis after the procedure
+    E: Intravenous furosemide after contrast
+  answer: A
+  explain: |
+    Her eGFR is **<30 mL/min/1.73 m²**, the group at **highest risk** for contrast-associated AKI. Recent data show the risk with modern contrast is lower than once thought for most patients, but it is real at eGFR <30.
+
+    What works:
+    - **IV isotonic crystalloid** (normal saline or lactated Ringer) before and after contrast in high-risk patients who are not volume overloaded (e.g., 1–3 mL/kg/h for several hours before and 6–12 h after).
+    - **Use the lowest volume of low- or iso-osmolar contrast**.
+    - Avoid nephrotoxins (NSAIDs) and repeated contrast within 48–72 h; consider holding diuretics.
+
+    What does **not** work: **N-acetylcysteine and sodium bicarbonate** (PRESERVE trial — no benefit over saline), **prophylactic dialysis**, and **diuretics**. Holding ACE inhibitors or ARBs has not been clearly shown to help.
+  why:
+    B: N-acetylcysteine did not prevent AKI, dialysis or death in the PRESERVE trial.
+    C: Sodium bicarbonate was no better than saline in PRESERVE.
+    D: Prophylactic hemodialysis does not prevent contrast-associated AKI and adds risk.
+    E: Furosemide increases AKI risk by causing volume depletion.
+  objective: |
+    Prevent contrast-associated AKI in high-risk patients with intravenous isotonic fluids and minimal contrast volume; N-acetylcysteine and bicarbonate do not help.
+  refs:
+    - Weisbord SD, et al. Outcomes after angiography with sodium bicarbonate and acetylcysteine (PRESERVE). *N Engl J Med* 2018;378:603.
+    - Davenport MS, et al. Use of intravenous iodinated contrast media in patients with kidney disease: ACR/NKF consensus statements. *Radiology* 2020;294:660.
+
+- id: NE-008
+  topic: AKI — prerenal versus acute tubular necrosis
+  task: Diagnosis/Testing
+  chapters: [renal/aki]
+  stem: |
+    A 78-year-old woman is hospitalized with 3 days of vomiting and diarrhea. She takes lisinopril and hydrochlorothiazide. She has had poor oral intake.
+
+    On physical examination, blood pressure is 96/58 mm Hg supine with orthostatic drop; pulse rate is 104/min. Mucous membranes are dry. Jugular veins are flat.
+  labs:
+    - ["BUN", "64 mg/dL"]
+    - ["Creatinine", "2.4 mg/dL (baseline 0.9 mg/dL)"]
+    - ["Urine sodium", "8 mEq/L"]
+    - ["Fractional excretion of sodium", "0.4%"]
+    - ["Fractional excretion of urea", "28%"]
+    - ["Urine specific gravity", "1.028"]
+    - ["Urine sediment", "hyaline casts only"]
+  lead: Which of the following is the most likely cause of her acute kidney injury?
+  choices:
+    A: Acute interstitial nephritis
+    B: Acute tubular necrosis
+    C: Prerenal azotemia
+    D: Rapidly progressive glomerulonephritis
+    E: Urinary obstruction
+  answer: C
+  explain: |
+    She has volume depletion (GI losses, diuretic, poor intake) and lost autoregulation from the ACE inhibitor. The urine shows **intact tubules conserving salt and water**:
+
+    | Index | Prerenal | ATN |
+    |---|---|---|
+    | BUN:creatinine | **>20:1** | 10–15:1 |
+    | Urine Na⁺ | **<20 mEq/L** | >40 mEq/L |
+    | **FENa** | **<1%** | >2% |
+    | **FEUrea** (use if on diuretics) | **<35%** | >50% |
+    | Specific gravity | >1.020 | ~1.010 (isosthenuria) |
+    | Sediment | Bland, **hyaline casts** | **Muddy brown granular casts**, tubular cells |
+
+    She takes a **thiazide**, which can raise FENa falsely; the **FEUrea of 28%** confirms the prerenal picture. Treat with **IV isotonic fluids** and hold lisinopril and hydrochlorothiazide. Creatinine should improve within 24–72 hours; prolonged prerenal states can progress to ATN.
+  why:
+    A: Interstitial nephritis presents with drug exposure (antibiotics, PPIs, NSAIDs), white cells and WBC casts, sometimes rash, fever or eosinophilia.
+    B: ATN would show a FENa >2%, high urine sodium and muddy brown granular casts.
+    D: Rapidly progressive GN shows hematuria, red cell casts and proteinuria.
+    E: Obstruction is suggested by a distended bladder or hydronephrosis; it is not the likely cause here, though ultrasonography is often done.
+  objective: |
+    Recognize prerenal AKI by a FENa below 1% (or FEUrea below 35% in patients taking diuretics), low urine sodium and a bland sediment.
+  refs:
+    - KDIGO clinical practice guideline for acute kidney injury. *Kidney Int Suppl* 2012;2:1.
+    - Carvounis CP, et al. Significance of the fractional excretion of urea in the differential diagnosis of AKI. *Kidney Int* 2002;62:2223.
+
+- id: NE-009
+  topic: Toxic alcohol ingestion — osmolal gap
+  task: Treatment/Care Decisions
+  chapters: [renal/acid-base]
+  stem: |
+    A 46-year-old man is brought to the emergency department after he was found confused in his garage. His wife says he has been drinking heavily and may have drunk "something blue" from a bottle in the garage.
+
+    On physical examination, temperature is 36.9 °C (98.4 °F), blood pressure is 128/80 mm Hg, pulse rate is 106/min, and respiration rate is 30/min with deep breaths. He is lethargic. Fundi are normal. There is no focal neurologic deficit.
+  labs:
+    - ["Sodium", "138 mEq/L"]
+    - ["Chloride", "100 mEq/L"]
+    - ["Bicarbonate", "8 mEq/L"]
+    - ["BUN", "14 mg/dL"]
+    - ["Glucose", "90 mg/dL"]
+    - ["Creatinine", "1.8 mg/dL"]
+    - ["Lactate", "2.0 mmol/L"]
+    - ["β-Hydroxybutyrate", "negative"]
+    - ["Ethanol", "undetectable"]
+    - ["Measured serum osmolality", "330 mOsm/kg H₂O"]
+    - ["Arterial pH", "7.12"]
+    - ["Urinalysis", "envelope-shaped crystals"]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Activated charcoal
+    B: Fomepizole and nephrology consultation for hemodialysis
+    C: Intravenous thiamine and glucose only
+    D: Intravenous sodium bicarbonate alone
+    E: Wait for an ethylene glycol level before treatment
+  answer: B
+  explain: |
+    **Step 1 — anion gap:** 138 − 100 − 8 = **30** (high).
+    **Step 2 — osmolal gap:** calculated = 2(138) + 90/18 + 14/2.8 = 276 + 5 + 5 = **286**. Gap = 330 − 286 = **44** (normal <10).
+
+    A **high anion gap acidosis with a high osmolal gap**, no ketones, low lactate and no ethanol = **toxic alcohol** — here **ethylene glycol** (antifreeze, often blue/green). **Calcium oxalate (envelope-shaped) crystals** and AKI confirm it.
+
+    The parent alcohol is not toxic — its **metabolites made by alcohol dehydrogenase** are (glycolic and oxalic acid). Treatment:
+    - **Fomepizole** (blocks alcohol dehydrogenase) — start **immediately** on suspicion; do not wait for a level.
+    - **Hemodialysis** — removes alcohol and metabolites; indicated for severe acidosis (pH <7.25–7.3), AKI or end-organ damage.
+    - Bicarbonate, thiamine and pyridoxine as adjuncts.
+
+    **Methanol** (windshield fluid, moonshine) is similar but causes **visual loss** ("snowstorm" vision, optic disc hyperemia).
+  why:
+    A: Alcohols are absorbed rapidly and bind poorly to charcoal.
+    C: Thiamine and pyridoxine are adjuncts for ethylene glycol; they do not block toxic metabolite formation.
+    D: Bicarbonate corrects acidemia but does not stop ongoing production of toxic acids.
+    E: Ethylene glycol levels are rarely available quickly; delay allows metabolism to toxic acids.
+  objective: |
+    Treat suspected ethylene glycol poisoning (high anion and osmolal gaps, oxalate crystals) with fomepizole and hemodialysis without waiting for a confirmatory level.
+  refs:
+    - Kraut JA, Mullins ME. Toxic alcohols. *N Engl J Med* 2018;378:270.
+
+- id: NE-010
+  topic: Renal tubular acidosis
+  task: Pathophysiology/Basic Science
+  chapters: [renal/acid-base, renal/hyperkalemia]
+  stem: |
+    A 68-year-old man with type 2 diabetes and CKD (eGFR 46 mL/min/1.73 m²) is evaluated for a persistently elevated potassium. He takes lisinopril and metformin. He has no symptoms.
+  labs:
+    - ["Sodium", "138 mEq/L"]
+    - ["Potassium", "5.8 mEq/L"]
+    - ["Chloride", "112 mEq/L"]
+    - ["Bicarbonate", "18 mEq/L"]
+    - ["Glucose", "132 mg/dL"]
+    - ["Urine pH", "5.2"]
+    - ["Plasma renin activity", "low"]
+    - ["Plasma aldosterone", "low"]
+  lead: Which of the following is the most likely mechanism of his acid-base disorder?
+  choices:
+    A: Impaired distal hydrogen ion secretion with an inability to acidify the urine
+    B: Impaired proximal bicarbonate reabsorption
+    C: Lactic acid production from metformin
+    D: Reduced aldosterone effect causing impaired potassium and ammonium excretion
+    E: Ketoacid production
+  answer: D
+  explain: |
+    He has a **normal anion gap (hyperchloremic) metabolic acidosis** (gap = 138 − 112 − 18 = 8) with **hyperkalemia**, an **acidic urine (pH <5.5)**, and **low renin and low aldosterone**. This is **type 4 RTA — hyporeninemic hypoaldosteronism**, most often from **diabetic kidney disease**, made worse by an **ACE inhibitor**.
+
+    **Mechanism:** less aldosterone → less potassium secretion in the collecting duct → **hyperkalemia**. Hyperkalemia itself **suppresses proximal ammoniagenesis** → less NH₄⁺ to carry acid → acidosis. The distal pump that acidifies the urine still works, so **urine pH stays low**.
+
+    | RTA type | Defect | Serum K⁺ | Urine pH | Clues |
+    |---|---|---|---|---|
+    | 1 (distal) | H⁺ secretion | Low | **>5.5** | Stones, Sjögren, amphotericin |
+    | 2 (proximal) | HCO₃⁻ reabsorption | Low | <5.5 once HCO₃⁻ low | Fanconi, myeloma, tenofovir, acetazolamide |
+    | **4** | **Aldosterone deficiency/resistance** | **High** | **<5.5** | **Diabetes, ACEi/ARB, NSAIDs, heparin, trimethoprim** |
+
+    Treat with a **low-potassium diet**, a **loop or thiazide diuretic**, potassium binders, and sodium bicarbonate if needed; fludrocortisone rarely.
+  why:
+    A: Impaired distal H⁺ secretion is type 1 RTA, which causes hypokalemia and a urine pH above 5.5.
+    B: Proximal (type 2) RTA causes hypokalemia and is associated with Fanconi syndrome.
+    C: Lactic acidosis causes a high anion gap acidosis.
+    E: Ketoacidosis causes a high anion gap; his gap is normal and glucose is only mildly raised.
+  objective: |
+    Type 4 RTA (hyporeninemic hypoaldosteronism) causes a normal anion gap metabolic acidosis with hyperkalemia and an acidic urine, commonly in diabetic kidney disease and with RAAS inhibitors.
+  refs:
+    - Palmer BF, Clegg DJ. Hyperkalemia across the continuum of kidney function. *Clin J Am Soc Nephrol* 2018;13:155.
+    - Kraut JA, Madias NE. Metabolic acidosis: pathophysiology, diagnosis and management. *Nat Rev Nephrol* 2010;6:274.
+
+- id: NE-011
+  topic: Severe symptomatic hyponatremia
+  task: Treatment/Care Decisions
+  chapters: [renal/hyponatremia]
+  stem: |
+    A 64-year-old woman with small cell lung cancer is brought to the emergency department after a generalized tonic-clonic seizure at home. Her family says she has been confused and vomiting for 2 days.
+
+    On physical examination, blood pressure is 128/76 mm Hg and pulse rate is 88/min. She is drowsy and confused. Mucous membranes are moist and there is no edema.
+  labs:
+    - ["Sodium", "116 mEq/L (128 mEq/L 2 weeks ago)"]
+    - ["Potassium", "4.0 mEq/L"]
+    - ["Glucose", "102 mg/dL"]
+    - ["Serum osmolality", "242 mOsm/kg H₂O"]
+    - ["Urine osmolality", "540 mOsm/kg H₂O"]
+    - ["Urine sodium", "62 mEq/L"]
+    - ["TSH and morning cortisol", "normal"]
+  lead: Which of the following is the most appropriate immediate treatment?
+  choices:
+    A: 100-mL bolus of 3% saline over 10 minutes, repeated up to two more times as needed
+    B: Fluid restriction to 800 mL/d
+    C: Intravenous 0.9% saline at 150 mL/h
+    D: Oral tolvaptan
+    E: Oral salt tablets and urea
+  answer: A
+  explain: |
+    She has **severe symptomatic hyponatremia** — **seizure**, vomiting, confusion — from **SIADH** (small cell lung cancer; euvolemia, low serum osmolality, concentrated urine, urine Na >30, normal thyroid and adrenal function).
+
+    Severe symptoms mean **cerebral edema**: treat **immediately** with **hypertonic (3%) saline** — **100–150 mL bolus over 10–20 minutes**, repeated up to **two more times** if symptoms persist. The aim is a quick rise of **4–6 mEq/L**, which is enough to stop seizures and reverse herniation.
+
+    Then **limit the total correction** to avoid **osmotic demyelination syndrome**: **≤8 mEq/L in 24 hours** for high-risk patients (hypokalemia, alcohol use, malnutrition, liver disease, Na ≤105) and **≤10–12 mEq/L** for others. If correction is too fast, re-lower with **D5W and desmopressin**.
+
+    Long-term SIADH management: fluid restriction, **salt tablets plus a loop diuretic**, **urea**, or vaptans; treat the tumor.
+  why:
+    B: Fluid restriction is the chronic treatment for SIADH. It acts too slowly to reverse seizure-causing cerebral edema.
+    C: Normal saline (osmolality 308) can **worsen** hyponatremia in SIADH when urine osmolality is high — the kidney keeps the water and excretes the salt.
+    D: Tolvaptan is for chronic, mild-to-moderate SIADH; it is too slow and unpredictable for emergencies.
+    E: Salt tablets and urea are chronic therapies, not emergency treatment for seizures.
+  objective: |
+    Treat hyponatremia with severe symptoms (seizure, obtundation) with 100–150 mL boluses of 3% saline, aiming for a 4–6 mEq/L rise while limiting 24-hour correction to 8–10 mEq/L.
+  refs:
+    - Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. *Eur J Endocrinol* 2014;170:G1.
+    - Adrogué HJ, et al. Diagnosis and management of hyponatremia: a review. *JAMA* 2022;328:280.
+
+- id: NE-012
+  topic: Autosomal dominant polycystic kidney disease
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [renal/ckd]
+  stem: |
+    A 34-year-old man with autosomal dominant polycystic kidney disease (ADPKD) diagnosed by ultrasonography is evaluated during a routine visit. His mother has ADPKD and started dialysis at age 52. His maternal uncle died of a ruptured intracranial aneurysm at age 45. He has hypertension treated with lisinopril. He has no headache or neurologic symptoms.
+
+    On physical examination, blood pressure is 128/80 mm Hg. Both kidneys are palpable.
+  labs:
+    - ["Creatinine", "1.3 mg/dL"]
+    - ["eGFR", "70 mL/min/1.73 m²"]
+    - ["Total kidney volume (MRI)", "large for age (Mayo class 1D)"]
+  lead: Which of the following is the most appropriate screening test?
+  choices:
+    A: Annual CT of the abdomen
+    B: Echocardiography for mitral valve prolapse every year
+    C: Magnetic resonance angiography of the head
+    D: Colonoscopy at age 40
+    E: Testing for PKD1 mutation in his children now
+  answer: C
+  explain: |
+    ADPKD (PKD1 or PKD2 mutations) is the most common inherited kidney disease. Extrarenal manifestations include **liver cysts** (most common), **intracranial aneurysms**, mitral valve prolapse, colonic diverticula and abdominal wall hernias.
+
+    Intracranial aneurysms occur in about **9–12%** of ADPKD patients, rising to **~20%** in those with a **family history of aneurysm or subarachnoid hemorrhage**. Screening with **MR angiography (no gadolinium needed; time-of-flight)** is recommended for patients with a **family history of aneurysm/SAH**, a prior aneurysm rupture, high-risk occupations (pilots) or before major surgery.
+
+    He is also at **high risk of rapid progression** (large kidney volume for age, early ESKD in his mother), which makes him a candidate for **tolvaptan** (a vasopressin V2 antagonist that slows growth of kidney volume and eGFR decline). Control blood pressure (target ≤110/75 mm Hg in young patients with preserved GFR, HALT-PKD) and encourage high water intake.
+  why:
+    A: Serial CT adds radiation and is not used to monitor ADPKD; MRI-based kidney volume is used for prognosis.
+    B: MVP is common in ADPKD, but routine annual echocardiography is not recommended in the absence of a murmur or symptoms.
+    D: Diverticulosis is more common, but ADPKD does not change colorectal cancer screening.
+    E: Genetic testing of asymptomatic children is generally deferred until adulthood or until results would change management.
+  objective: |
+    Screen patients with ADPKD who have a family history of intracranial aneurysm or subarachnoid hemorrhage with magnetic resonance angiography of the head.
+  refs:
+    - KDIGO 2025 clinical practice guideline for the evaluation, management, and treatment of ADPKD. *Kidney Int* 2025.
+    - Chapman AB, et al. Autosomal-dominant polycystic kidney disease (ADPKD): KDIGO controversies conference. *Kidney Int* 2015;88:17.
+
+- id: NE-013
+  topic: Testicular mass
+  task: Diagnosis/Testing
+  chapters: [renal/urology]
+  stem: |
+    A 27-year-old man is evaluated for a painless lump in his left testis that he noticed 3 weeks ago in the shower. He has no dysuria, fever or trauma. He had an undescended right testis repaired as an infant.
+
+    On physical examination, there is a firm, nontender 1.5-cm nodule within the left testis that does not transilluminate. The epididymis and spermatic cord are normal. There is no inguinal hernia or lymphadenopathy.
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: CT of the abdomen and pelvis
+    B: Fine-needle aspiration of the testis
+    C: Scrotal ultrasonography
+    D: Trial of antibiotics for epididymitis and reexamination in 2 weeks
+    E: Urine nucleic acid testing for chlamydia and gonorrhea
+  answer: C
+  explain: |
+    A **firm, painless intratesticular mass** in a young man is **testicular cancer until proven otherwise** — the most common solid tumor in men aged 15–35 years. **Cryptorchidism** raises the risk, including in the **contralateral, normally descended testis**.
+
+    The first test is **scrotal ultrasonography**: a hypoechoic intratesticular mass is highly suggestive. Then:
+    - **Serum tumor markers** — **AFP, β-hCG, LDH** (before orchiectomy).
+    - **Radical inguinal orchiectomy** for diagnosis and treatment.
+    - Staging CT of the abdomen/pelvis and chest imaging.
+    - Discuss **sperm banking**.
+
+    **Never biopsy through the scrotum** — it can seed tumor into scrotal lymphatics.
+
+    | Scrotal finding | Likely cause |
+    |---|---|
+    | Firm, painless **intratesticular** mass | **Testicular cancer** |
+    | Transilluminating, surrounds testis | Hydrocele |
+    | "Bag of worms," worse standing | Varicocele (left > right; new right-sided → image for mass) |
+    | Cystic nodule **above** testis, transilluminates | Spermatocele/epididymal cyst |
+    | Painful, fever, positive Prehn sign | Epididymitis |
+    | Sudden severe pain, high-riding testis, absent cremasteric reflex | **Torsion — emergency surgery** |
+  why:
+    A: CT is used for staging after the diagnosis is made by ultrasound and orchiectomy.
+    B: Transscrotal needle aspiration or biopsy risks tumor seeding and is contraindicated.
+    D: The nodule is painless and intratesticular with a normal epididymis; treating as infection delays a cancer diagnosis.
+    E: STI testing is for urethritis or epididymitis, which he does not have.
+  objective: |
+    Evaluate a painless intratesticular mass with scrotal ultrasonography, followed by tumor markers and radical inguinal orchiectomy if a solid mass is confirmed.
+  refs:
+    - Stephenson A, et al. Diagnosis and treatment of early-stage testicular cancer: AUA guideline amendment 2023. *J Urol* 2024;211:20.
+
+- id: NE-014
+  topic: Asymptomatic microscopic hematuria
+  task: Diagnosis/Testing
+  chapters: [renal/urology]
+  stem: |
+    A 62-year-old man is evaluated after a routine urinalysis showed blood. He has no dysuria, flank pain or gross hematuria. He smoked one pack of cigarettes daily for 35 years and quit 5 years ago. He worked in a dye manufacturing plant. He does not take anticoagulants.
+
+    On physical examination, blood pressure is 128/78 mm Hg. Prostate examination is normal.
+  labs:
+    - ["Repeat urinalysis with microscopy", "12 erythrocytes/hpf; normal red cell morphology; no casts; no protein"]
+    - ["Urine culture", "negative"]
+    - ["Creatinine", "0.9 mg/dL"]
+  lead: Which of the following is the most appropriate next step in evaluation?
+  choices:
+    A: Cystoscopy and CT urography
+    B: Kidney biopsy
+    C: Repeat urinalysis in 1 year
+    D: Urine cytology alone
+    E: Prostate-specific antigen measurement
+  answer: A
+  explain: |
+    **Microscopic hematuria** is **≥3 red blood cells per high-power field** on microscopy. Confirm with microscopy (dipstick alone gives false positives from myoglobin, hemoglobin), and exclude infection, menstruation, recent exercise and trauma.
+
+    Non-glomerular (normal red cell morphology, no casts, no proteinuria) hematuria in an adult raises concern for **urothelial cancer**. Risk is stratified by the **AUA 2020** guideline:
+    - **High risk**: age **≥60** (men), **>30 pack-years smoking**, **>25 RBC/hpf**, history of gross hematuria, occupational exposure (**aromatic amines — dyes, rubber, leather**).
+    - **High-risk patients** → **cystoscopy plus CT urography** (multiphasic CT of the upper tracts).
+    - Intermediate risk → cystoscopy + renal ultrasonography.
+    - Low risk → repeat urinalysis in 6 months, or cystoscopy + ultrasound with shared decision-making.
+
+    He is high risk (age, heavy smoking, dye exposure).
+  why:
+    B: Kidney biopsy is for suspected glomerular disease (dysmorphic RBCs, red cell casts, proteinuria, rising creatinine).
+    C: Waiting is appropriate only for low-risk patients; he is high risk.
+    D: Cytology is insensitive for low-grade tumors and does not replace cystoscopy and upper-tract imaging.
+    E: PSA screens for prostate cancer but does not evaluate hematuria.
+  pearl: |
+    **Anticoagulation does not explain hematuria** — patients on warfarin or DOACs with hematuria need the same evaluation.
+  objective: |
+    Evaluate microscopic hematuria in high-risk patients (older age, heavy smoking, occupational exposures) with cystoscopy and CT urography.
+  refs:
+    - Barocas DA, et al. Microhematuria: AUA/SUFU guideline. *J Urol* 2020;204:778.
+
+- id: NE-015
+  topic: Erectile dysfunction and nitrates
+  task: Treatment/Care Decisions
+  chapters: [renal/urology, cardiology/sihd]
+  stem: |
+    A 61-year-old man is evaluated for 1 year of difficulty achieving and maintaining erections. He has hypertension, hyperlipidemia and stable angina. He uses isosorbide mononitrate daily and sublingual nitroglycerin about once a month. His other medications are metoprolol, amlodipine, atorvastatin and aspirin. He has normal morning testosterone.
+
+    On physical examination, blood pressure is 126/76 mm Hg. Genitourinary examination is normal.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Begin sildenafil, taken at least 1 hour after his isosorbide dose
+    B: Begin tadalafil daily and continue all medications
+    C: Begin testosterone therapy
+    D: Discuss alternatives such as a vacuum erection device or intracavernosal alprostadil, and coordinate with his cardiologist about nitrate therapy
+    E: Stop metoprolol because it is the cause of his erectile dysfunction
+  answer: D
+  explain: |
+    **PDE-5 inhibitors (sildenafil, vardenafil, tadalafil) are absolutely contraindicated with any nitrate**, at any time interval in a patient taking a daily long-acting nitrate. Both drugs raise cyclic GMP in vascular smooth muscle, and together they can cause **profound, refractory hypotension** and death. (Avoid nitrates for 24 hours after sildenafil/vardenafil and **48 hours after tadalafil**.)
+
+    Options for this man:
+    - **Non-PDE-5 therapies**: **vacuum erection device**, **intracavernosal alprostadil** or intraurethral alprostadil, penile prosthesis.
+    - Ask his cardiologist whether the **daily nitrate can be stopped** — long-acting nitrates do not improve survival, and other antianginals (ranolazine, beta-blockers, CCBs) may control his symptoms. If the nitrate is stopped (including PRN nitroglycerin, with a plan for chest pain), a PDE-5 inhibitor becomes possible.
+
+    Erectile dysfunction is a **marker of vascular disease** — it often precedes coronary events by 2–5 years.
+  why:
+    A: Timing does not make a PDE-5 inhibitor safe with a daily long-acting nitrate; the combination is contraindicated.
+    B: Daily tadalafil with nitrates carries the same risk of severe hypotension.
+    C: His testosterone is normal; testosterone therapy does not treat ED in eugonadal men.
+    E: Beta-blockers can contribute to ED, but metoprolol is needed for his angina, and stopping it abruptly is risky. ED in this setting is mostly vascular.
+  objective: |
+    Do not prescribe PDE-5 inhibitors to patients taking any nitrate; offer alternatives or coordinate nitrate discontinuation with cardiology.
+  refs:
+    - Burnett AL, et al. Erectile dysfunction: AUA guideline. *J Urol* 2018;200:633.
+    - Virani SS, et al. 2023 AHA/ACC guideline for the management of patients with chronic coronary disease. *Circulation* 2023;148:e9.
