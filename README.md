@@ -104,10 +104,13 @@ Copy any question in a `qbank/questions/*.yml` file and edit it. Required fields
 Write choices in any order — the build spreads correct answers evenly over A–E (fixed per question id, so never re-letter a live question by hand).
 Run `python3 qbank_build.py --check` to validate, then `python3 build.py`. `functions/_lib/bank.json` is rebuilt every time — commit it too.
 
-### Blueprint targets (ABIM IM, Jan 2026) — goal 300 questions
+### Blueprint targets (ABIM Internal Medicine Certification Examination) — goal 300 questions
 
-Cardio 45 · Endo 30 · GI 30 · ID 30 · Rheum/Ortho 30 · Pulm 24 · Nephro/Uro 18 · Onc 18 · Heme 12 · Neuro 12 · Derm 9 · OB/GYN 9 · Psych 9 · Geri 9 · Allergy 6 · Misc 3 · Ophtho 3 · ENT 3.
-At least 75% of items on high-importance topics; no more than 18% on low-frequency ("LF") topics.
+Cardio 42 · Endo 27 · GI 27 · ID 27 · Rheum/Ortho 27 · Pulm 27 · Heme 18 · Nephro/Uro 18 · Onc 18 · Neuro 12 · Psych 12 · Derm 9 · OB/GYN 9 · Geri 9 · Allergy 6 · Misc (ethics, epidemiology, safety) 6 · Ophtho 3 · ENT 3.
+Hypertension ≈5% of the exam; obstructive airway disease and evaluation of common pulmonary symptoms ≈2.5% each.
+The certification exam has no importance/frequency limits: cover common problems first, but include rare conditions and
+specialist-level management (not just recognition). Spread items over the five tasks: diagnosis, ordering/interpreting tests,
+treatment, risk/prognosis/epidemiology, pathophysiology. Exam format: up to 240 questions, 4 sessions of up to 60.
 
 ### Local test
 

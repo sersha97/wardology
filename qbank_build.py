@@ -24,24 +24,24 @@ APP = ROOT / "qbank" / "app"
 MEDIA = ROOT / "qbank" / "media"
 BANK_OUT = ROOT / "functions" / "_lib" / "bank.json"
 
-# ABIM Internal Medicine blueprint (Jan 2026) content categories and target share.
+# ABIM Internal Medicine CERTIFICATION exam blueprint — content categories and target share.
 CATEGORIES = [
-    ("cardio", "Cardiovascular Disease", "❤️", 15),
-    ("endo", "Endocrinology, Diabetes & Metabolism", "🍬", 10),
-    ("gi", "Gastroenterology & Hepatology", "🍽️", 10),
-    ("id", "Infectious Disease", "🦠", 10),
-    ("rheum", "Rheumatology & Orthopedics", "🦴", 10),
-    ("pulm", "Pulmonary Disease", "🫁", 8),
+    ("cardio", "Cardiovascular Disease", "❤️", 14),
+    ("endo", "Endocrinology, Diabetes & Metabolism", "🍬", 9),
+    ("gi", "Gastroenterology & Hepatology", "🍽️", 9),
+    ("id", "Infectious Disease", "🦠", 9),
+    ("rheum", "Rheumatology & Orthopedics", "🦴", 9),
+    ("pulm", "Pulmonary Disease", "🫁", 9),
     ("nephro", "Nephrology & Urology", "🧂", 6),
     ("onc", "Medical Oncology", "🎗️", 6),
-    ("heme", "Hematology", "🩸", 4),
+    ("heme", "Hematology", "🩸", 6),
     ("neuro", "Neurology", "🧠", 4),
+    ("psych", "Psychiatry", "🧘", 4),
     ("derm", "Dermatology", "🧴", 3),
     ("obgyn", "Obstetrics & Gynecology", "🤰", 3),
-    ("psych", "Psychiatry", "🧘", 3),
     ("geri", "Geriatric Syndromes", "👵", 3),
     ("allergy", "Allergy & Immunology", "🤧", 2),
-    ("misc", "Ethics, Safety & Epidemiology", "⚖️", 1),
+    ("misc", "Ethics, Safety & Epidemiology", "⚖️", 2),
     ("ophtho", "Ophthalmology", "👁️", 1),
     ("ent", "Otolaryngology & Dental Medicine", "👂", 1),
 ]

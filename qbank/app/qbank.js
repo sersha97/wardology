@@ -80,7 +80,7 @@
   function renderAuth(tab = "signup") {
     app.innerHTML = `<div class="auth"><div class="authcard">
       ${logo()}<h1>Wardology <span>QBank</span></h1>
-      <p class="sub">Free ABIM Internal Medicine board prep, built on the ABIM blueprint.</p>
+      <p class="sub">Free ABIM Internal Medicine board prep, built on the ABIM Certification Examination blueprint.</p>
       <div class="authtabs"><button data-t="signup" class="${tab === "signup" ? "on" : ""}">Create account</button><button data-t="login" class="${tab === "login" ? "on" : ""}">Log in</button></div>
       <form id="af">
         ${tab === "signup" ? '<label class="f" for="nm">Name</label><input id="nm" type="text" autocomplete="name" placeholder="Dr. Jane Doe">' : ""}
@@ -137,7 +137,7 @@
     const cats = S.bank.categories.map((c) => `<div class="bp"><span class="e">${c.emoji}</span><span class="n">${esc(c.name)}</span><span class="c">${c.count} Qs · ${c.target}%</span></div>`).join("");
     shell("home", "Welcome", `
       <section class="hero"><h1>Hi${first ? " " + esc(first) : ""} — ready for a <span>block</span>?</h1>
-        <p>${S.bank.total} original questions mapped to the ABIM Internal Medicine blueprint. Tutor mode teaches as you go; exam mode runs like the real thing: up to 60 questions, 2 minutes each.</p>
+        <p>${S.bank.total} original questions mapped to the ABIM Internal Medicine Certification blueprint. Tutor mode teaches as you go; exam mode runs like the real thing: up to 60 questions, 2 minutes each.</p>
         <div class="row"><a class="btn accent" href="#/create">📝 Create a test</a>${open ? `<a class="btn" href="#/test/${open.id}">▶️ Resume test #${open.id}</a>` : ""}</div></section>
       <div class="kpis">
         <div class="kpi"><small>Answered</small><b>${o.used}</b> <span class="muted">/ ${perf.total}</span></div>
@@ -145,7 +145,7 @@
         <div class="kpi"><small>Percentile</small><b>${perf.percentile.rank != null ? perf.percentile.rank + "th" : "—"}</b></div>
         <div class="kpi"><small>Tests</small><b>${perf.tests.completed}</b> <span class="muted">done</span></div>
       </div>
-      <div class="card"><h2>🧭 Blueprint coverage</h2><p class="muted" style="margin-top:-6px;font-size:14px">Question share follows the ABIM blueprint targets. At least 75% of items cover high-importance, high-frequency practice topics.</p><div class="bpgrid">${cats}</div></div>
+      <div class="card"><h2>🧭 Blueprint coverage</h2><p class="muted" style="margin-top:-6px;font-size:14px">Question share follows the ABIM Internal Medicine Certification Examination blueprint — common problems first, plus the rarer conditions and specialist-level decisions the certification exam expects you to know.</p><div class="bpgrid">${cats}</div></div>
       <div class="card"><h2>⌨️ Shortcuts in a test</h2><p class="kbd">A–F choose · Enter submit · ← → previous / next · M mark · H highlight selected text · Right-click a choice to cross it out</p></div>`);
   }
 
