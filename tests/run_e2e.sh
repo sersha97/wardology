@@ -21,4 +21,4 @@ for f in glob.glob(sys.argv[1]+'/**/*.sqlite', recursive=True):
   try:
     if sqlite3.connect(f).execute(\"select 1 from sqlite_master where name='feedback'\").fetchone(): print(f); break
   except Exception: pass" "$STATE")
-python3 tests/qbank_e2e.py --base http://localhost:8788 --mail http://127.0.0.1:9999 --db "$DB" --only "${1:-}"
+python3 tests/qbank_e2e.py --base http://localhost:8788 --mail http://127.0.0.1:9999 --db "$DB" --only "${1:-}" --suite "${SUITE:-all}"
