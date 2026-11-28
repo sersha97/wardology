@@ -266,7 +266,7 @@
     E: Switch to rosuvastatin 5 mg daily
   answer: B
   explain: |
-    He has clinical ASCVD with a recent ACS — **very high risk**. He is already on a **maximally tolerated high-intensity statin**, yet his LDL is still **≥70 mg/dL** (current expert pathways aim even lower, at <55 mg/dL, for very-high-risk patients).
+    He has clinical ASCVD with a recent ACS — **very high risk**. He is already on a **maximally tolerated high-intensity statin**, yet his LDL is still well above the 2026 ACC/AHA goal of **<55 mg/dL** for very-high-risk ASCVD.
 
     The next step is a **nonstatin drug with outcome data: ezetimibe** first (cheap, oral, well tolerated; IMPROVE-IT showed fewer cardiovascular events after ACS). If LDL remains above threshold, add a **PCSK9 inhibitor** (or inclisiran/bempedoic acid in selected patients).
 
@@ -286,7 +286,7 @@
   objective: |
     In very-high-risk ASCVD with LDL ≥70 mg/dL despite a maximally tolerated statin, add ezetimibe and then a PCSK9 inhibitor if needed.
   refs:
-    - Grundy SM, et al. 2018 AHA/ACC multisociety guideline on the management of blood cholesterol. *Circulation* 2019;139:e1082.
+    - "Blumenthal RS, et al. 2026 ACC/AHA multisociety guideline on the management of dyslipidemia. J Am Coll Cardiol 2026 (doi:10.1016/j.jacc.2025.11.016)."
     - Lloyd-Jones DM, et al. 2022 ACC expert consensus decision pathway on nonstatin therapies for LDL-C lowering. *J Am Coll Cardiol* 2022;80:1366.
     - Cannon CP, et al. Ezetimibe added to statin therapy after acute coronary syndromes (IMPROVE-IT). *N Engl J Med* 2015;372:2387.
 
@@ -1400,7 +1400,7 @@
   objective: |
     Start high-intensity statin therapy, without risk calculation, in adults with LDL cholesterol of 190 mg/dL or higher.
   refs:
-    - Grundy SM, et al. 2018 AHA/ACC multisociety guideline on the management of blood cholesterol. *Circulation* 2019;139:e1082.
+    - "Blumenthal RS, et al. 2026 ACC/AHA multisociety guideline on the management of dyslipidemia. J Am Coll Cardiol 2026 (doi:10.1016/j.jacc.2025.11.016)."
 
 - id: CV-035
   topic: Coronary artery calcium score in borderline risk
@@ -1413,7 +1413,7 @@
     - ["LDL cholesterol", "136 mg/dL"]
     - ["HDL cholesterol", "46 mg/dL"]
     - ["Triglycerides", "160 mg/dL"]
-    - ["10-year ASCVD risk (pooled cohort equations)", "8.2%"]
+    - ["10-year ASCVD risk (PREVENT-ASCVD equations)", "6.1%"]
   lead: Which of the following is the most appropriate next step to guide the decision about statin therapy?
   choices:
     A: Carotid intima-media thickness ultrasonography
@@ -1423,15 +1423,16 @@
     E: High-sensitivity C-reactive protein
   answer: B
   explain: |
-    His 10-year ASCVD risk is **intermediate (7.5% to <20%)**, and he is uncertain about starting a statin. When the decision is unclear in **borderline (5% to <7.5%) or intermediate** risk, a **coronary artery calcium (CAC) score** is the best risk "tiebreaker".
+    His 10-year PREVENT-ASCVD risk is **intermediate (5% to <10%)**, and he is uncertain about starting a statin. The 2026 ACC/AHA dyslipidemia guideline recommends a **coronary artery calcium (CAC) score** for men ≥40 and women ≥45 at **borderline (3% to <5%) or intermediate** risk when the result would change the decision.
 
-    | CAC score | Statin decision |
+    | CAC score | What it means |
     |---|---|
-    | **0** | Reasonable to **withhold** statin (reassess in 5–10 y) unless diabetes, smoking or strong family history |
-    | 1–99 | Favors statin, especially if age ≥55 |
-    | **≥100** or ≥75th percentile | **Start statin** |
+    | **0** | Low near-term risk; a shared decision to defer drug therapy and reassess in 5–10 years is reasonable unless diabetes, smoking or a strong family history |
+    | **Any calcium (>0)** | Atherosclerosis is present → lipid-lowering therapy, **LDL goal <100 mg/dL** |
+    | Higher scores (e.g., ≥100, ≥75th percentile) | **Lower LDL goals** and more intensive therapy |
 
-    A CAC of zero has a very high negative predictive value for events over the next decade. Other **risk enhancers** (family history of premature ASCVD, LDL ≥160, metabolic syndrome, CKD, inflammatory disease, high lipoprotein(a), high hs-CRP, South Asian ancestry, premature menopause or preeclampsia) also tip the balance toward a statin.
+    A CAC of zero has a very high negative predictive value for events over the next decade. **Risk enhancers** (family history of premature ASCVD, LDL ≥160, metabolic syndrome, CKD, chronic inflammatory disease, **lipoprotein(a)** ≥50 mg/dL, high hs-CRP, South Asian ancestry, premature menopause, preeclampsia) also tip the balance toward therapy. Lp(a) should be measured **once in every adult**.
+
   why:
     A: Carotid intima-media thickness adds little to risk prediction and is not recommended.
     C: CCTA uses contrast and more radiation and is a test for symptomatic patients, not for risk stratification.
@@ -1440,5 +1441,5 @@
   objective: |
     Use a coronary artery calcium score to guide statin decisions in asymptomatic adults at borderline or intermediate 10-year ASCVD risk when the decision is uncertain.
   refs:
-    - Grundy SM, et al. 2018 AHA/ACC multisociety guideline on the management of blood cholesterol. *Circulation* 2019;139:e1082.
+    - "Blumenthal RS, et al. 2026 ACC/AHA multisociety guideline on the management of dyslipidemia. J Am Coll Cardiol 2026 (doi:10.1016/j.jacc.2025.11.016)."
     - Arnett DK, et al. 2019 ACC/AHA guideline on the primary prevention of cardiovascular disease. *Circulation* 2019;140:e596.

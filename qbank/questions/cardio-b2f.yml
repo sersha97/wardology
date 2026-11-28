@@ -1,0 +1,646 @@
+# Cardiovascular Disease — batch 2f: heart failure (ABIM CERT)
+- id: CV-113
+  topic: GDMT initiation before discharge
+  task: Treatment/Care Decisions
+  chapters: [cardiology/hfref, cardiology/adhf]
+  stem: |
+    A 64-year-old man is ready for discharge after 5 days of treatment for newly diagnosed acute decompensated heart failure. Echocardiogram showed left ventricular ejection fraction of 25%; coronary angiography showed no significant coronary disease. With intravenous furosemide he lost 6 kg (13.2 lb) and is now euvolemic. Metoprolol succinate, 25 mg daily, was started yesterday. He takes oral furosemide, 40 mg daily.
+
+    On physical examination, blood pressure is 114/72 mm Hg and pulse rate is 86/min. Jugular venous pressure is normal, the lungs are clear, and there is no edema.
+  labs:
+    - [Sodium, 138 mEq/L]
+    - [Potassium, 4.1 mEq/L]
+    - [Creatinine, 1.1 mg/dL]
+    - [Estimated glomerular filtration rate, 70 mL/min/1.73 m²]
+  lead: Which of the following is the most appropriate management at discharge?
+  choices:
+    A: Add digoxin and ivabradine before discharge
+    B: Add one new class of drug every 3 months as an outpatient
+    C: Continue metoprolol only until a repeat echocardiogram in 3 months
+    D: Start sacubitril-valsartan, spironolactone and dapagliflozin now
+    E: Stop metoprolol until he has been stable for 4 weeks
+  answer: D
+  explain: |
+    The four pillars of **guideline-directed medical therapy (GDMT)** for HFrEF each reduce death and hospitalization, and their benefits **add up** (about a 60%–70% relative mortality reduction combined):
+
+    | Pillar | Example | Starts working |
+    |---|---|---|
+    | ARNI (or ACEi/ARB) | Sacubitril-valsartan | Weeks |
+    | Beta-blocker | Metoprolol succinate, carvedilol, bisoprolol | Weeks–months |
+    | MRA | Spironolactone, eplerenone | Weeks |
+    | **SGLT2 inhibitor** | Dapagliflozin, empagliflozin | **Days** |
+
+    Current practice is **rapid, simultaneous initiation in the hospital** at low doses and **up-titration within weeks**, not one drug at a time over months. In **STRONG-HF**, rapid initiation and up-titration within 2 weeks of discharge, with close follow-up of blood pressure, potassium, creatinine and natriuretic peptides, reduced death or HF readmission at 180 days. Patients started on GDMT in the hospital are much more likely to be on it later.
+
+    He has adequate blood pressure, potassium and kidney function to start all classes now, with a follow-up visit and labs in 1–2 weeks.
+  why:
+    A: Digoxin and ivabradine are add-ons for persistent symptoms on full GDMT; they do not replace the core pillars.
+    B: Sequential titration over many months leaves patients undertreated during the highest-risk period after discharge.
+    C: Waiting for an echocardiogram before starting proven therapy delays treatment; EF improvement is the result of GDMT, not a requirement for it.
+    E: Beta-blockers can be started once the patient is euvolemic and stable; stopping it would delay benefit.
+  objective: |
+    Start all four pillars of HFrEF therapy (ARNI, beta-blocker, MRA, SGLT2 inhibitor) during hospitalization when tolerated, with rapid outpatient up-titration.
+  refs:
+    - "Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. Circulation 2022;145:e895."
+    - "Mebazaa A, et al. Safety, tolerability and efficacy of up-titration of guideline-directed medical therapies for acute heart failure (STRONG-HF). Lancet 2022;400:1938."
+    - "Writing Committee. 2024 ACC expert consensus decision pathway for treatment of heart failure with reduced ejection fraction. J Am Coll Cardiol 2024;83:1444."
+
+- id: CV-114
+  topic: Switching from ACE inhibitor to ARNI
+  task: Treatment/Care Decisions
+  chapters: [cardiology/hfref]
+  stem: |
+    A 59-year-old woman with heart failure with reduced ejection fraction (left ventricular ejection fraction 30%) comes for a follow-up visit. She has NYHA class II symptoms. Medications are lisinopril, 20 mg daily, carvedilol, spironolactone, empagliflozin and furosemide. She has never had angioedema.
+
+    On physical examination, blood pressure is 118/70 mm Hg and pulse rate is 64/min. She is euvolemic.
+  labs:
+    - [Potassium, 4.4 mEq/L]
+    - [Estimated glomerular filtration rate, 58 mL/min/1.73 m²]
+  lead: Her physician plans to replace lisinopril with sacubitril-valsartan. Which of the following is the most appropriate way to make this change?
+  choices:
+    A: Start sacubitril-valsartan after a 2-week washout off lisinopril
+    B: Start sacubitril-valsartan the same day lisinopril is stopped
+    C: Start sacubitril-valsartan today and stop lisinopril in 1 week
+    D: Stop lisinopril and start sacubitril-valsartan 36 hours later
+    E: Take both drugs together at reduced doses
+  answer: D
+  explain: |
+    **Sacubitril** inhibits **neprilysin**, which degrades natriuretic peptides — and also **bradykinin**. **ACE** also breaks down bradykinin. Blocking both at the same time causes high bradykinin levels and a high rate of **angioedema** (seen with omapatrilat, an earlier combined ACE–neprilysin inhibitor).
+
+    Therefore:
+    - **Stop the ACE inhibitor at least 36 hours before** the first dose of sacubitril-valsartan (about 5 half-lives of the ACE inhibitor)
+    - **Never** combine an ARNI with an ACE inhibitor
+    - Do not use an ARNI in anyone with a **history of angioedema**
+    - No washout is needed when switching from an **ARB**
+
+    PARADIGM-HF showed that sacubitril-valsartan reduces cardiovascular death and HF hospitalization by about 20% compared with enalapril, so the switch is recommended for patients like her who tolerate an ACE inhibitor.
+  why:
+    A: A 2-week washout is unnecessary and leaves her without RAAS blockade.
+    B: Same-day switching does not allow the ACE inhibitor to clear and raises the risk of angioedema.
+    C: Overlapping the two drugs for a week is contraindicated.
+    E: Combination therapy is contraindicated at any dose.
+  mnemonic: |
+    **"ACE to ARNI: wait 36 (hours)."** ARB to ARNI: no wait.
+  objective: |
+    When switching from an ACE inhibitor to sacubitril-valsartan, stop the ACE inhibitor at least 36 hours before the first dose to avoid angioedema.
+  refs:
+    - "Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. Circulation 2022;145:e895."
+    - "McMurray JJV, et al. Angiotensin–neprilysin inhibition versus enalapril in heart failure (PARADIGM-HF). N Engl J Med 2014;371:993."
+
+- id: CV-115
+  topic: Hydralazine–isosorbide dinitrate
+  task: Treatment/Care Decisions
+  chapters: [cardiology/hfref]
+  stem: |
+    A 58-year-old Black woman with heart failure with reduced ejection fraction due to hypertensive cardiomyopathy comes for follow-up. She has dyspnea when walking one block (NYHA class III). She takes sacubitril-valsartan, 97/103 mg twice daily, metoprolol succinate, 200 mg daily, spironolactone, 25 mg daily, dapagliflozin and furosemide; she has taken these doses for 4 months.
+
+    On physical examination, blood pressure is 126/78 mm Hg and pulse rate is 62/min. Jugular venous pressure is normal, the lungs are clear, and there is no edema.
+
+    Echocardiogram shows left ventricular ejection fraction of 30%. Electrocardiogram shows sinus rhythm with a QRS duration of 0.10 second.
+  labs:
+    - [Potassium, 4.6 mEq/L]
+    - [Estimated glomerular filtration rate, 64 mL/min/1.73 m²]
+  lead: Which of the following is the most appropriate addition to her therapy?
+  choices:
+    A: Diltiazem
+    B: Digoxin
+    C: Hydralazine plus isosorbide dinitrate
+    D: Ivabradine
+    E: Torsemide in place of furosemide at a higher dose
+  answer: C
+  explain: |
+    In **A-HeFT**, adding a fixed-dose combination of **hydralazine and isosorbide dinitrate (H-ISDN)** to standard therapy in **self-identified Black patients** with **NYHA class III–IV HFrEF** reduced mortality by **43%** and also reduced HF hospitalizations. The 2022 guideline gives this a **Class 1** recommendation for Black patients with persistent NYHA III–IV symptoms on optimal GDMT.
+
+    H-ISDN is also used in **any** patient with HFrEF who **cannot take** an ACE inhibitor, ARB or ARNI (angioedema, severe kidney dysfunction, hyperkalemia).
+
+    Mechanism: hydralazine is an arteriolar dilator (lowers afterload) that also reduces nitrate tolerance; isosorbide dinitrate is a venodilator and NO donor (lowers preload and improves NO bioavailability).
+  why:
+    A: Nondihydropyridine calcium channel blockers worsen outcomes in HFrEF.
+    B: Digoxin reduces hospitalizations modestly but does not reduce mortality; H-ISDN has a mortality benefit in this population.
+    D: Ivabradine requires a resting sinus rate of at least 70/min on maximal beta-blocker; her rate is 62/min.
+    E: She is euvolemic; more diuretic would not improve outcomes and risks volume depletion.
+  objective: |
+    Add hydralazine–isosorbide dinitrate for self-identified Black patients with NYHA class III–IV HFrEF despite optimal GDMT.
+  refs:
+    - "Taylor AL, et al. Combination of isosorbide dinitrate and hydralazine in Blacks with heart failure (A-HeFT). N Engl J Med 2004;351:2049."
+    - "Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. Circulation 2022;145:e895."
+
+- id: CV-116
+  topic: Iron deficiency in heart failure
+  task: Treatment/Care Decisions
+  chapters: [cardiology/hfref, heme/anemia-transfusion]
+  stem: |
+    A 67-year-old man with heart failure with reduced ejection fraction (left ventricular ejection fraction 30%) comes for follow-up. He has fatigue and dyspnea with moderate exertion (NYHA class II–III) despite optimized doses of sacubitril-valsartan, carvedilol, eplerenone and empagliflozin. Colonoscopy 1 year ago was normal.
+
+    On physical examination, blood pressure is 112/68 mm Hg and pulse rate is 64/min. He is euvolemic.
+  labs:
+    - [Hemoglobin, 12.6 g/dL]
+    - [Mean corpuscular volume, 86 fL]
+    - [Ferritin, 74 ng/mL]
+    - [Transferrin saturation, 14%]
+    - [Estimated glomerular filtration rate, 56 mL/min/1.73 m²]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Darbepoetin alfa
+    B: Intravenous iron
+    C: No treatment because he is not anemic
+    D: Oral ferrous sulfate
+    E: Red blood cell transfusion
+  answer: B
+  explain: |
+    **Iron deficiency** is present in about half of patients with heart failure, **with or without anemia**, and worsens exercise capacity and outcomes. In heart failure it is defined as:
+    - **Ferritin <100 ng/mL**, or
+    - **Ferritin 100–299 ng/mL with transferrin saturation <20%**
+
+    He meets the definition. **Intravenous iron** (ferric carboxymaltose or ferric derisomaltose) improves symptoms, exercise capacity and quality of life (FAIR-HF, CONFIRM-HF) and **reduces HF hospitalizations** (AFFIRM-AHF, IRONMAN; HEART-FID showed no clear benefit on its hierarchical endpoint). The 2022 guideline gives it a **Class 2a** recommendation in NYHA II–III HFrEF.
+
+    **Oral iron** is poorly absorbed in heart failure (gut edema, high **hepcidin**) and did not improve exercise capacity in **IRONOUT-HF**.
+  why:
+    A: Erythropoiesis-stimulating agents did not improve outcomes in HF and increased thromboembolic events (RED-HF).
+    C: Iron deficiency harms patients with heart failure even when hemoglobin is normal; treating it improves symptoms.
+    D: Oral iron does not replete iron stores effectively in heart failure.
+    E: Transfusion is not indicated for a hemoglobin of 12.6 g/dL.
+  objective: |
+    Treat iron deficiency (ferritin <100 ng/mL, or 100–299 ng/mL with transferrin saturation <20%) in symptomatic HFrEF with intravenous iron, even without anemia.
+  refs:
+    - "Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. Circulation 2022;145:e895."
+    - "Kalra PR, et al. Intravenous ferric derisomaltose in patients with heart failure and iron deficiency (IRONMAN). Lancet 2022;400:2199."
+    - "Lewis GD, et al. Effect of oral iron repletion on exercise capacity in HFrEF with iron deficiency (IRONOUT HF). JAMA 2017;317:1958."
+
+- id: CV-117
+  topic: Hyperkalemia on mineralocorticoid antagonist
+  task: Treatment/Care Decisions
+  chapters: [cardiology/hfref, renal/hyperkalemia]
+  stem: |
+    A 72-year-old man with heart failure with reduced ejection fraction is seen 1 week after his spironolactone dose was increased from 12.5 mg to 25 mg daily. He feels well. Other medications are sacubitril-valsartan, metoprolol succinate, dapagliflozin and furosemide. He started ibuprofen 5 days ago for knee pain.
+
+    On physical examination, blood pressure is 116/70 mm Hg and pulse rate is 60/min. He is euvolemic. Muscle strength is normal.
+  labs:
+    - [Potassium (nonhemolyzed, repeated), 6.1 mEq/L (2 weeks ago 4.9 mEq/L)]
+    - [Creatinine, 1.7 mg/dL (2 weeks ago 1.4 mg/dL)]
+    - [Bicarbonate, 22 mEq/L]
+  lead: An electrocardiogram shows no hyperkalemic changes. In addition to stopping ibuprofen, which of the following is the most appropriate management?
+  choices:
+    A: Continue spironolactone and recheck potassium in 3 months
+    B: Hold spironolactone and recheck potassium and creatinine within a few days
+    C: Permanently stop sacubitril-valsartan and spironolactone
+    D: Replace spironolactone with eplerenone at an equivalent dose
+    E: Stop dapagliflozin
+  answer: B
+  explain: |
+    Hyperkalemia is the main barrier to keeping patients on mineralocorticoid receptor antagonists (MRAs). Guidance for an MRA in HFrEF:
+
+    | Potassium (mEq/L) | Action |
+    |---|---|
+    | ≤5.0 | Continue, titrate |
+    | 5.1–5.5 | Do not up-titrate; consider dose reduction or a potassium binder |
+    | **>5.5** | **Hold the MRA**, look for causes, recheck in days |
+    | >6.0 or ECG changes | Treat hyperkalemia urgently |
+
+    Here, potassium is **>5.5** soon after an **MRA dose increase** plus a new **NSAID** (which reduces renal potassium excretion and worsens kidney function). **Hold spironolactone**, stop ibuprofen, recheck potassium and creatinine in **2–3 days**, and **restart at a lower dose** (12.5 mg daily or every other day) once potassium is <5.0. **Potassium binders** (patiromer, sodium zirconium cyclosilicate) can help keep patients on RAAS inhibitors and MRAs when hyperkalemia recurs.
+  why:
+    A: Continuing the full dose with a potassium of 6.1 mEq/L risks life-threatening hyperkalemia.
+    C: Permanently stopping two mortality-reducing drugs is premature; the cause is reversible.
+    D: Eplerenone also raises potassium; switching does not solve the problem.
+    E: SGLT2 inhibitors do not raise potassium — they slightly lower the risk of hyperkalemia — and should be continued.
+  pearl: |
+    SGLT2 inhibitors **reduce** hyperkalemia risk and make it easier to stay on MRAs. Always ask about **NSAIDs, potassium supplements, salt substitutes (KCl) and trimethoprim** when potassium rises.
+  objective: |
+    Hold a mineralocorticoid antagonist when potassium exceeds 5.5 mEq/L, correct precipitating causes, and restart at a lower dose when potassium normalizes.
+  refs:
+    - "Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. Circulation 2022;145:e895."
+    - "Writing Committee. 2024 ACC expert consensus decision pathway for treatment of heart failure with reduced ejection fraction. J Am Coll Cardiol 2024;83:1444."
+
+- id: CV-118
+  topic: Cold and wet hemodynamic profile
+  task: Diagnosis/Testing
+  chapters: [cardiology/adhf, cardiology/cardiogenic-shock]
+  stem: |
+    A 71-year-old woman with ischemic cardiomyopathy (left ventricular ejection fraction 20%) is admitted with 1 week of worsening dyspnea, orthopnea, nausea and confusion. Over 2 days of intravenous furosemide, urine output has been poor and creatinine has risen.
+
+    On physical examination, blood pressure is 86/62 mm Hg (narrow pulse pressure), pulse rate is 108/min, and respiration rate is 24/min. She is drowsy. Extremities are cool and mottled, with delayed capillary refill. Jugular venous pressure is 16 cm H₂O. There are bibasilar crackles and 2+ leg edema.
+
+    A pulmonary artery catheter is placed.
+  labs:
+    - [Creatinine, 2.4 mg/dL (baseline 1.3 mg/dL)]
+    - [Lactate, 3.4 mmol/L]
+    - [Cardiac index, 1.6 L/min/m²]
+    - [Pulmonary capillary wedge pressure, 30 mm Hg]
+    - [Systemic vascular resistance, 1,900 dyn·s/cm⁵]
+  lead: Which of the following best describes her hemodynamic profile?
+  choices:
+    A: Cold and dry (low output, normal filling pressures)
+    B: Cold and wet (low output, high filling pressures)
+    C: Distributive shock (high output, low resistance)
+    D: Warm and dry (normal output, normal filling pressures)
+    E: Warm and wet (normal output, high filling pressures)
+  answer: B
+  explain: |
+    The **Stevenson profiles** classify acute heart failure by **perfusion** (warm vs cold) and **congestion** (dry vs wet):
+
+    | | Dry (no congestion) | Wet (congested) |
+    |---|---|---|
+    | **Warm** (adequate perfusion) | Compensated | **Most common** → diuretics, vasodilators |
+    | **Cold** (hypoperfused) | Volume-depleted or end-stage → cautious fluids, reassess | **Worst prognosis** → **inotropes**, mechanical support |
+
+    She has signs of **hypoperfusion** (cool mottled extremities, narrow pulse pressure, confusion, rising creatinine and lactate, cardiac index <2.2) and **congestion** (high JVP, crackles, edema, PCWP 30). This is **cold and wet** — cardiogenic shock (SCAI stage C).
+
+    Management: an **inotrope** (dobutamine or milrinone; norepinephrine if needed for blood pressure), continued diuresis once perfusion improves, and early consideration of **mechanical circulatory support** and an advanced heart failure team.
+  why:
+    A: High JVP, edema and a PCWP of 30 mm Hg show she is congested.
+    C: Distributive shock has warm extremities with a high cardiac index and low systemic vascular resistance; hers is the reverse.
+    D: She is neither adequately perfused nor free of congestion.
+    E: Cool, mottled extremities, rising lactate and a low cardiac index show she is hypoperfused, not warm.
+  mnemonic: |
+    **"Cold and wet → add the pump (inotrope)."** Warm and wet → just drain it (diuretic).
+  objective: |
+    Classify acute heart failure by perfusion and congestion; the cold-and-wet profile (low output, high filling pressures) requires inotropic support.
+  refs:
+    - "Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. Circulation 2022;145:e895."
+    - "Nohria A, et al. Clinical assessment identifies hemodynamic profiles that predict outcomes in patients admitted with heart failure. J Am Coll Cardiol 2003;41:1797."
+
+- id: CV-119
+  topic: Natriuretic peptides in obesity
+  task: Diagnosis/Testing
+  chapters: [cardiology/adhf, cardiology/hfpef]
+  stem: |
+    A 58-year-old woman is evaluated for 4 months of progressive exertional dyspnea and leg swelling. She has hypertension, type 2 diabetes mellitus and obstructive sleep apnea. Medications are lisinopril, metformin and semaglutide.
+
+    On physical examination, blood pressure is 148/88 mm Hg, pulse rate is 82/min, and respiration rate is 18/min. Oxygen saturation is 95% breathing ambient air. BMI is 46 kg/m². Jugular venous pressure is difficult to assess. Heart sounds are distant. There is 2+ pitting edema of both legs to the knees.
+  labs:
+    - [B-type natriuretic peptide, 58 pg/mL]
+    - [Hemoglobin, 13.2 g/dL]
+    - [Creatinine, 0.9 mg/dL]
+    - [Thyroid-stimulating hormone, 2.2 µU/mL]
+  lead: Which of the following is the most appropriate next step in evaluation?
+  choices:
+    A: Conclude that heart failure has been excluded
+    B: Measure NT-proBNP to confirm the BNP result
+    C: Repeat BNP in 3 months
+    D: Start an empiric trial of furosemide without testing
+    E: Transthoracic echocardiography
+  answer: E
+  explain: |
+    Natriuretic peptides are excellent for **ruling out** heart failure in most patients — but **obesity lowers BNP and NT-proBNP** levels, by about 30%–50% at BMI ≥35. Mechanisms include greater clearance by **natriuretic peptide clearance receptors in adipose tissue**, reduced synthesis and the effect of **neprilysin** activity in fat.
+
+    With her symptoms, edema and strong risk factors for **HFpEF** (obesity, hypertension, diabetes, sleep apnea), a "normal" BNP does not exclude heart failure. **Echocardiography** is needed to assess ejection fraction, LV hypertrophy, diastolic function (E/e′), left atrial size and pulmonary pressures. Scores such as **H₂FPEF** combine these features (heavy, hypertensive, AF, pulmonary hypertension, elder, filling pressure). Invasive exercise hemodynamics settle unclear cases.
+
+    | Lower natriuretic peptides | Higher natriuretic peptides |
+    |---|---|
+    | **Obesity** | Older age, female sex |
+    | Flash pulmonary edema (early) | **Kidney dysfunction** |
+    | Constrictive pericarditis, mitral stenosis | Atrial fibrillation, PE, sepsis |
+    | | **Sacubitril-valsartan raises BNP** (not NT-proBNP) |
+  why:
+    A: A low BNP in severe obesity does not exclude heart failure.
+    B: NT-proBNP is lowered by obesity as well and would not resolve the uncertainty.
+    C: Waiting 3 months delays diagnosis of a treatable condition.
+    D: Diuretics may relieve edema but will not establish a diagnosis or guide disease-modifying therapy.
+  objective: |
+    Obesity lowers natriuretic peptide levels; a normal BNP does not exclude heart failure in an obese patient with symptoms, so obtain echocardiography.
+  refs:
+    - "Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. Circulation 2022;145:e895."
+    - "Kittleson MM, et al. 2023 ACC expert consensus decision pathway on management of heart failure with preserved ejection fraction. J Am Coll Cardiol 2023;81:1835."
+
+- id: CV-120
+  topic: Heart failure with improved ejection fraction
+  task: Treatment/Care Decisions
+  chapters: [cardiology/hfref]
+  stem: |
+    A 47-year-old woman comes for follow-up of nonischemic dilated cardiomyopathy diagnosed 2 years ago, when her left ventricular ejection fraction was 25%. She has no symptoms and runs 3 miles twice a week. She takes sacubitril-valsartan, metoprolol succinate, spironolactone and dapagliflozin. She asks whether she can stop her medications now that her "heart has healed."
+
+    On physical examination, blood pressure is 112/70 mm Hg and pulse rate is 62/min. Examination is normal.
+
+    Echocardiogram shows left ventricular ejection fraction of 56% with normal left ventricular size. NT-proBNP is 90 pg/mL.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Continue all current heart failure medications
+    B: Stop dapagliflozin and spironolactone, and continue the others
+    C: Stop metoprolol succinate, and continue the others
+    D: Stop all heart failure medications
+    E: Stop all medications and repeat echocardiography in 6 months
+  answer: A
+  explain: |
+    She has **heart failure with improved ejection fraction (HFimpEF)**: previous LVEF ≤40%, now **>40% with an increase of ≥10 points**. Improvement means the disease is in **remission, not cured**.
+
+    In **TRED-HF**, patients with recovered dilated cardiomyopathy who stopped their medications had a **relapse rate of about 44% within 6 months** (LVEF fall, LV enlargement or NT-proBNP rise), versus none in those who continued. The 2022 guideline recommends **continuing GDMT** in HFimpEF (Class 1).
+  why:
+    B: Stopping any GDMT component may trigger relapse; there are no data showing which drugs can be safely removed.
+    C: Beta-blocker withdrawal is linked to recurrence of LV dysfunction.
+    D: Stopping all drugs led to relapse in nearly half of patients in TRED-HF.
+    E: Repeat imaging after stopping would only document relapse after it happens.
+  pearl: |
+    Report the trajectory, not just the number: an LVEF of 56% after 25% is **HFimpEF**, not HFpEF — the treatment is different.
+  objective: |
+    Continue guideline-directed medical therapy in heart failure with improved ejection fraction; stopping it frequently causes relapse.
+  refs:
+    - "Halliday BP, et al. Withdrawal of pharmacological treatment for heart failure in patients with recovered dilated cardiomyopathy (TRED-HF). Lancet 2019;393:61."
+    - "Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. Circulation 2022;145:e895."
+
+- id: CV-121
+  topic: Drugs that worsen HFrEF
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/hfref, cardiology/adhf]
+  stem: |
+    A 69-year-old man with heart failure with reduced ejection fraction (left ventricular ejection fraction 32%) and type 2 diabetes mellitus is admitted with 2 weeks of progressive dyspnea, orthopnea and a 5-kg (11-lb) weight gain. He has been adherent to his medications and to a low-sodium diet. Six weeks ago, his primary care clinician added a new drug because his hemoglobin A₁c was 8.4% on metformin. Other medications are sacubitril-valsartan, carvedilol, spironolactone, empagliflozin and furosemide.
+
+    On physical examination, blood pressure is 128/78 mm Hg and pulse rate is 84/min and regular. Jugular venous pressure is 14 cm H₂O. There are crackles at both lung bases and 3+ leg edema.
+
+    Electrocardiogram shows sinus rhythm without ischemic changes. High-sensitivity troponin is unchanged from baseline.
+  lead: Which of the following newly added drugs most likely contributed to his decompensation?
+  choices:
+    A: Dulaglutide
+    B: Insulin glargine
+    C: Linagliptin
+    D: Pioglitazone
+    E: Sitagliptin
+  answer: D
+  explain: |
+    **Thiazolidinediones** (pioglitazone, rosiglitazone) activate **PPAR-γ** in the renal collecting duct, increasing **sodium and water reabsorption** (via ENaC) and causing fluid retention and edema. They increase the risk of heart failure hospitalization and are **contraindicated in NYHA class III–IV heart failure** and should be avoided in symptomatic HF.
+
+    | Drugs to avoid or use with caution in HFrEF | Why |
+    |---|---|
+    | **Thiazolidinediones** | Fluid retention |
+    | **Nondihydropyridine CCBs** (diltiazem, verapamil) | Negative inotropy |
+    | **NSAIDs** | Sodium retention, kidney dysfunction, blunt diuretics |
+    | **Saxagliptin, alogliptin** | Increased HF hospitalization (SAVOR-TIMI 53) |
+    | Class I antiarrhythmics (flecainide), dronedarone | Proarrhythmia, mortality |
+    | Cilostazol | Mortality in HFrEF |
+    | Some chemotherapies (anthracyclines, trastuzumab) | Cardiotoxicity |
+    | Pregabalin, itraconazole, TNF inhibitors (high dose), minoxidil | Fluid retention or LV depression |
+  why:
+    A: GLP-1 receptor agonists are neutral for heart failure outcomes and reduce ASCVD events in diabetes.
+    B: Insulin is neutral for heart failure outcomes in randomized trials (ORIGIN), although it can cause mild fluid retention.
+    C: Linagliptin was neutral for heart failure hospitalization in CARMELINA.
+    E: Sitagliptin did not increase heart failure hospitalization in TECOS.
+  objective: |
+    Recognize thiazolidinediones (and other drugs such as nondihydropyridine CCBs, NSAIDs and saxagliptin) as precipitants of heart failure decompensation.
+  refs:
+    - "Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. Circulation 2022;145:e895."
+    - "Page RL 2nd, et al. Drugs that may cause or exacerbate heart failure: a scientific statement from the AHA. Circulation 2016;134:e32."
+
+- id: CV-122
+  topic: SGLT2 inhibitor in HFpEF
+  task: Treatment/Care Decisions
+  chapters: [cardiology/hfpef]
+  stem: |
+    A 74-year-old woman is evaluated for exertional dyspnea that limits her to walking about one block (NYHA class II–III). She was hospitalized for heart failure 3 months ago. She has hypertension and obesity. Medications are amlodipine, losartan and furosemide, 20 mg daily. She does not have diabetes.
+
+    On physical examination, blood pressure is 128/74 mm Hg and pulse rate is 72/min and regular. BMI is 33 kg/m². Jugular venous pressure is normal. There is trace ankle edema.
+
+    Echocardiogram shows left ventricular ejection fraction of 60%, concentric left ventricular hypertrophy, a dilated left atrium and an E/e′ ratio of 16. NT-proBNP is 640 pg/mL.
+  labs:
+    - [Estimated glomerular filtration rate, 52 mL/min/1.73 m²]
+    - [Potassium, 4.3 mEq/L]
+  lead: Which of the following is the most appropriate addition to her therapy?
+  choices:
+    A: Digoxin
+    B: Empagliflozin
+    C: Isosorbide mononitrate
+    D: Ivabradine
+    E: Sildenafil
+  answer: B
+  explain: |
+    She has **heart failure with preserved ejection fraction (HFpEF)**: symptoms, LVEF ≥50%, structural heart disease (LVH, enlarged left atrium), elevated filling pressures (E/e′ >14) and high NT-proBNP.
+
+    **SGLT2 inhibitors** are the first therapy proven to improve outcomes across the full EF range: **EMPEROR-Preserved** (empagliflozin) and **DELIVER** (dapagliflozin) showed about a **20% reduction in cardiovascular death or HF hospitalization**, mostly driven by fewer hospitalizations, plus better quality of life. They are **Class 2a** in the 2022 guideline and **first-line** in the 2023 ACC HFpEF pathway — with or without diabetes.
+
+    Other HFpEF pillars: **diuretics** for congestion; **blood pressure control**; **weight loss** (semaglutide improved symptoms in STEP-HFpEF; tirzepatide reduced HF events in SUMMIT); an **MRA** (spironolactone or **finerenone** — FINEARTS-HF) and an ARNI in selected patients, particularly with LVEF toward the lower end of normal.
+  why:
+    A: Digoxin has no proven benefit in HFpEF and is used mainly for rate control in AF.
+    C: Isosorbide mononitrate reduced activity levels in HFpEF (NEAT-HFpEF) and is not recommended.
+    D: Ivabradine has no outcome benefit in HFpEF and may worsen symptoms by limiting heart rate reserve.
+    E: Sildenafil did not improve exercise capacity in HFpEF (RELAX).
+  objective: |
+    Add an SGLT2 inhibitor for patients with HFpEF to reduce heart failure hospitalization and cardiovascular death.
+  refs:
+    - "Anker SD, et al. Empagliflozin in heart failure with a preserved ejection fraction (EMPEROR-Preserved). N Engl J Med 2021;385:1451."
+    - "Solomon SD, et al. Dapagliflozin in heart failure with mildly reduced or preserved ejection fraction (DELIVER). N Engl J Med 2022;387:1089."
+    - "Kittleson MM, et al. 2023 ACC expert consensus decision pathway on management of heart failure with preserved ejection fraction. J Am Coll Cardiol 2023;81:1835."
+
+- id: CV-123
+  topic: Ivabradine
+  task: Pathophysiology/Basic Science
+  chapters: [cardiology/hfref]
+  stem: |
+    A 61-year-old man with heart failure with reduced ejection fraction (left ventricular ejection fraction 30%) and NYHA class II symptoms remains in sinus rhythm with a resting pulse rate of 78/min on carvedilol, 25 mg twice daily; higher doses caused symptomatic hypotension. He also takes sacubitril-valsartan, eplerenone and dapagliflozin. Ivabradine is started, and 4 weeks later his resting pulse rate is 64/min with no change in blood pressure.
+  lead: Which of the following best describes the mechanism of action of ivabradine?
+  choices:
+    A: Blockade of beta-1 adrenergic receptors in the sinoatrial node
+    B: Blockade of L-type calcium channels in the atrioventricular node
+    C: Inhibition of the If ("funny") current in the sinoatrial node
+    D: Inhibition of the delayed rectifier potassium current in ventricular myocytes
+    E: Inhibition of sodium–potassium ATPase in myocytes
+  answer: C
+  explain: |
+    **Ivabradine** selectively inhibits the **I_f ("funny") current**, carried through **HCN4** channels in sinoatrial node pacemaker cells. I_f produces the slow diastolic (phase 4) depolarization that sets the sinus rate. Blocking it **slows the sinus rate** without affecting contractility, AV conduction or blood pressure.
+
+    In **SHIFT**, ivabradine reduced HF hospitalization in HFrEF (LVEF ≤35%) with **sinus rhythm and a resting rate ≥70/min** despite maximally tolerated beta-blockade. It does **not** work in atrial fibrillation (no sinus node driving the rate).
+
+    Adverse effects: **phosphenes** (luminous visual flashes, because related HCN channels exist in the retina), bradycardia and atrial fibrillation; avoid in pregnancy.
+  why:
+    A: Beta-1 blockade (carvedilol, metoprolol) lowers heart rate but also reduces contractility and blood pressure; it is not ivabradine's action.
+    B: L-type calcium channel blockade is the action of verapamil and diltiazem, which slow AV conduction and depress contractility.
+    D: Delayed rectifier potassium-current blockade (class III drugs such as dofetilide) prolongs repolarization and the QT interval.
+    E: Na⁺/K⁺-ATPase inhibition is the mechanism of digoxin.
+  objective: |
+    Ivabradine slows the sinus rate by inhibiting the I_f current in the sinoatrial node, without negative inotropic or hypotensive effects; it requires sinus rhythm.
+  refs:
+    - "Swedberg K, et al. Ivabradine and outcomes in chronic heart failure (SHIFT). Lancet 2010;376:875."
+    - "Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. Circulation 2022;145:e895."
+
+- id: CV-124
+  topic: eGFR dip after SGLT2 inhibitor
+  task: Pathophysiology/Basic Science
+  chapters: [cardiology/hfref, renal/ckd]
+  stem: |
+    A 66-year-old man with heart failure with reduced ejection fraction and chronic kidney disease is seen 2 weeks after dapagliflozin, 10 mg daily, was added. He feels well, with no dizziness. Other medications are sacubitril-valsartan, metoprolol succinate, spironolactone and furosemide.
+
+    On physical examination, blood pressure is 118/70 mm Hg and pulse rate is 66/min, with no orthostatic change. He is euvolemic.
+  labs:
+    - [Estimated glomerular filtration rate, 47 mL/min/1.73 m² (54 mL/min/1.73 m² before dapagliflozin)]
+    - [Potassium, 4.5 mEq/L]
+    - [Urinalysis, normal]
+  lead: Which of the following best explains the change in his estimated glomerular filtration rate?
+  choices:
+    A: Acute interstitial nephritis from the new drug
+    B: Afferent arteriolar constriction via tubuloglomerular feedback
+    C: Efferent arteriolar vasodilation from RAAS blockade
+    D: Euglycemic diabetic ketoacidosis with volume loss
+    E: Renal artery stenosis unmasked by the new drug
+  answer: B
+  explain: |
+    SGLT2 inhibitors block glucose and **sodium reabsorption in the proximal tubule**, so more **sodium chloride reaches the macula densa**. The macula densa senses this and, through **tubuloglomerular feedback** (adenosine release), **constricts the afferent arteriole**. Intraglomerular pressure and GFR fall.
+
+    This **early, modest dip** (usually 3–6 mL/min/1.73 m², sometimes up to ~10%–30%) is **hemodynamic and reversible** and reflects lower glomerular hyperfiltration — the same mechanism that **protects the kidney long term**. In DAPA-CKD, EMPA-KIDNEY and the heart failure trials, eGFR then declined **more slowly** than with placebo.
+
+    **Continue the drug.** Reassess volume status and diuretic dose if the dip is larger than about 30%.
+  why:
+    A: Interstitial nephritis would cause pyuria, leukocyte casts or eosinophiluria and a progressive decline; his urinalysis is normal.
+    C: Efferent arteriolar dilation is the mechanism of the eGFR dip seen with ACE inhibitors, ARBs and ARNI, not SGLT2 inhibitors.
+    D: Euglycemic ketoacidosis presents with nausea, malaise and an anion-gap acidosis; he is well and his eGFR change is expected.
+    E: Renal artery stenosis causes a large eGFR drop after RAAS blockade (efferent dilation), not after SGLT2 inhibitors.
+  mnemonic: |
+    **SGLT2: "Afferent squeeze." ACEi/ARB: "Efferent release."** Both lower glomerular pressure — both protect the kidney.
+  objective: |
+    The early eGFR dip after starting an SGLT2 inhibitor results from afferent arteriolar vasoconstriction via tubuloglomerular feedback; it is expected and the drug should be continued.
+  refs:
+    - "Heerspink HJL, et al. Dapagliflozin in patients with chronic kidney disease (DAPA-CKD). N Engl J Med 2020;383:1436."
+    - "KDIGO 2024 clinical practice guideline for the evaluation and management of chronic kidney disease. Kidney Int 2024;105(4S):S117."
+
+- id: CV-125
+  topic: Tachycardia-mediated cardiomyopathy
+  task: Diagnosis/Testing
+  chapters: [cardiology/cardiomyopathies, cardiology/af]
+  stem: |
+    A 52-year-old man is evaluated for 3 months of fatigue and exertional dyspnea. He has had palpitations "on and off" for about 4 months. He drinks one glass of wine weekly and does not use drugs. There is no family history of cardiomyopathy. He takes no medications.
+
+    On physical examination, blood pressure is 118/78 mm Hg, pulse rate is 134/min and irregularly irregular. Jugular venous pressure is mildly elevated, and there is trace ankle edema.
+
+    Electrocardiogram shows atrial fibrillation with a ventricular rate of 132/min. Echocardiogram shows a mildly dilated left ventricle with global hypokinesis and an ejection fraction of 30%, and no valve disease. Coronary CT angiography shows no coronary artery disease. Cardiac MRI shows no late gadolinium enhancement. Thyroid function is normal.
+  lead: Which of the following is the most likely cause of his cardiomyopathy?
+  choices:
+    A: Alcoholic cardiomyopathy
+    B: Familial dilated cardiomyopathy
+    C: Ischemic cardiomyopathy
+    D: Tachycardia-mediated cardiomyopathy
+    E: Viral myocarditis
+  answer: D
+  explain: |
+    **Tachycardia-mediated (tachycardia-induced) cardiomyopathy** is LV dysfunction caused by **persistently fast heart rates** — AF, atrial flutter, atrial tachycardia, frequent PVCs (>10%–15% burden) or incessant SVT. Clues:
+    - Weeks to months of **uncontrolled tachycardia** preceding symptoms
+    - **Global** dysfunction, mild LV dilation
+    - **No late gadolinium enhancement** (no scar) on MRI — a favorable sign for recovery
+    - No other cause (normal coronaries, no alcohol excess, normal thyroid, no family history)
+
+    The diagnosis is confirmed **in retrospect**: LVEF improves substantially within **1–6 months** of strict **rate or rhythm control** (often rhythm control by catheter ablation). Continue GDMT while EF recovers; recurrence of the tachycardia can cause rapid relapse.
+  why:
+    A: He drinks very little alcohol; alcoholic cardiomyopathy requires heavy use over years.
+    B: There is no family history, and the clear temporal link with uncontrolled AF points to a reversible cause.
+    C: Coronary CT angiography excluded coronary artery disease.
+    E: Myocarditis typically follows a viral illness and shows late gadolinium enhancement or edema on MRI.
+  objective: |
+    Suspect tachycardia-mediated cardiomyopathy in new LV dysfunction with persistent tachyarrhythmia and no scar on MRI; EF recovers with rate or rhythm control.
+  refs:
+    - "Huizar JF, et al. Arrhythmia-induced cardiomyopathy: JACC state-of-the-art review. J Am Coll Cardiol 2019;73:2328."
+    - "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation 2024;149:e1."
+
+- id: CV-126
+  topic: Familial dilated cardiomyopathy
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/cardiomyopathies]
+  stem: |
+    A 38-year-old man was diagnosed 6 months ago with dilated cardiomyopathy (left ventricular ejection fraction 28%). Coronary angiography was normal, thyroid function and iron studies were normal, he does not drink alcohol or use drugs, and cardiac MRI showed midwall septal fibrosis without edema. His father died suddenly at age 50, and a paternal aunt had a "weak heart." He is doing well on GDMT. He has two children, ages 10 and 14, and a 41-year-old sister.
+  lead: Which of the following is the most appropriate recommendation for his first-degree relatives?
+  choices:
+    A: Cardiac MRI only for relatives older than 40 years
+    B: Clinical screening with ECG and echocardiography, plus genetic testing of the patient
+    C: No screening unless relatives develop symptoms
+    D: Screening with B-type natriuretic peptide levels only
+    E: Screening of relatives only if his ejection fraction fails to improve
+  answer: B
+  explain: |
+    About **30%–40%** of idiopathic dilated cardiomyopathies are **genetic**, most often autosomal dominant (TTN truncating variants, **LMNA**, FLNC, desmosomal genes, MYH7, RBM20). His family history of **sudden death and heart failure** and **midwall fibrosis** make an inherited cause likely.
+
+    Recommendations (HFSA/ACMG, 2022 AHA/ACC/HFSA, ESC 2023):
+    - **Genetic counseling and testing of the patient** (the proband) — a pathogenic variant allows **cascade testing** of relatives
+    - **Clinical screening of all first-degree relatives** (parents, siblings, children) with **ECG and echocardiography**, beginning in childhood or adolescence, and repeated every **1–5 years** depending on age and genotype, because the disease appears with age
+    - **LMNA**, FLNC or desmosomal variants carry high arrhythmic risk and may warrant an **ICD at higher EF** than usual thresholds
+  why:
+    A: Familial DCM can appear in children and young adults; screening limited to older relatives and a single test misses many cases.
+    C: Waiting for symptoms forfeits the chance to treat early LV dysfunction and prevent sudden death.
+    D: Natriuretic peptides are not sensitive enough to detect early cardiomyopathy.
+    E: The need to screen relatives does not depend on whether his own ejection fraction recovers.
+  objective: |
+    In idiopathic dilated cardiomyopathy, offer genetic testing to the patient and clinical screening with ECG and echocardiography to all first-degree relatives.
+  refs:
+    - "Hershberger RE, et al. Genetic evaluation of cardiomyopathy: a Heart Failure Society of America practice guideline. J Card Fail 2018;24:281."
+    - "Arbelo E, et al. 2023 ESC guidelines for the management of cardiomyopathies. Eur Heart J 2023;44:3503."
+
+- id: CV-127
+  topic: Advanced heart failure — referral
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/hfref]
+  stem: |
+    A 61-year-old man with ischemic cardiomyopathy (left ventricular ejection fraction 18%) has had three hospitalizations for decompensated heart failure in the past 6 months. Sacubitril-valsartan and spironolactone were stopped because of symptomatic hypotension and rising creatinine, and carvedilol was reduced to 3.125 mg twice daily. He needs furosemide, 160 mg twice daily, to stay euvolemic. He has dyspnea while dressing. He has a CRT defibrillator, which has delivered two appropriate shocks for ventricular tachycardia in the past 3 months. He lives with his wife, has no substance use and wants to "do everything possible."
+
+    On physical examination, blood pressure is 86/58 mm Hg and pulse rate is 82/min. Extremities are cool.
+  labs:
+    - [Sodium, 130 mEq/L]
+    - [Creatinine, 1.9 mg/dL]
+    - [NT-proBNP, 8,600 pg/mL]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Add ivabradine
+    B: Increase carvedilol to the target dose
+    C: Refer to an advanced heart failure center
+    D: Restart sacubitril-valsartan at the full dose
+    E: Start long-term outpatient milrinone
+  answer: C
+  explain: |
+    He has **advanced (stage D) heart failure**. Warning signs are summarized by the mnemonic **"I NEED HELP"**:
+
+    | Letter | Marker |
+    |---|---|
+    | **I** | **I**notropes needed (prior or current) |
+    | **N** | **N**YHA III–IV or persistently high **N**atriuretic peptides |
+    | **E** | **E**nd-organ dysfunction (worsening kidney or liver function) |
+    | **E** | **E**F ≤35% |
+    | **D** | **D**efibrillator shocks |
+    | **H** | **H**ospitalizations (>1 in 12 months) |
+    | **E** | **E**dema despite escalating diuretics |
+    | **L** | **L**ow blood pressure (SBP <90), high heart rate |
+    | **P** | **P**rognostic medication — **intolerance or down-titration of GDMT** |
+
+    He has nearly all of them, and his 1-year mortality is high (>25%–50%). **Timely referral** to an advanced heart failure center allows evaluation for **heart transplantation** or **durable LVAD** before end-organ damage makes him ineligible. Palliative care should be involved in parallel.
+  why:
+    A: Ivabradine requires adequate blood pressure and a resting sinus rate ≥70/min, and would not change his trajectory.
+    B: Hypotension and hypoperfusion prevent beta-blocker up-titration; forcing it could precipitate shock.
+    D: Sacubitril-valsartan was stopped for hypotension and worsening kidney function; restarting at a full dose would be unsafe.
+    E: Chronic inotropes can bridge to advanced therapies or serve as palliation, but deciding on that requires advanced HF evaluation first.
+  objective: |
+    Refer patients with markers of advanced heart failure (recurrent hospitalizations, GDMT intolerance, hypotension, end-organ dysfunction, escalating diuretics, ICD shocks) to an advanced HF center for transplant or LVAD evaluation.
+  refs:
+    - "Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. Circulation 2022;145:e895."
+    - "Baumwol J. 'I Need Help' — a mnemonic to aid timely referral in advanced heart failure. J Heart Lung Transplant 2017;36:593."
+
+- id: CV-128
+  topic: GI bleeding with an LVAD
+  task: Pathophysiology/Basic Science
+  chapters: [cardiology/devices, gi/ugib]
+  stem: |
+    A 68-year-old man with a continuous-flow left ventricular assist device implanted 8 months ago as destination therapy is admitted with melena. He takes warfarin (target INR 2.0–2.5) and aspirin, 81 mg daily. He had a similar episode 3 months ago.
+
+    On physical examination, blood pressure (Doppler mean) is 74 mm Hg and pulse rate is 96/min. A continuous mechanical hum is heard over the precordium. Pulses are not palpable.
+
+    Endoscopy shows multiple bleeding angiodysplasias in the jejunum.
+  labs:
+    - [Hemoglobin, 7.2 g/dL]
+    - [INR, 2.3]
+    - [Platelet count, 212,000/µL]
+    - [Von Willebrand factor activity-to-antigen ratio, low; high-molecular-weight multimers absent]
+  lead: Which of the following best explains his tendency to bleed?
+  choices:
+    A: Acquired von Willebrand syndrome from shear stress
+    B: Disseminated intravascular coagulation
+    C: Heparin-induced thrombocytopenia
+    D: Supratherapeutic anticoagulation
+    E: Uremic platelet dysfunction
+  answer: A
+  explain: |
+    GI bleeding affects about **20%–30%** of patients with continuous-flow LVADs. Two mechanisms work together:
+
+    1. **Acquired von Willebrand syndrome**: the high **shear stress** in the pump unfolds large von Willebrand factor (VWF) multimers, which are then **cleaved by ADAMTS13**. Loss of **high-molecular-weight multimers** impairs platelet adhesion — the same mechanism seen in severe aortic stenosis (**Heyde syndrome**).
+    2. **Angiodysplasia formation**: reduced **pulsatility** causes intestinal hypoperfusion and **angiopoietin-2** release, leading to fragile arteriovenous malformations.
+
+    Plus warfarin and aspirin. Management: endoscopic therapy, adjust antithrombotics, and for recurrent bleeding **octreotide** (reduces splanchnic flow and angiogenesis) or other anti-angiogenic agents.
+  why:
+    B: DIC would cause thrombocytopenia, low fibrinogen and a prolonged INR beyond the warfarin effect.
+    C: HIT causes thrombocytopenia and thrombosis; his platelet count is normal and he is not on heparin.
+    D: His INR is within the target range.
+    E: There is no kidney failure to explain uremic platelet dysfunction.
+  objective: |
+    Continuous-flow LVADs cause acquired von Willebrand syndrome (shear-induced loss of large multimers) and angiodysplasia, explaining their high rate of GI bleeding.
+  refs:
+    - "Kittleson MM, et al. 2023 ISHLT guidelines for mechanical circulatory support. J Heart Lung Transplant 2023;42:e1."
+    - "Vincentelli A, et al. Acquired von Willebrand syndrome in aortic stenosis. N Engl J Med 2003;349:343."

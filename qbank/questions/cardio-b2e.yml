@@ -1,0 +1,405 @@
+# Cardiovascular Disease — batch 2e: prevention and lipids (ABIM CERT; 2026 ACC/AHA dyslipidemia guideline)
+- id: CV-103
+  topic: Aspirin for primary prevention
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/lipids, cardiology/sihd]
+  stem: |
+    A 71-year-old woman comes for an annual visit. She has hypertension and hyperlipidemia treated with amlodipine and atorvastatin. She has no history of myocardial infarction, stroke, peripheral artery disease or coronary revascularization. She does not smoke. Her neighbor told her to start taking a daily aspirin "for her heart," and she asks whether she should.
+
+    On physical examination, blood pressure is 128/76 mm Hg. Examination is normal.
+  labs:
+    - [LDL cholesterol, 82 mg/dL]
+    - [Estimated glomerular filtration rate, 64 mL/min/1.73 m²]
+    - [10-year ASCVD risk (PREVENT-ASCVD), 9%]
+  lead: Compared with no aspirin, starting daily low-dose aspirin is most likely to have which of the following effects in this patient?
+  choices:
+    A: A net reduction in all-cause mortality
+    B: A reduction in cancer deaths within 5 years
+    C: A reduction in ischemic stroke without an increase in bleeding
+    D: A small reduction in nonfatal MI offset by more major bleeding
+    E: No effect on gastrointestinal bleeding
+  answer: D
+  explain: |
+    Contemporary trials of aspirin for **primary prevention** — **ASPREE** (age ≥70), **ARRIVE** (moderate risk) and **ASCEND** (diabetes) — showed that aspirin causes **major bleeding (GI and intracranial) about as often as it prevents nonfatal ischemic events**. In ASPREE, all-cause mortality was slightly **higher** with aspirin.
+
+    Current recommendations:
+    - **USPSTF 2022**: **do not start** aspirin for primary prevention at **age ≥60**; for ages 40–59 with 10-year risk ≥10%, the decision is individual (small net benefit).
+    - **ACC/AHA**: low-dose aspirin may be considered only in selected adults 40–70 at higher ASCVD risk and low bleeding risk; **not** routinely for adults >70.
+
+    Secondary prevention (after MI, stroke, revascularization or with PAD) is different — aspirin clearly helps there.
+  why:
+    A: Aspirin did not reduce all-cause mortality in primary prevention trials; ASPREE showed slightly higher mortality.
+    B: Long-term colorectal cancer benefit seen in older studies was not confirmed in ASPREE, which found more cancer deaths with aspirin in older adults.
+    C: Aspirin increases major bleeding, including intracranial hemorrhage.
+    E: Gastrointestinal bleeding increases by about 50%–60% with daily aspirin.
+  pearl: |
+    The aspirin question on boards usually hinges on one word: **primary** (no established ASCVD → usually no) versus **secondary** (established ASCVD → yes).
+  objective: |
+    In older adults without ASCVD, aspirin for primary prevention increases major bleeding about as much as it reduces nonfatal ischemic events and should not be started routinely at age ≥60–70.
+  refs:
+    - "US Preventive Services Task Force. Aspirin use to prevent cardiovascular disease: recommendation statement. JAMA 2022;327:1577."
+    - "McNeil JJ, et al. Effect of aspirin on cardiovascular events and bleeding in the healthy elderly (ASPREE). N Engl J Med 2018;379:1509."
+
+- id: CV-104
+  topic: Statin intolerance with ASCVD
+  task: Treatment/Care Decisions
+  chapters: [cardiology/lipids]
+  stem: |
+    A 66-year-old woman comes for follow-up 1 year after a myocardial infarction treated with a drug-eluting stent. She developed disabling thigh and shoulder myalgia with atorvastatin, 40 mg, then with rosuvastatin, 5 mg, and finally with pravastatin, 10 mg every other day; symptoms resolved within 2 weeks of stopping each drug and recurred on rechallenge. Creatine kinase was normal each time. She takes aspirin, metoprolol, lisinopril and ezetimibe. She declines injectable medications.
+
+    On physical examination, blood pressure is 122/72 mm Hg. Examination is normal.
+  labs:
+    - [LDL cholesterol, 128 mg/dL (on ezetimibe)]
+    - [Thyroid-stimulating hormone, 2.0 µU/mL]
+    - [ALT, 22 U/L]
+  lead: Which of the following is the most appropriate addition to her therapy?
+  choices:
+    A: Bempedoic acid
+    B: Coenzyme Q10
+    C: Fenofibrate
+    D: Niacin
+    E: Over-the-counter fish oil
+  answer: A
+  explain: |
+    She has **statin intolerance**: symptoms with **three statins**, including a low-intensity dose, that resolve on stopping and recur on rechallenge, with no hypothyroidism or other cause. She has **very-high-risk ASCVD**, and her LDL is far above the 2026 ACC/AHA goal of **<55 mg/dL** despite ezetimibe.
+
+    **Bempedoic acid** inhibits **ATP-citrate lyase**, upstream of HMG-CoA reductase. It is a **prodrug activated only in the liver** (not skeletal muscle), so it rarely causes myalgia. In **CLEAR Outcomes** (statin-intolerant patients), it lowered LDL by about 21% and **reduced major adverse cardiovascular events by 13%**. It comes alone or combined with ezetimibe.
+
+    If she later accepts injections, a **PCSK9 monoclonal antibody** (evolocumab, alirocumab) lowers LDL by about 60% and has outcome data.
+
+    Adverse effects of bempedoic acid: higher **uric acid (gout)**, small rise in creatinine, tendon rupture (rare), cholelithiasis.
+  why:
+    B: Coenzyme Q10 has not been shown to prevent or treat statin-associated muscle symptoms or to lower LDL.
+    C: Fenofibrate lowers triglycerides and has not reduced cardiovascular events in statin-era trials; it does little for LDL.
+    D: Niacin causes flushing and hyperglycemia and failed to reduce events when added to LDL-lowering therapy (AIM-HIGH, HPS2-THRIVE).
+    E: Over-the-counter fish oil does not lower LDL or cardiovascular events.
+  objective: |
+    In statin-intolerant patients with ASCVD above their LDL goal, add bempedoic acid (oral) or a PCSK9 monoclonal antibody, both of which reduce cardiovascular events.
+  refs:
+    - "Nissen SE, et al. Bempedoic acid and cardiovascular outcomes in statin-intolerant patients (CLEAR Outcomes). N Engl J Med 2023;388:1353."
+    - "Blumenthal RS, et al. 2026 ACC/AHA multisociety guideline on the management of dyslipidemia. J Am Coll Cardiol 2026 (doi:10.1016/j.jacc.2025.11.016)."
+
+- id: CV-105
+  topic: Severe hypertriglyceridemia
+  task: Treatment/Care Decisions
+  chapters: [cardiology/lipids, gi/pancreatitis]
+  stem: |
+    A 48-year-old man comes for follow-up of lipid results. He has type 2 diabetes mellitus and drinks 4 to 6 beers daily. He has no abdominal pain. Medications are metformin and atorvastatin, 20 mg daily.
+
+    On physical examination, blood pressure is 134/84 mm Hg. BMI is 32 kg/m². There are eruptive yellow papules on the buttocks and extensor surfaces of the arms. The abdomen is nontender. Fundoscopic examination shows creamy-white retinal vessels.
+  labs:
+    - [Triglycerides (fasting), 2,140 mg/dL]
+    - [Total cholesterol, 412 mg/dL]
+    - [Hemoglobin A₁c, 9.6%]
+    - [Lipase, 38 U/L (normal)]
+    - [Thyroid-stimulating hormone, 2.1 µU/mL]
+    - [Urine albumin-to-creatinine ratio, 18 mg/g]
+  lead: In addition to stopping alcohol, a very-low-fat diet and improving glycemic control, which of the following is the most appropriate treatment?
+  choices:
+    A: Ezetimibe
+    B: Fenofibrate
+    C: Gemfibrozil
+    D: Increase atorvastatin to 80 mg daily
+    E: Niacin
+  answer: B
+  explain: |
+    **Triglycerides ≥1,000 mg/dL** (some sources use ≥500–880) put him at high risk of **acute pancreatitis**. He shows signs of **chylomicronemia**: **eruptive xanthomas** and **lipemia retinalis**.
+
+    Priorities:
+    1. **Remove secondary causes**: alcohol, uncontrolled diabetes (insulin lowers triglycerides quickly), estrogen, thiazides, beta-blockers, glucocorticoids, retinoids, protease inhibitors, hypothyroidism, nephrotic syndrome
+    2. **Very-low-fat diet** (<15% of calories when chylomicronemic)
+    3. A **fibrate** — **fenofibrate** lowers triglycerides by 30%–50% (PPAR-α agonist: more lipoprotein lipase activity)
+    4. High-dose prescription omega-3 fatty acids as an additional option
+
+    Once triglycerides fall below about 500 mg/dL, focus returns to **ASCVD risk** (statin, LDL and non-HDL goals). Statins remain the foundation for long-term risk reduction.
+  why:
+    A: Ezetimibe lowers LDL, with little effect on triglycerides at this level.
+    C: Gemfibrozil with a statin markedly increases the risk of rhabdomyolysis (it inhibits statin glucuronidation); fenofibrate is the fibrate to combine with a statin.
+    D: Higher-dose statins lower triglycerides by only 20%–30%, not enough to prevent pancreatitis at this level.
+    E: Niacin worsens glycemic control and has no outcome benefit.
+  pearl: |
+    Severe hypertriglyceridemia falsely lowers measured **sodium** (pseudohyponatremia with some methods) and can make **amylase** unreliable — order **lipase** when you suspect pancreatitis.
+  objective: |
+    Treat triglycerides ≥1,000 mg/dL with removal of secondary causes, a very-low-fat diet and fenofibrate to prevent pancreatitis.
+  refs:
+    - "Blumenthal RS, et al. 2026 ACC/AHA multisociety guideline on the management of dyslipidemia. J Am Coll Cardiol 2026 (doi:10.1016/j.jacc.2025.11.016)."
+    - "Virani SS, et al. 2021 ACC expert consensus decision pathway on the management of ASCVD risk reduction in patients with persistent hypertriglyceridemia. J Am Coll Cardiol 2021;78:960."
+
+- id: CV-106
+  topic: Icosapent ethyl
+  task: Treatment/Care Decisions
+  chapters: [cardiology/lipids]
+  stem: |
+    A 62-year-old man with coronary artery disease comes for a routine visit. He had a myocardial infarction 3 years ago. He follows a Mediterranean diet, exercises 150 minutes per week and does not drink alcohol. Medications are aspirin, metoprolol, lisinopril, atorvastatin, 80 mg daily, and ezetimibe.
+
+    On physical examination, blood pressure is 124/74 mm Hg. BMI is 28 kg/m². Examination is normal.
+  labs:
+    - [LDL cholesterol, 52 mg/dL]
+    - [Triglycerides (fasting), 238 mg/dL]
+    - [HDL cholesterol, 38 mg/dL]
+    - [Hemoglobin A₁c, 5.8%]
+    - [Thyroid-stimulating hormone, 1.8 µU/mL]
+  lead: Which of the following is the most appropriate addition to his therapy to reduce cardiovascular events?
+  choices:
+    A: Fenofibrate
+    B: Icosapent ethyl
+    C: Niacin
+    D: Omega-3 carboxylic acids (EPA plus DHA)
+    E: Over-the-counter fish oil capsules
+  answer: B
+  explain: |
+    His LDL is at goal (<55 mg/dL) on a high-intensity statin plus ezetimibe, but he has **persistent hypertriglyceridemia (150–499 mg/dL)**, a marker of residual risk from triglyceride-rich lipoproteins.
+
+    **Icosapent ethyl** (purified **EPA ethyl ester**, 2 g twice daily) reduced major adverse cardiovascular events by **25%** in **REDUCE-IT**, in statin-treated patients with ASCVD (or diabetes plus risk factors) and triglycerides 135–499 mg/dL. Watch for **atrial fibrillation** and **bleeding**, both slightly increased.
+
+    Other triglyceride-lowering drugs have **not** reduced events on top of statins:
+    - **Mixed EPA + DHA** (STRENGTH, OMEMI) — no benefit
+    - **Fenofibrate** (ACCORD-Lipid) and **pemafibrate** (PROMINENT) — no benefit
+    - **Niacin** (AIM-HIGH, HPS2-THRIVE) — no benefit, more harm
+    - Dietary-supplement fish oil — unregulated, low doses, no outcome data
+  why:
+    A: Fibrates lower triglycerides but did not reduce cardiovascular events in statin-treated patients.
+    C: Niacin did not reduce events when added to a statin and increased adverse effects.
+    D: EPA + DHA combinations did not reduce events in STRENGTH, despite lowering triglycerides.
+    E: Supplement-grade fish oil provides low, variable doses without proven benefit.
+  objective: |
+    In statin-treated patients with ASCVD and triglycerides 150–499 mg/dL, icosapent ethyl reduces cardiovascular events; other triglyceride-lowering drugs do not.
+  refs:
+    - "Bhatt DL, et al. Cardiovascular risk reduction with icosapent ethyl for hypertriglyceridemia (REDUCE-IT). N Engl J Med 2019;380:11."
+    - "Nicholls SJ, et al. Effect of high-dose omega-3 fatty acids vs corn oil on major adverse cardiovascular events (STRENGTH). JAMA 2020;324:2268."
+
+- id: CV-107
+  topic: Lipoprotein(a)
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/lipids]
+  stem: |
+    A 42-year-old man asks about his heart disease risk. His father had a myocardial infarction at age 49, and his paternal uncle had coronary bypass surgery at age 52. He does not smoke, exercises regularly and has no hypertension or diabetes. He takes no medications.
+
+    On physical examination, blood pressure is 118/74 mm Hg. BMI is 24 kg/m². Examination is normal; there are no xanthomas.
+  labs:
+    - [Total cholesterol, 196 mg/dL]
+    - [LDL cholesterol, 118 mg/dL]
+    - [HDL cholesterol, 52 mg/dL]
+    - [Triglycerides, 130 mg/dL]
+    - [10-year ASCVD risk (PREVENT-ASCVD), 1.6%]
+  lead: Which of the following laboratory tests is most appropriate to refine his cardiovascular risk?
+  choices:
+    A: Apolipoprotein E genotype
+    B: Fasting insulin level
+    C: Homocysteine level
+    D: Lipoprotein(a)
+    E: Serum uric acid
+  answer: D
+  explain: |
+    **Lipoprotein(a)** is an LDL-like particle with an attached **apolipoprotein(a)**. It is **atherogenic, proinflammatory and prothrombotic**, and an independent, causal risk factor for MI, stroke and **calcific aortic stenosis**. Levels are about **90% genetically determined**, stable through life and barely changed by diet or exercise.
+
+    The **2026 ACC/AHA dyslipidemia guideline** recommends measuring Lp(a) **at least once in every adult** — and it is especially useful in people with a **family history of premature ASCVD** and otherwise unremarkable risk factors, as here. A level **≥50 mg/dL (≥125 nmol/L)** is a **risk enhancer** that favors earlier and more intensive LDL lowering. About 20% of people have elevated Lp(a).
+
+    Specific Lp(a)-lowering drugs (antisense and siRNA agents such as pelacarsen, olpasiran, lepodisiran) are in outcome trials. PCSK9 antibodies lower Lp(a) by about 25%; statins do not lower it.
+  why:
+    A: APOE genotyping is not used for cardiovascular risk assessment in clinical practice.
+    B: Fasting insulin is not a recommended cardiovascular risk marker.
+    C: Lowering homocysteine with B vitamins did not reduce cardiovascular events, so measuring it does not change management.
+    E: Uric acid is not a recommended tool for refining ASCVD risk.
+  pearl: |
+    A patient with premature ASCVD and "normal" lipids — or with a family history like this — should have **Lp(a)** checked. Elevated Lp(a) also justifies **cascade testing** of relatives.
+  objective: |
+    Measure lipoprotein(a) at least once in adulthood, especially with a family history of premature ASCVD; an elevated level is a risk enhancer.
+  refs:
+    - "Blumenthal RS, et al. 2026 ACC/AHA multisociety guideline on the management of dyslipidemia. J Am Coll Cardiol 2026 (doi:10.1016/j.jacc.2025.11.016)."
+    - "Kronenberg F, et al. Lipoprotein(a) in atherosclerotic cardiovascular disease and aortic stenosis: a European Atherosclerosis Society consensus statement. Eur Heart J 2022;43:3925."
+
+- id: CV-108
+  topic: Statin-associated muscle symptoms
+  task: Diagnosis/Testing
+  chapters: [cardiology/lipids, endo/thyroid]
+  stem: |
+    A 68-year-old woman is evaluated for 2 months of diffuse muscle aching and stiffness in her thighs and shoulders, with fatigue, constipation and a 3-kg (6.6-lb) weight gain. She started atorvastatin, 40 mg daily, 8 months ago after a transient ischemic attack and initially felt well. Other medications are aspirin and amlodipine.
+
+    On physical examination, blood pressure is 136/84 mm Hg and pulse rate is 56/min. Skin is dry. Muscle strength is normal, with mild tenderness of the proximal muscles. Ankle reflexes show delayed relaxation.
+  labs:
+    - [Creatine kinase, 420 U/L (reference 30–170)]
+    - [ALT, 28 U/L]
+    - [Creatinine, 0.9 mg/dL]
+    - [Erythrocyte sedimentation rate, 14 mm/h]
+  lead: Which of the following is the most appropriate next step in evaluation?
+  choices:
+    A: Electromyography
+    B: Muscle biopsy
+    C: Serum anti-HMG-CoA reductase antibodies
+    D: Serum aldolase
+    E: Thyroid-stimulating hormone
+  answer: E
+  explain: |
+    Her muscle symptoms began months after a statin was started, but she also has **fatigue, constipation, weight gain, bradycardia, dry skin and delayed relaxation of the ankle reflexes** — features of **hypothyroidism**.
+
+    **Hypothyroidism** causes myalgia and a raised CK by itself, and it **increases the risk of statin myopathy** (reduced statin clearance). Guidelines recommend checking **TSH** in anyone with statin-associated muscle symptoms, along with CK, vitamin D status and interacting drugs (amlodipine and atorvastatin share CYP3A4 but the interaction is minor; diltiazem, verapamil, macrolides, azole antifungals, cyclosporine, gemfibrozil and grapefruit matter more).
+
+    Treating hypothyroidism often relieves symptoms and allows the statin to continue — important after a TIA.
+
+    | CK | Muscle symptoms on a statin |
+    |---|---|
+    | Normal | Myalgia — stop, let resolve, rechallenge (different statin or lower dose) |
+    | <10× ULN | Look for causes (**TSH**, exercise, drugs); temporary hold |
+    | **>10× ULN** | **Myositis/rhabdomyolysis** → stop statin, check kidney function |
+    | Persistent weakness + high CK after stopping | **Anti-HMGCR immune-mediated necrotizing myopathy** |
+  why:
+    A: Electromyography is used to evaluate weakness and myopathy after common reversible causes are excluded; she has normal strength.
+    B: Biopsy is reserved for persistent weakness and high CK after the statin is stopped, suggesting inflammatory or necrotizing myopathy.
+    C: Anti-HMGCR antibodies are tested when weakness and a markedly elevated CK persist despite stopping the statin.
+    D: Aldolase adds little to CK and does not identify the cause.
+  objective: |
+    In patients with statin-associated muscle symptoms, check TSH because hypothyroidism causes myalgia and raises the risk of statin myopathy.
+  refs:
+    - "Newman CB, et al. Statin safety and associated adverse events: a scientific statement from the AHA. Arterioscler Thromb Vasc Biol 2019;39:e38."
+    - "Blumenthal RS, et al. 2026 ACC/AHA multisociety guideline on the management of dyslipidemia. J Am Coll Cardiol 2026 (doi:10.1016/j.jacc.2025.11.016)."
+
+- id: CV-109
+  topic: Statin therapy in diabetes
+  task: Treatment/Care Decisions
+  chapters: [cardiology/lipids, endo/diabetes-outpatient]
+  stem: |
+    A 52-year-old woman with type 2 diabetes mellitus diagnosed 2 years ago comes for a routine visit. She has no history of cardiovascular disease and does not smoke. She has no diabetic retinopathy, neuropathy or albuminuria. Medications are metformin and semaglutide.
+
+    On physical examination, blood pressure is 124/76 mm Hg. BMI is 31 kg/m². Examination is normal.
+  labs:
+    - [Hemoglobin A₁c, 6.8%]
+    - [LDL cholesterol, 112 mg/dL]
+    - [HDL cholesterol, 48 mg/dL]
+    - [Triglycerides, 168 mg/dL]
+    - [Estimated glomerular filtration rate, 88 mL/min/1.73 m²]
+    - [Urine albumin-to-creatinine ratio, 10 mg/g]
+  lead: Which of the following is the most appropriate lipid management?
+  choices:
+    A: Fenofibrate
+    B: Lifestyle changes alone, with repeat lipids in 5 years
+    C: Omega-3 fatty acid supplement
+    D: Start a statin
+    E: Start ezetimibe alone
+  answer: D
+  explain: |
+    **Diabetes at age ≥40** is one of the conditions for which the **2026 ACC/AHA dyslipidemia guideline** (like the ADA Standards of Care) recommends **starting lipid-lowering therapy regardless of LDL level or calculated risk**. A **statin** is first-line; at least moderate intensity, and high intensity when there are additional risk factors or diabetes-specific risk enhancers (long duration, albuminuria, eGFR <60, retinopathy, neuropathy, ankle-brachial index <0.9).
+
+    Rationale: diabetes multiplies ASCVD risk and the 10-year score underestimates **lifetime** risk. Statins reduce cardiovascular events in people with diabetes by about 20%–25% per 39 mg/dL LDL reduction (CTT meta-analysis), even with "normal" LDL.
+
+    The same "start at 40 regardless" rule now also applies to **CKD stage ≥3** and **HIV**.
+  why:
+    A: Fenofibrate did not reduce cardiovascular events in diabetes on top of statins (ACCORD-Lipid, FIELD) and is used mainly for severe hypertriglyceridemia.
+    B: Waiting 5 years leaves a high-risk patient untreated; lifestyle change is necessary but not sufficient.
+    C: Omega-3 supplements do not reduce cardiovascular events in primary prevention of diabetes (ASCEND, VITAL).
+    E: Ezetimibe is an add-on to statins, not first-line monotherapy, unless statins are not tolerated.
+  objective: |
+    Start statin therapy in adults with diabetes aged 40 or older, regardless of LDL level; intensify with additional risk factors.
+  refs:
+    - "Blumenthal RS, et al. 2026 ACC/AHA multisociety guideline on the management of dyslipidemia. J Am Coll Cardiol 2026 (doi:10.1016/j.jacc.2025.11.016)."
+    - "American Diabetes Association. Standards of Care in Diabetes — 2026. Section 10: Cardiovascular disease and risk management. Diabetes Care 2026;49(Suppl 1)."
+
+- id: CV-110
+  topic: PCSK9 inhibitor mechanism
+  task: Pathophysiology/Basic Science
+  chapters: [cardiology/lipids]
+  stem: |
+    A 58-year-old man with prior coronary artery bypass grafting has an LDL cholesterol of 96 mg/dL despite atorvastatin, 80 mg daily, and ezetimibe. Evolocumab is started, and 8 weeks later his LDL cholesterol is 34 mg/dL.
+  lead: Which of the following best explains the reduction in his LDL cholesterol?
+  choices:
+    A: Activation of peroxisome proliferator–activated receptor alpha
+    B: Blockade of intestinal cholesterol absorption by NPC1L1
+    C: Increased recycling of hepatic LDL receptors to the cell surface
+    D: Inhibition of ATP-citrate lyase in the liver
+    E: Inhibition of microsomal triglyceride transfer protein
+  answer: C
+  explain: |
+    **PCSK9** (proprotein convertase subtilisin/kexin type 9) is secreted by the liver and **binds the LDL receptor**. When the LDL receptor–LDL complex is internalized, bound PCSK9 directs the receptor to the **lysosome for degradation** instead of recycling to the cell surface.
+
+    **Evolocumab and alirocumab** (monoclonal antibodies) bind circulating PCSK9, so more **LDL receptors recycle** to the hepatocyte surface and clear LDL from the blood. LDL falls by about **60%** on top of a statin; FOURIER and ODYSSEY OUTCOMES showed fewer cardiovascular events. **Inclisiran** (siRNA) blocks PCSK9 synthesis.
+
+    Statins add to the effect because they **upregulate LDL-receptor synthesis** (via SREBP-2) — but also upregulate PCSK9, which limits their own efficacy.
+
+    | Drug | Mechanism |
+    |---|---|
+    | Statins | HMG-CoA reductase inhibition → more LDL receptors |
+    | **PCSK9 antibodies / inclisiran** | Less LDL-receptor degradation |
+    | Ezetimibe | NPC1L1 blockade → less intestinal absorption |
+    | Bempedoic acid | ATP-citrate lyase inhibition (liver only) |
+    | Fibrates | PPAR-α activation → more lipoprotein lipase |
+    | Lomitapide | MTP inhibition (homozygous FH) |
+  why:
+    A: PPAR-α activation is the mechanism of fibrates, which mainly lower triglycerides.
+    B: NPC1L1 blockade is the mechanism of ezetimibe.
+    D: ATP-citrate lyase inhibition is the mechanism of bempedoic acid.
+    E: MTP inhibition is the mechanism of lomitapide, used for homozygous familial hypercholesterolemia.
+  objective: |
+    PCSK9 inhibitors lower LDL by preventing lysosomal degradation of hepatic LDL receptors, allowing more receptors to recycle to the cell surface.
+  refs:
+    - "Sabatine MS, et al. Evolocumab and clinical outcomes in patients with cardiovascular disease (FOURIER). N Engl J Med 2017;376:1713."
+    - "Blumenthal RS, et al. 2026 ACC/AHA multisociety guideline on the management of dyslipidemia. J Am Coll Cardiol 2026 (doi:10.1016/j.jacc.2025.11.016)."
+
+- id: CV-111
+  topic: Obesity with established ASCVD
+  task: Treatment/Care Decisions
+  chapters: [cardiology/sihd]
+  stem: |
+    A 59-year-old man comes for follow-up 1 year after a myocardial infarction. He has tried supervised diet and exercise programs for 9 months, losing 2 kg (4.4 lb). He does not have diabetes. He has no history of pancreatitis or medullary thyroid carcinoma and no family history of multiple endocrine neoplasia. Medications are aspirin, metoprolol, lisinopril and atorvastatin, 80 mg daily.
+
+    On physical examination, blood pressure is 128/80 mm Hg. BMI is 34 kg/m². Examination is otherwise normal.
+  labs:
+    - [Hemoglobin A₁c, 5.9%]
+    - [LDL cholesterol, 50 mg/dL]
+    - [Estimated glomerular filtration rate, 82 mL/min/1.73 m²]
+  lead: Which of the following is the most appropriate addition to reduce his risk of future cardiovascular events?
+  choices:
+    A: Metformin
+    B: Orlistat
+    C: Phentermine
+    D: Semaglutide
+    E: Topiramate
+  answer: D
+  explain: |
+    In **SELECT**, adults with **established cardiovascular disease and overweight or obesity (BMI ≥27) without diabetes** who received weekly **semaglutide 2.4 mg** had a **20% reduction in major adverse cardiovascular events** (cardiovascular death, MI, stroke) over about 3 years, along with about 9% weight loss. The benefit appeared early and was partly independent of weight loss.
+
+    Semaglutide is now **FDA-approved to reduce MACE** in this population. Common adverse effects are GI (nausea, vomiting, constipation); avoid with a personal or family history of medullary thyroid carcinoma or MEN2, and use caution with prior pancreatitis or gallbladder disease.
+
+    Tirzepatide also produces large weight loss and is being studied for cardiovascular outcomes.
+  why:
+    A: Metformin is not approved for obesity, causes little weight loss without diabetes, and has no proven cardiovascular benefit in this population.
+    B: Orlistat causes modest weight loss with GI side effects and has no cardiovascular outcome benefit.
+    C: Phentermine is a sympathomimetic that raises heart rate and blood pressure and is generally avoided in patients with cardiovascular disease.
+    E: Topiramate alone is not an approved obesity treatment and has no cardiovascular outcome data.
+  objective: |
+    In patients with established ASCVD and BMI ≥27 without diabetes, semaglutide reduces major adverse cardiovascular events.
+  refs:
+    - "Lincoff AM, et al. Semaglutide and cardiovascular outcomes in obesity without diabetes (SELECT). N Engl J Med 2023;389:2221."
+    - "Virani SS, et al. 2023 AHA/ACC/multisociety guideline for the management of patients with chronic coronary disease. Circulation 2023;148:e9."
+
+- id: CV-112
+  topic: Smoking cessation after ACS
+  task: Treatment/Care Decisions
+  chapters: [cardiology/sihd]
+  stem: |
+    A 54-year-old man is hospitalized with a non–ST-elevation myocardial infarction treated with a drug-eluting stent. He has smoked one pack of cigarettes daily for 35 years and says he wants to quit; two previous attempts with nicotine gum failed within a week. He has no history of seizures, eating disorders or depression and does not drink alcohol.
+
+    On physical examination, blood pressure is 126/78 mm Hg and pulse rate is 68/min. Examination is normal.
+  lead: In addition to counseling, which of the following is the most appropriate pharmacotherapy for smoking cessation?
+  choices:
+    A: Avoid all pharmacotherapy until 3 months after the myocardial infarction
+    B: Electronic cigarettes as the primary method
+    C: Nicotine gum alone at a higher dose
+    D: Nortriptyline
+    E: Varenicline
+  answer: E
+  explain: |
+    Stopping smoking after MI reduces mortality by about a third — as much as any drug he will take. Smokers hospitalized with ACS should receive **counseling plus pharmacotherapy started in the hospital**, with follow-up for at least a month after discharge.
+
+    **Varenicline** (partial agonist at the α4β2 nicotinic receptor) is the **most effective single agent**. It is **safe in stable cardiovascular disease** — EAGLES and EVITA found no increase in cardiovascular events, and EAGLES found no excess of neuropsychiatric events.
+
+    Alternatives: **combination nicotine replacement** (patch plus a short-acting form such as gum or lozenge), which is more effective than a single NRT product and is safe after ACS; or bupropion. Varenicline plus a nicotine patch is more effective than varenicline alone.
+  why:
+    A: Delaying treatment loses the window of motivation created by the hospitalization; pharmacotherapy is safe early after ACS.
+    B: E-cigarettes are not FDA-approved cessation aids, and long-term cardiovascular safety is uncertain.
+    C: A single short-acting nicotine product is less effective than varenicline or combination NRT, and it already failed.
+    D: Nortriptyline is a second-line option with anticholinergic and arrhythmic adverse effects, undesirable after MI.
+  objective: |
+    Start varenicline (or combination nicotine replacement) with counseling for smokers hospitalized with ACS; it is safe in cardiovascular disease.
+  refs:
+    - "Barua RS, et al. 2018 ACC expert consensus decision pathway on tobacco cessation treatment. J Am Coll Cardiol 2018;72:3332."
+    - "Eisenberg MJ, et al. Varenicline for smoking cessation in hospitalized patients with acute coronary syndrome (EVITA). Circulation 2016;133:21."
