@@ -35,8 +35,55 @@ function cookie(req, name) {
   const m = (req.headers.get("cookie") || "").match(new RegExp("(?:^|;\\s*)" + name + "=([^;]+)"));
   return m ? m[1] : null;
 }
+// "Secure" on https (wardology.com); left off only for plain-http local testing, where Safari would refuse the cookie
+let SECURE = "; Secure";
 const sessionCookie = (token, maxAge) =>
-  `qb_s=${token}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=${maxAge}`;
+  `qb_s=${token}; Path=/; HttpOnly${SECURE}; SameSite=Lax; Max-Age=${maxAge}`;
+
+// ---------- feedback email (Cloudflare Email Sending REST API) ----------
+// Pages project → Settings → Variables and Secrets:
+//   CF_ACCOUNT_ID   your Cloudflare account ID                     (plain text)
+//   CF_EMAIL_TOKEN  API token with "Email Sending: Edit"           (secret)
+//   FEEDBACK_TO     where notes go, e.g. your Gmail (a verified Email Routing destination = free)
+//   FEEDBACK_FROM   optional, default qbank@wardology.com (must be on wardology.com)
+const FEEDBACK_KINDS = { correction: "✏️ Correction", suggestion: "💡 Suggestion", other: "💬 Other" };
+const FEEDBACK_PER_HOUR = 20;
+const escH = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+async function emailFeedback(env, f) {
+  if (!env.CF_EMAIL_TOKEN || !env.CF_ACCOUNT_ID || !env.FEEDBACK_TO) return { ok: false, error: "email not configured" };
+  const q = Q[f.qid] || {};
+  const kind = FEEDBACK_KINDS[f.kind] || FEEDBACK_KINDS.other;
+  const subject = `[Wardology QBank] ${kind.replace(/^\S+\s/, "")} · ${f.qid} · ${q.topic || ""}`.slice(0, 180);
+  const lines = [
+    `${kind} on question ${f.qid} (${q.cat || ""} · ${q.topic || ""})`, "",
+    f.text, "",
+    "—",
+    `From: ${f.name || "(no name)"} <${f.email}>  (user #${f.uid})`,
+    f.test_id ? `Test #${f.test_id} · ${f.mode || ""} mode · question ${f.idx || "?"} of the block` : "",
+    `Feedback #${f.id} · ${new Date(f.at * 1000).toUTCString()}`,
+    "Reply to this email to answer the user directly.",
+  ].filter((x) => x !== "");
+  const html = `<div style="font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;color:#0f2a43">
+    <p style="margin:0 0 6px"><b>${escH(kind)}</b> on question <b>${escH(f.qid)}</b><br><span style="color:#667">${escH(q.cat || "")} · ${escH(q.topic || "")}</span></p>
+    <blockquote style="margin:12px 0;padding:10px 14px;border-left:4px solid #e4572e;background:#fff7f2;white-space:pre-wrap">${escH(f.text)}</blockquote>
+    <p style="color:#667;font-size:13px;margin:0">From ${escH(f.name || "(no name)")} &lt;${escH(f.email)}&gt; · user #${f.uid}<br>
+    ${f.test_id ? `Test #${escH(f.test_id)} · ${escH(f.mode || "")} mode · question ${escH(f.idx || "?")}<br>` : ""}Feedback #${f.id} · ${escH(new Date(f.at * 1000).toUTCString())}<br>Reply to this email to answer the user directly.</p></div>`;
+  const url = env.EMAIL_API_URL || `https://api.cloudflare.com/client/v4/accounts/${env.CF_ACCOUNT_ID}/email/sending/send`;
+  try {
+    const r = await fetch(url, {
+      method: "POST",
+      headers: { authorization: "Bearer " + env.CF_EMAIL_TOKEN, "content-type": "application/json" },
+      body: JSON.stringify({
+        to: env.FEEDBACK_TO, from: { address: env.FEEDBACK_FROM || "qbank@wardology.com", name: "Wardology QBank" },
+        reply_to: f.email, subject, text: lines.join("\n"), html,
+      }),
+    });
+    if (r.ok) return { ok: true };
+    return { ok: false, error: `HTTP ${r.status}: ${(await r.text()).slice(0, 300)}` };
+  } catch (e) {
+    return { ok: false, error: String(e && e.message || e).slice(0, 300) };
+  }
+}
 
 function shuffle(a) {
   for (let i = a.length - 1; i > 0; i--) {
@@ -127,6 +174,7 @@ export async function onRequest(ctx) {
   const { request: req, env, params } = ctx;
   const db = env.DB;
   if (!db) return err("Database not configured", 500);
+  SECURE = new URL(req.url).protocol === "http:" ? "" : "; Secure";
   const path = (params.path || []).join("/");
   const method = req.method;
   let body = {};
@@ -329,8 +377,27 @@ export async function onRequest(ctx) {
     if (path === "feedback" && method === "POST") {
       const qid = String(body.qid || "");
       const text = String(body.text || "").trim().slice(0, 4000);
-      if (!Q[qid] || !text) return err("Write your feedback first.");
-      await db.prepare("INSERT INTO feedback (user_id, qid, text, created_at) VALUES (?,?,?,?)").bind(uid, qid, text, now()).run();
+      if (!Q[qid]) return err("This question could not be found. Reload the page and try again.");
+      if (!text) return err("Write your feedback first.");
+      const kind = FEEDBACK_KINDS[body.kind] ? body.kind : "other";
+      const recent = await db.prepare("SELECT COUNT(*) n FROM feedback WHERE user_id=? AND created_at > ?").bind(uid, now() - 3600).first();
+      if (recent && recent.n >= FEEDBACK_PER_HOUR) return err("Thanks for all the notes! Please wait a little before sending more.", 429);
+      const at = now();
+      let r, tracked = true;
+      try { r = await db.prepare("INSERT INTO feedback (user_id, qid, text, created_at, kind) VALUES (?,?,?,?,?)").bind(uid, qid, text, at, kind).run(); }
+      catch (e) {  // database not migrated yet (qbank/migrations/0002) — still keep the note
+        if (!/no (such )?column/i.test(String(e && e.message))) throw e;
+        tracked = false;
+        r = await db.prepare("INSERT INTO feedback (user_id, qid, text, created_at) VALUES (?,?,?,?)").bind(uid, qid, `[${kind}] ${text}`, at).run();
+      }
+      const f = { id: r.meta.last_row_id, uid, email: user.email, name: user.name, qid, text, kind, at,
+        test_id: parseInt(body.test_id) || null, mode: body.mode === "exam" ? "exam" : body.mode === "tutor" ? "tutor" : "", idx: parseInt(body.idx) || null };
+      // send after replying, so a slow or failing mail service never blocks or loses the note
+      const send = emailFeedback(env, f).then((res) => {
+        if (!res.ok) console.log("feedback email not sent:", f.id, res.error);
+        return tracked && db.prepare("UPDATE feedback SET emailed=?, email_error=? WHERE id=?").bind(res.ok ? 1 : 0, res.ok ? null : res.error, f.id).run();
+      }).catch(() => {});
+      if (ctx.waitUntil) ctx.waitUntil(send); else await send;
       return json({ ok: true });
     }
 

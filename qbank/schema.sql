@@ -69,5 +69,9 @@ CREATE TABLE IF NOT EXISTS feedback (
   user_id INTEGER NOT NULL,
   qid TEXT NOT NULL,
   text TEXT NOT NULL,
-  created_at INTEGER NOT NULL
+  created_at INTEGER NOT NULL,
+  kind TEXT NOT NULL DEFAULT 'other',  -- 'correction' | 'suggestion' | 'other'
+  emailed INTEGER,                      -- 1 sent · 0 failed · NULL not tried
+  email_error TEXT
 );
+CREATE INDEX IF NOT EXISTS idx_feedback_user ON feedback(user_id, created_at);

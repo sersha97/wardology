@@ -403,7 +403,7 @@
       const v = !it.choice ? '<span class="v om">Omitted</span>' : it.correct ? '<span class="v ok">✓ Correct</span>' : '<span class="v no">✗ Incorrect</span>';
       verdict = `<div class="verdict">${v}<span>📊 ${s.total ? (s.pct[rv.answer] ?? 0) + "% answered correctly" : "First answer on record"}</span><span>⏱️ ${fmtTime(it.seconds || 0)}</span><span>🗂️ ${catName(q.cat)}</span></div>`;
     }
-    return `<div class="qcol"><div class="stem" id="stem">${q.stem_html}</div><p class="lead">${q.lead}</p><div class="choices" id="choices">${choices}</div>
+    return `<div class="qcol"><div class="stem" id="stem">${q.stem_html}</div><p class="lead" id="lead">${q.lead}</p><div class="choices" id="choices">${choices}</div>
       ${revealed ? verdict : ""}<div id="subrow" class="subrow"></div></div>${revealed && rv ? `<div class="xp" id="xp">${rv.explain_html}</div>` : ""}`;
   }
   function bindLinksNewTab() { $$(".xp a").forEach((a) => { a.target = "_blank"; a.rel = "noopener"; }); }
@@ -413,7 +413,7 @@
   function stopRunner() {
     if (!R) return;
     clearInterval(R.tick); clearInterval(R.autosave);
-    document.removeEventListener("keydown", R.onKey); document.removeEventListener("mouseup", R.onUp);
+    document.removeEventListener("keydown", R.onKey); document.removeEventListener("mouseup", R.onUp); document.removeEventListener("selectionchange", R.onSel);
     if (!R.done && !R.leaving) saveProgress(true);
     $$(".panel,.hlpop").forEach((p) => p.remove());
     R = null;
@@ -433,6 +433,7 @@
     }
     R.onKey = onKey; document.addEventListener("keydown", R.onKey);
     R.onUp = onMouseUp; document.addEventListener("mouseup", R.onUp);
+    R.onSel = onSelChange; document.addEventListener("selectionchange", R.onSel);
   }
   function tick() {
     if (!R || R.done || document.hidden) return;
@@ -483,7 +484,7 @@
         <button class="tb navtoggle" id="fNav">☰</button>
         <button class="tb" id="fNext"><span class="lbl">Next</span> →</button>
       </footer></div>`;
-    $("#tMark").onclick = toggleMark; $("#tHl").onclick = () => doHighlight(true);
+    $("#tMark").onclick = toggleMark; $("#tHl").onclick = () => doHighlight(true); keepSelection($("#tHl"));
     $("#tLab").onclick = () => togglePanel("labs"); $("#tCalc").onclick = () => togglePanel("calc");
     $("#tFont").onclick = cycleFont; $("#tTheme").onclick = cycleTheme; $("#tFb").onclick = feedback;
     $("#fPrev").onclick = () => go(R.idx - 1); $("#fNext").onclick = () => go(R.idx + 1);
@@ -510,10 +511,12 @@
     const wrap = $("#qwrap");
     wrap.classList.toggle("split", revealed && window.innerWidth > 1180);
     wrap.innerHTML = questionHTML(it, revealed);
-    // restore highlights
-    const saved = localStorage.getItem("qb_hl_" + it.q.id);
-    if (saved) { try { const o = JSON.parse(saved); if (o.len === it.q.stem_html.length) $("#stem").innerHTML = o.html; } catch {} }
-    $("#stem").onclick = (e) => { if (e.target.tagName === "MARK") { const m = e.target; m.replaceWith(...m.childNodes); saveHl(); } };
+    restoreHl(it);
+    $("#qwrap").onclick = (e) => {   // tap / click a highlight to remove it (not while the user is selecting)
+      const m = e.target.closest && e.target.closest("mark[data-h]");
+      if (!m || !hlRoot(m) || !getSelection().isCollapsed) return;
+      $$(`mark[data-h="${m.dataset.h}"]`).forEach(unwrap); saveHl();
+    };
     if (!revealed) {
       $$("#choices .ch").forEach((c) => {
         c.onclick = (e) => { if (e.target.closest("[data-strike]")) return; choose(c.dataset.ch); };
@@ -575,32 +578,101 @@
     it.marked = !it.marked; $("#tMark").classList.toggle("on", it.marked); drawNav();
     try { await api(`tests/${R.id}/mark`, { idx: it.idx, marked: it.marked }); } catch (e) { toast(e.message); }
   }
-  // highlighting
-  function selectionInStem() {
+  // ---------- highlighting ----------
+  // Works the same with a mouse, a trackpad, a stylus or a finger. Highlightable: question stem, lead-in
+  // and (after answering) the explanation. Each text piece is wrapped on its own, so a selection that crosses
+  // paragraphs or lab-table cells never moves blocks around. Phones often clear the selection the instant a
+  // button is tapped, so the last selection is remembered for a moment and used if needed.
+  const HL_ROOTS = [["stem", "#stem"], ["lead", "#lead"], ["xp", "#xp"]];
+  const hlRoot = (node) => { const el = node && (node.nodeType === 1 ? node : node.parentElement); return el && el.closest("#stem,#lead,#xp"); };
+  const sig = (h) => { let x = 0; for (let i = 0; i < (h || "").length; i++) x = (x * 31 + h.charCodeAt(i)) | 0; return (h || "").length + ":" + x; };
+  const coarse = () => window.matchMedia && matchMedia("(pointer: coarse)").matches;
+  function liveRange() {
     const s = window.getSelection(); if (!s || s.isCollapsed || !s.rangeCount) return null;
-    const r = s.getRangeAt(0), stem = $("#stem");
-    return stem && stem.contains(r.commonAncestorContainer) ? r : null;
+    const r = s.getRangeAt(0);
+    return HL_ROOTS.some(([, sel]) => { const el = $(sel); return el && r.intersectsNode(el); }) && r.toString().trim() ? r : null;
+  }
+  function onSelChange() {
+    if (!R) return;
+    const r = liveRange();
+    if (r) { R.lastRange = r.cloneRange(); R.lastAt = 0; clearTimeout(R.popT); R.popT = setTimeout(showPop, coarse() ? 350 : 250); }
+    else { if (R.lastRange && !R.lastAt) R.lastAt = Date.now(); clearTimeout(R.popT); R.popT = setTimeout(() => !liveRange() && hidePop(), 400); }
+  }
+  // selection that is still on screen, or one that the tap on our button just cleared (≤ 1.5 s ago)
+  function pickRange() {
+    const r = liveRange(); if (r) return r;
+    if (R && R.lastRange && R.lastAt && Date.now() - R.lastAt < 1500 && R.lastRange.toString().trim()) return R.lastRange;
+    return null;
+  }
+  function textNodesIn(root, r) {
+    const out = [], w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    for (let n = w.nextNode(); n; n = w.nextNode()) {
+      if (!r.intersectsNode(n) || !n.nodeValue.trim() || n.parentElement.closest("mark[data-h]")) continue;
+      if (/^(TABLE|TBODY|THEAD|TR|COLGROUP)$/.test(n.parentElement.tagName)) continue;
+      const a = n === r.startContainer ? r.startOffset : 0, b = n === r.endContainer ? r.endOffset : n.length;
+      if (b > a && n.nodeValue.slice(a, b).trim()) out.push([n, a, b]);
+    }
+    return out;
   }
   function doHighlight(fromButton) {
-    $$(".hlpop").forEach((p) => p.remove());
-    const r = selectionInStem();
+    hidePop();
+    const r = pickRange();
     if (!r) { if (fromButton) toast("Select text in the question first, then press Highlight"); return; }
-    const m = document.createElement("mark");
-    try { m.appendChild(r.extractContents()); r.insertNode(m); } catch { return; }
-    window.getSelection().removeAllRanges(); saveHl();
+    const id = Date.now().toString(36) + Math.random().toString(36).slice(2, 5);
+    let n = 0;
+    for (const [, sel] of HL_ROOTS) {
+      const root = $(sel); if (!root || !r.intersectsNode(root)) continue;
+      for (let [node, a, b] of textNodesIn(root, r)) {
+        if (b < node.length) node.splitText(b);
+        if (a > 0) node = node.splitText(a);
+        const m = document.createElement("mark"); m.dataset.h = id;
+        node.parentNode.insertBefore(m, node); m.appendChild(node); n++;
+      }
+    }
+    try { window.getSelection().removeAllRanges(); } catch {}
+    R.lastRange = null;
+    if (n) saveHl(); else if (fromButton) toast("Select text in the question first, then press Highlight");
   }
-  function saveHl() { const it = R.items[R.idx]; localStorage.setItem("qb_hl_" + it.q.id, JSON.stringify({ len: it.q.stem_html.length, html: $("#stem").innerHTML })); }
+  function unwrap(m) { const p = m.parentNode; while (m.firstChild) p.insertBefore(m.firstChild, m); p.removeChild(m); p.normalize(); }
+  function hlSources(it) { return { stem: it.q.stem_html, lead: it.q.lead, xp: it.reveal ? it.reveal.explain_html : null }; }
+  function saveHl() {
+    const it = R.items[R.idx], src = hlSources(it), o = {};
+    for (const [k, sel] of HL_ROOTS) { const el = $(sel); if (el && src[k] && el.querySelector("mark")) o[k] = { sig: sig(src[k]), html: el.innerHTML }; }
+    try { Object.keys(o).length ? localStorage.setItem("qb_hl2_" + it.q.id, JSON.stringify(o)) : localStorage.removeItem("qb_hl2_" + it.q.id); localStorage.removeItem("qb_hl_" + it.q.id); } catch {}
+  }
+  function restoreHl(it) {
+    const src = hlSources(it);
+    let o = null;
+    try { o = JSON.parse(localStorage.getItem("qb_hl2_" + it.q.id) || "null"); } catch {}
+    if (!o) {  // highlights saved by the first version (stem only)
+      try { const old = JSON.parse(localStorage.getItem("qb_hl_" + it.q.id) || "null"); if (old && old.len === it.q.stem_html.length) $("#stem").innerHTML = old.html; } catch {}
+      return;
+    }
+    for (const [k, sel] of HL_ROOTS) { const el = $(sel); if (el && o[k] && src[k] && o[k].sig === sig(src[k])) el.innerHTML = o[k].html; }
+  }
+  // stop a press on a highlight button from wiping the selection first (mouse, pen and touch)
+  function keepSelection(btn) {
+    btn.addEventListener("mousedown", (e) => e.preventDefault());
+    btn.addEventListener("pointerdown", (e) => { if (e.pointerType !== "touch") e.preventDefault(); });
+  }
+  function hidePop() { $$(".hlpop").forEach((p) => p.remove()); }
+  function showPop() {
+    hidePop();
+    const r = liveRange(); if (!r || !R) return;
+    const b = r.getBoundingClientRect(); if (!b.width && !b.height) return;
+    const btn = document.createElement("button"); btn.type = "button"; btn.className = "hlpop"; btn.textContent = "🖍️ Highlight";
+    // on touch screens the phone's own copy menu sits above the selection, so ours goes below it
+    const top = coarse() ? Math.min(window.innerHeight - 110, b.bottom + 14) : b.top - 44;
+    btn.style.left = Math.max(8, Math.min(window.innerWidth - 130, b.left + b.width / 2 - 55)) + "px";
+    btn.style.top = Math.max(60, top) + "px";
+    keepSelection(btn);
+    btn.onclick = (ev) => { ev.preventDefault(); doHighlight(true); };
+    document.body.appendChild(btn);
+    const qs = $("#qscroll"); qs && qs.addEventListener("scroll", hidePop, { once: true });
+  }
   function onMouseUp(e) {
-    if (!R || e.target.closest(".hlpop")) return;
-    setTimeout(() => {
-      $$(".hlpop").forEach((p) => p.remove());
-      const r = selectionInStem(); if (!r) return;
-      const b = r.getBoundingClientRect();
-      const btn = document.createElement("button"); btn.className = "hlpop"; btn.textContent = "🖍️ Highlight";
-      btn.style.left = Math.max(8, b.left + b.width / 2 - 50) + "px"; btn.style.top = Math.max(60, b.top - 40) + "px";
-      btn.onmousedown = (ev) => { ev.preventDefault(); doHighlight(true); };
-      document.body.appendChild(btn);
-    }, 10);
+    if (!R || (e.target.closest && e.target.closest(".hlpop,#tHl"))) return;
+    clearTimeout(R.popT); R.popT = setTimeout(showPop, 10);
   }
   function onKey(e) {
     if (!R || $("#modal:not([hidden])") || ["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) return;
@@ -629,11 +701,27 @@
   }
   function feedback() {
     const it = R.items[R.idx];
-    modal(`<h3>💬 Feedback on this question</h3><p class="muted" style="font-size:14px">Spotted an error, an outdated guideline or something unclear? Tell us — every note is read.</p>
-      <textarea id="fbt" placeholder="What should we fix?"></textarea><div class="err" id="fbe"></div>
-      <div class="acts"><button class="btn ghost" data-close>Cancel</button><button class="btn" id="fbs">Send</button></div>`, (m, close) => {
-      $("#fbs", m).onclick = async () => { try { await api("feedback", { qid: it.q.id, text: $("#fbt", m).value }); close(); toast("Thanks — feedback sent"); } catch (e) { $("#fbe", m).textContent = e.message; } };
-      $("#fbt", m).focus();
+    modal(`<h3>💬 Feedback on this question</h3><p class="muted" style="font-size:14px;margin-top:0">Spotted an error, an outdated guideline or something unclear? Tell us — every note goes straight to the Wardology editors.</p>
+      <div class="fbkind" role="radiogroup" aria-label="Type of feedback">
+        <label><input type="radio" name="fbk" value="correction" checked> ✏️ Correction</label>
+        <label><input type="radio" name="fbk" value="suggestion"> 💡 Suggestion</label>
+        <label><input type="radio" name="fbk" value="other"> 💬 Other</label></div>
+      <textarea id="fbt" maxlength="4000" placeholder="What should we fix or add? (question ${esc(it.q.id)})"></textarea><div class="err" id="fbe" role="alert"></div>
+      <div class="acts"><button class="btn ghost" data-close type="button">Cancel</button><button class="btn" id="fbs" type="button">Send</button></div>`, (m, close) => {
+      const btn = $("#fbs", m);
+      let busy = false;
+      btn.onclick = async () => {
+        if (busy) return;
+        const text = $("#fbt", m).value.trim();
+        if (!text) { $("#fbe", m).textContent = "Write your feedback first."; $("#fbt", m).focus(); return; }
+        busy = true; btn.disabled = true; btn.textContent = "Sending…"; $("#fbe", m).textContent = "";
+        const kind = (m.querySelector('input[name="fbk"]:checked') || {}).value || "other";
+        try {
+          await api("feedback", { qid: it.q.id, text, kind, test_id: R.id, mode: R.test.mode, idx: it.idx + 1 });
+          close(); toast("Thanks — feedback sent to the Wardology team");
+        } catch (e) { $("#fbe", m).textContent = e.message; busy = false; btn.disabled = false; btn.textContent = "Send"; }
+      };
+      if (!coarse()) $("#fbt", m).focus();  // on phones, don't pop the keyboard over the choices
     });
   }
   // floating panels
