@@ -172,7 +172,7 @@
     const { pools } = await api("pools");
     const st = JSON.parse(localStorage.getItem("qb_create") || "{}");
     let mode = st.mode || "tutor", timed = !!st.timed, poolSel = st.pools || ["unused"], cats = st.cats || S.bank.categories.map((c) => c.key), count = st.count || 20;
-    const POOLS = [["unused", "Unused"], ["incorrect", "Incorrect"], ["marked", "Marked"], ["omitted", "Omitted"], ["correct", "Correct"]];
+    const POOLS = [["unused", "Unused"], ["incorrect", "Incorrect"], ["marked", "Marked"], ["correct", "Correct"]];
     const avail = (k) => { const p = pools[k] || {}; return poolSel.reduce((a, s) => a + (s === "marked" ? 0 : p[s] || 0), 0) + (poolSel.includes("marked") ? Math.max(0, (p.marked || 0)) : 0); };
     const draw = () => {
       const total = cats.reduce((a, k) => a + avail(k), 0);
@@ -216,7 +216,7 @@
     if (!tests.length) return shell("tests", "Previous tests", `<div class="card empty">No tests yet.<br><br><a class="btn accent" href="#/create">📝 Create your first test</a></div>`);
     const rows = tests.map((t) => {
       const st = t.status === "done" ? '<span class="pill done">Done</span>' : t.status === "suspended" ? '<span class="pill susp">Suspended</span>' : '<span class="pill act">In progress</span>';
-      const sc = t.graded ? pct(t.correct, t.n) + "%" : "—";
+      const sc = t.graded ? pct(t.correct, t.graded) + "%" : "—";
       const subj = t.categories.split(",").length >= S.bank.categories.length ? "All subjects" : t.categories.split(",").map((k) => (S.cats[k] ? S.cats[k].emoji : "")).join(" ");
       const act = t.status === "done" ? `<a class="btn small ghost" href="#/results/${t.id}">Results</a> <a class="btn small" href="#/test/${t.id}">Review</a>` : `<a class="btn small accent" href="#/test/${t.id}">Resume</a>`;
       return `<tr><td><b>#${t.id}</b></td><td>${fmtDate(t.created_at)}</td><td>${t.mode === "exam" ? "⏱️ Exam" : "🧑‍🏫 Tutor" + (t.timed ? " · timed" : "")}</td><td>${subj}</td><td>${t.n}</td><td><b>${sc}</b></td><td>${st}</td><td style="white-space:nowrap">${act}</td></tr>`;
@@ -230,16 +230,16 @@
     loading("tests", "Test results");
     const d = await api("tests/" + id);
     const items = d.items, n = items.length;
-    const c = items.filter((i) => i.correct === 1).length, om = items.filter((i) => i.revealed && !i.choice).length;
+    const c = items.filter((i) => i.correct === 1).length, ans = items.filter((i) => i.revealed).length, sk = items.filter((i) => !i.revealed).length;
     const rows = items.map((i) => {
       const s = i.reveal && i.reveal.stats;
       const others = s && s.total ? (s.pct[i.reveal.answer] ?? 0) + "%" : "—";
-      const mk = !i.revealed ? "•" : !i.choice ? '<span class="muted">—</span>' : i.correct ? '<span class="ok">✓</span>' : '<span class="no">✗</span>';
-      return `<tr><td style="font-size:18px;font-weight:800">${mk}</td><td><a href="#/test/${id}/${i.idx}">Q${i.idx + 1}</a> ${i.marked ? "🚩" : ""}</td><td>${catName(i.q.cat)}</td><td>${esc(i.reveal ? i.reveal.topic : "")}</td><td>${others}</td><td>${fmtTime(i.seconds)}</td></tr>`;
+      const mk = !i.revealed ? '<span class="muted" title="Skipped — back in your Unused pool">⏭</span>' : i.correct ? '<span class="ok">✓</span>' : '<span class="no">✗</span>';
+      return `<tr><td style="font-size:18px;font-weight:800">${mk}</td><td><a href="#/test/${id}/${i.idx}">Q${i.idx + 1}</a> ${i.marked ? "🚩" : ""}</td><td>${catName(i.q.cat)}</td><td>${i.reveal ? esc(i.reveal.topic) : '<span class="muted">Skipped · unseen, back in Unused</span>'}</td><td>${others}</td><td>${fmtTime(i.seconds)}</td></tr>`;
     }).join("");
     shell("tests", `Test #${id} results`, `
-      <div class="card score">${ring(pct(c, n), "correct", "var(--good)")}
-        <div class="statlist" style="max-width:360px"><div>Correct <b>${c}</b></div><div>Incorrect <b>${n - c - om}</b></div><div>Omitted <b>${om}</b></div>
+      <div class="card score">${ring(pct(c, ans), "correct", "var(--good)")}
+        <div class="statlist" style="max-width:360px"><div>Correct <b>${c}</b></div><div>Incorrect <b>${ans - c}</b></div><div title="Unanswered questions are not scored and go back to your Unused pool, unseen">Skipped · back in Unused <b>${sk}</b></div>
         <div>Mode <b>${d.test.mode === "exam" ? "Exam" : "Tutor"}</b></div><div>Time used <b>${fmtTime(d.test.elapsed)}</b></div></div></div>
       <div class="card tblwrap reslist"><table class="tbl"><thead><tr><th></th><th>Question</th><th>Subject</th><th>Topic</th><th>% others correct</th><th>Your time</th></tr></thead><tbody>${rows}</tbody></table></div>`,
       `<a class="btn small" href="#/test/${id}">Review answers</a>`);
@@ -496,7 +496,8 @@
   function drawNav() {
     $("#qnav").innerHTML = R.items.map((i) => {
       let st = "";
-      if (i.revealed) st = !i.choice ? '<span class="muted">–</span>' : i.correct ? '<span class="ok">✓</span>' : '<span class="no">✗</span>';
+      if (!i.revealed && R.done) st = '<span class="muted">⏭</span>';
+      else if (i.revealed) st = !i.choice ? '<span class="muted">–</span>' : i.correct ? '<span class="ok">✓</span>' : '<span class="no">✗</span>';
       const ans = !i.revealed && (i.choice || R.pending[i.idx]) ? " ans" : "";
       return `<button class="${i.idx === R.idx ? "cur" : ""}${ans}" data-go="${i.idx}">${i.marked ? '<span class="flag">🚩</span>' : ""}${i.idx + 1} ${st}</button>`;
     }).join("");
@@ -510,6 +511,14 @@
     $("#tMark").classList.toggle("on", !!it.marked);
     const wrap = $("#qwrap");
     wrap.classList.toggle("split", revealed && window.innerWidth > 1180);
+    if (it.skipped || (R.done && !revealed)) {
+      // never show a question the user did not answer: it stays unseen for a fresh attempt in a later test
+      wrap.innerHTML = `<div class="qcol"><div class="card empty skipcard"><div style="font-size:34px">⏭️</div><h3>You skipped this question</h3>
+        <p class="muted">It was not scored and its answer stays hidden. It is back in your <b>Unused</b> pool, so it will come up fresh in a future test.</p>
+        <a class="btn accent" href="#/create">📝 Create a new test</a></div></div>`;
+      $("#fPrev").disabled = R.idx === 0; $("#fNext").disabled = R.idx === R.items.length - 1;
+      return;
+    }
     wrap.innerHTML = questionHTML(it, revealed);
     restoreHl(it);
     $("#qwrap").onclick = (e) => {   // tap / click a highlight to remove it (not while the user is selecting)
@@ -645,7 +654,7 @@
     let o = null;
     try { o = JSON.parse(localStorage.getItem("qb_hl2_" + it.q.id) || "null"); } catch {}
     if (!o) {  // highlights saved by the first version (stem only)
-      try { const old = JSON.parse(localStorage.getItem("qb_hl_" + it.q.id) || "null"); if (old && old.len === it.q.stem_html.length) $("#stem").innerHTML = old.html; } catch {}
+      try { const old = JSON.parse(localStorage.getItem("qb_hl_" + it.q.id) || "null"); if (old && old.len === it.q.stem_html.length && $("#stem")) $("#stem").innerHTML = old.html; } catch {}
       return;
     }
     for (const [k, sel] of HL_ROOTS) { const el = $(sel); if (el && o[k] && src[k] && o[k].sig === sig(src[k])) el.innerHTML = o[k].html; }
@@ -682,7 +691,7 @@
     else if (k === "M") toggleMark();
     else if (k === "H") doHighlight(true);
     else if (e.key === "Enter" && R.test.mode === "tutor" && !R.done) submit();
-    else if (/^[A-F]$/.test(k) && !e.metaKey && !e.ctrlKey && R.items[R.idx].q.choices[k] && !R.done) choose(k);
+    else if (/^[A-F]$/.test(k) && !e.metaKey && !e.ctrlKey && (R.items[R.idx].q.choices || {})[k] && !R.items[R.idx].revealed && !R.done) choose(k);
   }
   async function suspend() {
     try { await api(`tests/${R.id}/suspend`, { idx: R.idx, elapsed: R.elapsed }); } catch {}
@@ -691,7 +700,7 @@
   async function endTest(auto) {
     if (!auto) {
       const left = R.items.filter((i) => !i.revealed && !i.choice).length;
-      const ok = await confirmBox("End this block?", (left ? `${left} question${left > 1 ? "s are" : " is"} unanswered and will count as omitted. ` : "") +
+      const ok = await confirmBox("End this block?", (left ? `${left} question${left > 1 ? "s are" : " is"} unanswered. Unanswered questions are not scored and their answers stay hidden — they go back to your Unused pool for a fresh try. ` : "") +
         (R.test.mode === "exam" ? "Your answers will be graded and you cannot change them afterwards." : "You will see your results."), "End block", true);
       if (!ok) return;
     }

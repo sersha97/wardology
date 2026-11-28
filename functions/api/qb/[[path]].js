@@ -154,18 +154,29 @@ async function loadTest(db, uid, tid) {
   return { t, items };
 }
 
+// A question's answer is shown only after the user picked and submitted a choice. Unanswered items
+// (block ended or time ran out) stay unseen and go back to the Unused pool. Older blocks that stored
+// skipped items as "revealed" are covered by the same check.
+const isRevealed = (i) => !!i.revealed && i.choice != null && !!Q[i.qid];
+// a stored item whose question was later removed from the bank is left out instead of breaking the test
+const liveItems = (items) => items.filter((i) => Q[i.qid]);
 async function testPayload(db, t, items) {
-  const revealedIds = items.filter((i) => i.revealed).map((i) => i.qid);
+  items = liveItems(items);
+  const revealedIds = items.filter(isRevealed).map((i) => i.qid);
   const stats = await choiceStats(db, revealedIds);
   return {
     test: { id: t.id, mode: t.mode, timed: !!t.timed, time_limit: t.time_limit, elapsed: t.elapsed, status: t.status,
       current_idx: t.current_idx, created_at: t.created_at, finished_at: t.finished_at, categories: t.categories },
-    items: items.map((i) => ({
-      idx: i.idx, qid: i.qid, choice: i.choice, marked: !!i.marked, seconds: i.seconds, revealed: !!i.revealed,
-      correct: i.revealed ? i.correct : null,
-      q: publicQ(i.qid),
-      reveal: i.revealed ? { ...revealQ(i.qid), stats: stats[i.qid] } : null,
-    })),
+    items: items.map((i) => {
+      const rv = isRevealed(i);
+      const skipped = t.status === "done" && !rv;
+      return {
+        idx: i.idx, qid: i.qid, choice: rv || t.mode === "exam" ? i.choice : null, marked: !!i.marked, seconds: i.seconds,
+        revealed: rv, skipped, correct: rv ? i.correct : null,
+        q: skipped ? { id: i.qid, cat: Q[i.qid].cat } : publicQ(i.qid),   // a skipped question stays unseen for a fresh try later
+        reveal: rv ? { ...revealQ(i.qid), stats: stats[i.qid] } : null,
+      };
+    }),
   };
 }
 
@@ -243,10 +254,13 @@ export async function onRequest(ctx) {
       return json({ ok: true }, 200, { "set-cookie": sessionCookie("x", 0) });
     }
 
+    // a question is "used" only once the user has submitted an answer to it
+    // (older rows marked omitted-but-never-answered are treated as unused)
+    const neverAnswered = (r) => !r || (r.status === "omitted" && r.first_correct == null);
     // counts per category for the Create Test screen
     if (path === "pools" && method === "GET") {
-      const rows = (await db.prepare("SELECT qid, status, marked FROM user_q WHERE user_id=?").bind(uid).all()).results;
-      const uq = Object.fromEntries(rows.map((r) => [r.qid, r]));
+      const rows = (await db.prepare("SELECT qid, status, marked, first_correct FROM user_q WHERE user_id=?").bind(uid).all()).results;
+      const uq = Object.fromEntries(rows.filter((r) => !neverAnswered(r)).map((r) => [r.qid, r]));
       const pools = {};
       for (const c of CATS) pools[c.key] = { all: 0, unused: 0, incorrect: 0, marked: 0, omitted: 0, correct: 0 };
       for (const id of ALL_IDS) {
@@ -270,8 +284,8 @@ export async function onRequest(ctx) {
       const cats = Array.isArray(body.categories) && body.categories.length ? body.categories : CATS.map((c) => c.key);
       const pools = Array.isArray(body.pools) && body.pools.length ? body.pools : ["unused"];
       const n = Math.max(1, Math.min(MAX_ITEMS, parseInt(body.count) || 20));
-      const rows = (await db.prepare("SELECT qid, status, marked FROM user_q WHERE user_id=?").bind(uid).all()).results;
-      const uq = Object.fromEntries(rows.map((r) => [r.qid, r]));
+      const rows = (await db.prepare("SELECT qid, status, marked, first_correct FROM user_q WHERE user_id=?").bind(uid).all()).results;
+      const uq = Object.fromEntries(rows.filter((r) => !neverAnswered(r)).map((r) => [r.qid, r]));
       const pick = ALL_IDS.filter((id) => {
         if (!cats.includes(Q[id].cat)) return false;
         const r = uq[id];
@@ -292,7 +306,7 @@ export async function onRequest(ctx) {
     // list tests
     if (path === "tests" && method === "GET") {
       const rs = (await db.prepare(`SELECT t.*, COUNT(i.idx) AS n, SUM(CASE WHEN i.correct=1 THEN 1 ELSE 0 END) AS nc,
-        SUM(CASE WHEN i.revealed=1 THEN 1 ELSE 0 END) AS nr
+        SUM(CASE WHEN i.revealed=1 AND i.choice IS NOT NULL THEN 1 ELSE 0 END) AS nr
         FROM tests t LEFT JOIN test_items i ON i.test_id=t.id WHERE t.user_id=? GROUP BY t.id ORDER BY t.id DESC LIMIT 500`).bind(uid).all()).results;
       return json({ tests: rs.map((t) => ({ id: t.id, mode: t.mode, timed: !!t.timed, status: t.status, n: t.n, correct: t.nc || 0,
         graded: t.nr || 0, created_at: t.created_at, finished_at: t.finished_at, categories: t.categories })) });
@@ -333,7 +347,7 @@ export async function onRequest(ctx) {
       if (action === "answer" && method === "POST") {
         if (t.status === "done") return err("This test is finished.");
         const it = item(parseInt(body.idx));
-        if (!it) return err("No such question.");
+        if (!it || !Q[it.qid]) return err("No such question.");
         const choice = String(body.choice || "");
         if (!(choice in Q[it.qid].choices)) return err("Pick an answer first.");
         if (t.mode === "tutor") {
@@ -360,8 +374,8 @@ export async function onRequest(ctx) {
       if (action === "end" && method === "POST") {
         if (t.status !== "done") {
           for (const it of items) {
-            if (it.revealed) continue;
-            const correct = await recordGrade(db, uid, it.qid, it.choice || null);
+            if (it.revealed || !it.choice || !Q[it.qid] || !(it.choice in Q[it.qid].choices)) continue;  // unanswered: not graded, not shown
+            const correct = await recordGrade(db, uid, it.qid, it.choice);
             await db.prepare("UPDATE test_items SET correct=?, revealed=1 WHERE test_id=? AND idx=?").bind(correct, tid, it.idx).run();
             if (it.marked) await db.prepare("UPDATE user_q SET marked=1 WHERE user_id=? AND qid=?").bind(uid, it.qid).run();
           }
@@ -403,7 +417,8 @@ export async function onRequest(ctx) {
 
     // performance: overall, by subject/task, per-test graph, answer changes, percentile
     if (path === "performance" && method === "GET") {
-      const uq = (await db.prepare("SELECT qid, status, first_correct FROM user_q WHERE user_id=?").bind(uid).all()).results;
+      const uq = (await db.prepare("SELECT qid, status, first_correct FROM user_q WHERE user_id=?").bind(uid).all()).results
+        .filter((r) => !(r.status === "omitted" && r.first_correct == null));
       const tally = (rows) => {
         const o = { used: rows.length, correct: 0, incorrect: 0, omitted: 0 };
         for (const r of rows) o[r.status]++;
@@ -426,7 +441,7 @@ export async function onRequest(ctx) {
         if (r.first_choice === a) ch.c2i++; else if (r.choice === a) ch.i2c++; else ch.i2i++;
       }
       const tests = (await db.prepare(`SELECT t.id, t.created_at, t.status, COUNT(i.idx) n, SUM(CASE WHEN i.correct=1 THEN 1 ELSE 0 END) nc,
-        SUM(CASE WHEN i.revealed=1 THEN 1 ELSE 0 END) nr FROM tests t JOIN test_items i ON i.test_id=t.id WHERE t.user_id=? GROUP BY t.id ORDER BY t.id`).bind(uid).all()).results;
+        SUM(CASE WHEN i.revealed=1 AND i.choice IS NOT NULL THEN 1 ELSE 0 END) nr FROM tests t JOIN test_items i ON i.test_id=t.id WHERE t.user_id=? GROUP BY t.id ORDER BY t.id`).bind(uid).all()).results;
       const counts = await db.prepare("SELECT COUNT(*) n, SUM(CASE WHEN status='done' THEN 1 ELSE 0 END) done, SUM(CASE WHEN status='suspended' THEN 1 ELSE 0 END) susp FROM tests WHERE user_id=?").bind(uid).first();
 
       // percentile rank among users with >= 10 graded questions (first attempts)
@@ -445,7 +460,7 @@ export async function onRequest(ctx) {
       const mineFirst = Object.fromEntries(uq.map((r) => [r.qid, r.first_correct]));
       const graph = [];
       for (const t of tests.filter((x) => x.nr > 0).slice(-40)) {
-        const ids = (await db.prepare("SELECT qid FROM test_items WHERE test_id=? AND revealed=1").bind(t.id).all()).results.map((r) => r.qid);
+        const ids = (await db.prepare("SELECT qid FROM test_items WHERE test_id=? AND revealed=1 AND choice IS NOT NULL").bind(t.id).all()).results.map((r) => r.qid);
         const st = await choiceStats(db, ids);
         let tot = 0, cor = 0;
         for (const id of ids) {
@@ -465,7 +480,7 @@ export async function onRequest(ctx) {
     if (path === "search" && method === "GET") {
       const q = (new URL(req.url).searchParams.get("q") || "").trim().toLowerCase();
       if (q.length < 2) return json({ results: [] });
-      const used = (await db.prepare("SELECT qid, status FROM user_q WHERE user_id=?").bind(uid).all()).results;
+      const used = (await db.prepare("SELECT qid, status FROM user_q WHERE user_id=? AND NOT (status='omitted' AND first_correct IS NULL)").bind(uid).all()).results;
       const res = [];
       for (const r of used) {
         const x = Q[r.qid];
@@ -482,7 +497,7 @@ export async function onRequest(ctx) {
     if ((m = path.match(/^q\/([\w-]+)$/)) && method === "GET") {
       const qid = m[1];
       const r = await db.prepare("SELECT status, marked FROM user_q WHERE user_id=? AND qid=?").bind(uid, qid).first();
-      if (!r || !Q[qid]) return err("You can review a question after you have answered it.", 403);
+      if (!r || !Q[qid] || (r.status === "omitted" && r.first_correct == null)) return err("You can review a question after you have answered it.", 403);
       const last = await db.prepare(`SELECT i.choice FROM test_items i JOIN tests t ON t.id=i.test_id WHERE t.user_id=? AND i.qid=? AND i.revealed=1 ORDER BY t.id DESC LIMIT 1`).bind(uid, qid).first();
       const stats = await choiceStats(db, [qid]);
       return json({ q: publicQ(qid), reveal: { ...revealQ(qid), stats: stats[qid] }, choice: last ? last.choice : null, status: r.status, marked: !!r.marked });

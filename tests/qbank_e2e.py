@@ -16,6 +16,7 @@ ap.add_argument("--base", default="http://localhost:8788")
 ap.add_argument("--mail", default="http://127.0.0.1:9999")
 ap.add_argument("--db", required=True)
 ap.add_argument("--only", default="")
+ap.add_argument("--suite", default="all", help="all | hlfb (highlight+feedback) | fresh (no pre-answered questions)")
 A = ap.parse_args()
 BASE = A.base
 
@@ -41,7 +42,7 @@ def mail_mode(mode):
 def db(sql, *args):
     c = sqlite3.connect(A.db, timeout=10)
     try:
-        return c.execute(sql, args).fetchall()
+        r = c.execute(sql, args).fetchall(); c.commit(); return r
     finally:
         c.close()
 
@@ -310,12 +311,174 @@ TESTS = [
     ("Feedback FAIL case · spam rate limit", t_api_rate_limit),
 ]
 
+# ---- every question must start fresh: nothing answered, selected or revealed before the user tries it ----
+FRESH = """() => ({ sel: document.querySelectorAll('#choices .ch.sel').length,
+  checked: document.querySelectorAll('#choices [aria-checked="true"]').length,
+  right: document.querySelectorAll('#choices .ch.right, #choices .ch.wrong').length,
+  xp: !!document.querySelector('#xp'), verdict: !!document.querySelector('.verdict'),
+  pct: [...document.querySelectorAll('#choices .pct')].some(e => e.textContent.trim()),
+  submit: document.querySelector('#submit') ? document.querySelector('#submit').disabled : null,
+  n: document.querySelectorAll('#choices .ch').length, qn: (document.querySelector('.qn')||{}).textContent })"""
+def assert_fresh(c, mode, where=""):
+    st = c.page.evaluate(FRESH)
+    assert st["n"] >= 4, f"{where}: answer choices not shown {st}"
+    bad = []
+    if st["sel"] or st["checked"]: bad.append("an option is pre-selected")
+    if st["right"] or st["verdict"] or st["pct"]: bad.append("answer/verdict already shown")
+    if st["xp"]: bad.append("explanation already shown")
+    if mode == "tutor" and st["submit"] is not True: bad.append(f"Submit not disabled ({st['submit']})")
+    assert not bad, f"{where} {st['qn']}: " + "; ".join(bad)
+
+def api(c, path, data=None, method=None):
+    r = c.page.request.post("/api/qb/" + path, data=data) if (data is not None and method != "GET") else c.page.request.get("/api/qb/" + path)
+    return r.status, (r.json() if r.headers.get("content-type", "").startswith("application/json") else {})
+def mk_test(c, mode="tutor", n=5, pools=("unused",), cats=None):
+    body = {"mode": mode, "count": n, "pools": list(pools)}
+    if cats: body["categories"] = cats
+    st, d = api(c, "tests", body); assert st == 200, d
+    return d["id"]
+def walk(c, tid, mode):
+    c.page.goto(f"/qbank/#/test/{tid}"); c.page.wait_for_selector("#stem")
+    n = c.page.evaluate("() => document.querySelectorAll('#qnav [data-go]').length")
+    for i in range(n):
+        if i: c.page.goto(f"/qbank/#/test/{tid}/{i}"); c.page.wait_for_selector("#stem"); c.page.wait_for_timeout(80)
+        assert_fresh(c, mode, f"test {tid} q{i + 1}")
+    return n
+def first_cat(c):
+    return api(c, "me", method="GET")[1]["bank"]["categories"][0]["key"]
+
+def f_tutor_fresh(c):
+    assert walk(c, mk_test(c, "tutor", 12), "tutor") == 12
+def f_exam_fresh(c):
+    assert walk(c, mk_test(c, "exam", 12), "exam") == 12
+def f_retake_fresh(c):
+    cat = first_cat(c)
+    t1 = mk_test(c, "tutor", 8, cats=[cat])
+    _, d = api(c, f"tests/{t1}", method="GET")
+    for i, it in enumerate(d["items"]):
+        api(c, f"tests/{t1}/answer", {"idx": it["idx"], "choice": "A" if i % 2 else "B"})
+    api(c, f"tests/{t1}/end", {"elapsed": 10})
+    for pools in (["all"], ["correct"], ["incorrect"]):
+        st, d = api(c, "tests", {"mode": "tutor", "count": 60, "pools": pools, "categories": [cat]})
+        if st != 200: continue
+        walk(c, d["id"], "tutor")
+    walk(c, mk_test(c, "exam", 60, pools=("all",), cats=[cat]), "exam")
+
+def ended_with_skips(c, mode):
+    cat = first_cat(c)
+    tid = mk_test(c, mode, 5, cats=[cat])
+    _, d = api(c, f"tests/{tid}", method="GET")
+    api(c, f"tests/{tid}/answer", {"idx": 0, "choice": "A"})
+    skipped = [it["qid"] for it in d["items"][1:]]
+    c.page.goto(f"/qbank/#/test/{tid}/1"); c.page.wait_for_selector("#stem")
+    c.click("#fEnd"); c.page.wait_for_selector("#ok"); c.click("#ok")
+    c.page.wait_for_url("**/results/**", timeout=8000)
+    return tid, cat, skipped
+def check_skips_hidden(c, tid, cat, skipped, mode):
+    _, d = api(c, f"tests/{tid}", method="GET")
+    for it in d["items"][1:]:
+        assert not it["reveal"] and it.get("correct") is None, f"skipped {it['qid']}: answer sent to the browser"
+    c.page.goto(f"/qbank/#/test/{tid}/2"); c.page.wait_for_selector(".qn"); c.page.wait_for_timeout(300)
+    st = c.page.evaluate(FRESH)
+    assert not st["xp"] and not st["right"] and not st["verdict"], f"skipped question shows its answer in review: {st}"
+    assert c.page.locator("#stem").count() == 0, "skipped question text shown after the block ended (should stay unseen for a fresh try)"
+    st2, _ = api(c, f"q/{skipped[0]}", method="GET")
+    assert st2 == 403, f"review endpoint leaked a skipped question ({st2})"
+    st3, d3 = api(c, "tests", {"mode": "tutor", "count": 60, "pools": ["unused"], "categories": [cat]})
+    assert st3 == 200, d3
+    _, d4 = api(c, f"tests/{d3['id']}", method="GET")
+    back = {it["qid"] for it in d4["items"]}
+    assert set(skipped) <= back, f"skipped questions did not go back to Unused: missing {set(skipped) - back}"
+    walk(c, d3["id"], "tutor")
+def f_tutor_end_skips(c):
+    tid, cat, sk = ended_with_skips(c, "tutor"); check_skips_hidden(c, tid, cat, sk, "tutor")
+def f_exam_end_skips(c):
+    tid, cat, sk = ended_with_skips(c, "exam"); check_skips_hidden(c, tid, cat, sk, "exam")
+def f_exam_timeup(c):
+    cat = first_cat(c)
+    tid = mk_test(c, "exam", 3, cats=[cat])
+    _, d = api(c, f"tests/{tid}", method="GET")
+    api(c, f"tests/{tid}/answer", {"idx": 0, "choice": "B"})
+    api(c, f"tests/{tid}/progress", {"idx": 0, "elapsed": d["test"]["time_limit"] - 2})
+    c.page.goto(f"/qbank/#/test/{tid}"); c.page.wait_for_url("**/results/**", timeout=10000)
+    check_skips_hidden(c, tid, cat, [it["qid"] for it in d["items"][1:]], "exam")
+def f_reload_no_preselect(c):
+    tid = mk_test(c, "tutor", 3)
+    c.page.goto(f"/qbank/#/test/{tid}"); c.page.wait_for_selector("#stem")
+    c.click("#choices .ch >> nth=1")
+    assert c.page.locator("#choices .ch.sel").count() == 1
+    c.page.reload(); c.page.wait_for_selector("#stem"); c.page.wait_for_timeout(200)
+    assert_fresh(c, "tutor", "after reload")
+    c.page.goto(f"/qbank/#/test/{tid}/1"); c.page.wait_for_selector("#stem"); assert_fresh(c, "tutor", "next question")
+def f_keys_before_test(c):
+    if c.touch: return "n/a (no keyboard)"
+    c.page.goto("/qbank/#/create"); c.page.wait_for_selector("#go")
+    c.page.keyboard.type("abcdeh")
+    c.page.focus("#go"); c.page.keyboard.press("Enter")
+    c.page.wait_for_selector("#stem"); c.page.wait_for_timeout(300)
+    assert_fresh(c, "tutor", "test opened with keyboard")
+def f_legacy_revealed(c):
+    """Blocks ended before this fix stored skipped questions as revealed — they must still be hidden."""
+    tid = mk_test(c, "tutor", 4)
+    api(c, f"tests/{tid}/answer", {"idx": 0, "choice": "C"})
+    db("UPDATE test_items SET revealed=1 WHERE test_id=? AND choice IS NULL", tid)
+    db("UPDATE tests SET status='done' WHERE id=?", tid)
+    _, d = api(c, f"tests/{tid}", method="GET")
+    assert all(not it["reveal"] for it in d["items"][1:]), "old skipped questions still leak their answers"
+    c.page.goto(f"/qbank/#/test/{tid}/1"); c.page.wait_for_selector(".qn"); c.page.wait_for_timeout(300)
+    st = c.page.evaluate(FRESH); assert not st["xp"] and not st["right"], f"old skipped question shows answer {st}"
+def f_api_guards(c):
+    tid = mk_test(c, "tutor", 3)
+    assert api(c, f"tests/{tid}/answer", {"idx": 0})[0] == 400, "answer without a choice accepted"
+    assert api(c, f"tests/{tid}/answer", {"idx": 0, "choice": "Z"})[0] == 400, "invalid letter accepted"
+    assert api(c, f"tests/{tid}/answer", {"idx": 0, "choice": "A"})[0] == 200
+    st, _ = api(c, f"tests/{tid}/answer", {"idx": 0, "choice": "B"})
+    assert st == 400, "tutor answer could be changed after submitting"
+    other = c.browser.new_context(base_url=BASE)
+    try:
+        other.request.post("/api/qb/auth/signup", data={"email": f"o{uuid.uuid4().hex[:8]}@example.com", "password": "password123", "agree": True})
+        assert other.request.get(f"/api/qb/tests/{tid}").status == 404, "another user could open this test"
+        assert other.request.post(f"/api/qb/tests/{tid}/answer", data={"idx": 1, "choice": "A"}).status == 404, "another user could answer in this test"
+    finally:
+        other.close()
+    api(c, f"tests/{tid}/end", {})
+    assert api(c, f"tests/{tid}/answer", {"idx": 1, "choice": "A"})[0] == 400, "answered after the block ended"
+def f_bank_integrity(c):
+    """Runs on the built bank, so it also guards every question added in the future."""
+    import pathlib, re
+    bank = json.loads((pathlib.Path(__file__).resolve().parent.parent / "functions/_lib/bank.json").read_text())
+    probs = []
+    for qid, q in bank["questions"].items():
+        if q["answer"] not in q["choices"]: probs.append(f"{qid}: answer not a choice")
+        if not 4 <= len(q["choices"]) <= 6: probs.append(f"{qid}: {len(q['choices'])} choices")
+        blob = q["stem_html"] + q["lead"] + "".join(q["choices"].values())
+        if re.search(r"<input[^>]*\bchecked|\bselected\s*=|aria-checked|class=\"[^\"]*\bsel\b|Correct answer:", blob, re.I): probs.append(f"{qid}: stem/choices contain pre-selection or answer text")
+        if len(set(v.strip().lower() for v in q["choices"].values())) != len(q["choices"]): probs.append(f"{qid}: duplicate choice text")
+    assert not probs, "; ".join(probs[:8])
+
+FRESH_TESTS = [
+    ("Fresh · tutor: no question answered/selected/explained before trying", f_tutor_fresh),
+    ("Fresh · exam: no question answered/selected/explained before trying", f_exam_fresh),
+    ("Fresh · re-used questions (All/Correct/Incorrect pools) start blank", f_retake_fresh),
+    ("Fresh · tutor End with unanswered → stay hidden, back to Unused", f_tutor_end_skips),
+    ("Fresh · exam End with unanswered → stay hidden, back to Unused", f_exam_end_skips),
+    ("Fresh · exam time runs out → unanswered stay hidden", f_exam_timeup),
+    ("Fresh · reload does not keep an unsubmitted pick", f_reload_no_preselect),
+    ("Fresh · keys pressed before the test opens pick nothing", f_keys_before_test),
+    ("Fresh · blocks ended before this fix are hidden too", f_legacy_revealed),
+    ("Fresh FAIL cases · no choice / bad letter / change after submit / other user / after end", f_api_guards),
+    ("Fresh · question bank integrity (all current + future questions)", f_bank_integrity),
+]
+
 def main():
+    global SUITE
+    SUITE = (TESTS if A.suite in ('all', 'hlfb') else []) + (FRESH_TESTS if A.suite in ('all', 'fresh') else [])
     results = {}
     with sync_playwright() as pw:
         for pname, engine, device in PLATFORMS:
             browser = getattr(pw, engine).launch()
-            for tname, fn in TESTS:
+            for tname, fn in SUITE:
+                if fn is f_bank_integrity and pname != PLATFORMS[0][0]: continue
                 c = None
                 try:
                     c = Ctx(pw, browser, device)
