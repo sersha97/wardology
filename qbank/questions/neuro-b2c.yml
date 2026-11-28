@@ -1,0 +1,493 @@
+# Neurology — batch 2c: RLS, neuromuscular, demyelinating, vertigo, head injury, spinal cord (ABIM CERT)
+- id: NR-041
+  topic: Restless legs syndrome
+  task: Treatment/Care Decisions
+  chapters: [neuro/rls-sleep]
+  stem: |
+    A 58-year-old woman is evaluated for 1 year of an uncomfortable "crawling" sensation deep in both calves with an urge to move her legs. It starts in the evening when she sits or lies down, is relieved by walking and keeps her from falling asleep most nights. Her husband says her legs jerk during sleep. She has heavy menstrual bleeding from uterine fibroids. She takes diphenhydramine at night for sleep.
+
+    On physical examination, she has pale conjunctivae. Neurologic examination, including sensation and reflexes, is normal. Pedal pulses are normal.
+  labs:
+    - [Hemoglobin, 11.2 g/dL]
+    - [Mean corpuscular volume, 78 fL]
+    - [Ferritin, 18 ng/mL]
+    - [Transferrin saturation, 9%]
+    - [Creatinine, 0.8 mg/dL]
+    - [Thyroid-stimulating hormone, 1.9 µU/mL]
+  lead: In addition to stopping diphenhydramine, which of the following is the most appropriate treatment?
+  choices:
+    A: Clonazepam
+    B: Iron repletion
+    C: Pramipexole
+    D: Quinine
+    E: Ropinirole
+  answer: B
+  explain: |
+    **Restless legs syndrome (RLS)**: an **urge to move** the legs, often with uncomfortable sensations, that begins or worsens with **rest**, is relieved by **movement**, and occurs in the **evening or night** (URGE). **Periodic limb movements of sleep** often accompany it.
+
+    **Brain iron deficiency** is central to RLS pathophysiology (dopaminergic dysfunction). Secondary causes and aggravators: **iron deficiency**, **CKD**, pregnancy, neuropathy, and drugs — **sedating antihistamines (diphenhydramine)**, antidopaminergic antiemetics and antipsychotics, many antidepressants (SSRIs, SNRIs, mirtazapine).
+
+    The **2024 AASM guideline**:
+    - Check **ferritin and transferrin saturation** in everyone; give **iron if ferritin ≤75 ng/mL or TSAT <20%** — **IV ferric carboxymaltose** (strong recommendation) or oral iron (conditional). She is clearly iron deficient (and needs evaluation and treatment of her fibroid bleeding).
+    - First-line drugs: **gabapentin, gabapentin enacarbil, pregabalin**
+    - **Dopamine agonists** (pramipexole, ropinirole, rotigotine): conditional recommendation **against** standard use because of **augmentation** (symptoms start earlier, become more intense and spread to the arms)
+  why:
+    A: Benzodiazepines may help sleep but do not treat RLS and carry fall and dependence risks.
+    C: Pramipexole causes augmentation over time and is no longer recommended for standard use; iron deficiency must be corrected first.
+    D: Quinine is for leg cramps (and is not recommended because of serious toxicity); it does not treat RLS.
+    E: Ropinirole carries the same augmentation risk as other dopamine agonists.
+  objective: |
+    In restless legs syndrome, check ferritin and transferrin saturation and give iron when ferritin ≤75 ng/mL or TSAT <20%; prefer gabapentinoids over dopamine agonists, and remove aggravating drugs.
+  refs:
+    - "Winkelman JW, et al. Treatment of restless legs syndrome and periodic limb movement disorder: an AASM clinical practice guideline. J Clin Sleep Med 2025;21:137."
+
+- id: NR-042
+  topic: Amyotrophic lateral sclerosis
+  task: Diagnosis/Testing
+  chapters: [neuro/neuromuscular]
+  stem: |
+    A 61-year-old man is evaluated for 8 months of progressive weakness. It began with difficulty turning keys with his right hand and now affects both hands and his left leg. He has muscle cramps and twitching and has lost 6 kg (13.2 lb). Recently he has had some slurring of speech. He has no numbness, bladder symptoms or double vision.
+
+    On physical examination, there is atrophy of the first dorsal interosseous and thenar muscles bilaterally with fasciculations of the arms, thighs and tongue. Strength is reduced in the hands and left ankle. Reflexes are brisk in all four limbs, with a positive Hoffmann sign and an extensor plantar response on the left. Sensation is normal. Eye movements are normal.
+
+    MRI of the brain and cervical spine shows no compression or other lesions.
+  labs:
+    - [Creatine kinase, 410 U/L]
+    - [Vitamin B12, TSH, calcium and serum protein electrophoresis, normal]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Amyotrophic lateral sclerosis
+    B: Cervical spondylotic myelopathy
+    C: Inclusion body myositis
+    D: Multifocal motor neuropathy with conduction block
+    E: Myasthenia gravis
+  answer: A
+  explain: |
+    **Amyotrophic lateral sclerosis (ALS)** is degeneration of both **upper motor neurons** (cortex) and **lower motor neurons** (brainstem and anterior horn). Key features:
+    - **UMN + LMN signs in the same regions**: **brisk reflexes, Hoffmann, Babinski** together with **atrophy, weakness and fasciculations** (including the tongue)
+    - **Asymmetric, progressive** onset (often a hand or foot), spreading to other regions; bulbar involvement (dysarthria, dysphagia)
+    - **No sensory loss**, **eye movements and sphincters spared**
+    - Mild CK elevation is common
+
+    Diagnosis is clinical, supported by **EMG/nerve conduction studies** (widespread active and chronic denervation) after excluding mimics: **cervical myelopathy** (imaging), multifocal motor neuropathy, B12 deficiency, thyroid disease, paraproteinemia. About 10% are familial (C9orf72, SOD1).
+
+    Treatment: **riluzole** (modest survival benefit), edaravone in some, **tofersen for SOD1-ALS**; **noninvasive ventilation** (improves survival and quality of life), early **gastrostomy** before vital capacity falls, multidisciplinary clinic and advance care planning. Median survival 3–5 years.
+  why:
+    B: Cervical myelopathy can cause UMN signs in the legs and LMN signs at the level of compression, but not tongue fasciculations or bulbar signs, and MRI shows no compression.
+    C: Inclusion body myositis causes finger flexor and quadriceps weakness without UMN signs or fasciculations.
+    D: Multifocal motor neuropathy causes asymmetric LMN weakness with conduction block but no UMN signs and no bulbar involvement.
+    E: Myasthenia gravis causes fatigable weakness with ptosis and diplopia, without atrophy, fasciculations or UMN signs.
+  objective: |
+    Recognize ALS by combined upper and lower motor neuron signs (including tongue fasciculations) with spared sensation, after excluding structural and metabolic mimics.
+  refs:
+    - "Feldman EL, et al. Amyotrophic lateral sclerosis. Lancet 2022;400:1363."
+    - "Shefner JM, et al. A proposal for new diagnostic criteria for ALS (Gold Coast criteria). Clin Neurophysiol 2020;131:1975."
+
+- id: NR-043
+  topic: Myasthenic crisis
+  task: Treatment/Care Decisions
+  chapters: [neuro/myasthenia]
+  stem: |
+    A 64-year-old woman with generalized acetylcholine receptor antibody–positive myasthenia gravis is admitted with 3 days of worsening ptosis, double vision, difficulty swallowing liquids and shortness of breath. Five days ago she started levofloxacin for pneumonia. Her usual medications are pyridostigmine and prednisone, 10 mg daily.
+
+    On physical examination, temperature is 37.8 °C (100.0 °F), blood pressure is 138/82 mm Hg, pulse rate is 104/min, and respiration rate is 26/min with shallow breaths. Oxygen saturation is 95% breathing ambient air. She has bilateral ptosis, weak neck flexion and a weak cough, and she cannot count to 15 in one breath. She has nasal speech and pools saliva.
+  labs:
+    - [Forced vital capacity, 14 mL/kg (25 mL/kg 2 days ago)]
+    - [Negative inspiratory force, −18 cm H₂O]
+    - [Arterial PCO₂, 44 mm Hg]
+  lead: In addition to stopping levofloxacin, which of the following is the most appropriate management?
+  choices:
+    A: Double the pyridostigmine dose
+    B: Edrophonium test
+    C: High-dose prednisone alone
+    D: Intubation in the ICU and plasma exchange
+    E: Observation on the ward with daily spirometry
+  answer: D
+  explain: |
+    **Myasthenic crisis** = weakness of respiratory or bulbar muscles severe enough to threaten the airway. Triggers: **infection**, surgery, pregnancy, glucocorticoid initiation, and drugs — **fluoroquinolones**, aminoglycosides, **macrolides**, magnesium, beta-blockers, **immune checkpoint inhibitors**.
+
+    **Measure, don't guess** — intubation criteria ("20/30/40"):
+    - **FVC <20 mL/kg** (or falling fast)
+    - **NIF weaker than −30 cm H₂O** (i.e., closer to zero)
+    - Max expiratory pressure <40 cm H₂O
+    - **Bulbar weakness with secretion pooling** (aspiration risk)
+
+    She meets them. Rising PCO₂ is a **late** sign; oxygen saturation stays normal until near arrest.
+
+    Treatment:
+    - **ICU, elective intubation** (or BiPAP in selected patients without bulbar failure or hypercapnia)
+    - **Plasma exchange or IVIG** — equally effective; PLEX works slightly faster
+    - Treat the infection with a safer antibiotic (for example a beta-lactam)
+    - **Hold pyridostigmine** while intubated (increases secretions)
+    - Start or increase **glucocorticoids** after PLEX/IVIG has begun, because high-dose steroids alone can cause early worsening
+  why:
+    A: More pyridostigmine increases secretions and can cause cholinergic weakness; it does not treat crisis.
+    B: The diagnosis is known; edrophonium testing has no role and can cause bradycardia and bronchospasm.
+    C: High-dose steroids alone can transiently worsen weakness and act too slowly.
+    E: Her FVC and NIF already meet intubation criteria; delaying airway control risks respiratory arrest.
+  objective: |
+    Manage myasthenic crisis with ICU care, airway protection guided by FVC and NIF, plasma exchange or IVIG, and removal of triggers such as fluoroquinolones.
+  refs:
+    - "Narayanaswami P, et al. International consensus guidance for management of myasthenia gravis: 2020 update. Neurology 2021;96:114."
+
+- id: NR-044
+  topic: ICU-acquired weakness
+  task: Diagnosis/Testing
+  chapters: [neuro/neuromuscular]
+  stem: |
+    A 62-year-old woman cannot be weaned from mechanical ventilation 16 days after admission for septic shock from pneumonia with ARDS. She received norepinephrine for 6 days, cisatracurium for 48 hours, and hydrocortisone. Sedation was stopped 3 days ago, and she is awake, follows commands and communicates by nodding.
+
+    On physical examination, she has symmetric, flaccid weakness of all four limbs, more proximal than distal, with MRC sum score 34/60. She grimaces normally to pain, and facial strength and eye movements are normal. Reflexes are reduced. Sensation to pinprick is reduced in the feet.
+  labs:
+    - [Glucose, 168 mg/dL (range 140–260 during the stay)]
+    - [Creatine kinase, 210 U/L]
+    - [MRI of the brain and cervical spine, normal]
+  lead: Which of the following is the most likely cause of her weakness?
+  choices:
+    A: Acute disseminated encephalomyelitis
+    B: Critical illness polyneuropathy and myopathy
+    C: Guillain-Barré syndrome
+    D: Myasthenia gravis
+    E: Prolonged effect of neuromuscular blockade alone
+  answer: B
+  explain: |
+    **ICU-acquired weakness (ICUAW)** affects 25%–50% of patients ventilated for a week or more. It is a clinical diagnosis: **symmetric, flaccid limb weakness** (proximal ≥ distal) with **spared facial muscles**, arising **after** the onset of critical illness, with no other cause (MRC sum score <48). It reflects:
+    - **Critical illness polyneuropathy** — axonal sensorimotor neuropathy (distal sensory loss, reduced reflexes)
+    - **Critical illness myopathy** — loss of myosin, muscle membrane inexcitability (CK often normal or mildly raised)
+    - Often both (**polyneuromyopathy**)
+
+    Risk factors: **sepsis and multiorgan failure**, duration of ventilation, **hyperglycemia**, **glucocorticoids**, **neuromuscular blockers**, immobility. ICUAW prolongs weaning and hospitalization and has long-term effects on function.
+
+    EMG and nerve conduction studies confirm and separate the components if needed. Management: **early mobilization and physical therapy**, avoid hyperglycemia, minimize sedation, steroids and paralytics. Recovery takes weeks to months; myopathy recovers faster than neuropathy.
+  why:
+    A: ADEM is an inflammatory demyelinating brain and spinal cord illness with encephalopathy and MRI lesions; her MRI is normal and she is alert.
+    C: GBS rarely begins during an ICU stay, often involves the face and causes demyelinating nerve conduction findings; her weakness followed sepsis and critical illness.
+    D: Myasthenia gravis causes fatigable ocular, bulbar and proximal weakness; her face and eyes are spared.
+    E: Cisatracurium is cleared within hours (Hofmann elimination); weakness lasting weeks after the infusion stopped is not a residual drug effect.
+  objective: |
+    Recognize ICU-acquired weakness (critical illness polyneuropathy and myopathy) — symmetric flaccid limb weakness with spared face after sepsis and prolonged ventilation — and treat with early mobilization and glucose control.
+  refs:
+    - "Vanhorebeek I, et al. ICU-acquired weakness. Intensive Care Med 2020;46:637."
+    - "Fan E, et al. An official American Thoracic Society clinical practice guideline: the diagnosis of intensive care unit–acquired weakness in adults. Am J Respir Crit Care Med 2014;190:1437."
+
+- id: NR-045
+  topic: Painful diabetic neuropathy
+  task: Treatment/Care Decisions
+  chapters: [neuro/neuromuscular, endo/diabetes-outpatient]
+  stem: |
+    A 66-year-old man with type 2 diabetes mellitus for 15 years is evaluated for 6 months of burning pain and tingling in both feet, worse at night, which keeps him from sleeping. He also reports low mood and loss of interest in activities since his wife died a year ago. He has no history of seizures, glaucoma or urinary retention. Medications are metformin, semaglutide, lisinopril and atorvastatin.
+
+    On physical examination, blood pressure is 132/78 mm Hg. There is reduced pinprick and vibration sensation in a stocking distribution to the mid-shin, absent ankle reflexes and normal strength. There are no foot ulcers. His PHQ-9 score is 13.
+  labs:
+    - [Hemoglobin A₁c, 7.2%]
+    - [Estimated glomerular filtration rate, 72 mL/min/1.73 m²]
+    - [Vitamin B12, 310 pg/mL with elevated methylmalonic acid]
+  lead: In addition to repleting vitamin B12, which of the following is the most appropriate treatment for his neuropathic pain?
+  choices:
+    A: Duloxetine
+    B: High-dose vitamin B6
+    C: Ibuprofen
+    D: Oxycodone
+    E: Tramadol
+  answer: A
+  explain: |
+    **Painful diabetic peripheral neuropathy** is a distal symmetric (length-dependent) sensory polyneuropathy. First-line drugs (2022 AAN guideline, ADA 2026 Standards) have similar efficacy:
+
+    | First-line drug class | Examples | Best for |
+    |---|---|---|
+    | **SNRIs** | **Duloxetine**, venlafaxine | **Coexisting depression** or anxiety |
+    | Gabapentinoids | Pregabalin, gabapentin | Sleep disturbance; adjust for kidney function |
+    | TCAs | Amitriptyline, nortriptyline | Young patients without cardiac disease (anticholinergic effects in older adults) |
+    | Sodium channel blockers | Carbamazepine, lamotrigine | Second line |
+
+    Topical capsaicin or lidocaine helps localized pain. **Duloxetine** is a good choice here because he has **depression** as well (PHQ-9 13). **Avoid opioids** (including tramadol and tapentadol) — no long-term benefit and serious harms.
+
+    His **metformin** use explains low-normal B12 with high MMA — replete B12, which can contribute to neuropathy. Foot care and glucose control prevent progression.
+  why:
+    B: High-dose B6 (pyridoxine) can itself cause a sensory neuropathy and does not treat diabetic neuropathic pain.
+    C: NSAIDs are ineffective for neuropathic pain and harm the kidneys in diabetes.
+    D: Opioids are not recommended for neuropathic pain because of poor long-term efficacy and risks of dependence and overdose.
+    E: Tramadol has opioid risks, lowers the seizure threshold, and interacts with SNRIs (serotonin syndrome).
+  objective: |
+    Treat painful diabetic neuropathy with an SNRI (duloxetine), a gabapentinoid or a TCA, chosen by comorbidity; avoid opioids, and check B12 in patients taking metformin.
+  refs:
+    - "Price R, et al. Oral and topical treatment of painful diabetic polyneuropathy: practice guideline update summary (AAN). Neurology 2022;98:31."
+    - "American Diabetes Association. Standards of Care in Diabetes — 2026. Section 12: Retinopathy, neuropathy, and foot care. Diabetes Care 2026;49(Suppl 1)."
+
+- id: NR-046
+  topic: Chronic inflammatory demyelinating polyneuropathy
+  task: Diagnosis/Testing
+  chapters: [neuro/neuromuscular, neuro/gbs]
+  stem: |
+    A 54-year-old man is evaluated for 4 months of progressive weakness in his legs and hands and numbness of his feet and fingers. He now uses a cane and has trouble with buttons. He had no preceding infection. He has no diabetes, alcohol use or family history of neuropathy.
+
+    On physical examination, there is symmetric weakness of hip flexors, ankle dorsiflexors and hand muscles (4/5 proximally and distally), absent reflexes throughout, and reduced vibration and position sense in the hands and feet. Cranial nerves are normal.
+
+    Nerve conduction studies show slowed conduction velocities, prolonged distal latencies, temporal dispersion and conduction block in multiple nerves.
+  labs:
+    - [Cerebrospinal fluid, 3 cells/µL; protein 132 mg/dL]
+    - [Hemoglobin A₁c, 5.4%]
+    - [Serum protein electrophoresis with immunofixation, no monoclonal protein]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Amyotrophic lateral sclerosis
+    B: Chronic inflammatory demyelinating polyneuropathy
+    C: Guillain-Barré syndrome
+    D: Hereditary motor and sensory neuropathy (Charcot-Marie-Tooth)
+    E: Vitamin B12 deficiency neuropathy
+  answer: B
+  explain: |
+    **Chronic inflammatory demyelinating polyneuropathy (CIDP)** looks like a slow version of Guillain-Barré syndrome:
+    - **Symmetric proximal and distal weakness** plus sensory loss, **areflexia**
+    - **Progression over more than 8 weeks** (GBS reaches its nadir within 4 weeks)
+    - **Demyelinating** nerve conduction findings (slowing, prolonged latencies, **conduction block**, temporal dispersion)
+    - **Albuminocytologic dissociation** in CSF (high protein, normal cells)
+
+    Screen for mimics and associations: **monoclonal gammopathy** (IgM anti-MAG neuropathy, **POEMS**), diabetes, HIV, hepatitis, lymphoma; nodal/paranodal antibodies in atypical cases.
+
+    Treatment (EAN/PNS 2021): **IVIG**, **glucocorticoids** or **plasma exchange** as first line; subcutaneous immune globulin or efgartigimod for maintenance. Unlike GBS, **CIDP responds to steroids**.
+
+    About 5% of patients first diagnosed with GBS turn out to have **acute-onset CIDP** — suspect it if there are 3 or more treatment-related fluctuations or deterioration after 8 weeks.
+  why:
+    A: ALS causes pure motor deficits with upper motor neuron signs, without sensory loss or demyelinating conduction.
+    C: GBS reaches maximum weakness within 4 weeks, usually after an infection.
+    D: Charcot-Marie-Tooth disease progresses over years, with a family history, foot deformities (pes cavus) and uniform slowing without conduction block.
+    E: B12 deficiency causes an axonal sensory-predominant neuropathy, often with dorsal column signs, not demyelinating conduction block.
+  objective: |
+    Diagnose CIDP when a symmetric demyelinating sensorimotor polyneuropathy with areflexia and high CSF protein progresses for more than 8 weeks; treat with IVIG, glucocorticoids or plasma exchange.
+  refs:
+    - "Van den Bergh PYK, et al. European Academy of Neurology/Peripheral Nerve Society guideline on diagnosis and treatment of CIDP: second revision. J Peripher Nerv Syst 2021;26:242."
+
+- id: NR-047
+  topic: Multiple sclerosis relapse
+  task: Treatment/Care Decisions
+  chapters: [neuro/ms-relapse]
+  stem: |
+    A 34-year-old woman with relapsing-remitting multiple sclerosis diagnosed 3 years ago comes to the emergency department because of 5 days of progressive weakness and numbness of her right leg, and now she cannot walk without assistance. She has had no fever, dysuria or cough. She takes ocrelizumab, last infused 4 months ago.
+
+    On physical examination, temperature is 36.8 °C (98.2 °F). There is right leg weakness (3/5 hip flexion), hyperreflexia and a right extensor plantar response, with reduced vibration sense in the right foot.
+
+    MRI shows a new gadolinium-enhancing lesion in the thoracic spinal cord.
+  labs:
+    - [Leukocyte count, 7,400/µL]
+    - [Urinalysis, negative]
+    - [Chest radiograph, normal]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Empiric antibiotics for a presumed urinary infection
+    B: Intravenous immune globulin
+    C: Intravenous methylprednisolone, 1 g daily for 3 to 5 days
+    D: Oral prednisone, 1 mg/kg daily for 2 weeks
+    E: Plasma exchange as first-line therapy
+  answer: C
+  explain: |
+    She has a **true MS relapse**: new neurologic symptoms lasting **>24 hours**, without fever or infection, with a **new enhancing lesion** that explains them. A **pseudorelapse** (worsening of old symptoms from heat, fever or infection such as UTI) has been excluded by the normal temperature, urinalysis and chest radiograph.
+
+    **Disabling relapses** are treated with **high-dose glucocorticoids**: **IV methylprednisolone 1 g daily for 3–5 days** (or the bioequivalent **high-dose oral** methylprednisolone/prednisone, 1,250 mg prednisone daily). Steroids **speed recovery** but do not change long-term disability.
+
+    If the response is poor, **plasma exchange** is the second-line treatment for severe attacks (especially with suspected NMOSD or MOGAD). Relapse on ocrelizumab should also prompt review of disease-modifying therapy.
+  why:
+    A: There is no evidence of infection; empiric antibiotics would delay appropriate treatment.
+    B: IVIG has not proven effective for acute MS relapses.
+    D: Moderate-dose oral prednisone is not a standard relapse regimen; in the Optic Neuritis Treatment Trial, low-dose oral prednisone alone increased recurrence.
+    E: Plasma exchange is reserved for severe relapses that do not respond to glucocorticoids.
+  objective: |
+    Treat disabling MS relapses with high-dose glucocorticoids (IV methylprednisolone 1 g daily for 3–5 days or high-dose oral equivalent) after excluding pseudorelapse; use plasma exchange for steroid-refractory attacks.
+  refs:
+    - "Smets I, et al. Corticosteroids in the management of acute multiple sclerosis exacerbations. Acta Neurol Belg 2017;117:623."
+    - "Le Page E, et al. Oral versus intravenous high-dose methylprednisolone for treatment of relapses in patients with multiple sclerosis (COPOUSEP). Lancet 2015;386:974."
+
+- id: NR-048
+  topic: Neuromyelitis optica spectrum disorder
+  task: Diagnosis/Testing
+  chapters: [neuro/ms-relapse]
+  stem: |
+    A 39-year-old woman is admitted with 1 week of progressive weakness and numbness of both legs and urinary retention. Two months ago she had 10 days of intractable hiccups and vomiting that resolved without a diagnosis. One year ago she had painful vision loss in the left eye, which recovered only partially despite glucocorticoids. She has systemic lupus erythematosus.
+
+    On physical examination, left visual acuity is 20/200 with a relative afferent pupillary defect. There is paraparesis (2/5), a T6 sensory level and bilateral extensor plantar responses.
+
+    MRI of the spine shows a longitudinally extensive T2 lesion from T2 to T9 involving the central cord. MRI of the brain shows a lesion in the area postrema of the dorsal medulla and no periventricular ovoid lesions.
+  lead: Which of the following tests is most likely to establish the diagnosis?
+  choices:
+    A: Cerebrospinal fluid oligoclonal bands
+    B: Myelin oligodendrocyte glycoprotein (MOG) antibodies only
+    C: Serum aquaporin-4 IgG antibodies
+    D: Serum anti-double-stranded DNA antibodies
+    E: Visual evoked potentials
+  answer: C
+  explain: |
+    **Neuromyelitis optica spectrum disorder (NMOSD)** is an antibody-mediated **astrocytopathy** caused by **aquaporin-4 IgG** (AQP4-IgG, sensitivity ~75%, specificity >99%). Core syndromes:
+    - **Severe optic neuritis** (often bilateral or with poor recovery)
+    - **Longitudinally extensive transverse myelitis** (≥3 vertebral segments, central cord)
+    - **Area postrema syndrome** — intractable **hiccups, nausea and vomiting**
+    - Brainstem, diencephalic (narcolepsy, SIADH) or cerebral syndromes
+
+    It is more common in **women**, people of Asian and African ancestry, and with **other autoimmune diseases** (SLE, Sjögren). Oligoclonal bands are usually **absent**.
+
+    Distinguishing from MS matters: some **MS therapies (interferon-β, natalizumab, fingolimod) worsen NMOSD**. Treat attacks with **high-dose steroids plus early plasma exchange**; prevent relapses with **eculizumab/ravulizumab, inebilizumab, satralizumab**, or rituximab.
+  why:
+    A: Oligoclonal bands support MS and are usually absent in NMOSD.
+    B: MOG antibody disease can cause optic neuritis and myelitis, but area postrema syndrome with longitudinally extensive myelitis is classic for AQP4-positive NMOSD, so AQP4-IgG is tested first (MOG if AQP4 is negative).
+    D: Anti-dsDNA supports lupus activity but does not diagnose the cause of her demyelinating syndromes.
+    E: Visual evoked potentials document optic nerve dysfunction but do not establish the cause.
+  objective: |
+    Suspect NMOSD with severe optic neuritis, longitudinally extensive transverse myelitis or area postrema syndrome (intractable hiccups and vomiting); confirm with serum aquaporin-4 IgG.
+  refs:
+    - "Wingerchuk DM, et al. International consensus diagnostic criteria for neuromyelitis optica spectrum disorders. Neurology 2015;85:177."
+    - "Jarius S, et al. Neuromyelitis optica. Nat Rev Dis Primers 2020;6:85."
+
+- id: NR-049
+  topic: Transient global amnesia
+  task: Diagnosis/Testing
+  chapters: [neuro/ams-coma, neuro/dementia]
+  stem: |
+    A 61-year-old woman is brought to the emergency department by her husband because, starting 3 hours ago after a vigorous swim in cold water, she has been repeatedly asking, "What are we doing here? What day is it?" She does not remember the drive to the hospital or the past several hours. She knows who she is and recognizes her husband. She has no headache, weakness, speech difficulty or visual symptoms, and there was no seizure activity or head injury. She has migraine.
+
+    On physical examination, blood pressure is 146/84 mm Hg and pulse rate is 78/min and regular. She is alert, attentive and repeats questions. She can perform complex tasks, such as giving detailed directions to her home. She cannot recall 3 words after 5 minutes. Neurologic examination is otherwise normal.
+  labs:
+    - [Glucose, 102 mg/dL]
+    - [Urine toxicology screen, negative]
+    - [Electrocardiogram, sinus rhythm]
+    - [Noncontrast CT of the head, normal]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Complex partial (focal impaired-awareness) seizure
+    B: Dissociative amnesia
+    C: Posterior cerebral artery stroke
+    D: Transient global amnesia
+    E: Wernicke encephalopathy
+  answer: D
+  explain: |
+    **Transient global amnesia (TGA)**: abrupt onset of **anterograde amnesia** (cannot form new memories) with some **retrograde** loss, lasting **hours (resolves within 24 hours)**, with **repetitive questioning**. Key criteria (Hodges and Warlow):
+    - Witnessed attack
+    - **Preserved personal identity** and awareness; **no other neurologic deficits**
+    - **No epileptic features**, no recent head injury
+    - Resolves within 24 hours
+
+    It typically affects people aged **50–70** and is often triggered by **physical exertion, cold-water immersion, Valsalva, emotional stress or sexual intercourse**; migraine is a risk factor. Small **hippocampal (CA1) DWI lesions** may appear on MRI 24–72 hours later.
+
+    Prognosis is excellent: **recurrence is uncommon (~5%–10% per year)** and TGA does **not** increase stroke or dementia risk. No treatment is needed beyond reassurance.
+  why:
+    A: Focal seizures are brief (minutes), may recur in clusters, and cause impaired awareness or automatisms; she remains alert and can perform complex tasks.
+    B: Dissociative amnesia often involves loss of personal identity or autobiographical memory after psychological trauma, not inability to form new memories with preserved identity.
+    C: PCA stroke can cause amnesia but usually with a visual field defect or other focal signs.
+    E: Wernicke encephalopathy causes confusion, ataxia and ophthalmoplegia in malnourished or alcohol-using patients.
+  objective: |
+    Recognize transient global amnesia — sudden anterograde amnesia with repetitive questioning, preserved identity and no other deficits, resolving within 24 hours, often after exertion or cold-water exposure — and reassure about its benign prognosis.
+  refs:
+    - "Hodges JR, Warlow CP. Syndromes of transient amnesia: towards a classification. J Neurol Neurosurg Psychiatry 1990;53:834."
+    - "Arena JE, Rabinstein AA. Transient global amnesia. Mayo Clin Proc 2015;90:264."
+
+- id: NR-050
+  topic: Acute vestibular syndrome — central cause
+  task: Diagnosis/Testing
+  chapters: [neuro/dizziness, neuro/stroke-syndromes]
+  stem: |
+    A 68-year-old man comes to the emergency department because of continuous vertigo, nausea and vomiting that began suddenly 6 hours ago. He cannot walk without falling. He has no hearing loss, tinnitus, headache, double vision or limb weakness. He has hypertension, type 2 diabetes mellitus and atrial fibrillation; he stopped apixaban 2 weeks ago because of bruising.
+
+    On physical examination, blood pressure is 168/92 mm Hg and pulse rate is 88/min and irregular. He has left-beating nystagmus on left gaze that becomes right-beating on right gaze. The head impulse test is normal in both directions. Alternate cover testing shows a vertical skew deviation. He cannot stand without support. Limb coordination and strength are normal. Noncontrast CT of the head is normal.
+  lead: Which of the following is the most appropriate next step?
+  choices:
+    A: Discharge with meclizine and follow-up in 1 week
+    B: Dix-Hallpike maneuver and Epley maneuver
+    C: MRI of the brain with diffusion-weighted imaging
+    D: Oral prednisone for vestibular neuritis
+    E: Repeat CT of the head in 24 hours
+  answer: C
+  explain: |
+    He has an **acute vestibular syndrome**: acute, continuous vertigo with nausea, nystagmus and gait instability lasting days. The two main causes are **vestibular neuritis** (benign) and **posterior circulation stroke** (dangerous).
+
+    The **HINTS** examination — performed by trained examiners in patients with ongoing nystagmus — is more sensitive than early MRI for stroke:
+
+    | HINTS component | Peripheral (neuritis) | **Central (stroke) — "INFARCT"** |
+    |---|---|---|
+    | **H**ead **I**mpulse | **Abnormal** (corrective saccade) | **Normal** — worrying! |
+    | **N**ystagmus | Unidirectional, horizontal | **Direction-changing** or vertical |
+    | **T**est of **S**kew | Absent | **Present** |
+
+    He has **all three central signs** (normal head impulse, direction-changing nystagmus, skew), plus **severe truncal ataxia** and vascular risk factors with AF off anticoagulation. This is a **posterior circulation stroke until proven otherwise**. **Noncontrast CT is insensitive** in the posterior fossa. Obtain **MRI with DWI** (and vascular imaging); note that very early MRI can miss small brainstem strokes — repeat if suspicion remains.
+  why:
+    A: Discharging a patient with central HINTS signs risks a missed cerebellar or brainstem stroke, which can swell and compress the brainstem.
+    B: Dix-Hallpike testing is for brief positional vertigo, not continuous vertigo with spontaneous nystagmus.
+    D: Steroids are sometimes used for vestibular neuritis, but his findings point to a central cause.
+    E: Repeat CT remains insensitive for posterior fossa ischemia and delays diagnosis.
+  mnemonic: |
+    HINTS to **INFARCT**: **I**mpulse **N**ormal, **F**ast-phase **A**lternating, **R**efixation on **C**over **T**est.
+  objective: |
+    In acute vestibular syndrome, a normal head impulse test, direction-changing nystagmus or skew deviation (HINTS) indicates a central cause; obtain MRI with DWI rather than relying on CT.
+  refs:
+    - "Kattah JC, et al. HINTS to diagnose stroke in the acute vestibular syndrome. Stroke 2009;40:3504."
+    - "Edlow JA, et al. Guidelines for reasonable and appropriate care in the emergency department 3 (GRACE-3): acute dizziness and vertigo. Acad Emerg Med 2023;30:442."
+
+- id: NR-051
+  topic: Mild head injury in a patient taking an anticoagulant
+  task: Diagnosis/Testing
+  chapters: [neuro/subdural, neuro/ams-coma]
+  stem: |
+    A 79-year-old woman is brought to the emergency department 2 hours after she tripped on a rug and struck her forehead on a table. She did not lose consciousness and remembers the event. She has a mild headache. She takes apixaban for atrial fibrillation and amlodipine for hypertension.
+
+    On physical examination, blood pressure is 152/84 mm Hg and pulse rate is 76/min and irregular. Glasgow Coma Scale score is 15. There is a 3-cm forehead hematoma. She has no vomiting, amnesia or focal neurologic deficits. There are no signs of basilar skull fracture.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Discharge home without imaging because the Glasgow Coma Scale score is 15
+    B: MRI of the brain in 1 week
+    C: Noncontrast CT of the head
+    D: Skull radiographs
+    E: Stop apixaban for 1 week and discharge without imaging
+  answer: C
+  explain: |
+    Clinical decision rules (Canadian CT Head Rule, New Orleans criteria) safely limit CT use in **minor head injury** — but they **excluded patients taking anticoagulants**, and anticoagulated older adults have a substantially higher risk of **intracranial hemorrhage** (especially **subdural hematoma**) even with a GCS of 15.
+
+    **Noncontrast head CT** is recommended for any head injury in patients on **anticoagulants** (and generally for those ≥65 years with a significant mechanism). In addition, **age ≥65** is a high-risk criterion in the Canadian CT Head Rule.
+
+    If the CT is negative, most patients can be discharged with **clear return instructions** (delayed hemorrhage is rare — under 1%); routine repeat CT or observation for 24 hours is no longer universal but may be used for those at highest risk. If hemorrhage is found, **reverse the anticoagulant** (andexanet alfa or 4F-PCC for factor Xa inhibitors) and consult neurosurgery.
+  why:
+    A: A normal GCS does not exclude intracranial hemorrhage in an anticoagulated older adult.
+    B: Delayed MRI would miss an acute hemorrhage needing reversal.
+    D: Skull radiographs do not show intracranial bleeding and are obsolete for this purpose.
+    E: Stopping anticoagulation without imaging neither excludes hemorrhage nor treats it, and increases stroke risk.
+  objective: |
+    Obtain a noncontrast head CT after head injury in patients taking anticoagulants, regardless of a normal GCS; clinical decision rules do not apply to them.
+  refs:
+    - "Stiell IG, et al. The Canadian CT Head Rule for patients with minor head injury. Lancet 2001;357:1391."
+    - "Valente JH, et al. ACEP clinical policy: critical issues in the management of adult patients presenting to the emergency department with mild traumatic brain injury. Ann Emerg Med 2023;81:e63."
+
+- id: NR-052
+  topic: Cervical spondylotic myelopathy
+  task: Treatment/Care Decisions
+  chapters: [neuro/cauda-equina, neuro/neuromuscular]
+  stem: |
+    A 66-year-old man is evaluated for 1 year of progressive clumsiness of both hands (difficulty buttoning shirts and dropping objects), numbness of his fingers and unsteady walking. Over the past 2 months he has fallen twice and developed urinary urgency. He has neck stiffness but little neck pain. He has type 2 diabetes mellitus.
+
+    On physical examination, there is atrophy of the intrinsic hand muscles, positive Hoffmann signs bilaterally, brisk biceps, knee and ankle reflexes, sustained ankle clonus and bilateral extensor plantar responses. He walks with a wide-based spastic gait. Romberg sign is positive. Strength is 4/5 in the hand intrinsics and hip flexors.
+
+    MRI of the cervical spine shows multilevel disc-osteophyte complexes with severe canal stenosis at C4–C6, cord compression and intramedullary T2 hyperintensity at C5.
+  labs:
+    - [Vitamin B12 and copper, normal]
+    - [Hemoglobin A₁c, 7.1%]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Cervical collar and physical therapy for 6 months
+    B: Gabapentin for neuropathic symptoms
+    C: Repeat MRI in 1 year
+    D: Surgical decompression
+    E: Epidural glucocorticoid injection
+  answer: D
+  explain: |
+    **Degenerative cervical myelopathy** (cervical spondylotic myelopathy) is the most common cause of spinal cord dysfunction in older adults. Disc–osteophyte complexes, ligamentum flavum hypertrophy and listhesis narrow the canal and compress the cord.
+
+    Typical features: **"numb, clumsy hands"** (loss of dexterity, intrinsic atrophy — the myelopathy hand), **gait imbalance with spasticity**, **upper motor neuron signs** (Hoffmann, hyperreflexia, clonus, Babinski), sensory loss and, later, **bladder dysfunction**. It is often mistaken for diabetic neuropathy — but neuropathy causes **reduced**, not brisk, reflexes.
+
+    The AO Spine/WFNS guideline recommends **surgical decompression** for **moderate or severe** myelopathy and for **progressive** disease — conservative care does not stop progression and delay worsens outcome. He has moderate-to-severe, progressive myelopathy with T2 cord signal change and falls.
+
+    Mild, stable myelopathy can be offered a trial of supervised rehabilitation with close follow-up.
+  why:
+    A: Collars and physical therapy are an option only for mild, nonprogressive myelopathy; he has progressive disease with falls and bladder symptoms.
+    B: Gabapentin treats neuropathic pain but does not relieve cord compression.
+    C: Waiting 1 year with progressive deficits risks irreversible cord injury.
+    E: Epidural steroids may relieve radicular pain but do not treat myelopathy.
+  objective: |
+    Recognize degenerative cervical myelopathy (clumsy hands, spastic gait, upper motor neuron signs, cord compression on MRI) and refer moderate, severe or progressive disease for surgical decompression.
+  refs:
+    - "Fehlings MG, et al. A clinical practice guideline for the management of patients with degenerative cervical myelopathy. Global Spine J 2017;7(3 Suppl):70S."
+    - "Davies BM, et al. Degenerative cervical myelopathy. BMJ 2018;360:k186."

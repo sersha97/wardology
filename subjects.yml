@@ -96,7 +96,7 @@
     - {name: Movement, emoji: "🚶"}
     - {name: Toxic & withdrawal, emoji: "🍸"}
     - {name: Spine, emoji: "🦴"}
-  planned: [Delirium vs dementia work-up, Transient global amnesia, PRES, Cerebral venous thrombosis, ALS & motor neuron disease]
+  planned: [Transient global amnesia]
 
 - id: heme
   name: Hematology & Oncology

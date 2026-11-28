@@ -1,0 +1,554 @@
+# Neurology — batch 2b: seizures, cognitive disorders, movement disorders (ABIM CERT)
+- id: NR-027
+  topic: Status epilepticus — second-line therapy
+  task: Treatment/Care Decisions
+  chapters: [neuro/seizure]
+  stem: |
+    A 46-year-old man with epilepsy is brought to the emergency department because of continuous generalized tonic-clonic seizure activity that began 15 minutes ago. His wife says he ran out of lamotrigine 3 days ago. Paramedics gave midazolam, 10 mg intramuscularly, 10 minutes ago; in the emergency department he received lorazepam, 4 mg intravenously, 5 minutes ago. He continues to seize.
+
+    On physical examination, temperature is 37.9 °C (100.2 °F), blood pressure is 158/92 mm Hg, pulse rate is 128/min, and oxygen saturation is 94% on 15 L/min by nonrebreather mask. He has rhythmic jerking of all four limbs.
+  labs:
+    - [Glucose (fingerstick), 136 mg/dL]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Continuous propofol infusion without other antiseizure medication
+    B: Intravenous levetiracetam, 60 mg/kg
+    C: Oral lamotrigine through a nasogastric tube
+    D: Observation for spontaneous termination
+    E: Third dose of intravenous lorazepam
+  answer: B
+  explain: |
+    He has **convulsive status epilepticus** (≥5 minutes of continuous seizure, or recurrent seizures without recovery) that persists after **adequate benzodiazepine doses** — **benzodiazepine-refractory (established) status epilepticus**.
+
+    Time-based treatment (AES 2016, Neurocritical Care Society):
+
+    | Phase | Treatment |
+    |---|---|
+    | **0–5 min** | ABCs, glucose, IV access; thiamine if alcohol use or malnutrition |
+    | **5–20 min** | **Benzodiazepine**: lorazepam 0.1 mg/kg IV (max 4 mg/dose), midazolam 10 mg IM, or diazepam IV; may repeat once |
+    | **20–40 min** | **Second-line, one of**: **levetiracetam 60 mg/kg** (max 4,500 mg), **fosphenytoin 20 mg PE/kg** (max 1,500), or **valproate 40 mg/kg** (max 3,000) — equally effective in **ESETT** (~half stop) |
+    | **>40 min (refractory)** | Intubate, continuous **midazolam, propofol** or pentobarbital/ketamine with **continuous EEG** |
+
+    Restart his home **lamotrigine** once stable. Obtain EEG if he does not wake promptly — nonconvulsive status is common after convulsive status.
+  why:
+    A: Anesthetic infusions are third-line for refractory status after a second-line agent has failed, and they require intubation and EEG monitoring.
+    C: Oral lamotrigine requires slow titration and cannot stop ongoing status epilepticus.
+    D: Seizures lasting >5 minutes rarely stop on their own and cause neuronal injury; the longer they last, the harder they are to stop.
+    E: Additional benzodiazepine doses beyond two adequate doses add respiratory depression with little benefit; move to a second-line drug.
+  objective: |
+    In status epilepticus that continues after adequate benzodiazepines, give a second-line agent — levetiracetam, fosphenytoin or valproate at full loading doses.
+  refs:
+    - "Glauser T, et al. Evidence-based guideline: treatment of convulsive status epilepticus in children and adults (American Epilepsy Society). Epilepsy Curr 2016;16:48."
+    - "Kapur J, et al. Randomized trial of three anticonvulsant medications for status epilepticus (ESETT). N Engl J Med 2019;381:2103."
+
+- id: NR-028
+  topic: Antiseizure medication before pregnancy
+  task: Treatment/Care Decisions
+  chapters: [neuro/seizure, womens/pregnancy-medicine]
+  stem: |
+    A 27-year-old woman with juvenile myoclonic epilepsy comes for preconception counseling. She wants to become pregnant in the next 6–12 months. Her seizures have been fully controlled for 3 years on valproate, 1,000 mg daily. Before valproate she had morning myoclonic jerks and two generalized tonic-clonic seizures. She takes no other medications and uses condoms for contraception.
+
+    On physical examination, blood pressure is 112/70 mm Hg. General and neurologic examinations are normal.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Continue valproate and add folic acid
+    B: Stop all antiseizure medication before conception
+    C: Switch to carbamazepine
+    D: Switch to levetiracetam before conception
+    E: Switch to topiramate
+  answer: D
+  explain: |
+    **Valproate** is the most **teratogenic** antiseizure medication: **major congenital malformations** in about **10%** (neural tube defects, cardiac defects, cleft palate, hypospadias) and lower **IQ and autism** risk in exposed children. It should be **avoided in people who can become pregnant** whenever an alternative works.
+
+    For **generalized epilepsy** (like juvenile myoclonic epilepsy), the safest effective options are **levetiracetam** or **lamotrigine** — malformation rates of about 2%–3%, close to background. Switch **months before conception** to confirm seizure control on the new drug; obtain baseline drug levels (levels fall during pregnancy, especially lamotrigine — monitor monthly).
+
+    **Folic acid** (at least 0.4–1 mg daily; many give higher doses with ASMs) before and during pregnancy.
+
+    | Antiseizure medication in pregnancy | Malformation risk |
+    |---|---|
+    | **Valproate** | **~10%**, plus neurodevelopmental harm |
+    | Phenobarbital, topiramate | ~5%–6%; topiramate: oral clefts, low birth weight |
+    | Carbamazepine, phenytoin | ~4%–5% |
+    | **Lamotrigine, levetiracetam** | **~2%–3%** (lowest) |
+  why:
+    A: Folic acid does not adequately reduce valproate's high malformation and neurodevelopmental risks.
+    B: Stopping treatment risks generalized tonic-clonic seizures, which harm both mother and fetus (and increase SUDEP risk); juvenile myoclonic epilepsy usually requires lifelong therapy.
+    C: Carbamazepine can worsen myoclonic and absence seizures in generalized epilepsy and is more teratogenic than levetiracetam or lamotrigine.
+    E: Topiramate increases the risk of oral clefts and low birth weight.
+  objective: |
+    In people who may become pregnant, avoid valproate; switch to levetiracetam or lamotrigine before conception and give folic acid.
+  refs:
+    - "Pack AM, et al. Teratogenesis, perinatal, and neurodevelopmental outcomes after in utero exposure to antiseizure medication: practice guideline from the AAN, AES, and SMFM. Neurology 2024;102:e209279."
+    - "Tomson T, et al. Comparative risk of major congenital malformations with eight different antiepileptic drugs (EURAP). Lancet Neurol 2018;17:530."
+
+- id: NR-029
+  topic: Psychogenic nonepileptic seizures
+  task: Diagnosis/Testing
+  chapters: [neuro/seizure, psych/serious-mental-illness]
+  stem: |
+    A 29-year-old woman is evaluated for recurrent "seizures" occurring several times a week for 6 months despite levetiracetam and then lamotrigine at full doses. Episodes last 5–10 minutes, often begin during stressful conversations, and consist of side-to-side head movements, asynchronous thrashing of the limbs and pelvic thrusting with her eyes tightly closed. She remembers some of what was said during episodes. She has never been injured. She has a history of depression and posttraumatic stress disorder.
+
+    On physical examination, she is alert and oriented. Neurologic examination and MRI of the brain are normal. Two routine 30-minute EEGs between episodes were normal.
+  lead: Which of the following is the most appropriate next step in diagnosis?
+  choices:
+    A: Add a third antiseizure medication
+    B: Lumbar puncture
+    C: PET scan of the brain
+    D: Serum prolactin level drawn 6 hours after an episode
+    E: Video-EEG monitoring
+  answer: E
+  explain: |
+    Features favor **psychogenic nonepileptic seizures (PNES)**, a **functional neurologic disorder**:
+    - **Long duration** (>2 minutes), gradual onset, waxing and waning
+    - **Eyes closed** and resistance to eye opening (eyes are usually open in epileptic seizures)
+    - **Side-to-side head movement**, **asynchronous** limb movements, **pelvic thrusting**, crying
+    - **Preserved awareness** or memory during apparently generalized movements
+    - Triggered by emotion; **no response to antiseizure medications**
+    - Comorbid depression, PTSD, prior trauma
+
+    **Video-EEG monitoring** (capturing a typical event with a normal EEG during it) is the **gold standard** for diagnosis. About 10%–20% of patients have both epilepsy and PNES, so documentation matters.
+
+    Treatment: **explain the diagnosis clearly and nonjudgmentally**, taper unnecessary antiseizure drugs, and refer for **cognitive behavioral therapy** — the treatment with the best evidence.
+  why:
+    A: Adding antiseizure drugs exposes her to adverse effects without benefit if the events are not epileptic.
+    B: There is no clinical suspicion of infection or inflammation.
+    C: PET imaging is used in epilepsy surgery planning, not for distinguishing PNES.
+    D: Prolactin rises within 10–20 minutes after a generalized seizure and normalizes within hours; a level 6 hours later is uninformative.
+  objective: |
+    Suspect psychogenic nonepileptic seizures with long events, closed eyes, asynchronous movements and preserved awareness unresponsive to antiseizure drugs; confirm with video-EEG monitoring.
+  refs:
+    - "LaFrance WC Jr, et al. Minimum requirements for the diagnosis of psychogenic nonepileptic seizures: an ILAE Task Force report. Epilepsia 2013;54:2005."
+    - "Goldstein LH, et al. Cognitive behavioural therapy for adults with dissociative seizures (CODES). Lancet Psychiatry 2020;7:491."
+
+- id: NR-030
+  topic: Driving after a seizure
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [neuro/seizure, boards/ethics]
+  stem: |
+    A 34-year-old man is seen in follow-up 1 week after a first generalized tonic-clonic seizure that occurred while he was watching television. MRI of the brain was normal, and EEG showed left temporal epileptiform discharges. Levetiracetam was started. He works as a delivery driver and asks when he can drive again.
+
+    On physical examination, he is alert, and neurologic examination is normal.
+  lead: Which of the following is the most appropriate counseling?
+  choices:
+    A: He may drive commercially after 1 seizure-free month
+    B: He may drive now because he takes an antiseizure drug
+    C: He must never drive again after any seizure
+    D: No driving until seizure-free for his state's required interval
+    E: Driving restrictions apply only after a second seizure
+  answer: D
+  explain: |
+    Driving rules after a seizure are set by **each state**, and the physician's role is to **counsel the patient** about the risk and the law and **document** the counseling:
+    - Most states require a **seizure-free interval of 3–6 months** (range 3–12) for a **private license**
+    - **Commercial (interstate) driving** under federal rules requires much longer seizure-free intervals off or on medication — he should not drive professionally in the meantime
+    - A handful of states (California, Delaware, Nevada, New Jersey, Oregon, Pennsylvania) require **physicians to report** patients with seizures to the licensing agency
+
+    His EEG shows **epileptiform discharges**, which raise recurrence risk (to about 40%–60% at 2 years), justifying treatment — but treatment does not remove driving restrictions. Advise also against unsupervised swimming, working at heights or bathing alone until seizure-free.
+  why:
+    A: One month is shorter than almost any state's private-license requirement, and commercial driving rules are much stricter.
+    B: Starting medication does not eliminate the risk of recurrence in the first months.
+    C: Most people with epilepsy regain driving privileges once seizure-free for the required interval.
+    E: Driving restrictions apply after a first seizure as well.
+  objective: |
+    After a seizure, counsel patients not to drive until they meet their state's seizure-free interval (commonly 3–6 months for a private license), know local reporting rules, and document the advice.
+  refs:
+    - "Krumholz A, et al. Evidence-based guideline: management of an unprovoked first seizure in adults. Neurology 2015;84:1705."
+    - "Epilepsy Foundation. State driving laws database. Accessed 2026."
+
+- id: NR-031
+  topic: Mild cognitive impairment
+  task: Diagnosis/Testing
+  chapters: [neuro/dementia]
+  stem: |
+    A 71-year-old retired accountant comes with his wife because he has become more forgetful over the past 18 months. He misplaces his keys, repeats questions and recently forgot a dinner reservation. He still manages the household finances (his wife checks them and has found no errors), drives without problems, cooks and takes his medications correctly. He has no depressive symptoms, hallucinations or gait problems. He has hypertension treated with amlodipine.
+
+    On physical examination, blood pressure is 132/78 mm Hg. Neurologic examination is normal. His Montreal Cognitive Assessment score is 24/30, with errors in delayed recall.
+  labs:
+    - [Vitamin B12, 520 pg/mL]
+    - [Thyroid-stimulating hormone, 2.2 µU/mL]
+    - [Comprehensive metabolic panel, normal]
+    - [MRI of the brain, mild bilateral hippocampal atrophy and minimal white-matter changes]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Alzheimer disease dementia
+    B: Delirium
+    C: Major depressive disorder with cognitive symptoms
+    D: Mild cognitive impairment
+    E: Normal age-related cognitive change
+  answer: D
+  explain: |
+    **Mild cognitive impairment (MCI)** = (1) a concern about cognitive change from the patient, family or clinician, (2) **objective impairment** in one or more domains beyond what is expected for age (his delayed-recall errors and MoCA of 24), and (3) **preserved independence** in daily activities (he still manages finances, drives, cooks and takes his medications). **Dementia** requires decline severe enough to **interfere with independence**.
+
+    His **amnestic** pattern and **hippocampal atrophy** suggest MCI due to Alzheimer disease. About 10%–15% of people with MCI progress to dementia each year.
+
+    Next steps: discuss findings, treat vascular risk factors, exercise and social engagement, review medications, follow cognition every 6–12 months. If he wants disease-modifying therapy, **amyloid testing** (PET, CSF or plasma p-tau217) determines eligibility for **anti-amyloid antibodies**. Cholinesterase inhibitors have **not** been shown to delay progression from MCI.
+  why:
+    A: Dementia requires loss of independence in daily activities; he remains independent.
+    B: Delirium is acute and fluctuating, with impaired attention; his course is gradual over 18 months.
+    C: He has no depressive symptoms, and depression would not explain hippocampal atrophy and objective amnestic deficits.
+    E: Normal aging causes slower processing but not objective delayed-recall deficits with a lower cognitive score and neighbor-noticed change.
+  objective: |
+    Diagnose mild cognitive impairment when objective cognitive decline is present but daily-living independence is preserved; dementia requires functional impairment.
+  refs:
+    - "Petersen RC, et al. Practice guideline update summary: mild cognitive impairment. Neurology 2018;90:126."
+    - "Jack CR Jr, et al. Revised criteria for diagnosis and staging of Alzheimer's disease. Alzheimers Dement 2024;20:5143."
+
+- id: NR-032
+  topic: Dementia with Lewy bodies
+  task: Diagnosis/Testing
+  chapters: [neuro/dementia, neuro/parkinson-inpatient]
+  stem: |
+    A 76-year-old man is brought by his daughter because of 1 year of cognitive decline. On some days he is nearly normal, and on others he stares into space, is confused and falls asleep during the day. He describes seeing small children playing in the living room who are not there. For years his wife has said he punches and shouts while asleep, as if acting out dreams. Recently his walking has slowed.
+
+    On physical examination, blood pressure is 128/76 mm Hg supine and 102/64 mm Hg standing. He has masked facies, mild symmetric bradykinesia and rigidity, without rest tremor. His Montreal Cognitive Assessment score is 19/30, with prominent deficits in attention and visuospatial function; recall is relatively preserved.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Alzheimer disease
+    B: Creutzfeldt-Jakob disease
+    C: Dementia with Lewy bodies
+    D: Frontotemporal dementia
+    E: Vascular dementia
+  answer: C
+  explain: |
+    **Dementia with Lewy bodies (DLB)** — core clinical features (McKeith 2017):
+    - **Fluctuating** cognition and alertness
+    - **Recurrent well-formed visual hallucinations** (often people or animals)
+    - **REM sleep behavior disorder** (acting out dreams — often years before)
+    - **Parkinsonism** (usually symmetric, less tremor)
+
+    Supportive: **autonomic dysfunction** (orthostatic hypotension, constipation), severe **sensitivity to antipsychotics**, hypersomnia. Cognitive testing shows **attention, executive and visuospatial** deficits with relatively spared memory early. **Indicative biomarkers**: reduced dopamine transporter uptake (DaT scan), low uptake on MIBG cardiac scintigraphy, REM sleep without atonia on polysomnography.
+
+    The **"one-year rule"**: dementia **before or within 1 year** of parkinsonism = **DLB**; dementia years after established Parkinson disease = Parkinson disease dementia.
+
+    Management: **cholinesterase inhibitors** (rivastigmine, donepezil) work well for cognition and hallucinations. **Avoid typical antipsychotics** (haloperidol) — they can cause severe, sometimes fatal reactions; if needed, low-dose quetiapine, clozapine or pimavanserin.
+  why:
+    A: Alzheimer disease presents with early episodic memory loss, without prominent fluctuations, hallucinations or RBD.
+    B: CJD progresses over weeks to months with myoclonus and ataxia.
+    D: Frontotemporal dementia presents with personality and behavior change or language decline.
+    E: Vascular dementia is usually stepwise with focal signs and white-matter disease, without hallucinations and RBD.
+  objective: |
+    Recognize dementia with Lewy bodies (fluctuations, visual hallucinations, REM sleep behavior disorder, parkinsonism) and avoid typical antipsychotics.
+  refs:
+    - "McKeith IG, et al. Diagnosis and management of dementia with Lewy bodies: fourth consensus report of the DLB Consortium. Neurology 2017;89:88."
+
+- id: NR-033
+  topic: Normal pressure hydrocephalus
+  task: Diagnosis/Testing
+  chapters: [neuro/dementia, geri/falls]
+  stem: |
+    A 74-year-old man is evaluated for 9 months of worsening walking and two falls. His wife says his feet "stick to the floor." Over the past 4 months he has developed urinary urgency with occasional incontinence and has become slower in thinking and less engaged. He has hypertension.
+
+    On physical examination, blood pressure is 134/80 mm Hg. He walks with a wide-based, short-stepped, shuffling gait with difficulty initiating steps and turning; arm swing is preserved. There is no rest tremor or rigidity of the arms. Strength and sensation are normal. Montreal Cognitive Assessment score is 22/30, with slowed processing and executive dysfunction.
+
+    MRI of the brain shows enlarged lateral ventricles out of proportion to sulcal enlargement, a narrow high-convexity subarachnoid space and an Evans index of 0.36.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Carbidopa-levodopa trial
+    B: Donepezil
+    C: High-volume lumbar puncture
+    D: Oxybutynin for urinary symptoms
+    E: Repeat MRI in 1 year
+  answer: C
+  explain: |
+    **Normal pressure hydrocephalus (NPH)**: the classic triad, usually in this order —
+    1. **Gait** disturbance ("**wobbly**"): magnetic, wide-based, short steps, difficulty turning; arm swing preserved (lower-body parkinsonism)
+    2. **Urinary** urgency and incontinence ("**wet**")
+    3. **Cognitive** slowing, executive dysfunction ("**wacky**")
+
+    MRI: **ventriculomegaly** (Evans index >0.3) out of proportion to atrophy, with **crowded high-convexity sulci** (DESH pattern).
+
+    A **high-volume lumbar puncture ("tap test")** — removing **30–50 mL** of CSF — with **gait testing before and after** (timed walk) predicts who will benefit from a **ventriculoperitoneal shunt**. Opening pressure is normal or mildly elevated. Extended lumbar drainage over days is an alternative. Gait improves most after shunting; cognition improves less.
+  why:
+    A: NPH gait does not respond to levodopa; a levodopa trial would delay a treatable diagnosis.
+    B: Cholinesterase inhibitors do not treat NPH.
+    D: Anticholinergics worsen cognition in older adults and do not address the cause.
+    E: Delay allows gait and cognition to deteriorate; earlier shunting gives better results.
+  mnemonic: |
+    NPH: **"Wet, wobbly, wacky"** — gait first, cognition last.
+  objective: |
+    In suspected normal pressure hydrocephalus (gait disturbance, urinary incontinence, cognitive slowing, ventriculomegaly), perform a high-volume lumbar puncture with gait assessment to select patients for shunting.
+  refs:
+    - "Nakajima M, et al. Guidelines for management of idiopathic normal pressure hydrocephalus (third edition). Neurol Med Chir (Tokyo) 2021;61:63."
+    - "Williams MA, Malm J. Diagnosis and treatment of idiopathic normal pressure hydrocephalus. Continuum 2016;22:579."
+
+- id: NR-034
+  topic: Creutzfeldt-Jakob disease
+  task: Diagnosis/Testing
+  chapters: [neuro/dementia, neuro/encephalitis]
+  stem: |
+    A 63-year-old woman is evaluated for rapidly progressive memory loss, unsteady gait and personality change over 3 months. She was previously working full time. Her husband reports sudden jerks of her limbs, especially when she is startled by a noise. She has no fever, headache or weight loss.
+
+    On physical examination, she is alert but disoriented, with impaired attention. There is gait and limb ataxia and startle-sensitive myoclonus of the arms. Montreal Cognitive Assessment score is 12/30.
+
+    MRI of the brain shows restricted diffusion along the cortical ribbon of both cerebral hemispheres and in the caudate and putamen. EEG shows periodic sharp-wave complexes at about 1 per second.
+  labs:
+    - [Vitamin B12, TSH, ammonia, calcium and sodium, normal]
+    - [HIV and syphilis serology, negative]
+    - [Cerebrospinal fluid, 2 cells/µL; protein 42 mg/dL; glucose normal]
+    - [Serum and CSF autoimmune encephalitis panels, negative]
+  lead: Which of the following tests is most likely to confirm the diagnosis?
+  choices:
+    A: Brain biopsy as the first test
+    B: Cerebrospinal fluid 14-3-3 protein
+    C: Cerebrospinal fluid RT-QuIC assay
+    D: Repeat MRI in 3 months
+    E: Serum anti-NMDA receptor antibodies
+  answer: C
+  explain: |
+    **Sporadic Creutzfeldt-Jakob disease (CJD)**: a **rapidly progressive dementia** (weeks to months) with **myoclonus** (often startle-induced), ataxia, visual or extrapyramidal signs and **akinetic mutism** late. Death usually within a year.
+
+    Diagnostic tools:
+    - **MRI DWI**: **cortical ribboning** and **caudate/putamen** restricted diffusion — highly sensitive
+    - **EEG**: periodic sharp-wave complexes (later in the illness)
+    - **CSF RT-QuIC** (real-time quaking-induced conversion): amplifies misfolded prion protein — **specificity ~99%**, sensitivity ~90% — the most **specific** test short of tissue
+    - **CSF 14-3-3 and total tau**: markers of rapid neuronal injury; **not specific** (positive in stroke, encephalitis, seizures)
+
+    Always exclude treatable causes of rapidly progressive dementia (**autoimmune encephalitis, infections, metabolic, toxic, neoplastic**), as done here. Use prion infection-control precautions for neurosurgical instruments. There is no disease-modifying treatment.
+  why:
+    A: Brain biopsy is invasive, carries a risk of instrument contamination and is rarely needed now that RT-QuIC is available.
+    B: 14-3-3 indicates rapid neuronal destruction but has poor specificity.
+    D: Waiting delays diagnosis and counseling; the current findings already strongly suggest CJD.
+    E: Autoimmune encephalitis panels were negative, and anti-NMDA receptor encephalitis does not cause cortical ribboning with periodic sharp waves.
+  objective: |
+    Suspect Creutzfeldt-Jakob disease in rapidly progressive dementia with myoclonus and cortical ribboning on DWI; confirm with CSF RT-QuIC.
+  refs:
+    - "Hermann P, et al. Biomarkers and diagnostic guidelines for sporadic Creutzfeldt-Jakob disease. Lancet Neurol 2021;20:235."
+    - "Centers for Disease Control and Prevention. CDC diagnostic criteria for Creutzfeldt-Jakob disease, 2018."
+
+- id: NR-035
+  topic: Behavioral-variant frontotemporal dementia
+  task: Diagnosis/Testing
+  chapters: [neuro/dementia]
+  stem: |
+    A 57-year-old man is brought by his wife because of 2 years of personality change. He has made inappropriate sexual comments to strangers, shoplifted candy, and spent $20,000 on lottery tickets. He has lost interest in his grandchildren and shows no concern about his behavior. He eats large amounts of sweets and has gained 9 kg (19.8 lb). He insists on eating the same meal at exactly the same time each day. His father had "early senility" at age 60.
+
+    On physical examination, blood pressure is 128/80 mm Hg. He is unconcerned and jocular. Neurologic examination is normal. He remembers 3 of 3 words at 5 minutes and draws a clock correctly; he has difficulty with verbal fluency and set-shifting.
+
+    MRI shows bilateral frontal and anterior temporal lobe atrophy, worse on the right.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Alzheimer disease
+    B: Behavioral-variant frontotemporal dementia
+    C: Bipolar I disorder, current manic episode
+    D: Dementia with Lewy bodies
+    E: Normal pressure hydrocephalus
+  answer: B
+  explain: |
+    **Behavioral-variant frontotemporal dementia (bvFTD)** typically begins at **45–65 years** with **personality and behavior change**, and **relative sparing of memory** early. International (Rascovsky) criteria — at least 3 of:
+    1. **Disinhibition** (socially inappropriate behavior, impulsivity)
+    2. **Apathy** or inertia
+    3. Loss of **sympathy or empathy**
+    4. **Perseverative, stereotyped or compulsive** behavior
+    5. **Hyperorality** and dietary changes (sweet craving)
+    6. **Executive dysfunction** with spared memory and visuospatial function
+
+    **Frontal and anterior temporal atrophy** supports it. About a third of cases are familial (**C9orf72**, MAPT, GRN), sometimes with ALS.
+
+    Management: **SSRIs** or trazodone for disinhibition and compulsions; caregiver support; financial and legal protection. **Cholinesterase inhibitors do not help** and may worsen behavior.
+  why:
+    A: Alzheimer disease presents with early episodic memory loss; his memory is intact.
+    C: Mania is episodic with elevated mood, decreased need for sleep and pressured speech, not a progressive 2-year decline with focal atrophy.
+    D: DLB presents with fluctuations, visual hallucinations, REM sleep behavior disorder and parkinsonism.
+    E: NPH presents with gait disturbance, urinary incontinence and ventriculomegaly.
+  objective: |
+    Recognize behavioral-variant frontotemporal dementia — early disinhibition, apathy, loss of empathy, compulsions and hyperorality with spared memory and frontotemporal atrophy.
+  refs:
+    - "Rascovsky K, et al. Sensitivity of revised diagnostic criteria for the behavioural variant of frontotemporal dementia. Brain 2011;134:2456."
+    - "Bang J, et al. Frontotemporal dementia. Lancet 2015;386:1672."
+
+- id: NR-036
+  topic: Anti-amyloid therapy — ARIA risk
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [neuro/dementia]
+  stem: |
+    A 72-year-old woman with mild cognitive impairment due to Alzheimer disease, confirmed by amyloid PET, asks about starting lecanemab. She has hypertension and hyperlipidemia. She takes amlodipine and atorvastatin. She does not take anticoagulants or antiplatelet drugs.
+
+    On physical examination, blood pressure is 128/76 mm Hg. Neurologic examination is normal except for mild recall deficits.
+
+    MRI of the brain shows 2 cerebral microhemorrhages and mild white-matter changes, without superficial siderosis. APOE genotyping shows ε4/ε4.
+  lead: Which of the following findings most increases her risk of amyloid-related imaging abnormalities (ARIA) during treatment?
+  choices:
+    A: Amyloid-positive PET
+    B: APOE ε4 homozygosity
+    C: Hypertension controlled with amlodipine
+    D: Mild white-matter changes
+    E: Statin therapy
+  answer: B
+  explain: |
+    **Anti-amyloid monoclonal antibodies** (lecanemab, donanemab) remove amyloid plaque and modestly slow decline (~25%–35% over 18 months) in **early Alzheimer disease** (MCI or mild dementia with confirmed amyloid).
+
+    Their main risk is **ARIA**:
+    - **ARIA-E**: vasogenic edema/effusion (headache, confusion, seizures; often asymptomatic)
+    - **ARIA-H**: microhemorrhages, superficial siderosis, rarely macrohemorrhage
+
+    **APOE ε4 is the strongest risk factor**, in a dose-dependent way: in CLARITY-AD, ARIA-E occurred in about 5% of noncarriers, 11% of heterozygotes and **33% of homozygotes**, with most serious events in homozygotes. Appropriate use recommendations call for **APOE genotyping before treatment** and shared decision-making; many clinicians do not treat ε4 homozygotes. Other risk factors: **>4 baseline microhemorrhages** (exclusion), superficial siderosis, **anticoagulation** (avoid; fatal hemorrhages reported), CAA-related inflammation.
+
+    Surveillance MRIs are done before several of the early infusions.
+  why:
+    A: Amyloid positivity is required for treatment; it is not the factor that most raises ARIA risk.
+    C: Controlled hypertension is not a major ARIA risk factor.
+    D: Mild white-matter changes are common and are not a major ARIA predictor.
+    E: Statins do not increase ARIA risk.
+  objective: |
+    APOE ε4 homozygosity is the strongest risk factor for ARIA with anti-amyloid antibodies; genotype and counsel before treatment, and avoid concurrent anticoagulation.
+  refs:
+    - "Cummings J, et al. Lecanemab: appropriate use recommendations. J Prev Alzheimers Dis 2023;10:362."
+    - "van Dyck CH, et al. Lecanemab in early Alzheimer's disease (CLARITY AD). N Engl J Med 2023;388:9."
+
+- id: NR-037
+  topic: Nitrous oxide–induced B12 myelopathy
+  task: Pathophysiology/Basic Science
+  chapters: [neuro/neuromuscular, heme/anemia-transfusion]
+  stem: |
+    A 23-year-old man is evaluated for 6 weeks of tingling in his feet and hands, unsteady walking that is worse in the dark, and leg stiffness. He reports inhaling nitrous oxide from whipped-cream chargers ("whippets") at parties several times a week for a year. He eats a regular diet and takes no medications.
+
+    On physical examination, he has a positive Romberg sign, loss of vibration and joint-position sense in both feet, brisk knee reflexes, absent ankle reflexes and bilateral extensor plantar responses. Strength is mildly reduced in the hip flexors.
+
+    MRI of the cervical spine shows symmetric T2 hyperintensity of the posterior columns from C2 to C6 ("inverted V" sign).
+  labs:
+    - [Hemoglobin, 13.4 g/dL]
+    - [Mean corpuscular volume, 97 fL]
+    - [Vitamin B12, 310 pg/mL (reference >200)]
+    - [Methylmalonic acid, 1.8 µmol/L (reference <0.4)]
+    - [Homocysteine, 42 µmol/L (reference <15)]
+  lead: Which of the following best explains his neurologic findings?
+  choices:
+    A: Anterior horn cell degeneration from a toxin
+    B: Autoimmune destruction of gastric parietal cells
+    C: Dorsal column and corticospinal tract demyelination
+    D: Direct axonal toxicity to peripheral sensory nerves only
+    E: Spinal cord ischemia from vasospasm
+  answer: C
+  explain: |
+    **Nitrous oxide** irreversibly **oxidizes the cobalt atom of cobalamin (B12)**, inactivating it as a cofactor for:
+    - **Methionine synthase** (homocysteine → methionine; needed for myelin methylation) → **↑ homocysteine**
+    - **Methylmalonyl-CoA mutase** → **↑ methylmalonic acid**
+
+    The result is **functional B12 deficiency** even when the **serum B12 level is normal**. **MMA and homocysteine** are the sensitive tests.
+
+    The spinal cord lesion is **subacute combined degeneration**: demyelination of the **dorsal columns** (loss of vibration and position sense, sensory ataxia, Romberg sign) and the **lateral corticospinal tracts** (spasticity, hyperreflexia, Babinski), often with a **peripheral neuropathy** (absent ankle jerks). MRI shows the "inverted V" in the posterior columns.
+
+    Treatment: **stop nitrous oxide**, give **intramuscular B12** promptly (and methionine supplementation is sometimes added). Recovery depends on how quickly therapy starts. Anemia may be absent.
+  why:
+    A: Anterior horn cell disease (ALS, polio) causes weakness, atrophy and fasciculations without sensory loss.
+    B: Pernicious anemia causes B12 deficiency through intrinsic factor loss, but this patient's mechanism is chemical inactivation of B12 by nitrous oxide.
+    D: Pure sensory neuropathy would not cause upper motor neuron signs or posterior column MRI changes.
+    E: Spinal cord infarction is sudden and usually affects the anterior cord, sparing the dorsal columns.
+  objective: |
+    Nitrous oxide inactivates vitamin B12 and causes subacute combined degeneration (dorsal column and corticospinal tract demyelination); diagnose with elevated MMA and homocysteine even with a normal B12 level.
+  refs:
+    - "Garakani A, et al. Neurologic, psychiatric, and other medical manifestations of nitrous oxide abuse: a systematic review. Am J Addict 2016;25:358."
+    - "Stabler SP. Vitamin B12 deficiency. N Engl J Med 2013;368:149."
+
+- id: NR-038
+  topic: Parkinson disease — initial treatment
+  task: Treatment/Care Decisions
+  chapters: [neuro/parkinson-inpatient]
+  stem: |
+    A 73-year-old woman is evaluated for 1 year of slowness and a right-hand tremor at rest. She has trouble buttoning clothes, her handwriting has become small, and she has fallen once. The symptoms now interfere with cooking and dressing. She has hypertension and mild memory complaints. She takes lisinopril.
+
+    On physical examination, blood pressure is 134/80 mm Hg without orthostatic change. There is a 4-Hz pill-rolling rest tremor of the right hand, cogwheel rigidity and bradykinesia worse on the right, reduced arm swing on the right and a stooped posture. Eye movements are normal. Montreal Cognitive Assessment score is 26/30.
+  lead: Which of the following is the most appropriate initial treatment?
+  choices:
+    A: Amantadine
+    B: Carbidopa-levodopa
+    C: Pramipexole
+    D: Selegiline
+    E: Trihexyphenidyl
+  answer: B
+  explain: |
+    She has **Parkinson disease** (asymmetric rest tremor, bradykinesia, rigidity) with symptoms that now **impair daily function**, so treatment is indicated.
+
+    **Carbidopa-levodopa** is the most effective symptomatic therapy and the preferred initial drug for most patients, especially **older adults** and those with **any cognitive concern**. Starting levodopa early does **not** speed disease progression (LEAP trial); the risk of dyskinesia relates more to disease duration and dose.
+
+    | Option | Pros | Cons |
+    |---|---|---|
+    | **Levodopa** | Most effective; well tolerated | Motor fluctuations and dyskinesia over years |
+    | Dopamine agonists (pramipexole, ropinirole) | Less dyskinesia early | **Hallucinations, sleepiness, edema, impulse-control disorders** — avoid in older or cognitively impaired patients |
+    | MAO-B inhibitors (rasagiline, selegiline) | Mild benefit | Modest effect only |
+    | Anticholinergics (trihexyphenidyl) | Tremor in young patients | **Confusion, urinary retention — avoid in older adults** |
+    | Amantadine | Dyskinesia later | Confusion, livedo, edema |
+
+    Add **exercise and physical therapy** for gait and falls.
+  why:
+    A: Amantadine is mainly used to treat levodopa-induced dyskinesia; it is less effective as initial therapy and causes confusion in older adults.
+    C: Dopamine agonists cause hallucinations, daytime sleepiness and impulse-control disorders, more so in older patients.
+    D: MAO-B inhibitors provide only mild benefit and are inadequate for symptoms that already impair function.
+    E: Anticholinergics cause cognitive impairment and urinary retention in older adults.
+  objective: |
+    Start carbidopa-levodopa for Parkinson disease that impairs function, especially in older adults; avoid dopamine agonists and anticholinergics in older or cognitively vulnerable patients.
+  refs:
+    - "Pringsheim T, et al. Dopaminergic therapy for motor symptoms in early Parkinson disease: practice guideline summary. Neurology 2021;97:942."
+    - "Verschuur CVM, et al. Randomized delayed-start trial of levodopa in Parkinson's disease (LEAP). N Engl J Med 2019;380:315."
+
+- id: NR-039
+  topic: Parkinson disease psychosis
+  task: Treatment/Care Decisions
+  chapters: [neuro/parkinson-inpatient, psych/serious-mental-illness]
+  stem: |
+    A 78-year-old man with a 9-year history of Parkinson disease is evaluated because he has been seeing strangers in his house at night and believes his wife is stealing from him. He has become frightened and has called the police twice. Medications are carbidopa-levodopa, 4 times daily, and rasagiline. Pramipexole and amantadine were stopped 2 months ago, with only slight improvement. Urinalysis, chest radiograph and metabolic panel are normal.
+
+    On physical examination, blood pressure is 124/72 mm Hg. He has moderate rigidity and bradykinesia. Montreal Cognitive Assessment score is 22/30.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Haloperidol
+    B: Increase carbidopa-levodopa
+    C: Olanzapine
+    D: Pimavanserin
+    E: Risperidone
+  answer: D
+  explain: |
+    **Parkinson disease psychosis** (hallucinations, delusions) affects up to half of patients over time. Steps:
+    1. **Exclude delirium triggers**: infection, metabolic disturbance, new medications (done)
+    2. **Reduce or stop the most likely culprits** in order: anticholinergics → **amantadine** → MAO-B inhibitors → **dopamine agonists** → lastly lower levodopa (as motor function allows)
+    3. If symptoms persist and are distressing, use an antipsychotic that **does not block D2 receptors** strongly:
+       - **Pimavanserin** — a selective **5-HT2A inverse agonist**, FDA-approved for PD psychosis, no worsening of motor function
+       - **Quetiapine** (low dose; widely used) or **clozapine** (proven efficacy; needs neutrophil monitoring)
+    4. Cholinesterase inhibitors (rivastigmine) help if dementia coexists
+
+    All antipsychotics carry a boxed warning for increased mortality in older adults with dementia, so use the lowest effective dose.
+  why:
+    A: Haloperidol, a potent D2 blocker, severely worsens parkinsonism and can precipitate a neuroleptic malignant–like syndrome.
+    B: Increasing dopaminergic therapy would worsen hallucinations and delusions.
+    C: Olanzapine worsens motor symptoms in Parkinson disease and was ineffective for psychosis in trials.
+    E: Risperidone blocks D2 receptors and worsens parkinsonism.
+  objective: |
+    Treat Parkinson disease psychosis by removing deliriogenic and dopaminergic add-on drugs first, then use pimavanserin, low-dose quetiapine or clozapine; avoid D2-blocking antipsychotics.
+  refs:
+    - "Seppi K, et al. Update on treatments for nonmotor symptoms of Parkinson's disease: an evidence-based medicine review (MDS). Mov Disord 2019;34:180."
+    - "Cummings J, et al. Pimavanserin for patients with Parkinson's disease psychosis. Lancet 2014;383:533."
+
+- id: NR-040
+  topic: Drug-induced parkinsonism
+  task: Diagnosis/Testing
+  chapters: [neuro/parkinson-inpatient]
+  stem: |
+    A 69-year-old woman is evaluated for 2 months of slowness, shuffling gait and stiffness. She has diabetic gastroparesis, and 4 months ago metoclopramide, 10 mg four times daily, was started with improvement in her nausea. She has type 2 diabetes mellitus treated with insulin. She has no tremor at rest.
+
+    On physical examination, blood pressure is 128/74 mm Hg without orthostatic change. There is symmetric bradykinesia and rigidity of both arms, reduced arm swing bilaterally and a mild postural tremor. There are subtle involuntary movements of the lips and tongue. Cognition and eye movements are normal.
+  lead: Which of the following is the most likely cause of her symptoms?
+  choices:
+    A: Drug-induced parkinsonism
+    B: Essential tremor
+    C: Multiple system atrophy
+    D: Parkinson disease
+    E: Progressive supranuclear palsy
+  answer: A
+  explain: |
+    **Drug-induced parkinsonism** is the second most common cause of parkinsonism after Parkinson disease, and is often missed. Typical features:
+    - **Symmetric** bradykinesia and rigidity (Parkinson disease is usually asymmetric)
+    - Onset within **weeks to months** of starting a **dopamine-blocking drug**
+    - Rest tremor less prominent; sometimes coexisting **tardive dyskinesia** (orofacial movements, as here)
+
+    Culprits: **antiemetics** (**metoclopramide**, prochlorperazine, promethazine), **antipsychotics** (especially high-potency typicals and risperidone), **VMAT2 inhibitors** (tetrabenazine), valproate, lithium, some calcium channel blockers (flunarizine, cinnarizine).
+
+    Management: **stop the offending drug** — improvement can take weeks to months. Metoclopramide has a boxed warning for **tardive dyskinesia** with use >12 weeks. For gastroparesis, consider dietary changes, domperidone (limited availability) or erythromycin. A **DaT scan is normal** in drug-induced parkinsonism (presynaptic terminals intact) and abnormal in Parkinson disease — useful if the picture persists after stopping the drug.
+  why:
+    B: Essential tremor causes action and postural tremor without bradykinesia or rigidity.
+    C: Multiple system atrophy causes parkinsonism with early autonomic failure (orthostatic hypotension, urinary retention) or cerebellar signs.
+    D: Parkinson disease is usually asymmetric with a rest tremor; the timing with metoclopramide points to a drug effect.
+    E: Progressive supranuclear palsy causes early falls, axial rigidity and vertical gaze palsy.
+  objective: |
+    Recognize drug-induced parkinsonism (symmetric, onset after dopamine blockers such as metoclopramide) and treat by stopping the drug.
+  refs:
+    - "Shin HW, Chung SJ. Drug-induced parkinsonism. J Clin Neurol 2012;8:15."
+    - "US Food and Drug Administration. Metoclopramide boxed warning: tardive dyskinesia (2009)."

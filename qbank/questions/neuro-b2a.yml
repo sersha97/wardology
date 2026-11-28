@@ -1,0 +1,631 @@
+# Neurology — batch 2a: headache and cerebrovascular disease (ABIM CERT)
+- id: NR-011
+  topic: Cluster headache — acute treatment
+  task: Treatment/Care Decisions
+  chapters: [neuro/headache]
+  stem: |
+    A 42-year-old man comes to the emergency department at 2 AM because of severe, stabbing pain behind his right eye that woke him 20 minutes ago. He has had similar attacks lasting 45–90 minutes almost every night for the past 3 weeks, often after drinking alcohol. He had a similar 6-week period 2 years ago. During attacks he paces the room. He has coronary artery disease with a drug-eluting stent placed 1 year ago and smokes cigarettes.
+
+    On physical examination, blood pressure is 148/88 mm Hg and pulse rate is 96/min. He is restless and rocking. There is right-sided ptosis, miosis, conjunctival injection, tearing and rhinorrhea. Neurologic examination is otherwise normal.
+  lead: Which of the following is the most appropriate acute treatment?
+  choices:
+    A: High-flow oxygen by nonrebreather mask
+    B: Intravenous ketorolac
+    C: Oral oxycodone
+    D: Subcutaneous sumatriptan
+    E: Oral verapamil
+  answer: A
+  explain: |
+    **Cluster headache**: strictly **unilateral orbital or temporal pain**, **15–180 minutes**, up to 8 times a day, with **ipsilateral autonomic features** (tearing, conjunctival injection, rhinorrhea, ptosis, miosis), and **restlessness** (patients pace, unlike migraineurs who lie still). Attacks cluster in bouts of weeks, often at the same time of night, and are triggered by **alcohol**. More common in men and smokers.
+
+    First-line acute treatments (AHS):
+    - **100% oxygen at 12–15 L/min by nonrebreather mask** for 15–20 minutes — safe in any patient
+    - **Subcutaneous sumatriptan 6 mg** or intranasal zolmitriptan — but **triptans are contraindicated in coronary artery disease**, as in this patient
+
+    Prevention: **verapamil** (ECG monitoring for PR prolongation), a short **steroid bridge** or greater occipital nerve block, galcanezumab for episodic cluster. Check MRI once to exclude a pituitary or posterior fossa lesion.
+  why:
+    B: NSAIDs act too slowly and are ineffective for cluster attacks.
+    C: Opioids are ineffective for cluster headache and risk dependence.
+    D: Sumatriptan works quickly, but triptans are vasoconstrictors and are contraindicated in coronary artery disease.
+    E: Verapamil is a preventive therapy for the cluster period; it does not stop an acute attack.
+  mnemonic: |
+    **Cluster: "Clockwork, one eye, can't sit still."** Treat with **O₂** — the safest triptan-free abortive.
+  objective: |
+    Treat acute cluster headache with high-flow oxygen (or subcutaneous sumatriptan if no vascular contraindication) and start verapamil for prevention.
+  refs:
+    - "Robbins MS, et al. Treatment of cluster headache: the American Headache Society evidence-based guidelines. Headache 2016;56:1093."
+    - "May A, et al. Cluster headache. Nat Rev Dis Primers 2018;4:18006."
+
+- id: NR-012
+  topic: Medication-overuse headache
+  task: Treatment/Care Decisions
+  chapters: [neuro/headache]
+  stem: |
+    A 39-year-old woman is evaluated for daily headaches for the past 6 months. She has had migraine without aura since her teens, previously about 3 attacks a month. Over the past year the headaches became more frequent, and she now takes a combination of acetaminophen, aspirin and caffeine on 20 days each month and sumatriptan on 8–10 days a month. She wakes most mornings with a dull bilateral headache. She has no other medical problems.
+
+    On physical examination, blood pressure is 118/74 mm Hg. General and neurologic examinations, including fundoscopy, are normal.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Add butalbital-acetaminophen-caffeine for breakthrough headaches
+    B: Increase sumatriptan to daily use
+    C: MRI of the brain before any treatment change
+    D: Start oral opioids and taper over 1 month
+    E: Stop the overused medications and start a migraine preventive
+  answer: E
+  explain: |
+    **Medication-overuse headache (MOH)**: headache on **≥15 days a month** in someone with a preexisting headache disorder, with regular overuse for >3 months of:
+    - **Triptans, ergots, opioids or combination analgesics on ≥10 days a month**, or
+    - **Simple analgesics (acetaminophen, NSAIDs) on ≥15 days a month**
+
+    She meets both. Frequent acute medication use **increases** headache frequency and blocks the effect of preventives.
+
+    Management:
+    1. **Education** and **withdrawal or strict limitation** of the overused drugs (abrupt for triptans and simple analgesics; taper for opioids, butalbital and benzodiazepines because of withdrawal risk)
+    2. **Start a preventive at the same time**: topiramate, propranolol, amitriptyline, candesartan, **CGRP monoclonal antibodies**, or onabotulinumtoxinA for chronic migraine
+    3. Limit acute treatment to **≤2–3 days per week**; a short bridge (NSAID, steroid or nerve block) may help during withdrawal
+
+    Her neurologic examination is normal and the pattern is typical, so imaging is not required.
+  why:
+    A: Butalbital is a major cause of medication-overuse headache and causes dependence and withdrawal seizures.
+    B: Daily triptan use would worsen medication-overuse headache.
+    C: Imaging is not needed for a typical evolution of a long-standing migraine with a normal examination.
+    D: Opioids worsen headache chronification and should not be used for migraine.
+  objective: |
+    Recognize medication-overuse headache (simple analgesics ≥15 days/month or triptans/combination analgesics ≥10 days/month) and treat by withdrawing the overused drug and starting preventive therapy.
+  refs:
+    - "Headache Classification Committee of the IHS. The International Classification of Headache Disorders, 3rd edition. Cephalalgia 2018;38:1."
+    - "Ailani J, et al. The American Headache Society consensus statement: update on integrating new migraine treatments into clinical practice. Headache 2021;61:1021."
+
+- id: NR-013
+  topic: Thunderclap headache — subarachnoid hemorrhage
+  task: Diagnosis/Testing
+  chapters: [neuro/sah, neuro/stroke-syndromes]
+  stem: |
+    A 51-year-old woman comes to the emergency department because of a severe headache that began suddenly at 10 PM last night while she was lifting weights, reaching maximal intensity within seconds. She describes it as "the worst headache of my life." She vomited once and took ibuprofen, then came in this morning, 10 hours after onset, because the headache persists. She has hypertension and smokes. She has no history of headaches.
+
+    On physical examination, blood pressure is 172/96 mm Hg and pulse rate is 64/min. She is alert and oriented. There is mild neck stiffness. Neurologic examination shows no focal deficits.
+
+    Noncontrast CT of the head shows no hemorrhage, mass or hydrocephalus.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Discharge home with analgesics
+    B: Electroencephalography
+    C: Lumbar puncture
+    D: MRI of the brain without contrast in 2 weeks
+    E: Sumatriptan and observation
+  answer: C
+  explain: |
+    **Thunderclap headache** (peak intensity within 1 minute) requires urgent exclusion of **subarachnoid hemorrhage (SAH)**, as well as RCVS, cervical artery dissection, cerebral venous thrombosis and pituitary apoplexy.
+
+    CT sensitivity for SAH falls with time as blood is diluted and cleared:
+
+    | Time from onset to CT | Normal CT → |
+    |---|---|
+    | **≤6 hours** (modern scanner, expert read, no deficits) | SAH effectively excluded (~100% sensitivity) |
+    | **>6 hours** | **Lumbar puncture** (xanthochromia, RBCs that do not clear) **or CT angiography** |
+
+    Her CT was done **10 hours** after onset, so SAH is **not** excluded. **Lumbar puncture** (ideally ≥12 hours after onset, when xanthochromia from bilirubin is reliably present) is the next step; CTA is an alternative in many centers. If both are negative, consider vessel imaging for RCVS or dissection.
+  why:
+    A: Discharge without excluding SAH risks a catastrophic rebleed; the CT alone is insufficient after 6 hours.
+    B: EEG has no role in evaluating thunderclap headache.
+    D: Delayed MRI does not address the urgent question of SAH.
+    E: Triptans are vasoconstrictors and are contraindicated until SAH, RCVS and dissection are excluded.
+  pearl: |
+    A **warning ("sentinel") headache** days before a major SAH is common — every first-ever thunderclap headache deserves the workup.
+  objective: |
+    When a noncontrast CT for thunderclap headache is obtained more than 6 hours after onset and is normal, perform lumbar puncture (or CT angiography) to exclude subarachnoid hemorrhage.
+  refs:
+    - "Hoh BL, et al. 2023 guideline for the management of patients with aneurysmal subarachnoid hemorrhage. Stroke 2023;54:e314."
+    - "Perry JJ, et al. Sensitivity of computed tomography performed within six hours of onset of headache for diagnosis of subarachnoid haemorrhage. BMJ 2011;343:d4277."
+
+- id: NR-014
+  topic: Trigeminal neuralgia
+  task: Treatment/Care Decisions
+  chapters: [neuro/headache]
+  stem: |
+    A 64-year-old woman is evaluated for 2 months of brief, electric-shock-like pains in the right cheek and upper lip. Each attack lasts 1–2 seconds and occurs dozens of times a day, triggered by chewing, brushing her teeth or a light breeze. Between attacks she has no pain. She has hypertension treated with lisinopril.
+
+    On physical examination, blood pressure is 132/80 mm Hg. Touching the right side of the upper lip provokes an attack. Facial sensation, corneal reflexes, jaw strength and the rest of the neurologic examination are normal. MRI of the brain with contrast shows no mass or demyelination.
+  lead: Which of the following is the most appropriate initial treatment?
+  choices:
+    A: Amitriptyline
+    B: Carbamazepine
+    C: Gabapentin
+    D: Oxycodone
+    E: Microvascular decompression surgery
+  answer: B
+  explain: |
+    **Classic trigeminal neuralgia**: paroxysms of **unilateral, electric shock–like pain** lasting a fraction of a second to 2 minutes in the distribution of the **maxillary or mandibular divisions**, triggered by **innocuous stimuli** (chewing, talking, brushing, wind), with a **normal neurologic examination**. Most cases result from **vascular compression** of the trigeminal root entry zone (usually the superior cerebellar artery).
+
+    **Carbamazepine** (or **oxcarbazepine**) is first-line and effective in most patients. Monitor sodium (hyponatremia), CBC and liver tests; screen for **HLA-B*15:02** before carbamazepine in patients of Asian ancestry (SJS/TEN risk).
+
+    **MRI** is recommended to exclude secondary causes (**multiple sclerosis**, tumor) — suspect them with sensory loss, bilateral symptoms or age <40.
+
+    **Microvascular decompression** is the best long-term option for medication failure or intolerance in surgical candidates; percutaneous procedures or radiosurgery for others.
+  why:
+    A: Tricyclic antidepressants help chronic neuropathic pain but are not first-line for paroxysmal trigeminal neuralgia.
+    C: Gabapentin is a second-line add-on with weaker evidence.
+    D: Opioids are ineffective for trigeminal neuralgia.
+    E: Surgery is reserved for patients whose pain does not respond to or who cannot tolerate medical therapy.
+  objective: |
+    Treat classic trigeminal neuralgia with carbamazepine or oxcarbazepine after MRI excludes secondary causes; refer for microvascular decompression if medications fail.
+  refs:
+    - "Bendtsen L, et al. European Academy of Neurology guideline on trigeminal neuralgia. Eur J Neurol 2019;26:831."
+    - "Cruccu G, et al. Trigeminal neuralgia. N Engl J Med 2020;383:754."
+
+- id: NR-015
+  topic: Acute migraine with coronary disease
+  task: Treatment/Care Decisions
+  chapters: [neuro/headache]
+  stem: |
+    A 56-year-old man with migraine without aura comes for follow-up. He has 3–4 moderate-to-severe attacks a month, which respond poorly to naproxen. He had a myocardial infarction treated with PCI 2 years ago. Medications are aspirin, atorvastatin, metoprolol and lisinopril. He asks for a more effective treatment for his attacks.
+
+    On physical examination, blood pressure is 126/78 mm Hg. Neurologic examination is normal.
+  lead: Which of the following is the most appropriate acute treatment for his migraine attacks?
+  choices:
+    A: Butalbital-acetaminophen-caffeine
+    B: Ergotamine
+    C: Oxycodone
+    D: Sumatriptan
+    E: Ubrogepant
+  answer: E
+  explain: |
+    **Triptans and ergots** are **vasoconstrictors** (5-HT1B agonism) and are **contraindicated** in patients with **coronary artery disease, prior stroke or TIA, peripheral artery disease or uncontrolled hypertension**.
+
+    Newer **non-vasoconstrictive** acute migraine drugs are appropriate for him:
+    - **Gepants** (small-molecule **CGRP receptor antagonists**): **ubrogepant, rimegepant**, zavegepant (nasal) — no vasoconstriction; rimegepant is also approved for prevention
+    - **Lasmiditan** (5-HT1F agonist, a "ditan") — no vasoconstriction, but causes dizziness and sedation; no driving for 8 hours
+
+    NSAIDs, acetaminophen and antiemetics (metoclopramide, prochlorperazine) are other options. Limit acute treatment to avoid medication-overuse headache.
+  why:
+    A: Butalbital combinations cause dependence and medication-overuse headache and are not recommended.
+    B: Ergotamine is a potent vasoconstrictor and is contraindicated in coronary disease.
+    C: Opioids are ineffective for migraine and promote chronic headache.
+    D: Triptans are contraindicated in patients with coronary artery disease.
+  objective: |
+    For acute migraine in patients with cardiovascular disease, avoid triptans and ergots; use a gepant (ubrogepant, rimegepant) or lasmiditan.
+  refs:
+    - "Ailani J, et al. The American Headache Society consensus statement: update on integrating new migraine treatments into clinical practice. Headache 2021;61:1021."
+    - "Dodick DW, et al. Ubrogepant for the treatment of migraine. N Engl J Med 2019;381:2230."
+
+- id: NR-016
+  topic: Bell palsy
+  task: Treatment/Care Decisions
+  chapters: [neuro/bell-palsy]
+  stem: |
+    A 41-year-old man comes to the office because he woke this morning with drooping of the right side of his face, and he cannot close his right eye completely. Yesterday he had pain behind his right ear. Food sounds louder in his right ear, and taste seems dull. He has no rash, weakness of the limbs, hearing loss, vertigo or recent tick bites; he lives in Arizona. He has no diabetes.
+
+    On physical examination, blood pressure is 124/78 mm Hg. There is weakness of the entire right side of the face, including the forehead: he cannot wrinkle the right forehead, raise the right eyebrow or fully close the right eye, and the right corner of the mouth droops. There are no vesicles in the ear canal or on the palate. The rest of the neurologic examination, including limb strength and other cranial nerves, is normal.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: MRI of the brain before any treatment
+    B: Oral prednisone for 10 days, with eye protection
+    C: Oral valacyclovir alone
+    D: Observation only, with follow-up in 6 weeks
+    E: Surgical facial nerve decompression
+  answer: B
+  explain: |
+    **Bell palsy** is an acute, **idiopathic peripheral (lower motor neuron) facial nerve palsy**, likely from viral (HSV-1) inflammation of the nerve in the facial canal. Clues:
+    - Onset over **<72 hours**, often with **postauricular pain**
+    - **Entire half of the face**, **including the forehead** (a central lesion spares the forehead because of bilateral cortical input)
+    - **Hyperacusis** (stapedius paralysis) and **loss of taste** on the anterior tongue (chorda tympani)
+    - Otherwise normal neurologic examination
+
+    **Oral glucocorticoids started within 72 hours** improve complete recovery (strong recommendation, AAO-HNS 2013): prednisone 50–60 mg daily for 5 days then taper, or 60 mg for 5 days then taper over 5 days. **Antivirals alone are ineffective**; they may be **added** to steroids in severe palsy (optional). **Eye protection** — lubricating drops by day, ointment and taping at night — prevents corneal injury.
+
+    About **70%–85%** of patients recover fully within 3–6 months; most others partially.
+
+    Red flags for another cause: forehead sparing, other neurologic deficits, bilateral palsy, vesicles (**Ramsay Hunt** — add antivirals), slow progression over weeks or no recovery by 3–4 months (tumor), parotid mass, or tick exposure in a **Lyme-endemic** area.
+  why:
+    A: Imaging is not needed for typical Bell palsy; it is reserved for atypical features or no recovery by 3–4 months.
+    C: Antiviral monotherapy is not effective for Bell palsy.
+    D: Steroids started within 72 hours significantly improve recovery; observation alone forgoes that benefit.
+    E: Surgical decompression is not recommended.
+  objective: |
+    Treat Bell palsy (peripheral facial palsy involving the forehead, onset <72 hours) with oral glucocorticoids and eye protection; antivirals are optional add-ons for severe cases.
+  refs:
+    - "Baugh RF, et al. Clinical practice guideline: Bell's palsy. Otolaryngol Head Neck Surg 2013;149(3 Suppl):S1."
+    - "Sullivan FM, et al. Early treatment with prednisolone or acyclovir in Bell's palsy. N Engl J Med 2007;357:1598."
+
+- id: NR-017
+  topic: Timing of anticoagulation after AF-related stroke
+  task: Treatment/Care Decisions
+  chapters: [neuro/stroke, cardiology/af]
+  stem: |
+    A 74-year-old woman is hospitalized with an acute ischemic stroke causing left arm weakness and dysarthria that began 30 hours ago. She arrived outside the window for reperfusion therapy. Telemetry shows new atrial fibrillation. She has hypertension and type 2 diabetes mellitus.
+
+    On physical examination today, blood pressure is 146/84 mm Hg and pulse rate is 84/min and irregularly irregular. She has mild left arm weakness and dysarthria (NIH Stroke Scale score 4).
+
+    MRI of the brain shows a 2-cm acute infarct in the right frontal cortex without hemorrhagic transformation.
+  labs:
+    - [Creatinine, 0.9 mg/dL]
+    - [Hemoglobin, 13.2 g/dL]
+  lead: Which of the following is the most appropriate timing for starting oral anticoagulation?
+  choices:
+    A: After 3 months, once the infarct has fully healed
+    B: Now, at about day 2 after stroke onset
+    C: Only after an implantable loop recorder confirms recurrent AF
+    D: At 14 days after stroke onset
+    E: Never, because she has had a stroke
+  answer: B
+  explain: |
+    After a cardioembolic stroke with AF, the risk of **early recurrent embolism** has to be balanced against **hemorrhagic transformation**. Historically, clinicians waited 1–2 weeks (the old "1-3-6-12 day" rule).
+
+    Two recent randomized trials showed that **early DOAC initiation is safe**:
+    - **ELAN**: early start — **within 48 hours for minor or moderate stroke**, day 6–7 for major stroke — had similar or fewer recurrent events without more symptomatic hemorrhage
+    - **OPTIMAS**: early (≤4 days) was noninferior to delayed (7–14 days), including in larger strokes
+
+    Her stroke is **minor-to-moderate** (NIHSS 4, small infarct) with no hemorrhage, so **start a DOAC now**. (The 2026 AHA/ASA guideline supports early initiation.) Warfarin is not preferred unless there is a mechanical valve or moderate–severe mitral stenosis.
+  why:
+    A: Waiting 3 months leaves her at high risk of recurrent cardioembolic stroke.
+    C: AF is already documented on telemetry; anticoagulation does not require further monitoring.
+    D: Waiting 14 days is not necessary for a minor-to-moderate stroke and delays protection.
+    E: Prior stroke increases her CHA₂DS₂-VASc score; anticoagulation is strongly indicated.
+  objective: |
+    After minor-to-moderate ischemic stroke with atrial fibrillation and no hemorrhage, start a DOAC early (within about 48 hours); delay to about day 6–7 for large infarcts.
+  refs:
+    - "Fischer U, et al. Early versus later anticoagulation for stroke with atrial fibrillation (ELAN). N Engl J Med 2023;388:2411."
+    - "Werring DJ, et al. Optimal timing of anticoagulation after acute ischaemic stroke with atrial fibrillation (OPTIMAS). Lancet 2024;404:1731."
+    - "Prabhakaran S, et al. 2026 guideline for the early management of patients with acute ischemic stroke. Stroke 2026 (doi:10.1161/STR.0000000000000513)."
+
+- id: NR-018
+  topic: Symptomatic intracranial atherosclerosis
+  task: Treatment/Care Decisions
+  chapters: [neuro/stroke-syndromes, neuro/stroke]
+  stem: |
+    A 63-year-old man is hospitalized with a small left basal ganglia and corona radiata infarct causing mild right arm weakness, which began 2 days ago. He had a transient episode of right hand weakness 1 week earlier. He has hypertension, type 2 diabetes mellitus and hyperlipidemia. He takes amlodipine and metformin.
+
+    On physical examination, blood pressure is 152/88 mm Hg. He has mild right arm weakness (NIH Stroke Scale score 2).
+
+    CT angiography shows an 80% stenosis of the left middle cerebral artery (M1 segment) and no extracranial carotid stenosis. Echocardiogram and 72 hours of telemetry are normal.
+  labs:
+    - [LDL cholesterol, 132 mg/dL]
+    - [Hemoglobin A₁c, 8.2%]
+  lead: Which of the following is the most appropriate management to prevent recurrent stroke?
+  choices:
+    A: Aspirin alone with a lenient blood pressure goal
+    B: Dual antiplatelet therapy for 90 days with intensive risk control
+    C: Intracranial angioplasty and stenting
+    D: Warfarin with a target INR of 2.0 to 3.0
+    E: Extracranial-intracranial bypass surgery
+  answer: B
+  explain: |
+    **Symptomatic intracranial atherosclerotic stenosis (ICAS)** of **70%–99%** carries a high early recurrence risk. In **SAMMPRIS**, **aggressive medical therapy** — **aspirin plus clopidogrel for 90 days**, **high-intensity statin**, **SBP <140 mm Hg**, and a lifestyle program — had **lower** 30-day stroke and death than **stenting** plus the same medical therapy.
+
+    The 2021 AHA/ASA secondary prevention guideline recommends:
+    - **Aspirin 325 mg + clopidogrel 75 mg for up to 90 days**, then single antiplatelet
+    - **High-intensity statin** (LDL <70 mg/dL)
+    - **SBP <140 mm Hg**
+    - Exercise, diabetes control, smoking cessation
+
+    **Stenting** and **EC-IC bypass** are not recommended as initial therapy; **warfarin** was no better than aspirin and caused more bleeding (WASID).
+  why:
+    A: A lenient blood pressure goal and single antiplatelet therapy are less effective than intensive medical management.
+    C: Stenting increased early stroke and death compared with aggressive medical therapy in SAMMPRIS.
+    D: Warfarin was not superior to aspirin and caused more hemorrhage and death in WASID.
+    E: EC-IC bypass did not reduce stroke in randomized trials.
+  objective: |
+    Treat symptomatic severe intracranial atherosclerotic stenosis with aggressive medical therapy — aspirin plus clopidogrel for 90 days, high-intensity statin and SBP <140 mm Hg — rather than stenting.
+  refs:
+    - "Chimowitz MI, et al. Stenting versus aggressive medical therapy for intracranial arterial stenosis (SAMMPRIS). N Engl J Med 2011;365:993."
+    - "Kleindorfer DO, et al. 2021 guideline for the prevention of stroke in patients with stroke and transient ischemic attack. Stroke 2021;52:e364."
+
+- id: NR-019
+  topic: Symptomatic carotid stenosis
+  task: Treatment/Care Decisions
+  chapters: [neuro/stroke, cardiology/pad-aaa]
+  stem: |
+    A 69-year-old man is hospitalized after two episodes of transient monocular blindness in the right eye ("a curtain coming down"), each lasting 5 minutes, and one episode of left hand weakness lasting 20 minutes, all within the past 4 days. He has hypertension and hyperlipidemia and smokes. He takes amlodipine.
+
+    On physical examination, blood pressure is 148/86 mm Hg and pulse rate is 72/min and regular. A right carotid bruit is heard. Neurologic examination is normal.
+
+    MRI shows a small acute infarct in the right frontal cortex. Carotid duplex ultrasonography and CT angiography show 80% stenosis of the right internal carotid artery and 30% on the left. Telemetry shows sinus rhythm.
+  lead: In addition to antiplatelet and statin therapy, which of the following is the most appropriate management?
+  choices:
+    A: Carotid endarterectomy after 3 months of medical therapy
+    B: Carotid endarterectomy within 2 weeks
+    C: Long-term warfarin
+    D: Medical therapy alone with repeat duplex ultrasonography in 6 months
+    E: Bilateral carotid endarterectomy
+  answer: B
+  explain: |
+    **Amaurosis fugax** and hemispheric TIA/stroke ipsilateral to a **70%–99% internal carotid stenosis** define **symptomatic carotid stenosis**. Recurrence risk is highest in the **first days to weeks**.
+
+    **Carotid endarterectomy (CEA)** greatly reduces stroke (NASCET: absolute 2-year risk reduction ~17% for 70%–99%). Benefit is **greatest when surgery is done within 2 weeks** of the last event; it falls steeply after that.
+
+    | Symptomatic stenosis | Recommendation |
+    |---|---|
+    | **70%–99%** | **CEA within 2 weeks** (stenting if surgical risk high or anatomy unfavorable) |
+    | 50%–69% | CEA reasonable, depending on age, sex and comorbidity |
+    | <50% | Medical therapy only |
+
+    Perioperative stroke/death risk at the center should be **<6%**. Stenting is an alternative, particularly in younger patients (age <70 favors stenting equivalence; older patients do better with CEA).
+  why:
+    A: Delaying surgery for 3 months loses most of the benefit; recurrence is concentrated early.
+    C: Warfarin is not indicated for atherosclerotic carotid disease without another indication.
+    D: Medical therapy alone is inferior for symptomatic severe stenosis.
+    E: The 30% left stenosis is asymptomatic and mild; it needs medical therapy only.
+  objective: |
+    Perform carotid endarterectomy within 2 weeks for symptomatic 70%–99% internal carotid stenosis.
+  refs:
+    - "Kleindorfer DO, et al. 2021 guideline for the prevention of stroke in patients with stroke and transient ischemic attack. Stroke 2021;52:e364."
+    - "Rothwell PM, et al. Endarterectomy for symptomatic carotid stenosis in relation to clinical subgroups and timing of surgery. Lancet 2004;363:915."
+
+- id: NR-020
+  topic: Embolic stroke of undetermined source — AF monitoring
+  task: Diagnosis/Testing
+  chapters: [neuro/stroke-syndromes]
+  stem: |
+    A 67-year-old woman is evaluated 1 week after an ischemic stroke that caused aphasia, now nearly resolved. MRI showed a single cortical infarct in the left middle cerebral artery territory. CT angiography of the head and neck showed no stenosis. Transthoracic echocardiogram showed normal ventricular function, mild left atrial enlargement and no thrombus; a bubble study was negative. Electrocardiogram and 3 days of inpatient telemetry showed sinus rhythm. She has hypertension and takes aspirin, atorvastatin and lisinopril.
+  lead: Which of the following is the most appropriate next step to find the cause of her stroke?
+  choices:
+    A: Hypercoagulability panel including protein C and S
+    B: Implantable loop recorder or prolonged cardiac rhythm monitoring
+    C: Lumbar puncture
+    D: Repeat transthoracic echocardiography in 3 months
+    E: Start apixaban empirically without further evaluation
+  answer: B
+  explain: |
+    She has an **embolic stroke of undetermined source (ESUS)**: a nonlacunar infarct without large-artery stenosis, a cardiac source or another cause after a standard workup.
+
+    **Paroxysmal atrial fibrillation** is the most common hidden cause in older patients with ESUS. Short monitoring misses it. **Prolonged monitoring** — a **30-day event monitor or an implantable loop recorder (ILR)** — detects AF in **12%–30%** (CRYSTAL-AF, EMBRACE). Finding AF changes therapy to **anticoagulation**.
+
+    **Empiric anticoagulation** for ESUS **without documented AF** was **not** better than aspirin (NAVIGATE ESUS with rivaroxaban, RE-SPECT ESUS with dabigatran, ARCADIA with apixaban for atrial cardiopathy).
+  why:
+    A: Inherited thrombophilias cause venous, not arterial, thrombosis; testing has a low yield in older adults with arterial stroke.
+    C: LP has no role in evaluating ischemic stroke without suspicion of infection or vasculitis.
+    D: Repeat echocardiography is unlikely to change the evaluation.
+    E: Empiric anticoagulation for ESUS without AF did not reduce recurrent stroke and increased bleeding.
+  objective: |
+    After embolic stroke of undetermined source, use prolonged cardiac monitoring (30-day monitor or implantable loop recorder) to detect paroxysmal AF; do not anticoagulate empirically without documented AF.
+  refs:
+    - "Sanna T, et al. Cryptogenic stroke and underlying atrial fibrillation (CRYSTAL AF). N Engl J Med 2014;370:2478."
+    - "Hart RG, et al. Rivaroxaban for stroke prevention after embolic stroke of undetermined source (NAVIGATE ESUS). N Engl J Med 2018;378:2191."
+    - "Kleindorfer DO, et al. 2021 guideline for the prevention of stroke in patients with stroke and transient ischemic attack. Stroke 2021;52:e364."
+
+- id: NR-021
+  topic: Lacunar stroke — pure motor hemiparesis
+  task: Pathophysiology/Basic Science
+  chapters: [neuro/stroke-syndromes]
+  stem: |
+    A 66-year-old man with long-standing hypertension and type 2 diabetes mellitus awakens with weakness of the left face, arm and leg. He has no headache, vision loss or numbness.
+
+    On physical examination, blood pressure is 168/94 mm Hg. He has equal weakness (4−/5) of the left face, arm and leg with increased reflexes and an extensor plantar response on the left. Sensation to all modalities is normal. Language, visual fields, attention and eye movements are normal. There is no neglect.
+  lead: An occlusion of which of the following is the most likely cause?
+  choices:
+    A: Anterior cerebral artery
+    B: Lenticulostriate branch of the middle cerebral artery
+    C: Main stem of the middle cerebral artery
+    D: Posterior cerebral artery
+    E: Posterior inferior cerebellar artery
+  answer: B
+  explain: |
+    **Pure motor hemiparesis** affecting the **face, arm and leg equally**, with **no cortical signs** (no aphasia, neglect, visual field defect or gaze deviation) and **no sensory loss**, is a classic **lacunar syndrome**.
+
+    Lacunes are small (<15–20 mm) deep infarcts caused by **lipohyalinosis** of small penetrating arteries from **chronic hypertension and diabetes**. Pure motor hemiparesis localizes to the **posterior limb of the internal capsule** (lenticulostriate branches of the MCA) or the basis pontis (paramedian pontine perforators). Fibers for face, arm and leg are packed tightly there, so one small lesion affects all three equally.
+
+    | Lacunar syndrome | Usual location |
+    |---|---|
+    | **Pure motor** | Posterior limb of internal capsule, basis pontis |
+    | Pure sensory | **Thalamus** (VPL/VPM) |
+    | Sensorimotor | Thalamus + internal capsule |
+    | Ataxic hemiparesis | Pons, internal capsule |
+    | Dysarthria–clumsy hand | Pons, genu of internal capsule |
+  why:
+    A: An ACA infarct affects the leg more than the arm and spares the face.
+    C: An MCA stem occlusion causes cortical deficits (aphasia or neglect, gaze deviation, field cuts) and face/arm > leg weakness.
+    D: A PCA infarct causes a contralateral homonymous hemianopia and sometimes sensory loss, not pure motor weakness.
+    E: A PICA occlusion causes the lateral medullary syndrome with vertigo, ataxia and crossed sensory loss.
+  objective: |
+    Pure motor hemiparesis of face, arm and leg without cortical or sensory signs is a lacunar syndrome from lenticulostriate (internal capsule) or pontine perforator occlusion caused by hypertensive small-vessel disease.
+  refs:
+    - "Fisher CM. Lacunar strokes and infarcts: a review. Neurology 1982;32:871."
+    - "Wardlaw JM, et al. Small vessel disease: mechanisms and clinical implications. Lancet Neurol 2019;18:684."
+
+- id: NR-022
+  topic: Lateral medullary syndrome
+  task: Diagnosis/Testing
+  chapters: [neuro/stroke-syndromes, neuro/dizziness]
+  stem: |
+    A 58-year-old man comes to the emergency department because of 4 hours of severe vertigo, vomiting, hoarseness and trouble swallowing. He had neck pain for 2 days after a chiropractic manipulation.
+
+    On physical examination, blood pressure is 156/88 mm Hg. There is right ptosis and miosis. Pain and temperature sensation are reduced on the right side of the face and on the left arm, trunk and leg. The right palate does not elevate, and the gag reflex is reduced on the right. Right arm and leg are ataxic. Strength is normal throughout. He has rotary nystagmus.
+  lead: Which of the following is the most likely location of the lesion?
+  choices:
+    A: Left lateral pons
+    B: Left medial medulla
+    C: Right cerebellar hemisphere only
+    D: Right lateral medulla
+    E: Right posterior limb of the internal capsule
+  answer: D
+  explain: |
+    This is the **lateral medullary (Wallenberg) syndrome**, usually from **vertebral artery** (here likely **dissection** after neck manipulation) or **posterior inferior cerebellar artery (PICA)** occlusion.
+
+    | Finding | Structure (right lateral medulla) |
+    |---|---|
+    | **Ipsilateral face** pain/temperature loss | Spinal trigeminal nucleus and tract |
+    | **Contralateral body** pain/temperature loss | Spinothalamic tract (already crossed) |
+    | **Ipsilateral Horner** syndrome | Descending sympathetic fibers |
+    | Hoarseness, dysphagia, ↓ gag | **Nucleus ambiguus** (CN IX, X) |
+    | Vertigo, nystagmus, vomiting | Vestibular nuclei |
+    | Ipsilateral ataxia | Inferior cerebellar peduncle |
+
+    **Strength is spared** (the corticospinal tracts are medial). The **crossed sensory** pattern (ipsilateral face, contralateral body) is the brainstem signature.
+
+    Next steps: MRI with DWI (may be falsely negative early in the posterior circulation), CTA or MRA of the head and neck for dissection, and a **swallow evaluation** before oral intake (aspiration risk).
+  why:
+    A: A lateral pontine lesion (AICA) causes ipsilateral facial weakness and hearing loss; this patient's findings are right-sided and medullary.
+    B: Medial medullary syndrome causes contralateral hemiparesis, contralateral loss of position sense and ipsilateral tongue weakness.
+    C: An isolated cerebellar lesion causes ataxia and vertigo but not Horner syndrome, crossed sensory loss or palatal weakness.
+    E: An internal capsule lesion causes contralateral weakness without cranial nerve or crossed sensory findings.
+  mnemonic: |
+    Lateral medulla: **"Don't PICA Horse (hoarseness) that can't Eat (dysphagia)."**
+  objective: |
+    Recognize the lateral medullary (Wallenberg) syndrome — ipsilateral Horner and facial sensory loss, contralateral body pain/temperature loss, dysphagia, hoarseness, vertigo and ataxia — from vertebral or PICA occlusion.
+  refs:
+    - "Kim JS. Pure lateral medullary infarction: clinical–radiological correlation of 130 acute, consecutive patients. Brain 2003;126:1864."
+
+- id: NR-023
+  topic: Cervical artery dissection
+  task: Diagnosis/Testing
+  chapters: [neuro/stroke-syndromes]
+  stem: |
+    A 38-year-old woman is evaluated for 3 days of left-sided neck pain and headache that began after a vigorous yoga class. This morning her husband noticed that her left eyelid droops. One hour ago she had a 10-minute episode of numbness and clumsiness of the right hand. She has migraine without aura. She takes no medications.
+
+    On physical examination, blood pressure is 124/78 mm Hg. There is mild left ptosis and a smaller left pupil, more obvious in dim light. Facial sweating is preserved. Neurologic examination is otherwise normal.
+  lead: Which of the following is the most appropriate diagnostic test?
+  choices:
+    A: CT angiography of the head and neck
+    B: Electroencephalography
+    C: Lumbar puncture
+    D: MRI of the cervical spine
+    E: Temporal artery biopsy
+  answer: A
+  explain: |
+    **Cervical artery dissection** is a leading cause of stroke in adults **<50 years**. An intimal tear allows blood into the arterial wall, causing an intramural hematoma that can narrow the lumen or throw emboli.
+
+    **Internal carotid dissection** classically causes:
+    - **Ipsilateral neck, face or head pain**
+    - **Partial Horner syndrome** (ptosis and miosis **without anhidrosis**, because facial sweating fibers follow the external carotid)
+    - **Contralateral TIA or stroke**; sometimes pulsatile tinnitus or lower cranial nerve palsies
+
+    Triggers: minor trauma, chiropractic manipulation, coughing, vigorous exercise; connective tissue disorders and fibromuscular dysplasia predispose.
+
+    Diagnose with **CT angiography or MR angiography (with fat-saturated T1 axial images)** of the head and neck. Treat with **antiplatelet or anticoagulant therapy** for 3–6 months — equivalent in CADISS and TREAT-CAD.
+  why:
+    B: EEG has no role in evaluating TIA with Horner syndrome.
+    C: LP is used for suspected SAH or infection, not for suspected dissection.
+    D: Spine MRI images the cord and discs, not the carotid artery.
+    E: Temporal artery biopsy evaluates giant cell arteritis, which affects people older than 50.
+  objective: |
+    Suspect internal carotid dissection with neck pain, partial Horner syndrome and contralateral ischemic symptoms; confirm with CT or MR angiography of the head and neck.
+  refs:
+    - "Yaghi S, et al. Treatment and outcomes of cervical artery dissection in adults: a scientific statement from the AHA. Stroke 2024;55:e91."
+    - "Engelter ST, et al. Aspirin versus anticoagulation in cervical artery dissection (TREAT-CAD). Lancet Neurol 2021;20:341."
+
+- id: NR-024
+  topic: Cerebral venous thrombosis
+  task: Treatment/Care Decisions
+  chapters: [neuro/stroke-syndromes, neuro/headache]
+  stem: |
+    A 31-year-old woman is brought to the emergency department after a generalized tonic-clonic seizure. She delivered a healthy baby 2 weeks ago. Over the past 5 days she has had a progressively worsening headache, worse lying down, with nausea. She has no history of seizures.
+
+    On physical examination, blood pressure is 128/82 mm Hg. She is drowsy but oriented. There is bilateral papilledema and mild right arm weakness.
+
+    Noncontrast CT shows a small left parietal hemorrhagic infarct. CT venography shows thrombosis of the superior sagittal sinus and left transverse sinus.
+  labs:
+    - [Platelet count, 268,000/µL]
+    - [INR, 1.0]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Aspirin alone
+    B: Avoid anticoagulation because of the hemorrhage
+    C: Intravenous alteplase
+    D: Therapeutic low-molecular-weight heparin
+    E: Urgent decompressive craniectomy
+  answer: D
+  explain: |
+    **Cerebral venous thrombosis (CVT)**: headache (often worse lying down, from raised intracranial pressure), **papilledema**, **seizures**, focal deficits and encephalopathy. Risk factors: **pregnancy and the postpartum period**, estrogen-containing contraceptives, thrombophilia, infection, malignancy, dehydration.
+
+    Venous congestion causes **hemorrhagic venous infarcts** — these are **not** a contraindication to anticoagulation. **Anticoagulation** (therapeutic **LMWH** preferred, or IV unfractionated heparin) stops thrombus propagation and allows recanalization, and is recommended for all patients, **even with intracerebral hemorrhage**.
+
+    After the acute phase: warfarin or a **DOAC** (dabigatran in RE-SPECT CVT; observational ACTION-CVT) for 3–12 months depending on the trigger. Treat seizures; manage intracranial pressure. Endovascular thrombectomy or **decompressive craniectomy** is reserved for deterioration despite anticoagulation or impending herniation.
+
+    Both LMWH and warfarin are compatible with breastfeeding.
+  why:
+    A: Antiplatelet therapy does not treat venous thrombosis.
+    B: Hemorrhagic venous infarction results from venous congestion; anticoagulation relieves it and is recommended.
+    C: Systemic thrombolysis has no proven benefit and a high bleeding risk in CVT.
+    E: Decompressive surgery is reserved for large lesions with impending herniation, which she does not have.
+  objective: |
+    Treat cerebral venous thrombosis with therapeutic anticoagulation (LMWH or heparin), even when hemorrhagic venous infarction is present.
+  refs:
+    - "Saposnik G, et al. Diagnosis and management of cerebral venous thrombosis: a scientific statement from the AHA. Stroke 2024;55:e77."
+    - "Ferro JM, et al. Safety and efficacy of dabigatran etexilate vs dose-adjusted warfarin in patients with cerebral venous thrombosis (RE-SPECT CVT). JAMA Neurol 2019;76:1457."
+
+- id: NR-025
+  topic: Intracerebral hemorrhage on a factor Xa inhibitor
+  task: Treatment/Care Decisions
+  chapters: [neuro/stroke-syndromes, heme/anticoagulation]
+  stem: |
+    A 77-year-old woman is brought to the emergency department 1 hour after the sudden onset of left-sided weakness and headache. She takes apixaban, 5 mg twice daily, for atrial fibrillation; her last dose was 4 hours ago. She also takes metoprolol and lisinopril.
+
+    On physical examination, blood pressure is 192/104 mm Hg and pulse rate is 88/min and irregular. She is drowsy but follows commands. She has left hemiparesis and a right gaze preference (Glasgow Coma Scale score 13).
+
+    Noncontrast CT shows a 25-mL right putaminal hemorrhage without intraventricular extension.
+  labs:
+    - [Platelet count, 212,000/µL]
+    - [INR, 1.3]
+    - [Anti-Xa activity (apixaban-calibrated), 160 ng/mL]
+  lead: In addition to lowering systolic blood pressure to about 140 mm Hg, which of the following is the most appropriate treatment?
+  choices:
+    A: Andexanet alfa
+    B: Fresh frozen plasma
+    C: Idarucizumab
+    D: Intravenous vitamin K
+    E: Protamine sulfate
+  answer: A
+  explain: |
+    She has an **anticoagulant-associated intracerebral hemorrhage (ICH)** on **apixaban** taken within the past 18 hours, with measurable anti-Xa activity. Hematoma expansion in the first hours drives outcome, so **reverse quickly**:
+
+    | Anticoagulant | Reversal (2022 AHA/ASA ICH; ANNEXA-I) |
+    |---|---|
+    | **Apixaban, rivaroxaban, edoxaban** | **Andexanet alfa** or **4-factor PCC** (50 U/kg); activated charcoal if taken <2 h ago |
+    | **Dabigatran** | **Idarucizumab** |
+    | **Warfarin** | **4F-PCC + IV vitamin K** (FFP if PCC unavailable) |
+    | Unfractionated heparin | **Protamine** (partial for LMWH) |
+
+    **ANNEXA-I** (2024): andexanet improved **hemostatic efficacy** compared with usual care (mostly PCC) but increased **thrombotic events**, including ischemic stroke — so practice varies; **4F-PCC is an accepted alternative** where andexanet is unavailable.
+
+    **Blood pressure**: target **SBP ~140 mm Hg** (130–150), lowered smoothly within the first hours; avoid drops >70 mm Hg. Admit to a stroke unit or neuro ICU; reassess the timing of anticoagulation restart later.
+  why:
+    B: FFP is a weak, slow and volume-heavy source of factors and does not reverse factor Xa inhibitors.
+    C: Idarucizumab reverses dabigatran only.
+    D: Vitamin K reverses warfarin; it has no effect on apixaban.
+    E: Protamine reverses heparin, not factor Xa inhibitors.
+  objective: |
+    Reverse factor Xa inhibitor–associated intracerebral hemorrhage with andexanet alfa or 4-factor PCC, and lower systolic blood pressure to about 140 mm Hg.
+  refs:
+    - "Greenberg SM, et al. 2022 guideline for the management of patients with spontaneous intracerebral hemorrhage. Stroke 2022;53:e282."
+    - "Connolly SJ, et al. Andexanet for factor Xa inhibitor–associated acute intracerebral hemorrhage (ANNEXA-I). N Engl J Med 2024;390:1745."
+
+- id: NR-026
+  topic: Posterior reversible encephalopathy syndrome
+  task: Diagnosis/Testing
+  chapters: [neuro/stroke-syndromes, cardiology/htn-emergency]
+  stem: |
+    A 44-year-old woman who underwent kidney transplantation 3 months ago is admitted after a generalized seizure. For 1 day she has had severe headache, confusion and blurred vision. Medications are tacrolimus, mycophenolate mofetil, prednisone and amlodipine.
+
+    On physical examination, temperature is 37.0 °C (98.6 °F), blood pressure is 196/112 mm Hg, and pulse rate is 92/min. She is confused and cannot count fingers in either eye; pupils react normally. There is no neck stiffness or focal weakness.
+
+    MRI of the brain shows bilateral, symmetric T2/FLAIR hyperintensities in the subcortical white matter of the parietal and occipital lobes, without restricted diffusion.
+  labs:
+    - [Tacrolimus trough, 18 ng/mL (target 5–10)]
+    - [Creatinine, 1.6 mg/dL]
+    - [Magnesium, 1.3 mg/dL]
+    - [Cerebrospinal fluid, normal cell count and protein]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Bilateral posterior cerebral artery infarction
+    B: Herpes simplex encephalitis
+    C: Posterior reversible encephalopathy syndrome
+    D: Progressive multifocal leukoencephalopathy
+    E: Reversible cerebral vasoconstriction syndrome
+  answer: C
+  explain: |
+    **Posterior reversible encephalopathy syndrome (PRES)**: **headache, encephalopathy, seizures and visual disturbance** (including cortical blindness) with **vasogenic edema**, typically **bilateral, posterior (parieto-occipital) subcortical white matter**, on MRI.
+
+    Mechanism: failure of cerebral autoregulation and endothelial dysfunction; the posterior circulation has less sympathetic innervation, so it is more vulnerable.
+
+    Triggers: **severe or rapidly rising hypertension**, **calcineurin inhibitors (tacrolimus, cyclosporine)**, chemotherapy and VEGF inhibitors, **eclampsia**, kidney failure, autoimmune disease, sepsis; **hypomagnesemia** contributes.
+
+    Treatment: **lower blood pressure** (about 20%–25% in the first hours), **reduce or stop the offending drug**, correct magnesium, treat seizures. Most patients recover fully within days to weeks — if treated promptly; untreated PRES can cause infarction or hemorrhage.
+  why:
+    A: Bilateral PCA infarcts show restricted diffusion in a vascular territory; PRES edema is vasogenic (no restricted diffusion) and reversible.
+    B: HSV encephalitis causes fever, CSF pleocytosis and medial temporal lobe involvement.
+    D: PML causes subacute, asymmetric, progressive white-matter lesions in immunosuppressed patients without acute hypertension or seizures with headache.
+    E: RCVS presents with recurrent thunderclap headaches and segmental vasoconstriction; it overlaps with PRES but this picture of parieto-occipital edema with tacrolimus toxicity and hypertension is classic PRES.
+  objective: |
+    Recognize PRES (headache, encephalopathy, seizures, visual loss with posterior vasogenic edema) caused by severe hypertension or calcineurin inhibitors; treat with blood pressure control and removal of the trigger.
+  refs:
+    - "Fugate JE, Rabinstein AA. Posterior reversible encephalopathy syndrome: clinical and radiological manifestations, pathophysiology, and outstanding questions. Lancet Neurol 2015;14:914."
