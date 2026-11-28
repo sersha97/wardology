@@ -1,0 +1,771 @@
+# Cardiovascular Disease — batch 2h: valvular heart disease and endocarditis (ABIM CERT)
+- id: CV-140
+  topic: Asymptomatic severe aortic stenosis
+  task: Treatment/Care Decisions
+  chapters: [cardiology/aortic-stenosis]
+  stem: |
+    A 72-year-old man comes for follow-up of aortic stenosis. He walks 2 miles daily and plays golf without chest pain, dyspnea, lightheadedness or syncope. He has hypertension treated with amlodipine.
+
+    On physical examination, blood pressure is 134/78 mm Hg and pulse rate is 68/min. A grade 3/6 late-peaking crescendo-decrescendo systolic murmur is heard at the right upper sternal border with radiation to the carotid arteries. The aortic component of S₂ is soft. Carotid upstrokes are delayed.
+
+    Echocardiogram shows a heavily calcified trileaflet aortic valve with a peak velocity of 4.6 m/s, a mean gradient of 52 mm Hg and an aortic valve area of 0.7 cm². Left ventricular ejection fraction is 45%, down from 60% 1 year ago; coronary CT angiography shows no significant coronary disease.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Aortic valve replacement
+    B: Balloon aortic valvuloplasty
+    C: Exercise stress testing to look for symptoms
+    D: Repeat echocardiography in 6 months
+    E: Start lisinopril and continue surveillance
+  answer: A
+  explain: |
+    He has **severe aortic stenosis** (peak velocity ≥4 m/s, mean gradient ≥40 mm Hg, AVA ≤1.0 cm²) **without symptoms**, but with a **fall in LVEF to <50%** that has no other cause. This is **stage C2** disease, and **aortic valve replacement is recommended (Class 1)** by both the 2020 ACC/AHA and 2025 ESC/EACTS guidelines.
+
+    | Asymptomatic severe AS — AVR indications | Class |
+    |---|---|
+    | **LVEF <50%** | **1** |
+    | Undergoing other cardiac surgery | 1 |
+    | Abnormal exercise test (symptoms, fall in BP) | 2a |
+    | Very severe AS (velocity ≥5 m/s), rapid progression (≥0.3 m/s/yr), BNP >3× normal, LVEF falling on 3 serial studies to <60% | 2a |
+    | Low procedural risk, otherwise (EARLY TAVR, AVATAR) | Increasingly favored — heart team decision |
+
+    Mode (TAVR or SAVR) depends on age, anatomy, risk and patient preference; at 72 with a trileaflet valve, either may be chosen by the heart team.
+  why:
+    B: Balloon valvuloplasty gives only temporary relief and is used as a bridge in unstable patients, not as definitive therapy.
+    C: Exercise testing is used to unmask symptoms when the decision is uncertain; LV dysfunction already establishes the indication.
+    D: Continued surveillance despite declining LV function risks irreversible myocardial damage and sudden death.
+    E: No medical therapy changes the natural history of severe AS; ACE inhibitors may treat hypertension but do not delay AVR.
+  objective: |
+    Recommend aortic valve replacement for asymptomatic severe aortic stenosis when LVEF falls below 50%.
+  refs:
+    - "Otto CM, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease. Circulation 2021;143:e72."
+    - "Généreux P, et al. Transcatheter aortic-valve replacement for asymptomatic severe aortic stenosis (EARLY TAVR). N Engl J Med 2025;392:217."
+
+- id: CV-141
+  topic: Valve replacement choice in a younger patient
+  task: Treatment/Care Decisions
+  chapters: [cardiology/aortic-stenosis]
+  stem: |
+    A 57-year-old man is evaluated for exertional dyspnea and chest tightness that began 4 months ago. He has hypertension and hyperlipidemia. He works as an electrician and has no other medical problems. His Society of Thoracic Surgeons predicted surgical mortality is 1.1%.
+
+    On physical examination, blood pressure is 128/76 mm Hg and pulse rate is 70/min. A grade 3/6 late-peaking systolic murmur is heard at the right upper sternal border.
+
+    Echocardiogram shows a trileaflet, heavily calcified aortic valve with a mean gradient of 48 mm Hg and an aortic valve area of 0.8 cm². Left ventricular ejection fraction is 60%. Coronary angiography shows no significant coronary disease. The ascending aorta measures 3.6 cm.
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Balloon aortic valvuloplasty
+    B: Medical therapy with close surveillance
+    C: Repeat echocardiography in 6 months
+    D: Surgical aortic valve replacement
+    E: Transcatheter aortic valve replacement
+  answer: D
+  explain: |
+    He has **symptomatic severe aortic stenosis**, so AVR is indicated (Class 1). The question is **how**.
+
+    The 2020 ACC/AHA guideline bases the choice largely on **age and life expectancy**, because the **long-term durability of TAVR valves beyond 10 years** is still being defined and younger patients may need a second procedure:
+
+    | Age | Preferred approach (low surgical risk, suitable anatomy) |
+    |---|---|
+    | **<65 years** (or life expectancy >20 years) | **SAVR** (mechanical or bioprosthetic) |
+    | 65–80 years | Shared decision: SAVR or transfemoral TAVR |
+    | >80 years (or life expectancy <10 years) or high surgical risk | **TAVR** |
+
+    The 2025 ESC/EACTS guideline uses a threshold of **age 70**. Other factors favoring SAVR: bicuspid valve, aortic dilation needing repair, need for other cardiac surgery, unfavorable anatomy for TAVR.
+
+    At 57, the choice between a **mechanical** valve (durable, lifelong warfarin) and a **bioprosthetic** valve (no warfarin, likely redo valve-in-valve later) is a shared decision.
+  why:
+    A: Balloon valvuloplasty is a temporizing measure with early restenosis.
+    B: Medical therapy does not change the course of symptomatic severe AS, which carries a high mortality without valve replacement.
+    C: Symptomatic severe AS requires prompt intervention, not more surveillance.
+    E: TAVR is an option for older patients; for a low-risk patient younger than 65, surgical replacement is preferred because of uncertain long-term TAVR durability.
+  objective: |
+    For symptomatic severe aortic stenosis in a low-risk patient younger than 65, surgical aortic valve replacement is preferred over TAVR.
+  refs:
+    - "Otto CM, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease. Circulation 2021;143:e72."
+    - "Praz F, et al. 2025 ESC/EACTS guidelines for the management of valvular heart disease. Eur Heart J 2025."
+
+- id: CV-142
+  topic: Low-flow low-gradient aortic stenosis
+  task: Diagnosis/Testing
+  chapters: [cardiology/aortic-stenosis]
+  stem: |
+    A 74-year-old man is evaluated for 3 months of exertional dyspnea and fatigue. He had a myocardial infarction 5 years ago. Medications are aspirin, atorvastatin, metoprolol succinate, sacubitril-valsartan and dapagliflozin.
+
+    On physical examination, blood pressure is 108/70 mm Hg and pulse rate is 66/min. A grade 2/6 systolic ejection murmur is heard at the right upper sternal border. S₂ is single.
+
+    Echocardiogram shows a calcified aortic valve with reduced leaflet opening, an aortic valve area of 0.8 cm², a mean gradient of 26 mm Hg, a peak velocity of 3.3 m/s and a stroke volume index of 28 mL/m². Left ventricular ejection fraction is 30% with regional wall-motion abnormalities.
+  lead: Which of the following is the most appropriate next diagnostic step?
+  choices:
+    A: Cardiac MRI
+    B: Exercise treadmill testing
+    C: Low-dose dobutamine stress echocardiography
+    D: Noncontrast CT calcium scoring of the aortic valve as the first test
+    E: Repeat transthoracic echocardiography in 3 months
+  answer: C
+  explain: |
+    The echocardiogram is **discordant**: the valve area suggests severe AS (≤1.0 cm²), but the **gradient is low** (<40 mm Hg) because the weak ventricle cannot generate flow (stroke volume index <35 mL/m²). This is **classical low-flow, low-gradient AS with reduced EF** (stage D2).
+
+    Two possibilities:
+    - **True severe AS** — the stenosis caused or worsened the LV dysfunction; AVR helps
+    - **Pseudosevere AS** — moderate AS in a weak ventricle that cannot open the valve fully; AVR does not help
+
+    **Low-dose dobutamine stress echocardiography** (up to 20 µg/kg/min) separates them:
+
+    | With dobutamine | Interpretation |
+    |---|---|
+    | Gradient rises to ≥40 mm Hg, AVA stays ≤1.0 cm² | **True severe AS** → AVR |
+    | AVA increases to >1.0 cm², gradient stays low | **Pseudosevere** → treat the cardiomyopathy |
+    | Stroke volume does not rise ≥20% (**no contractile reserve**) | Indeterminate → CT calcium score; higher operative risk, but TAVR may still help |
+
+    **CT aortic valve calcium scoring** is the key test for **low-flow, low-gradient AS with preserved EF** (paradoxical, stage D3) or when there is no contractile reserve.
+  why:
+    A: Cardiac MRI assesses scar and function but does not resolve whether the stenosis is truly severe.
+    B: Exercise testing does not reliably increase flow in patients with reduced EF and is not the standard test here.
+    D: Calcium scoring is most useful for low-flow, low-gradient AS with preserved EF or when dobutamine testing is inconclusive.
+    E: Waiting delays a decision in a symptomatic patient who may benefit from AVR.
+  objective: |
+    In low-flow, low-gradient aortic stenosis with reduced LVEF, use low-dose dobutamine stress echocardiography to distinguish true severe from pseudosevere stenosis.
+  refs:
+    - "Otto CM, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease. Circulation 2021;143:e72."
+
+- id: CV-143
+  topic: Bicuspid aortic valve
+  task: Diagnosis/Testing
+  chapters: [cardiology/valve-disease, cardiology/achd]
+  stem: |
+    A 34-year-old man is evaluated after a murmur was heard at a preemployment examination. He has no symptoms and runs regularly. There is no family history of aortic disease known to him. He takes no medications.
+
+    On physical examination, blood pressure is 126/74 mm Hg in both arms and pulse rate is 64/min. Femoral pulses are normal without delay. An early systolic ejection click is heard at the apex, followed by a grade 2/6 systolic ejection murmur at the right upper sternal border.
+
+    Echocardiogram shows a bicuspid aortic valve with fusion of the right and left coronary cusps, mild aortic stenosis (peak velocity 2.4 m/s) and trace aortic regurgitation. The aortic root measures 3.8 cm, and the ascending aorta measures 4.3 cm. Left ventricular size and function are normal.
+  lead: In addition to periodic imaging of his valve and aorta, which of the following is the most appropriate recommendation?
+  choices:
+    A: Antibiotic prophylaxis before dental procedures
+    B: Coronary angiography
+    C: Echocardiographic screening of his first-degree relatives
+    D: Genetic testing for fibrillin-1 mutations
+    E: Restriction from all aerobic exercise
+  answer: C
+  explain: |
+    A **bicuspid aortic valve (BAV)** is the most common congenital heart defect (about 1%–2% of people, men more than women). Two problems develop over time:
+    - **Valve disease** — premature aortic stenosis (often by age 50–60) or aortic regurgitation; endocarditis
+    - **Aortopathy** — dilation of the ascending aorta or root (about 30%–50%), with a risk of **dissection**
+
+    BAV clusters in families (autosomal dominant with variable penetrance; about 9% of first-degree relatives also have BAV or aortopathy). The guidelines therefore recommend **screening echocardiography of first-degree relatives** of patients with BAV and aortopathy (Class 2a, ACC/AHA).
+
+    Surveillance: echocardiogram every 3–5 years for mild disease, with imaging of the ascending aorta (CT or MRI if not well seen); **yearly** when the aorta is ≥4.5 cm. Surgery on the aorta at **≥5.5 cm** (≥5.0 cm with risk factors or at an experienced center). Look for **coarctation** — about 5%–10% of BAV patients have it.
+  why:
+    A: Endocarditis prophylaxis is reserved for prosthetic valves, prior endocarditis, certain congenital disease and cardiac transplant valvulopathy; uncomplicated BAV does not qualify.
+    B: He has no symptoms or findings to suggest coronary disease.
+    D: Fibrillin-1 testing is for suspected Marfan syndrome; he has no systemic features.
+    E: Aerobic exercise is encouraged; only heavy isometric exercise is limited when the aorta is markedly dilated.
+  objective: |
+    In bicuspid aortic valve with aortopathy, monitor the valve and aorta and recommend echocardiographic screening of first-degree relatives.
+  refs:
+    - "Otto CM, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease. Circulation 2021;143:e72."
+    - "Isselbacher EM, et al. 2022 ACC/AHA guideline for the diagnosis and management of aortic disease. Circulation 2022;146:e334."
+
+- id: CV-144
+  topic: Chronic severe primary mitral regurgitation
+  task: Treatment/Care Decisions
+  chapters: [cardiology/valve-disease]
+  stem: |
+    A 58-year-old woman with known mitral valve prolapse comes for follow-up. She has no dyspnea, fatigue or palpitations and swims 1 km three times a week.
+
+    On physical examination, blood pressure is 122/72 mm Hg and pulse rate is 70/min and regular. A grade 3/6 holosystolic murmur is heard at the apex, radiating to the axilla, with a mid-systolic click. An S₃ is heard.
+
+    Echocardiogram shows a flail posterior mitral leaflet (P2 segment) with severe mitral regurgitation (effective regurgitant orifice area 0.5 cm²), left ventricular end-systolic diameter of 42 mm (37 mm 1 year ago) and left ventricular ejection fraction of 58% (65% 1 year ago). Pulmonary artery systolic pressure is 34 mm Hg. The repair center estimates a >95% likelihood of successful repair.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Mitral valve repair
+    B: Repeat echocardiography in 6 months
+    C: Start lisinopril to reduce afterload
+    D: Start metoprolol and repeat echocardiography in 1 year
+    E: Transcatheter edge-to-edge repair
+  answer: A
+  explain: |
+    In chronic **primary (degenerative) mitral regurgitation**, the ventricle compensates for years with a **normal or high EF** because it ejects into the low-pressure left atrium. An EF that looks "normal" can already reflect **hidden LV dysfunction**.
+
+    Surgery is indicated in **asymptomatic** severe primary MR when early signs of LV dysfunction appear (Class 1):
+    - **LVEF ≤60%**, or
+    - **LV end-systolic diameter ≥40 mm**
+
+    She has both, and they are progressing. **Mitral valve repair** (preferred to replacement) at a center with high repair success preserves the subvalvular apparatus and LV function and restores normal life expectancy.
+
+    | Severe primary MR | Intervention |
+    |---|---|
+    | Symptoms | Surgery (Class 1) |
+    | Asymptomatic, LVEF ≤60% or LVESD ≥40 mm | Surgery (Class 1) |
+    | Asymptomatic, normal LV, repair likelihood >95% at expert center | Repair reasonable (2a) |
+    | New AF or PASP >50 mm Hg | Repair reasonable (2a) |
+    | High or prohibitive surgical risk, symptomatic | **TEER** |
+  why:
+    B: Waiting with an EF of 58% and an LVESD of 42 mm risks irreversible LV dysfunction and worse long-term survival.
+    C: Vasodilators do not delay surgery or improve outcomes in normotensive patients with chronic primary MR.
+    D: Beta-blockers do not change the natural history of primary MR.
+    E: Transcatheter edge-to-edge repair is for symptomatic patients at high or prohibitive surgical risk; surgical repair is more durable in a low-risk patient.
+  mnemonic: |
+    Primary MR surgery triggers: **"60–40"** — EF ≤**60**%, LVESD ≥**40** mm.
+  objective: |
+    Refer asymptomatic patients with severe primary mitral regurgitation for mitral valve repair when LVEF falls to ≤60% or LV end-systolic diameter reaches ≥40 mm.
+  refs:
+    - "Otto CM, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease. Circulation 2021;143:e72."
+
+- id: CV-145
+  topic: Secondary mitral regurgitation
+  task: Treatment/Care Decisions
+  chapters: [cardiology/valve-disease, cardiology/hfref]
+  stem: |
+    A 70-year-old man with ischemic cardiomyopathy (left ventricular ejection fraction 30%) has dyspnea walking 50 yards (NYHA class III) and two heart failure hospitalizations in the past year. For more than 6 months he has taken optimized doses of sacubitril-valsartan, metoprolol succinate, spironolactone and dapagliflozin. He has a cardiac resynchronization therapy defibrillator. He is not a candidate for further coronary revascularization; his surgical risk is high.
+
+    On physical examination, blood pressure is 112/68 mm Hg and pulse rate is 70/min. A grade 3/6 holosystolic murmur is heard at the apex. Jugular venous pressure is normal on his current diuretic dose.
+
+    Echocardiogram shows severe secondary (functional) mitral regurgitation from apical tethering of structurally normal leaflets, a left ventricular end-systolic diameter of 58 mm and a pulmonary artery systolic pressure of 46 mm Hg.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Add hydralazine–isosorbide dinitrate
+    B: Increase the loop diuretic dose
+    C: Refer for left ventricular assist device implantation
+    D: Surgical mitral valve replacement
+    E: Transcatheter edge-to-edge mitral repair
+  answer: E
+  explain: |
+    **Secondary MR** is a disease of the **ventricle**, not the valve leaflets: LV dilation and wall-motion abnormalities pull the papillary muscles apart and tether the leaflets. First-line treatment is therefore **GDMT and CRT** (which often reduce MR).
+
+    For persistent **severe secondary MR with NYHA II–IV symptoms despite optimal GDMT and CRT**, **transcatheter edge-to-edge repair (TEER, MitraClip)** is recommended (Class 2a) when anatomy is suitable — **LVEF 20%–50%, LVESD ≤70 mm, PASP ≤70 mm Hg**. In **COAPT**, TEER reduced HF hospitalization by about 50% and all-cause mortality by about a third. (MITRA-FR, which enrolled patients with more dilated ventricles and less GDMT, was neutral — selection matters.)
+
+    Surgical treatment of secondary MR does not improve survival and is usually considered only during CABG or other cardiac surgery.
+  why:
+    A: H-ISDN is indicated for self-identified Black patients with persistent NYHA III–IV symptoms or for those who cannot take RAAS inhibitors; it does not address severe MR.
+    B: He is euvolemic; more diuretic does not treat the regurgitation.
+    C: LVAD is reserved for stage D heart failure after other therapies fail or are not possible; TEER is the next evidence-based step.
+    D: Isolated mitral surgery for secondary MR has high risk in this patient and has not shown a survival benefit.
+  objective: |
+    For symptomatic severe secondary mitral regurgitation despite optimal GDMT and CRT, with suitable anatomy (LVEF 20%–50%, LVESD ≤70 mm), transcatheter edge-to-edge repair reduces hospitalization and mortality.
+  refs:
+    - "Stone GW, et al. Transcatheter mitral-valve repair in patients with heart failure (COAPT). N Engl J Med 2018;379:2307."
+    - "Otto CM, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease. Circulation 2021;143:e72."
+
+- id: CV-146
+  topic: Mitral valve prolapse
+  task: Diagnosis/Testing
+  chapters: [cardiology/valve-disease]
+  stem: |
+    A 27-year-old woman is evaluated after her primary care clinician heard a murmur at a routine visit. She has occasional brief palpitations but no chest pain, dyspnea or syncope. She takes no medications. She is tall and thin but has no lens dislocation or family history of aortic disease.
+
+    On physical examination, blood pressure is 108/66 mm Hg and pulse rate is 68/min. A mid-systolic click is heard at the apex, followed by a grade 2/6 late systolic murmur. When she stands up from a squatting position, the click moves closer to S₁ and the murmur becomes longer. With squatting, the click moves later in systole and the murmur shortens.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Aortic stenosis
+    B: Atrial septal defect
+    C: Hypertrophic cardiomyopathy
+    D: Mitral valve prolapse
+    E: Ventricular septal defect
+  answer: D
+  explain: |
+    **Mitral valve prolapse (MVP)**: one or both mitral leaflets bow >2 mm into the left atrium during systole (myxomatous degeneration). It affects about 2%–3% of people.
+
+    The **mid-systolic click** is the sudden tensing of the prolapsing leaflet and chordae; a **late systolic murmur** follows if regurgitation develops.
+
+    **Maneuvers** depend on **LV volume**:
+    - **Smaller LV** (standing, Valsalva, amyl nitrite) → prolapse happens **earlier** → click moves toward S₁, murmur **longer**
+    - **Larger LV** (squatting, leg raise, handgrip) → prolapse **later** → click moves toward S₂, murmur shorter
+
+    Prognosis is usually excellent. Follow with echocardiography every 3–5 years if MR is mild. No endocarditis prophylaxis. Watch for **"arrhythmic MVP"** (bileaflet prolapse, mitral annular disjunction, T inversion in inferior leads, frequent complex PVCs) — a rare cause of sudden death.
+
+    | Maneuver | MVP | HCM | AS, MR, VSD |
+    |---|---|---|---|
+    | Standing / Valsalva (↓ preload) | Earlier click, longer murmur | **Louder** | Softer |
+    | Squatting / leg raise (↑ preload) | Later click, shorter | Softer | Louder |
+    | Handgrip (↑ afterload) | Later click | Softer | MR, VSD louder |
+  why:
+    A: Aortic stenosis causes a crescendo-decrescendo murmur at the right upper sternal border that becomes softer with standing, without a mid-systolic click.
+    B: ASD causes fixed splitting of S₂ and a pulmonary flow murmur.
+    C: The HCM murmur becomes louder with standing and Valsalva, but there is no mid-systolic click and the murmur is harsh and crescendo-decrescendo at the left sternal border.
+    E: A VSD murmur is holosystolic at the left lower sternal border and is not preceded by a click.
+  objective: |
+    Recognize mitral valve prolapse by a mid-systolic click and late systolic murmur that occur earlier and longer with maneuvers that reduce LV volume.
+  refs:
+    - "Otto CM, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease. Circulation 2021;143:e72."
+    - "Delling FN, Vasan RS. Epidemiology and pathophysiology of mitral valve prolapse. Circulation 2014;129:2158."
+
+- id: CV-147
+  topic: Rheumatic mitral stenosis — intervention
+  task: Treatment/Care Decisions
+  chapters: [cardiology/valve-disease]
+  stem: |
+    A 38-year-old woman who emigrated from Guatemala 5 years ago is evaluated for 6 months of progressive dyspnea when climbing one flight of stairs. She had "rheumatic fever" as a child. She is in sinus rhythm. She does not plan pregnancy. Her only medication is metoprolol, started 2 months ago with partial improvement.
+
+    On physical examination, blood pressure is 112/70 mm Hg and pulse rate is 72/min and regular. An opening snap is followed by a low-pitched diastolic rumble at the apex with presystolic accentuation. S₁ is loud.
+
+    Transthoracic and transesophageal echocardiography show rheumatic mitral stenosis with a mitral valve area of 1.1 cm², a mean gradient of 11 mm Hg, pliable noncalcified leaflets with commissural fusion, mild mitral regurgitation and no left atrial thrombus. Pulmonary artery systolic pressure is 52 mm Hg. The Wilkins score is 7.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Continue metoprolol and repeat echocardiography in 1 year
+    B: Percutaneous mitral balloon commissurotomy
+    C: Start warfarin
+    D: Surgical mitral valve replacement
+    E: Transcatheter edge-to-edge mitral repair
+  answer: B
+  explain: |
+    She has **symptomatic severe rheumatic mitral stenosis** (MVA ≤1.5 cm²). In **rheumatic** MS the leaflets fuse at the **commissures**, so they can be split apart with a balloon.
+
+    **Percutaneous mitral balloon commissurotomy (PMBC)** is the treatment of choice (Class 1) when:
+    - **Favorable valve morphology** (pliable leaflets, little calcification or subvalvular thickening; **Wilkins score ≤8**)
+    - **No more than mild MR**
+    - **No left atrial thrombus** (TEE required before the procedure)
+
+    Results match surgical commissurotomy, with lower risk. **Surgery** is for unfavorable anatomy, ≥moderate MR, persistent LA thrombus, or need for other cardiac surgery.
+
+    Anticoagulation in MS: **warfarin** (not DOAC) for AF, prior embolism or left atrial thrombus.
+  why:
+    A: Symptomatic severe MS with pulmonary hypertension needs intervention; heart-rate control only lengthens diastolic filling time.
+    C: Anticoagulation is indicated for AF, prior embolism or LA thrombus, none of which she has.
+    D: Valve replacement is reserved for patients whose anatomy is unsuitable for balloon commissurotomy.
+    E: Edge-to-edge repair treats mitral regurgitation and would worsen stenosis.
+  objective: |
+    Treat symptomatic severe rheumatic mitral stenosis with favorable anatomy, no more than mild MR and no left atrial thrombus with percutaneous mitral balloon commissurotomy.
+  refs:
+    - "Otto CM, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease. Circulation 2021;143:e72."
+    - "Wilkins GT, et al. Percutaneous balloon dilatation of the mitral valve. Br Heart J 1988;60:299."
+
+- id: CV-148
+  topic: Mechanical valve thrombosis
+  task: Treatment/Care Decisions
+  chapters: [cardiology/valve-disease]
+  stem: |
+    A 56-year-old man with a bileaflet mechanical mitral valve placed 6 years ago comes for a routine visit. He missed several warfarin doses over the past month while traveling. He feels well, with no dyspnea, neurologic symptoms or embolic events.
+
+    On physical examination, blood pressure is 126/76 mm Hg and pulse rate is 70/min and regular. Crisp mechanical valve clicks are heard. There are no new murmurs.
+
+    Transthoracic echocardiogram shows a normal transmitral gradient for his prosthesis. Transesophageal echocardiography shows normal leaflet motion and a small (0.6 cm²), nonobstructive thrombus on the atrial side of the sewing ring.
+  labs:
+    - [INR, 1.4 (target 3.0)]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Emergency valve replacement
+    B: Intravenous heparin, then therapeutic warfarin
+    C: Low-dose fibrinolytic therapy
+    D: No change in therapy
+    E: Switch warfarin to apixaban
+  answer: B
+  explain: |
+    **Mechanical valve thrombosis** usually follows **subtherapeutic anticoagulation**. Management depends on whether the thrombus **obstructs** the valve and on its **size**:
+
+    | Situation | Management |
+    |---|---|
+    | **Nonobstructive, small** (<0.8 cm²), no embolism | **Optimize anticoagulation**: IV unfractionated heparin, then warfarin at the therapeutic INR (± low-dose aspirin); serial imaging |
+    | Nonobstructive, large (≥0.8 cm²) or embolism | Consider surgery or fibrinolysis |
+    | **Obstructive** (stuck leaflet, high gradient), especially with HF | **Urgent surgery** or **low-dose slow-infusion fibrinolysis**, chosen by the heart team on surgical risk, thrombus size, NYHA class and fibrinolytic contraindications |
+
+    His thrombus is small and nonobstructive, valve function is normal and he has no embolism — so intensify anticoagulation and image again in weeks to confirm resolution. Explore why doses were missed and arrange INR self-testing or closer monitoring.
+  why:
+    A: Surgery is for obstructive thrombosis, large thrombi, embolism, or failure of anticoagulation.
+    C: Fibrinolysis carries risks of embolism and bleeding and is reserved for obstructive or larger thrombi.
+    D: A thrombus on a mechanical valve with a subtherapeutic INR requires intensified anticoagulation.
+    E: DOACs are contraindicated with mechanical heart valves.
+  objective: |
+    Treat small nonobstructive mechanical valve thrombus with intravenous heparin and therapeutic warfarin; reserve surgery or fibrinolysis for obstructive or large thrombi.
+  refs:
+    - "Otto CM, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease. Circulation 2021;143:e72."
+
+- id: CV-149
+  topic: AF with a bioprosthetic valve
+  task: Treatment/Care Decisions
+  chapters: [cardiology/valve-disease, cardiology/af]
+  stem: |
+    A 76-year-old woman is evaluated for newly diagnosed persistent atrial fibrillation. She underwent surgical aortic valve replacement with a bioprosthetic valve 4 years ago for severe aortic stenosis. She has hypertension and type 2 diabetes mellitus. She has no history of bleeding. Medications are aspirin, 81 mg daily, lisinopril and metformin.
+
+    On physical examination, blood pressure is 132/78 mm Hg and pulse rate is 82/min and irregular. A soft systolic flow murmur is heard at the right upper sternal border.
+
+    Echocardiogram shows a normally functioning aortic bioprosthesis and no mitral stenosis.
+  labs:
+    - [Creatinine, 0.9 mg/dL]
+    - [Hemoglobin, 13.4 g/dL]
+  lead: Which of the following is the most appropriate stroke-prevention strategy?
+  choices:
+    A: Apixaban
+    B: Aspirin plus clopidogrel
+    C: Continue aspirin alone
+    D: Left atrial appendage occlusion
+    E: No antithrombotic therapy
+  answer: A
+  explain: |
+    Her CHA₂DS₂-VASc score is **5** (age ≥75 = 2, female, hypertension, diabetes), so she needs **oral anticoagulation**.
+
+    **Bioprosthetic valves are not "valvular AF."** The DOAC exclusion applies only to **mechanical valves** and **moderate-to-severe rheumatic mitral stenosis**. In **RIVER**, rivaroxaban was **noninferior to warfarin** in patients with AF and a bioprosthetic mitral valve, and DOACs performed similarly in bioprosthetic subgroups of the large AF trials. The 2023 AF guideline recommends a **DOAC as an alternative to warfarin** with a bioprosthetic valve (≥3 months after implantation).
+
+    Stop the aspirin when anticoagulation starts (unless she has another indication) to reduce bleeding.
+  why:
+    B: Dual antiplatelet therapy is less effective than anticoagulation for stroke prevention in AF and causes similar bleeding.
+    C: Aspirin alone does not adequately prevent cardioembolic stroke.
+    D: LAAO is for patients who cannot take long-term anticoagulation; she has no contraindication.
+    E: Her stroke risk is high; withholding antithrombotic therapy is inappropriate.
+  objective: |
+    Patients with atrial fibrillation and a bioprosthetic heart valve may be treated with a DOAC; only mechanical valves and moderate–severe rheumatic mitral stenosis require warfarin.
+  refs:
+    - "Guimarães HP, et al. Rivaroxaban in patients with atrial fibrillation and a bioprosthetic mitral valve (RIVER). N Engl J Med 2020;383:2117."
+    - "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation 2024;149:e1."
+
+- id: CV-150
+  topic: Endocarditis prophylaxis
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/endocarditis]
+  stem: |
+    Several patients are scheduled for dental extractions with manipulation of the gingival tissue at a community dental clinic. The dentist asks which of them should receive antibiotic prophylaxis against infective endocarditis.
+  lead: Which of the following patients should receive antibiotic prophylaxis before the procedure?
+  choices:
+    A: A 45-year-old woman with hypertrophic cardiomyopathy
+    B: A 52-year-old man with a bicuspid aortic valve and mild stenosis
+    C: A 60-year-old man with a drug-eluting coronary stent
+    D: A 64-year-old woman with mitral valve prolapse and moderate regurgitation
+    E: A 78-year-old man who underwent transcatheter aortic valve replacement
+  answer: E
+  explain: |
+    The 2021 AHA scientific statement (and 2023 ESC guideline) limit antibiotic prophylaxis before **dental procedures that manipulate gingival tissue, the periapical region of teeth or perforate the oral mucosa** to patients at **highest risk of adverse outcomes** from endocarditis:
+
+    | Prophylaxis recommended |
+    |---|
+    | **Prosthetic cardiac valve** — surgical or **transcatheter** (TAVR, TEER device), or prosthetic material used for valve repair (annuloplasty rings, chords) |
+    | **Previous infective endocarditis** |
+    | **Unrepaired cyanotic congenital heart disease**, or repaired CHD with residual shunt or regurgitation at a prosthetic site; any repaired CHD with prosthetic material in the first 6 months |
+    | **Cardiac transplant recipients with valvulopathy** |
+    | Ventricular assist devices (ESC 2023) |
+
+    Standard regimen: **amoxicillin 2 g orally** 30–60 minutes before the procedure (cephalexin, azithromycin or doxycycline for penicillin allergy; clindamycin is no longer recommended).
+
+    Prophylaxis is **not** recommended for most native valve disease, HCM, MVP, bicuspid valves, coronary stents, pacemakers/ICDs (in the AHA statement) or for GI/GU procedures. **Good oral hygiene** matters more.
+  why:
+    A: Hypertrophic cardiomyopathy is not a high-risk condition for endocarditis prophylaxis.
+    B: Bicuspid aortic valve without prior endocarditis or prosthetic material does not require prophylaxis.
+    C: Coronary stents do not require endocarditis prophylaxis.
+    D: Mitral valve prolapse, even with regurgitation, does not require prophylaxis.
+  objective: |
+    Limit dental endocarditis prophylaxis to patients with prosthetic valves (including TAVR), prior endocarditis, certain congenital heart disease and transplant valvulopathy.
+  refs:
+    - "Wilson WR, et al. Prevention of viridans group streptococcal infective endocarditis: a scientific statement from the AHA. Circulation 2021;143:e963."
+    - "Delgado V, et al. 2023 ESC guidelines for the management of endocarditis. Eur Heart J 2023;44:3948."
+
+- id: CV-151
+  topic: Suspected endocarditis — initial evaluation
+  task: Diagnosis/Testing
+  chapters: [cardiology/endocarditis]
+  stem: |
+    A 67-year-old man is evaluated for 3 weeks of fevers, night sweats, fatigue and a 3-kg (6.6-lb) weight loss. He had dental cleaning 6 weeks ago. He has known mitral valve prolapse. He has taken no antibiotics.
+
+    On physical examination, temperature is 38.3 °C (100.9 °F), blood pressure is 128/72 mm Hg, pulse rate is 96/min, and respiration rate is 16/min. A new grade 3/6 holosystolic murmur is heard at the apex. There are splinter hemorrhages under two fingernails and small, painless macules on both palms. The spleen tip is palpable. He is alert and hemodynamically stable, with no neurologic deficits.
+  labs:
+    - [Leukocyte count, 11,400/µL]
+    - [Hemoglobin, 10.8 g/dL]
+    - [Erythrocyte sedimentation rate, 78 mm/h]
+    - [Urinalysis, 10–20 erythrocytes/hpf]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Begin empiric vancomycin immediately, then obtain blood cultures
+    B: CT of the chest, abdomen and pelvis
+    C: Obtain three sets of blood cultures from separate sites, then perform echocardiography
+    D: Obtain one set of blood cultures and start ceftriaxone
+    E: Perform transesophageal echocardiography before any blood cultures
+  answer: C
+  explain: |
+    He likely has **subacute infective endocarditis** (viridans streptococci after dental work on a prolapsing valve): fever, a new regurgitant murmur, **splinter hemorrhages**, **Janeway lesions** (painless palmar macules), splenomegaly, anemia, high ESR and **hematuria** (immune complex glomerulonephritis).
+
+    In a **stable** patient with a subacute course, the priority is **microbiologic diagnosis**:
+    - **At least three sets of blood cultures from separate venipunctures**, ideally spaced over time (≥1 hour between first and last), **before antibiotics**
+    - Then **transthoracic echocardiography**, followed by **TEE** if TTE is negative and suspicion remains, or if complications (abscess) are suspected
+    - Start **empiric antibiotics after cultures** — immediately if the patient is acutely ill or septic
+
+    Prior antibiotics are the most common cause of **culture-negative endocarditis**.
+
+    | Modified Duke (2023 ISCVID) major criteria |
+    |---|
+    | Typical organism in ≥2 separate blood cultures (viridans strep, *S. gallolyticus*, HACEK, *S. aureus*, *E. faecalis*) |
+    | Echo/CT/PET evidence of endocardial involvement (vegetation, abscess, new regurgitation, prosthetic valve dehiscence) |
+  why:
+    A: Giving antibiotics before cultures in a stable patient may sterilize the blood and make the organism impossible to identify.
+    B: Imaging for emboli may follow, but it does not replace blood cultures and echocardiography.
+    D: A single set of cultures is insufficient to establish continuous bacteremia or to interpret skin contaminants.
+    E: Cultures should be drawn first; TEE is usually performed after TTE or when complications are suspected.
+  objective: |
+    In a hemodynamically stable patient with suspected subacute endocarditis, obtain three sets of blood cultures before antibiotics, then echocardiography.
+  refs:
+    - "Fowler VG, et al. The 2023 Duke–International Society for Cardiovascular Infectious Diseases criteria for infective endocarditis. Clin Infect Dis 2023;77:518."
+    - "Baddour LM, et al. Infective endocarditis in adults: diagnosis, antimicrobial therapy, and management of complications — AHA scientific statement. Circulation 2015;132:1435."
+
+- id: CV-152
+  topic: Endocarditis with perivalvular abscess
+  task: Treatment/Care Decisions
+  chapters: [cardiology/endocarditis]
+  stem: |
+    A 63-year-old man is hospitalized with methicillin-susceptible *Staphylococcus aureus* native aortic valve endocarditis. He has received intravenous cefazolin for 5 days, and blood cultures became negative on day 3. He continues to have fevers.
+
+    On physical examination, temperature is 38.4 °C (101.1 °F), blood pressure is 118/58 mm Hg, and pulse rate is 64/min. A grade 2/6 early diastolic murmur is heard at the left sternal border. The lungs are clear.
+
+    Daily electrocardiograms show that the PR interval has lengthened from 0.18 second at admission to 0.28 second today. Transesophageal echocardiography shows a 9-mm aortic valve vegetation, moderate aortic regurgitation and a perivalvular aortic root abscess.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Add gentamicin to cefazolin
+    B: Add rifampin to cefazolin
+    C: Early surgery during this hospitalization
+    D: Extend intravenous antibiotics to 8 weeks
+    E: Implant a permanent pacemaker
+  answer: C
+  explain: |
+    A **new conduction abnormality** (PR prolongation or AV block) in **aortic valve endocarditis** signals extension of infection into the **aortic root** near the AV node and His bundle — a **perivalvular abscess**. Persistent fever despite sterile blood cultures is another clue.
+
+    **Early surgery** (during the initial hospitalization, before completing antibiotics) is indicated for:
+
+    | Indications for early surgery in left-sided IE |
+    |---|
+    | **Heart failure** from valve dysfunction |
+    | **Uncontrolled infection**: **abscess, heart block**, fistula, enlarging vegetation; persistent bacteremia >5–7 days on appropriate therapy |
+    | Fungal or highly resistant organisms |
+    | **Embolism prevention**: vegetation >10 mm with embolism, or very large (>15–30 mm) mobile vegetations |
+    | Relapsing prosthetic valve infection |
+
+    Antibiotics alone rarely sterilize an abscess.
+  why:
+    A: Gentamicin adds nephrotoxicity without benefit for native-valve S. aureus endocarditis and does not treat an abscess.
+    B: Rifampin is used for prosthetic valve staphylococcal infection; it does not replace surgical drainage of a root abscess.
+    D: Longer antibiotic courses do not cure a perivalvular abscess.
+    E: Pacing may become necessary, but the infection that is destroying the conduction system must be treated surgically.
+  objective: |
+    New AV conduction delay in aortic valve endocarditis suggests a perivalvular abscess; abscess and heart block are indications for early surgery.
+  refs:
+    - "Otto CM, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease. Circulation 2021;143:e72."
+    - "Delgado V, et al. 2023 ESC guidelines for the management of endocarditis. Eur Heart J 2023;44:3948."
+
+- id: CV-153
+  topic: Tricuspid endocarditis in a person who injects drugs
+  task: Diagnosis/Testing
+  chapters: [cardiology/endocarditis]
+  stem: |
+    A 29-year-old man comes to the emergency department because of 1 week of fever, pleuritic chest pain and cough with blood-streaked sputum. He injects heroin and fentanyl daily.
+
+    On physical examination, temperature is 39.4 °C (102.9 °F), blood pressure is 106/62 mm Hg, pulse rate is 118/min, and respiration rate is 26/min. Oxygen saturation is 92% breathing ambient air. There are track marks on both forearms. A grade 2/6 holosystolic murmur is heard at the left lower sternal border that increases with inspiration. Prominent *v* waves are seen in the jugular venous pulse.
+
+    CT of the chest shows multiple bilateral peripheral nodules of various sizes, several with cavitation, and some with a "feeding vessel" sign. Two of two sets of blood cultures grow gram-positive cocci in clusters.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Aspiration lung abscess
+    B: Granulomatosis with polyangiitis
+    C: Metastatic malignancy
+    D: Reactivation pulmonary tuberculosis
+    E: Tricuspid endocarditis with septic emboli
+  answer: E
+  explain: |
+    **Right-sided (tricuspid) endocarditis** is typical of **people who inject drugs**, most often caused by ***Staphylococcus aureus***. The infected tricuspid valve showers **septic emboli to the lungs**, producing:
+    - Multiple **peripheral nodules**, often **cavitating**, at different stages, with a **feeding vessel sign**
+    - Pleuritic pain, cough, hemoptysis, sometimes empyema
+    - A **tricuspid regurgitation** murmur that **increases with inspiration** (Carvallo sign) and large **v waves**
+
+    Systemic emboli (stroke, Janeway lesions) are uncommon unless there is left-sided involvement or a shunt (PFO).
+
+    Management: cultures, echocardiography, **IV antistaphylococcal therapy** (cefazolin or nafcillin for MSSA; vancomycin or daptomycin for MRSA), **addiction treatment** (start buprenorphine or methadone in the hospital), naloxone, and hepatitis C/HIV testing. Surgery for persistent sepsis, very large vegetations (>20 mm) with recurrent emboli, or right heart failure from severe TR.
+  why:
+    A: Aspiration abscess usually forms a single cavity in dependent segments, not multiple peripheral nodules with staphylococcal bacteremia.
+    B: GPA can cause cavitary nodules, but not with staphylococcal bacteremia and a new tricuspid murmur.
+    C: Metastases rarely cavitate this rapidly and do not cause fever with positive blood cultures.
+    D: TB typically causes upper-lobe cavitation with a subacute course and does not cause staphylococcal bacteremia.
+  objective: |
+    In people who inject drugs, multiple cavitating peripheral lung nodules with S. aureus bacteremia and a tricuspid regurgitation murmur indicate tricuspid endocarditis with septic pulmonary emboli.
+  refs:
+    - "Baddour LM, et al. Infective endocarditis in adults: AHA scientific statement. Circulation 2015;132:1435."
+    - "Delgado V, et al. 2023 ESC guidelines for the management of endocarditis. Eur Heart J 2023;44:3948."
+
+- id: CV-154
+  topic: Prosthetic valve staphylococcal endocarditis
+  task: Treatment/Care Decisions
+  chapters: [cardiology/endocarditis]
+  stem: |
+    A 71-year-old woman is admitted with 2 weeks of fevers and malaise. She underwent surgical aortic valve replacement with a bioprosthesis 4 months ago. She takes aspirin and atorvastatin.
+
+    On physical examination, temperature is 38.2 °C (100.8 °F), blood pressure is 124/66 mm Hg, and pulse rate is 92/min. A grade 2/6 systolic murmur is heard at the right upper sternal border. Neurologic examination is normal.
+
+    Four of four sets of blood cultures grow methicillin-resistant *Staphylococcus epidermidis* (vancomycin MIC 1 µg/mL, rifampin susceptible). Transesophageal echocardiography shows a 6-mm vegetation on the bioprosthesis without abscess, dehiscence or significant regurgitation.
+  labs:
+    - [Creatinine, 0.9 mg/dL]
+  lead: Which of the following is the most appropriate antibiotic regimen?
+  choices:
+    A: Cefazolin plus gentamicin for 4 weeks
+    B: Daptomycin alone for 2 weeks
+    C: Oral linezolid alone for 4 weeks
+    D: Vancomycin alone for 4 weeks
+    E: Vancomycin, rifampin and gentamicin
+  answer: E
+  explain: |
+    **Coagulase-negative staphylococci** (especially *S. epidermidis*) are a leading cause of **early prosthetic valve endocarditis** (within 1 year of surgery), usually acquired at the time of surgery and **methicillin-resistant**.
+
+    Staphylococci form **biofilm** on prosthetic material. **Rifampin** penetrates biofilm and kills adherent organisms, but resistance emerges quickly if used alone. The AHA regimen for staphylococcal **prosthetic valve** endocarditis:
+
+    | Organism | Regimen |
+    |---|---|
+    | MRSA or methicillin-resistant CoNS | **Vancomycin + rifampin ≥6 weeks + gentamicin for the first 2 weeks** |
+    | MSSA / methicillin-susceptible CoNS | **Nafcillin/oxacillin (or cefazolin) + rifampin ≥6 weeks + gentamicin 2 weeks** |
+
+    Start rifampin once blood cultures clear (some experts add it after 3–5 days of the other drugs) to limit resistance. Obtain early **cardiac surgical consultation** — many patients with staphylococcal PVE need surgery.
+  why:
+    A: Cefazolin does not cover methicillin-resistant staphylococci, and 4 weeks without biofilm-active rifampin is inadequate for prosthetic valves.
+    B: Two weeks of a single drug is far too short for prosthetic valve endocarditis.
+    C: Oral linezolid alone is not a standard regimen for prosthetic valve endocarditis and lacks the biofilm activity of rifampin combinations.
+    D: Vancomycin alone without rifampin has higher failure rates on prosthetic material.
+  objective: |
+    Treat methicillin-resistant staphylococcal prosthetic valve endocarditis with vancomycin plus rifampin for at least 6 weeks and gentamicin for the first 2 weeks, with early surgical evaluation.
+  refs:
+    - "Baddour LM, et al. Infective endocarditis in adults: diagnosis, antimicrobial therapy, and management of complications — AHA scientific statement. Circulation 2015;132:1435."
+
+- id: CV-155
+  topic: Culture-negative endocarditis
+  task: Diagnosis/Testing
+  chapters: [cardiology/endocarditis]
+  stem: |
+    A 52-year-old man who has been experiencing homelessness for 3 years is admitted with 2 months of intermittent fevers, fatigue and weight loss. He has severe alcohol use disorder. He has had no recent antibiotics. He says he has "itchy bugs" in his clothes.
+
+    On physical examination, temperature is 38.1 °C (100.6 °F), blood pressure is 124/62 mm Hg, and pulse rate is 98/min. There are excoriations over the trunk, and lice are seen in the seams of his clothing. A grade 2/6 early diastolic murmur is heard at the left sternal border.
+
+    Transesophageal echocardiography shows a 12-mm vegetation on the aortic valve with moderate regurgitation. Three sets of blood cultures drawn before antibiotics show no growth after 5 days of incubation.
+  labs:
+    - [Leukocyte count, 9,100/µL]
+    - [Creatinine, 1.6 mg/dL]
+    - [Urinalysis, 2+ protein, 10–20 erythrocytes/hpf]
+  lead: Which of the following is the most appropriate diagnostic test?
+  choices:
+    A: "*Bartonella* serology"
+    B: "*Brucella* serology"
+    C: "*Coxiella burnetii* serology"
+    D: Fungal blood cultures
+    E: Prolonged incubation of blood cultures for HACEK organisms
+  answer: A
+  explain: |
+    **Culture-negative endocarditis** is most often caused by **prior antibiotics**. When none were given, think of organisms that **do not grow in routine blood cultures**:
+
+    | Organism | Exposure clue | Test |
+    |---|---|---|
+    | ***Bartonella quintana*** | **Homelessness, body lice**, alcohol use disorder | **Serology** (IgG ≥1:800), PCR of valve tissue |
+    | *Bartonella henselae* | Cats (scratches, fleas) | Serology, PCR |
+    | ***Coxiella burnetii*** (Q fever) | Farm animals, unpasteurized milk, parturient animals | **Phase I IgG** serology |
+    | *Brucella* | Unpasteurized dairy, livestock, travel | Serology, prolonged culture |
+    | *Tropheryma whipplei* | Arthralgia, diarrhea | Valve PCR |
+    | Fungi | IV drug use, prosthetic valves, immunosuppression | Fungal cultures, β-D-glucan |
+
+    *B. quintana* (trench fever) is transmitted by **body lice** and is a classic cause of aortic valve endocarditis in people experiencing homelessness. Treatment: doxycycline plus gentamicin (or rifampin), often with valve surgery.
+
+    HACEK organisms now usually grow in **standard** automated blood culture systems within 5 days — prolonged incubation is no longer needed.
+  why:
+    B: Brucella is linked to unpasteurized dairy or livestock exposure, which he lacks.
+    C: Q fever is linked to farm animal exposure; body lice point instead to Bartonella quintana.
+    D: Fungal endocarditis is more likely with prosthetic valves, injection drug use or immunosuppression.
+    E: Modern culture systems detect HACEK organisms within 5 days, and his exposures point to Bartonella.
+  objective: |
+    In culture-negative endocarditis in a person experiencing homelessness with body lice, test for Bartonella quintana with serology.
+  refs:
+    - "Fowler VG, et al. The 2023 Duke–ISCVID criteria for infective endocarditis. Clin Infect Dis 2023;77:518."
+    - "Baddour LM, et al. Infective endocarditis in adults: AHA scientific statement. Circulation 2015;132:1435."
+
+- id: CV-156
+  topic: Oral step-down therapy for endocarditis
+  task: Treatment/Care Decisions
+  chapters: [cardiology/endocarditis]
+  stem: |
+    A 44-year-old man has received 12 days of intravenous ceftriaxone for native mitral valve endocarditis caused by penicillin-susceptible viridans group streptococci. Blood cultures became negative within 48 hours. He has been afebrile for 9 days. Transesophageal echocardiography shows a 7-mm vegetation without abscess, perforation or significant regurgitation. He has no heart failure or embolic events. He is reliable and wants to go home, but he has a history of injection drug use (in remission for 4 years on buprenorphine), and his team prefers to avoid a long-term central venous catheter.
+
+    On physical examination, temperature is 36.8 °C (98.2 °F), blood pressure is 122/74 mm Hg, and pulse rate is 72/min.
+  labs:
+    - [C-reactive protein, 12 mg/L (148 mg/L at admission)]
+    - [Leukocyte count, 7,200/µL]
+  lead: Which of the following is the most appropriate way to complete his antibiotic therapy?
+  choices:
+    A: Oral amoxicillin, 500 mg three times daily for 7 days
+    B: Oral doxycycline alone for 4 weeks
+    C: Single dose of intramuscular benzathine penicillin
+    D: Stop antibiotics now
+    E: Switch to an oral two-drug regimen to complete about 6 weeks
+  answer: E
+  explain: |
+    The **POET** trial randomized clinically stable patients with left-sided endocarditis (streptococci, *E. faecalis*, *S. aureus* or CoNS) who had received **≥10 days of IV therapy** (≥7 days after valve surgery) to continued IV therapy or a switch to **high-dose oral two-drug combinations** (for streptococci, for example, amoxicillin plus rifampin, or linezolid plus rifampin). Oral step-down was **noninferior** for death, embolism, relapse and unplanned surgery — and remained so at 5 years.
+
+    The 2023 ESC guideline supports oral step-down (Class 2a) when the patient is **stable**, afebrile, has **cleared bacteremia**, has **no abscess or need for surgery**, and can take oral drugs reliably. It avoids prolonged hospitalization and central lines — especially helpful for people with a history of injection drug use.
+
+    Total duration for native valve streptococcal endocarditis remains about **4–6 weeks**; doses are higher than usual outpatient doses.
+  why:
+    A: Standard-dose amoxicillin for 7 days is far too short and too low a dose to complete treatment of endocarditis.
+    B: Doxycycline alone is not an established regimen for streptococcal endocarditis.
+    C: A single intramuscular dose cannot complete therapy for endocarditis.
+    D: Twelve days is too short for native valve endocarditis; stopping now risks relapse.
+  objective: |
+    In stable patients with left-sided endocarditis who have received at least 10 days of IV therapy and have no complications, switching to a high-dose oral two-drug regimen is noninferior to continued IV therapy.
+  refs:
+    - "Iversen K, et al. Partial oral versus intravenous antibiotic treatment of endocarditis (POET). N Engl J Med 2019;380:415."
+    - "Delgado V, et al. 2023 ESC guidelines for the management of endocarditis. Eur Heart J 2023;44:3948."
+
+- id: CV-157
+  topic: Carcinoid heart disease
+  task: Diagnosis/Testing
+  chapters: [cardiology/valve-disease, heme/solid-tumors]
+  stem: |
+    A 61-year-old man is evaluated for 6 months of leg swelling and abdominal fullness. For 2 years he has had episodes of facial flushing and watery diarrhea several times a week. He does not drink alcohol.
+
+    On physical examination, blood pressure is 118/72 mm Hg and pulse rate is 88/min. There is facial telangiectasia. Jugular venous pressure is 14 cm H₂O with large *v* waves. A holosystolic murmur at the left lower sternal border increases with inspiration, and a systolic ejection murmur is heard at the left upper sternal border. The liver is enlarged and pulsatile. There is 2+ leg edema.
+
+    Echocardiogram shows thickened, retracted and immobile tricuspid and pulmonic valve leaflets with severe tricuspid regurgitation and moderate pulmonic stenosis. Left-sided valves are normal. CT of the abdomen shows multiple liver masses and a small ileal mass with mesenteric fibrosis.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Carcinoid heart disease
+    B: Ebstein anomaly
+    C: Ergot-derivative valvulopathy
+    D: Rheumatic heart disease
+    E: Tricuspid valve endocarditis
+  answer: A
+  explain: |
+    **Carcinoid syndrome** occurs when a **neuroendocrine (carcinoid) tumor** — usually from the small bowel — **metastasizes to the liver**, so vasoactive substances (especially **serotonin**) bypass hepatic inactivation and reach the systemic circulation: **flushing, diarrhea, bronchospasm, telangiectasia**.
+
+    **Carcinoid heart disease** develops in up to 50% of patients with the syndrome. Serotonin stimulates fibroblasts to lay down **plaque-like fibrous tissue** on the valves of the **right heart**, causing **tricuspid regurgitation** (most common) and **pulmonic stenosis/regurgitation**. The **lungs inactivate serotonin** (monoamine oxidase), so left-sided valves are spared — unless there is a **PFO**, a bronchial carcinoid or a very high hormone burden.
+
+    Diagnosis: **24-hour urinary 5-HIAA** or plasma 5-HIAA, NT-proBNP, echocardiography. Treatment: **somatostatin analogs** (octreotide, lanreotide), **telotristat** for diarrhea, tumor control, and **valve replacement** for severe disease.
+  why:
+    B: Ebstein anomaly is a congenital apical displacement of the tricuspid valve and does not cause flushing, diarrhea or liver masses.
+    C: Ergot derivatives (cabergoline at high doses, pergolide) and fenfluramine cause similar serotonergic valve lesions, but he takes no such drugs and has metastatic tumor.
+    D: Rheumatic heart disease primarily affects the mitral and aortic valves.
+    E: Endocarditis causes fever and vegetations, not thickened, retracted leaflets with flushing and liver metastases.
+  objective: |
+    Recognize carcinoid heart disease (right-sided valve fibrosis — TR and pulmonic stenosis — with flushing, diarrhea and liver metastases) and confirm with 5-HIAA.
+  refs:
+    - "Davar J, et al. Diagnosing and managing carcinoid heart disease in patients with neuroendocrine tumors: an expert statement. J Am Coll Cardiol 2017;69:1288."
+
+- id: CV-158
+  topic: Secondary prevention of rheumatic fever
+  task: Treatment/Care Decisions
+  chapters: [cardiology/valve-disease, id/vaccines]
+  stem: |
+    A 22-year-old woman who emigrated from Haiti 1 year ago comes to establish care. At age 16 she had acute rheumatic fever with carditis; echocardiography now shows mild mitral regurgitation and mild mitral leaflet thickening from rheumatic heart disease. She has had no recurrence since. She has no penicillin allergy. She is a teacher's aide at an elementary school.
+
+    On physical examination, blood pressure is 110/68 mm Hg and pulse rate is 70/min. A soft apical holosystolic murmur is heard.
+  lead: Which of the following is the most appropriate recommendation to prevent recurrent rheumatic fever?
+  choices:
+    A: Amoxicillin before dental procedures only
+    B: Intramuscular benzathine penicillin G every 4 weeks for 1 year
+    C: Intramuscular benzathine penicillin G every 4 weeks until age 40
+    D: No prophylaxis because she has had no recurrence
+    E: Oral penicillin for 10 days whenever she has a sore throat
+  answer: C
+  explain: |
+    After acute rheumatic fever, **recurrent group A streptococcal pharyngitis** can trigger recurrences that worsen valve damage. **Secondary prophylaxis** with **intramuscular benzathine penicillin G** (every 4 weeks; every 3 weeks in high-incidence settings) is the most effective intervention.
+
+    Duration (AHA):
+
+    | History | Duration of prophylaxis |
+    |---|---|
+    | Rheumatic fever **without carditis** | 5 years or until age 21, whichever is longer |
+    | Carditis **without residual heart disease** | 10 years or until age 21, whichever is longer |
+    | **Carditis with residual valve disease** | **10 years or until age 40**, whichever is longer; sometimes lifelong |
+
+    She had carditis with residual valve disease at 16: 10 years would end at age 26, but **until age 40 is longer**, so she should continue to age 40. Her job with frequent exposure to children also supports continued prophylaxis. Reassess at 40 — patients with moderate–severe disease or valve surgery may continue lifelong.
+  why:
+    A: Dental prophylaxis prevents endocarditis, not rheumatic fever, and is not indicated for native rheumatic valve disease without other high-risk features.
+    B: One year is far too short after rheumatic carditis.
+    D: Recurrence risk persists for years, particularly with exposure to school-aged children.
+    E: Treating each sore throat misses asymptomatic streptococcal infections, which can also trigger recurrences.
+  objective: |
+    After rheumatic fever with carditis and residual valve disease, give benzathine penicillin G every 4 weeks for 10 years or until age 40, whichever is longer.
+  refs:
+    - "Gerber MA, et al. Prevention of rheumatic fever and diagnosis and treatment of acute streptococcal pharyngitis: AHA scientific statement. Circulation 2009;119:1541."
+    - "Otto CM, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease. Circulation 2021;143:e72."

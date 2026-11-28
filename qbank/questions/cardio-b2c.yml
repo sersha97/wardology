@@ -1,0 +1,630 @@
+# Cardiovascular Disease — batch 2c: bradyarrhythmias, conduction disease, devices, syncope (ABIM CERT)
+- id: CV-063
+  topic: Tachy-brady syndrome
+  task: Treatment/Care Decisions
+  chapters: [cardiology/brady, cardiology/af]
+  stem: |
+    A 77-year-old woman is evaluated for episodes of lightheadedness and one near-syncopal spell over the past 2 months. She also notices occasional rapid palpitations. She has hypertension. Medications are losartan and apixaban, which was started 6 months ago for paroxysmal atrial fibrillation. Metoprolol was stopped 3 weeks ago because of dizziness, but her symptoms have continued.
+
+    On physical examination, blood pressure is 138/76 mm Hg and pulse rate is 52/min and regular. Examination is otherwise normal.
+
+    A 14-day ambulatory monitor shows paroxysms of atrial fibrillation at 130–150/min. Each episode ends with a sinus pause of 4 to 6 seconds, which correlate with her symptoms of lightheadedness. Between episodes there is sinus bradycardia at 45–55/min.
+  labs:
+    - [Thyroid-stimulating hormone, 1.8 µU/mL]
+    - [Potassium, 4.3 mEq/L]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Electrophysiology study
+    B: Implantable loop recorder
+    C: Oral theophylline
+    D: Permanent pacemaker implantation
+    E: Restart metoprolol at a lower dose
+  answer: D
+  explain: |
+    This is **tachy-brady syndrome**, a form of **sinus node dysfunction**: paroxysmal atrial tachyarrhythmias alternate with sinus bradycardia, and when the tachycardia stops, the "sick" sinus node takes seconds to recover (**post-conversion pauses**).
+
+    Symptoms correlate with documented pauses, and the bradycardia persists **off AV-nodal blockers**, so the problem is intrinsic. A **permanent pacemaker** (dual-chamber or atrial-based) is indicated (Class 1). Pacing also makes it safe to give the beta-blocker or antiarrhythmic needed to control the tachycardia.
+
+    Catheter ablation of AF is an alternative in selected patients because removing AF can remove the pauses — but of these options, pacing is correct.
+
+    | Sinus node dysfunction pacing — Class 1 |
+    |---|
+    | Symptoms clearly related to bradycardia or pauses |
+    | Symptomatic bradycardia caused by a drug that is essential (e.g., beta-blocker for AF) |
+  why:
+    A: The diagnosis is already established by symptom–rhythm correlation; an EP study adds nothing.
+    B: A loop recorder is for infrequent symptoms not yet captured; her events are already documented.
+    C: Theophylline can raise the sinus rate modestly but is poorly tolerated, proarrhythmic and not a substitute for pacing in symptomatic sinus node dysfunction.
+    E: Restarting a beta-blocker without pacing support would worsen the pauses.
+  mnemonic: |
+    Tachy-brady: **"the sprinter who faints at the finish line"** — the pause comes when the tachycardia stops.
+  objective: |
+    Treat symptomatic sinus node dysfunction, including tachy-brady syndrome with post-conversion pauses, with a permanent pacemaker.
+  refs:
+    - "Kusumoto FM, et al. 2018 ACC/AHA/HRS guideline on the evaluation and management of patients with bradycardia and cardiac conduction delay. Circulation 2019;140:e382."
+
+- id: CV-064
+  topic: Mobitz II AV block
+  task: Treatment/Care Decisions
+  chapters: [cardiology/brady, cardiology/conduction]
+  stem: |
+    A 72-year-old man is evaluated for 2 weeks of exertional fatigue and two episodes of lightheadedness. He has hypertension and type 2 diabetes mellitus. Medications are amlodipine, metformin and atorvastatin. He takes no AV-nodal blocking drugs.
+
+    On physical examination, blood pressure is 142/74 mm Hg and pulse rate is 54/min and irregular. Examination is otherwise normal.
+
+    Electrocardiogram shows sinus rhythm at 76/min with a constant PR interval of 0.18 second and right bundle branch block. Intermittently, a P wave is not followed by a QRS complex, without any preceding PR prolongation; the PR interval after the dropped beat is unchanged.
+  labs:
+    - [Potassium, 4.6 mEq/L]
+    - [Thyroid-stimulating hormone, 2.4 µU/mL]
+    - [High-sensitivity troponin I, below the 99th percentile]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Atropine as needed
+    B: Exercise treadmill test
+    C: Observation with repeat ECG in 3 months
+    D: Permanent pacemaker implantation
+    E: Stop amlodipine and observe
+  answer: D
+  explain: |
+    This is **Mobitz type II second-degree AV block**: sudden dropped beats with a **constant PR interval** before and after. With a **bundle branch block**, the block is almost always **infranodal** (His-Purkinje system) — unpredictable and prone to progress abruptly to **complete heart block** with a slow, unreliable escape rhythm.
+
+    A **permanent pacemaker** is indicated for Mobitz II, high-grade AV block or third-degree AV block **not due to a reversible cause — even without symptoms** (Class 1). He also has symptoms.
+
+    | | Mobitz I (Wenckebach) | Mobitz II |
+    |---|---|---|
+    | PR before drop | Progressively lengthens | **Constant** |
+    | Level | AV node (usually) | **His–Purkinje** |
+    | QRS | Usually narrow | Often wide (BBB) |
+    | Atropine/exercise | Improves | May **worsen** (more P waves arrive at a diseased system) |
+    | Pacemaker | Only if symptomatic or infranodal | **Yes** |
+  why:
+    A: Atropine acts on the AV node; in infranodal block it may increase the sinus rate and worsen the conduction ratio. It is not long-term therapy.
+    B: Exercise testing is sometimes used to localize block in unclear cases, but Mobitz II with bundle branch block already indicates pacing.
+    C: Waiting exposes him to sudden complete heart block and syncope.
+    E: Dihydropyridine calcium channel blockers such as amlodipine do not affect AV conduction.
+  objective: |
+    Implant a permanent pacemaker for Mobitz type II second-degree AV block without a reversible cause, regardless of symptoms.
+  refs:
+    - "Kusumoto FM, et al. 2018 ACC/AHA/HRS guideline on the evaluation and management of patients with bradycardia and cardiac conduction delay. Circulation 2019;140:e382."
+
+- id: CV-065
+  topic: Mobitz I in a young athlete
+  task: Treatment/Care Decisions
+  chapters: [cardiology/brady]
+  stem: |
+    A 23-year-old man who is a competitive rower comes for a preparticipation evaluation. He has no symptoms, including during maximal training. He takes no medications or supplements.
+
+    On physical examination, blood pressure is 114/66 mm Hg and pulse rate is 44/min. Examination is normal.
+
+    Resting electrocardiogram shows sinus bradycardia with progressive PR prolongation until a P wave fails to conduct, then a shorter PR interval after the pause; QRS duration is 0.09 second. During an exercise test, the heart rate rises to 186/min with 1:1 AV conduction and a normal PR interval.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Cardiac MRI
+    B: Electrophysiology study
+    C: Permanent pacemaker implantation
+    D: Reassurance and continued training
+    E: Restriction from competitive sports
+  answer: D
+  explain: |
+    This is **Mobitz I (Wenckebach) second-degree AV block** — progressive PR prolongation before a dropped beat — in a **well-trained endurance athlete**. It reflects **high vagal tone** acting on the **AV node**, is benign, and resolves with exercise (sympathetic activation), as shown here.
+
+    The 2017 International Criteria for ECG interpretation in athletes list **sinus bradycardia, first-degree AV block and Mobitz I** as normal training-related findings that need **no further testing** in an asymptomatic athlete.
+
+    Red flags that would change management: symptoms (syncope, exercise intolerance), Mobitz II or complete heart block, a wide QRS, or failure to conduct 1:1 with exercise.
+  why:
+    A: Cardiac MRI would be appropriate for findings suggesting structural disease (pathologic Q waves, T-wave inversion), which are absent.
+    B: An EP study is reserved for unclear level of block or symptoms; this is clearly nodal and resolves with exercise.
+    C: Pacing is not indicated for asymptomatic Mobitz I at the AV-node level.
+    E: Training-related Mobitz I does not warrant sports restriction.
+  pearl: |
+    In athletes, "**normal**" ECG findings include sinus bradycardia (≥30/min), first-degree AV block, Mobitz I, incomplete RBBB, isolated QRS voltage and early repolarization. "**Abnormal**" includes T-wave inversion beyond V2 (non-Black athletes), ST depression, pathologic Q waves, LBBB and Mobitz II.
+  objective: |
+    Mobitz I AV block in an asymptomatic athlete with a narrow QRS that resolves with exercise is benign and needs no treatment or restriction.
+  refs:
+    - "Sharma S, et al. International recommendations for electrocardiographic interpretation in athletes. J Am Coll Cardiol 2017;69:1057."
+    - "Kusumoto FM, et al. 2018 ACC/AHA/HRS guideline on the evaluation and management of patients with bradycardia and cardiac conduction delay. Circulation 2019;140:e382."
+
+- id: CV-066
+  topic: Bifascicular block with unexplained syncope
+  task: Diagnosis/Testing
+  chapters: [cardiology/conduction, cardiology/syncope]
+  stem: |
+    A 74-year-old man is evaluated after an episode of sudden loss of consciousness while seated at dinner, without prodrome; he recovered fully within seconds and injured his face. He has hypertension and hyperlipidemia. Medications are chlorthalidone and rosuvastatin.
+
+    On physical examination, blood pressure is 136/80 mm Hg sitting and 134/78 mm Hg standing, and pulse rate is 70/min and regular. There is a facial abrasion. Cardiac and neurologic examinations are normal.
+
+    Electrocardiogram shows sinus rhythm, PR interval 0.20 second, right bundle branch block and left anterior fascicular block. Echocardiogram shows normal left ventricular function and no valve disease. Telemetry for 24 hours in the hospital shows no arrhythmia.
+  labs:
+    - [Potassium, 4.0 mEq/L]
+    - [Hemoglobin, 13.9 g/dL]
+  lead: Which of the following is the most appropriate next step in evaluation?
+  choices:
+    A: Carotid duplex ultrasonography
+    B: Electroencephalography
+    C: Electrophysiology study
+    D: Reassurance without further testing
+    E: Tilt-table testing
+  answer: C
+  explain: |
+    **Sudden syncope without prodrome**, with injury, in an older patient with **bifascicular block** (RBBB + left anterior fascicular block), strongly suggests **intermittent high-grade AV block** — the third fascicle failing intermittently.
+
+    The 2017 syncope and 2018 bradycardia guidelines support:
+    - **Electrophysiology study** — an **HV interval ≥70 ms**, or infranodal block induced by atrial pacing, supports pacemaker implantation (and can be done right away in a patient with injurious syncope); or
+    - an **implantable loop recorder** if the EP study is nondiagnostic — long-term rhythm monitoring to capture the event.
+
+    Some experts implant a pacemaker empirically in this setting (B4 study); the key ABIM point is that **conduction disease plus unexplained arrhythmic-type syncope needs a rhythm diagnosis**, not reassurance or a neurologic workup.
+  why:
+    A: Carotid imaging does not explain transient global loss of consciousness and is not part of syncope evaluation without focal symptoms.
+    B: EEG is for suspected seizure; abrupt brief syncope with immediate recovery is not suggestive of seizure.
+    D: Bifascicular block with syncope carries a significant risk of complete heart block; it needs evaluation.
+    E: Tilt testing evaluates reflex syncope, which usually has a prodrome and a trigger; his history suggests an arrhythmia.
+  pearl: |
+    Asymptomatic bifascicular block (even with first-degree AV block) does **not** need a pacemaker. Syncope changes everything.
+  objective: |
+    Evaluate unexplained syncope in a patient with bifascicular block with an electrophysiology study (or an implantable loop recorder if nondiagnostic) to detect intermittent high-grade AV block.
+  refs:
+    - "Shen WK, et al. 2017 ACC/AHA/HRS guideline for the evaluation and management of patients with syncope. Circulation 2017;136:e60."
+    - "Kusumoto FM, et al. 2018 ACC/AHA/HRS guideline on the evaluation and management of patients with bradycardia and cardiac conduction delay. Circulation 2019;140:e382."
+
+- id: CV-067
+  topic: Lyme carditis
+  task: Treatment/Care Decisions
+  chapters: [cardiology/brady, id/tick-travel]
+  stem: |
+    A 28-year-old man comes to the emergency department because of 3 days of fatigue and lightheadedness. Three weeks ago, after a hiking trip in Connecticut in July, he noticed an expanding red rash on his thigh that cleared on its own. He has had migratory joint aches. He takes no medications.
+
+    On physical examination, temperature is 37.6 °C (99.7 °F), blood pressure is 112/68 mm Hg, and pulse rate is 40/min and regular. He is alert. There is no rash now. Cardiac examination shows a regular slow rhythm. Neurologic examination is normal.
+
+    Electrocardiogram shows complete heart block with a narrow-complex junctional escape rhythm at 40/min.
+  labs:
+    - [Potassium, 4.2 mEq/L]
+    - [Thyroid-stimulating hormone, 1.6 µU/mL]
+    - [High-sensitivity troponin I, mildly elevated]
+    - [Lyme serology (ELISA with confirmatory immunoblot), pending]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Admission for intravenous ceftriaxone and cardiac monitoring
+    B: Outpatient oral doxycycline after serology results return
+    C: Oral prednisone with outpatient follow-up
+    D: Permanent dual-chamber pacemaker implantation now
+    E: Repeat Lyme serology in 4 weeks before antibiotics
+  answer: A
+  explain: |
+    **Lyme carditis** occurs weeks after infection (often after erythema migrans) and most often causes **AV block** at the level of the **AV node**, which can fluctuate rapidly between degrees. Use the **SILC** score (Suspicious Index in Lyme Carditis) to raise suspicion in young patients with unexplained AV block from endemic areas.
+
+    Management (IDSA/AAN/ACR 2020):
+    - **Hospitalize** with continuous monitoring for symptomatic patients, PR >300 msec, or second- or third-degree block.
+    - **IV ceftriaxone** initially; switch to **oral doxycycline** (or amoxicillin) once high-grade block resolves, to complete **14–21 days**.
+    - **Temporary pacing** if needed — **not a permanent pacemaker**, because block almost always **resolves** (often within 1 week).
+    - **Treat empirically** without waiting for serology when suspicion is high.
+  why:
+    B: Outpatient oral therapy is appropriate only for mild first-degree block (PR <300 msec) in an asymptomatic patient; complete heart block requires admission and monitoring.
+    C: Glucocorticoids are not standard therapy for Lyme carditis.
+    D: Lyme-related AV block usually resolves with antibiotics; permanent pacing is premature.
+    E: Delaying treatment risks progression and sudden death; treat on clinical suspicion.
+  mnemonic: |
+    Lyme heart = **"BAN"**-ish block: **B**lock at the **A**V **N**ode — and it **goes away** with antibiotics.
+  objective: |
+    Treat Lyme carditis with high-grade AV block with hospitalization, IV ceftriaxone and temporary pacing if needed; permanent pacing is rarely required.
+  refs:
+    - "Lantos PM, et al. Clinical practice guidelines by IDSA, AAN and ACR: 2020 guidelines for the prevention, diagnosis and treatment of Lyme disease. Clin Infect Dis 2021;72:e1."
+    - "Besant G, et al. Suspicious Index in Lyme Carditis: systematic review and proposed new risk score. Clin Cardiol 2018;41:1611."
+
+- id: CV-068
+  topic: Cardiac sarcoidosis presenting as AV block
+  task: Diagnosis/Testing
+  chapters: [cardiology/cardiomyopathies, pulmonary/ild-sarcoid]
+  stem: |
+    A 44-year-old woman is evaluated after an episode of syncope. Two years ago she had erythema nodosum and bilateral ankle arthritis that resolved without treatment. She has no tick exposure and lives in Arizona. She takes no medications.
+
+    On physical examination, blood pressure is 124/76 mm Hg and pulse rate is 42/min and regular. Examination is otherwise normal.
+
+    Electrocardiogram shows complete heart block with a narrow-complex escape rhythm. Chest radiograph shows bilateral hilar lymphadenopathy. Echocardiogram shows a left ventricular ejection fraction of 45% with thinning and akinesis of the basal anteroseptum. Coronary CT angiography shows no coronary artery disease.
+  labs:
+    - [Lyme serology, negative]
+    - [Thyroid-stimulating hormone, normal]
+    - [Serum calcium, 10.6 mg/dL]
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: Cardiac MRI and FDG-PET
+    B: Coronary angiography
+    C: Endomyocardial biopsy as the first test
+    D: Serum angiotensin-converting enzyme level
+    E: Tilt-table testing
+  answer: A
+  explain: |
+    **Unexplained AV block in a patient younger than 60** should raise suspicion of **cardiac sarcoidosis**, especially with prior erythema nodosum and arthritis (Löfgren syndrome), **bilateral hilar adenopathy**, mild hypercalcemia, and **basal septal thinning** without coronary disease.
+
+    Cardiac sarcoidosis is diagnosed with **advanced imaging**:
+    - **Cardiac MRI**: patchy **late gadolinium enhancement**, typically basal septal and subepicardial (non-coronary distribution)
+    - **FDG-PET** (after a high-fat, low-carbohydrate prep): active **inflammation**, guides and monitors immunosuppression
+
+    Tissue confirmation is best obtained from an **extracardiac site** (EBUS-guided lymph node biopsy here) because endomyocardial biopsy is patchy and has low sensitivity (~25%).
+
+    Treatment: **glucocorticoids** (± methotrexate), and given AV block and reduced EF, an **ICD-capable device** rather than a simple pacemaker.
+  why:
+    B: CT angiography has already excluded coronary disease as the cause of the wall-motion abnormality.
+    C: Endomyocardial biopsy misses patchy granulomas in most cases; imaging and an accessible extracardiac biopsy site come first.
+    D: Serum ACE is neither sensitive nor specific and does not establish cardiac involvement.
+    E: Tilt testing evaluates reflex syncope; her syncope is explained by complete heart block.
+  pearl: |
+    In cardiac sarcoid with an indication for pacing, choose an **ICD** — sudden death from VT is the leading cause of death in cardiac sarcoidosis.
+  objective: |
+    Suspect cardiac sarcoidosis in adults younger than 60 with unexplained AV block; evaluate with cardiac MRI and FDG-PET and biopsy an extracardiac site.
+  refs:
+    - "Cheng RK, et al. Diagnosis and management of cardiac sarcoidosis: a scientific statement from the AHA. Circulation 2024;149:e1197."
+    - "Kusumoto FM, et al. 2018 ACC/AHA/HRS guideline on the evaluation and management of patients with bradycardia and cardiac conduction delay. Circulation 2019;140:e382."
+
+- id: CV-069
+  topic: Pacemaker syndrome
+  task: Pathophysiology/Basic Science
+  chapters: [cardiology/devices]
+  stem: |
+    An 81-year-old woman is evaluated for fatigue, dizziness, a pulsating sensation in the neck and dyspnea that began 2 weeks after implantation of a single-chamber ventricular (VVI) pacemaker for intermittent complete heart block. She is in sinus rhythm most of the time.
+
+    On physical examination, blood pressure is 102/60 mm Hg (it was 138/78 mm Hg before the implant), and pulse rate is 60/min and regular. Prominent cannon *a* waves are visible in the neck with every beat. Lungs have faint bibasilar crackles.
+
+    Electrocardiogram shows ventricular paced rhythm at 60/min with P waves occurring after each paced QRS complex. Device interrogation shows normal lead function and 98% ventricular pacing.
+  lead: Which of the following best explains her symptoms?
+  choices:
+    A: Loss of atrioventricular synchrony
+    B: Lead perforation causing pericardial tamponade
+    C: Pacemaker-mediated tachycardia from retrograde conduction
+    D: Right ventricular pacing–induced cardiomyopathy
+    E: Undersensing of intrinsic ventricular activity
+  answer: A
+  explain: |
+    **Pacemaker syndrome** occurs when single-chamber ventricular pacing breaks the normal **AV synchrony**:
+    - Atria contract against **closed AV valves** → **cannon a waves**, a pulsating neck, raised atrial pressure, pulmonary congestion
+    - **Loss of the atrial "kick"** (up to 20%–30% of ventricular filling) → lower stroke volume, **hypotension**, fatigue, dizziness
+    - Atrial stretch releases **natriuretic peptides** and triggers vasodilatory reflexes
+
+    Retrograde **ventriculoatrial (VA) conduction** — P waves after each paced QRS — is common and makes the syndrome worse.
+
+    Treatment: **upgrade to dual-chamber (DDD) pacing** to restore AV synchrony. Patients in sinus rhythm with AV block should receive a dual-chamber device from the start.
+  why:
+    B: Tamponade causes hypotension and dyspnea but not beat-to-beat cannon a waves; lead function is normal and the onset with pacing points to AV dyssynchrony.
+    C: Pacemaker-mediated tachycardia requires a dual-chamber device that tracks retrograde P waves; this is a single-chamber device at the lower rate.
+    D: Pacing-induced cardiomyopathy develops over months to years of high RV pacing burden, not within 2 weeks.
+    E: Undersensing causes competitive pacing; interrogation shows normal function.
+  objective: |
+    Recognize pacemaker syndrome (loss of AV synchrony with VVI pacing) and treat by upgrading to dual-chamber pacing.
+  refs:
+    - "Kusumoto FM, et al. 2018 ACC/AHA/HRS guideline on the evaluation and management of patients with bradycardia and cardiac conduction delay. Circulation 2019;140:e382."
+
+- id: CV-070
+  topic: ICD shocks during AF
+  task: Diagnosis/Testing
+  chapters: [cardiology/devices, cardiology/af]
+  stem: |
+    A 66-year-old man comes to the emergency department after receiving three shocks from his implantable cardioverter-defibrillator over the past hour while he was awake and walking around his house. He felt palpitations before each shock but did not lose consciousness. He has ischemic cardiomyopathy with a left ventricular ejection fraction of 30% and paroxysmal atrial fibrillation. Medications are metoprolol succinate, sacubitril-valsartan, spironolactone, empagliflozin and apixaban; he stopped metoprolol 5 days ago because of fatigue.
+
+    On physical examination, blood pressure is 118/72 mm Hg and pulse rate is 142/min and irregularly irregular. He is alert and comfortable.
+
+    Electrocardiogram shows atrial fibrillation with a ventricular rate of 140/min and narrow QRS complexes.
+  labs:
+    - [Potassium, 4.3 mEq/L]
+    - [Magnesium, 2.0 mg/dL]
+  lead: Which of the following is the most appropriate next step in evaluation?
+  choices:
+    A: Coronary angiography
+    B: Device interrogation
+    C: Electrophysiology study for ventricular tachycardia ablation
+    D: Exercise stress test
+    E: Transthoracic echocardiography
+  answer: B
+  explain: |
+    ICD shocks while the patient is **conscious**, preceded by palpitations, in someone with **AF with a fast ventricular rate** (after stopping a beta-blocker), suggest **inappropriate shocks**: the device counted rapid AF as ventricular tachycardia.
+
+    **Device interrogation** comes first — the stored electrograms show what the device saw and whether each shock was appropriate (VT/VF) or inappropriate (AF, sinus tachycardia, lead noise, T-wave oversensing).
+
+    If inappropriate: **control the AF rate** (restart beta-blocker), adjust detection zones and **SVT discriminators**, and consider rhythm control. If appropriate: look for triggers (ischemia, electrolytes, heart failure) and consider antiarrhythmics or VT ablation.
+
+    | Causes of inappropriate ICD shocks |
+    |---|
+    | **AF or flutter with rapid ventricular rate** (most common) |
+    | Sinus tachycardia above the VT detection rate |
+    | **Lead fracture** — noise on the electrogram |
+    | T-wave or P-wave oversensing |
+  why:
+    A: Ischemia may trigger VT, but first establish whether the shocks treated VT at all.
+    C: VT ablation is considered only after interrogation confirms recurrent appropriate shocks for VT.
+    D: Stress testing is not useful until the rhythm behind the shocks is known.
+    E: Echocardiography will not show which rhythm the device detected.
+  pearl: |
+    A patient receiving repeated shocks in clinic can have therapies suspended temporarily by placing a **magnet** over an ICD — it inhibits tachycardia therapies but does not change bradycardia pacing.
+  objective: |
+    Evaluate ICD shocks with device interrogation to distinguish appropriate therapy for VT/VF from inappropriate shocks, most often caused by rapid atrial fibrillation.
+  refs:
+    - "Stiles MK, et al. 2019 HRS/EHRA/APHRS/LAHRS focused update to 2015 expert consensus statement on optimal implantable cardioverter-defibrillator programming and testing. Heart Rhythm 2020;17:e220."
+
+- id: CV-071
+  topic: Cardiac resynchronization therapy
+  task: Treatment/Care Decisions
+  chapters: [cardiology/devices, cardiology/hfref]
+  stem: |
+    A 63-year-old woman is evaluated for heart failure with reduced ejection fraction due to nonischemic cardiomyopathy diagnosed 8 months ago. She has dyspnea walking one block (NYHA class III). She takes optimized doses of metoprolol succinate, sacubitril-valsartan, spironolactone and dapagliflozin and has had no hospitalizations in 4 months.
+
+    On physical examination, blood pressure is 108/66 mm Hg and pulse rate is 68/min and regular. Jugular venous pressure is normal, and there is no edema.
+
+    Electrocardiogram shows sinus rhythm with left bundle branch block and a QRS duration of 0.16 second. Echocardiogram today shows left ventricular ejection fraction of 25%.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Add digoxin
+    B: Add ivabradine
+    C: Implant a cardiac resynchronization therapy defibrillator
+    D: Implant a single-chamber implantable cardioverter-defibrillator
+    E: Refer for heart transplantation evaluation
+  answer: C
+  explain: |
+    She has symptomatic HFrEF with **LVEF ≤35%**, **sinus rhythm**, **LBBB** with **QRS ≥150 ms**, and NYHA class II–IV symptoms despite **at least 3 months of GDMT**. This is the strongest (Class 1) indication for **cardiac resynchronization therapy (CRT)**.
+
+    LBBB activates the left ventricular lateral wall late, so the ventricle contracts in an uncoordinated way. Pacing both ventricles (**biventricular pacing**) restores synchronous contraction, improving EF, symptoms, hospitalizations and survival (CARE-HF, MADIT-CRT, RAFT). Because she also meets primary-prevention ICD criteria, a **CRT-D** is chosen.
+
+    | CRT indication (LVEF ≤35%, GDMT ≥3 months, sinus rhythm) | Class |
+    |---|---|
+    | **LBBB, QRS ≥150 ms**, NYHA II–IV | **1** |
+    | LBBB, QRS 120–149 ms | 2a |
+    | Non-LBBB, QRS ≥150 ms | 2a |
+    | Non-LBBB, QRS 120–149 ms | 2b |
+    | QRS <120 ms | Not indicated (harm) |
+  why:
+    A: Digoxin reduces heart failure hospitalizations modestly but does not improve survival or correct dyssynchrony.
+    B: Ivabradine requires sinus rhythm with a resting rate ≥70/min on maximally tolerated beta-blocker; her rate is 68/min.
+    D: An ICD alone prevents sudden death but does not address dyssynchrony; CRT-D adds the benefits of resynchronization.
+    E: She is not in advanced (stage D) heart failure; CRT is the next evidence-based step.
+  objective: |
+    Implant CRT (with defibrillator when indicated) in patients with LVEF ≤35%, LBBB with QRS ≥150 ms and NYHA class II–IV symptoms despite GDMT.
+  refs:
+    - "Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. Circulation 2022;145:e895."
+    - "Glikson M, et al. 2021 ESC guidelines on cardiac pacing and cardiac resynchronization therapy. Eur Heart J 2021;42:3427."
+
+- id: CV-072
+  topic: AV block in inferior MI
+  task: Pathophysiology/Basic Science
+  chapters: [cardiology/stemi, cardiology/brady]
+  stem: |
+    A 66-year-old man is admitted after primary percutaneous coronary intervention of the right coronary artery for an inferior ST-elevation myocardial infarction. Six hours later, the telemetry shows sinus rhythm at 64/min with progressive PR prolongation and a dropped QRS every fourth beat. QRS complexes are narrow. He has no symptoms.
+
+    On physical examination, blood pressure is 118/72 mm Hg and pulse rate is 56/min and irregular. Lungs are clear.
+  lead: Which of the following best explains this conduction abnormality?
+  choices:
+    A: Ischemia of the His bundle and bundle branches from left anterior descending artery occlusion
+    B: Ischemia of the atrioventricular node supplied by the right coronary artery, with increased vagal tone
+    C: Necrosis of the interventricular septum from septal perforator occlusion
+    D: Reperfusion injury of the sinus node from circumflex artery occlusion
+    E: Ventricular septal rupture causing conduction delay
+  answer: B
+  explain: |
+    He has **Mobitz I (Wenckebach) AV block** with narrow QRS complexes after an **inferior MI**. In about 90% of people the **AV nodal artery arises from the right coronary artery**. Inferior infarction causes:
+    - **AV nodal ischemia** and adenosine release
+    - **Increased vagal tone** (Bezold-Jarisch reflex from inferior wall receptors)
+
+    The block is at the **AV node** — usually **transient**, with a **narrow, reliable junctional escape**, responsive to **atropine**, and rarely needs permanent pacing.
+
+    **Anterior MI** is the opposite: AV block arises from **infranodal necrosis of the bundle branches** (septal branches of the LAD), comes with **wide QRS** and new bundle branch block, signals a large infarct, and often requires pacing.
+
+    | | Inferior MI block | Anterior MI block |
+    |---|---|---|
+    | Artery | RCA (AV nodal artery) | LAD (septal perforators) |
+    | Level | **AV node** | His–Purkinje |
+    | Escape | Narrow, 40–60/min | Wide, <40/min |
+    | Prognosis | Transient | Poor (large infarct) |
+  why:
+    A: LAD occlusion produces infranodal block with wide QRS complexes; this infarct was inferior with narrow complexes.
+    C: Septal necrosis from anterior MI causes bundle branch block and infranodal AV block.
+    D: Sinus node dysfunction produces sinus pauses or bradycardia, not progressive PR prolongation; the sinus node artery usually arises from the RCA.
+    E: Ventricular septal rupture causes a new holosystolic murmur and shock, not isolated Wenckebach block.
+  objective: |
+    AV block after inferior MI is usually nodal (RCA supply to the AV node plus vagal tone), transient and atropine-responsive; block after anterior MI is infranodal and ominous.
+  refs:
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+    - "Kusumoto FM, et al. 2018 ACC/AHA/HRS guideline on the evaluation and management of patients with bradycardia and cardiac conduction delay. Circulation 2019;140:e382."
+
+- id: CV-073
+  topic: Drug-induced orthostatic hypotension
+  task: Diagnosis/Testing
+  chapters: [cardiology/syncope, geri/falls]
+  stem: |
+    A 79-year-old man is evaluated after he fainted while getting out of bed at night to urinate. He felt lightheaded and his vision dimmed for a few seconds before he fell; he woke immediately. He has had several similar near-episodes on standing over the past month. One month ago, tamsulosin was added for benign prostatic hyperplasia. Other medications are lisinopril, hydrochlorothiazide and atorvastatin. He has no chest pain or palpitations.
+
+    On physical examination, blood pressure is 138/78 mm Hg and pulse rate is 72/min supine; after 3 minutes standing, blood pressure is 108/66 mm Hg and pulse rate is 88/min, and he reports lightheadedness. Cardiac examination shows no murmurs. Neurologic examination is normal.
+
+    Electrocardiogram shows sinus rhythm with no conduction abnormalities.
+  labs:
+    - [Hemoglobin, 13.8 g/dL]
+    - [Sodium, 136 mEq/L]
+    - [Creatinine, 1.1 mg/dL]
+    - [Glucose, 104 mg/dL]
+  lead: Which of the following is the most likely cause of his syncope?
+  choices:
+    A: Autonomic failure from Parkinson disease
+    B: Carotid sinus hypersensitivity
+    C: Intermittent complete heart block
+    D: Medication-induced orthostatic hypotension
+    E: Postural orthostatic tachycardia syndrome
+  answer: D
+  explain: |
+    **Orthostatic hypotension** = a fall in systolic pressure **≥20 mm Hg** (or diastolic ≥10 mm Hg) within 3 minutes of standing. His fall from 138 to 108 mm Hg reproduced the symptoms.
+
+    The timing points to the **alpha-1 blocker tamsulosin**, added a month ago, on top of a thiazide and an ACE inhibitor. Nocturia, standing up from bed and a warm bladder emptying (micturition) add up. The **pulse rose by 16/min**, showing that the baroreflex works — a clue that the cause is **drugs or volume**, not autonomic failure (in neurogenic orthostatic hypotension, the heart rate rises <15/min).
+
+    Management: review and reduce **alpha-blockers, diuretics, nitrates, tricyclics**; advise rising slowly, hydration, sitting to urinate at night; consider an alternative BPH treatment (5-alpha-reductase inhibitor) or a more uroselective timing (dose at bedtime with caution).
+  why:
+    A: He has no parkinsonian features, and the compensatory rise in pulse argues against neurogenic autonomic failure.
+    B: Carotid sinus hypersensitivity is triggered by neck pressure or head turning, not by standing.
+    C: His ECG shows no conduction disease, and symptoms are reproduced by standing.
+    E: POTS causes a heart-rate rise ≥30/min without hypotension, usually in young women.
+  pearl: |
+    The **ΔHR/ΔSBP ratio <0.5** bpm/mm Hg suggests **neurogenic** orthostatic hypotension (Parkinson disease, multiple system atrophy, diabetic or amyloid neuropathy).
+  objective: |
+    Recognize orthostatic hypotension caused by medications (especially alpha-blockers and diuretics) as a common cause of syncope in older adults and deprescribe.
+  refs:
+    - "Shen WK, et al. 2017 ACC/AHA/HRS guideline for the evaluation and management of patients with syncope. Circulation 2017;136:e60."
+    - "Freeman R, et al. Consensus statement on the definition of orthostatic hypotension, neurally mediated syncope and the postural tachycardia syndrome. Clin Auton Res 2011;21:69."
+
+- id: CV-074
+  topic: High-risk syncope features
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/syncope]
+  stem: |
+    A 67-year-old man is evaluated in the emergency department after losing consciousness while jogging uphill. He felt a fluttering in his chest a few seconds before he collapsed and recovered within a minute, with no confusion. He has hypertension and had a myocardial infarction 6 years ago. Medications are lisinopril, metoprolol, aspirin and atorvastatin.
+
+    On physical examination, blood pressure is 128/80 mm Hg and pulse rate is 68/min and regular, without orthostatic change. There is a forehead laceration. Cardiac examination shows no murmurs. Neurologic examination is normal.
+
+    Electrocardiogram shows sinus rhythm with Q waves in leads V1 through V4 and a QRS duration of 0.11 second.
+  labs:
+    - [Hemoglobin, 14.2 g/dL]
+    - [High-sensitivity troponin I, below the 99th percentile]
+  lead: Which of the following features of this patient's presentation most strongly indicates a high risk of an adverse outcome?
+  choices:
+    A: Age older than 60 years
+    B: Brief duration of unconsciousness
+    C: Normal hemoglobin level
+    D: Prompt full recovery without confusion
+    E: Exertional onset with prior myocardial infarction
+  answer: E
+  explain: |
+    The job in syncope is to separate **reflex/orthostatic** causes (benign) from **cardiac** causes (which predict sudden death). The 2017 ACC/AHA/HRS guideline lists high-risk features:
+
+    | High-risk (suggests cardiac syncope) | Low-risk (suggests reflex) |
+    |---|---|
+    | **Syncope during exertion** or supine | Prodrome of nausea, warmth, sweating |
+    | **Palpitations** before the event | Trigger: pain, emotion, standing, micturition |
+    | **Known structural heart disease** or prior MI, low EF | Young age, no heart disease |
+    | Abnormal ECG (Q waves, BBB, long QT, Brugada, WPW) | Normal ECG |
+    | Family history of sudden death <50 y | Long history of similar episodes |
+    | Injury without warning | |
+
+    This man has several — **exertional syncope, palpitations, prior MI with an anterior scar**. Exertional syncope with an old infarct suggests **scar-related ventricular tachycardia**. He should be **admitted** with telemetry, echocardiography and likely EP evaluation.
+  why:
+    A: Age adds some risk but is much weaker than exertional syncope in a patient with structural heart disease.
+    B: Short duration is typical of both cardiac and reflex syncope and does not lower risk.
+    C: A normal hemoglobin rules out hemorrhage as a cause but does not indicate risk.
+    D: Rapid full recovery distinguishes syncope from seizure; it does not distinguish benign from cardiac causes.
+  mnemonic: |
+    Syncope red flags: **"Exercise, Palpitations, a Bad heart, a Bad ECG, a Bad family history."**
+  objective: |
+    Exertional syncope, palpitations before syncope and known structural heart disease are high-risk features that warrant admission and cardiac evaluation.
+  refs:
+    - "Shen WK, et al. 2017 ACC/AHA/HRS guideline for the evaluation and management of patients with syncope. Circulation 2017;136:e60."
+
+- id: CV-075
+  topic: Carotid sinus hypersensitivity
+  task: Diagnosis/Testing
+  chapters: [cardiology/syncope]
+  stem: |
+    A 78-year-old man is evaluated for three episodes of syncope in 6 months. One occurred while he was shaving, another when he turned his head quickly to back out of his driveway, and the third while he was buttoning a tight shirt collar. Each episode was brief, with prompt recovery. He has hypertension and coronary artery disease. Medications are amlodipine, aspirin and atorvastatin.
+
+    On physical examination, blood pressure is 142/80 mm Hg and pulse rate is 70/min and regular, with no orthostatic change. There are no carotid bruits. Cardiac and neurologic examinations are normal.
+
+    Electrocardiogram and echocardiogram are normal. A 14-day ambulatory monitor recorded no arrhythmia; he had no episodes during the monitoring period.
+  lead: Which of the following is the most appropriate diagnostic test?
+  choices:
+    A: Monitored carotid sinus massage
+    B: Electroencephalography
+    C: Exercise treadmill test
+    D: MRI of the brain
+    E: Tilt-table testing
+  answer: A
+  explain: |
+    Syncope triggered by **head turning, shaving and a tight collar** in an older man points to **carotid sinus hypersensitivity** — exaggerated baroreceptor response to mechanical pressure on the carotid sinus.
+
+    The diagnostic test is **carotid sinus massage** (5–10 seconds, one side at a time, supine and upright), with continuous ECG and blood pressure monitoring:
+    - **Cardioinhibitory**: asystole ≥3 seconds
+    - **Vasodepressor**: systolic fall ≥50 mm Hg
+    - **Mixed**
+
+    A diagnosis requires reproduction of symptoms. Avoid massage in patients with a carotid bruit, stroke or TIA in the past 3 months, or known significant carotid stenosis.
+
+    Treatment: avoid triggers (loose collars, turn the whole body); **dual-chamber pacing** is reasonable for the **cardioinhibitory** form with recurrent syncope (Class 2a).
+  why:
+    B: EEG is for suspected seizures, which this history does not suggest.
+    C: Exercise testing evaluates exertional syncope or ischemia; his episodes are triggered by neck movement and pressure.
+    D: Brain imaging is not indicated for syncope without focal neurologic signs.
+    E: Tilt testing evaluates vasovagal syncope with orthostatic triggers; his triggers are mechanical neck stimulation.
+  objective: |
+    Diagnose carotid sinus hypersensitivity with monitored carotid sinus massage in older patients whose syncope is triggered by head turning or neck pressure.
+  refs:
+    - "Shen WK, et al. 2017 ACC/AHA/HRS guideline for the evaluation and management of patients with syncope. Circulation 2017;136:e60."
+    - "Brignole M, et al. 2018 ESC guidelines for the diagnosis and management of syncope. Eur Heart J 2018;39:1883."
+
+- id: CV-076
+  topic: Postural orthostatic tachycardia syndrome
+  task: Diagnosis/Testing
+  chapters: [cardiology/syncope]
+  stem: |
+    A 24-year-old woman is evaluated for 8 months of lightheadedness, palpitations, fatigue and "brain fog" when she stands, especially in the morning and after hot showers. Symptoms began after a viral illness. She has had no syncope. She takes no medications. She drinks about 1 liter of fluid daily.
+
+    On physical examination, blood pressure is 112/70 mm Hg and pulse rate is 74/min supine. After 10 minutes of standing, blood pressure is 114/74 mm Hg and pulse rate is 118/min, with palpitations and acral discoloration of the legs. The remainder of the examination is normal.
+
+    Electrocardiogram shows sinus rhythm. Echocardiogram is normal.
+  labs:
+    - [Hemoglobin, 12.9 g/dL]
+    - [Thyroid-stimulating hormone, 1.7 µU/mL]
+    - [Morning cortisol, 14 µg/dL]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Inappropriate sinus tachycardia
+    B: Neurogenic orthostatic hypotension
+    C: Pheochromocytoma
+    D: Postural orthostatic tachycardia syndrome
+    E: Vasovagal syncope
+  answer: D
+  explain: |
+    **Postural orthostatic tachycardia syndrome (POTS)**:
+    - Sustained heart-rate rise **≥30/min** within 10 minutes of standing (≥40/min if age 12–19)
+    - **No orthostatic hypotension**
+    - Chronic (≥3 months) orthostatic symptoms, relieved by lying down
+
+    It most often affects **young women**, frequently after a **viral illness**, and overlaps with deconditioning, joint hypermobility and mast-cell disorders.
+
+    First-line management is **nonpharmacologic**: fluids **2–3 L/day**, **salt 6–10 g/day** (if no hypertension), compression garments, and a graduated **recumbent exercise program** (rowing, recumbent bike, swimming). Drugs for refractory symptoms: low-dose propranolol, fludrocortisone, midodrine, ivabradine or pyridostigmine.
+  why:
+    A: Inappropriate sinus tachycardia causes a fast resting rate (>100/min) even when supine; her supine rate is normal.
+    B: Orthostatic hypotension requires a fall in blood pressure on standing; hers is unchanged.
+    C: Pheochromocytoma causes paroxysmal hypertension, headaches and sweating, not a reproducible postural heart-rate rise without hypertension.
+    E: Vasovagal syncope causes episodic hypotension and bradycardia with loss of consciousness, not sustained orthostatic tachycardia.
+  objective: |
+    Diagnose POTS by a sustained heart-rate rise ≥30/min within 10 minutes of standing without orthostatic hypotension; treat first with fluids, salt, compression and recumbent exercise.
+  refs:
+    - "Sheldon RS, et al. 2015 HRS expert consensus statement on the diagnosis and treatment of POTS, inappropriate sinus tachycardia, and vasovagal syncope. Heart Rhythm 2015;12:e41."
+    - "Vernino S, et al. Postural orthostatic tachycardia syndrome (POTS): state of the science and clinical care from a 2019 NIH expert consensus meeting. Auton Neurosci 2021;235:102828."
+
+- id: CV-077
+  topic: Recurrent unexplained syncope — implantable loop recorder
+  task: Diagnosis/Testing
+  chapters: [cardiology/syncope]
+  stem: |
+    A 69-year-old woman is evaluated for three episodes of sudden syncope over 18 months, each without prodrome and lasting less than a minute. The last episode caused a wrist fracture. She has hypertension treated with amlodipine.
+
+    On physical examination, blood pressure is 134/78 mm Hg and pulse rate is 72/min and regular, with no orthostatic change. Cardiac and neurologic examinations are normal.
+
+    Electrocardiogram is normal. Echocardiogram shows normal ventricular and valve function. Two 14-day ambulatory patch monitors captured no symptoms and no significant arrhythmias. Exercise testing was normal.
+  lead: Which of the following is the most appropriate next step in evaluation?
+  choices:
+    A: Coronary angiography
+    B: Electroencephalography
+    C: Empiric permanent pacemaker implantation
+    D: Implantable loop recorder
+    E: Repeat 14-day patch monitor
+  answer: D
+  explain: |
+    She has **recurrent, infrequent, unexplained syncope** with injury and a sudden onset suggesting an **arrhythmia**, but a normal structural evaluation. Short-term monitors failed because events occur only every few months.
+
+    An **implantable loop recorder (ILR)** monitors the rhythm continuously for **up to 3–5 years** and records automatically or when activated. It gives a diagnosis in about 30%–50% of such patients — most often **paroxysmal AV block or sinus pauses** — and guides specific therapy such as pacing.
+
+    | Event frequency | Monitor |
+    |---|---|
+    | Daily | 24–48-hour Holter |
+    | Every few days to weeks | 2–4-week patch or event monitor |
+    | **Less often than monthly** | **Implantable loop recorder** |
+  why:
+    A: She has no symptoms or findings suggesting ischemia, and exercise testing was normal.
+    B: Sudden syncope with prompt recovery does not suggest seizure.
+    C: Empiric pacing without documented bradycardia is not recommended for unexplained syncope with a normal ECG.
+    E: Repeating a short-term monitor is unlikely to capture events that occur every few months.
+  objective: |
+    Use an implantable loop recorder for recurrent, infrequent, unexplained syncope suspected to be arrhythmic after a nondiagnostic initial evaluation.
+  refs:
+    - "Shen WK, et al. 2017 ACC/AHA/HRS guideline for the evaluation and management of patients with syncope. Circulation 2017;136:e60."

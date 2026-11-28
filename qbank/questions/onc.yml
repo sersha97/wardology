@@ -35,7 +35,7 @@
   objective: |
     Average-risk women should have screening mammography every 2 years from age 40 to 74.
   refs:
-    - US Preventive Services Task Force. Screening for breast cancer: recommendation statement. *JAMA* 2024;331:1918.
+    - "US Preventive Services Task Force. Screening for breast cancer: recommendation statement. *JAMA* 2024;331:1918."
 
 - id: ON-002
   topic: Lung cancer screening
@@ -74,7 +74,7 @@
   objective: |
     Screen adults aged 50–80 with ≥20 pack-years who smoke or quit within 15 years with annual low-dose CT.
   refs:
-    - US Preventive Services Task Force. Screening for lung cancer: recommendation statement. *JAMA* 2021;325:962.
+    - "US Preventive Services Task Force. Screening for lung cancer: recommendation statement. *JAMA* 2021;325:962."
     - National Lung Screening Trial Research Team. Reduced lung-cancer mortality with low-dose CT screening. *N Engl J Med* 2011;365:395.
 
 - id: ON-003
@@ -112,7 +112,7 @@
   objective: |
     Suspected malignant spinal cord compression with neurologic deficits requires immediate dexamethasone, emergency whole-spine MRI and urgent radiation or surgery.
   refs:
-    - Lawton AJ, et al. Assessment and management of patients with metastatic spinal cord compression: a multidisciplinary review. *J Clin Oncol* 2019;37:61.
+    - "Lawton AJ, et al. Assessment and management of patients with metastatic spinal cord compression: a multidisciplinary review. *J Clin Oncol* 2019;37:61."
     - Patchell RA, et al. Direct decompressive surgical resection in the treatment of spinal cord compression caused by metastatic cancer. *Lancet* 2005;366:643.
 
 
@@ -193,7 +193,7 @@
     For men aged 55 to 69 years, PSA-based prostate cancer screening is an individual decision made after discussing benefits and harms.
   refs:
     - US Preventive Services Task Force. Screening for prostate cancer. *JAMA* 2018;319:1901.
-    - Wei JT, et al. Early detection of prostate cancer: AUA/SUO guideline. *J Urol* 2023;210:46.
+    - "Wei JT, et al. Early detection of prostate cancer: AUA/SUO guideline. *J Urol* 2023;210:46."
 
 - id: ON-006
   topic: Lynch syndrome
@@ -230,8 +230,8 @@
   objective: |
     Refer patients with MMR-deficient colorectal cancer without BRAF mutation or MLH1 promoter hypermethylation for germline testing for Lynch syndrome.
   refs:
-    - National Comprehensive Cancer Network. Genetic/familial high-risk assessment: colorectal, endometrial and gastric. Version 2025.
-    - Syngal S, et al. ACG clinical guideline: genetic testing and management of hereditary GI cancer syndromes. *Am J Gastroenterol* 2015;110:223.
+    - "National Comprehensive Cancer Network. Genetic/familial high-risk assessment: colorectal, endometrial and gastric. Version 2025."
+    - "Syngal S, et al. ACG clinical guideline: genetic testing and management of hereditary GI cancer syndromes. *Am J Gastroenterol* 2015;110:223."
 
 - id: ON-007
   topic: Aromatase inhibitor–associated bone loss
@@ -269,7 +269,7 @@
   objective: |
     Obtain a baseline DXA scan in women starting an aromatase inhibitor because of accelerated bone loss and fracture risk.
   refs:
-    - Shapiro CL, et al. Management of osteoporosis in survivors of adult cancers with nonmetastatic disease: ASCO clinical practice guideline. *J Clin Oncol* 2019;37:2916.
+    - "Shapiro CL, et al. Management of osteoporosis in survivors of adult cancers with nonmetastatic disease: ASCO clinical practice guideline. *J Clin Oncol* 2019;37:2916."
 
 - id: ON-008
   topic: Immune checkpoint inhibitor colitis
@@ -314,7 +314,7 @@
   objective: |
     Treat grade 3 or higher immune checkpoint inhibitor colitis by holding immunotherapy and giving high-dose intravenous glucocorticoids, adding infliximab or vedolizumab if refractory.
   refs:
-    - Schneider BJ, et al. Management of immune-related adverse events in patients treated with immune checkpoint inhibitor therapy: ASCO guideline update. *J Clin Oncol* 2021;39:4073.
+    - "Schneider BJ, et al. Management of immune-related adverse events in patients treated with immune checkpoint inhibitor therapy: ASCO guideline update. *J Clin Oncol* 2021;39:4073."
 
 - id: ON-009
   topic: Superior vena cava syndrome
@@ -397,8 +397,8 @@
   objective: |
     Treat high-risk febrile neutropenia with an intravenous antipseudomonal β-lactam such as cefepime within 1 hour, adding vancomycin only for specific indications.
   refs:
-    - Freifeld AG, et al. Clinical practice guideline for the use of antimicrobial agents in neutropenic patients with cancer: 2010 update by IDSA. *Clin Infect Dis* 2011;52:e56.
-    - Taplitz RA, et al. Outpatient management of fever and neutropenia in adults treated for malignancy: ASCO/IDSA guideline update. *J Clin Oncol* 2018;36:1443.
+    - "Freifeld AG, et al. Clinical practice guideline for the use of antimicrobial agents in neutropenic patients with cancer: 2010 update by IDSA. *Clin Infect Dis* 2011;52:e56."
+    - "Taplitz RA, et al. Outpatient management of fever and neutropenia in adults treated for malignancy: ASCO/IDSA guideline update. *J Clin Oncol* 2018;36:1443."
 
 - id: ON-011
   topic: Stage III colon cancer — adjuvant therapy
@@ -483,7 +483,7 @@
   objective: |
     Recognize Lambert-Eaton myasthenic syndrome (proximal weakness improving with effort, reduced reflexes, autonomic symptoms) caused by P/Q-type calcium channel antibodies, often with small cell lung cancer.
   refs:
-    - Titulaer MJ, et al. Lambert-Eaton myasthenic syndrome: from clinical characteristics to therapeutic strategies. *Lancet Neurol* 2011;10:1098.
+    - "Titulaer MJ, et al. Lambert-Eaton myasthenic syndrome: from clinical characteristics to therapeutic strategies. *Lancet Neurol* 2011;10:1098."
 
 - id: ON-013
   topic: Opioid-induced constipation in cancer pain

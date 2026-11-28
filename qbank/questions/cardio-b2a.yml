@@ -1,0 +1,536 @@
+# Cardiovascular Disease — batch 2a: atrial fibrillation (ABIM CERT)
+- id: CV-036
+  topic: AF rate control in decompensated HFrEF
+  task: Treatment/Care Decisions
+  chapters: [cardiology/af, cardiology/adhf]
+  stem: |
+    A 68-year-old man is admitted with 5 days of worsening dyspnea and orthopnea. He has heart failure with reduced ejection fraction (left ventricular ejection fraction 25% on echocardiography 3 months ago) due to nonischemic cardiomyopathy. Medications are furosemide, metoprolol succinate, sacubitril-valsartan, spironolactone and empagliflozin.
+
+    On physical examination, blood pressure is 102/68 mm Hg, pulse rate is 134/min and irregularly irregular, and respiration rate is 24/min. Oxygen saturation is 92% breathing ambient air. Jugular venous pressure is 14 cm H₂O. Crackles are heard at both lung bases, and there is 2+ bilateral leg edema. Extremities are warm.
+
+    Electrocardiogram shows atrial fibrillation with a ventricular rate of 132/min and no ST-segment changes. Intravenous furosemide is started.
+  labs:
+    - [Potassium, 4.4 mEq/L]
+    - [Creatinine, 1.2 mg/dL]
+    - [High-sensitivity troponin I, mildly elevated and flat on repeat]
+  lead: Which of the following is the most appropriate additional treatment?
+  choices:
+    A: Intravenous diltiazem
+    B: Intravenous digoxin
+    C: Oral dronedarone
+    D: Oral flecainide
+    E: Intravenous esmolol infusion
+  answer: B
+  explain: |
+    He has **atrial fibrillation with rapid ventricular response** during **acute decompensated HFrEF** with borderline blood pressure. The fast rate worsens filling and congestion, so rate control helps — but the drug must not depress contractility further.
+
+    In decompensated HFrEF, the 2023 ACC/AHA/ACCP/HRS AF guideline favors **intravenous digoxin or intravenous amiodarone** for acute rate control. Digoxin slows AV-nodal conduction through vagal effects and has **mild positive inotropy**; it does not lower blood pressure. His beta-blocker can be continued at the home dose if tolerated, but escalating beta-blockade during active congestion and soft pressure risks shock.
+
+    | Acute rate control | HFrEF, decompensated | Preserved EF |
+    |---|---|---|
+    | Beta-blocker IV | Caution (negative inotrope) | ✅ |
+    | Diltiazem / verapamil | ❌ Avoid | ✅ |
+    | Digoxin IV | ✅ | Add-on |
+    | Amiodarone IV | ✅ (also may convert — anticoagulation rules apply) | Selected |
+  why:
+    A: Nondihydropyridine calcium channel blockers are negative inotropes and are contraindicated in HFrEF (LVEF <40%), especially during decompensation.
+    C: Dronedarone increases mortality in patients with recent decompensated heart failure or NYHA class IV symptoms.
+    D: Flecainide (class IC) is contraindicated in structural heart disease and reduced ejection fraction because it increases proarrhythmic death.
+    E: A beta-blocker infusion during active congestion with a systolic pressure near 100 mm Hg can precipitate cardiogenic shock.
+  mnemonic: |
+    **"Weak heart? Dig or Amio."** Diltiazem is out when the EF is low.
+  pearl: |
+    Before chasing the rate, ask whether the tachycardia is causing the decompensation or compensating for it (sepsis, hypovolemia, anemia). Treat the cause first when AF is a response, not the driver.
+  objective: |
+    In atrial fibrillation with rapid ventricular response and decompensated HFrEF, use intravenous digoxin or amiodarone for rate control; avoid nondihydropyridine calcium channel blockers.
+  refs:
+    - "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation 2024;149:e1."
+    - "Heidenreich PA, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure. Circulation 2022;145:e895."
+
+- id: CV-037
+  topic: Early rhythm control in recent-onset AF
+  task: Treatment/Care Decisions
+  chapters: [cardiology/af]
+  stem: |
+    A 58-year-old woman is evaluated in follow-up for atrial fibrillation diagnosed 4 months ago. She has persistent episodes of palpitations, reduced exercise tolerance and fatigue despite metoprolol succinate, which keeps her resting ventricular rate near 75/min. She has hypertension controlled with lisinopril. She takes apixaban. She does not smoke and drinks alcohol rarely.
+
+    On physical examination, blood pressure is 128/78 mm Hg and pulse rate is 76/min and irregular. BMI is 26 kg/m². Cardiac examination shows an irregular rhythm without murmurs.
+
+    Echocardiogram shows normal left ventricular size and function, a mildly enlarged left atrium and no significant valve disease. Thyroid-stimulating hormone level is normal. Sleep study is negative for sleep apnea.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Add digoxin
+    B: Add diltiazem
+    C: Continue current therapy unchanged
+    D: Refer for catheter ablation
+    E: Stop apixaban if sinus rhythm is restored
+  answer: D
+  explain: |
+    She has **symptomatic atrial fibrillation diagnosed less than 1 year ago**, with risk factors already addressed (blood pressure, weight, alcohol, sleep apnea). Good rate control has not relieved her symptoms.
+
+    Two lines of evidence favor **rhythm control now**:
+    - **EAST-AFNET 4**: early rhythm control (within 1 year of diagnosis) reduced cardiovascular death, stroke and heart failure hospitalization compared with usual care.
+    - **Catheter ablation** is more effective than antiarrhythmic drugs at maintaining sinus rhythm and improving quality of life; the 2023 guideline gives it a **Class 1** recommendation as first-line therapy in selected symptomatic patients (paroxysmal AF; younger patients with few comorbidities).
+
+    An antiarrhythmic drug (for example flecainide with a nodal blocker, since she has a structurally normal heart) would also be reasonable; of the options shown, ablation is the best choice.
+  why:
+    A: Adding digoxin further slows the rate, but her rate is already controlled; symptoms come from the loss of atrial contraction and irregularity, not from tachycardia.
+    B: Diltiazem added to metoprolol adds more AV-nodal blockade (risk of bradycardia) without restoring sinus rhythm.
+    C: Continuing rate control alone leaves a symptomatic patient untreated and forfeits the benefit of early rhythm control.
+    E: Anticoagulation is based on stroke risk (CHA₂DS₂-VASc), not on the rhythm. Restoring sinus rhythm — even by ablation — is not a reason to stop anticoagulation.
+  pearl: |
+    The "time is atrium" concept: the longer AF persists, the more the atria remodel and the harder sinus rhythm becomes to keep. Rhythm control works best early.
+  objective: |
+    Offer early rhythm control, including catheter ablation, to patients with symptomatic atrial fibrillation diagnosed within the past year; continue anticoagulation according to stroke risk regardless of rhythm.
+  refs:
+    - "Kirchhof P, et al. Early rhythm-control therapy in patients with atrial fibrillation (EAST-AFNET 4). N Engl J Med 2020;383:1305."
+    - "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation 2024;149:e1."
+
+- id: CV-038
+  topic: AF with female sex as the only risk factor
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/af]
+  stem: |
+    A 52-year-old woman is evaluated after an episode of palpitations that lasted 6 hours and resolved spontaneously. An electrocardiogram obtained by her smartwatch and confirmed by a 14-day patch monitor shows paroxysmal atrial fibrillation. She has no history of hypertension, diabetes, heart failure, stroke, transient ischemic attack or vascular disease. She takes no medications.
+
+    On physical examination, blood pressure is 118/74 mm Hg and pulse rate is 68/min and regular. The remainder of the examination is normal. Echocardiogram shows normal ventricular function and no valve disease. Thyroid function is normal.
+  lead: Which of the following is the most appropriate stroke-prevention strategy?
+  choices:
+    A: Apixaban
+    B: Aspirin
+    C: Aspirin plus clopidogrel
+    D: No antithrombotic therapy
+    E: Warfarin with a target INR of 2.0 to 3.0
+  answer: D
+  explain: |
+    Her CHA₂DS₂-VASc score is **1, and the only point is female sex**. Female sex is a **risk modifier, not an independent risk factor**: it raises stroke risk only in women who also have other risk factors. A woman whose only point is sex has the same low annual stroke risk as a man with a score of 0 (well under 1% per year).
+
+    The 2023 ACC/AHA/ACCP/HRS guideline recommends anticoagulation when estimated annual stroke risk is **≥2%** (CHA₂DS₂-VASc ≥2 in men, ≥3 in women) and considers it reasonable at 1%–2%. With a score of 1 from sex alone, **no antithrombotic therapy** is recommended. The 2024 ESC guideline went further and dropped sex from the score (**CHA₂DS₂-VA**).
+
+    | CHA₂DS₂-VASc | Men | Women | Anticoagulate? |
+    |---|---|---|---|
+    | 0 | ✔ | — | No |
+    | 1 | ✔ | (sex only) | Men: consider · Women with 1: **No** |
+    | ≥2 men / ≥3 women | ✔ | ✔ | **Yes** (DOAC preferred) |
+
+    Reassess the score yearly — new hypertension or diabetes changes the answer.
+  why:
+    A: A DOAC is indicated only when stroke risk outweighs bleeding risk; her risk is low.
+    B: Aspirin is not recommended for stroke prevention in atrial fibrillation; it adds bleeding with little or no stroke benefit.
+    C: Dual antiplatelet therapy causes nearly as much bleeding as anticoagulation and is less effective; it has no role here.
+    E: Warfarin carries the same bleeding risk as DOACs without a benefit at this low stroke risk.
+  pearl: |
+    The "Sc" in CHA₂DS₂-VASc only counts when another letter is present. On test day, a woman with lone AF and no other points does not need anticoagulation.
+  objective: |
+    In atrial fibrillation, female sex alone (CHA₂DS₂-VASc of 1 from sex) does not warrant antithrombotic therapy; reassess stroke risk periodically.
+  refs:
+    - "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation 2024;149:e1."
+    - "Van Gelder IC, et al. 2024 ESC guidelines for the management of atrial fibrillation. Eur Heart J 2024;45:3314."
+
+- id: CV-039
+  topic: Cardioversion of AF of unknown duration
+  task: Treatment/Care Decisions
+  chapters: [cardiology/af]
+  stem: |
+    A 66-year-old man comes to the emergency department because of fatigue and palpitations. He cannot say when the palpitations started; he thinks they began sometime in the past week. He has hypertension and type 2 diabetes mellitus. He takes metformin and amlodipine. He has never taken an anticoagulant.
+
+    On physical examination, blood pressure is 138/84 mm Hg, pulse rate is 112/min and irregularly irregular, and respiration rate is 16/min. Oxygen saturation is 97% breathing ambient air. The lungs are clear, and there is no edema.
+
+    Electrocardiogram shows atrial fibrillation. After intravenous metoprolol, the ventricular rate is 88/min. Transthoracic echocardiogram shows normal left ventricular function and a mildly enlarged left atrium. He would like to restore sinus rhythm as soon as possible.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Anticoagulate for 1 week, then perform electrical cardioversion
+    B: Perform electrical cardioversion now without anticoagulation
+    C: Perform electrical cardioversion now, then anticoagulate for 48 hours
+    D: Perform electrical cardioversion now, then start daily aspirin
+    E: Start anticoagulation and perform transesophageal echocardiography–guided cardioversion
+  answer: E
+  explain: |
+    When atrial fibrillation has lasted **≥48 hours or for an unknown time**, thrombus may already be present in the left atrial appendage, and cardioversion — electrical or pharmacologic — can dislodge it. There are two safe paths:
+
+    1. **Therapeutic anticoagulation for at least 3 weeks**, then cardioversion; or
+    2. Start anticoagulation and perform **transesophageal echocardiography (TEE)**; if no thrombus is seen, cardiovert now.
+
+    With either path, **continue anticoagulation for at least 4 weeks after cardioversion**, because the atria are "stunned" and mechanically weak for weeks after sinus rhythm returns. Long-term anticoagulation then depends on CHA₂DS₂-VASc — his score is 2 (hypertension, diabetes), so he will need it indefinitely.
+
+    :::flow
+    Q: AF ≥48 h or unknown duration, stable?
+    Y: 3 weeks anticoagulation OR TEE-guided cardioversion → anticoagulate ≥4 weeks after
+    N: <48 h with low CHA₂DS₂-VASc: may cardiovert; still consider anticoagulation
+    :::
+  why:
+    A: One week of anticoagulation is not enough time for an existing thrombus to organize or resolve; the standard is at least 3 weeks.
+    B: Cardioversion without anticoagulation after an unknown duration of AF carries a high risk of stroke.
+    C: Forty-eight hours of anticoagulation after cardioversion does not cover the period of atrial stunning; at least 4 weeks is required.
+    D: Aspirin does not prevent cardioembolic stroke after cardioversion.
+  pearl: |
+    "Unknown duration" is treated as "≥48 hours." Hemodynamically unstable AF is the exception: cardiovert immediately and start anticoagulation as soon as possible.
+  objective: |
+    Before cardioverting atrial fibrillation of ≥48 hours or unknown duration, either anticoagulate for 3 weeks or exclude left atrial thrombus with TEE; continue anticoagulation for at least 4 weeks afterward.
+  refs:
+    - "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation 2024;149:e1."
+
+- id: CV-040
+  topic: AF with a mechanical mitral valve
+  task: Treatment/Care Decisions
+  chapters: [cardiology/af, cardiology/valve-disease]
+  stem: |
+    A 61-year-old woman comes to the office for a routine visit. She underwent mitral valve replacement with a bileaflet mechanical prosthesis 9 years ago for rheumatic mitral stenosis. She has had permanent atrial fibrillation since then. She takes warfarin and metoprolol. Her INR values have been stable but she dislikes frequent INR checks and asks to switch to apixaban, which her sister takes for atrial fibrillation.
+
+    On physical examination, blood pressure is 124/76 mm Hg and pulse rate is 72/min and irregular. A crisp mechanical closing click is heard. There is no murmur suggesting valve dysfunction.
+  labs:
+    - [INR, 2.9]
+    - [Hemoglobin, 13.1 g/dL]
+  lead: Which of the following is the most appropriate anticoagulation management?
+  choices:
+    A: Continue warfarin with a target INR of 3.0 (range 2.5–3.5)
+    B: Reduce warfarin to a target INR of 1.5 to 2.0 and add aspirin
+    C: Switch to apixaban
+    D: Switch to aspirin plus clopidogrel
+    E: Switch to dabigatran
+  answer: A
+  explain: |
+    **Mechanical heart valves require a vitamin K antagonist.** DOACs are contraindicated:
+    - **RE-ALIGN** (dabigatran vs warfarin) was stopped early for **more valve thrombosis, stroke and bleeding** with dabigatran.
+    - **PROACT Xa** (apixaban vs warfarin with the On-X aortic valve) was stopped early for **excess thromboembolism** with apixaban.
+
+    For a **mechanical mitral valve** (or a mechanical aortic valve with risk factors such as atrial fibrillation), the target INR is **3.0 (2.5–3.5)**. Mitral prostheses are more thrombogenic than aortic ones because of low-velocity flow across the mitral position. Low-dose aspirin may be added only if there is another indication or a low bleeding risk.
+
+    | Valve | Anticoagulant | INR target |
+    |---|---|---|
+    | Mechanical aortic, no risk factors | Warfarin | 2.5 (2.0–3.0) |
+    | Mechanical aortic + AF/LV dysfunction/prior emboli, or On-X after 3 months | Warfarin | 3.0 or 1.5–2.0 for On-X |
+    | **Mechanical mitral** | **Warfarin** | **3.0 (2.5–3.5)** |
+    | Bioprosthetic valve + AF | **DOAC acceptable** | — |
+  why:
+    B: The lower INR target (1.5–2.0) applies only to the On-X mechanical aortic valve without risk factors, not to a mechanical mitral valve.
+    C: Apixaban was inferior to warfarin for mechanical valves and is contraindicated.
+    D: Antiplatelet therapy alone does not prevent mechanical valve thrombosis.
+    E: Dabigatran caused more thromboembolic and bleeding events than warfarin in patients with mechanical valves.
+  mnemonic: |
+    **"Metal = warfarin."** Mitral metal aims higher (**3**).
+  pearl: |
+    The "valvular AF" exclusion for DOACs means two things only: a **mechanical valve** or **moderate–severe rheumatic mitral stenosis**. AF with other valve disease (including bioprosthetic valves and aortic stenosis) can be treated with a DOAC.
+  objective: |
+    Patients with a mechanical mitral valve require warfarin with a target INR of 3.0 (2.5–3.5); DOACs are contraindicated with mechanical heart valves.
+  refs:
+    - "Otto CM, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease. Circulation 2021;143:e72."
+    - "Eikelboom JW, et al. Dabigatran versus warfarin in patients with mechanical heart valves (RE-ALIGN). N Engl J Med 2013;369:1206."
+    - "Wang TY, et al. Apixaban or warfarin in patients with an On-X mechanical aortic valve (PROACT Xa). NEJM Evid 2023;2:EVIDoa2300067."
+
+- id: CV-041
+  topic: Apixaban dose selection
+  task: Treatment/Care Decisions
+  chapters: [cardiology/af]
+  stem: |
+    An 82-year-old woman is evaluated for newly diagnosed persistent atrial fibrillation found during a preoperative visit. She has hypertension and osteoarthritis. She takes amlodipine and acetaminophen. She has no history of bleeding or falls and lives independently.
+
+    On physical examination, blood pressure is 134/80 mm Hg and pulse rate is 84/min and irregular. Weight is 57 kg (125.7 lb). The remainder of the examination is normal.
+
+    Her CHA₂DS₂-VASc score is 4. Anticoagulation with apixaban is planned.
+  labs:
+    - [Hemoglobin, 12.8 g/dL]
+    - [Platelet count, 236,000/µL]
+    - [Creatinine, 1.1 mg/dL]
+    - [Estimated creatinine clearance (Cockcroft-Gault), 36 mL/min]
+  lead: Which of the following is the most appropriate apixaban dose?
+  choices:
+    A: 2.5 mg once daily
+    B: 2.5 mg twice daily
+    C: 5 mg once daily
+    D: 5 mg twice daily
+    E: 10 mg twice daily
+  answer: B
+  explain: |
+    The standard dose of apixaban for atrial fibrillation is **5 mg twice daily**. The dose is reduced to **2.5 mg twice daily** when a patient meets **at least 2 of 3 criteria** (the "ABC" rule):
+
+    | Criterion | This patient |
+    |---|---|
+    | **A**ge ≥80 years | ✅ 82 |
+    | **B**ody weight ≤60 kg | ✅ 57 kg |
+    | **C**reatinine ≥1.5 mg/dL | ❌ 1.1 |
+
+    She meets 2 criteria, so **2.5 mg twice daily** is correct. Note that apixaban dosing uses **serum creatinine**, not creatinine clearance — unlike dabigatran, rivaroxaban and edoxaban, which are adjusted by creatinine clearance.
+
+    Underdosing DOACs is common and is associated with more strokes without less bleeding. Use the label criteria, not a general impression of frailty.
+  why:
+    A: Once-daily dosing is not used for apixaban in atrial fibrillation; its half-life (about 12 hours) requires twice-daily dosing.
+    C: Once-daily dosing is not used for apixaban in atrial fibrillation.
+    D: The full dose would be appropriate if she met fewer than 2 dose-reduction criteria.
+    E: Ten milligrams twice daily is the initial 7-day loading regimen for acute venous thromboembolism, not a dose for atrial fibrillation.
+  mnemonic: |
+    Apixaban **"ABC — 2 of 3"**: **A**ge ≥80, **B**ody weight ≤60 kg, **C**reatinine ≥1.5 → 2.5 mg twice daily.
+  objective: |
+    Reduce apixaban to 2.5 mg twice daily for atrial fibrillation only when at least 2 of the following are present: age ≥80 years, weight ≤60 kg, serum creatinine ≥1.5 mg/dL.
+  refs:
+    - "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation 2024;149:e1."
+    - "Granger CB, et al. Apixaban versus warfarin in patients with atrial fibrillation (ARISTOTLE). N Engl J Med 2011;365:981."
+
+- id: CV-042
+  topic: Catheter ablation for AF with HFrEF
+  task: Treatment/Care Decisions
+  chapters: [cardiology/af, cardiology/hfref]
+  stem: |
+    A 61-year-old man is evaluated for persistent fatigue and dyspnea on exertion. He has had persistent atrial fibrillation for 10 months and heart failure with reduced ejection fraction for 8 months. Coronary angiography showed no coronary artery disease. Despite 6 months of guideline-directed therapy with metoprolol succinate, sacubitril-valsartan, spironolactone and dapagliflozin, plus apixaban, he has NYHA class II–III symptoms. Resting ventricular rate has been controlled at 70–80/min.
+
+    On physical examination, blood pressure is 116/72 mm Hg and pulse rate is 78/min and irregularly irregular. Jugular venous pressure is normal, the lungs are clear, and there is no edema.
+
+    Echocardiogram shows left ventricular ejection fraction of 30% (unchanged from diagnosis) and a moderately dilated left atrium.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Add digoxin
+    B: Atrioventricular node ablation with biventricular pacing
+    C: Catheter ablation of atrial fibrillation
+    D: Start dronedarone
+    E: Start flecainide
+  answer: C
+  explain: |
+    In patients with **HFrEF and atrial fibrillation**, restoring sinus rhythm with **catheter ablation** improves outcomes. In **CASTLE-AF**, ablation reduced the composite of **death or heart failure hospitalization** compared with medical therapy, and LVEF improved. CASTLE-HTx showed benefit even in end-stage heart failure. The 2023 AF guideline gives ablation a **Class 1** recommendation in selected patients with HFrEF who are on GDMT.
+
+    Ventricular rate is already controlled, so the remaining problem is the **loss of atrial contraction and the irregular rhythm**. A component of **AF-mediated cardiomyopathy** may be present, which ablation can reverse.
+
+    | Antiarrhythmic in HFrEF | Use? |
+    |---|---|
+    | Amiodarone, dofetilide | ✅ Safe options |
+    | Sotalol | With caution (QT, negative inotropy) |
+    | Flecainide, propafenone | ❌ Structural disease |
+    | Dronedarone | ❌ NYHA III–IV or recent decompensation |
+  why:
+    A: The resting rate is already controlled; more rate control will not relieve symptoms caused by AF itself.
+    B: AV-node ablation with pacing ("ablate and pace") is a last resort when rhythm control fails and rate control cannot be achieved; it commits the patient to lifelong pacing.
+    D: Dronedarone increases mortality in patients with advanced or recently decompensated heart failure and in permanent AF.
+    E: Class IC drugs increase mortality in patients with structural heart disease or reduced ejection fraction.
+  pearl: |
+    A patient with new cardiomyopathy and AF may have **tachycardia- or AF-mediated cardiomyopathy**. Restoring sinus rhythm (or strict rate control) followed by a repeat echo in 2–3 months is how you tell.
+  objective: |
+    In patients with HFrEF and symptomatic atrial fibrillation despite GDMT, catheter ablation reduces mortality and heart failure hospitalization.
+  refs:
+    - "Marrouche NF, et al. Catheter ablation for atrial fibrillation with heart failure (CASTLE-AF). N Engl J Med 2018;378:417."
+    - "Sohns C, et al. Catheter ablation in end-stage heart failure with atrial fibrillation (CASTLE-HTx). N Engl J Med 2023;389:1380."
+    - "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation 2024;149:e1."
+
+- id: CV-043
+  topic: Left atrial appendage occlusion
+  task: Treatment/Care Decisions
+  chapters: [cardiology/af]
+  stem: |
+    A 78-year-old man is evaluated after his third hospitalization in 12 months for gastrointestinal bleeding requiring transfusion. Capsule endoscopy and double-balloon enteroscopy showed multiple small-bowel angiodysplasias, which were treated with argon plasma coagulation; bleeding recurred despite treatment and a trial of octreotide. He has permanent atrial fibrillation, hypertension, type 2 diabetes mellitus and a prior ischemic stroke 3 years ago. Apixaban was stopped at his last admission. Other medications are amlodipine, metformin and atorvastatin.
+
+    On physical examination, blood pressure is 132/76 mm Hg and pulse rate is 76/min and irregular. Examination is otherwise unremarkable.
+  labs:
+    - [Hemoglobin, 9.8 g/dL]
+    - [Creatinine, 1.0 mg/dL]
+  lead: Which of the following is the most appropriate stroke-prevention strategy?
+  choices:
+    A: Aspirin alone
+    B: Percutaneous left atrial appendage occlusion
+    C: Restart apixaban at a reduced dose of 2.5 mg twice daily
+    D: Switch to warfarin with a target INR of 2.0 to 3.0
+    E: No further stroke-prevention therapy
+  answer: B
+  explain: |
+    His stroke risk is very high (CHA₂DS₂-VASc **6**: age ≥75 = 2, hypertension, diabetes, prior stroke = 2) but he has a **contraindication to long-term anticoagulation**: recurrent, transfusion-dependent bleeding from a cause that cannot be fixed.
+
+    **Percutaneous left atrial appendage occlusion (LAAO)** removes the main source of thrombus in nonvalvular AF (>90% of atrial thrombi form in the appendage). After implantation, patients take short-term antithrombotic therapy (a few weeks to months, depending on device and bleeding risk), then aspirin alone or nothing. The 2023 guideline gives LAAO a **Class 2a** recommendation for patients with a contraindication to long-term oral anticoagulation due to a nonreversible cause.
+  why:
+    A: Aspirin offers little or no stroke protection in atrial fibrillation and still increases gastrointestinal bleeding.
+    C: Off-label dose reduction lowers stroke protection and does not remove the bleeding risk from angiodysplasia; he does not meet dose-reduction criteria.
+    D: Warfarin causes as much or more gastrointestinal bleeding than apixaban.
+    E: Leaving a patient with a prior stroke and CHA₂DS₂-VASc of 6 unprotected accepts an annual stroke risk near 10%.
+  pearl: |
+    Anticoagulation-associated GI bleeding is not automatically a reason to stop anticoagulation forever — find and fix the source first. LAAO is for **recurrent or nonreversible** bleeding risk.
+  objective: |
+    Consider percutaneous left atrial appendage occlusion for patients with atrial fibrillation at high stroke risk who cannot take long-term anticoagulation because of a nonreversible bleeding risk.
+  refs:
+    - "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation 2024;149:e1."
+    - "Reddy VY, et al. 5-year outcomes after left atrial appendage closure: PREVAIL and PROTECT AF. J Am Coll Cardiol 2017;70:2964."
+
+- id: CV-044
+  topic: Device-detected subclinical AF
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/af, cardiology/devices]
+  stem: |
+    A 76-year-old woman comes for routine pacemaker follow-up. A dual-chamber pacemaker was implanted 2 years ago for sinus node dysfunction. She has hypertension and type 2 diabetes mellitus. She has had no palpitations, stroke or transient ischemic attack. Medications are lisinopril and metformin.
+
+    Device interrogation shows 14 episodes of atrial high-rate events over the past 6 months, with electrograms confirming atrial fibrillation. The longest episode lasted 4 hours; total burden is 0.3%. No atrial fibrillation has been seen on any electrocardiogram.
+
+    Her CHA₂DS₂-VASc score is 5. She has no history of bleeding.
+  lead: Which of the following is the most accurate statement to guide her decision about anticoagulation?
+  choices:
+    A: Anticoagulation is not indicated because episodes shorter than 24 hours carry no stroke risk
+    B: Aspirin provides the same stroke protection as apixaban for device-detected episodes
+    C: Her stroke risk is lower than with clinical atrial fibrillation; anticoagulation lowers it further but increases major bleeding
+    D: Her stroke risk is the same as with clinical atrial fibrillation, so anticoagulation is required
+    E: Stroke risk with device-detected episodes depends only on total burden, not on clinical risk factors
+  answer: C
+  explain: |
+    **Subclinical, device-detected atrial fibrillation** (atrial high-rate episodes confirmed as AF on device electrograms) is common in pacemaker and ICD patients. Two randomized trials clarified its risk:
+
+    - **ARTESIA** (apixaban vs aspirin; episodes 6 minutes–24 hours): apixaban reduced stroke and systemic embolism (about 1.2% → 0.8% per year) but increased major bleeding.
+    - **NOAH-AFNET 6** (edoxaban vs placebo): no significant reduction in the composite outcome; more bleeding.
+
+    Together they show that stroke risk with short device-detected episodes is **about 1% per year — lower than clinical AF with the same risk score (often 3%–5%)** — and that anticoagulation trades a modest stroke reduction for more bleeding. The 2023 guideline suggests anticoagulation is reasonable for episodes **≥24 hours** with CHA₂DS₂-VASc ≥2, and may be considered for shorter episodes with a higher risk score, through **shared decision-making**.
+
+    | Device-detected AF episode | Approach (with CHA₂DS₂-VASc ≥2–3) |
+    |---|---|
+    | <5–6 minutes | No anticoagulation; keep monitoring |
+    | 6 minutes–24 hours | Shared decision — higher scores favor a DOAC |
+    | ≥24 hours | Anticoagulation reasonable |
+  why:
+    A: Episodes of minutes to hours do carry some stroke risk (about 1% per year in ARTESIA), and apixaban reduced that risk.
+    B: In ARTESIA, apixaban was superior to aspirin in preventing stroke.
+    D: Stroke risk with short device-detected episodes is substantially lower than with clinical AF; anticoagulation is optional, not required.
+    E: Clinical risk factors (CHA₂DS₂-VASc) remain the main determinant of stroke risk; burden adds information but does not replace them.
+  pearl: |
+    Progression is common: subclinical AF often becomes clinical AF. Continue device follow-up and reassess when episodes lengthen.
+  objective: |
+    Device-detected subclinical atrial fibrillation carries a lower stroke risk than clinical atrial fibrillation; decide about anticoagulation through shared decision-making based on episode duration, stroke risk and bleeding risk.
+  refs:
+    - "Healey JS, et al. Apixaban for stroke prevention in subclinical atrial fibrillation (ARTESIA). N Engl J Med 2024;390:107."
+    - "Kirchhof P, et al. Anticoagulation with edoxaban in patients with atrial high-rate episodes (NOAH-AFNET 6). N Engl J Med 2023;389:1167."
+    - "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation 2024;149:e1."
+
+- id: CV-045
+  topic: AF in thyrotoxicosis
+  task: Treatment/Care Decisions
+  chapters: [cardiology/af, endo/thyroid]
+  stem: |
+    A 34-year-old woman comes to the emergency department because of 3 weeks of palpitations, heat intolerance, tremor and a 4-kg (8.8-lb) weight loss. She has no other medical history and takes no medications.
+
+    On physical examination, temperature is 37.4 °C (99.3 °F), blood pressure is 136/62 mm Hg, pulse rate is 128/min and irregularly irregular, and respiration rate is 18/min. She is alert and oriented. There is lid lag, a diffusely enlarged nontender thyroid with a bruit, and a fine tremor of the outstretched hands. The lungs are clear.
+
+    Electrocardiogram shows atrial fibrillation without ischemic changes.
+  labs:
+    - [Thyroid-stimulating hormone, <0.01 µU/mL]
+    - [Free thyroxine (T₄), 4.8 ng/dL (reference 0.8–1.8)]
+    - [Potassium, 4.0 mEq/L]
+  lead: Which of the following is the most appropriate initial treatment?
+  choices:
+    A: Amiodarone
+    B: Digoxin
+    C: Immediate electrical cardioversion
+    D: Propranolol
+    E: Radioactive iodine ablation today
+  answer: D
+  explain: |
+    She has **Graves disease** (diffuse goiter with bruit, lid lag, suppressed TSH, high free T₄) with **atrial fibrillation**, which occurs in 10%–15% of patients with thyrotoxicosis.
+
+    A **beta-blocker** is the first treatment: it controls the ventricular rate and relieves adrenergic symptoms (tremor, palpitations, anxiety). **Propranolol** also blocks peripheral T₄-to-T₃ conversion at higher doses. Start a thionamide (methimazole) at the same time. Most patients **revert to sinus rhythm spontaneously** within 2–3 months of becoming euthyroid, so cardioversion is deferred until then.
+
+    Anticoagulation follows the **usual CHA₂DS₂-VASc rules** — thyrotoxicosis itself is not counted. Her score is 1 (female sex only), so anticoagulation is not indicated.
+  why:
+    A: Amiodarone contains large amounts of iodine and can worsen thyrotoxicosis; it is reserved for refractory cases.
+    B: Digoxin works poorly in thyrotoxicosis because of increased clearance and high sympathetic tone; larger doses are needed and toxicity is more likely.
+    C: Cardioversion while she is still thyrotoxic usually fails or AF quickly recurs; it is not needed in a stable patient.
+    E: Radioactive iodine can cause a transient release of thyroid hormone (worsening thyrotoxicosis) and is given after beta-blockade and usually after thionamide pretreatment; it is not an emergency rate-control treatment.
+  pearl: |
+    Check TSH in every new case of atrial fibrillation — subclinical hyperthyroidism (low TSH, normal T₄) also triples AF risk in older adults.
+  objective: |
+    Treat atrial fibrillation caused by thyrotoxicosis with a beta-blocker and antithyroid therapy; most patients return to sinus rhythm once euthyroid.
+  refs:
+    - "Ross DS, et al. 2016 American Thyroid Association guidelines for diagnosis and management of hyperthyroidism and other causes of thyrotoxicosis. Thyroid 2016;26:1343."
+    - "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation 2024;149:e1."
+
+- id: CV-046
+  topic: Digoxin toxicity
+  task: Treatment/Care Decisions
+  chapters: [cardiology/af]
+  stem: |
+    An 84-year-old woman is brought to the emergency department by her daughter because of 3 days of nausea, vomiting, poor appetite and confusion. She says that lights look yellow and blurry. She has permanent atrial fibrillation, heart failure with preserved ejection fraction and chronic kidney disease. Ten days ago her furosemide dose was increased and clarithromycin was started for sinusitis. Other medications are digoxin, metoprolol and apixaban.
+
+    On physical examination, blood pressure is 104/62 mm Hg, pulse rate is 44/min and regular, and respiration rate is 16/min. She is oriented to person only. Mucous membranes are dry.
+
+    Electrocardiogram shows atrial fibrillation with a slow regular junctional rhythm at 44/min, frequent premature ventricular complexes, and scooped ST-segment depression.
+  labs:
+    - [Sodium, 134 mEq/L]
+    - [Potassium, 6.0 mEq/L]
+    - [Creatinine, 2.3 mg/dL (baseline 1.4 mg/dL)]
+    - [Digoxin (drawn 10 hours after the last dose), 4.1 ng/mL]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Digoxin immune fab
+    B: Hemodialysis
+    C: Intravenous calcium gluconate
+    D: Intravenous lidocaine
+    E: Transcutaneous pacing alone
+  answer: A
+  explain: |
+    She has **digoxin toxicity**: GI symptoms, confusion, **xanthopsia** (yellow vision), bradyarrhythmia with ventricular ectopy, **hyperkalemia** and a high level. Two precipitants are typical: **acute kidney injury** (digoxin is renally cleared) and **clarithromycin** (inhibits P-glycoprotein, raising digoxin levels).
+
+    **Digoxin immune fab** (digoxin-specific antibody fragments) is the treatment. Indications include:
+    - Life-threatening arrhythmia (ventricular arrhythmia, high-grade AV block, severe bradycardia)
+    - **Potassium >5.0 mEq/L** in acute toxicity
+    - End-organ dysfunction (altered mental status, AKI) from toxicity
+    - Level >10 ng/mL steady-state, or >15 ng/mL at any time
+
+    Hyperkalemia reflects poisoning of the Na⁺/K⁺-ATPase and is a marker of severity; it corrects as fab binds digoxin. Check potassium afterward, as it can fall quickly.
+
+    | Classic arrhythmias of digoxin toxicity |
+    |---|
+    | Atrial tachycardia with block |
+    | **Accelerated junctional rhythm**, "regularized" AF |
+    | Frequent PVCs, ventricular bigeminy |
+    | **Bidirectional ventricular tachycardia** (near-specific) |
+  why:
+    B: Digoxin has a large volume of distribution and is extensively tissue-bound; hemodialysis removes very little.
+    C: Calcium does not treat digoxin toxicity, and the hyperkalemia resolves with fab; most experts avoid relying on calcium here (historical concern for "stone heart" is unproven, but it is not the definitive treatment).
+    D: Lidocaine may be used for ventricular arrhythmias if fab is unavailable, but fab treats the cause and is first-line.
+    E: Pacing does not reverse toxicity, and pacing wires can trigger ventricular arrhythmias in the digoxin-sensitized myocardium; fab is preferred.
+  pearl: |
+    Digoxin levels drawn earlier than 6 hours after a dose are falsely high (distribution phase). Interactions to remember: amiodarone, verapamil, macrolides, quinidine and cyclosporine raise levels; hypokalemia, hypomagnesemia and hypercalcemia increase toxicity at any level.
+  objective: |
+    Treat digoxin toxicity with life-threatening arrhythmia, hyperkalemia or end-organ dysfunction with digoxin immune fab; digoxin is not dialyzable.
+  refs:
+    - "Lavonas EJ, et al. 2023 AHA focused update on the management of patients with cardiac arrest or life-threatening toxicity due to poisoning. Circulation 2023;148:e149."
+    - "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation 2024;149:e1."
+
+- id: CV-047
+  topic: Amiodarone pulmonary toxicity
+  task: Diagnosis/Testing
+  chapters: [cardiology/af, pulmonary/ild-sarcoid]
+  stem: |
+    A 72-year-old man is evaluated for 2 months of progressive dyspnea on exertion and a dry cough. He has no fever, chest pain or orthopnea. He has paroxysmal atrial fibrillation and coronary artery disease with preserved left ventricular function. Amiodarone, 400 mg daily, was started 8 months ago after recurrent episodes on sotalol. Other medications are apixaban, atorvastatin and metoprolol. He does not smoke and keeps no birds.
+
+    On physical examination, temperature is 37.2 °C (99.0 °F), blood pressure is 128/74 mm Hg, pulse rate is 62/min and regular, and respiration rate is 20/min. Oxygen saturation is 91% breathing ambient air, falling to 85% with walking. Fine bibasilar crackles are heard. Jugular venous pressure is normal, and there is no edema.
+
+    High-resolution CT of the chest shows bilateral, predominantly peripheral ground-glass and reticular opacities with areas of high attenuation in the consolidated lung. There is no pleural effusion.
+  labs:
+    - [Leukocyte count, 8,200/µL]
+    - [B-type natriuretic peptide, 48 pg/mL]
+    - [Pulmonary function, restrictive pattern; DLCO 48% of predicted (68% one year ago)]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Acute decompensated heart failure
+    B: Amiodarone pulmonary toxicity
+    C: Hypersensitivity pneumonitis
+    D: Idiopathic pulmonary fibrosis
+    E: Pulmonary embolism
+  answer: B
+  explain: |
+    **Amiodarone pulmonary toxicity** fits: subacute dyspnea and dry cough months after starting amiodarone (risk rises with doses ≥400 mg/day and older age), new interstitial infiltrates, a **fall in DLCO**, and a normal BNP excluding heart failure.
+
+    **High-attenuation** lung opacities (and a high-attenuation liver or thyroid) are a clue: amiodarone contains **iodine**, which makes affected tissue bright on CT.
+
+    Management: **stop amiodarone**; give **glucocorticoids** for significant hypoxemia. Recovery is slow because amiodarone's half-life is about 50–100 days.
+
+    | Amiodarone toxicity | Monitoring |
+    |---|---|
+    | **Lung** — pneumonitis, fibrosis | Baseline chest radiograph and PFTs with DLCO; evaluate new symptoms |
+    | **Thyroid** — hypo- or hyperthyroidism | TSH at baseline and every 6 months |
+    | **Liver** — transaminase elevation | LFTs at baseline and every 6 months |
+    | Eyes — corneal deposits, optic neuropathy | Exam if visual symptoms |
+    | Skin — blue-gray discoloration, photosensitivity | — |
+    | Heart — bradycardia, QT prolongation | ECG |
+    | Interactions — ↑ warfarin, digoxin, some statins | Adjust doses |
+  why:
+    A: A normal BNP, normal jugular venous pressure and no edema argue strongly against heart failure.
+    C: He has no exposure (birds, molds, hot tubs), and hypersensitivity pneumonitis typically shows upper-lobe centrilobular nodules and air trapping rather than high-attenuation peripheral opacities.
+    D: Idiopathic pulmonary fibrosis progresses over years and shows basal subpleural honeycombing; this 2-month course after a new drug points to drug toxicity.
+    E: He is anticoagulated, and pulmonary embolism does not cause bilateral interstitial opacities with a restrictive pattern.
+  mnemonic: |
+    Amiodarone's toxicities are the **"organs you check for thyroid and liver labs — plus lungs, eyes and skin."** Think **"PFTs, LFTs, TFTs."**
+  objective: |
+    Recognize amiodarone pulmonary toxicity (subacute interstitial infiltrates, falling DLCO) and treat by stopping the drug, with glucocorticoids for severe disease.
+  refs:
+    - "Goldschlager N, et al. A practical guide for clinicians who treat patients with amiodarone: 2007. Heart Rhythm 2007;4:1250."
+    - "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation 2024;149:e1."

@@ -37,8 +37,8 @@
   objective: |
     After a systemic (anaphylactic) reaction to an insect sting, prescribe an epinephrine autoinjector and refer for venom testing and venom immunotherapy.
   refs:
-    - Golden DBK, et al. Stinging insect hypersensitivity: a practice parameter update 2016. *Ann Allergy Asthma Immunol* 2017;118:28.
-    - Golden DBK, et al. Anaphylaxis: a 2023 practice parameter update. *Ann Allergy Asthma Immunol* 2024;132:124.
+    - "Golden DBK, et al. Stinging insect hypersensitivity: a practice parameter update 2016. *Ann Allergy Asthma Immunol* 2017;118:28."
+    - "Golden DBK, et al. Anaphylaxis: a 2023 practice parameter update. *Ann Allergy Asthma Immunol* 2024;132:124."
 
 
 - id: AL-002
@@ -79,7 +79,7 @@
   objective: |
     Treat anaphylaxis immediately with intramuscular epinephrine 0.5 mg (1 mg/mL) in the anterolateral thigh, repeated every 5–15 minutes as needed.
   refs:
-    - Golden DBK, et al. Anaphylaxis: a 2023 practice parameter update. *Ann Allergy Asthma Immunol* 2024;132:124.
+    - "Golden DBK, et al. Anaphylaxis: a 2023 practice parameter update. *Ann Allergy Asthma Immunol* 2024;132:124."
 
 - id: AL-003
   topic: Low-risk penicillin allergy label
@@ -109,7 +109,7 @@
   objective: |
     Delabel low-risk penicillin allergy (remote benign rash) with a direct oral amoxicillin challenge without prior skin testing.
   refs:
-    - Khan DA, et al. Drug allergy: a 2022 practice parameter update. *J Allergy Clin Immunol* 2022;150:1333.
+    - "Khan DA, et al. Drug allergy: a 2022 practice parameter update. *J Allergy Clin Immunol* 2022;150:1333."
     - Copaescu AM, et al. Efficacy of a clinical decision rule to enable direct oral challenge in patients with low-risk penicillin allergy (PALACE). *JAMA Intern Med* 2023;183:944.
 
 - id: AL-004

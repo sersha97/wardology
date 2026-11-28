@@ -12,7 +12,8 @@
     - {name: Syncope & pericardium, emoji: "🩺"}
     - {name: Valves & endocarditis, emoji: "🚪"}
     - {name: Aorta & blood pressure, emoji: "🌋"}
-  planned: [Myocarditis, Cardiac amyloidosis]
+    - {name: Cardiomyopathy & special populations, emoji: "🧬"}
+  planned: []
 
 - id: pulmonary
   name: Pulmonary & Critical Care

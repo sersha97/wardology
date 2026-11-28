@@ -37,7 +37,7 @@
   objective: |
     Posterior-canal BPPV is diagnosed with the Dix–Hallpike maneuver and treated with canalith repositioning (Epley); avoid routine imaging and vestibular suppressants.
   refs:
-    - Bhattacharyya N, et al. Clinical practice guideline: benign paroxysmal positional vertigo (update). *Otolaryngol Head Neck Surg* 2017;156:S1.
+    - "Bhattacharyya N, et al. Clinical practice guideline: benign paroxysmal positional vertigo (update). *Otolaryngol Head Neck Surg* 2017;156:S1."
 
 
 - id: ET-002
@@ -78,4 +78,4 @@
   objective: |
     Treat sudden sensorineural hearing loss as an emergency with prompt audiometry and oral glucocorticoids, and obtain MRI to exclude vestibular schwannoma.
   refs:
-    - Chandrasekhar SS, et al. Clinical practice guideline: sudden hearing loss (update). *Otolaryngol Head Neck Surg* 2019;161:S1.
+    - "Chandrasekhar SS, et al. Clinical practice guideline: sudden hearing loss (update). *Otolaryngol Head Neck Surg* 2019;161:S1."

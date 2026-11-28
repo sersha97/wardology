@@ -364,8 +364,15 @@ def f_retake_fresh(c):
         walk(c, d["id"], "tutor")
     walk(c, mk_test(c, "exam", 60, pools=("all",), cats=[cat]), "exam")
 
+def small_cat(c):
+    """A category with 5–60 questions, so one 60-question block from its Unused pool holds all of them
+    (categories grow as the bank grows; the first category is no longer small)."""
+    pools = api(c, "pools", method="GET")[1]["pools"]
+    fits = sorted((v["all"], k) for k, v in pools.items() if 5 <= v["all"] <= 60)
+    assert fits, f"no category with 5–60 questions: {pools}"
+    return fits[0][1]
 def ended_with_skips(c, mode):
-    cat = first_cat(c)
+    cat = small_cat(c)
     tid = mk_test(c, mode, 5, cats=[cat])
     _, d = api(c, f"tests/{tid}", method="GET")
     api(c, f"tests/{tid}/answer", {"idx": 0, "choice": "A"})
@@ -389,13 +396,15 @@ def check_skips_hidden(c, tid, cat, skipped, mode):
     _, d4 = api(c, f"tests/{d3['id']}", method="GET")
     back = {it["qid"] for it in d4["items"]}
     assert set(skipped) <= back, f"skipped questions did not go back to Unused: missing {set(skipped) - back}"
+    pool = api(c, "pools", method="GET")[1]["pools"][cat]
+    assert pool["unused"] >= len(skipped), f"Unused count too small after skipping: {pool}"
     walk(c, d3["id"], "tutor")
 def f_tutor_end_skips(c):
     tid, cat, sk = ended_with_skips(c, "tutor"); check_skips_hidden(c, tid, cat, sk, "tutor")
 def f_exam_end_skips(c):
     tid, cat, sk = ended_with_skips(c, "exam"); check_skips_hidden(c, tid, cat, sk, "exam")
 def f_exam_timeup(c):
-    cat = first_cat(c)
+    cat = small_cat(c)
     tid = mk_test(c, "exam", 3, cats=[cat])
     _, d = api(c, f"tests/{tid}", method="GET")
     api(c, f"tests/{tid}/answer", {"idx": 0, "choice": "B"})

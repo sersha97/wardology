@@ -84,8 +84,8 @@
   objective: |
     Treat a first proximal DVT or PE provoked by surgery for 3 months, then stop; reserve extended therapy for unprovoked VTE or persistent risk factors.
   refs:
-    - Stevens SM, et al. Antithrombotic therapy for VTE disease: second update of the CHEST guideline and expert panel report. *Chest* 2021;160:e545.
-    - Ortel TL, et al. American Society of Hematology 2020 guidelines for management of venous thromboembolism: treatment of DVT and PE. *Blood Adv* 2020;4:4693.
+    - "Stevens SM, et al. Antithrombotic therapy for VTE disease: second update of the CHEST guideline and expert panel report. *Chest* 2021;160:e545."
+    - "Ortel TL, et al. American Society of Hematology 2020 guidelines for management of venous thromboembolism: treatment of DVT and PE. *Blood Adv* 2020;4:4693."
 
 
 - id: HE-003
@@ -127,7 +127,7 @@
   objective: |
     When HIT is suspected with intermediate or high probability, stop all heparin and start a non-heparin anticoagulant before laboratory confirmation.
   refs:
-    - Cuker A, et al. American Society of Hematology 2018 guidelines for management of VTE: heparin-induced thrombocytopenia. *Blood Adv* 2018;2:3360.
+    - "Cuker A, et al. American Society of Hematology 2018 guidelines for management of VTE: heparin-induced thrombocytopenia. *Blood Adv* 2018;2:3360."
 
 - id: HE-004
   topic: Thrombotic thrombocytopenic purpura
@@ -308,7 +308,7 @@
   objective: |
     Confirm warm autoimmune hemolytic anemia (hemolysis with spherocytes, often with CLL or SLE) with a positive direct antiglobulin test for IgG.
   refs:
-    - Jäger U, et al. Diagnosis and treatment of autoimmune hemolytic anemia in adults: recommendations from the First International Consensus Meeting. *Blood Rev* 2020;41:100648.
+    - "Jäger U, et al. Diagnosis and treatment of autoimmune hemolytic anemia in adults: recommendations from the First International Consensus Meeting. *Blood Rev* 2020;41:100648."
 
 - id: HE-008
   topic: Acute chest syndrome in sickle cell disease
@@ -350,8 +350,8 @@
   objective: |
     Treat acute chest syndrome in sickle cell disease with oxygen, antibiotics (cephalosporin plus macrolide), incentive spirometry and red cell transfusion (exchange transfusion if severe).
   refs:
-    - Chou ST, et al. American Society of Hematology 2020 guidelines for sickle cell disease: transfusion support. *Blood Adv* 2020;4:327.
-    - Yawn BP, et al. Management of sickle cell disease: summary of the 2014 evidence-based report by expert panel members. *JAMA* 2014;312:1033.
+    - "Chou ST, et al. American Society of Hematology 2020 guidelines for sickle cell disease: transfusion support. *Blood Adv* 2020;4:327."
+    - "Yawn BP, et al. Management of sickle cell disease: summary of the 2014 evidence-based report by expert panel members. *JAMA* 2014;312:1033."
 
 - id: HE-009
   topic: Thalassemia trait versus iron deficiency
@@ -445,7 +445,7 @@
     Evaluate suspected multiple myeloma with serum protein electrophoresis with immunofixation and serum free light chains.
   refs:
     - Rajkumar SV, et al. International Myeloma Working Group updated criteria for the diagnosis of multiple myeloma. *Lancet Oncol* 2014;15:e538.
-    - Rajkumar SV. Multiple myeloma: 2024 update on diagnosis, risk-stratification, and management. *Am J Hematol* 2024;99:1802.
+    - "Rajkumar SV. Multiple myeloma: 2024 update on diagnosis, risk-stratification, and management. *Am J Hematol* 2024;99:1802."
 
 - id: HE-011
   topic: MGUS — follow-up
@@ -526,7 +526,7 @@
   objective: |
     In a patient with erythrocytosis and a low erythropoietin level, test for the JAK2 V617F mutation to diagnose polycythemia vera.
   refs:
-    - Tefferi A, Barbui T. Polycythemia vera: 2024 update on diagnosis, risk-stratification, and management. *Am J Hematol* 2023;98:1465.
+    - "Tefferi A, Barbui T. Polycythemia vera: 2024 update on diagnosis, risk-stratification, and management. *Am J Hematol* 2023;98:1465."
     - Marchioli R, et al. Cardiovascular events and intensity of treatment in polycythemia vera (CYTO-PV). *N Engl J Med* 2013;368:22.
 
 - id: HE-013
@@ -569,7 +569,7 @@
   objective: |
     Start all-trans retinoic acid immediately when acute promyelocytic leukemia is suspected, along with aggressive blood product support for coagulopathy.
   refs:
-    - Sanz MA, et al. Management of acute promyelocytic leukemia: updated recommendations from an expert panel of the European LeukemiaNet. *Blood* 2019;133:1630.
+    - "Sanz MA, et al. Management of acute promyelocytic leukemia: updated recommendations from an expert panel of the European LeukemiaNet. *Blood* 2019;133:1630."
 
 - id: HE-014
   topic: Early-stage chronic lymphocytic leukemia

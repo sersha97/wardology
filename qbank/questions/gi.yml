@@ -41,7 +41,7 @@
   objective: |
     Nondysplastic Barrett esophagus is managed with a daily PPI and surveillance endoscopy every 3 years (segment ≥3 cm) or 5 years (segment <3 cm); ablation is for dysplasia.
   refs:
-    - Shaheen NJ, et al. Diagnosis and management of Barrett's esophagus: an updated ACG guideline. *Am J Gastroenterol* 2022;117:559.
+    - "Shaheen NJ, et al. Diagnosis and management of Barrett's esophagus: an updated ACG guideline. *Am J Gastroenterol* 2022;117:559."
 
 - id: GI-002
   topic: Helicobacter pylori — test of cure
@@ -79,7 +79,7 @@
   objective: |
     Confirm H. pylori eradication with a urea breath test, stool antigen or biopsy at least 4 weeks after antibiotics and 1–2 weeks after stopping PPIs; serology cannot confirm cure.
   refs:
-    - Chey WD, et al. ACG clinical guideline: treatment of *Helicobacter pylori* infection. *Am J Gastroenterol* 2024;119:1730.
+    - "Chey WD, et al. ACG clinical guideline: treatment of *Helicobacter pylori* infection. *Am J Gastroenterol* 2024;119:1730."
 
 - id: GI-003
   topic: Colorectal cancer screening — family history
@@ -117,8 +117,8 @@
   objective: |
     A first-degree relative with colorectal cancer before age 60 calls for colonoscopy every 5 years starting at age 40 or 10 years before the relative's diagnosis, whichever is earlier.
   refs:
-    - US Preventive Services Task Force. Screening for colorectal cancer: recommendation statement. *JAMA* 2021;325:1965.
-    - Rex DK, et al. Colorectal cancer screening: recommendations for physicians and patients from the US Multi-Society Task Force. *Gastroenterology* 2017;153:307.
+    - "US Preventive Services Task Force. Screening for colorectal cancer: recommendation statement. *JAMA* 2021;325:1965."
+    - "Rex DK, et al. Colorectal cancer screening: recommendations for physicians and patients from the US Multi-Society Task Force. *Gastroenterology* 2017;153:307."
 
 - id: GI-004
   topic: Cirrhosis — primary prophylaxis of variceal bleeding
@@ -127,7 +127,7 @@
   stem: |
     A 57-year-old man with alcohol-associated cirrhosis comes for follow-up. He has not had alcohol for 18 months. He has never had ascites, encephalopathy or gastrointestinal bleeding. Screening upper endoscopy last week showed large esophageal varices without red wale signs or stigmata of recent bleeding.
 
-    Blood pressure is 122/74 mm Hg and pulse is 82/min. There is mild splenomegaly and no ascites.
+    Blood pressure is 122/74 mm Hg and pulse rate is 82/min. There is mild splenomegaly and no ascites.
   labs:
     - [Platelets, "88,000/µL"]
     - [Albumin, 3.7 g/dL]
@@ -168,7 +168,7 @@
   stem: |
     A 48-year-old woman was admitted 3 days ago with severe epigastric pain radiating to the back and vomiting. Lipase was 2,400 U/L. She received intravenous lactated Ringer solution and analgesics. Today she is hungry, her pain is gone, and she is eating a low-fat diet without discomfort. She drinks alcohol rarely.
 
-    Temperature is 37.0 °C (98.6 °F), blood pressure is 124/78 mm Hg and pulse is 80/min. The abdomen is soft with mild epigastric tenderness.
+    Temperature is 37.0 °C (98.6 °F), blood pressure is 124/78 mm Hg and pulse rate is 80/min. The abdomen is soft with mild epigastric tenderness.
   labs:
     - [Admission ALT, 312 U/L]
     - [Today ALT, 96 U/L]
@@ -200,7 +200,7 @@
   objective: |
     After mild gallstone pancreatitis, perform cholecystectomy during the same admission; reserve ERCP for cholangitis or ongoing biliary obstruction.
   refs:
-    - Tenner S, et al. American College of Gastroenterology guideline: management of acute pancreatitis. *Am J Gastroenterol* 2024;119:419.
+    - "Tenner S, et al. American College of Gastroenterology guideline: management of acute pancreatitis. *Am J Gastroenterol* 2024;119:419."
     - da Costa DW, et al. Same-admission versus interval cholecystectomy for mild gallstone pancreatitis (PONCHO). *Lancet* 2015;386:1261.
 
 
@@ -242,7 +242,7 @@
   objective: |
     Screen for celiac disease with tissue transglutaminase IgA and a total IgA level while the patient is eating gluten, and confirm positive results with duodenal biopsy.
   refs:
-    - Rubio-Tapia A, et al. ACG guidelines update: diagnosis and management of celiac disease. *Am J Gastroenterol* 2023;118:59.
+    - "Rubio-Tapia A, et al. ACG guidelines update: diagnosis and management of celiac disease. *Am J Gastroenterol* 2023;118:59."
 
 - id: GI-007
   topic: Clostridioides difficile infection — first episode
@@ -287,7 +287,7 @@
     Treat an initial episode of C. difficile infection with oral fidaxomicin (preferred) or oral vancomycin.
   refs:
     - Johnson S, et al. 2021 focused update guidelines on management of Clostridioides difficile infection in adults (IDSA/SHEA). *Clin Infect Dis* 2021;73:e1029.
-    - Kelly CR, et al. ACG clinical guidelines: prevention, diagnosis, and treatment of C. difficile infections. *Am J Gastroenterol* 2021;116:1124.
+    - "Kelly CR, et al. ACG clinical guidelines: prevention, diagnosis, and treatment of C. difficile infections. *Am J Gastroenterol* 2021;116:1124."
 
 - id: GI-008
   topic: Irritable bowel syndrome
@@ -327,7 +327,7 @@
   objective: |
     Diagnose IBS by Rome IV criteria and, in the absence of alarm features, limit testing to celiac serology, fecal calprotectin, CRP and a CBC.
   refs:
-    - Lacy BE, et al. ACG clinical guideline: management of irritable bowel syndrome. *Am J Gastroenterol* 2021;116:17.
+    - "Lacy BE, et al. ACG clinical guideline: management of irritable bowel syndrome. *Am J Gastroenterol* 2021;116:17."
 
 - id: GI-009
   topic: Acute severe ulcerative colitis
@@ -366,7 +366,7 @@
   objective: |
     Treat acute severe ulcerative colitis with intravenous glucocorticoids, VTE prophylaxis and exclusion of infection, with infliximab or cyclosporine rescue if there is no response by day 3.
   refs:
-    - Rubin DT, et al. ACG clinical guideline update: ulcerative colitis in adults. *Am J Gastroenterol* 2025.
+    - "Rubin DT, et al. ACG clinical guideline update: ulcerative colitis in adults. *Am J Gastroenterol* 2025."
 
 - id: GI-010
   topic: Crohn disease — ileal resection complications
@@ -451,8 +451,8 @@
   objective: |
     Give nucleos(t)ide prophylaxis to anti-HBc–positive patients, even if HBsAg-negative, before rituximab or other high-risk immunosuppression.
   refs:
-    - Terrault NA, et al. Update on prevention, diagnosis, and treatment of chronic hepatitis B: AASLD 2018 hepatitis B guidance. *Hepatology* 2018;67:1560.
-    - Hwang JP, et al. Hepatitis B virus screening and management for patients with cancer prior to therapy: ASCO provisional clinical opinion update. *J Clin Oncol* 2020;38:3698.
+    - "Terrault NA, et al. Update on prevention, diagnosis, and treatment of chronic hepatitis B: AASLD 2018 hepatitis B guidance. *Hepatology* 2018;67:1560."
+    - "Hwang JP, et al. Hepatitis B virus screening and management for patients with cancer prior to therapy: ASCO provisional clinical opinion update. *J Clin Oncol* 2020;38:3698."
 
 - id: GI-012
   topic: Chronic hepatitis C — treatment
@@ -539,7 +539,7 @@
   objective: |
     In a patient with elevated transferrin saturation and ferritin, perform HFE genotyping to diagnose hereditary hemochromatosis.
   refs:
-    - Kowdley KV, et al. ACG clinical guideline: hereditary hemochromatosis. *Am J Gastroenterol* 2019;114:1202.
+    - "Kowdley KV, et al. ACG clinical guideline: hereditary hemochromatosis. *Am J Gastroenterol* 2019;114:1202."
 
 - id: GI-014
   topic: MASLD — fibrosis risk assessment
@@ -633,7 +633,7 @@
   objective: |
     Treat primary biliary cholangitis with ursodeoxycholic acid and add a second-line agent if biochemical response is inadequate.
   refs:
-    - Lindor KD, et al. Primary biliary cholangitis: 2018 practice guidance from the AASLD. *Hepatology* 2019;69:394.
+    - "Lindor KD, et al. Primary biliary cholangitis: 2018 practice guidance from the AASLD. *Hepatology* 2019;69:394."
     - Kowdley KV, et al. Efficacy and safety of elafibranor in primary biliary cholangitis (ELATIVE). *N Engl J Med* 2024;390:795.
 
 - id: GI-016
@@ -679,7 +679,7 @@
     Start N-acetylcysteine for acetaminophen overdose when the serum level is above the treatment line on the nomogram, without waiting for liver enzymes to rise.
   refs:
     - Chiew AL, et al. Updated guidelines for the management of paracetamol poisoning in Australia and New Zealand. *Med J Aust* 2020;212:175.
-    - Dart RC, et al. Management of acetaminophen poisoning in the US and Canada: a consensus statement. *JAMA Netw Open* 2023;6:e2327739.
+    - "Dart RC, et al. Management of acetaminophen poisoning in the US and Canada: a consensus statement. *JAMA Netw Open* 2023;6:e2327739."
 
 - id: GI-017
   topic: Spontaneous bacterial peritonitis
@@ -723,7 +723,7 @@
   objective: |
     Treat spontaneous bacterial peritonitis with an intravenous third-generation cephalosporin plus intravenous albumin on days 1 and 3 in patients with kidney dysfunction or jaundice.
   refs:
-    - Biggins SW, et al. Diagnosis, evaluation, and management of ascites, SBP and hepatorenal syndrome: 2021 AASLD practice guidance. *Hepatology* 2021;74:1014.
+    - "Biggins SW, et al. Diagnosis, evaluation, and management of ascites, SBP and hepatorenal syndrome: 2021 AASLD practice guidance. *Hepatology* 2021;74:1014."
     - Sort P, et al. Effect of intravenous albumin on renal impairment and mortality in SBP. *N Engl J Med* 1999;341:403.
 
 - id: GI-018
@@ -768,7 +768,7 @@
   objective: |
     Treat overt hepatic encephalopathy with lactulose titrated to 2–3 soft stools daily after identifying the precipitant, and add rifaximin for secondary prevention.
   refs:
-    - Vilstrup H, et al. Hepatic encephalopathy in chronic liver disease: 2014 practice guideline by AASLD and EASL. *Hepatology* 2014;60:715.
+    - "Vilstrup H, et al. Hepatic encephalopathy in chronic liver disease: 2014 practice guideline by AASLD and EASL. *Hepatology* 2014;60:715."
     - Bass NM, et al. Rifaximin treatment in hepatic encephalopathy. *N Engl J Med* 2010;362:1071.
 
 - id: GI-019
@@ -929,7 +929,7 @@
   objective: |
     Confirm suspected achalasia with high-resolution esophageal manometry after endoscopy excludes a mechanical cause.
   refs:
-    - Vaezi MF, et al. ACG clinical guidelines: diagnosis and management of achalasia. *Am J Gastroenterol* 2020;115:1393.
+    - "Vaezi MF, et al. ACG clinical guidelines: diagnosis and management of achalasia. *Am J Gastroenterol* 2020;115:1393."
 
 - id: GI-023
   topic: Eosinophilic esophagitis
@@ -963,5 +963,5 @@
   objective: |
     Confirm eosinophilic esophagitis with esophageal biopsies showing at least 15 eosinophils per high-power field.
   refs:
-    - Dellon ES, et al. ACG clinical guideline: diagnosis and management of eosinophilic esophagitis. *Am J Gastroenterol* 2025;120:31.
+    - "Dellon ES, et al. ACG clinical guideline: diagnosis and management of eosinophilic esophagitis. *Am J Gastroenterol* 2025;120:31."
     - Hirano I, et al. AGA institute and joint task force guidelines for the management of eosinophilic esophagitis. *Gastroenterology* 2020;158:1776.

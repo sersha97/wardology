@@ -37,7 +37,7 @@
   objective: |
     Exercise programs with balance and strength training are the most effective intervention to prevent falls in community-dwelling older adults; vitamin D does not prevent falls in those without deficiency.
   refs:
-    - US Preventive Services Task Force. Interventions to prevent falls in community-dwelling older adults: recommendation statement. *JAMA* 2024;332:51.
+    - "US Preventive Services Task Force. Interventions to prevent falls in community-dwelling older adults: recommendation statement. *JAMA* 2024;332:51."
     - Montero-Odasso M, et al. World guidelines for falls prevention and management for older adults. *Age Ageing* 2022;51:afac205.
 
 - id: GE-002
@@ -47,7 +47,7 @@
   stem: |
     An 82-year-old man is brought to the office by his daughter because he has been confused for 4 days. He has mild Alzheimer dementia and normally manages his own dressing and meals. Since earlier this week he has been drowsy during the day, awake and agitated at night, and at times does not recognize his grandson. Oxybutynin was started 6 days ago for urinary urgency. Other medications are donepezil and lisinopril.
 
-    Temperature is 37.0 °C (98.6 °F), blood pressure is 128/70 mm Hg and pulse is 84/min. He is inattentive and cannot name the months backward. Mucous membranes are dry. There is no focal neurologic deficit and no suprapubic tenderness; bladder scan shows 90 mL.
+    Temperature is 37.0 °C (98.6 °F), blood pressure is 128/70 mm Hg and pulse rate is 84/min. He is inattentive and cannot name the months backward. Mucous membranes are dry. There is no focal neurologic deficit and no suprapubic tenderness; bladder scan shows 90 mL.
   labs:
     - ["Glucose, sodium, calcium and creatinine", "normal"]
     - [Complete blood count, normal]
@@ -163,7 +163,7 @@
   objective: |
     Treat urge urinary incontinence first with bladder training, timed voiding and caffeine reduction, and prefer β₃-agonists over anticholinergics in older adults if medication is needed.
   refs:
-    - Qaseem A, et al. Nonsurgical management of urinary incontinence in women: ACP clinical practice guideline. *Ann Intern Med* 2014;161:429.
+    - "Qaseem A, et al. Nonsurgical management of urinary incontinence in women: ACP clinical practice guideline. *Ann Intern Med* 2014;161:429."
     - 2023 American Geriatrics Society Beers Criteria Update Expert Panel. *J Am Geriatr Soc* 2023;71:2052.
 
 - id: GE-005
@@ -201,8 +201,8 @@
   objective: |
     Evaluate new cognitive impairment with vitamin B₁₂, TSH and one-time structural brain imaging, plus screening for depression, sensory loss and offending medications.
   refs:
-    - Knopman DS, et al. Practice parameter: diagnosis of dementia (AAN). *Neurology* 2001;56:1143.
-    - Jack CR Jr, et al. Revised criteria for diagnosis and staging of Alzheimer's disease: Alzheimer's Association Workgroup. *Alzheimers Dement* 2024;20:5143.
+    - "Knopman DS, et al. Practice parameter: diagnosis of dementia (AAN). *Neurology* 2001;56:1143."
+    - "Jack CR Jr, et al. Revised criteria for diagnosis and staging of Alzheimer's disease: Alzheimer's Association Workgroup. *Alzheimers Dement* 2024;20:5143."
 
 - id: GE-006
   topic: Pressure injury staging
@@ -283,4 +283,4 @@
     Deprescribe Beers-list medications such as glyburide and diphenhydramine in older adults, and relax glycemic targets to avoid hypoglycemia.
   refs:
     - 2023 American Geriatrics Society Beers Criteria Update Expert Panel. *J Am Geriatr Soc* 2023;71:2052.
-    - American Diabetes Association. 13. Older adults: Standards of Care in Diabetes—2025. *Diabetes Care* 2025;48:S266.
+    - "American Diabetes Association. 13. Older adults: Standards of Care in Diabetes—2025. *Diabetes Care* 2025;48:S266."

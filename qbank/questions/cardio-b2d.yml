@@ -1,0 +1,992 @@
+# Cardiovascular Disease — batch 2d: acute coronary syndromes and chronic coronary disease (ABIM CERT)
+- id: CV-078
+  topic: STEMI at a non-PCI hospital
+  task: Treatment/Care Decisions
+  chapters: [cardiology/stemi]
+  stem: |
+    A 58-year-old man comes to the emergency department of a rural hospital 90 minutes after the onset of crushing substernal chest pain. He has hypertension and smokes cigarettes. He has no history of bleeding, stroke or recent surgery.
+
+    On physical examination, blood pressure is 146/88 mm Hg, pulse rate is 92/min, and respiration rate is 18/min. Oxygen saturation is 97% breathing ambient air. The lungs are clear.
+
+    Electrocardiogram shows 4-mm ST-segment elevation in leads V1 through V5. The hospital has no catheterization laboratory. Because of weather, the estimated time from first medical contact to balloon inflation at the nearest PCI-capable center is 150 minutes. He has received aspirin, 325 mg.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Fibrinolytic therapy with transfer for angiography within 2 to 24 hours
+    B: Fibrinolytic therapy with angiography only if symptoms recur
+    C: Heparin infusion and transfer for primary PCI
+    D: Heparin infusion and observation in the local hospital
+    E: Transfer for primary PCI with a glycoprotein IIb/IIIa inhibitor
+  answer: A
+  explain: |
+    Primary PCI is the preferred reperfusion strategy only if it can be performed **within 120 minutes of first medical contact**. When the expected delay is longer, and symptoms began **<12 hours** ago with no contraindication, give **fibrinolytic therapy within 30 minutes of arrival** (door-to-needle).
+
+    After fibrinolysis, use a **pharmacoinvasive strategy**: transfer every patient to a PCI-capable center —
+    - **Immediately** for failed reperfusion (<50% ST resolution at 60–90 minutes, ongoing pain) → rescue PCI
+    - Otherwise for **routine angiography within 2–24 hours** (STREAM, TRANSFER-AMI)
+
+    Adjuncts with fibrinolysis: aspirin, **clopidogrel** (300-mg load if age ≤75; 75 mg if >75), and an anticoagulant (enoxaparin preferred).
+  why:
+    B: An ischemia-guided approach after fibrinolysis is inferior to routine early angiography, which reduces reinfarction and recurrent ischemia.
+    C: A 150-minute delay to PCI exceeds the 120-minute window; immediate fibrinolysis restores flow sooner and saves myocardium.
+    D: Anticoagulation alone does not reperfuse an occluded artery.
+    E: Glycoprotein IIb/IIIa inhibitors do not reperfuse the vessel and do not overcome the delay to PCI.
+  mnemonic: |
+    STEMI clock: **"30 to needle, 90 to balloon, 120 to transfer."**
+  objective: |
+    In STEMI when primary PCI cannot be performed within 120 minutes of first medical contact, give fibrinolytic therapy within 30 minutes and transfer for routine angiography within 2–24 hours.
+  refs:
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+    - "Armstrong PW, et al. Fibrinolysis or primary PCI in ST-segment elevation myocardial infarction (STREAM). N Engl J Med 2013;368:1379."
+
+- id: CV-079
+  topic: Fibrinolysis contraindication
+  task: Treatment/Care Decisions
+  chapters: [cardiology/stemi]
+  stem: |
+    A 74-year-old woman comes to a rural emergency department 2 hours after the onset of chest pain. Electrocardiogram shows ST-segment elevation in leads II, III and aVF. The nearest PCI-capable hospital is 3 hours away by ground, and air transport is unavailable. Fibrinolytic therapy is being considered.
+
+    She has hypertension, type 2 diabetes mellitus and a history of peptic ulcer disease 6 years ago that was treated. Ten weeks ago she had an ischemic stroke with mild residual left-hand weakness. She takes lisinopril, metformin, aspirin and atorvastatin.
+
+    On physical examination, blood pressure is 168/94 mm Hg and pulse rate is 64/min.
+  lead: Which of the following findings is an absolute contraindication to fibrinolytic therapy in this patient?
+  choices:
+    A: Age older than 70 years
+    B: Blood pressure of 168/94 mm Hg
+    C: Daily aspirin use
+    D: Ischemic stroke 10 weeks ago
+    E: Treated peptic ulcer disease 6 years ago
+  answer: D
+  explain: |
+    **Ischemic stroke within the past 3 months** is an **absolute** contraindication to fibrinolysis because of the high risk of intracranial hemorrhage. She should be transferred for primary PCI despite the delay.
+
+    | Absolute contraindications | Relative contraindications |
+    |---|---|
+    | **Any prior intracranial hemorrhage** | Ischemic stroke >3 months ago |
+    | **Ischemic stroke within 3 months** (except acute stroke within 4.5 h) | **BP >180/110** on presentation |
+    | Known cerebral vascular lesion (AVM) or intracranial neoplasm | Traumatic or prolonged (>10 min) CPR |
+    | **Suspected aortic dissection** | Major surgery within 3 weeks |
+    | Active bleeding (not menses) or bleeding diathesis | Internal bleeding within 2–4 weeks |
+    | Significant closed-head or facial trauma within 3 months | Current oral anticoagulant therapy, pregnancy, active peptic ulcer |
+    | Intracranial or spinal surgery within 2 months | Dementia |
+  why:
+    A: Older age increases bleeding risk but is not a contraindication; older patients benefit from reperfusion.
+    B: Blood pressure above 180/110 mm Hg is a relative contraindication; hers is below that threshold.
+    C: Aspirin is given to every patient with STEMI, including those receiving fibrinolytics.
+    E: Only an active peptic ulcer is a relative contraindication; remote treated disease is not.
+  objective: |
+    Recognize the absolute contraindications to fibrinolytic therapy in STEMI, including ischemic stroke within 3 months.
+  refs:
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+    - "O'Gara PT, et al. 2013 ACCF/AHA guideline for the management of ST-elevation myocardial infarction. Circulation 2013;127:e362."
+
+- id: CV-080
+  topic: Posterior STEMI
+  task: Diagnosis/Testing
+  chapters: [cardiology/stemi]
+  stem: |
+    A 62-year-old man comes to the emergency department because of 1 hour of substernal chest pressure radiating to his back, with diaphoresis. He has hypertension and hyperlipidemia.
+
+    On physical examination, blood pressure is 138/84 mm Hg in both arms, pulse rate is 82/min, and respiration rate is 18/min. The lungs are clear. Peripheral pulses are equal.
+
+    Electrocardiogram shows horizontal ST-segment depression of 3 mm in leads V1 through V3 with tall, broad R waves (R/S ratio >1 in V2) and upright T waves. There are no ST-segment changes in the inferior or lateral leads. Additional leads V7 through V9 show 1-mm ST-segment elevation. Bedside echocardiogram shows akinesis of the inferolateral wall and no pericardial effusion or aortic root dilation.
+  labs:
+    - [High-sensitivity troponin I, 210 ng/L (reference <20)]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Acute posterior ST-elevation myocardial infarction
+    B: Anterior subendocardial ischemia (non–ST-elevation myocardial infarction)
+    C: Right ventricular myocardial infarction
+    D: Type A aortic dissection
+    E: Wellens syndrome
+  answer: A
+  explain: |
+    **ST depression in V1–V3** with **tall R waves and upright T waves** is the **mirror image** of ST elevation in the posterior (inferobasal) wall: the anterior leads look at the posterior wall from the front, so elevation and Q waves appear upside down as depression and tall R waves.
+
+    **Posterior leads V7–V9** (left back, at the scapular line) confirm it: **≥0.5 mm ST elevation** (≥1 mm in men <40) is diagnostic. The culprit is usually the **left circumflex** artery (or a dominant RCA).
+
+    This is a **STEMI equivalent** → **emergent reperfusion**. Posterior MI is often missed because it does not meet standard STEMI criteria — and these patients then receive delayed care.
+
+    | STEMI equivalents |
+    |---|
+    | **Posterior MI** (ST depression V1–V3, tall R, positive posterior leads) |
+    | **De Winter T waves** (upsloping ST depression with tall T waves in precordial leads — proximal LAD) |
+    | LBBB or paced rhythm meeting **Sgarbossa** criteria |
+    | ST elevation in aVR with diffuse ST depression and ongoing ischemia (left main/multivessel) |
+  why:
+    B: Subendocardial ischemia produces ST depression, but not tall R waves in V1–V2, and does not cause ST elevation in posterior leads.
+    C: Right ventricular infarction causes ST elevation in V1 and right-sided leads (V4R), usually with inferior ST elevation.
+    D: Equal arm pressures and pulses, no root dilation, and a regional wall-motion abnormality favor MI; dissection remains a consideration in every patient with back pain.
+    E: Wellens syndrome shows deep T-wave inversions in V2–V3 after chest pain has resolved, not ST depression with tall R waves.
+  objective: |
+    Recognize posterior STEMI (ST depression with tall R waves in V1–V3, ST elevation in V7–V9) as a STEMI equivalent requiring emergent reperfusion.
+  refs:
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+    - "Thygesen K, et al. Fourth universal definition of myocardial infarction (2018). Circulation 2018;138:e618."
+
+- id: CV-081
+  topic: Wellens syndrome
+  task: Diagnosis/Testing
+  chapters: [cardiology/nste-acs]
+  stem: |
+    A 52-year-old man comes to the emergency department because he had 40 minutes of substernal chest pressure last night while carrying groceries upstairs. The pain resolved with rest, and he has been pain-free since. He smokes cigarettes and has hyperlipidemia. He takes no medications.
+
+    On physical examination, blood pressure is 134/82 mm Hg and pulse rate is 76/min. Cardiac and pulmonary examinations are normal.
+
+    Electrocardiogram obtained while pain-free shows deep, symmetric T-wave inversions in leads V2 and V3, with preserved R waves, no Q waves and an isoelectric ST segment.
+  labs:
+    - [High-sensitivity troponin I, 48 ng/L at arrival and 61 ng/L at 1 hour (reference <20)]
+  lead: Which of the following is the most likely cause of this electrocardiogram pattern?
+  choices:
+    A: Acute pericarditis
+    B: Apical hypertrophic cardiomyopathy
+    C: Critical proximal LAD stenosis
+    D: Pulmonary embolism
+    E: Stress (takotsubo) cardiomyopathy
+  answer: C
+  explain: |
+    **Wellens syndrome** is a pattern of **deep symmetric (type B) or biphasic (type A) T-wave inversions in V2–V3** recorded **during a pain-free period** after angina, with preserved R waves and little or no ST elevation. It reflects reperfusion of the anterior wall after transient occlusion and indicates **critical proximal LAD stenosis**.
+
+    Without revascularization, about 75% of patients develop a large **anterior MI** within weeks. Management:
+    - Treat as NSTE-ACS (antiplatelet, anticoagulant, statin)
+    - **Coronary angiography** with revascularization — early invasive strategy
+    - **Avoid stress testing**, which can precipitate infarction
+  why:
+    A: Pericarditis causes diffuse ST elevation and PR depression; T-wave inversion appears only after the ST segments normalize and is diffuse.
+    B: Apical HCM causes giant T-wave inversions across V2–V6 that are chronic and unchanged, without a story of new angina and rising troponin.
+    D: PE may cause T inversions in V1–V4, but with dyspnea, tachycardia and right heart strain; his presentation is exertional angina.
+    E: Takotsubo may cause deep T inversions, but it typically follows an emotional or physical stressor in postmenopausal women and shows apical ballooning.
+  mnemonic: |
+    **Wellens = "Warning of the Widowmaker"** — T waves in V2–V3 that are deep or biphasic after pain goes away.
+  objective: |
+    Recognize Wellens syndrome (deep or biphasic T waves in V2–V3 after resolved angina) as a marker of critical proximal LAD stenosis; perform angiography and avoid stress testing.
+  refs:
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+    - "de Zwaan C, et al. Characteristic electrocardiographic pattern indicating a critical stenosis high in left anterior descending coronary artery in patients admitted because of impending myocardial infarction. Am Heart J 1982;103:730."
+
+- id: CV-082
+  topic: Acute MI with left bundle branch block
+  task: Treatment/Care Decisions
+  chapters: [cardiology/stemi]
+  stem: |
+    A 74-year-old woman comes to the emergency department because of 45 minutes of severe substernal chest pressure with diaphoresis and nausea. She has hypertension, type 2 diabetes mellitus and known left bundle branch block on electrocardiograms over the past 3 years.
+
+    On physical examination, blood pressure is 136/80 mm Hg, pulse rate is 88/min, and respiration rate is 20/min. Oxygen saturation is 95% breathing ambient air. The lungs are clear.
+
+    Electrocardiogram shows sinus rhythm with left bundle branch block and 2 mm of ST-segment elevation in leads V5 and V6 in the same direction as the predominantly positive QRS complexes. A copy of her electrocardiogram from 6 months ago shows left bundle branch block without this finding.
+  labs:
+    - [High-sensitivity troponin I, pending]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Coronary CT angiography
+    B: Emergent coronary angiography
+    C: Exercise stress test after troponin results
+    D: Repeat electrocardiogram and troponin in 3 hours
+    E: Transthoracic echocardiography before deciding
+  answer: B
+  explain: |
+    LBBB distorts repolarization, so ST changes usually go in the **opposite direction (discordant)** to the QRS. Ischemic changes are recognized by the **Sgarbossa criteria**:
+
+    | Sgarbossa criterion | Points |
+    |---|---|
+    | **Concordant ST elevation ≥1 mm** (same direction as QRS) in any lead | 5 |
+    | Concordant ST depression ≥1 mm in V1–V3 | 3 |
+    | Excessively discordant ST elevation (≥25% of the preceding S-wave depth — **Smith-modified**) | Diagnostic |
+
+    **Concordant ST elevation** in V5–V6 is highly specific for acute coronary occlusion. With ongoing ischemic symptoms, she has a **STEMI equivalent** and needs **emergent reperfusion** — primary PCI.
+
+    Note: the 2025 ACS guideline does **not** treat a new or presumed-new LBBB **alone** as a STEMI equivalent. Decisions rest on symptoms, hemodynamics, Sgarbossa findings and, when uncertain, urgent echocardiography or angiography.
+  why:
+    A: CT angiography is for stable low-to-intermediate risk chest pain, not for an ECG that meets criteria for acute coronary occlusion.
+    C: Stress testing is contraindicated in a patient with ongoing pain and an ECG showing acute injury.
+    D: Waiting for troponin or serial ECGs delays reperfusion of an occluded artery; troponin is not required before primary PCI.
+    E: Echocardiography may help when the ECG is equivocal, but here the ECG is diagnostic and should not delay angiography.
+  objective: |
+    In a patient with LBBB and ischemic symptoms, concordant ST elevation (Sgarbossa) indicates acute coronary occlusion and requires emergent reperfusion.
+  refs:
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+    - "Sgarbossa EB, et al. Electrocardiographic diagnosis of evolving acute myocardial infarction in the presence of left bundle-branch block. N Engl J Med 1996;334:481."
+    - "Smith SW, et al. Diagnosis of ST-elevation myocardial infarction in the presence of left bundle branch block with the ST-elevation to S-wave ratio in a modified Sgarbossa rule. Ann Emerg Med 2012;60:766."
+
+- id: CV-083
+  topic: Papillary muscle rupture
+  task: Diagnosis/Testing
+  chapters: [cardiology/cardiogenic-shock, cardiology/stemi]
+  stem: |
+    A 70-year-old man has sudden severe dyspnea on the third hospital day after an inferior ST-elevation myocardial infarction. He presented 20 hours after symptom onset and was treated medically; angiography is scheduled.
+
+    On physical examination, blood pressure is 84/52 mm Hg, pulse rate is 118/min, and respiration rate is 32/min. Oxygen saturation is 84% on 6 L/min of oxygen. He is diaphoretic, with cool extremities. A new grade 2/6 holosystolic murmur is heard at the apex, radiating to the axilla; there is no thrill. Crackles are heard throughout both lung fields. Jugular venous pressure is 12 cm H₂O.
+
+    Chest radiograph shows bilateral alveolar edema. A pulmonary artery catheter shows large v waves in the pulmonary capillary wedge pressure tracing, without an oxygen step-up between the right atrium and pulmonary artery.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Free wall rupture
+    B: Left ventricular aneurysm
+    C: Papillary muscle rupture
+    D: Recurrent myocardial infarction
+    E: Ventricular septal rupture
+  answer: C
+  explain: |
+    **Acute severe mitral regurgitation from papillary muscle rupture** typically occurs **2–7 days after MI**, more often after **inferior** infarction, because the **posteromedial papillary muscle** has a **single blood supply** (posterior descending artery). The anterolateral muscle has dual supply (LAD and circumflex) and rarely ruptures.
+
+    Clues:
+    - Sudden **flash pulmonary edema and cardiogenic shock**
+    - A new apical murmur that may be **soft or even absent** — with very high left atrial pressure, the pressure gradient falls quickly, so the murmur is short and quiet
+    - **Large v waves** in the wedge tracing (regurgitant volume into a small, noncompliant left atrium)
+    - **No oxygen step-up** (excludes a left-to-right shunt)
+
+    Treatment: **afterload reduction** (nitroprusside if BP allows), **mechanical circulatory support** (IABP or microaxial pump) as a bridge, and **emergency surgery**.
+
+    | Mechanical complication | Timing | Clue |
+    |---|---|---|
+    | **Papillary muscle rupture** | 2–7 d (inferior) | Apical murmur, pulmonary edema, large v waves |
+    | **Ventricular septal rupture** | 3–5 d | Harsh murmur + **thrill** at LSB, **O₂ step-up** RA→PA |
+    | **Free wall rupture** | 1–14 d | Sudden **tamponade**, PEA |
+    | LV aneurysm | Weeks–months | Persistent ST elevation, HF, VT, thrombus |
+  why:
+    A: Free wall rupture causes hemopericardium with tamponade or sudden pulseless electrical activity, not a new mitral murmur with v waves.
+    B: Aneurysm develops weeks later and causes persistent ST elevation, heart failure or ventricular arrhythmias.
+    D: Reinfarction can cause ischemic MR, but the abrupt onset, new murmur and giant v waves on day 3 point to mechanical rupture.
+    E: Septal rupture causes a harsh murmur with a thrill at the left sternal border and an oxygen step-up from right atrium to pulmonary artery.
+  objective: |
+    Recognize posteromedial papillary muscle rupture after inferior MI (sudden pulmonary edema, shock, new apical murmur, large v waves) and arrange emergency surgery.
+  refs:
+    - "Damluji AA, et al. Mechanical complications of acute myocardial infarction: a scientific statement from the AHA. Circulation 2021;144:e16."
+
+- id: CV-084
+  topic: Ventricular septal rupture
+  task: Diagnosis/Testing
+  chapters: [cardiology/cardiogenic-shock, cardiology/stemi]
+  stem: |
+    A 76-year-old woman develops hypotension and worsening dyspnea 4 days after an anterior ST-elevation myocardial infarction. She presented late, 30 hours after symptom onset, and was managed medically.
+
+    On physical examination, blood pressure is 88/58 mm Hg, pulse rate is 112/min, and respiration rate is 26/min. A new loud, harsh grade 4/6 holosystolic murmur is heard best at the left lower sternal border, with a palpable thrill. Jugular venous pressure is 15 cm H₂O. Bibasilar crackles are present.
+
+    A pulmonary artery catheter is placed.
+  labs:
+    - [Oxygen saturation, right atrium, 58%]
+    - [Oxygen saturation, pulmonary artery, 82%]
+    - [Pulmonary capillary wedge pressure, 22 mm Hg without prominent v waves]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Acute aortic regurgitation
+    B: Free wall rupture with tamponade
+    C: Papillary muscle rupture
+    D: Right ventricular infarction
+    E: Ventricular septal rupture
+  answer: E
+  explain: |
+    **Ventricular septal rupture** after MI:
+    - **3–5 days** after infarction (now rare, ~0.2%), more likely with **late presentation, no reperfusion**, older age, female sex and anterior MI (apical septum)
+    - **Loud harsh holosystolic murmur** at the left sternal border with a **thrill** (high-velocity left-to-right jet across a defect that keeps a large gradient)
+    - **Oxygen step-up** of ≥7%–8% from right atrium to pulmonary artery — oxygenated LV blood enters the right ventricle. Here it rises from 58% to 82%.
+    - Biventricular failure (high JVP and pulmonary congestion)
+
+    Echocardiography with color Doppler confirms the defect. Treatment: afterload reduction and **mechanical circulatory support** as a bridge to **surgical or transcatheter closure**. Mortality without repair exceeds 90%.
+  why:
+    A: Acute aortic regurgitation causes a diastolic murmur and is not a complication of MI.
+    B: Free wall rupture causes hemopericardium with tamponade physiology (equalized diastolic pressures), not a loud murmur with an oxygen step-up.
+    C: Papillary muscle rupture causes a softer apical murmur, large v waves in the wedge tracing and no oxygen step-up.
+    D: Right ventricular infarction causes hypotension with clear lungs and high right-sided pressures, without a new murmur or step-up.
+  pearl: |
+    The **louder** murmur with a **thrill** belongs to the **septum** (big gradient); the **softer** apical murmur with pulmonary edema belongs to the **papillary muscle**.
+  objective: |
+    Diagnose post-infarction ventricular septal rupture by a new harsh murmur with thrill and an oxygen saturation step-up between the right atrium and pulmonary artery.
+  refs:
+    - "Damluji AA, et al. Mechanical complications of acute myocardial infarction: a scientific statement from the AHA. Circulation 2021;144:e16."
+
+- id: CV-085
+  topic: Left ventricular thrombus after MI
+  task: Treatment/Care Decisions
+  chapters: [cardiology/stemi]
+  stem: |
+    A 61-year-old man is evaluated on day 4 after an anterior ST-elevation myocardial infarction treated with primary PCI and a drug-eluting stent in the proximal left anterior descending artery. He feels well. Medications are aspirin, 81 mg daily, ticagrelor, metoprolol succinate, lisinopril and atorvastatin.
+
+    On physical examination, blood pressure is 118/72 mm Hg and pulse rate is 66/min. Examination is unremarkable.
+
+    Echocardiogram shows left ventricular ejection fraction of 35%, apical akinesis, and a 1.6-cm mobile, protruding apical thrombus, confirmed by contrast echocardiography.
+  labs:
+    - [Hemoglobin, 14.0 g/dL]
+    - [Platelet count, 248,000/µL]
+    - [Creatinine, 0.9 mg/dL]
+  lead: Which of the following is the most appropriate antithrombotic regimen?
+  choices:
+    A: Add an anticoagulant for 3 months and change ticagrelor to clopidogrel
+    B: Add an anticoagulant indefinitely to aspirin plus ticagrelor
+    C: Continue aspirin plus ticagrelor without changes
+    D: Refer for surgical thrombectomy
+    E: Stop aspirin and ticagrelor and start an anticoagulant alone
+  answer: A
+  explain: |
+    **Left ventricular thrombus** develops in about 5%–15% of large anterior MIs with apical akinesis, mostly within the first 2 weeks. It carries a high risk of **stroke and systemic embolism**, especially when **mobile or protruding**.
+
+    Treatment is **oral anticoagulation for 3 to 6 months** (warfarin or a DOAC — DOACs appear comparable in observational data and small trials), with repeat imaging to confirm resolution.
+
+    He also needs antiplatelet therapy for a new stent, so he will be on **triple therapy** briefly. To limit bleeding:
+    - Use **clopidogrel** as the P2Y12 inhibitor (not ticagrelor or prasugrel) with an anticoagulant
+    - Keep aspirin **only as long as needed** (often 1–4 weeks), then continue anticoagulant + clopidogrel
+    - Add a **proton pump inhibitor**
+  why:
+    B: Triple therapy with ticagrelor has a high bleeding risk, and anticoagulation for LV thrombus is time-limited, not indefinite.
+    C: Antiplatelet therapy alone does not treat LV thrombus or prevent embolization.
+    D: Surgical removal is rarely needed and carries more risk than anticoagulation.
+    E: Stopping all antiplatelet therapy 4 days after a drug-eluting stent risks stent thrombosis.
+  pearl: |
+    Prophylactic anticoagulation for every large anterior MI is **not** recommended — image first (contrast echo or cardiac MRI are more sensitive than standard echo), and anticoagulate when thrombus is found.
+  objective: |
+    Treat post-MI left ventricular thrombus with 3–6 months of anticoagulation, using clopidogrel as the P2Y12 inhibitor and limiting the duration of aspirin when a recent stent requires antiplatelet therapy.
+  refs:
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+    - "Levine GN, et al. Management of patients at risk for and with left ventricular thrombus: a scientific statement from the AHA. Circulation 2022;146:e205."
+
+- id: CV-086
+  topic: Pericarditis after myocardial infarction
+  task: Treatment/Care Decisions
+  chapters: [cardiology/pericarditis, cardiology/stemi]
+  stem: |
+    A 63-year-old man is evaluated for 3 days of sharp chest pain that worsens when he lies down and improves when he leans forward, with low-grade fever. Three weeks ago he had an inferior myocardial infarction treated with a drug-eluting stent. Medications are aspirin, 81 mg daily, clopidogrel, metoprolol succinate, lisinopril and atorvastatin.
+
+    On physical examination, temperature is 38.0 °C (100.4 °F), blood pressure is 128/78 mm Hg, and pulse rate is 88/min. A three-component friction rub is heard. There is no pulsus paradoxus.
+
+    Electrocardiogram shows diffuse concave ST-segment elevation with PR-segment depression; inferior Q waves are unchanged. Echocardiogram shows a small circumferential pericardial effusion without tamponade physiology and no new wall-motion abnormality.
+  labs:
+    - [Leukocyte count, 11,800/µL]
+    - [C-reactive protein, 64 mg/L]
+    - [High-sensitivity troponin I, unchanged from discharge level]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: High-dose aspirin plus colchicine
+    B: Ibuprofen plus colchicine
+    C: Indomethacin
+    D: Prednisone, 1 mg/kg daily
+    E: Urgent coronary angiography
+  answer: A
+  explain: |
+    This is **post–myocardial infarction (Dressler) syndrome**, an immune-mediated pericarditis occurring **1–6 weeks after MI** (or cardiac surgery), with fever, pleuritic positional pain, a rub, diffuse ST elevation with PR depression, elevated inflammatory markers and an effusion. Troponin is stable and there is no new wall-motion abnormality, so this is not reinfarction.
+
+    **Aspirin at anti-inflammatory doses** (650–1,000 mg every 6–8 hours, then tapered) is preferred after MI, together with **colchicine** for about 3 months to reduce recurrence.
+
+    Why not other NSAIDs or glucocorticoids early after MI? They **impair myocardial scar healing** and have been linked to **infarct thinning and rupture**, and nonaspirin NSAIDs increase cardiovascular events.
+  why:
+    B: Nonaspirin NSAIDs such as ibuprofen are avoided after recent MI because they may impair healing and raise ischemic risk; they also blunt aspirin's antiplatelet effect.
+    C: Indomethacin reduces coronary blood flow and impairs scar formation; it should be avoided after MI.
+    D: Glucocorticoids are reserved for refractory cases; early after MI they impair healing, and they increase recurrence risk of pericarditis.
+    E: Stable troponin and no new wall-motion abnormality argue against recurrent ischemia; angiography is not needed.
+  pearl: |
+    **Early infarct-associated pericarditis** (days 1–3, over a transmural infarct) is managed supportively; **Dressler syndrome** (weeks later) is the immune version. Both are rarer today because of rapid reperfusion.
+  objective: |
+    Treat post–myocardial infarction pericarditis with high-dose aspirin plus colchicine; avoid nonaspirin NSAIDs and glucocorticoids early after MI.
+  refs:
+    - "Adler Y, et al. 2015 ESC guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921."
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+
+- id: CV-087
+  topic: Cardiogenic shock with multivessel disease
+  task: Treatment/Care Decisions
+  chapters: [cardiology/cardiogenic-shock, cardiology/stemi]
+  stem: |
+    A 67-year-old man is brought to the catheterization laboratory with an anterior ST-elevation myocardial infarction that began 3 hours ago. He is hypotensive and confused.
+
+    On physical examination, blood pressure is 82/56 mm Hg on norepinephrine, pulse rate is 112/min, and respiration rate is 28/min. Extremities are cold. Lactate is 5.2 mmol/L.
+
+    Coronary angiography shows an acute thrombotic occlusion of the proximal left anterior descending artery, an 80% stenosis of the mid right coronary artery and a 75% stenosis of the obtuse marginal branch. All lesions are suitable for PCI.
+  lead: Which of the following is the most appropriate revascularization strategy?
+  choices:
+    A: Emergency bypass grafting of all three vessels
+    B: Fibrinolytic therapy, then delayed angiography
+    C: Immediate PCI of all three lesions
+    D: Intra-aortic balloon pump without PCI
+    E: PCI of the culprit artery only
+  answer: E
+  explain: |
+    In **cardiogenic shock complicating MI**, **emergency revascularization of the culprit artery** is the single most important intervention (SHOCK trial: survival benefit with early revascularization).
+
+    For **multivessel disease in shock**, **CULPRIT-SHOCK** showed that **culprit-only PCI** (with staged revascularization of other lesions later, if needed) **reduced death or dialysis at 30 days** compared with immediate multivessel PCI. The extra contrast, time and procedural risk of treating bystander lesions harms an unstable patient.
+
+    This differs from **hemodynamically stable** STEMI, where **complete revascularization** (immediate or staged) is recommended (COMPLETE trial).
+
+    Hemodynamic support: in selected patients with STEMI shock, a **microaxial flow pump** reduced mortality in **DanGer Shock**; routine IABP did not (IABP-SHOCK II).
+  why:
+    A: CABG is reserved for anatomy unsuitable for PCI or a mechanical complication; PCI of the culprit is faster here.
+    B: Fibrinolysis is much less effective in shock (poor coronary perfusion pressure) and delays mechanical reperfusion that is immediately available.
+    C: Immediate multivessel PCI in shock increased death or renal failure compared with culprit-only PCI.
+    D: Routine IABP does not reduce mortality in infarct-related shock, and withholding revascularization is harmful.
+  objective: |
+    In cardiogenic shock with multivessel disease, perform PCI of the culprit lesion only, with staged revascularization of nonculprit lesions if needed.
+  refs:
+    - "Thiele H, et al. PCI strategies in patients with acute myocardial infarction and cardiogenic shock (CULPRIT-SHOCK). N Engl J Med 2017;377:2419."
+    - "Møller JE, et al. Microaxial flow pump or standard care in infarct-related cardiogenic shock (DanGer Shock). N Engl J Med 2024;390:1382."
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+
+- id: CV-088
+  topic: Spontaneous coronary artery dissection
+  task: Diagnosis/Testing
+  chapters: [cardiology/nste-acs]
+  stem: |
+    A 41-year-old woman comes to the emergency department with 1 hour of substernal chest pain that began during an intense spin class. She delivered her second child 4 months ago and is breastfeeding. She has migraine headaches. She does not smoke and has no hypertension, diabetes or hyperlipidemia. She takes no medications and denies drug use.
+
+    On physical examination, blood pressure is 122/74 mm Hg and pulse rate is 84/min. Examination is normal.
+
+    Electrocardiogram shows 1-mm ST-segment depression in leads V4 through V6. High-sensitivity troponin I rises from 64 to 380 ng/L. Coronary angiography shows a long, smooth, diffuse narrowing of the mid-to-distal left anterior descending artery with abrupt change in caliber and TIMI 3 flow; the other arteries are smooth without atherosclerosis. Her pain has resolved.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Atherosclerotic plaque rupture
+    B: Coronary artery embolism
+    C: Coronary vasospasm
+    D: Spontaneous coronary artery dissection
+    E: Stress (takotsubo) cardiomyopathy
+  answer: D
+  explain: |
+    **Spontaneous coronary artery dissection (SCAD)** causes up to a third of MIs in women younger than 50 and is the most common cause of **pregnancy-associated MI**. A tear or intramural hematoma separates the arterial wall and compresses the lumen.
+
+    Typical setting: **young or middle-aged women**, few traditional risk factors, **postpartum** state, **intense exercise or emotional stress**, and associated **fibromuscular dysplasia (FMD)** (migraine is common).
+
+    Angiography usually shows a **long, smooth narrowing** (type 2, intramural hematoma) rather than the classic double lumen. Intracoronary imaging confirms it when unclear.
+
+    Management differs from atherosclerotic MI:
+    - **Conservative therapy** if stable with preserved flow — most dissections **heal in weeks**; PCI has a high complication rate (propagation)
+    - **Beta-blocker** (reduces recurrence); aspirin is commonly used; statins only for usual indications
+    - **Screen for FMD** with CT angiography from head to pelvis
+    - Avoid future pregnancy counseling and extreme exertion; cardiac rehabilitation
+  why:
+    A: She has no atherosclerosis elsewhere in the coronary tree and few risk factors; the long smooth tapering lesion is typical of SCAD.
+    B: Embolism produces an abrupt cutoff, usually in a distal vessel, with a source such as AF or endocarditis.
+    C: Vasospasm resolves with intracoronary nitroglycerin and usually causes transient ST elevation at rest, often early morning.
+    E: Takotsubo causes a typical wall-motion pattern (apical ballooning) with normal coronary arteries, not a focal narrowing.
+  objective: |
+    Recognize spontaneous coronary artery dissection in young women (often postpartum or after exertion) and manage conservatively with screening for fibromuscular dysplasia.
+  refs:
+    - "Hayes SN, et al. Spontaneous coronary artery dissection: current state of the science — a scientific statement from the AHA. Circulation 2018;137:e523."
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+
+- id: CV-089
+  topic: Takotsubo cardiomyopathy
+  task: Diagnosis/Testing
+  chapters: [cardiology/nste-acs, cardiology/cardiomyopathies]
+  stem: |
+    A 68-year-old woman comes to the emergency department with chest pressure and dyspnea that began 2 hours after she learned of her husband's sudden death. She has hypertension treated with amlodipine.
+
+    On physical examination, blood pressure is 112/70 mm Hg, pulse rate is 98/min, and respiration rate is 20/min. Oxygen saturation is 95% breathing ambient air. A soft systolic murmur is heard at the left sternal border. Bibasilar crackles are present.
+
+    Electrocardiogram shows 2-mm ST-segment elevation in leads V2 through V5. High-sensitivity troponin I is 820 ng/L. Emergency coronary angiography shows no obstructive coronary disease. Left ventriculography shows akinesis of the mid and apical segments with hyperkinesis of the base, extending beyond the territory of any single coronary artery.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Acute myocarditis
+    B: Anterior myocardial infarction with spontaneous reperfusion
+    C: Hypertrophic cardiomyopathy
+    D: Pheochromocytoma crisis
+    E: Stress (takotsubo) cardiomyopathy
+  answer: E
+  explain: |
+    **Takotsubo (stress) cardiomyopathy**: transient left ventricular dysfunction triggered by **emotional or physical stress**, mostly in **postmenopausal women**. A surge of **catecholamines** stuns the myocardium (apical myocardium has more beta-receptors), causing **apical ballooning** with **basal hyperkinesis** — the shape of a Japanese octopus trap (*takotsubo*).
+
+    Diagnostic features (Mayo criteria):
+    - Transient wall-motion abnormality **beyond a single coronary territory**
+    - **No obstructive CAD** or acute plaque rupture
+    - New ECG changes (ST elevation or T inversion) or modest troponin rise (out of proportion small for the wall motion)
+    - No pheochromocytoma or myocarditis
+
+    Management: supportive HF care, **beta-blocker** if no LVOT obstruction, ACE inhibitor; anticoagulation if apical thrombus. Watch for **dynamic LVOT obstruction** (the new murmur) — avoid inotropes and nitrates if present. EF usually recovers in **weeks**, but recurrence occurs in about 5%–10%.
+  why:
+    A: Myocarditis usually follows a viral illness and causes patchy, non-territorial dysfunction without a sudden emotional trigger or this classic apical pattern; cardiac MRI would show late gadolinium enhancement.
+    B: An LAD infarct is limited to the LAD territory and shows a culprit lesion or residual thrombus on angiography.
+    C: HCM causes chronic ventricular hypertrophy, not acute apical akinesis.
+    D: Pheochromocytoma can cause catecholamine cardiomyopathy but presents with paroxysmal hypertension, headache and sweating; it should be excluded if suspected, but her trigger and presentation point to takotsubo.
+  objective: |
+    Diagnose takotsubo cardiomyopathy by transient apical ballooning beyond one coronary territory with nonobstructive coronaries after an emotional or physical stressor.
+  refs:
+    - "Ghadri JR, et al. International expert consensus document on takotsubo syndrome (part I and II). Eur Heart J 2018;39:2032 and 2047."
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+
+- id: CV-090
+  topic: Cocaine-associated chest pain
+  task: Treatment/Care Decisions
+  chapters: [cardiology/nste-acs]
+  stem: |
+    A 34-year-old man comes to the emergency department because of chest pressure and anxiety that began 1 hour after he snorted cocaine. He has no other medical history.
+
+    On physical examination, temperature is 37.6 °C (99.7 °F), blood pressure is 172/104 mm Hg, pulse rate is 118/min, and respiration rate is 22/min. He is diaphoretic and agitated, with dilated pupils. Cardiac and pulmonary examinations are otherwise normal. Pulses are equal in all extremities.
+
+    Electrocardiogram shows sinus tachycardia without ST-segment elevation. Chest radiograph is normal. He has received aspirin, 325 mg, and sublingual nitroglycerin, with partial relief.
+  labs:
+    - [High-sensitivity troponin I, below the 99th percentile]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Fibrinolytic therapy
+    B: Intravenous haloperidol
+    C: Intravenous lorazepam
+    D: Intravenous metoprolol
+    E: Physostigmine
+  answer: C
+  explain: |
+    Cocaine causes chest pain through **alpha-adrenergic coronary vasoconstriction**, increased myocardial oxygen demand (tachycardia, hypertension), platelet activation and accelerated atherosclerosis.
+
+    First-line therapy:
+    - **Benzodiazepines** (lorazepam, diazepam) — reduce central sympathetic outflow, lowering heart rate, blood pressure and agitation
+    - **Aspirin** and **nitroglycerin** (coronary vasodilation)
+    - **Calcium channel blocker or phentolamine** for persistent hypertension or vasospasm
+
+    **Avoid beta-blockers during acute intoxication**: blocking β₂ vasodilation leaves **alpha stimulation unopposed**, which can worsen coronary vasospasm and hypertension. (The 2025 ACS guideline still advises against them in patients with signs of acute intoxication; once the intoxication resolves, beta-blockers can be used for usual indications.)
+  why:
+    A: Fibrinolysis is not indicated without ST elevation, and severe hypertension raises the risk of intracranial hemorrhage.
+    B: Haloperidol lowers the seizure threshold, impairs heat dissipation and can prolong the QT; benzodiazepines are preferred for agitation in stimulant toxicity.
+    D: Beta-blockers during acute cocaine intoxication may cause unopposed alpha-adrenergic vasoconstriction.
+    E: Physostigmine reverses anticholinergic toxicity, not sympathomimetic toxicity.
+  objective: |
+    Treat cocaine-associated chest pain with benzodiazepines, aspirin and nitrates; avoid beta-blockers during acute intoxication.
+  refs:
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+    - "McCord J, et al. Management of cocaine-associated chest pain and myocardial infarction: a scientific statement from the AHA. Circulation 2008;117:1897."
+
+- id: CV-091
+  topic: Vasospastic angina
+  task: Treatment/Care Decisions
+  chapters: [cardiology/sihd]
+  stem: |
+    A 46-year-old woman is evaluated for recurrent episodes of chest pressure that wake her between 4 and 6 AM and last 5 to 15 minutes. The episodes are not related to exertion; she exercises daily without symptoms. She smokes one pack of cigarettes daily and has migraine headaches and Raynaud phenomenon. She takes sumatriptan as needed.
+
+    On physical examination, blood pressure is 124/78 mm Hg and pulse rate is 72/min. Examination is normal.
+
+    During an episode recorded on an ambulatory monitor, the electrocardiogram showed transient 2-mm ST-segment elevation in the inferior leads that resolved completely when the pain stopped. Coronary angiography showed no obstructive coronary artery disease; intracoronary acetylcholine reproduced her pain with severe focal spasm of the right coronary artery.
+  lead: In addition to smoking cessation, which of the following is the most appropriate treatment?
+  choices:
+    A: Clopidogrel
+    B: Diltiazem
+    C: Metoprolol
+    D: PCI of the right coronary artery
+    E: Ranolazine
+  answer: B
+  explain: |
+    **Vasospastic (Prinzmetal, variant) angina** causes angina **at rest**, often **early morning**, with **transient ST elevation**, normal or nonobstructive coronaries, and spasm provoked by acetylcholine or ergonovine. It is associated with **smoking**, migraine, Raynaud phenomenon, cocaine and triptans.
+
+    Treatment:
+    - **Calcium channel blockers** (diltiazem, verapamil, amlodipine, nifedipine) — first-line, often at bedtime; prevent spasm in about 90%
+    - **Long-acting nitrates** as add-on; sublingual nitroglycerin for attacks
+    - **Stop smoking**; avoid triggers (triptans, cocaine, amphetamines, ergots)
+    - **Avoid nonselective beta-blockers**: unopposed alpha-mediated vasoconstriction can worsen spasm
+  why:
+    A: Antiplatelet therapy treats atherosclerotic plaque, not vasomotor spasm.
+    C: Beta-blockers can aggravate coronary spasm by leaving alpha-adrenergic tone unopposed.
+    D: There is no fixed stenosis to stent; spasm resolves without intervention.
+    E: Ranolazine treats demand ischemia from fixed disease and has no proven role in vasospasm.
+  pearl: |
+    Ask about **triptans** in any patient with vasospastic angina — this patient's sumatriptan should be stopped.
+  objective: |
+    Treat vasospastic angina with calcium channel blockers and nitrates, eliminate triggers such as smoking and triptans, and avoid beta-blockers.
+  refs:
+    - "Virani SS, et al. 2023 AHA/ACC/multisociety guideline for the management of patients with chronic coronary disease. Circulation 2023;148:e9."
+    - "Beltrame JF, et al. International standardization of diagnostic criteria for vasospastic angina. Eur Heart J 2017;38:2565."
+
+- id: CV-092
+  topic: DAPT after PCI with high bleeding risk
+  task: Treatment/Care Decisions
+  chapters: [cardiology/sihd, cardiology/nste-acs]
+  stem: |
+    An 80-year-old man is being discharged after a non–ST-elevation myocardial infarction treated with a drug-eluting stent in the circumflex artery. One year ago he was hospitalized for a bleeding duodenal ulcer requiring transfusion. He has chronic kidney disease and hypertension. He is not taking an anticoagulant.
+
+    On physical examination, blood pressure is 126/72 mm Hg and pulse rate is 64/min. Examination is unremarkable.
+  labs:
+    - [Hemoglobin, 10.8 g/dL]
+    - [Platelet count, 168,000/µL]
+    - [Estimated glomerular filtration rate, 28 mL/min/1.73 m²]
+  lead: In addition to a proton pump inhibitor, which of the following is the most appropriate antiplatelet regimen?
+  choices:
+    A: Aspirin alone starting at discharge
+    B: Aspirin plus clopidogrel for 1 month, then clopidogrel alone
+    C: Aspirin plus prasugrel for 12 months
+    D: Aspirin plus ticagrelor for 12 months
+    E: Aspirin plus ticagrelor indefinitely
+  answer: B
+  explain: |
+    He is at **high bleeding risk (HBR)** by Academic Research Consortium criteria: age ≥75, **prior major GI bleeding requiring transfusion**, **anemia** (Hb <11 g/dL) and **eGFR <30**.
+
+    The default after ACS is **12 months of DAPT**, but in high-bleeding-risk patients the 2025 ACC/AHA ACS guideline supports **shortening DAPT to 1–3 months**, then continuing **P2Y12 inhibitor monotherapy** (MASTER DAPT, STOPDAPT-2 ACS, TWILIGHT). **Clopidogrel** is preferred over potent agents because it causes less bleeding. Modern stents make short DAPT safe.
+
+    | Patient | DAPT strategy after PCI for ACS |
+    |---|---|
+    | Not high bleeding risk | Aspirin + ticagrelor or prasugrel × 12 months (option to drop aspirin after ≥1 month) |
+    | **High bleeding risk** | **1–3 months DAPT → P2Y12 monotherapy** (clopidogrel) |
+    | Needs oral anticoagulation | OAC + clopidogrel; aspirin ≤1–4 weeks |
+  why:
+    A: Aspirin alone immediately after a new stent increases the risk of stent thrombosis.
+    C: Prasugrel is not recommended for patients ≥75 years (more bleeding, no net benefit) and 12 months of potent DAPT is excessive here.
+    D: Twelve months of aspirin plus ticagrelor causes substantially more bleeding in a high-bleeding-risk patient.
+    E: Indefinite potent DAPT is for selected low-bleeding-risk patients with very high ischemic risk, not for him.
+  objective: |
+    In patients at high bleeding risk after PCI for ACS, shorten DAPT to 1–3 months followed by P2Y12 inhibitor monotherapy, preferably clopidogrel.
+  refs:
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+    - "Valgimigli M, et al. Dual antiplatelet therapy after PCI in patients at high bleeding risk (MASTER DAPT). N Engl J Med 2021;385:1643."
+
+- id: CV-093
+  topic: Chronic stable angina — first antianginal
+  task: Treatment/Care Decisions
+  chapters: [cardiology/sihd]
+  stem: |
+    A 62-year-old man is evaluated for 2 months of substernal chest tightness when he walks briskly uphill, relieved within 3 minutes by rest. He has hypertension and hyperlipidemia. Medications are aspirin, atorvastatin, 80 mg daily, and lisinopril. He has no asthma.
+
+    On physical examination, blood pressure is 136/82 mm Hg and pulse rate is 84/min. Examination is normal.
+
+    Resting electrocardiogram is normal. Stress echocardiography shows inducible hypokinesis of the inferior wall at a high workload, with normal resting function and no high-risk features.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Coronary angiography with PCI
+    B: Isosorbide mononitrate
+    C: Ivabradine
+    D: Metoprolol succinate
+    E: Ranolazine
+  answer: D
+  explain: |
+    He has **chronic stable angina** with **low-to-intermediate-risk ischemia** at a high workload, already on aspirin, high-intensity statin and an ACE inhibitor.
+
+    The 2023 AHA/ACC chronic coronary disease guideline recommends **beta-blockers or calcium channel blockers as first-line antianginal therapy**. A beta-blocker is a natural choice here: his resting heart rate of 84/min leaves room to lower demand. Titrate to a resting rate of about 55–60/min. Long-acting nitrates and ranolazine are **add-ons** when symptoms persist.
+
+    **Revascularization** is reserved for symptoms refractory to medical therapy or high-risk anatomy — it relieves angina but, in stable disease, does not reduce death or MI (ISCHEMIA).
+
+    Everyone also gets: sublingual nitroglycerin, risk-factor control, exercise and cardiac rehabilitation where available.
+  why:
+    A: With low-to-intermediate risk ischemia and no medical therapy for angina yet, angiography and PCI are not first-line.
+    B: Long-acting nitrates are second-line and require a nitrate-free interval to avoid tolerance.
+    C: Ivabradine is used in HFrEF with sinus rhythm and a high resting rate; it is not a first-line antianginal in the United States.
+    E: Ranolazine is an add-on for persistent angina despite first-line agents.
+  objective: |
+    Start a beta-blocker or calcium channel blocker as first-line antianginal therapy in chronic stable angina; add nitrates or ranolazine for persistent symptoms.
+  refs:
+    - "Virani SS, et al. 2023 AHA/ACC/multisociety guideline for the management of patients with chronic coronary disease. Circulation 2023;148:e9."
+
+- id: CV-094
+  topic: Revascularization vs medical therapy in stable CAD
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/sihd]
+  stem: |
+    A 66-year-old man with chronic stable angina asks whether he should undergo coronary angiography and stenting. He has angina about twice a week with heavy exertion despite metoprolol and amlodipine. He takes aspirin and rosuvastatin. He has type 2 diabetes mellitus with HbA₁c of 7.0%.
+
+    On physical examination, blood pressure is 124/74 mm Hg and pulse rate is 58/min. Examination is normal.
+
+    Stress myocardial perfusion imaging shows moderate inducible ischemia (12% of the myocardium) in the right coronary territory. Left ventricular ejection fraction is 58%. Coronary CT angiography shows no left main stenosis.
+  lead: Compared with continued optimal medical therapy, a routine invasive strategy with revascularization is most likely to provide which of the following benefits?
+  choices:
+    A: Fewer strokes
+    B: Fewer heart failure hospitalizations
+    C: Lower all-cause mortality
+    D: Lower risk of myocardial infarction over 4 years
+    E: Greater relief of angina
+  answer: E
+  explain: |
+    The **ISCHEMIA** trial randomized more than 5,000 patients with stable coronary disease and **moderate-to-severe ischemia** (excluding left main disease, low EF and recent ACS) to a routine invasive strategy or optimal medical therapy. Over about 3–4 years:
+    - **No reduction** in cardiovascular death, MI, resuscitated arrest or hospitalization for unstable angina or heart failure
+    - **No reduction in all-cause mortality**
+    - **Better angina control and quality of life** with the invasive strategy, especially in patients with frequent angina
+
+    So the decision rests mainly on **symptoms and patient preference** — revascularization is reasonable for angina limiting his life despite medicines. It is recommended to **improve survival** only in selected anatomy (significant left main disease, multivessel disease with reduced EF; and CABG for multivessel disease with diabetes).
+  why:
+    A: Revascularization does not reduce stroke; CABG carries a periprocedural stroke risk.
+    B: Heart failure hospitalization was not reduced in patients with preserved ejection fraction.
+    C: All-cause mortality was similar between strategies in ISCHEMIA.
+    D: Over the follow-up period, MI rates were not reduced overall; procedural MIs early offset fewer spontaneous MIs later.
+  objective: |
+    In stable coronary disease with moderate-to-severe ischemia but no left main disease, routine revascularization improves angina and quality of life but does not reduce death or MI compared with optimal medical therapy.
+  refs:
+    - "Maron DJ, et al. Initial invasive or conservative strategy for stable coronary disease (ISCHEMIA). N Engl J Med 2020;382:1395."
+    - "Spertus JA, et al. Health-status outcomes with invasive or conservative care in coronary disease. N Engl J Med 2020;382:1408."
+
+- id: CV-095
+  topic: Stress testing with left bundle branch block
+  task: Diagnosis/Testing
+  chapters: [cardiology/sihd]
+  stem: |
+    A 72-year-old woman is evaluated for 3 months of exertional dyspnea and occasional chest heaviness when climbing two flights of stairs. She has hypertension and hyperlipidemia. She walks 2 miles daily. Medications are losartan and rosuvastatin.
+
+    On physical examination, blood pressure is 138/80 mm Hg and pulse rate is 72/min. Examination is normal.
+
+    Resting electrocardiogram shows sinus rhythm with left bundle branch block, unchanged from 2 years ago. A coronary artery calcium score obtained 1 year ago was 920 Agatston units. Echocardiogram shows normal left ventricular function and no valve disease.
+  lead: Which of the following is the most appropriate diagnostic test?
+  choices:
+    A: Coronary CT angiography
+    B: Exercise electrocardiographic stress test
+    C: Exercise SPECT myocardial perfusion imaging
+    D: Invasive coronary angiography
+    E: Vasodilator (regadenoson) myocardial perfusion imaging
+  answer: E
+  explain: |
+    She has symptoms suggestive of **stable ischemic heart disease** and needs a functional test. Two details steer the choice:
+
+    1. **Left bundle branch block** makes the **exercise ECG uninterpretable** (ST changes are always abnormal). With **exercise** perfusion imaging, LBBB causes **false-positive septal perfusion defects**, because septal relaxation is delayed and septal flow falls at high heart rates. **Vasodilator stress** (regadenoson, adenosine, dipyridamole) does not raise the heart rate much and avoids this artifact. **Pacing** creates the same problem.
+    2. **Heavy coronary calcium** (CAC >400) blooms on CT and makes stenosis grading inaccurate, so **stress imaging is preferred over CCTA**.
+
+    | Baseline problem | Best stress test |
+    |---|---|
+    | Normal ECG, can exercise | Exercise ECG (or stress imaging) |
+    | LBBB or ventricular pacing | **Vasodilator** perfusion imaging (or dobutamine echo) |
+    | Digoxin, LVH with strain, WPW, ST depression ≥1 mm | Exercise **imaging** |
+    | Cannot exercise | Pharmacologic stress (vasodilator MPI or dobutamine echo) |
+  why:
+    A: Extensive calcification limits CCTA's ability to grade stenoses; a functional test is preferred.
+    B: LBBB makes ST-segment interpretation impossible.
+    C: Exercise perfusion imaging with LBBB often shows false septal defects.
+    D: Invasive angiography is reserved for high-risk noninvasive findings or refractory symptoms.
+  objective: |
+    In patients with LBBB or ventricular pacing, use vasodilator myocardial perfusion imaging (not exercise imaging) to avoid false-positive septal defects.
+  refs:
+    - "Gulati M, et al. 2021 AHA/ACC/multisociety guideline for the evaluation and diagnosis of chest pain. Circulation 2021;144:e368."
+    - "Virani SS, et al. 2023 AHA/ACC/multisociety guideline for the management of patients with chronic coronary disease. Circulation 2023;148:e9."
+
+- id: CV-096
+  topic: High-sensitivity troponin rapid rule-out
+  task: Diagnosis/Testing
+  chapters: [cardiology/nste-acs]
+  stem: |
+    A 45-year-old man comes to the emergency department because of 30 minutes of left-sided chest discomfort that started 5 hours ago while he was sitting at work and resolved on its own. He has no shortness of breath, diaphoresis or syncope. He has no known heart disease, does not smoke and takes no medications. His father had a myocardial infarction at age 72.
+
+    On physical examination, blood pressure is 128/80 mm Hg, pulse rate is 70/min, and respiration rate is 14/min. Examination is normal.
+
+    Electrocardiogram is normal. Chest radiograph is normal.
+  labs:
+    - [High-sensitivity troponin T (arrival), <5 ng/L (limit of detection 5 ng/L)]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Coronary CT angiography in the emergency department
+    B: Discharge with outpatient follow-up
+    C: Hospital admission for stress testing
+    D: Invasive coronary angiography
+    E: Repeat high-sensitivity troponin in 6 hours
+  answer: B
+  explain: |
+    High-sensitivity troponin assays allow **rapid rule-out** of myocardial infarction. A **single hs-troponin below the limit of detection** in a patient whose symptoms began **more than 3 hours** before the blood draw, with a **nonischemic ECG**, has a negative predictive value above 99.5% for MI and identifies a **low-risk** patient (2021 AHA/ACC chest pain guideline).
+
+    His 30-day risk of death or MI is <1%. Low-risk patients need **no further urgent testing** — admission or stress testing adds cost and false positives without benefit. Arrange outpatient follow-up and risk-factor assessment.
+
+    :::flow
+    Q: hs-troponin at arrival below limit of detection and symptoms >3 h ago, normal ECG?
+    Y: MI ruled out → low risk → discharge
+    N: Repeat at 1–3 h per assay algorithm (0/1-h or 0/2-h); delta decides rule-in, observe or rule-out
+    :::
+  why:
+    A: Coronary CT angiography is reasonable for intermediate-risk patients; it is not needed after a low-risk rule-out.
+    C: Admission for stress testing in a low-risk patient does not improve outcomes.
+    D: Invasive angiography is for confirmed ACS or high-risk features.
+    E: The single undetectable value with symptom onset >3 hours earlier is sufficient; serial testing is required only if symptoms began within 3 hours or the value is detectable.
+  objective: |
+    A single high-sensitivity troponin below the limit of detection more than 3 hours after symptom onset, with a nonischemic ECG, rules out MI and identifies a low-risk patient who can be discharged.
+  refs:
+    - "Gulati M, et al. 2021 AHA/ACC/multisociety guideline for the evaluation and diagnosis of chest pain. Circulation 2021;144:e368."
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+
+- id: CV-097
+  topic: Type 2 myocardial infarction
+  task: Diagnosis/Testing
+  chapters: [cardiology/nste-acs, gi/ugib]
+  stem: |
+    A 76-year-old woman comes to the emergency department because of 2 days of black stools and lightheadedness. Since this morning she has had chest pressure at rest. She has osteoarthritis and takes naproxen daily. She has no history of coronary artery disease.
+
+    On physical examination, blood pressure is 98/60 mm Hg, pulse rate is 118/min, and respiration rate is 20/min. Conjunctivae are pale. Rectal examination shows black, tarry stool.
+
+    Electrocardiogram shows sinus tachycardia with 1-mm horizontal ST-segment depression in leads V4 through V6, II and aVF, without ST-segment elevation.
+  labs:
+    - [Hemoglobin, 6.6 g/dL (baseline 12.8 g/dL)]
+    - [Blood urea nitrogen, 52 mg/dL]
+    - [Creatinine, 1.0 mg/dL]
+    - [High-sensitivity troponin I, 64 ng/L, rising to 182 ng/L at 3 hours (reference <20)]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Acute aortic dissection
+    B: Nonischemic myocardial injury
+    C: Stress (takotsubo) cardiomyopathy
+    D: Type 1 non–ST-elevation myocardial infarction
+    E: Type 2 myocardial infarction
+  answer: E
+  explain: |
+    The **Fourth Universal Definition of MI** separates:
+    - **Type 1 MI** — atherosclerotic **plaque rupture or erosion** with thrombus
+    - **Type 2 MI** — **supply–demand mismatch** without acute plaque disruption: anemia, hypotension, tachyarrhythmia, hypoxemia, severe hypertension, coronary spasm
+    - **Myocardial injury** — troponin rise without ischemic symptoms or signs (sepsis, CKD, PE, myocarditis); called acute if rising or falling
+
+    She has **ischemic symptoms**, **ischemic ECG changes** and a **rising troponin** caused by **acute blood loss anemia and tachycardia** from an NSAID-related upper GI bleed — a **type 2 MI**.
+
+    Treat the cause: **transfuse** (a restrictive threshold is less safe in MI; many target Hb ≥8–10 g/dL — MINT trial suggested a liberal strategy may be better), stop the NSAID, proton pump inhibitor, endoscopy. **Do not give antiplatelet or anticoagulant therapy** for a type 2 MI caused by bleeding. Evaluate for underlying CAD once stable.
+  why:
+    A: She has no tearing back pain, pulse deficit or mediastinal widening, and her drop in hemoglobin explains the ischemia.
+    B: Nonischemic injury applies when troponin rises without ischemic symptoms or ECG changes; she has both.
+    C: Takotsubo follows an emotional or physical stressor with a typical wall-motion pattern; this is better explained by anemia and tachycardia.
+    D: Type 1 MI involves plaque rupture; ischemia here is explained by a demand–supply mismatch, and antithrombotic treatment would be harmful.
+  objective: |
+    Recognize type 2 myocardial infarction (supply–demand mismatch, e.g., acute anemia) and treat the precipitating cause rather than with antithrombotic therapy.
+  refs:
+    - "Thygesen K, et al. Fourth universal definition of myocardial infarction (2018). Circulation 2018;138:e618."
+    - "Carson JL, et al. Restrictive or liberal transfusion strategy in myocardial infarction and anemia (MINT). N Engl J Med 2023;389:2446."
+
+- id: CV-098
+  topic: Cardiac rehabilitation after MI
+  task: Treatment/Care Decisions
+  chapters: [cardiology/sihd]
+  stem: |
+    A 61-year-old man comes for a follow-up visit 3 weeks after a non–ST-elevation myocardial infarction treated with a drug-eluting stent. He has had no chest pain since discharge. He used to golf but is afraid that exercise will cause another heart attack, and he has gained 2 kg (4.4 lb) since discharge. Medications are aspirin, ticagrelor, metoprolol succinate, lisinopril and atorvastatin, 80 mg daily. He quit smoking in the hospital.
+
+    On physical examination, blood pressure is 124/76 mm Hg and pulse rate is 62/min. BMI is 31 kg/m². Examination is otherwise normal. Echocardiogram before discharge showed left ventricular ejection fraction of 55%.
+  lead: Which of the following is the most appropriate next step to reduce his risk of future cardiovascular events?
+  choices:
+    A: Advise him to avoid exercise for 3 months
+    B: Begin an unsupervised running program at home
+    C: Obtain a coronary CT angiogram before any exercise
+    D: Prescribe a benzodiazepine for exercise-related anxiety
+    E: Refer him to a cardiac rehabilitation program
+  answer: E
+  explain: |
+    **Cardiac rehabilitation** is a **Class 1** recommendation after ACS, PCI, CABG, stable angina, HFrEF and valve surgery. A comprehensive program includes **supervised exercise training**, risk-factor management (lipids, BP, diabetes, weight), smoking cessation support, nutrition counseling and **psychosocial care** (depression and anxiety are common after MI).
+
+    Participation reduces **cardiovascular mortality and rehospitalization** and improves exercise capacity and quality of life — yet fewer than a third of eligible patients enroll. **Physician referral is the strongest predictor** of participation. **Home-based** or hybrid programs are acceptable alternatives when center-based programs are not accessible.
+  why:
+    A: Prolonged inactivity after MI worsens deconditioning and risk; supervised exercise is safe and beneficial.
+    B: A sudden unsupervised high-intensity program in a fearful, deconditioned patient lacks the individualized prescription, monitoring and education that rehabilitation provides.
+    C: Routine imaging after successful revascularization in an asymptomatic patient is not indicated.
+    D: Benzodiazepines do not address deconditioning or risk; anxiety is better addressed through rehabilitation's psychosocial support and, if needed, therapy or an SSRI.
+  objective: |
+    Refer all eligible patients to cardiac rehabilitation after myocardial infarction; it reduces mortality and rehospitalization.
+  refs:
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+    - "Virani SS, et al. 2023 AHA/ACC/multisociety guideline for the management of patients with chronic coronary disease. Circulation 2023;148:e9."
+
+- id: CV-099
+  topic: Ischemia with nonobstructive coronary arteries
+  task: Diagnosis/Testing
+  chapters: [cardiology/sihd]
+  stem: |
+    A 56-year-old woman is evaluated for 1 year of exertional chest pressure and dyspnea that limit her daily walks and sometimes last 20 minutes after she stops. Nitroglycerin gives only partial relief. She has hypertension and type 2 diabetes mellitus. Medications are losartan, metformin, aspirin and atorvastatin.
+
+    On physical examination, blood pressure is 132/80 mm Hg and pulse rate is 76/min. Examination is normal.
+
+    Exercise stress echocardiography reproduced her symptoms with 2-mm ST-segment depression but no wall-motion abnormality. Invasive coronary angiography showed mild luminal irregularities without stenosis greater than 30%. Echocardiogram shows normal ventricular function, normal valves and no left ventricular hypertrophy.
+  lead: Which of the following is the most appropriate next diagnostic step?
+  choices:
+    A: Coronary CT angiography
+    B: Esophageal manometry
+    C: Invasive coronary function testing
+    D: Reassurance that her symptoms are not cardiac
+    E: Repeat coronary angiography in 6 months
+  answer: C
+  explain: |
+    She has **ischemia with no obstructive coronary arteries (INOCA)**: angina, objective evidence of ischemia and **no stenosis ≥50%**. INOCA is common, especially in **women**, and is **not benign** — it carries higher rates of MI, heart failure and poor quality of life.
+
+    The main mechanisms are:
+    - **Coronary microvascular dysfunction** — impaired vasodilation of small vessels (low **coronary flow reserve <2.0–2.5**, high index of microcirculatory resistance)
+    - **Epicardial or microvascular vasospasm**
+
+    **Invasive coronary function testing** (adenosine for flow reserve and resistance; acetylcholine for spasm) defines the endotype and directs therapy — the CorMicA trial showed that stratified therapy improved angina. PET myocardial blood flow quantification is a noninvasive alternative.
+
+    | Endotype | Treatment |
+    |---|---|
+    | Microvascular dysfunction | Beta-blocker, ACE inhibitor/ARB, statin, ranolazine |
+    | Vasospasm | Calcium channel blocker, nitrate |
+  why:
+    A: She already had invasive angiography that excluded obstructive disease; CCTA would add no functional information.
+    B: Esophageal testing might be considered if cardiac causes are excluded, but she has objective ischemia.
+    D: Objective ischemia with typical symptoms is a cardiac problem; reassurance alone leaves treatable disease untreated.
+    E: Repeat anatomic imaging does not assess microvascular function or spasm.
+  objective: |
+    Evaluate ischemia with nonobstructive coronary arteries with coronary function testing (flow reserve, microvascular resistance, acetylcholine provocation) to guide therapy.
+  refs:
+    - "Virani SS, et al. 2023 AHA/ACC/multisociety guideline for the management of patients with chronic coronary disease. Circulation 2023;148:e9."
+    - "Ford TJ, et al. Stratified medical therapy using invasive coronary function testing in angina (CorMicA). J Am Coll Cardiol 2018;72:2841."
+
+- id: CV-100
+  topic: Acute chest pain — coronary CT angiography
+  task: Diagnosis/Testing
+  chapters: [cardiology/sihd, cardiology/nste-acs]
+  stem: |
+    A 48-year-old man comes to the emergency department because of 2 hours of intermittent substernal chest pressure that began while he was walking his dog. The pressure lasts several minutes and resolves with rest. He has hypertension and hyperlipidemia and smokes cigarettes. Medications are lisinopril and simvastatin. He has never had a cardiac evaluation.
+
+    On physical examination, blood pressure is 142/86 mm Hg and pulse rate is 78/min. Examination is normal.
+
+    Electrocardiogram shows no ischemic changes. High-sensitivity troponin I measurements at 0 and 2 hours are both below the 99th percentile without a significant change. He is now pain-free. His HEART score is 5 (intermediate risk).
+  lead: Which of the following is the most appropriate next step in evaluation?
+  choices:
+    A: Coronary artery calcium scoring
+    B: Coronary CT angiography
+    C: Discharge home without further testing
+    D: Invasive coronary angiography
+    E: Repeat troponin measurement in 24 hours
+  answer: B
+  explain: |
+    Acute MI has been ruled out by serial hs-troponin, but his **symptoms are typical** and he has several risk factors — he is **intermediate risk** (HEART score 4–6). The 2021 AHA/ACC chest pain guideline recommends further testing for intermediate-risk patients **without known CAD**:
+    - **Coronary CT angiography (CCTA)** — excellent negative predictive value; finds nonobstructive plaque that should change prevention (statin intensity, aspirin); it can be done before discharge or within days
+    - Stress testing with imaging is an alternative
+
+    CCTA is preferred for patients **<65 years** who are not on optimal preventive therapy; stress imaging is preferred for known CAD or extensive calcification.
+  why:
+    A: Calcium scoring alone is for asymptomatic risk assessment and does not detect noncalcified plaque or stenosis in a symptomatic patient.
+    C: Intermediate-risk patients with typical symptoms benefit from further evaluation; discharge without testing is appropriate only for low-risk patients.
+    D: Invasive angiography is for high-risk patients or confirmed ACS; noninvasive testing comes first here.
+    E: Serial troponins have already excluded MI; more measurements add nothing.
+  objective: |
+    In intermediate-risk patients with acute chest pain, no known CAD and MI excluded, coronary CT angiography is an appropriate next test.
+  refs:
+    - "Gulati M, et al. 2021 AHA/ACC/multisociety guideline for the evaluation and diagnosis of chest pain. Circulation 2021;144:e368."
+
+- id: CV-101
+  topic: Nitrate–PDE-5 inhibitor interaction
+  task: Pathophysiology/Basic Science
+  chapters: [cardiology/sihd]
+  stem: |
+    A 64-year-old man with chronic stable angina comes to the emergency department because of chest pressure that began 30 minutes ago. He took sildenafil 6 hours ago. He is given sublingual nitroglycerin, 0.4 mg, before this history is obtained.
+
+    Within 10 minutes, he becomes lightheaded. Blood pressure falls from 138/82 mm Hg to 72/40 mm Hg, and pulse rate rises from 84/min to 118/min.
+  lead: Which of the following best explains the hypotension?
+  choices:
+    A: Alpha-1 adrenergic receptor blockade in vascular smooth muscle
+    B: Beta-adrenergic receptor blockade in the myocardium
+    C: Histamine release from mast cells
+    D: Inhibition of the renin–angiotensin–aldosterone system
+    E: Synergistic increase in cyclic GMP in vascular smooth muscle
+  answer: E
+  explain: |
+    **Nitrates** release **nitric oxide (NO)**, which activates soluble **guanylate cyclase** and raises **cyclic GMP (cGMP)** in vascular smooth muscle → relaxation (venodilation more than arteriolar dilation).
+
+    **Phosphodiesterase-5 (PDE-5) inhibitors** (sildenafil, vardenafil, tadalafil, avanafil) block the **breakdown of cGMP**.
+
+    Together, one increases production and the other blocks degradation → **profound, prolonged vasodilation and hypotension**, which can cause syncope, MI and death. Nitrates are **contraindicated within 24 hours of sildenafil or vardenafil and 48 hours of tadalafil**.
+
+    Treatment of the interaction: supine position, IV fluids, and an alpha-agonist (phenylephrine) if needed.
+  why:
+    A: Alpha-1 blockers (such as tamsulosin or doxazosin) also cause hypotension with PDE-5 inhibitors, but neither drug here acts by alpha blockade.
+    B: Beta blockade causes bradycardia; his heart rate rose reflexively.
+    C: Histamine release causes flushing, urticaria and bronchospasm; it is not the mechanism of this interaction.
+    D: RAAS inhibition lowers blood pressure gradually; it does not explain abrupt collapse after nitroglycerin.
+  objective: |
+    Nitrates and PDE-5 inhibitors cause severe hypotension by synergistically increasing vascular smooth-muscle cGMP; avoid nitrates within 24–48 hours of a PDE-5 inhibitor.
+  refs:
+    - "Virani SS, et al. 2023 AHA/ACC/multisociety guideline for the management of patients with chronic coronary disease. Circulation 2023;148:e9."
+    - "Kloner RA. Pharmacology and drug interaction effects of the phosphodiesterase 5 inhibitors: focus on α-blocker interactions. Am J Cardiol 2005;96:42M."
+
+- id: CV-102
+  topic: Aspirin dose with ticagrelor
+  task: Treatment/Care Decisions
+  chapters: [cardiology/nste-acs]
+  stem: |
+    A 57-year-old man comes for a follow-up visit 1 week after discharge for a non–ST-elevation myocardial infarction treated with a drug-eluting stent in the left anterior descending artery. He has no bleeding or chest pain. He reports occasional mild dyspnea at rest that does not limit him. At discharge he was prescribed aspirin, 81 mg daily, and ticagrelor, 90 mg twice daily, but he has been taking aspirin, 325 mg daily, because he thought it would protect him more. Other medications are metoprolol succinate, lisinopril and atorvastatin.
+
+    On physical examination, blood pressure is 122/74 mm Hg and pulse rate is 64/min. Lungs are clear. Examination is normal.
+  lead: Which of the following is the most appropriate change in his antiplatelet regimen?
+  choices:
+    A: Continue aspirin, 325 mg daily, with ticagrelor
+    B: Reduce aspirin to 81 mg daily and continue ticagrelor
+    C: Stop aspirin and continue ticagrelor alone
+    D: Stop ticagrelor and continue aspirin, 325 mg daily
+    E: Switch ticagrelor to prasugrel and continue aspirin, 325 mg daily
+  answer: B
+  explain: |
+    With ticagrelor, **aspirin must be 75–100 mg daily**. In the PLATO trial, ticagrelor was **less effective in North American patients**, an effect explained by the higher aspirin doses used there (≥300 mg). High-dose aspirin may blunt ticagrelor's benefit and increases GI bleeding. The ticagrelor label carries a boxed warning about aspirin doses above 100 mg.
+
+    The **mild dyspnea** is a common, usually benign adverse effect of ticagrelor (adenosine-mediated); it is not a reason to stop the drug if mild and the lungs and examination are normal.
+
+    In patients without high bleeding risk, the 2025 ACS guideline allows dropping aspirin to **ticagrelor monotherapy after at least 1 month** of DAPT (TWILIGHT, TICO, ULTIMATE-DAPT) — but not 1 week after PCI.
+  why:
+    A: Aspirin doses above 100 mg with ticagrelor reduce its effectiveness and increase bleeding.
+    C: Dropping aspirin 1 week after PCI is too early; monotherapy is considered after at least 1 month.
+    D: Aspirin alone 1 week after a drug-eluting stent for ACS raises the risk of stent thrombosis and recurrent MI.
+    E: Changing P2Y12 inhibitors is not needed, and the aspirin dose would still be too high.
+  mnemonic: |
+    **Ticagrelor loves "baby aspirin" — 81, not 325.**
+  objective: |
+    Use aspirin 75–100 mg daily with ticagrelor; higher aspirin doses reduce ticagrelor's efficacy.
+  refs:
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+    - "Mahaffey KW, et al. Ticagrelor compared with clopidogrel by geographic region in the PLATO trial. Circulation 2011;124:544."

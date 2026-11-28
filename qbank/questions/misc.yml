@@ -94,7 +94,7 @@
   objective: |
     Positive predictive value depends on disease prevalence; in a low-prevalence population, most positive results are false positives even with a sensitive and specific test.
   refs:
-    - Trevethan R. Sensitivity, specificity, and predictive values: foundations, pliabilities, and pitfalls in research and practice. *Front Public Health* 2017;5:307.
+    - "Trevethan R. Sensitivity, specificity, and predictive values: foundations, pliabilities, and pitfalls in research and practice. *Front Public Health* 2017;5:307."
 
 - id: MS-003
   topic: Lead-time bias in screening
