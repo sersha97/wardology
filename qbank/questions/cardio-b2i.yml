@@ -1,0 +1,976 @@
+# Cardiovascular Disease — batch 2i: pericardium, aorta and vascular, hypertension, ACHD, pregnancy, perioperative (ABIM CERT)
+- id: CV-159
+  topic: Recurrent pericarditis
+  task: Treatment/Care Decisions
+  chapters: [cardiology/pericarditis]
+  stem: |
+    A 38-year-old woman is evaluated for her third episode of pericarditis in 14 months. The first episode followed a viral illness and was treated with ibuprofen and colchicine for 3 months. Two months after stopping, pain recurred and she was given prednisone, 40 mg daily; each attempt to taper below 10 mg daily has caused recurrence despite continued colchicine. She now has sharp positional chest pain again. She has gained 8 kg (17.6 lb) and has new insomnia. Antinuclear antibody testing and tuberculosis screening are negative.
+
+    On physical examination, temperature is 37.6 °C (99.7 °F), blood pressure is 124/78 mm Hg, and pulse rate is 92/min. A pericardial friction rub is heard.
+
+    Electrocardiogram shows diffuse ST-segment elevation with PR depression. Echocardiogram shows a small effusion without tamponade. C-reactive protein is 42 mg/L.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Increase prednisone to 1 mg/kg daily long term
+    B: Pericardiectomy
+    C: Rilonacept
+    D: Six weeks of empiric antituberculous therapy
+    E: Stop colchicine
+  answer: C
+  explain: |
+    She has **recurrent, glucocorticoid-dependent pericarditis** with **colchicine failure** and signs of systemic inflammation (fever, high CRP) — an **autoinflammatory phenotype** driven by the **NLRP3 inflammasome and interleukin-1**.
+
+    **IL-1 blockade** is the recommended next step (2025 ESC pericardial guideline; ACC expert pathway):
+    - **Rilonacept** (IL-1α/β trap, weekly subcutaneous) — in **RHAPSODY**, it rapidly resolved recurrences and reduced the risk of recurrence by about 96% versus placebo, allowing glucocorticoid withdrawal
+    - **Anakinra** (IL-1 receptor antagonist) — AIRTRIP trial
+
+    Treatment is usually continued for months, with slow tapering. Pericardiectomy is reserved for refractory cases after medical options fail.
+
+    | Pericarditis step | Therapy |
+    |---|---|
+    | First episode | NSAID/aspirin + **colchicine 3 months** |
+    | First recurrence | NSAID + **colchicine 6 months** |
+    | Refractory / steroid-dependent | **IL-1 blocker** (rilonacept, anakinra); low-dose glucocorticoid if needed |
+    | Failure of medical therapy | Pericardiectomy |
+  why:
+    A: High-dose glucocorticoids increase recurrence risk and cause cumulative toxicity, which she already has.
+    B: Pericardiectomy is a last resort for refractory disease after IL-1 blockade, given its surgical risk.
+    D: She has no evidence of tuberculosis; empiric therapy is not indicated.
+    E: Colchicine reduces recurrences and should be continued with other therapy.
+  objective: |
+    Treat recurrent glucocorticoid-dependent pericarditis that fails colchicine with an interleukin-1 blocker such as rilonacept.
+  refs:
+    - "Klein AL, et al. Phase 3 trial of interleukin-1 trap rilonacept in recurrent pericarditis (RHAPSODY). N Engl J Med 2021;384:31."
+    - "Adler Y, et al. 2015 ESC guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921."
+
+- id: CV-160
+  topic: Acute pericarditis — high-risk features
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/pericarditis]
+  stem: |
+    A 44-year-old man comes to the emergency department because of 2 days of sharp chest pain that is worse when he lies flat and better when he sits forward. He had an upper respiratory infection 1 week ago. He takes no medications and does not take anticoagulants.
+
+    On physical examination, temperature is 37.5 °C (99.5 °F), blood pressure is 128/80 mm Hg with a 6-mm Hg inspiratory decline, pulse rate is 96/min, and respiration rate is 18/min. A pericardial friction rub is heard. Jugular venous pressure is normal.
+
+    Electrocardiogram shows diffuse concave ST-segment elevation and PR-segment depression. Echocardiogram shows normal ventricular function and a circumferential pericardial effusion measuring 24 mm in diastole without chamber collapse.
+  labs:
+    - [High-sensitivity troponin I, below the 99th percentile]
+    - [C-reactive protein, 38 mg/L]
+  lead: Which of the following findings most strongly indicates that he should be admitted to the hospital rather than treated as an outpatient?
+  choices:
+    A: Concave ST-segment elevation with PR depression
+    B: Pericardial effusion larger than 20 mm
+    C: Pericardial friction rub
+    D: Pleuritic, positional chest pain
+    E: Recent upper respiratory infection
+  answer: B
+  explain: |
+    Most patients with acute pericarditis are low risk and can be treated **as outpatients** with an NSAID (or aspirin) plus colchicine. **High-risk features** predict complications (tamponade, constriction, specific causes such as bacterial, tuberculous or neoplastic disease) and call for **admission and investigation**:
+
+    | Major predictors of poor prognosis | Minor predictors |
+    |---|---|
+    | **Fever >38 °C** | Myopericarditis (troponin rise) |
+    | **Subacute onset** (days to weeks) | **Immunosuppression** |
+    | **Large effusion (>20 mm)** or **tamponade** | **Trauma** |
+    | **No response to NSAIDs after 1 week** | **Oral anticoagulant therapy** |
+
+    His **effusion of 24 mm** is a major predictor — he should be hospitalized for monitoring and evaluation for a specific cause, even though there is no tamponade now.
+  why:
+    A: Diffuse concave ST elevation with PR depression is the expected ECG pattern of pericarditis, not a sign of high risk.
+    C: A friction rub is a diagnostic finding, not a marker of poor prognosis.
+    D: Pleuritic, positional pain is typical of pericarditis and does not indicate high risk.
+    E: A preceding viral infection suggests the common idiopathic/viral form, which usually has a benign course.
+  objective: |
+    Admit patients with acute pericarditis who have high-risk features: fever >38 °C, subacute onset, large effusion (>20 mm) or tamponade, or failure of NSAID therapy.
+  refs:
+    - "Adler Y, et al. 2015 ESC guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921."
+    - "Imazio M, et al. Indicators of poor prognosis of acute pericarditis. Circulation 2007;115:2739."
+
+- id: CV-161
+  topic: Uremic pericarditis
+  task: Treatment/Care Decisions
+  chapters: [cardiology/pericarditis, renal/ckd]
+  stem: |
+    A 58-year-old man with end-stage kidney disease on hemodialysis three times weekly is evaluated for 3 days of pleuritic chest pain and low-grade fever. He has missed four of his last eight dialysis sessions.
+
+    On physical examination, temperature is 37.9 °C (100.2 °F), blood pressure is 152/86 mm Hg with a 7-mm Hg inspiratory decline, pulse rate is 98/min, and respiration rate is 18/min. A loud three-component pericardial friction rub is heard. Jugular venous pressure is 9 cm H₂O. There is 1+ leg edema.
+
+    Electrocardiogram shows sinus tachycardia without ST-segment elevation. Echocardiogram shows a moderate circumferential pericardial effusion without right atrial or right ventricular collapse.
+  labs:
+    - [Blood urea nitrogen, 128 mg/dL]
+    - [Potassium, 5.4 mEq/L]
+    - [Hemoglobin, 9.6 g/dL]
+  lead: Which of the following is the most appropriate treatment?
+  choices:
+    A: Colchicine at full dose
+    B: High-dose ibuprofen
+    C: Intensified daily hemodialysis
+    D: Pericardiocentesis
+    E: Prednisone, 1 mg/kg daily
+  answer: C
+  explain: |
+    **Uremic pericarditis** develops in patients with advanced kidney failure before dialysis or with **inadequate dialysis** (missed sessions, here). Unlike viral pericarditis, the **ECG often lacks diffuse ST elevation** because the inflammation does not involve the epicardium.
+
+    Treatment is **intensive dialysis** — daily sessions for 1–2 weeks — which resolves most cases. Use **heparin-free or minimal-heparin** dialysis to reduce the risk of **hemorrhagic effusion and tamponade**. Watch for **intradialytic hypotension**, which can signal tamponade.
+
+    **Pericardiocentesis** is reserved for tamponade or for large effusions that do not respond to intensified dialysis.
+  why:
+    A: Colchicine is renally cleared and its dose must be greatly reduced or avoided in dialysis patients; it does not treat the cause.
+    B: NSAIDs have limited benefit in uremic pericarditis and cause GI bleeding and loss of residual kidney function.
+    D: Pericardiocentesis is unnecessary without tamponade and carries procedural risk.
+    E: Glucocorticoids are not first-line and do not address the uremia that caused the pericarditis.
+  objective: |
+    Treat uremic or dialysis-associated pericarditis with intensified (daily) heparin-free hemodialysis; reserve pericardiocentesis for tamponade or refractory effusion.
+  refs:
+    - "Adler Y, et al. 2015 ESC guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921."
+    - "Rehman KA, et al. Uremic pericarditis, pericardial effusion, and constrictive pericarditis in end-stage renal disease. Clin Cardiol 2017;40:839."
+
+- id: CV-162
+  topic: Myopericarditis — return to sport
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/pericarditis, cardiology/cardiomyopathies]
+  stem: |
+    A 20-year-old college soccer player is evaluated 2 weeks after hospitalization for myopericarditis that followed a viral illness. He presented with positional chest pain, diffuse ST-segment elevation and a troponin I peak of 2,400 ng/L. Cardiac MRI showed subepicardial late gadolinium enhancement of the lateral wall with a left ventricular ejection fraction of 54%. He was treated with ibuprofen and colchicine and now has no symptoms. He asks when he can return to training and competition.
+
+    On physical examination, blood pressure is 118/70 mm Hg and pulse rate is 60/min. Examination is normal.
+  lead: Which of the following is the most appropriate recommendation about return to competitive sports?
+  choices:
+    A: Permanent disqualification from competitive sports
+    B: Return after 1 week without any symptoms
+    C: Return as soon as C-reactive protein normalizes
+    D: Return once chest pain has been absent for 2 weeks
+    E: Return after 3–6 months if repeat testing is normal
+  answer: E
+  explain: |
+    **Myocarditis** (including myopericarditis with significant myocardial involvement) is a recognized cause of **sudden cardiac death in young athletes**. Exercise during active inflammation increases viral replication, inflammation and arrhythmia risk.
+
+    AHA/ACC eligibility recommendations and the 2024 ACC myocarditis pathway:
+    - **No competitive sports or strenuous exercise for 3–6 months** after diagnosis
+    - Return only if **all** of the following are normal: **LV systolic function**, **biomarkers** (troponin, inflammatory markers), **24-hour Holter and exercise ECG** without significant arrhythmias
+    - **Repeat cardiac MRI** is reasonable; persistent extensive late gadolinium enhancement may warrant a longer restriction and closer follow-up
+
+    For **isolated pericarditis** without myocardial involvement, return is allowed once symptoms and inflammatory markers resolve, usually after **at least 3 months** for competitive athletes (shorter for non-athletes).
+  why:
+    A: Most patients recover fully; permanent disqualification is reserved for persistent LV dysfunction or arrhythmias.
+    B: One week is far too short; the risk of arrhythmia persists during healing.
+    C: CRP normalization alone does not exclude ongoing myocardial inflammation or arrhythmic risk.
+    D: Absence of pain does not mean the myocardium has healed.
+  objective: |
+    After myocarditis or myopericarditis, restrict competitive sports for 3–6 months and allow return only with normal ventricular function, biomarkers and arrhythmia evaluation.
+  refs:
+    - "Maron BJ, et al. Eligibility and disqualification recommendations for competitive athletes with cardiovascular abnormalities: Task Force 3 — myocarditis and pericarditis. J Am Coll Cardiol 2015;66:2362."
+    - "Drazner MH, et al. 2024 ACC expert consensus decision pathway on the diagnosis and management of myocarditis. J Am Coll Cardiol 2025;85:391."
+
+- id: CV-163
+  topic: Type A aortic dissection
+  task: Treatment/Care Decisions
+  chapters: [cardiology/aortic-dissection]
+  stem: |
+    A 64-year-old man comes to the emergency department 1 hour after the sudden onset of severe, tearing chest pain radiating to his back. He has long-standing poorly controlled hypertension.
+
+    On physical examination, blood pressure is 178/96 mm Hg in the right arm and 142/84 mm Hg in the left arm, and pulse rate is 104/min. A grade 2/6 early diastolic murmur is heard at the right sternal border. The lungs are clear. Neurologic examination is normal.
+
+    Electrocardiogram shows left ventricular hypertrophy without acute ST-segment changes. CT angiography shows an intimal flap beginning in the ascending aorta just above the aortic valve and extending to the descending thoracic aorta. There is a small pericardial effusion.
+  lead: In addition to intravenous blood pressure and heart-rate control, which of the following is the most appropriate management?
+  choices:
+    A: Coronary angiography before any other intervention
+    B: Emergency surgical repair
+    C: Intravenous heparin
+    D: Medical therapy with repeat CT in 48 hours
+    E: Thoracic endovascular aortic repair of the descending aorta
+  answer: B
+  explain: |
+    This is an **acute type A (Stanford) aortic dissection** — any dissection involving the **ascending aorta**. Without surgery, mortality rises by about **1%–2% per hour** in the first 48 hours from **aortic rupture into the pericardium (tamponade)**, **acute aortic regurgitation** (the new diastolic murmur), **coronary malperfusion** (usually the right coronary) and stroke.
+
+    **Emergency open surgical repair** (replacement of the ascending aorta, with valve resuspension or replacement as needed) is the treatment of choice (Class 1). Meanwhile, give an **IV beta-blocker first** (esmolol, labetalol) to a heart rate <60/min, then a vasodilator if needed to a systolic BP of about 100–120 mm Hg; provide analgesia.
+
+    | | Type A (ascending involved) | Type B (descending only) |
+    |---|---|---|
+    | Treatment | **Emergency surgery** | **Medical therapy** (uncomplicated); TEVAR if complicated (malperfusion, rupture, refractory pain/HTN, rapid expansion) |
+  why:
+    A: Routine coronary angiography delays life-saving surgery and can extend the dissection.
+    C: Anticoagulation can precipitate fatal hemorrhage and is contraindicated in acute dissection.
+    D: Medical therapy alone for type A dissection carries very high early mortality.
+    E: Endovascular repair is used for complicated type B dissection; it does not treat ascending aortic dissection.
+  objective: |
+    Acute type A aortic dissection requires emergency surgical repair, with IV beta-blockade first to control heart rate and blood pressure.
+  refs:
+    - "Isselbacher EM, et al. 2022 ACC/AHA guideline for the diagnosis and management of aortic disease. Circulation 2022;146:e334."
+
+- id: CV-164
+  topic: Suspected aortic dissection — imaging
+  task: Diagnosis/Testing
+  chapters: [cardiology/aortic-dissection]
+  stem: |
+    A 59-year-old woman comes to the emergency department because of sudden, severe pain between her shoulder blades that began 40 minutes ago while lifting a heavy box. She has hypertension. She describes the pain as "the worst ever" and "ripping."
+
+    On physical examination, blood pressure is 172/94 mm Hg in the right arm and 148/86 mm Hg in the left arm, and pulse rate is 98/min. The lungs are clear. There is no murmur. The left radial pulse is weaker than the right.
+
+    Electrocardiogram shows sinus rhythm with no ST-segment changes. Chest radiograph shows a widened mediastinum.
+  labs:
+    - [Creatinine, 0.9 mg/dL]
+    - [High-sensitivity troponin I, below the 99th percentile]
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: CT angiography of the chest, abdomen and pelvis
+    B: D-dimer to decide whether imaging is needed
+    C: Invasive coronary angiography
+    D: Transthoracic echocardiography alone
+    E: Ventilation–perfusion lung scan
+  answer: A
+  explain: |
+    She has a **high pretest probability of acute aortic syndrome**. The **ADD-RS** (aortic dissection detection risk score) has three categories, and she has features in all of them:
+    - **High-risk condition** (e.g., Marfan, known aortic disease) — not present
+    - **High-risk pain**: abrupt onset, severe, tearing/ripping — **yes**
+    - **High-risk examination**: **pulse deficit, BP differential >20 mm Hg** between arms, new AR murmur, focal neuro deficit, hypotension — **yes**
+
+    With **ADD-RS ≥2**, go **straight to imaging** without a D-dimer. **CT angiography** of the chest, abdomen and pelvis is the test of choice in a stable patient: fast, widely available, ~100% sensitive, and shows the extent of dissection and branch-vessel malperfusion. **TEE** is preferred if the patient is unstable or cannot receive contrast; MRA for follow-up.
+
+    Start IV beta-blockade while imaging is arranged.
+  why:
+    B: A negative D-dimer can help exclude dissection only in low-risk patients (ADD-RS 0–1); with high clinical probability, it should not delay imaging.
+    C: Coronary angiography delays diagnosis and does not image the aorta adequately; troponin and ECG are normal.
+    D: Transthoracic echocardiography may show an ascending flap or effusion but cannot exclude dissection of the arch and descending aorta.
+    E: A V/Q scan evaluates pulmonary embolism and does not image the aorta.
+  objective: |
+    In patients with high clinical probability of aortic dissection (ADD-RS ≥2), proceed directly to CT angiography without D-dimer testing.
+  refs:
+    - "Isselbacher EM, et al. 2022 ACC/AHA guideline for the diagnosis and management of aortic disease. Circulation 2022;146:e334."
+    - "Nazerian P, et al. Diagnostic accuracy of the aortic dissection detection risk score plus D-dimer for acute aortic syndromes (ADvISED). Circulation 2018;137:250."
+
+- id: CV-165
+  topic: Thoracic aortic aneurysm in Marfan syndrome
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/aortic-dissection, cardiology/pregnancy-heart]
+  stem: |
+    A 29-year-old woman with Marfan syndrome (confirmed FBN1 variant) comes for preconception counseling. She has no symptoms. She takes losartan, 50 mg daily. She has lens subluxation and pectus excavatum. Her mother had an aortic dissection at age 42.
+
+    On physical examination, blood pressure is 112/68 mm Hg and pulse rate is 66/min. Examination is consistent with Marfan syndrome; there is no murmur.
+
+    Cardiac MRI shows an aortic root diameter at the sinuses of Valsalva of 4.6 cm (4.3 cm 1 year ago), normal valve function and mild mitral valve prolapse.
+  lead: Which of the following is the most appropriate recommendation?
+  choices:
+    A: Continue losartan throughout pregnancy
+    B: Pregnancy is safe if she takes a beta-blocker
+    C: Pregnancy is safe once aortic growth slows
+    D: Prophylactic aortic root replacement before pregnancy
+    E: Repeat MRI annually; no other change is needed before pregnancy
+  answer: D
+  explain: |
+    **Marfan syndrome** (fibrillin-1 defect) causes **aortic root dilation** and a high risk of **dissection**. **Pregnancy increases risk** — hormonal changes weaken the aortic wall, and cardiac output and volume rise — with most dissections occurring in the **third trimester and early postpartum**.
+
+    Risk depends on root size:
+
+    | Aortic root (Marfan) | Pregnancy risk / recommendation |
+    |---|---|
+    | <4.0 cm | Low (~1% dissection) — proceed with surveillance and beta-blocker |
+    | 4.0–4.5 cm | Higher risk — consider repair, especially if growing or family history of dissection |
+    | **>4.5 cm** | **High risk — prophylactic root replacement before pregnancy** (2022 ACC/AHA aortic; ESC 2025) |
+
+    She has a **4.6-cm** root, **rapid growth (0.3 cm/yr)** and a **family history of dissection** → recommend **valve-sparing aortic root replacement before conception**. Surgery is also indicated in nonpregnant Marfan patients at **≥5.0 cm** (≥4.5 cm with risk factors).
+
+    During pregnancy: **beta-blocker** throughout, echocardiographic surveillance every 4–12 weeks, delivery at a center with cardiothoracic surgery. **Losartan is contraindicated in pregnancy** (fetotoxic).
+  why:
+    A: ARBs cause fetal kidney injury and oligohydramnios and are contraindicated in pregnancy.
+    B: Beta-blockers reduce but do not eliminate dissection risk when the root exceeds 4.5 cm.
+    C: Waiting for growth to slow does not reduce risk with a root already above 4.5 cm.
+    E: Surveillance alone leaves her at high risk of dissection during pregnancy.
+  objective: |
+    In Marfan syndrome, an aortic root >4.5 cm (especially with growth or family history of dissection) warrants prophylactic root replacement before pregnancy.
+  refs:
+    - "Isselbacher EM, et al. 2022 ACC/AHA guideline for the diagnosis and management of aortic disease. Circulation 2022;146:e334."
+    - "2025 ESC guidelines for the management of cardiovascular disease and pregnancy. Eur Heart J 2025 (doi:10.1093/eurheartj/ehaf193)."
+
+- id: CV-166
+  topic: Abdominal aortic aneurysm — repair threshold
+  task: Treatment/Care Decisions
+  chapters: [cardiology/pad-aaa]
+  stem: |
+    A 72-year-old man comes for follow-up of an abdominal aortic aneurysm found on screening ultrasonography 3 years ago. He has no abdominal or back pain. He smoked for 40 years and quit 5 years ago. He has hypertension and hyperlipidemia treated with amlodipine and atorvastatin. He walks 2 miles daily.
+
+    On physical examination, blood pressure is 132/78 mm Hg and pulse rate is 68/min. A pulsatile, nontender abdominal mass is palpable.
+
+    CT angiography shows an infrarenal abdominal aortic aneurysm with a maximal diameter of 5.7 cm (5.2 cm 1 year ago), with anatomy suitable for endovascular repair.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Doxycycline to slow aneurysm growth
+    B: Elective aneurysm repair
+    C: Repeat CT in 1 year
+    D: Repeat ultrasonography in 6 months
+    E: Start metoprolol and continue surveillance
+  answer: B
+  explain: |
+    Rupture risk of an AAA rises steeply with diameter. The 2022 ACC/AHA aortic guideline recommends **elective repair** for:
+    - **Men: diameter ≥5.5 cm**
+    - **Women: diameter ≥5.0 cm** (women rupture at smaller sizes)
+    - **Rapid growth ≥0.5 cm in 6 months** (or ≥1 cm/yr), at any size
+    - **Symptomatic** aneurysms (tenderness, back or abdominal pain) — urgent repair at any size
+
+    He meets both size and growth criteria. With suitable anatomy, **endovascular repair (EVAR)** has lower early mortality than open repair; long-term survival is similar, but EVAR requires lifelong imaging surveillance for endoleaks.
+
+    | AAA size (men) | Surveillance imaging |
+    |---|---|
+    | 3.0–3.9 cm | Every 3 years |
+    | 4.0–4.9 cm | Every 12 months |
+    | 5.0–5.4 cm | Every 6 months |
+    | **≥5.5 cm** | **Repair** |
+  why:
+    A: Doxycycline did not slow AAA growth in randomized trials.
+    C: Waiting a year with a 5.7-cm, rapidly growing aneurysm exposes him to a high rupture risk.
+    D: Surveillance is appropriate for smaller aneurysms; he already meets repair criteria.
+    E: Beta-blockers do not reduce aneurysm growth or rupture.
+  objective: |
+    Recommend elective AAA repair for diameter ≥5.5 cm in men (≥5.0 cm in women), rapid growth, or symptoms.
+  refs:
+    - "Isselbacher EM, et al. 2022 ACC/AHA guideline for the diagnosis and management of aortic disease. Circulation 2022;146:e334."
+    - "Chaikof EL, et al. The Society for Vascular Surgery practice guidelines on the care of patients with an abdominal aortic aneurysm. J Vasc Surg 2018;67:2."
+
+- id: CV-167
+  topic: Acute limb ischemia
+  task: Treatment/Care Decisions
+  chapters: [cardiology/pad-aaa]
+  stem: |
+    A 74-year-old woman comes to the emergency department 3 hours after the sudden onset of pain and numbness in her right leg. She has atrial fibrillation; she stopped apixaban 2 weeks ago because of cost. She has hypertension. She had no previous leg symptoms.
+
+    On physical examination, blood pressure is 146/84 mm Hg and pulse rate is 96/min and irregularly irregular. The right leg is pale and cool below the knee. Right popliteal, dorsalis pedis and posterior tibial pulses are absent; the left leg pulses are normal. Light touch is reduced over the right toes, and toe dorsiflexion is mildly weak. Doppler signals are absent in the right pedal arteries.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Aspirin and cilostazol with outpatient vascular follow-up
+    B: Intravenous heparin and emergency revascularization
+    C: Primary below-knee amputation
+    D: Restart apixaban and repeat the examination in 24 hours
+    E: Supervised exercise therapy
+  answer: B
+  explain: |
+    **Acute limb ischemia (ALI)** is a sudden loss of limb perfusion that threatens viability. Here the cause is **embolism from atrial fibrillation** after stopping anticoagulation (sudden onset, no prior claudication, normal contralateral pulses).
+
+    The **"6 Ps"**: **p**ain, **p**allor, **p**ulselessness, **p**oikilothermia (cold), **p**aresthesia, **p**aralysis.
+
+    **Rutherford classification** guides urgency:
+
+    | Class | Sensory loss | Motor weakness | Doppler (arterial) | Action |
+    |---|---|---|---|---|
+    | I viable | None | None | Audible | Urgent evaluation |
+    | IIa marginally threatened | Minimal (toes) | None | Often inaudible | Prompt revascularization |
+    | **IIb immediately threatened** | **More than toes** | **Mild–moderate** | **Inaudible** | **Emergency revascularization** |
+    | III irreversible | Profound, anesthetic | Paralysis, rigor | Inaudible (arterial and venous) | Amputation |
+
+    She is class **IIa–IIb**. Give **IV unfractionated heparin** immediately (prevents clot propagation) and arrange **emergency revascularization** — surgical embolectomy or catheter-directed thrombolysis/thrombectomy — ideally within **6 hours**. Watch for **reperfusion injury and compartment syndrome** (fasciotomy) afterward.
+  why:
+    A: Antiplatelet therapy and cilostazol treat chronic claudication, not a threatened limb.
+    C: Amputation is reserved for irreversible ischemia (profound sensory loss, paralysis, no venous Doppler signal); her limb is salvageable.
+    D: A DOAC alone and a 24-hour delay would likely result in limb loss.
+    E: Exercise therapy is for chronic stable claudication.
+  objective: |
+    Treat acute limb ischemia with immediate intravenous heparin and emergency revascularization when the limb is viable or threatened.
+  refs:
+    - "Gornik HL, et al. 2024 ACC/AHA/multisociety guideline for the management of lower extremity peripheral artery disease. Circulation 2024;149:e1313."
+
+- id: CV-168
+  topic: Noncompressible arteries — toe-brachial index
+  task: Diagnosis/Testing
+  chapters: [cardiology/pad-aaa]
+  stem: |
+    A 68-year-old man with type 2 diabetes mellitus for 20 years and chronic kidney disease stage 4 is evaluated for cramping pain in both calves after walking two blocks, relieved by rest. He smokes cigarettes. He has peripheral neuropathy.
+
+    On physical examination, blood pressure is 148/76 mm Hg in both arms. Dorsalis pedis and posterior tibial pulses are faint bilaterally. There are no ulcers. Monofilament sensation is reduced in both feet.
+
+    Resting ankle-brachial index is 1.52 on the right and 1.48 on the left; the arteries could not be fully compressed at 250 mm Hg.
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: CT angiography of the lower extremities
+    B: Exercise treadmill ankle-brachial index
+    C: No further testing; the ABI excludes PAD
+    D: Repeat ankle-brachial index in 1 year
+    E: Toe-brachial index
+  answer: E
+  explain: |
+    An **ankle-brachial index (ABI) >1.40** indicates **noncompressible, calcified tibial arteries** (medial calcinosis), common with **long-standing diabetes and CKD**. The ankle pressure is falsely high, so the ABI is **uninterpretable** — it can hide significant PAD.
+
+    The next test is the **toe-brachial index (TBI)**: digital arteries are rarely calcified. A **TBI ≤0.70** is abnormal and supports PAD. Toe pressure and transcutaneous oxygen measurements also help assess **wound-healing potential**.
+
+    | Resting ABI | Interpretation |
+    |---|---|
+    | **>1.40** | **Noncompressible → obtain TBI** |
+    | 1.00–1.40 | Normal (exercise ABI if symptoms suggest PAD) |
+    | 0.91–0.99 | Borderline |
+    | **≤0.90** | **PAD** |
+
+    Anatomic imaging (duplex, CTA, MRA, angiography) is reserved for planning **revascularization** in patients with lifestyle-limiting claudication despite therapy or chronic limb-threatening ischemia.
+  why:
+    A: Anatomic imaging is used when revascularization is being considered, not to establish the diagnosis.
+    B: Exercise ABI is useful when the resting ABI is normal but symptoms suggest PAD; with noncompressible arteries, ankle pressures remain unreliable.
+    C: An ABI >1.40 does not exclude PAD; it is nondiagnostic.
+    D: Waiting a year leaves a symptomatic, high-risk patient without a diagnosis.
+  objective: |
+    When the ABI is >1.40 because of noncompressible arteries, obtain a toe-brachial index to diagnose peripheral artery disease.
+  refs:
+    - "Gornik HL, et al. 2024 ACC/AHA/multisociety guideline for the management of lower extremity peripheral artery disease. Circulation 2024;149:e1313."
+
+- id: CV-169
+  topic: PAD — antithrombotic therapy
+  task: Treatment/Care Decisions
+  chapters: [cardiology/pad-aaa]
+  stem: |
+    A 66-year-old man underwent endovascular revascularization of a right superficial femoral artery stenosis 2 weeks ago for lifestyle-limiting claudication. He has hypertension and hyperlipidemia and quit smoking 1 year ago. He has no history of bleeding, stroke or atrial fibrillation. Medications are aspirin, 81 mg daily, clopidogrel (started after the procedure), atorvastatin, 80 mg daily, and lisinopril.
+
+    On physical examination, blood pressure is 128/76 mm Hg and pulse rate is 70/min. The right leg has palpable pedal pulses.
+  labs:
+    - [Hemoglobin, 14.1 g/dL]
+    - [Estimated glomerular filtration rate, 74 mL/min/1.73 m²]
+  lead: Which of the following is the most appropriate long-term antithrombotic regimen after the short course of clopidogrel?
+  choices:
+    A: Aspirin plus clopidogrel indefinitely
+    B: Aspirin plus rivaroxaban, 2.5 mg twice daily
+    C: Rivaroxaban, 20 mg daily, alone
+    D: Ticagrelor alone
+    E: Warfarin with a target INR of 2.0 to 3.0 plus aspirin
+  answer: B
+  explain: |
+    Patients with **symptomatic PAD**, especially after **lower-extremity revascularization**, are at high risk of both **major adverse cardiovascular events** and **major adverse limb events** (acute limb ischemia, amputation).
+
+    **Low-dose ("vascular-dose") rivaroxaban, 2.5 mg twice daily, plus aspirin**:
+    - **VOYAGER PAD** (after revascularization): reduced acute limb ischemia, major amputation, MI, ischemic stroke and cardiovascular death, with more major bleeding but no increase in fatal or intracranial bleeding
+    - **COMPASS** (stable PAD or CAD): reduced cardiovascular events and major limb events
+
+    The 2024 ACC/AHA PAD guideline recommends it (Class 1 after revascularization for patients without high bleeding risk). A short course of clopidogrel may be added after endovascular therapy.
+
+    Every patient with PAD also needs **high-intensity statin**, smoking cessation, BP and diabetes control, supervised exercise and foot care.
+  why:
+    A: Long-term DAPT increases bleeding without the limb-event reduction shown with low-dose rivaroxaban plus aspirin.
+    C: Full-dose rivaroxaban alone is the dose for AF or VTE, not for PAD, and has not been shown to be superior here.
+    D: Ticagrelor monotherapy was not better than clopidogrel in PAD (EUCLID).
+    E: Warfarin plus aspirin increased life-threatening bleeding without benefit in PAD (WAVE).
+  objective: |
+    After lower-extremity revascularization for PAD, add rivaroxaban 2.5 mg twice daily to aspirin to reduce limb and cardiovascular events in patients without high bleeding risk.
+  refs:
+    - "Bonaca MP, et al. Rivaroxaban in peripheral artery disease after revascularization (VOYAGER PAD). N Engl J Med 2020;382:1994."
+    - "Gornik HL, et al. 2024 ACC/AHA/multisociety guideline for the management of lower extremity peripheral artery disease. Circulation 2024;149:e1313."
+
+- id: CV-170
+  topic: Cholesterol crystal embolization
+  task: Diagnosis/Testing
+  chapters: [cardiology/pad-aaa, renal/aki]
+  stem: |
+    A 71-year-old man is evaluated for rising creatinine and painful toes. Three weeks ago he underwent coronary angiography through the femoral artery with PCI of the left anterior descending artery. He has hypertension, hyperlipidemia and diffuse atherosclerosis. Medications are aspirin, clopidogrel, atorvastatin, metoprolol and lisinopril.
+
+    On physical examination, blood pressure is 158/88 mm Hg and pulse rate is 72/min. There is a mottled, reticular violaceous rash on both thighs and feet, and several toes are cyanotic and tender despite palpable pedal pulses. Fundoscopic examination shows bright yellow refractile plaques within retinal arterioles.
+  labs:
+    - [Creatinine, 2.6 mg/dL (1.2 mg/dL before the procedure; 1.5 mg/dL 1 week ago)]
+    - [Leukocyte count, 9,600/µL with 12% eosinophils]
+    - [Complement C3, low]
+    - [Erythrocyte sedimentation rate, 64 mm/h]
+    - [Urinalysis, trace protein, few leukocytes; no casts]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Acute interstitial nephritis from clopidogrel
+    B: Antineutrophil cytoplasmic antibody–associated vasculitis
+    C: Cholesterol crystal embolization
+    D: Contrast-associated nephropathy
+    E: Heparin-induced thrombocytopenia
+  answer: C
+  explain: |
+    **Cholesterol crystal (atheroembolic) embolization** occurs when **atherosclerotic plaque is disrupted** — most often during **arterial catheterization**, vascular surgery, or after starting anticoagulants or thrombolytics. Cholesterol crystals shower small arteries, triggering inflammation.
+
+    Classic features:
+    - Onset **days to weeks** after the procedure, with **stepwise progressive AKI**
+    - **Livedo reticularis**, **"blue toes"** with **intact pedal pulses**
+    - **Hollenhorst plaques** — refractile cholesterol emboli in retinal arterioles
+    - **Eosinophilia**, eosinophiluria, **low complement**, high ESR
+    - GI ischemia, pancreatitis, stroke in severe cases
+
+    Diagnosis: clinical; confirmed by biopsy of skin, kidney or muscle showing **biconvex clefts** (cholesterol crystals dissolve during fixation). Treatment is **supportive**: **statin**, BP control, avoid further vascular procedures and anticoagulation when possible; many patients have permanent kidney damage.
+  why:
+    A: AIN causes AKI with rash, fever and eosinophilia, but not livedo, blue toes or Hollenhorst plaques; clopidogrel is an uncommon cause.
+    B: ANCA vasculitis causes glomerulonephritis with hematuria and red cell casts; the timing after catheterization and the retinal plaques point to atheroemboli.
+    D: Contrast-associated AKI begins within 24–72 hours and recovers within 1–2 weeks, without eosinophilia or skin findings.
+    E: HIT causes thrombocytopenia and thrombosis 5–10 days after heparin exposure; his presentation fits embolic cholesterol crystals.
+  objective: |
+    Recognize cholesterol crystal embolization (delayed progressive AKI, livedo reticularis, blue toes with pulses, eosinophilia, low complement) after arterial catheterization.
+  refs:
+    - "Scolari F, Ravani P. Atheroembolic renal disease. Lancet 2010;375:1650."
+
+- id: CV-171
+  topic: Asymptomatic carotid stenosis
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/pad-aaa, neuro/stroke]
+  stem: |
+    A 70-year-old man is referred after a carotid bruit was heard during a routine visit. He has never had a stroke, transient ischemic attack, amaurosis fugax or focal weakness. He has hypertension, type 2 diabetes mellitus and hyperlipidemia. Medications are atorvastatin, 40 mg daily, lisinopril, metformin and aspirin.
+
+    On physical examination, blood pressure is 134/78 mm Hg. A left carotid bruit is heard. Neurologic examination is normal.
+
+    Carotid duplex ultrasonography shows 75% stenosis of the left internal carotid artery and 30% stenosis on the right, confirmed by CT angiography. MRI of the brain shows no infarcts.
+  labs:
+    - [LDL cholesterol, 88 mg/dL]
+    - [Hemoglobin A₁c, 7.4%]
+  lead: Which of the following statements about his risk and management is most accurate?
+  choices:
+    A: Carotid endarterectomy clearly reduced stroke compared with intensive medical therapy in the most recent trial
+    B: His annual risk of ipsilateral stroke on intensive medical therapy is about 10%
+    C: His stroke risk is low enough that statin and blood pressure therapy are unnecessary
+    D: His annual stroke risk with intensive medical therapy is about 1%–2%, and stenting may lower it further
+    E: Stenosis of 75% requires urgent endarterectomy within 2 weeks
+  answer: D
+  explain: |
+    With **modern intensive medical therapy** (high-intensity statin to LDL targets, BP <130/80 mm Hg, diabetes control, antiplatelet therapy, smoking cessation, exercise), the risk of stroke from **asymptomatic** high-grade carotid stenosis is **low — about 1%–2% per year** — much lower than in the older trials of the 1990s (ACAS, ACST).
+
+    **CREST-2** (NEJM, published November 2025) randomized patients with **≥70% asymptomatic stenosis** to intensive medical management with or without revascularization:
+    - **Stenting + medical therapy** significantly **reduced** the 4-year risk of perioperative stroke/death or ipsilateral stroke compared with medical therapy alone
+    - **Endarterectomy + medical therapy** did **not** significantly reduce it (3.7% vs 5.3%)
+    - Neither improved cognition
+
+    So the first priority is **intensifying medical therapy** for him (his LDL of 88 mg/dL is above goal for his risk level); revascularization, particularly stenting at experienced centers with low complication rates, is a **shared decision**. This contrasts with **symptomatic** stenosis ≥50%–70%, where **endarterectomy within 2 weeks** of the event is clearly beneficial.
+  why:
+    A: In CREST-2, endarterectomy did not significantly reduce stroke compared with intensive medical therapy alone.
+    B: An annual stroke risk of about 10% applies to recently symptomatic stenosis, not to asymptomatic stenosis on modern therapy.
+    C: Intensive risk-factor therapy is the foundation of treatment and the reason the risk is low.
+    E: Urgent endarterectomy within 2 weeks is the standard for symptomatic carotid stenosis.
+  objective: |
+    Asymptomatic high-grade carotid stenosis carries about a 1%–2% annual stroke risk with intensive medical therapy; in CREST-2, stenting but not endarterectomy reduced that risk further.
+  refs:
+    - "Brott TG, et al. Medical management and revascularization for asymptomatic carotid stenosis (CREST-2). N Engl J Med 2026;394:219."
+    - "Brown MM, Bonati LH. Managing asymptomatic carotid stenosis (editorial). N Engl J Med 2025 (doi:10.1056/NEJMe2515725)."
+
+- id: CV-172
+  topic: Preoperative evaluation — functional capacity
+  task: Diagnosis/Testing
+  chapters: [geri/preop]
+  stem: |
+    A 68-year-old man is evaluated before elective total hip arthroplasty. He has hypertension, type 2 diabetes mellitus treated with metformin, and coronary artery disease treated with PCI 8 years ago. He has had no chest pain or dyspnea since. Despite his hip pain, he climbs two flights of stairs at home carrying laundry without stopping, and he gardens. Medications are aspirin, atorvastatin, metoprolol and lisinopril.
+
+    On physical examination, blood pressure is 132/78 mm Hg and pulse rate is 62/min. Cardiac examination is normal, and there is no edema.
+
+    Electrocardiogram shows sinus rhythm with no ischemic changes. His Revised Cardiac Risk Index score is 1.
+  labs:
+    - [Creatinine, 1.0 mg/dL]
+    - [Hemoglobin A₁c, 6.9%]
+  lead: Which of the following is the most appropriate next step before surgery?
+  choices:
+    A: Coronary CT angiography
+    B: Invasive coronary angiography
+    C: Pharmacologic stress myocardial perfusion imaging
+    D: Proceed with surgery without further cardiac testing
+    E: Transthoracic echocardiography
+  answer: D
+  explain: |
+    The 2024 ACC/AHA perioperative guideline uses a stepwise approach:
+    1. **Emergency surgery?** Proceed.
+    2. **Active cardiac condition** (ACS, decompensated HF, significant arrhythmia, severe valve disease)? Evaluate and treat first.
+    3. **Estimate risk** (RCRI or other calculator): hip arthroplasty is an **elevated-risk** procedure, and his RCRI of 1 (known CAD) gives a modest risk.
+    4. **Functional capacity**: if **≥4 METs** (climbing two flights of stairs, heavy housework, gardening), **proceed without further testing** — stress testing would not improve outcomes.
+
+    Stress testing is considered only if functional capacity is **poor or unknown** and the result would change management (whether or not surgery happens). Revascularization before noncardiac surgery is indicated only when it would be indicated anyway (CARP trial showed no benefit of routine prophylactic revascularization).
+
+    Continue **aspirin** (prior PCI), **statin** and his **beta-blocker**; do not start a new beta-blocker on the day of surgery.
+  why:
+    A: Coronary CT angiography does not reduce perioperative events in patients with good functional capacity and no symptoms.
+    B: Invasive angiography is not indicated without an independent indication for revascularization.
+    C: Stress testing in patients with good functional capacity does not improve perioperative outcomes.
+    E: Echocardiography is reserved for unexplained dyspnea, suspected significant valve disease or HF with a change in status.
+  objective: |
+    Before elevated-risk noncardiac surgery, patients with functional capacity ≥4 METs and no active cardiac conditions can proceed without further cardiac testing.
+  refs:
+    - "Thompson A, et al. 2024 AHA/ACC/multisociety guideline for perioperative cardiovascular management for noncardiac surgery. Circulation 2024;150:e351."
+
+- id: CV-173
+  topic: Obstructive sleep apnea and resistant hypertension
+  task: Diagnosis/Testing
+  chapters: [cardiology/hypertension, pulmonary/sleep-apnea]
+  stem: |
+    A 56-year-old man is evaluated for blood pressure that remains elevated despite chlorthalidone, 25 mg daily, amlodipine, 10 mg daily, and losartan, 100 mg daily. Pharmacy records confirm adherence. He avoids NSAIDs, decongestants and alcohol. His wife reports that he snores loudly and sometimes stops breathing during sleep. He falls asleep while watching television and once while driving.
+
+    On physical examination, blood pressure is 156/94 mm Hg (home average 152/92 mm Hg), and pulse rate is 78/min. BMI is 36 kg/m². Neck circumference is 47 cm (18.5 in). Examination is otherwise normal.
+  labs:
+    - [Potassium, 3.9 mEq/L]
+    - [Creatinine, 1.0 mg/dL]
+    - [Aldosterone-to-renin ratio, 6 (ng/dL)/(ng/mL/h) with suppressed aldosterone]
+    - [Thyroid-stimulating hormone, 2.0 µU/mL]
+  lead: Which of the following is the most appropriate next diagnostic step?
+  choices:
+    A: Adrenal vein sampling
+    B: CT angiography of the renal arteries
+    C: Plasma free metanephrines
+    D: Polysomnography
+    E: Serum cortisol after 1-mg dexamethasone
+  answer: D
+  explain: |
+    He has **resistant hypertension** (above goal on three drugs from different classes, including a diuretic, at optimal doses, with confirmed adherence and home readings). Primary aldosteronism — the most common secondary cause — has been screened and is unlikely.
+
+    **Obstructive sleep apnea (OSA)** is present in up to **60%–80%** of patients with resistant hypertension. His **loud snoring, witnessed apneas, daytime sleepiness, obesity and large neck** make it very likely. Use **STOP-BANG** to estimate pretest probability, then **polysomnography** (or home sleep apnea testing in uncomplicated cases).
+
+    Intermittent hypoxia and arousals raise **sympathetic tone** and aldosterone, causing nocturnal and daytime hypertension (often a **non-dipping** pattern). **CPAP** lowers blood pressure modestly (2–5 mm Hg) and improves sleepiness and **driving safety**. Next drug for resistant hypertension: **spironolactone** (PATHWAY-2).
+  why:
+    A: Adrenal vein sampling localizes aldosterone excess after primary aldosteronism is confirmed; his screening is negative.
+    B: Renal artery imaging is for suspected renovascular disease (abrupt onset, flash pulmonary edema, abdominal bruit, AKI with RAAS blockade); his clinical picture points to OSA.
+    C: He has no paroxysmal headaches, palpitations or sweating to suggest pheochromocytoma.
+    E: He has no cushingoid features.
+  objective: |
+    Screen patients with resistant hypertension and symptoms of obstructive sleep apnea with polysomnography; OSA is the most common comorbid condition in resistant hypertension.
+  refs:
+    - "2025 AHA/ACC multisociety guideline for the prevention, detection, evaluation and management of high blood pressure in adults. Hypertension / J Am Coll Cardiol 2025."
+    - "Carey RM, et al. Resistant hypertension: detection, evaluation, and management — AHA scientific statement. Hypertension 2018;72:e53."
+
+- id: CV-174
+  topic: Pheochromocytoma screening
+  task: Diagnosis/Testing
+  chapters: [cardiology/hypertension, endo/adrenal]
+  stem: |
+    A 42-year-old woman is evaluated for 6 months of episodic pounding headaches, palpitations, sweating and tremor lasting 10 to 20 minutes, several times a week. During two episodes, her home blood pressure was 210/120 mm Hg. Between episodes her blood pressure is mildly elevated. She has lost 3 kg (6.6 lb). She takes no medications, supplements or stimulants.
+
+    On physical examination, blood pressure is 152/96 mm Hg and pulse rate is 104/min. She is thin and anxious. There are no café-au-lait spots or neurofibromas. Thyroid examination is normal.
+  labs:
+    - [Fasting glucose, 118 mg/dL]
+    - [Thyroid-stimulating hormone, 1.9 µU/mL]
+    - [Potassium, 4.1 mEq/L]
+  lead: Which of the following is the most appropriate initial diagnostic test?
+  choices:
+    A: 123I-MIBG scintigraphy
+    B: CT of the adrenal glands
+    C: Plasma free metanephrines
+    D: Serum catecholamines during an episode
+    E: Urinary vanillylmandelic acid
+  answer: C
+  explain: |
+    The classic triad of **episodic headache, palpitations and sweating** with **paroxysmal hypertension** strongly suggests **pheochromocytoma** (or paraganglioma). Weight loss and impaired fasting glucose fit catecholamine excess.
+
+    **Biochemical diagnosis comes first**, then imaging:
+    1. **Plasma free metanephrines** (drawn supine after 30 minutes of rest) or **24-hour urinary fractionated metanephrines** — metanephrines are produced **continuously** inside the tumor, so they are sensitive even between episodes (sensitivity ~97%–99%)
+    2. If clearly elevated (>3–4× ULN): **CT or MRI** of the abdomen and pelvis
+    3. Functional imaging (⁶⁸Ga-DOTATATE PET, MIBG) for metastatic or extra-adrenal disease
+    4. **Genetic testing** for all patients (about 30%–40% have germline variants: MEN2, VHL, NF1, SDH)
+
+    Preoperative management: **alpha-blockade first** (phenoxybenzamine or doxazosin) for 10–14 days, then a beta-blocker if needed, plus volume and salt loading — never a beta-blocker first (unopposed alpha stimulation → hypertensive crisis).
+  why:
+    A: MIBG imaging localizes tumors after biochemical confirmation, mainly for metastatic or extra-adrenal disease.
+    B: Imaging before biochemical confirmation leads to adrenal incidentalomas and misdiagnosis.
+    D: Catecholamines are released episodically and have short half-lives; random levels are less sensitive than metanephrines.
+    E: VMA has poor sensitivity and is no longer recommended.
+  objective: |
+    Screen for pheochromocytoma with plasma free metanephrines (or 24-hour urinary fractionated metanephrines) before any imaging.
+  refs:
+    - "Lenders JWM, et al. Pheochromocytoma and paraganglioma: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2014;99:1915."
+    - "2025 AHA/ACC multisociety guideline for the prevention, detection, evaluation and management of high blood pressure in adults. Hypertension / J Am Coll Cardiol 2025."
+
+- id: CV-175
+  topic: Atherosclerotic renal artery stenosis
+  task: Treatment/Care Decisions
+  chapters: [cardiology/hypertension, renal/ckd]
+  stem: |
+    A 72-year-old man is evaluated after renal artery duplex ultrasonography, obtained because of an abdominal bruit, showed 70%–80% stenosis of the left renal artery. He has hypertension, hyperlipidemia, coronary artery disease and peripheral artery disease. He smokes. He has had no episodes of pulmonary edema. Medications are amlodipine, 10 mg daily, chlorthalidone, 25 mg daily, losartan, 100 mg daily, aspirin and atorvastatin, 80 mg daily.
+
+    On physical examination, blood pressure is 132/78 mm Hg (home average 128/76 mm Hg) and pulse rate is 66/min. An abdominal bruit is heard.
+  labs:
+    - [Creatinine, 1.3 mg/dL (1.2–1.3 mg/dL over the past 2 years)]
+    - [Potassium, 4.4 mEq/L]
+    - [Urine albumin-to-creatinine ratio, 60 mg/g]
+    - [Kidney sizes on ultrasonography, right 11.2 cm, left 10.0 cm]
+  lead: In addition to smoking cessation, which of the following is the most appropriate management?
+  choices:
+    A: Continue current medical therapy
+    B: Renal angiography with stent placement
+    C: Stop losartan
+    D: Surgical renal artery bypass
+    E: Switch losartan to hydralazine
+  answer: A
+  explain: |
+    **Atherosclerotic renal artery stenosis (RAS)** is common in older patients with diffuse atherosclerosis. Randomized trials (**ASTRAL**, **CORAL**) showed that **renal artery stenting added to optimal medical therapy** does **not** reduce cardiovascular events, kidney failure or death — and carries procedural risks (atheroemboli, dissection, contrast injury).
+
+    Management is **intensive medical therapy**: **ACE inhibitor or ARB** (safe and beneficial in unilateral RAS; monitor creatinine), other antihypertensives as needed, **high-intensity statin**, antiplatelet therapy and smoking cessation. His blood pressure and kidney function are stable.
+
+    | Consider revascularization in atherosclerotic RAS only for |
+    |---|
+    | **Recurrent "flash" pulmonary edema** or unstable angina from RAS |
+    | Rapidly progressive kidney failure from bilateral or solitary-kidney stenosis |
+    | Truly resistant hypertension despite optimal therapy |
+
+    **Fibromuscular dysplasia** (younger women, "string of beads") is different — angioplasty without stenting is effective.
+  why:
+    B: Stenting did not improve outcomes over medical therapy in CORAL and ASTRAL; he has no high-risk features.
+    C: ARBs are appropriate in unilateral RAS when creatinine is stable; stopping one would worsen blood pressure and albuminuria.
+    D: Surgical bypass carries higher risk and has no proven benefit in stable patients.
+    E: Hydralazine is less effective, causes reflex tachycardia and fluid retention, and loses the kidney and cardiovascular benefits of RAAS blockade.
+  objective: |
+    Treat stable atherosclerotic renal artery stenosis with optimal medical therapy (including RAAS blockade and statin); reserve revascularization for flash pulmonary edema, rapidly declining kidney function or truly refractory hypertension.
+  refs:
+    - "Cooper CJ, et al. Stenting and medical therapy for atherosclerotic renal-artery stenosis (CORAL). N Engl J Med 2014;370:13."
+    - "Bhalla V, et al. Revascularization for renovascular disease: a scientific statement from the AHA. Hypertension 2022;79:e128."
+
+- id: CV-176
+  topic: Spironolactone-induced gynecomastia
+  task: Pathophysiology/Basic Science
+  chapters: [cardiology/hypertension, cardiology/hfref]
+  stem: |
+    A 61-year-old man with resistant hypertension started spironolactone, 50 mg daily, 5 months ago, and his blood pressure is now at goal. He reports tender swelling under both nipples for 2 months and decreased libido. Other medications are amlodipine, chlorthalidone and lisinopril. He does not drink alcohol or use other medications or supplements.
+
+    On physical examination, blood pressure is 126/76 mm Hg. There is bilateral, tender, rubbery subareolar breast tissue about 3 cm in diameter, without masses, skin changes or nipple discharge. Testicular examination is normal.
+  labs:
+    - [Potassium, 4.7 mEq/L]
+    - [ALT, 22 U/L]
+    - [Thyroid-stimulating hormone, 1.8 µU/mL]
+  lead: Which of the following mechanisms best explains his breast enlargement?
+  choices:
+    A: Activation of estrogen receptors by the parent drug
+    B: Androgen receptor antagonism
+    C: Elevated prolactin from dopamine blockade
+    D: Increased hepatic production of sex hormone–binding globulin only
+    E: Inhibition of 5-alpha reductase
+  answer: B
+  explain: |
+    **Spironolactone** is a nonselective steroid mineralocorticoid receptor antagonist that also:
+    - **Blocks androgen receptors** (antiandrogen) — the main cause of **gynecomastia**, breast tenderness, decreased libido and erectile dysfunction
+    - Reduces testosterone synthesis and increases the conversion of testosterone to estradiol, raising the **estrogen-to-androgen ratio**
+    - Acts on progesterone receptors (menstrual irregularity in women)
+
+    Gynecomastia is dose-related (about 10% at 25 mg; more at ≥50 mg).
+
+    **Management**: switch to **eplerenone** — a **selective** mineralocorticoid antagonist with much less affinity for androgen and progesterone receptors, so gynecomastia is rare. (Eplerenone is less potent, so a higher equivalent dose is used; it has CYP3A4 interactions.) **Finerenone** is another nonsteroidal, selective option for diabetic CKD and HFpEF.
+  why:
+    A: Spironolactone does not act as an estrogen receptor agonist.
+    C: Hyperprolactinemia from dopamine antagonists (antipsychotics, metoclopramide) causes gynecomastia, but spironolactone is not a dopamine antagonist.
+    D: SHBG changes are not the main mechanism of spironolactone-induced gynecomastia.
+    E: 5-alpha reductase inhibitors (finasteride, dutasteride) can cause gynecomastia, but this is not spironolactone's mechanism.
+  objective: |
+    Spironolactone causes gynecomastia mainly through androgen receptor antagonism; switching to the selective mineralocorticoid antagonist eplerenone avoids it.
+  refs:
+    - "Pitt B, et al. Eplerenone, a selective aldosterone blocker, in patients with left ventricular dysfunction after MI (EPHESUS). N Engl J Med 2003;348:1309."
+    - "Braunstein GD. Gynecomastia. N Engl J Med 2007;357:1229."
+
+- id: CV-177
+  topic: Blood pressure in acute ischemic stroke
+  task: Treatment/Care Decisions
+  chapters: [cardiology/htn-emergency, neuro/stroke]
+  stem: |
+    A 68-year-old woman is brought to the emergency department 75 minutes after the sudden onset of right arm and face weakness and difficulty speaking. She has hypertension and takes amlodipine. She takes no anticoagulants.
+
+    On physical examination, blood pressure is 198/108 mm Hg on two measurements, pulse rate is 82/min and regular, and glucose by fingerstick is 132 mg/dL. She has expressive aphasia, right facial droop and right arm weakness (NIH Stroke Scale score 9).
+
+    Noncontrast CT of the head shows no hemorrhage. CT angiography shows no large-vessel occlusion. She meets all other criteria for intravenous thrombolysis.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Give thrombolysis without lowering blood pressure
+    B: Lower blood pressure over 24 hours, then reconsider thrombolysis
+    C: Lower blood pressure to below 140/90 mm Hg, then give thrombolysis
+    D: Lower blood pressure to below 185/110 mm Hg, then give thrombolysis
+    E: Give sublingual nifedipine, then give thrombolysis
+  answer: D
+  explain: |
+    In acute ischemic stroke, the brain's ischemic penumbra depends on **perfusion pressure**, so blood pressure is usually allowed to stay high — **except** when thrombolysis is planned, because high pressure increases the risk of **hemorrhagic transformation**.
+
+    | Situation (AHA/ASA 2019 acute stroke guideline) | BP target |
+    |---|---|
+    | **Before IV thrombolysis** (alteplase or tenecteplase) | **<185/110 mm Hg** |
+    | **During and 24 h after thrombolysis** | **<180/105 mm Hg** |
+    | No thrombolysis or thrombectomy | Treat only if **>220/120 mm Hg** (lower by about 15% in 24 h) |
+
+    Use **IV labetalol, nicardipine or clevidipine**. If BP cannot be kept below 185/110 mm Hg, do **not** give thrombolysis. Every minute counts — "time is brain" — so BP control must be rapid, not delayed for hours.
+
+    After thrombectomy with successful recanalization, aggressive BP lowering to <140 mm Hg systolic was **harmful** (ENCHANTED2/MT, OPTIMAL-BP); keep <180/105.
+  why:
+    A: Giving thrombolysis with blood pressure above 185/110 mm Hg increases the risk of intracranial hemorrhage.
+    B: Delaying thrombolysis by hours reduces its benefit; blood pressure should be lowered quickly to the threshold and treatment given.
+    C: Excessive lowering reduces penumbral perfusion and is not recommended.
+    E: Sublingual nifedipine causes abrupt, uncontrolled drops in pressure and is contraindicated.
+  objective: |
+    Before intravenous thrombolysis for acute ischemic stroke, lower blood pressure to <185/110 mm Hg with IV labetalol, nicardipine or clevidipine, then maintain <180/105 mm Hg for 24 hours.
+  refs:
+    - "Powers WJ, et al. 2019 update to the 2018 guidelines for the early management of acute ischemic stroke. Stroke 2019;50:e344."
+    - "Yang P, et al. Intensive blood pressure control after endovascular thrombectomy for acute ischaemic stroke (ENCHANTED2/MT). Lancet 2022;400:1585."
+
+- id: CV-178
+  topic: Atrial septal defect
+  task: Diagnosis/Testing
+  chapters: [cardiology/achd]
+  stem: |
+    A 38-year-old woman is evaluated for 1 year of progressive exertional dyspnea and occasional palpitations. She has no other medical history.
+
+    On physical examination, blood pressure is 112/70 mm Hg and pulse rate is 76/min and regular. There is a right ventricular heave. A grade 2/6 midsystolic murmur is heard at the left upper sternal border. The second heart sound is widely split, and the split does not vary with respiration. There is no clubbing or cyanosis.
+
+    Electrocardiogram shows sinus rhythm, right axis deviation and an rsR′ pattern in lead V1 with a QRS duration of 0.10 second. Chest radiograph shows an enlarged right heart and prominent pulmonary arteries.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Ostium primum atrial septal defect
+    B: Patent ductus arteriosus
+    C: Pulmonic valve stenosis
+    D: Secundum atrial septal defect
+    E: Ventricular septal defect
+  answer: D
+  explain: |
+    A **secundum atrial septal defect** (the most common ASD, in the fossa ovalis) often goes unnoticed until adulthood. Left-to-right shunting at the atrial level volume-overloads the **right atrium, right ventricle and pulmonary arteries**.
+
+    Classic findings:
+    - **Wide, fixed splitting of S₂** — the shunt equalizes respiratory changes in RV filling, so pulmonic closure is always delayed
+    - **Pulmonic flow murmur** (left upper sternal border) — from increased flow across a normal pulmonic valve, not across the defect itself
+    - RV heave; sometimes a tricuspid diastolic flow rumble
+    - ECG: **incomplete RBBB** (rsR′ in V1) with **right axis deviation**
+    - Late complications: **atrial arrhythmias**, pulmonary hypertension, paradoxical embolism, RV failure
+
+    **Closure** (percutaneous device for secundum defects) is indicated for **RV enlargement** with a significant shunt (Qp:Qs ≥1.5), as long as pulmonary vascular resistance is not severely elevated.
+
+    | Defect | ECG axis | Note |
+    |---|---|---|
+    | **Secundum ASD** | **Right** | Device closure |
+    | **Primum ASD** | **Left** | Cleft mitral valve; surgery |
+    | Sinus venosus ASD | Right (ectopic atrial rhythm) | Anomalous pulmonary veins; surgery |
+  why:
+    A: Primum ASD typically shows left axis deviation and often a cleft mitral valve with mitral regurgitation.
+    B: PDA causes a continuous "machinery" murmur at the left infraclavicular area with left-heart volume overload.
+    C: Pulmonic stenosis causes an ejection click and a widely split S₂ that still varies with respiration, without pulmonary plethora.
+    E: A VSD causes a harsh holosystolic murmur at the left lower sternal border and left-heart volume overload.
+  objective: |
+    Recognize secundum ASD by fixed splitting of S₂, a pulmonic flow murmur, RV enlargement, and incomplete RBBB with right axis deviation.
+  refs:
+    - "Gurvitz M, et al. 2025 ACC/AHA/HRS/ISACHD/SCAI guideline for the management of adults with congenital heart disease. Circulation 2026;153:e115."
+
+- id: CV-179
+  topic: Patent foramen ovale and cryptogenic stroke
+  task: Treatment/Care Decisions
+  chapters: [cardiology/achd, neuro/stroke]
+  stem: |
+    A 44-year-old man is evaluated 3 weeks after an ischemic stroke that caused left hand weakness, now resolved. MRI showed a single cortical infarct in the right middle cerebral artery territory. He does not smoke and has no hypertension, diabetes or hyperlipidemia.
+
+    Evaluation showed no large-artery stenosis on CT angiography, normal left ventricular function, no atrial fibrillation on 30 days of ambulatory monitoring, and no hypercoagulable disorder. Transesophageal echocardiography with agitated saline shows a patent foramen ovale with a large right-to-left shunt (>20 microbubbles) and an atrial septal aneurysm. His RoPE score is 8. He takes aspirin and atorvastatin.
+
+    On physical examination, blood pressure is 118/72 mm Hg and pulse rate is 68/min. Neurologic examination is normal.
+  lead: Which of the following is the most appropriate management to prevent recurrent stroke?
+  choices:
+    A: Aspirin alone
+    B: Lifelong apixaban
+    C: Lifelong warfarin
+    D: No antithrombotic therapy
+    E: PFO closure plus antiplatelet therapy
+  answer: E
+  explain: |
+    He has an **embolic stroke of undetermined source** with **no other cause** after a thorough workup, and a **PFO with high-risk features** (**large shunt, atrial septal aneurysm**). The **RoPE score** (young age, no vascular risk factors, cortical infarct) of **8** indicates the PFO is very likely the cause (attributable fraction ~84%).
+
+    Three randomized trials (**CLOSE, REDUCE, RESPECT**) showed that **PFO closure plus antiplatelet therapy reduced recurrent stroke** compared with antiplatelet therapy alone in patients **aged 18–60**. The 2020 AAN advisory, 2021 AHA/ASA secondary prevention guideline and SCAI guideline support closure (after shared decision-making) in this group, especially with high-risk anatomy.
+
+    Complications of closure: **atrial fibrillation** (usually transient, early), device thrombus or erosion (rare).
+
+    Closure is **not** recommended for migraine alone, for patients older than 60 (data limited), or when another stroke mechanism is present.
+  why:
+    A: Antiplatelet therapy alone had a higher recurrence rate than closure plus antiplatelet therapy in high-risk PFO.
+    B: DOACs have not been shown superior to aspirin for PFO-associated stroke and carry more bleeding over decades.
+    C: Long-term warfarin carries bleeding risk and has not proved better than closure.
+    D: Withholding antithrombotic therapy after an ischemic stroke is inappropriate.
+  objective: |
+    In patients aged 18–60 with an embolic stroke and no other cause, PFO closure plus antiplatelet therapy reduces recurrence, especially with a large shunt or atrial septal aneurysm.
+  refs:
+    - "Messé SR, et al. Practice advisory update summary: patent foramen ovale and secondary stroke prevention. Neurology 2020;94:876."
+    - "Kleindorfer DO, et al. 2021 guideline for the prevention of stroke in patients with stroke and transient ischemic attack. Stroke 2021;52:e364."
+
+- id: CV-180
+  topic: Coarctation of the aorta
+  task: Diagnosis/Testing
+  chapters: [cardiology/achd, cardiology/hypertension]
+  stem: |
+    A 24-year-old man is evaluated for hypertension discovered at a college sports physical. He has occasional headaches and leg fatigue when running. He takes no medications or supplements and does not use stimulants.
+
+    On physical examination, blood pressure is 164/88 mm Hg in the right arm, 160/86 mm Hg in the left arm and 112/70 mm Hg in the legs. Femoral pulses are weak and delayed compared with the radial pulses. A grade 2/6 systolic murmur is heard over the left infrascapular area of the back, and an early systolic ejection click is heard at the apex.
+
+    Electrocardiogram shows left ventricular hypertrophy. Chest radiograph shows notching of the inferior borders of the posterior ribs and an indentation of the descending aorta.
+  labs:
+    - [Potassium, 4.2 mEq/L]
+    - [Creatinine, 0.9 mg/dL]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Coarctation of the aorta
+    B: Fibromuscular dysplasia of the renal arteries
+    C: Pheochromocytoma
+    D: Primary aldosteronism
+    E: Takayasu arteritis
+  answer: A
+  explain: |
+    **Coarctation of the aorta** is a narrowing of the descending aorta, usually just **distal to the left subclavian artery**. In adults it presents as **hypertension in the arms** with **lower pressure and weak, delayed pulses in the legs**.
+
+    Key findings:
+    - **Arm–leg BP gradient** (>20 mm Hg) and **brachial–femoral pulse delay**
+    - **Systolic murmur over the back** (across the coarctation) and continuous murmurs from **collateral intercostal arteries**
+    - **Rib notching** (erosion by enlarged intercostal collaterals) and the **"figure 3" sign** on chest radiograph
+    - **Bicuspid aortic valve** in about 50%–70% (the ejection click here); also intracranial (berry) aneurysms; **Turner syndrome** in women
+
+    Confirm with **CT or MR angiography**. Treat with **stent or surgical repair** when the gradient is significant (≥20 mm Hg, or less with collaterals). Lifelong follow-up is needed for **recoarctation, aneurysm and persistent hypertension**.
+  why:
+    B: Renal artery FMD causes hypertension without an arm–leg pressure gradient, rib notching or a murmur over the back.
+    C: Pheochromocytoma causes paroxysmal hypertension with headache, sweating and palpitations, not a fixed arm–leg gradient.
+    D: Primary aldosteronism causes hypertension (often with hypokalemia) but not unequal upper and lower extremity pressures.
+    E: Takayasu arteritis typically affects young women and causes arm (subclavian) pulse deficits and arm–arm pressure differences, with systemic inflammation.
+  objective: |
+    Suspect coarctation of the aorta in young adults with hypertension, an arm–leg blood pressure gradient, delayed femoral pulses and rib notching; look for an associated bicuspid aortic valve.
+  refs:
+    - "Gurvitz M, et al. 2025 ACC/AHA/HRS/ISACHD/SCAI guideline for the management of adults with congenital heart disease. Circulation 2026;153:e115."
+
+- id: CV-181
+  topic: Mechanical heart valve in pregnancy
+  task: Treatment/Care Decisions
+  chapters: [cardiology/pregnancy-heart, cardiology/valve-disease]
+  stem: |
+    A 30-year-old woman with a bileaflet mechanical mitral valve, placed 5 years ago for rheumatic mitral stenosis, calls her cardiologist because a home pregnancy test is positive. Her last menstrual period was 5 weeks ago. She takes warfarin, 7.5 mg daily, which has kept her INR between 2.5 and 3.5. She wishes to continue the pregnancy.
+
+    On examination at the visit, blood pressure is 108/66 mm Hg and pulse rate is 82/min. Crisp mechanical valve clicks are heard.
+
+    Echocardiogram shows a normally functioning mitral prosthesis.
+  lead: Which of the following is the most appropriate anticoagulation management for the first trimester?
+  choices:
+    A: Apixaban
+    B: Aspirin alone
+    C: Continue warfarin, 7.5 mg daily
+    D: Dose-adjusted low-molecular-weight heparin
+    E: Prophylactic-dose low-molecular-weight heparin
+  answer: D
+  explain: |
+    Mechanical valves in pregnancy carry a high risk of **valve thrombosis** (pregnancy is hypercoagulable) and of **fetal harm** from warfarin. Warfarin crosses the placenta; exposure in **weeks 6–12** causes **warfarin embryopathy** (nasal hypoplasia, stippled epiphyses), and the risk is **dose-dependent**.
+
+    | Warfarin dose | First trimester (weeks 6–12) — 2020 ACC/AHA, 2025 ESC |
+    |---|---|
+    | **≤5 mg/day** | Continuing warfarin is reasonable (lowest valve thrombosis risk) after counseling |
+    | **>5 mg/day** | **Switch to dose-adjusted LMWH** twice daily (target **anti-Xa peak** about 0.8–1.2 U/mL, check troughs) or continuous IV UFH (aPTT ≥2× control) |
+
+    She takes **7.5 mg/day**, so switch to **therapeutic, dose-adjusted LMWH** with **weekly anti-Xa monitoring** (doses must rise as pregnancy progresses). Warfarin may be resumed in the second and third trimesters, then switch to **IV UFH** before planned delivery. Pregnancy should be managed by a **pregnancy heart team** at an experienced center.
+  why:
+    A: DOACs are contraindicated with mechanical valves and are not recommended in pregnancy.
+    B: Aspirin alone provides inadequate protection against mechanical valve thrombosis.
+    C: At doses above 5 mg/day, warfarin carries a substantially higher risk of embryopathy and fetal loss.
+    E: Fixed prophylactic LMWH doses lead to valve thrombosis; LMWH must be therapeutic and adjusted to anti-Xa levels.
+  objective: |
+    In pregnant women with mechanical valves who need more than 5 mg/day of warfarin, switch to dose-adjusted LMWH (anti-Xa monitoring) or IV UFH during weeks 6–12.
+  refs:
+    - "Otto CM, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease. Circulation 2021;143:e72."
+    - "2025 ESC guidelines for the management of cardiovascular disease and pregnancy. Eur Heart J 2025 (doi:10.1093/eurheartj/ehaf193)."
+
+- id: CV-182
+  topic: Elective surgery after drug-eluting stent
+  task: Treatment/Care Decisions
+  chapters: [geri/preop, cardiology/sihd]
+  stem: |
+    A 67-year-old man is referred for preoperative evaluation before elective total knee arthroplasty. Ten weeks ago he underwent elective PCI with a drug-eluting stent in the right coronary artery for stable angina refractory to medical therapy. He now has no chest pain. Medications are aspirin, clopidogrel, metoprolol, atorvastatin and lisinopril. The orthopedic surgeon requires clopidogrel to be stopped before surgery. His knee pain is moderate and controlled with acetaminophen and physical therapy.
+
+    On physical examination, blood pressure is 128/76 mm Hg and pulse rate is 60/min. Examination is otherwise normal.
+  lead: Which of the following is the most appropriate recommendation?
+  choices:
+    A: Postpone surgery until at least 6 months after PCI
+    B: Proceed with surgery now after stopping aspirin and clopidogrel for 7 days
+    C: Proceed with surgery now after stopping clopidogrel, with heparin bridging
+    D: Proceed with surgery now while continuing aspirin and clopidogrel
+    E: Replace clopidogrel with warfarin for the perioperative period
+  answer: A
+  explain: |
+    Noncardiac surgery soon after a **drug-eluting stent (DES)** raises the risk of **stent thrombosis and MI**, especially if antiplatelet therapy must be interrupted — surgery creates a prothrombotic, inflammatory state.
+
+    2024 AHA/ACC perioperative guideline:
+
+    | After PCI with DES | Elective noncardiac surgery |
+    |---|---|
+    | **Stable CAD (elective PCI)** | **Delay ≥6 months** (≥3 months may be considered if the risk of further delay exceeds stent risk) |
+    | **ACS** | **Delay ≥12 months** (≥6 months may be considered if needed) |
+    | Balloon angioplasty without stent | ≥14 days |
+
+    His knee surgery is **truly elective** and his pain is controlled, so the safest choice is to **wait until 6 months** after PCI. If surgery cannot wait and the P2Y12 inhibitor must stop, **continue aspirin** throughout, stop clopidogrel 5 days before, and **restart within 24–48 hours** after surgery.
+  why:
+    B: Stopping both antiplatelet drugs 10 weeks after DES implantation markedly increases the risk of stent thrombosis.
+    C: Heparin bridging does not protect against stent thrombosis (it is not an antiplatelet agent) and increases bleeding.
+    D: Dual antiplatelet therapy during joint replacement increases bleeding, and the surgeon has already said clopidogrel must stop; delaying elective surgery is safer.
+    E: Warfarin does not prevent stent thrombosis.
+  objective: |
+    Delay elective noncardiac surgery for at least 6 months after drug-eluting stent placement for stable coronary disease (12 months after ACS); continue aspirin if surgery cannot wait.
+  refs:
+    - "Thompson A, et al. 2024 AHA/ACC/multisociety guideline for perioperative cardiovascular management for noncardiac surgery. Circulation 2024;150:e351."

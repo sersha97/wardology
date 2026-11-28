@@ -274,7 +274,7 @@
     E: Unsynchronized defibrillation
   answer: D
   explain: |
-    She has **monomorphic ventricular tachycardia with a pulse** and signs of **instability**: hypotension, altered mental status, signs of shock and chest pain. The AHA adult ACLS algorithm calls for **immediate synchronized cardioversion** (with sedation if time allows). The 2025 AHA guidelines suggest starting at a higher energy (for example **200 J biphasic**), escalating if unsuccessful.
+    She has **monomorphic ventricular tachycardia with a pulse** and signs of **instability**: hypotension, altered mental status, signs of shock and chest pain. The AHA adult ACLS algorithm calls for **immediate synchronized cardioversion** (with sedation if time allows), escalating the energy if the first shock is unsuccessful.
 
     **Synchronization** times the shock to the R wave and avoids delivering energy during the vulnerable T wave, which could cause ventricular fibrillation.
 
