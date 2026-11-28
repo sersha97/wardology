@@ -85,6 +85,15 @@ def main(argv):
     for t, ids in topics.items():
         if len(ids) > 1 and ids_in_scope & set(ids):
             problems.append(f"duplicate topic '{t}': {', '.join(ids)}")
+    stop = {"the", "a", "of", "in", "and", "with", "for", "to", "on", "—", "-", "after", "before", "acute", "chronic"}
+    def words(t):
+        return {w for w in re.findall(r"[a-z0-9₁₂]+", t) if w not in stop}
+    tl = list(topics.items())
+    for i, (t1, ids1) in enumerate(tl):
+        for t2, ids2 in tl[i + 1:]:
+            w1, w2 = words(t1), words(t2)
+            if w1 and w2 and len(w1 & w2) / len(w1 | w2) >= 0.6 and ids_in_scope & set(ids1 + ids2):
+                problems.append(f"similar topics (check for the same concept): '{t1}' {ids1} ~ '{t2}' {ids2}")
     for s, ids in stems.items():
         if len(ids) > 1 and ids_in_scope & set(ids):
             problems.append(f"near-identical stems: {', '.join(ids)}")

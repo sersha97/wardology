@@ -756,7 +756,7 @@
   explain: |
     In acute ischemic stroke, the brain's ischemic penumbra depends on **perfusion pressure**, so blood pressure is usually allowed to stay high — **except** when thrombolysis is planned, because high pressure increases the risk of **hemorrhagic transformation**.
 
-    | Situation (AHA/ASA 2019 acute stroke guideline) | BP target |
+    | Situation (AHA/ASA 2026 acute ischemic stroke guideline) | BP target |
     |---|---|
     | **Before IV thrombolysis** (alteplase or tenecteplase) | **<185/110 mm Hg** |
     | **During and 24 h after thrombolysis** | **<180/105 mm Hg** |
@@ -773,7 +773,7 @@
   objective: |
     Before intravenous thrombolysis for acute ischemic stroke, lower blood pressure to <185/110 mm Hg with IV labetalol, nicardipine or clevidipine, then maintain <180/105 mm Hg for 24 hours.
   refs:
-    - "Powers WJ, et al. 2019 update to the 2018 guidelines for the early management of acute ischemic stroke. Stroke 2019;50:e344."
+    - "Prabhakaran S, et al. 2026 guideline for the early management of patients with acute ischemic stroke. Stroke 2026 (doi:10.1161/STR.0000000000000513)."
     - "Yang P, et al. Intensive blood pressure control after endovascular thrombectomy for acute ischaemic stroke (ENCHANTED2/MT). Lancet 2022;400:1585."
 
 - id: CV-178
