@@ -1,0 +1,481 @@
+# Cardiovascular Disease — batch 2g: cardiomyopathies, pericardial constriction, cardio-oncology, HCM (ABIM CERT)
+- id: CV-129
+  topic: Transthyretin cardiac amyloidosis
+  task: Diagnosis/Testing
+  chapters: [cardiology/cardiomyopathies]
+  stem: |
+    A 78-year-old man is evaluated for 6 months of exertional dyspnea and ankle swelling. He had bilateral carpal tunnel release 8 years ago and has lumbar spinal stenosis. He has hypertension that has become easier to control; his amlodipine was stopped last year because of lightheadedness.
+
+    On physical examination, blood pressure is 108/68 mm Hg and pulse rate is 72/min. Jugular venous pressure is 10 cm H₂O, and there is 1+ ankle edema.
+
+    Electrocardiogram shows low QRS voltage in the limb leads and a pseudoinfarct pattern in V1 through V3. Echocardiogram shows a left ventricular wall thickness of 17 mm, left ventricular ejection fraction of 52%, a granular "sparkling" myocardium and an apical-sparing pattern of longitudinal strain. Cardiac biomarkers are mildly elevated.
+
+    A technetium-99m pyrophosphate (PYP) scan is being considered.
+  lead: Which of the following tests should be performed before the PYP scan result can be used to diagnose transthyretin amyloidosis?
+  choices:
+    A: Cardiac MRI with gadolinium
+    B: Endomyocardial biopsy
+    C: Serum free light chains and immunofixation
+    D: Transthyretin gene sequencing
+    E: Urine albumin-to-creatinine ratio
+  answer: C
+  explain: |
+    Everything points to **cardiac amyloidosis**: HFpEF in an older man, **LV wall thickening with low ECG voltage** (voltage–mass discordance), apical-sparing strain, intolerance of antihypertensives, and the classic extracardiac clues of **transthyretin (ATTR) amyloid** — **bilateral carpal tunnel syndrome** (often 5–10 years earlier) and **lumbar spinal stenosis**.
+
+    Two types cause nearly all cardiac amyloidosis:
+    - **AL** (light-chain) — a plasma cell disorder; rapidly fatal without urgent chemotherapy
+    - **ATTR** — wild-type (age-related) or hereditary (V122I common in Black Americans)
+
+    A **PYP (or DPD/HMDP) scan with grade 2–3 myocardial uptake** diagnoses ATTR **without biopsy** — but only **if AL has been excluded**, because some AL deposits also take up the tracer. So **serum free light chains plus serum and urine immunofixation** must be done first (or at the same time).
+
+    :::flow
+    Q: Monoclonal protein present (abnormal κ/λ ratio or immunofixation)?
+    Y: Possible AL → tissue biopsy (fat pad, bone marrow, endomyocardial) and hematology referral now
+    N: PYP grade 2–3 → ATTR confirmed → TTR gene testing to separate hereditary from wild-type
+    :::
+  why:
+    A: Cardiac MRI supports amyloidosis (diffuse late gadolinium enhancement, high extracellular volume) but cannot distinguish AL from ATTR.
+    B: Biopsy is needed only when a monoclonal protein is found or the noninvasive results are discordant.
+    D: TTR gene sequencing follows a confirmed ATTR diagnosis to separate hereditary from wild-type disease.
+    E: Albuminuria may suggest renal AL involvement, but it does not exclude AL and is not part of the required pathway.
+  objective: |
+    Before diagnosing ATTR cardiac amyloidosis by a positive PYP scan, exclude AL amyloidosis with serum free light chains and serum and urine immunofixation.
+  refs:
+    - "Kittleson MM, et al. 2023 ACC expert consensus decision pathway on comprehensive multidisciplinary care for the patient with cardiac amyloidosis. J Am Coll Cardiol 2023;81:1076."
+    - "Gillmore JD, et al. Nonbiopsy diagnosis of cardiac transthyretin amyloidosis. Circulation 2016;133:2404."
+
+- id: CV-130
+  topic: ATTR cardiomyopathy treatment
+  task: Treatment/Care Decisions
+  chapters: [cardiology/cardiomyopathies]
+  stem: |
+    A 79-year-old man was diagnosed 1 month ago with wild-type transthyretin amyloid cardiomyopathy: grade 3 myocardial uptake on technetium-99m pyrophosphate scan, normal serum free light chain ratio and negative serum and urine immunofixation, and no pathogenic TTR variant. He has dyspnea climbing one flight of stairs (NYHA class II). Medications are furosemide and apixaban for paroxysmal atrial fibrillation.
+
+    On physical examination, blood pressure is 106/66 mm Hg and pulse rate is 70/min. He is euvolemic.
+
+    Echocardiogram shows left ventricular ejection fraction of 50%.
+  labs:
+    - [Estimated glomerular filtration rate, 52 mL/min/1.73 m²]
+    - [NT-proBNP, 2,400 pg/mL]
+  lead: Which of the following is the most appropriate disease-specific treatment?
+  choices:
+    A: Bortezomib, cyclophosphamide and dexamethasone
+    B: Digoxin
+    C: Diltiazem
+    D: Doxycycline plus ursodeoxycholic acid
+    E: Tafamidis
+  answer: E
+  explain: |
+    Transthyretin is a **tetramer** made in the liver. In ATTR amyloidosis, the tetramer **dissociates into monomers**, which misfold and deposit as amyloid fibrils in the heart.
+
+    **TTR stabilizers** bind the tetramer and prevent dissociation:
+    - **Tafamidis** — in **ATTR-ACT**, reduced all-cause mortality and cardiovascular hospitalization and slowed functional decline in NYHA I–III ATTR-CM
+    - **Acoramidis** — reduced the composite of death and cardiovascular events (ATTRibute-CM)
+
+    **TTR silencers** (siRNA or antisense; **vutrisiran** reduced death and cardiovascular events in HELIOS-B) cut TTR production in the liver.
+
+    Benefit is greatest when started early (NYHA I–II). Supportive care: loop diuretics, anticoagulation for AF regardless of CHA₂DS₂-VASc; avoid drugs that patients with amyloid tolerate poorly.
+  why:
+    A: Plasma cell–directed chemotherapy treats AL amyloidosis, which has been excluded.
+    B: Digoxin binds amyloid fibrils and causes toxicity at normal serum levels; it is generally avoided and has no disease-modifying effect.
+    C: Nondihydropyridine calcium channel blockers bind amyloid fibrils and can cause profound hypotension, heart block and worsening heart failure.
+    D: Doxycycline–ursodiol was studied as a fibril disruptor but has not shown outcome benefit and is not standard therapy.
+  pearl: |
+    In cardiac amyloidosis, **anticoagulate AF regardless of CHA₂DS₂-VASc** — atrial thrombus is very common, even in sinus rhythm.
+  objective: |
+    Treat transthyretin amyloid cardiomyopathy with a TTR stabilizer (tafamidis or acoramidis) or silencer (vutrisiran); avoid digoxin and nondihydropyridine calcium channel blockers.
+  refs:
+    - "Maurer MS, et al. Tafamidis treatment for patients with transthyretin amyloid cardiomyopathy (ATTR-ACT). N Engl J Med 2018;379:1007."
+    - "Kittleson MM, et al. 2023 ACC expert consensus decision pathway on comprehensive multidisciplinary care for the patient with cardiac amyloidosis. J Am Coll Cardiol 2023;81:1076."
+    - "Fontana M, et al. Vutrisiran in patients with transthyretin amyloidosis with cardiomyopathy (HELIOS-B). N Engl J Med 2025;392:33."
+
+- id: CV-131
+  topic: Constrictive pericarditis
+  task: Diagnosis/Testing
+  chapters: [cardiology/pericarditis]
+  stem: |
+    A 62-year-old man is evaluated for 8 months of progressive abdominal swelling, leg edema and fatigue. He received mediastinal radiation for Hodgkin lymphoma at age 28 and underwent coronary artery bypass grafting 4 years ago. He does not drink alcohol.
+
+    On physical examination, blood pressure is 108/72 mm Hg and pulse rate is 92/min and regular. Jugular venous pressure is 18 cm H₂O, rises with inspiration, and shows a prominent y descent. An early diastolic sound is heard at the left sternal border. There is shifting dullness and 3+ leg edema. There are no stigmata of chronic liver disease.
+
+    Echocardiogram shows normal left ventricular size and ejection fraction (60%), normal wall thickness, an abnormal septal "bounce" with respiratory ventricular interdependence, more than 25% respiratory variation in mitral inflow, and a medial mitral annular e′ velocity higher than the lateral e′. Chest CT shows pericardial thickening (6 mm) with calcification.
+  labs:
+    - [Serum–ascites albumin gradient, 1.4 g/dL]
+    - [Ascitic fluid total protein, 3.2 g/dL]
+    - [NT-proBNP, 180 pg/mL]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Cardiac amyloidosis
+    B: Cardiac tamponade
+    C: Cirrhosis
+    D: Constrictive pericarditis
+    E: Right ventricular infarction
+  answer: D
+  explain: |
+    **Constrictive pericarditis**: a stiff, fibrotic (often calcified) pericardium limits diastolic filling of both ventricles. Common causes in the United States: **prior cardiac surgery, mediastinal radiation**, idiopathic/viral pericarditis; tuberculosis worldwide.
+
+    Clues:
+    - **Right-sided failure** out of proportion (ascites, edema, high JVP) with a normal LV
+    - **Kussmaul sign** (JVP rises with inspiration) and a **steep y descent**
+    - **Pericardial knock** — early diastolic sound as filling stops abruptly
+    - **Ventricular interdependence**: septal bounce, exaggerated respiratory variation in inflow
+    - **Annulus reversus** (medial e′ ≥ lateral e′) and preserved e′ — the myocardium relaxes normally
+    - **High-protein ascites with SAAG ≥1.1** (like cardiac ascites)
+    - **Low or mildly elevated natriuretic peptides** (the constrained myocardium is not stretched)
+
+    Treatment: diuretics for symptoms; **pericardiectomy** for chronic constriction (transient/inflammatory constriction may respond to anti-inflammatory therapy).
+
+    | | Constriction | Restrictive cardiomyopathy |
+    |---|---|---|
+    | Pericardium | Thick, calcified | Normal |
+    | Septal motion | **Bounce**, respiratory shift | Normal |
+    | Tissue Doppler e′ | **Normal**, medial ≥ lateral | **Low** |
+    | BNP | Normal–mild | **High** |
+    | Respiratory variation in inflow | >25% | <10% |
+  why:
+    A: Amyloidosis is a restrictive cardiomyopathy with thick walls, low e′ velocities and high natriuretic peptides.
+    B: Tamponade requires a pericardial effusion and shows pulsus paradoxus with an absent y descent.
+    C: Cirrhosis does not raise the JVP or cause Kussmaul sign; ascitic protein is usually low (<2.5 g/dL) in cirrhosis.
+    E: RV infarction is acute and associated with inferior MI.
+  pearl: |
+    Unexplained **"cirrhosis" with high-protein ascites and a high JVP** — look at the neck veins and the pericardium.
+  objective: |
+    Recognize constrictive pericarditis (Kussmaul sign, pericardial knock, septal bounce, preserved e′ with annulus reversus, low BNP) after cardiac surgery or radiation, and distinguish it from restrictive cardiomyopathy.
+  refs:
+    - "Welch TD, et al. Echocardiographic diagnosis of constrictive pericarditis: Mayo Clinic criteria. Circ Cardiovasc Imaging 2014;7:526."
+    - "Adler Y, et al. 2015 ESC guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921."
+
+- id: CV-132
+  topic: Acute myocarditis
+  task: Diagnosis/Testing
+  chapters: [cardiology/cardiomyopathies]
+  stem: |
+    A 26-year-old man comes to the emergency department because of 1 day of constant substernal chest pain. Ten days ago he had fever, sore throat and myalgia that resolved. He takes no medications and does not use drugs.
+
+    On physical examination, temperature is 37.4 °C (99.3 °F), blood pressure is 124/76 mm Hg, pulse rate is 104/min, and respiration rate is 18/min. Oxygen saturation is 98% breathing ambient air. There is no friction rub. The lungs are clear.
+
+    Electrocardiogram shows sinus tachycardia with 1-mm ST-segment elevation in leads I, aVL and V4 through V6. Echocardiogram shows mild lateral wall hypokinesis with a left ventricular ejection fraction of 48% and no effusion. Coronary CT angiography shows normal coronary arteries.
+  labs:
+    - [High-sensitivity troponin I, 4,200 ng/L (reference <20)]
+    - [C-reactive protein, 38 mg/L]
+    - [Leukocyte count, 9,800/µL]
+  lead: Which of the following is the most appropriate next diagnostic test?
+  choices:
+    A: Cardiac MRI
+    B: Endomyocardial biopsy
+    C: Exercise stress testing
+    D: Invasive coronary angiography
+    E: Viral serologic panel
+  answer: A
+  explain: |
+    A young adult with a **recent viral illness**, chest pain, **high troponin**, ST changes, a regional wall-motion abnormality and **normal coronary arteries** most likely has **acute myocarditis** (or myopericarditis).
+
+    **Cardiac MRI** is the key noninvasive test. The **Lake Louise criteria** require:
+    - **T2-based** findings of **myocardial edema**, and
+    - **T1-based** findings of injury: **non-ischemic late gadolinium enhancement** (subepicardial or midwall, not subendocardial), raised T1 or extracellular volume
+
+    **Endomyocardial biopsy** is reserved for **fulminant or high-risk** presentations: cardiogenic shock, new HF with a dilated LV unresponsive to treatment, **sustained ventricular arrhythmias or high-grade AV block**, or suspected giant cell or eosinophilic myocarditis.
+
+    Management of uncomplicated myocarditis: supportive care, GDMT if EF is reduced, avoid NSAIDs if LV function is impaired (debated), and **restrict competitive sports and strenuous exercise for 3–6 months**.
+  why:
+    B: Biopsy is invasive and reserved for fulminant illness, heart block, ventricular arrhythmias or failure to improve.
+    C: Exercise testing during acute myocarditis can precipitate arrhythmias and is contraindicated.
+    D: CT angiography has already excluded coronary disease.
+    E: Viral serologies rarely change management and do not establish myocardial involvement.
+  objective: |
+    Use cardiac MRI (Lake Louise criteria) to diagnose suspected acute myocarditis after coronary disease is excluded; reserve endomyocardial biopsy for high-risk presentations.
+  refs:
+    - "Drazner MH, et al. 2024 ACC expert consensus decision pathway on strategies and criteria for the diagnosis and management of myocarditis. J Am Coll Cardiol 2025;85:391."
+    - "Ferreira VM, et al. Cardiovascular magnetic resonance in nonischemic myocardial inflammation: expert recommendations. J Am Coll Cardiol 2018;72:3158."
+
+- id: CV-133
+  topic: Immune checkpoint inhibitor myocarditis
+  task: Treatment/Care Decisions
+  chapters: [cardiology/cardio-oncology, cardiology/cardiomyopathies]
+  stem: |
+    A 70-year-old man with metastatic melanoma comes to the emergency department because of 5 days of muscle aches, weakness, drooping eyelids, double vision and new dyspnea. He began combination therapy with nivolumab and ipilimumab 3 weeks ago.
+
+    On physical examination, temperature is 37.2 °C (99.0 °F), blood pressure is 118/72 mm Hg, pulse rate is 48/min, and respiration rate is 20/min. Oxygen saturation is 95% breathing ambient air. There is bilateral ptosis and proximal muscle weakness with tenderness. The lungs are clear.
+
+    Electrocardiogram shows a new right bundle branch block and Mobitz type II second-degree AV block. Echocardiogram shows a left ventricular ejection fraction of 55%. Coronary angiography shows no obstructive coronary disease.
+  labs:
+    - [High-sensitivity troponin T, 1,850 ng/L (reference <14)]
+    - [Creatine kinase, 6,400 U/L]
+    - [Acetylcholine receptor antibodies, pending]
+  lead: In addition to stopping immunotherapy and placing a temporary pacemaker, which of the following is the most appropriate treatment?
+  choices:
+    A: Continue nivolumab with close monitoring
+    B: Intravenous immune globulin alone
+    C: Intravenous methylprednisolone, 1 g daily
+    D: Oral prednisone, 10 mg daily
+    E: Permanent pacemaker implantation without immunosuppression
+  answer: C
+  explain: |
+    **Immune checkpoint inhibitor (ICI) myocarditis** is uncommon (about 1%) but has a **mortality of up to 25%–50%**. It occurs early — usually within the **first 1–3 months** — and is more frequent with **combination PD-1 plus CTLA-4** therapy.
+
+    It often occurs as an overlap syndrome, the **"triple M"**: **myocarditis + myositis + myasthenia gravis–like** illness (ptosis, diplopia, respiratory muscle weakness). A preserved ejection fraction does **not** mean mild disease — conduction disease, high troponin and arrhythmias predict death.
+
+    Treatment:
+    - **Stop the ICI permanently** (for severe disease)
+    - **High-dose IV methylprednisolone (500–1,000 mg daily for 3–5 days)**, then oral taper — started **without waiting** for biopsy or MRI
+    - Steroid-refractory disease: **abatacept**, mycophenolate, ATG, IVIG or plasma exchange (for myasthenic features); ruxolitinib in some protocols
+    - Telemetry, temporary pacing, respiratory monitoring (negative inspiratory force)
+  why:
+    A: Continuing the checkpoint inhibitor in severe myocarditis risks death.
+    B: IVIG may be added for myasthenic features or steroid-refractory disease, but it does not replace high-dose glucocorticoids.
+    D: Low-dose oral prednisone is inadequate for life-threatening ICI myocarditis.
+    E: Pacing treats the conduction block but not the underlying inflammation, which can progress to fatal arrhythmias or heart failure.
+  objective: |
+    Treat immune checkpoint inhibitor myocarditis by stopping the drug and giving high-dose intravenous methylprednisolone promptly; watch for overlapping myositis and myasthenia.
+  refs:
+    - "Lyon AR, et al. 2022 ESC guidelines on cardio-oncology. Eur Heart J 2022;43:4229."
+    - "Schneider BJ, et al. Management of immune-related adverse events in patients treated with immune checkpoint inhibitor therapy: ASCO guideline update. J Clin Oncol 2021;39:4073."
+
+- id: CV-134
+  topic: Anthracycline cardiotoxicity
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/cardio-oncology]
+  stem: |
+    A 61-year-old woman with newly diagnosed HER2-negative breast cancer is referred before chemotherapy. Her oncologist plans doxorubicin and cyclophosphamide followed by paclitaxel, with a cumulative doxorubicin dose of 240 mg/m². She received left chest wall radiation for an earlier breast cancer 12 years ago. She has hypertension and type 2 diabetes mellitus. She has no cardiac symptoms.
+
+    On physical examination, blood pressure is 142/86 mm Hg and pulse rate is 76/min. Examination is normal.
+
+    Electrocardiogram is normal.
+  lead: Which of the following is the most appropriate cardiovascular evaluation before chemotherapy begins?
+  choices:
+    A: Coronary angiography before the first cycle
+    B: Echocardiography with strain plus troponin and BNP
+    C: Exercise stress testing before the first cycle
+    D: No cardiac testing because she has no symptoms
+    E: Changing to a non-anthracycline regimen
+  answer: B
+  explain: |
+    **Anthracyclines** cause **dose-dependent, largely irreversible** cardiomyopathy through topoisomerase-IIβ inhibition, mitochondrial damage and free radical formation in cardiomyocytes. Risk rises steeply with **cumulative doxorubicin dose >250 mg/m²** and with patient factors:
+
+    | Risk factors for cancer therapy–related cardiac dysfunction |
+    |---|
+    | **Cumulative doxorubicin ≥250 mg/m²** (or prior anthracycline) |
+    | **Prior chest radiation** (especially with heart in the field) |
+    | Age ≥60 (or childhood) |
+    | **Hypertension, diabetes**, dyslipidemia, smoking, obesity |
+    | Pre-existing LV dysfunction, HF, CAD or valve disease |
+    | Elevated baseline troponin or natriuretic peptide |
+    | Subsequent trastuzumab |
+
+    She is at **high risk** (prior left chest radiation, hypertension, diabetes, age). Guidelines recommend a **baseline echocardiogram with LVEF and global longitudinal strain (GLS)** plus **troponin and natriuretic peptide**, then **surveillance** during and after therapy. High-risk patients may benefit from cardioprotection (ACE inhibitor/ARB, beta-blocker, statin; dexrazoxane or liposomal doxorubicin in selected cases) and tight risk-factor control — not from avoiding effective cancer therapy.
+  why:
+    A: Coronary angiography is not indicated without symptoms or abnormal noninvasive testing.
+    C: Stress testing assesses ischemia, not baseline ventricular function, which is the key parameter for anthracycline surveillance.
+    D: Baseline imaging is recommended for all patients receiving anthracyclines, especially those with risk factors.
+    E: Treatment choice is driven by the cancer; the goal of cardio-oncology is to enable effective cancer therapy safely.
+  objective: |
+    Before anthracycline therapy, obtain a baseline echocardiogram with global longitudinal strain and cardiac biomarkers, and identify risk factors such as prior chest radiation, hypertension, diabetes and cumulative dose >250 mg/m².
+  refs:
+    - "Lyon AR, et al. 2022 ESC guidelines on cardio-oncology. Eur Heart J 2022;43:4229."
+    - "Armenian SH, et al. Prevention and monitoring of cardiac dysfunction in survivors of adult cancers: ASCO practice guideline. J Clin Oncol 2017;35:893."
+
+- id: CV-135
+  topic: Trastuzumab-related LV dysfunction
+  task: Treatment/Care Decisions
+  chapters: [cardiology/cardio-oncology]
+  stem: |
+    A 52-year-old woman with HER2-positive breast cancer is evaluated after a routine surveillance echocardiogram during adjuvant trastuzumab. She has completed 4 months of a planned 12 months of therapy and received no anthracycline. She has no dyspnea, orthopnea or edema.
+
+    On physical examination, blood pressure is 122/76 mm Hg and pulse rate is 78/min. Examination is normal.
+
+    Echocardiogram shows left ventricular ejection fraction of 44% (62% at baseline) with a 20% relative reduction in global longitudinal strain.
+  labs:
+    - [NT-proBNP, 260 pg/mL]
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Continue trastuzumab and repeat echocardiography in 3 months
+    B: Hold trastuzumab, start heart failure therapy, and reassess soon
+    C: Implant a primary-prevention ICD and continue trastuzumab
+    D: Stop trastuzumab permanently and switch to doxorubicin
+    E: Stop all HER2-directed therapy permanently
+  answer: B
+  explain: |
+    **Trastuzumab** blocks HER2 (ErbB2) signaling, which cardiomyocytes use for stress-response and repair. Its cardiotoxicity differs from anthracyclines:
+
+    | | Anthracycline (type I) | Trastuzumab (type II) |
+    |---|---|---|
+    | Dose relation | **Dose-dependent** | Not dose-dependent |
+    | Mechanism | Cell death | **Myocardial stunning/dysfunction** |
+    | Reversibility | Mostly **irreversible** | **Usually reversible** |
+    | Rechallenge | Risky | **Often tolerated** after recovery |
+
+    She has **moderate asymptomatic cancer therapy–related cardiac dysfunction** (LVEF fall ≥10 points to 40%–49%). The 2022 ESC cardio-oncology guideline recommends **temporarily interrupting** HER2 therapy (or, in some cases, continuing under close cardio-oncology supervision), starting **ACE inhibitor/ARB and beta-blocker**, and **repeating imaging in 2–3 weeks**. Most patients recover and can **resume** trastuzumab to complete curative therapy.
+  why:
+    A: Continuing unchanged with an LVEF of 44% risks progression to symptomatic heart failure.
+    C: An ICD is not indicated for a potentially reversible, recently recognized LVEF reduction above 35%.
+    D: Switching to an anthracycline adds a more toxic, irreversible cardiotoxic drug and removes effective HER2-targeted therapy.
+    E: Permanently stopping HER2 therapy sacrifices oncologic benefit when the dysfunction is usually reversible.
+  objective: |
+    Trastuzumab cardiotoxicity is usually reversible: hold the drug, start ACE inhibitor/ARB and beta-blocker, reassess LVEF in weeks, and resume after recovery.
+  refs:
+    - "Lyon AR, et al. 2022 ESC guidelines on cardio-oncology. Eur Heart J 2022;43:4229."
+    - "Ewer MS, Lippman SM. Type II chemotherapy-related cardiac dysfunction: time to recognize a new entity. J Clin Oncol 2005;23:2900."
+
+- id: CV-136
+  topic: Peripartum cardiomyopathy — future pregnancy
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/pregnancy-heart]
+  stem: |
+    A 32-year-old woman comes for follow-up 18 months after she developed peripartum cardiomyopathy 3 weeks after the delivery of her first child. At diagnosis, her left ventricular ejection fraction was 25%. She has been treated with metoprolol succinate, sacubitril-valsartan, spironolactone and dapagliflozin, and she has no symptoms. She uses a levonorgestrel intrauterine device. She and her partner would like to have another child.
+
+    On physical examination, blood pressure is 106/68 mm Hg and pulse rate is 62/min. Examination is normal.
+
+    Echocardiogram today shows left ventricular ejection fraction of 40%, unchanged for the past 9 months.
+  lead: Which of the following best describes the risk of another pregnancy for this patient?
+  choices:
+    A: High risk of recurrent heart failure and death, so pregnancy is not advised
+    B: Low risk because she has no symptoms
+    C: Low risk if bromocriptine is started at conception
+    D: Risk is the same as for women with no history of cardiomyopathy
+    E: Risk is acceptable if she continues her current medications throughout pregnancy
+  answer: A
+  explain: |
+    **Peripartum cardiomyopathy (PPCM)**: LVEF <45% presenting toward the end of pregnancy or within months after delivery, without another cause. About half of women recover LVEF to ≥50%.
+
+    **Subsequent pregnancy risk depends on recovery**:
+
+    | LVEF before next pregnancy | Risk with subsequent pregnancy |
+    |---|---|
+    | **Recovered (≥50%)** | ~20% relapse of LV dysfunction; mortality low but not zero — counsel, monitor closely |
+    | **Persistent dysfunction (<50%)** | **~40%–50% further LV deterioration, ~15%–20% mortality** in older series |
+
+    With a **persistent LVEF of 40%**, guidelines (ESC 2025 pregnancy guideline, AHA statement) **advise against another pregnancy** (modified WHO class IV if LVEF <30%; very high risk at 30%–45% after PPCM). Effective contraception is important; her levonorgestrel IUD is an excellent choice (avoid estrogen-containing methods).
+
+    Several of her drugs (**ARNI, MRA, SGLT2 inhibitor**) are **teratogenic or not recommended** in pregnancy.
+  why:
+    B: Absence of symptoms does not predict tolerance of the hemodynamic load of pregnancy when LV dysfunction persists.
+    C: Bromocriptine has been studied for acute PPCM; it does not make pregnancy safe with persistent LV dysfunction.
+    D: Women with prior PPCM have a much higher risk than the general population, especially without LV recovery.
+    E: ARNI, MRAs and SGLT2 inhibitors are contraindicated or not recommended in pregnancy.
+  objective: |
+    After peripartum cardiomyopathy, persistent LV dysfunction (LVEF <50%) confers a high risk of deterioration and death with another pregnancy, which should be discouraged.
+  refs:
+    - "Davis MB, et al. Peripartum cardiomyopathy: JACC state-of-the-art review. J Am Coll Cardiol 2020;75:207."
+    - "2025 ESC guidelines for the management of cardiovascular disease and pregnancy. Eur Heart J 2025 (doi:10.1093/eurheartj/ehaf193)."
+
+- id: CV-137
+  topic: Chagas cardiomyopathy
+  task: Diagnosis/Testing
+  chapters: [cardiology/cardiomyopathies, id/tick-travel]
+  stem: |
+    A 48-year-old man is evaluated for palpitations and an episode of near-syncope. He grew up in a rural village in Bolivia, where his family lived in an adobe house with a thatched roof, and he moved to the United States 20 years ago. He has no history of hypertension, diabetes or coronary disease.
+
+    On physical examination, blood pressure is 112/70 mm Hg and pulse rate is 58/min with frequent extra beats. A soft holosystolic murmur is heard at the apex.
+
+    Electrocardiogram shows sinus bradycardia, right bundle branch block and left anterior fascicular block. A 24-hour monitor shows frequent multifocal premature ventricular complexes and runs of nonsustained ventricular tachycardia. Echocardiogram shows an apical left ventricular aneurysm with inferolateral hypokinesis and a left ventricular ejection fraction of 40%. Coronary CT angiography shows no coronary artery disease.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Arrhythmogenic right ventricular cardiomyopathy
+    B: Cardiac sarcoidosis
+    C: Chagas cardiomyopathy
+    D: Ischemic cardiomyopathy
+    E: Rheumatic heart disease
+  answer: C
+  explain: |
+    **Chagas disease** is caused by ***Trypanosoma cruzi***, transmitted by **triatomine ("kissing") bugs** that live in the walls and roofs of adobe and thatched houses in rural Latin America. About **300,000 people in the United States** are infected. **Chronic Chagas cardiomyopathy** develops in 20%–30%, decades after infection.
+
+    Classic findings:
+    - **RBBB plus left anterior fascicular block** (the earliest and most typical ECG pattern)
+    - Sinus node dysfunction, AV block
+    - **Ventricular arrhythmias** and sudden death
+    - **Apical aneurysm** with segmental wall-motion abnormalities in a nonischemic pattern
+    - Thromboembolism and heart failure
+
+    **Diagnosis**: two **positive serologic tests** using different antigens (ELISA, immunofluorescence or immunoblot); PCR is less useful in chronic disease. Treatment: GDMT, amiodarone or ICD for ventricular arrhythmias, pacing, anticoagulation for aneurysm with thrombus; **benznidazole** or nifurtimox for younger patients without advanced cardiomyopathy. Screen family members and offer testing to women of childbearing age (congenital transmission).
+  why:
+    A: ARVC affects the right ventricle with LBBB-pattern VT and T inversions in V1–V3, not RBBB with LAFB and an LV apical aneurysm.
+    B: Sarcoidosis can cause AV block and VT, but the epidemiologic exposure and apical aneurysm with RBBB/LAFB are classic for Chagas.
+    D: CT angiography excluded coronary artery disease.
+    E: Rheumatic heart disease affects the valves (especially mitral stenosis), not the conduction system and apex.
+  objective: |
+    Suspect Chagas cardiomyopathy in patients from rural Latin America with RBBB plus left anterior fascicular block, ventricular arrhythmias and an apical aneurysm; confirm with two serologic tests.
+  refs:
+    - "Nunes MCP, et al. Chagas cardiomyopathy: an update of current clinical knowledge and management — a scientific statement from the AHA. Circulation 2018;138:e169."
+    - "Forsyth CJ, et al. Recommendations for screening and diagnosis of Chagas disease in the United States. J Infect Dis 2022;225:1601."
+
+- id: CV-138
+  topic: Obstructive HCM — refractory symptoms
+  task: Treatment/Care Decisions
+  chapters: [cardiology/hcm]
+  stem: |
+    A 54-year-old woman with hypertrophic cardiomyopathy is evaluated for dyspnea and chest tightness when climbing one flight of stairs (NYHA class III), despite metoprolol succinate, 200 mg daily, for 6 months. She has no syncope or family history of sudden death. She takes no other medications.
+
+    On physical examination, blood pressure is 118/72 mm Hg and pulse rate is 58/min. A grade 3/6 harsh crescendo-decrescendo systolic murmur at the left sternal border increases with the Valsalva maneuver and standing.
+
+    Echocardiogram shows asymmetric septal hypertrophy (maximal thickness 21 mm), systolic anterior motion of the mitral valve, a resting left ventricular outflow tract gradient of 48 mm Hg rising to 86 mm Hg with Valsalva, and left ventricular ejection fraction of 70%.
+  lead: Which of the following is the most appropriate addition to her therapy?
+  choices:
+    A: Digoxin
+    B: Hydrochlorothiazide
+    C: Lisinopril
+    D: Mavacamten
+    E: Nifedipine
+  answer: D
+  explain: |
+    She has **symptomatic obstructive HCM** (LVOT gradient ≥30 mm Hg at rest, ≥50 mm Hg with provocation) despite a **maximally tolerated beta-blocker**. The 2024 AHA/ACC HCM guideline recommends one of three next steps:
+    1. **Mavacamten** (or aficamten) — a **cardiac myosin inhibitor** that reduces actin–myosin cross-bridges, lowering hypercontractility and the LVOT gradient. In **EXPLORER-HCM** it improved exercise capacity and symptoms; in **VALOR-HCM** it reduced the need for septal reduction. Requires **echo monitoring** (hold if LVEF <50%), REMS program, and attention to CYP2C19/3A4 interactions.
+    2. **Disopyramide** (negative inotrope, with an AV-nodal blocker)
+    3. **Septal reduction therapy** — surgical myectomy or alcohol septal ablation at an experienced center
+
+    | Worsens LVOT obstruction (avoid) |
+    |---|
+    | **Vasodilators** — nifedipine, ACE inhibitors, ARBs, nitrates, PDE-5 inhibitors |
+    | **Volume depletion** — high-dose diuretics, dehydration |
+    | **Positive inotropes** — digoxin, dobutamine |
+  why:
+    A: Digoxin increases contractility and worsens dynamic outflow obstruction.
+    B: Diuretics reduce preload and LV cavity size, increasing the gradient; use only cautiously for congestion.
+    C: ACE inhibitors are vasodilators that reduce afterload and worsen obstruction.
+    E: Dihydropyridine calcium channel blockers cause vasodilation and can worsen obstruction and hypotension.
+  objective: |
+    For symptomatic obstructive HCM despite beta-blockade, add a cardiac myosin inhibitor (mavacamten), disopyramide or refer for septal reduction; avoid vasodilators, inotropes and volume depletion.
+  refs:
+    - "Ommen SR, et al. 2024 AHA/ACC/AMSSM/HRS/PACES/SCMR guideline for the management of hypertrophic cardiomyopathy. Circulation 2024;149:e1239."
+    - "Olivotto I, et al. Mavacamten for treatment of symptomatic obstructive hypertrophic cardiomyopathy (EXPLORER-HCM). Lancet 2020;396:759."
+
+- id: CV-139
+  topic: HCM sudden-death risk
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/hcm, cardiology/devices]
+  stem: |
+    A 28-year-old man with hypertrophic cardiomyopathy diagnosed on a screening echocardiogram comes for risk assessment. He has no syncope, palpitations or chest pain. There is no family history of sudden death. He takes no medications.
+
+    On physical examination, blood pressure is 122/74 mm Hg and pulse rate is 64/min. A soft systolic murmur is heard.
+
+    A 48-hour ambulatory monitor shows no ventricular tachycardia. Echocardiogram shows asymmetric septal hypertrophy with a maximal wall thickness of 31 mm, a resting left ventricular outflow tract gradient of 20 mm Hg, mild mitral regurgitation, left atrial diameter of 42 mm and left ventricular ejection fraction of 68%. There is no apical aneurysm.
+  lead: Which of the following findings most strongly supports implantation of a primary-prevention ICD?
+  choices:
+    A: Left atrial diameter of 42 mm
+    B: Left ventricular outflow tract gradient of 20 mm Hg
+    C: Maximal left ventricular wall thickness of 31 mm
+    D: Mild mitral regurgitation
+    E: Patient age of 28 years
+  answer: C
+  explain: |
+    HCM is a leading cause of sudden cardiac death in young people. The 2024 AHA/ACC guideline lists **major risk factors**; **one or more** makes a **primary-prevention ICD reasonable** (shared decision):
+
+    | Major risk factors for sudden death in HCM |
+    |---|
+    | **Massive LV hypertrophy ≥30 mm** in any segment |
+    | **Family history of sudden death** from HCM in a first-degree or close relative ≤50 years |
+    | **Unexplained syncope** (likely arrhythmic) within 6 months |
+    | **LV apical aneurysm** |
+    | **LVEF <50%** (end-stage HCM) |
+    | Extensive **late gadolinium enhancement** (≥15% of LV mass) — tie-breaker |
+    | Nonsustained VT on monitoring — tie-breaker, especially in young patients |
+
+    His **septal thickness of 31 mm** meets a major criterion. The **HCM Risk-SCD calculator** (ESC) can also estimate 5-year risk. Prior cardiac arrest or sustained VT is a Class 1 indication (secondary prevention).
+  why:
+    A: Left atrial size enters the European risk calculator but is not a major independent indication.
+    B: A modest outflow gradient is not a major risk factor for sudden death.
+    D: Mild mitral regurgitation from systolic anterior motion does not predict sudden death.
+    E: Younger age modifies the risk estimate but is not a stand-alone indication.
+  objective: |
+    In HCM, major risk factors for sudden death — wall thickness ≥30 mm, family history of SCD, unexplained syncope, apical aneurysm, LVEF <50% — support a primary-prevention ICD.
+  refs:
+    - "Ommen SR, et al. 2024 AHA/ACC/AMSSM/HRS/PACES/SCMR guideline for the management of hypertrophic cardiomyopathy. Circulation 2024;149:e1239."
