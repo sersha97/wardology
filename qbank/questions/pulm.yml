@@ -6,7 +6,7 @@
   stem: |
     A 67-year-old man with COPD comes for follow-up. He quit smoking 3 years ago after 45 pack-years. He uses tiotropium once daily and albuterol as needed; his inhaler technique is good. He gets short of breath walking about 100 meters on level ground. In the past year he had two exacerbations treated with oral prednisone and antibiotics, without hospitalization. He completed pulmonary rehabilitation last year.
 
-    Oxygen saturation is 94% on room air. There are scattered expiratory wheezes and a prolonged expiratory phase.
+    Oxygen saturation is 94% breathing ambient air. There are scattered expiratory wheezes and a prolonged expiratory phase.
   labs:
     - [Post-bronchodilator FEV₁/FVC, 0.52]
     - [Post-bronchodilator FEV₁, 48% of predicted]
@@ -39,7 +39,7 @@
   objective: |
     In COPD with exacerbations despite a long-acting bronchodilator, escalate to triple therapy (LABA + LAMA + ICS) when blood eosinophils are ≥300/µL, and to LABA + LAMA when they are low.
   refs:
-    - Global Initiative for Chronic Obstructive Lung Disease (GOLD). Global strategy for prevention, diagnosis and management of COPD: 2025 report.
+    - "Global Initiative for Chronic Obstructive Lung Disease (GOLD). Global strategy for prevention, diagnosis and management of COPD: 2025 report."
 
 - id: PU-002
   topic: Mild asthma
@@ -117,7 +117,7 @@
   objective: |
     A single incidental 6–8-mm solid lung nodule in a low-risk patient needs a follow-up chest CT at 6–12 months (Fleischner Society).
   refs:
-    - MacMahon H, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. *Radiology* 2017;284:228.
+    - "MacMahon H, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. *Radiology* 2017;284:228."
 
 - id: PU-004
   topic: Obstructive sleep apnea
@@ -161,7 +161,7 @@
   objective: |
     CPAP is first-line treatment for moderate–severe obstructive sleep apnea, especially with daytime sleepiness; oral appliances are for mild–moderate disease or CPAP intolerance.
   refs:
-    - Patil SP, et al. Treatment of adult obstructive sleep apnea with positive airway pressure: an AASM clinical practice guideline. *J Clin Sleep Med* 2019;15:335.
+    - "Patil SP, et al. Treatment of adult obstructive sleep apnea with positive airway pressure: an AASM clinical practice guideline. *J Clin Sleep Med* 2019;15:335."
     - Kapur VK, et al. Clinical practice guideline for diagnostic testing for adult obstructive sleep apnea (AASM). *J Clin Sleep Med* 2017;13:479.
 
 
@@ -208,7 +208,7 @@
   objective: |
     In a patient with low clinical probability of pulmonary embolism who meets all PERC criteria, no further testing for PE is needed.
   refs:
-    - Raja AS, et al. Evaluation of patients with suspected acute pulmonary embolism: best practice advice from the ACP. *Ann Intern Med* 2015;163:701.
+    - "Raja AS, et al. Evaluation of patients with suspected acute pulmonary embolism: best practice advice from the ACP. *Ann Intern Med* 2015;163:701."
     - Kline JA, et al. Prospective multicenter evaluation of the pulmonary embolism rule-out criteria. *J Thromb Haemost* 2008;6:772.
 
 - id: PU-006
@@ -255,7 +255,7 @@
     Treat high-risk pulmonary embolism with hemodynamic instability with anticoagulation plus systemic thrombolysis, unless contraindicated.
   refs:
     - Konstantinides SV, et al. 2019 ESC guidelines for acute pulmonary embolism. *Eur Heart J* 2020;41:543.
-    - Stevens SM, et al. Antithrombotic therapy for VTE disease: CHEST guideline second update. *Chest* 2021;160:e545.
+    - "Stevens SM, et al. Antithrombotic therapy for VTE disease: CHEST guideline second update. *Chest* 2021;160:e545."
 
 - id: PU-007
   topic: Cancer-associated venous thromboembolism
@@ -291,7 +291,7 @@
   objective: |
     Treat cancer-associated VTE with a DOAC (or LMWH, preferred for unresected luminal GI/GU tumors) for at least 6 months and as long as the cancer is active.
   refs:
-    - Key NS, et al. VTE prophylaxis and treatment in patients with cancer: ASCO guideline update. *J Clin Oncol* 2023;41:3063.
+    - "Key NS, et al. VTE prophylaxis and treatment in patients with cancer: ASCO guideline update. *J Clin Oncol* 2023;41:3063."
     - Agnelli G, et al. Apixaban for the treatment of VTE associated with cancer (Caravaggio). *N Engl J Med* 2020;382:1599.
 
 - id: PU-008
@@ -459,7 +459,7 @@
   objective: |
     Treat idiopathic pulmonary fibrosis with an antifibrotic agent (nintedanib or pirfenidone) and avoid glucocorticoid-based immunosuppression.
   refs:
-    - Raghu G, et al. Idiopathic pulmonary fibrosis (an update) and progressive pulmonary fibrosis in adults: ATS/ERS/JRS/ALAT clinical practice guideline. *Am J Respir Crit Care Med* 2022;205:e18.
+    - "Raghu G, et al. Idiopathic pulmonary fibrosis (an update) and progressive pulmonary fibrosis in adults: ATS/ERS/JRS/ALAT clinical practice guideline. *Am J Respir Crit Care Med* 2022;205:e18."
     - Idiopathic Pulmonary Fibrosis Clinical Research Network. Prednisone, azathioprine, and N-acetylcysteine for pulmonary fibrosis. *N Engl J Med* 2012;366:1968.
 
 - id: PU-012
@@ -500,7 +500,7 @@
   objective: |
     Diagnose Löfgren syndrome clinically (erythema nodosum, hilar adenopathy, ankle arthritis, fever) and treat with NSAIDs and observation without biopsy.
   refs:
-    - Crouser ED, et al. Diagnosis and detection of sarcoidosis: an official ATS clinical practice guideline. *Am J Respir Crit Care Med* 2020;201:e26.
+    - "Crouser ED, et al. Diagnosis and detection of sarcoidosis: an official ATS clinical practice guideline. *Am J Respir Crit Care Med* 2020;201:e26."
     - Baughman RP, et al. ERS clinical practice guidelines on treatment of sarcoidosis. *Eur Respir J* 2021;58:2004079.
 
 - id: PU-013
@@ -540,7 +540,7 @@
   objective: |
     Recognize hypersensitivity pneumonitis by exposure history, centrilobular nodules, ground glass and mosaic attenuation with air trapping, and treat with antigen avoidance.
   refs:
-    - Raghu G, et al. Diagnosis of hypersensitivity pneumonitis in adults: an official ATS/JRS/ALAT clinical practice guideline. *Am J Respir Crit Care Med* 2020;202:e36.
+    - "Raghu G, et al. Diagnosis of hypersensitivity pneumonitis in adults: an official ATS/JRS/ALAT clinical practice guideline. *Am J Respir Crit Care Med* 2020;202:e36."
 
 - id: PU-014
   topic: Diagnosing COPD — spirometry
@@ -572,7 +572,7 @@
   objective: |
     Confirm COPD with spirometry showing a post-bronchodilator FEV₁/FVC ratio below 0.70 in a symptomatic patient with risk factors.
   refs:
-    - Global Initiative for Chronic Obstructive Lung Disease (GOLD). Global strategy for prevention, diagnosis and management of COPD: 2025 report.
+    - "Global Initiative for Chronic Obstructive Lung Disease (GOLD). Global strategy for prevention, diagnosis and management of COPD: 2025 report."
 
 - id: PU-015
   topic: COPD exacerbation — hospital management
@@ -657,7 +657,7 @@
   objective: |
     Prescribe long-term oxygen for at least 15 hours daily to stable patients with COPD with resting Pao₂ ≤55 mm Hg or SpO₂ ≤88% (or 56–59 mm Hg with cor pulmonale or erythrocytosis).
   refs:
-    - Jacobs SS, et al. Home oxygen therapy for adults with chronic lung disease: an official ATS clinical practice guideline. *Am J Respir Crit Care Med* 2020;202:e121.
+    - "Jacobs SS, et al. Home oxygen therapy for adults with chronic lung disease: an official ATS clinical practice guideline. *Am J Respir Crit Care Med* 2020;202:e121."
     - Long-Term Oxygen Treatment Trial Research Group. A randomized trial of long-term oxygen for COPD with moderate desaturation. *N Engl J Med* 2016;375:1617.
 
 - id: PU-017
@@ -819,7 +819,7 @@
     Ventilate ARDS with a tidal volume of about 6 mL/kg of predicted body weight, a plateau pressure of 30 cm H₂O or less and adequate PEEP.
   refs:
     - ARDS Network. Ventilation with lower tidal volumes as compared with traditional tidal volumes for ALI and ARDS. *N Engl J Med* 2000;342:1301.
-    - Qadir N, et al. An update on management of adult patients with ARDS: an official ATS clinical practice guideline. *Am J Respir Crit Care Med* 2024;209:24.
+    - "Qadir N, et al. An update on management of adult patients with ARDS: an official ATS clinical practice guideline. *Am J Respir Crit Care Med* 2024;209:24."
 
 - id: PU-021
   topic: Pulmonary hypertension — diagnosis
@@ -904,7 +904,7 @@
     | Diffusion limitation (ILD) | ↑ | Yes |
   why:
     A: Diffusion impairment (e.g., ILD) increases the A–a gradient and is worsened by exercise.
-    C: Low inspired oxygen occurs at altitude; she is at sea level breathing room air.
+    C: Low inspired oxygen occurs at altitude; she is at sea level breathing ambient air.
     D: Shunt widens the A–a gradient and responds poorly to supplemental oxygen.
     E: V/Q mismatch, the most common cause of hypoxemia, widens the A–a gradient.
   objective: |
@@ -944,5 +944,5 @@
   objective: |
     Varenicline is the most effective single pharmacotherapy for tobacco cessation and is safe in patients with stable cardiovascular disease.
   refs:
-    - Leone FT, et al. Initiating pharmacologic treatment in tobacco-dependent adults: an official ATS clinical practice guideline. *Am J Respir Crit Care Med* 2020;202:e5.
+    - "Leone FT, et al. Initiating pharmacologic treatment in tobacco-dependent adults: an official ATS clinical practice guideline. *Am J Respir Crit Care Med* 2020;202:e5."
     - Anthenelli RM, et al. Neuropsychiatric safety and efficacy of varenicline, bupropion and nicotine patch (EAGLES). *Lancet* 2016;387:2507.

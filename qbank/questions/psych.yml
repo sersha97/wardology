@@ -79,7 +79,7 @@
   objective: |
     Treat generalized anxiety disorder with CBT and/or an SSRI or SNRI; avoid benzodiazepines as first-line therapy.
   refs:
-    - US Preventive Services Task Force. Screening for anxiety disorders in adults: recommendation statement. *JAMA* 2023;329:2163.
+    - "US Preventive Services Task Force. Screening for anxiety disorders in adults: recommendation statement. *JAMA* 2023;329:2163."
     - DeMartini J, et al. Generalized anxiety disorder. *Ann Intern Med* 2019;170:ITC49.
 
 
@@ -162,7 +162,7 @@
     Thiazides, ACE inhibitors, ARBs, NSAIDs and volume depletion raise lithium levels by increasing proximal tubular reabsorption along with sodium.
   refs:
     - Baird-Gunning J, et al. Lithium poisoning. *J Intensive Care Med* 2017;32:249.
-    - Decker BS, et al. Extracorporeal treatment for lithium poisoning: EXTRIP workgroup recommendations. *Clin J Am Soc Nephrol* 2015;10:875.
+    - "Decker BS, et al. Extracorporeal treatment for lithium poisoning: EXTRIP workgroup recommendations. *Clin J Am Soc Nephrol* 2015;10:875."
 
 - id: PS-005
   topic: Second-generation antipsychotics — metabolic monitoring
@@ -240,7 +240,7 @@
   objective: |
     Start buprenorphine (or methadone) for opioid use disorder during hospitalization once the patient is in moderate withdrawal, and continue it after discharge.
   refs:
-    - ASAM. National practice guideline for the treatment of opioid use disorder: 2020 focused update. *J Addict Med* 2020;14:1.
+    - "ASAM. National practice guideline for the treatment of opioid use disorder: 2020 focused update. *J Addict Med* 2020;14:1."
     - Larochelle MR, et al. Medication for opioid use disorder after nonfatal opioid overdose and mortality. *Ann Intern Med* 2018;169:137.
 
 - id: PS-007
@@ -364,8 +364,8 @@
   objective: |
     Treat chronic insomnia disorder with cognitive behavioral therapy for insomnia as first-line therapy.
   refs:
-    - Qaseem A, et al. Management of chronic insomnia disorder in adults: ACP clinical practice guideline. *Ann Intern Med* 2016;165:125.
-    - Edinger JD, et al. Behavioral and psychological treatments for chronic insomnia disorder in adults: AASM clinical practice guideline. *J Clin Sleep Med* 2021;17:255.
+    - "Qaseem A, et al. Management of chronic insomnia disorder in adults: ACP clinical practice guideline. *Ann Intern Med* 2016;165:125."
+    - "Edinger JD, et al. Behavioral and psychological treatments for chronic insomnia disorder in adults: AASM clinical practice guideline. *J Clin Sleep Med* 2021;17:255."
 
 - id: PS-010
   topic: Refeeding syndrome in anorexia nervosa
@@ -405,4 +405,4 @@
     Refeeding syndrome results from insulin-driven intracellular shifts of phosphate, potassium and magnesium in previously starved patients; prevent it with slow feeding, thiamine and close electrolyte replacement.
   refs:
     - da Silva JSV, et al. ASPEN consensus recommendations for refeeding syndrome. *Nutr Clin Pract* 2020;35:178.
-    - Mehanna HM, et al. Refeeding syndrome: what it is, and how to prevent and treat it. *BMJ* 2008;336:1495.
+    - "Mehanna HM, et al. Refeeding syndrome: what it is, and how to prevent and treat it. *BMJ* 2008;336:1495."

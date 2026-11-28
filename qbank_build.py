@@ -123,33 +123,70 @@ def load_chapters():
     return ch
 
 
-def shuffle_choices(q):
-    """Spread correct answers evenly over A–E and shuffle distractors.
-    Deterministic per question id, so answer letters (and stored peer statistics) never move between builds.
-    Set keep_order: true for numeric or logically ordered options."""
+def legacy_shuffle_order(q):
+    """Option order used before Nov 2026 (deterministic shuffle by id). Kept only so
+    scripts/qbank_remap_sql.py can translate stored answer letters to the ABIM order."""
     import hashlib
     import random
     ch, ans = q.get("choices", {}), q.get("answer")
-    if q.get("keep_order") or ans not in ch:
-        return q
     keys = list(ch.keys())
+    if q.get("keep_order") or ans not in ch:
+        return keys
     seed = int(hashlib.sha1(q["id"].encode()).hexdigest(), 16)
     target = seed % len(keys)
     others = [k for k in keys if k != ans]
     random.Random(seed).shuffle(others)
-    order = others[:target] + [ans] + others[target:]
-    new_keys = LETTERS[:len(keys)]
-    remap = dict(zip(order, new_keys))
+    return others[:target] + [ans] + others[target:]
+
+
+def _plain(text):
+    return re.sub(r"[*_`]", "", str(text)).strip()
+
+
+def abim_order(q):
+    """ABIM item-writing convention: options in alphabetical order, or in numeric/logical order.
+    - keep_order: true  -> options stay exactly as written (logical order, e.g. timelines)
+    - all options start with a number -> ascending numeric order
+    - otherwise -> alphabetical (case-insensitive)."""
+    ch = q.get("choices", {})
+    keys = list(ch.keys())
+    if q.get("keep_order"):
+        return keys
+    nums = {}
+    for k in keys:
+        m = re.match(r"^\s*[<>≤≥]?\s*(-?\d[\d,]*(?:\.\d+)?)", _plain(ch[k]))
+        if not m:
+            nums = None
+            break
+        nums[k] = float(m.group(1).replace(",", ""))
+    if nums is not None:
+        return sorted(keys, key=lambda k: (nums[k], _plain(ch[k]).lower()))
+    return sorted(keys, key=lambda k: _plain(ch[k]).lower())
+
+
+def reorder(q, order):
+    ans = q.get("answer")
+    if ans not in q.get("choices", {}):
+        return q
+    remap = dict(zip(order, LETTERS[:len(order)]))
     q = dict(q)
+    ch = q["choices"]
     q["choices"] = {remap[k]: ch[k] for k in order}
     q["answer"] = remap[ans]
     q["why"] = {remap[k]: v for k, v in q.get("why", {}).items() if k in remap}
     return q
 
 
+def ref_text(r):
+    """A reference written without quotes and containing ': ' is parsed by YAML as a mapping."""
+    if isinstance(r, dict):
+        return "; ".join(f"{k}: {v}" for k, v in r.items())
+    return str(r)
+
+
 def build_question(q, chapters, problems):
     qid = q["id"]
-    q = shuffle_choices(q)
+    q = reorder(q, abim_order(q))
     for k in ("topic", "task", "stem", "lead", "choices", "answer", "explain", "why", "objective", "refs", "chapters"):
         if k not in q:
             problems.append(f"{qid}: missing '{k}'")
@@ -189,7 +226,7 @@ def build_question(q, chapters, problems):
     exp.append(f'<div class="xobj"><b>🎯 Educational objective</b>{md(q.get("objective", ""))}</div>')
     if links:
         exp.append(f'<div class="xlib"><b>📚 Read more in Wardology</b>{"".join(links)}</div>')
-    refs = "".join(f"<li>{inline(r)}</li>" for r in q.get("refs", []))
+    refs = "".join(f"<li>{inline(ref_text(r))}</li>" for r in q.get("refs", []))
     exp.append(f'<div class="xrefs"><b>References</b><ol>{refs}</ol></div>')
 
     plain = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", md(q.get("stem", "")) + " " + q.get("lead", ""))))[:600]
@@ -207,7 +244,7 @@ def collect(problems):
     chapters = load_chapters()
     qs, seen = {}, set()
     for f in sorted(QDIR.glob("*.yml")):
-        cat = f.stem
+        cat = f.stem.split("-")[0]   # cardio.yml, cardio-b2.yml, ... all belong to "cardio"
         if cat not in CAT_KEYS:
             problems.append(f"{f.name}: file name must be one of {CAT_KEYS}")
             continue

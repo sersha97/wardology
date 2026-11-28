@@ -6,7 +6,7 @@
   stem: |
     A 68-year-old man is brought to the emergency department because of 1 day of generalized weakness. He has heart failure with reduced ejection fraction and chronic kidney disease. His spironolactone dose was doubled 2 weeks ago. Other medications are lisinopril, carvedilol and furosemide.
 
-    Blood pressure is 118/70 mm Hg and pulse is 58/min. He is alert. Muscle strength is 4/5 symmetrically. The rhythm strip is shown.
+    Blood pressure is 118/70 mm Hg and pulse rate is 58/min. He is alert. Muscle strength is 4/5 symmetrically. The rhythm strip is shown.
   media:
     - ecg: hyperk
       caption: Lead II rhythm strip
@@ -94,8 +94,8 @@
   objective: |
     Recurrent calcium stones with idiopathic hypercalciuria are prevented with high fluid intake, a thiazide diuretic, sodium restriction and a normal-calcium diet.
   refs:
-    - Pearle MS, et al. Medical management of kidney stones: AUA guideline. *J Urol* 2014;192:316.
-    - Qaseem A, et al. Dietary and pharmacologic management to prevent recurrent nephrolithiasis in adults: ACP guideline. *Ann Intern Med* 2014;161:659.
+    - "Pearle MS, et al. Medical management of kidney stones: AUA guideline. *J Urol* 2014;192:316."
+    - "Qaseem A, et al. Dietary and pharmacologic management to prevent recurrent nephrolithiasis in adults: ACP guideline. *Ann Intern Med* 2014;161:659."
 
 - id: NE-003
   topic: Benign prostatic hyperplasia
@@ -139,7 +139,7 @@
   objective: |
     An α₁-blocker such as tamsulosin is first-line therapy for bothersome LUTS due to BPH; 5α-reductase inhibitors are added for larger prostates.
   refs:
-    - Sandhu JS, et al. Management of lower urinary tract symptoms attributed to benign prostatic hyperplasia: AUA guideline amendment 2023. *J Urol* 2024;211:11.
+    - "Sandhu JS, et al. Management of lower urinary tract symptoms attributed to benign prostatic hyperplasia: AUA guideline amendment 2023. *J Urol* 2024;211:11."
 
 
 - id: NE-004
@@ -308,7 +308,7 @@
     Prevent contrast-associated AKI in high-risk patients with intravenous isotonic fluids and minimal contrast volume; N-acetylcysteine and bicarbonate do not help.
   refs:
     - Weisbord SD, et al. Outcomes after angiography with sodium bicarbonate and acetylcysteine (PRESERVE). *N Engl J Med* 2018;378:603.
-    - Davenport MS, et al. Use of intravenous iodinated contrast media in patients with kidney disease: ACR/NKF consensus statements. *Radiology* 2020;294:660.
+    - "Davenport MS, et al. Use of intravenous iodinated contrast media in patients with kidney disease: ACR/NKF consensus statements. *Radiology* 2020;294:660."
 
 - id: NE-008
   topic: AKI — prerenal versus acute tubular necrosis
@@ -453,7 +453,7 @@
     Type 4 RTA (hyporeninemic hypoaldosteronism) causes a normal anion gap metabolic acidosis with hyperkalemia and an acidic urine, commonly in diabetic kidney disease and with RAAS inhibitors.
   refs:
     - Palmer BF, Clegg DJ. Hyperkalemia across the continuum of kidney function. *Clin J Am Soc Nephrol* 2018;13:155.
-    - Kraut JA, Madias NE. Metabolic acidosis: pathophysiology, diagnosis and management. *Nat Rev Nephrol* 2010;6:274.
+    - "Kraut JA, Madias NE. Metabolic acidosis: pathophysiology, diagnosis and management. *Nat Rev Nephrol* 2010;6:274."
 
 - id: NE-011
   topic: Severe symptomatic hyponatremia
@@ -496,7 +496,7 @@
     Treat hyponatremia with severe symptoms (seizure, obtundation) with 100–150 mL boluses of 3% saline, aiming for a 4–6 mEq/L rise while limiting 24-hour correction to 8–10 mEq/L.
   refs:
     - Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. *Eur J Endocrinol* 2014;170:G1.
-    - Adrogué HJ, et al. Diagnosis and management of hyponatremia: a review. *JAMA* 2022;328:280.
+    - "Adrogué HJ, et al. Diagnosis and management of hyponatremia: a review. *JAMA* 2022;328:280."
 
 - id: NE-012
   topic: Autosomal dominant polycystic kidney disease
@@ -533,7 +533,7 @@
     Screen patients with ADPKD who have a family history of intracranial aneurysm or subarachnoid hemorrhage with magnetic resonance angiography of the head.
   refs:
     - KDIGO 2025 clinical practice guideline for the evaluation, management, and treatment of ADPKD. *Kidney Int* 2025.
-    - Chapman AB, et al. Autosomal-dominant polycystic kidney disease (ADPKD): KDIGO controversies conference. *Kidney Int* 2015;88:17.
+    - "Chapman AB, et al. Autosomal-dominant polycystic kidney disease (ADPKD): KDIGO controversies conference. *Kidney Int* 2015;88:17."
 
 - id: NE-013
   topic: Testicular mass
@@ -578,7 +578,7 @@
   objective: |
     Evaluate a painless intratesticular mass with scrotal ultrasonography, followed by tumor markers and radical inguinal orchiectomy if a solid mass is confirmed.
   refs:
-    - Stephenson A, et al. Diagnosis and treatment of early-stage testicular cancer: AUA guideline amendment 2023. *J Urol* 2024;211:20.
+    - "Stephenson A, et al. Diagnosis and treatment of early-stage testicular cancer: AUA guideline amendment 2023. *J Urol* 2024;211:20."
 
 - id: NE-014
   topic: Asymptomatic microscopic hematuria
@@ -620,7 +620,7 @@
   objective: |
     Evaluate microscopic hematuria in high-risk patients (older age, heavy smoking, occupational exposures) with cystoscopy and CT urography.
   refs:
-    - Barocas DA, et al. Microhematuria: AUA/SUFU guideline. *J Urol* 2020;204:778.
+    - "Barocas DA, et al. Microhematuria: AUA/SUFU guideline. *J Urol* 2020;204:778."
 
 - id: NE-015
   topic: Erectile dysfunction and nitrates
@@ -654,5 +654,5 @@
   objective: |
     Do not prescribe PDE-5 inhibitors to patients taking any nitrate; offer alternatives or coordinate nitrate discontinuation with cardiology.
   refs:
-    - Burnett AL, et al. Erectile dysfunction: AUA guideline. *J Urol* 2018;200:633.
+    - "Burnett AL, et al. Erectile dysfunction: AUA guideline. *J Urol* 2018;200:633."
     - Virani SS, et al. 2023 AHA/ACC guideline for the management of patients with chronic coronary disease. *Circulation* 2023;148:e9.

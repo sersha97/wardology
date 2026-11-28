@@ -35,8 +35,8 @@
   objective: |
     For average-risk women aged 30–65, screen with primary high-risk HPV testing every 5 years (or cotesting every 5 years, or cytology every 3 years).
   refs:
-    - US Preventive Services Task Force. Screening for cervical cancer: recommendation statement. *JAMA* 2018;320:674.
-    - Fontham ETH, et al. Cervical cancer screening for individuals at average risk: 2020 guideline update from the American Cancer Society. *CA Cancer J Clin* 2020;70:321.
+    - "US Preventive Services Task Force. Screening for cervical cancer: recommendation statement. *JAMA* 2018;320:674."
+    - "Fontham ETH, et al. Cervical cancer screening for individuals at average risk: 2020 guideline update from the American Cancer Society. *CA Cancer J Clin* 2020;70:321."
 
 - id: OB-002
   topic: Contraception in migraine with aura
@@ -198,7 +198,7 @@
   objective: |
     Screen women with gestational diabetes with a 75-g OGTT at 4–12 weeks postpartum and then every 1–3 years for life.
   refs:
-    - American Diabetes Association. 15. Management of diabetes in pregnancy: Standards of Care in Diabetes—2025. *Diabetes Care* 2025;48:S306.
+    - "American Diabetes Association. 15. Management of diabetes in pregnancy: Standards of Care in Diabetes—2025. *Diabetes Care* 2025;48:S306."
 
 - id: OB-006
   topic: Secondary amenorrhea — PCOS

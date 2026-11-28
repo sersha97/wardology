@@ -6,7 +6,7 @@
   stem: |
     A 38-year-old woman comes to the office with 10 days of pain in the front of her neck that spreads to her jaw and ears. She also has palpitations, sweating and trouble sleeping. Three weeks ago she had a sore throat and cough that resolved on their own. She takes no medications.
 
-    Temperature is 37.9 °C (100.2 °F), blood pressure is 128/72 mm Hg and pulse is 108/min. The thyroid is mildly enlarged, firm and exquisitely tender to palpation. There is a fine tremor of the outstretched hands. There is no proptosis or lid lag.
+    Temperature is 37.9 °C (100.2 °F), blood pressure is 128/72 mm Hg and pulse rate is 108/min. The thyroid is mildly enlarged, firm and exquisitely tender to palpation. There is a fine tremor of the outstretched hands. There is no proptosis or lid lag.
   labs:
     - [TSH, <0.01 µU/mL]
     - [Free T₄, 3.1 ng/dL]
@@ -140,7 +140,7 @@
   objective: |
     Primary hyperparathyroidism is diagnosed biochemically; parathyroidectomy is indicated for asymptomatic patients who are younger than 50 or have marked hypercalcemia, osteoporosis, or kidney involvement.
   refs:
-    - Bilezikian JP, et al. Evaluation and management of primary hyperparathyroidism: summary statement and guidelines from the Fifth International Workshop. *J Bone Miner Res* 2022;37:2293.
+    - "Bilezikian JP, et al. Evaluation and management of primary hyperparathyroidism: summary statement and guidelines from the Fifth International Workshop. *J Bone Miner Res* 2022;37:2293."
 
 - id: EN-004
   topic: Osteoporosis — bisphosphonate drug holiday
@@ -183,8 +183,8 @@
   objective: |
     After 5 years of oral bisphosphonate therapy, offer a 2–3-year drug holiday to women at lower fracture risk (no fracture, hip T-score above −2.5); continue or switch therapy for those at high risk.
   refs:
-    - Adler RA, et al. Managing osteoporosis in patients on long-term bisphosphonate treatment: report of a task force of the ASBMR. *J Bone Miner Res* 2016;31:16.
-    - Eastell R, et al. Pharmacological management of osteoporosis in postmenopausal women: an Endocrine Society guideline update. *J Clin Endocrinol Metab* 2020;105:587.
+    - "Adler RA, et al. Managing osteoporosis in patients on long-term bisphosphonate treatment: report of a task force of the ASBMR. *J Bone Miner Res* 2016;31:16."
+    - "Eastell R, et al. Pharmacological management of osteoporosis in postmenopausal women: an Endocrine Society guideline update. *J Clin Endocrinol Metab* 2020;105:587."
 
 - id: EN-005
   topic: Thiazide-induced hyponatremia
@@ -193,7 +193,7 @@
   stem: |
     A 74-year-old woman comes to the office because of 2 weeks of fatigue and mild unsteadiness. Six weeks ago hydrochlorothiazide was added to her amlodipine for hypertension. She drinks about 2 L of fluid per day. She has no vomiting, diarrhea, headache or confusion.
 
-    Blood pressure is 132/76 mm Hg without orthostatic change, and pulse is 76/min. Mucous membranes are moist, jugular venous pressure is normal, and there is no edema. She is alert and oriented, and neurologic examination is normal.
+    Blood pressure is 132/76 mm Hg without orthostatic change, and pulse rate is 76/min. Mucous membranes are moist, jugular venous pressure is normal, and there is no edema. She is alert and oriented, and neurologic examination is normal.
   labs:
     - [Sodium, 124 mEq/L (6 months ago 139 mEq/L)]
     - [Potassium, 3.3 mEq/L]
@@ -229,7 +229,7 @@
     Thiazide-induced hyponatremia with mild symptoms is treated by stopping the thiazide, correcting potassium, and avoiding rapid sodium correction.
   refs:
     - Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. *Eur J Endocrinol* 2014;170:G1.
-    - Verbalis JG, et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. *Am J Med* 2013;126:S1.
+    - "Verbalis JG, et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. *Am J Med* 2013;126:S1."
 
 
 - id: EN-006
@@ -277,7 +277,7 @@
     Do not treat asymptomatic subclinical hypothyroidism with a TSH below 10 µU/mL in older adults; monitor TSH periodically.
   refs:
     - Stott DJ, et al. Thyroid hormone therapy for older adults with subclinical hypothyroidism (TRUST). *N Engl J Med* 2017;376:2534.
-    - Bekkering GE, et al. Thyroid hormones treatment for subclinical hypothyroidism: a clinical practice guideline. *BMJ* 2019;365:l2006.
+    - "Bekkering GE, et al. Thyroid hormones treatment for subclinical hypothyroidism: a clinical practice guideline. *BMJ* 2019;365:l2006."
 
 - id: EN-007
   topic: Hyperthyroidism in early pregnancy
@@ -398,7 +398,7 @@
   objective: |
     Treat hyperglycemia in noncritically ill hospitalized patients who are eating with scheduled basal-bolus insulin plus correction doses, targeting 140–180 mg/dL, rather than sliding-scale insulin alone.
   refs:
-    - American Diabetes Association. 16. Diabetes care in the hospital: Standards of Care in Diabetes—2025. *Diabetes Care* 2025;48:S321.
+    - "American Diabetes Association. 16. Diabetes care in the hospital: Standards of Care in Diabetes—2025. *Diabetes Care* 2025;48:S321."
     - Umpierrez GE, et al. Randomized study of basal-bolus insulin therapy in the inpatient management of type 2 diabetes (RABBIT 2). *Diabetes Care* 2007;30:2181.
 
 - id: EN-010
@@ -487,7 +487,7 @@
   objective: |
     Confirm suspected primary adrenal insufficiency with a cosyntropin stimulation test and an elevated plasma ACTH level.
   refs:
-    - Bornstein SR, et al. Diagnosis and treatment of primary adrenal insufficiency: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2016;101:364.
+    - "Bornstein SR, et al. Diagnosis and treatment of primary adrenal insufficiency: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2016;101:364."
 
 - id: EN-012
   topic: Cushing syndrome — screening
@@ -527,8 +527,8 @@
   objective: |
     Screen for Cushing syndrome with late-night salivary cortisol, a 1-mg overnight dexamethasone suppression test or 24-hour urine free cortisol before measuring ACTH or imaging.
   refs:
-    - Fleseriu M, et al. Consensus on diagnosis and management of Cushing's disease: a guideline update. *Lancet Diabetes Endocrinol* 2021;9:847.
-    - Nieman LK, et al. The diagnosis of Cushing's syndrome: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2008;93:1526.
+    - "Fleseriu M, et al. Consensus on diagnosis and management of Cushing's disease: a guideline update. *Lancet Diabetes Endocrinol* 2021;9:847."
+    - "Nieman LK, et al. The diagnosis of Cushing's syndrome: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2008;93:1526."
 
 - id: EN-013
   topic: Pheochromocytoma — preoperative preparation
@@ -569,7 +569,7 @@
   objective: |
     Before resection of a pheochromocytoma, start alpha-adrenergic blockade with volume repletion and add a beta-blocker only after adequate alpha-blockade.
   refs:
-    - Lenders JWM, et al. Pheochromocytoma and paraganglioma: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2014;99:1915.
+    - "Lenders JWM, et al. Pheochromocytoma and paraganglioma: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2014;99:1915."
 
 - id: EN-014
   topic: Prolactinoma
@@ -609,8 +609,8 @@
   objective: |
     Treat a symptomatic prolactinoma with a dopamine agonist, preferably cabergoline.
   refs:
-    - Petersenn S, et al. Diagnosis and management of prolactin-secreting pituitary adenomas: a Pituitary Society international consensus statement. *Nat Rev Endocrinol* 2023;19:722.
-    - Melmed S, et al. Diagnosis and treatment of hyperprolactinemia: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2011;96:273.
+    - "Petersenn S, et al. Diagnosis and management of prolactin-secreting pituitary adenomas: a Pituitary Society international consensus statement. *Nat Rev Endocrinol* 2023;19:722."
+    - "Melmed S, et al. Diagnosis and treatment of hyperprolactinemia: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2011;96:273."
 
 - id: EN-015
   topic: Male hypogonadism — diagnosis
@@ -648,7 +648,7 @@
   objective: |
     Confirm male hypogonadism with two fasting morning testosterone measurements before evaluation of the cause or treatment.
   refs:
-    - Bhasin S, et al. Testosterone therapy in men with hypogonadism: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2018;103:1715.
+    - "Bhasin S, et al. Testosterone therapy in men with hypogonadism: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2018;103:1715."
 
 - id: EN-016
   topic: Metformin and kidney function
@@ -689,7 +689,7 @@
   objective: |
     Reduce the metformin dose when eGFR falls to 30–44 mL/min/1.73 m², stop it below 30, and add an SGLT2 inhibitor in patients with type 2 diabetes and albuminuric CKD.
   refs:
-    - American Diabetes Association. 9. Pharmacologic approaches to glycemic treatment and 11. Chronic kidney disease and risk management: Standards of Care in Diabetes—2025. *Diabetes Care* 2025;48:S181, S239.
+    - "American Diabetes Association. 9. Pharmacologic approaches to glycemic treatment and 11. Chronic kidney disease and risk management: Standards of Care in Diabetes—2025. *Diabetes Care* 2025;48:S181, S239."
     - KDIGO 2022 clinical practice guideline for diabetes management in CKD. *Kidney Int* 2022;102:S1.
 
 - id: EN-017
@@ -741,7 +741,7 @@
   objective: |
     In DKA with a serum potassium below 3.3 mEq/L, replace potassium and hold insulin until potassium is at least 3.3 mEq/L.
   refs:
-    - Umpierrez GE, et al. Hyperglycemic crises in adults with diabetes: a consensus report (ADA/EASD/JBDS/AACE/DTS). *Diabetes Care* 2024;47:1257.
+    - "Umpierrez GE, et al. Hyperglycemic crises in adults with diabetes: a consensus report (ADA/EASD/JBDS/AACE/DTS). *Diabetes Care* 2024;47:1257."
 
 - id: EN-018
   topic: Euglycemic DKA from an SGLT2 inhibitor
@@ -787,7 +787,7 @@
   objective: |
     Recognize euglycemic DKA in a patient taking an SGLT2 inhibitor who has an anion gap acidosis and ketosis with near-normal glucose, and hold these drugs 3 days before surgery.
   refs:
-    - Umpierrez GE, et al. Hyperglycemic crises in adults with diabetes: a consensus report. *Diabetes Care* 2024;47:1257.
+    - "Umpierrez GE, et al. Hyperglycemic crises in adults with diabetes: a consensus report. *Diabetes Care* 2024;47:1257."
     - US Food and Drug Administration. Drug Safety Communication on SGLT2 inhibitors and ketoacidosis before scheduled surgery, 2020.
 
 - id: EN-019
@@ -834,7 +834,7 @@
   objective: |
     In hypoglycemia, high insulin with suppressed C-peptide and proinsulin indicates exogenous insulin administration.
   refs:
-    - Cryer PE, et al. Evaluation and management of adult hypoglycemic disorders: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2009;94:709.
+    - "Cryer PE, et al. Evaluation and management of adult hypoglycemic disorders: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2009;94:709."
 
 - id: EN-020
   topic: Falsely low hemoglobin A1c
@@ -873,7 +873,7 @@
   objective: |
     Hemoglobin A1c is falsely low when red blood cell survival is shortened or new red cells are added (blood loss, transfusion, hemolysis, reticulocytosis).
   refs:
-    - American Diabetes Association. 6. Glycemic goals and hypoglycemia: Standards of Care in Diabetes—2025. *Diabetes Care* 2025;48:S128.
+    - "American Diabetes Association. 6. Glycemic goals and hypoglycemia: Standards of Care in Diabetes—2025. *Diabetes Care* 2025;48:S128."
     - Radin MS. Pitfalls in hemoglobin A1c measurement. *J Gen Intern Med* 2014;29:388.
 
 - id: EN-021
@@ -966,7 +966,7 @@
   objective: |
     Treat severe symptomatic hypercalcemia of malignancy with intravenous isotonic saline, calcitonin and a bisphosphonate (or denosumab).
   refs:
-    - El-Hajj Fuleihan G, et al. Treatment of hypercalcemia of malignancy in adults: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2023;108:507.
+    - "El-Hajj Fuleihan G, et al. Treatment of hypercalcemia of malignancy in adults: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2023;108:507."
 
 - id: EN-023
   topic: Familial hypocalciuric hypercalcemia
@@ -1010,4 +1010,4 @@
   objective: |
     Familial hypocalciuric hypercalcemia is caused by inactivating calcium-sensing receptor mutations and is identified by a calcium-to-creatinine clearance ratio below 0.01; it does not require surgery.
   refs:
-    - Bilezikian JP, et al. Evaluation and management of primary hyperparathyroidism: summary statement and guidelines from the Fifth International Workshop. *J Bone Miner Res* 2022;37:2293.
+    - "Bilezikian JP, et al. Evaluation and management of primary hyperparathyroidism: summary statement and guidelines from the Fifth International Workshop. *J Bone Miner Res* 2022;37:2293."

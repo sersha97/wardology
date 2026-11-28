@@ -6,7 +6,7 @@
   stem: |
     A 49-year-old man comes to the office to review his blood pressure log. Three months ago his office blood pressure was 158/96 mm Hg. Since then he has cut back on salt, walks 30 minutes most days and has lost 2 kg (4.4 lb). His validated home cuff now shows an average of 156/98 mm Hg over the last 2 weeks. He has no symptoms. He does not have diabetes and does not smoke. His father had a myocardial infarction at age 61.
 
-    Blood pressure in the office today is 154/97 mm Hg in both arms; pulse is 74/min. BMI is 29 kg/m². Cardiac examination is normal and there is no edema.
+    Blood pressure in the office today is 154/97 mm Hg in both arms; pulse rate is 74/min. BMI is 29 kg/m². Cardiac examination is normal and there is no edema.
   labs:
     - [Sodium, 140 mEq/L]
     - [Potassium, 4.3 mEq/L]
@@ -55,7 +55,7 @@
   stem: |
     A 61-year-old woman comes to the office for a routine visit. She ran out of her amlodipine and chlorthalidone 8 days ago and did not refill them. She feels well. She has no headache, chest pain, dyspnea, visual change or weakness.
 
-    Blood pressure is 194/112 mm Hg, rechecked after 10 minutes of quiet rest at 190/110 mm Hg; pulse is 78/min. She is alert and oriented. Fundoscopic examination shows mild arteriolar narrowing without hemorrhages, exudates or papilledema. Heart and lung examination is normal, and neurologic examination is nonfocal.
+    Blood pressure is 194/112 mm Hg, rechecked after 10 minutes of quiet rest at 190/110 mm Hg; pulse rate is 78/min. She is alert and oriented. Fundoscopic examination shows mild arteriolar narrowing without hemorrhages, exudates or papilledema. Heart and lung examination is normal, and neurologic examination is nonfocal.
   labs:
     - [Creatinine, 1.0 mg/dL (baseline 1.0 mg/dL)]
     - [Urinalysis, no blood or protein]
@@ -92,7 +92,7 @@
     Severe hypertension without acute target-organ damage is treated with oral medication and gradual lowering over days to weeks with close outpatient follow-up, not with rapid or IV blood pressure reduction.
   refs:
     - 2025 AHA/ACC multisociety high blood pressure guideline. *Hypertension / J Am Coll Cardiol* 2025.
-    - Bress AP, et al. The management of elevated blood pressure in the acute care setting: a scientific statement from the AHA. *Hypertension* 2024;81:e94.
+    - "Bress AP, et al. The management of elevated blood pressure in the acute care setting: a scientific statement from the AHA. *Hypertension* 2024;81:e94."
 
 - id: CV-003
   topic: Complete heart block
@@ -101,7 +101,7 @@
   stem: |
     A 79-year-old woman is evaluated after two episodes of sudden loss of consciousness in the past week. Each episode came without warning while she was sitting, and she recovered within a minute. She has hypertension treated with lisinopril. She takes no other medications and has not traveled or had tick bites.
 
-    Blood pressure is 152/64 mm Hg and pulse is 38/min, regular. Cannon *a* waves are seen in the jugular venous pulse. The first heart sound varies in intensity. A rhythm strip is shown.
+    Blood pressure is 152/64 mm Hg and pulse rate is 38/min, regular. Cannon *a* waves are seen in the jugular venous pulse. The first heart sound varies in intensity. A rhythm strip is shown.
   media:
     - ecg: chb
       caption: Lead II rhythm strip
@@ -150,7 +150,7 @@
   stem: |
     A 70-year-old woman comes for follow-up 1 week after she was found to have atrial fibrillation during a pre-travel visit. She was started on metoprolol and now has no palpitations or dyspnea. She has hypertension treated with chlorthalidone. She has no history of stroke, bleeding, heart failure or diabetes. She drinks one glass of wine per week.
 
-    Blood pressure is 128/76 mm Hg and pulse is 76/min, irregularly irregular. There are no murmurs. The rhythm strip is shown. Echocardiography shows normal left ventricular function, mild left atrial enlargement and no significant valve disease.
+    Blood pressure is 128/76 mm Hg and pulse rate is 76/min, irregularly irregular. There are no murmurs. The rhythm strip is shown. Echocardiography shows normal left ventricular function, mild left atrial enlargement and no significant valve disease.
   media:
     - ecg: af
       caption: Lead II rhythm strip from her first visit (before metoprolol)
@@ -165,7 +165,7 @@
     B: Aspirin plus clopidogrel
     C: Apixaban
     D: Warfarin with a target INR of 2.0–3.0
-    E: No antithrombotic therapy because her heart rate is controlled
+    E: No antithrombotic therapy because her pulse rate is controlled
   answer: C
   explain: |
     The ECG shows **atrial fibrillation**: irregularly irregular R–R intervals and no discrete P waves.
@@ -204,7 +204,7 @@
   stem: |
     An 82-year-old man is evaluated for 4 months of breathlessness when he climbs one flight of stairs. Last week he felt lightheaded and had to sit down while carrying groceries. He has hypertension and hyperlipidemia. He lives independently, drives and walks his dog daily.
 
-    Blood pressure is 134/78 mm Hg and pulse is 70/min. There is a grade 3/6 late-peaking crescendo–decrescendo systolic murmur at the right upper sternal border that radiates to both carotids. The aortic component of S₂ is soft. Carotid upstrokes are delayed and weak.
+    Blood pressure is 134/78 mm Hg and pulse rate is 70/min. There is a grade 3/6 late-peaking crescendo–decrescendo systolic murmur at the right upper sternal border that radiates to both carotids. The aortic component of S₂ is soft. Carotid upstrokes are delayed and weak.
   labs:
     - [Echocardiogram — aortic valve area, 0.7 cm²]
     - [Echocardiogram — mean gradient, 48 mm Hg]
@@ -297,7 +297,7 @@
   stem: |
     A 34-year-old man comes to the emergency department with 2 days of sharp, central chest pain. The pain is worse when he lies flat or breathes in and better when he sits up and leans forward. He had a sore throat and runny nose 10 days ago. He takes no medications.
 
-    Temperature is 37.8 °C (100.0 °F), blood pressure is 126/78 mm Hg, pulse is 96/min and respirations are 18/min. A high-pitched, scratchy sound with three components is heard at the left lower sternal border while he leans forward. Jugular venous pressure is normal and there is no pulsus paradoxus.
+    Temperature is 37.8 °C (100.0 °F), blood pressure is 126/78 mm Hg, pulse rate is 96/min and respiration rate is 18/min. A high-pitched, scratchy sound with three components is heard at the left lower sternal border while he leans forward. Jugular venous pressure is normal and there is no pulsus paradoxus.
 
     The ECG shows ST elevation in most leads with PR depression; lead II is shown. Echocardiography shows normal wall motion and a small pericardial effusion without chamber collapse.
   media:
@@ -341,7 +341,7 @@
   stem: |
     A 64-year-old man with ischemic cardiomyopathy comes for follow-up. He gets short of breath after walking about two blocks but has no dyspnea at rest, orthopnea or edema. Over the past 6 months his medicines were titrated to sacubitril–valsartan 97/103 mg twice daily, metoprolol succinate 200 mg daily, spironolactone 25 mg daily and furosemide 20 mg daily. He does not have diabetes.
 
-    Blood pressure is 112/70 mm Hg and pulse is 60/min, regular. Jugular venous pressure is normal and the lungs are clear. There is no edema. Echocardiography last month showed a left ventricular ejection fraction of 30%.
+    Blood pressure is 112/70 mm Hg and pulse rate is 60/min, regular. Jugular venous pressure is normal and the lungs are clear. There is no edema. Echocardiography last month showed a left ventricular ejection fraction of 30%.
   labs:
     - [Sodium, 138 mEq/L]
     - [Potassium, 4.6 mEq/L]
@@ -369,7 +369,7 @@
   why:
     B: Digoxin reduces hospitalizations for symptoms but not mortality. It is added only when symptoms persist on full GDMT or for AF rate control.
     C: Nondihydropyridine calcium channel blockers are negative inotropes and **worsen** HFrEF. Avoid them.
-    D: Ivabradine is for patients in sinus rhythm whose heart rate stays **≥70/min** on a maximally tolerated beta-blocker. His heart rate is 60/min.
+    D: Ivabradine is for patients in sinus rhythm whose heart rate stays **≥70/min** on a maximally tolerated beta-blocker. His pulse rate is 60/min.
     E: Hydralazine–nitrate is added for self-identified Black patients with persistent NYHA III–IV symptoms on optimal therapy, or for patients who cannot take an ARNI/ACE inhibitor/ARB. He fits neither.
   mnemonic: |
     The four pillars: **"Always Be My Shield"** — **A**RNI, **B**eta-blocker, **M**RA, **S**GLT2 inhibitor.
@@ -426,7 +426,7 @@
   objective: |
     Screen for primary aldosteronism with a plasma aldosterone concentration and plasma renin activity in patients with resistant hypertension or hypertension with hypokalemia.
   refs:
-    - Adler GK, et al. Primary aldosteronism: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2025.
+    - "Adler GK, et al. Primary aldosteronism: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab* 2025."
     - 2025 AHA/ACC multisociety high blood pressure guideline. *Hypertension* 2025.
 
 - id: CV-010
@@ -556,7 +556,7 @@
     Add spironolactone as the fourth drug in true resistant hypertension.
   refs:
     - Williams B, et al. Spironolactone versus placebo, bisoprolol, and doxazosin in drug-resistant hypertension (PATHWAY-2). *Lancet* 2015;386:2059.
-    - Carey RM, et al. Resistant hypertension: AHA scientific statement. *Hypertension* 2018;72:e53.
+    - "Carey RM, et al. Resistant hypertension: AHA scientific statement. *Hypertension* 2018;72:e53."
 
 - id: CV-013
   topic: ACE inhibitor–induced cough
@@ -590,7 +590,7 @@
   objective: |
     ACE inhibitor cough results from accumulation of bradykinin and substance P; switching to an ARB resolves it.
   refs:
-    - Dicpinigaitis PV. Angiotensin-converting enzyme inhibitor–induced cough: ACCP evidence-based clinical practice guidelines. *Chest* 2006;129:169S.
+    - "Dicpinigaitis PV. Angiotensin-converting enzyme inhibitor–induced cough: ACCP evidence-based clinical practice guidelines. *Chest* 2006;129:169S."
 
 - id: CV-014
   topic: Hypertension in a Black adult
@@ -1047,7 +1047,7 @@
     Treat torsades de pointes with intravenous magnesium, removal of QT-prolonging drugs and correction of electrolytes, followed by overdrive pacing if it recurs.
   refs:
     - Al-Khatib SM, et al. 2017 AHA/ACC/HRS guideline for management of patients with ventricular arrhythmias and the prevention of sudden cardiac death. *Circulation* 2018;138:e272.
-    - Drew BJ, et al. Prevention of torsade de pointes in hospital settings: AHA/ACCF scientific statement. *Circulation* 2010;121:1047.
+    - "Drew BJ, et al. Prevention of torsade de pointes in hospital settings: AHA/ACCF scientific statement. *Circulation* 2010;121:1047."
 
 - id: CV-026
   topic: Vasovagal syncope
@@ -1199,8 +1199,8 @@
   objective: |
     Perform colonoscopy in patients with Streptococcus gallolyticus (S. bovis) bacteremia or endocarditis because of the strong association with colorectal neoplasia.
   refs:
-    - Baddour LM, et al. Infective endocarditis in adults: AHA scientific statement. *Circulation* 2015;132:1435.
-    - Boleij A, et al. *Streptococcus bovis/gallolyticus* and colorectal cancer: a meta-analysis. *Clin Infect Dis* 2011;53:870.
+    - "Baddour LM, et al. Infective endocarditis in adults: AHA scientific statement. *Circulation* 2015;132:1435."
+    - "Boleij A, et al. *Streptococcus bovis/gallolyticus* and colorectal cancer: a meta-analysis. *Clin Infect Dis* 2011;53:870."
 
 - id: CV-030
   topic: Cardiac tamponade

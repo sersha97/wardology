@@ -6,7 +6,7 @@
   stem: |
     A 32-year-old man comes to the office with 3 days of fever, productive cough and right-sided pleuritic chest pain. He has no medical problems, takes no medications and has not taken antibiotics in the past year. He has no drug allergies. He does not smoke or drink alcohol heavily.
 
-    Temperature is 38.6 °C (101.5 °F), blood pressure is 124/76 mm Hg, pulse is 98/min, respirations are 20/min and oxygen saturation is 97% on room air. Crackles and bronchial breath sounds are heard at the right base. He is alert and drinking fluids well.
+    Temperature is 38.6 °C (101.5 °F), blood pressure is 124/76 mm Hg, pulse rate is 98/min, respiration rate is 20/min and oxygen saturation is 97% breathing ambient air. Crackles and bronchial breath sounds are heard at the right base. He is alert and drinking fluids well.
 
     Chest radiograph shows right lower lobe consolidation. Blood urea nitrogen is 12 mg/dL.
   lead: Which of the following is the most appropriate treatment?
@@ -38,7 +38,7 @@
   objective: |
     Treat outpatient community-acquired pneumonia in a healthy adult without risk factors with high-dose amoxicillin (or doxycycline); reserve fluoroquinolones and combination therapy for patients with comorbidities.
   refs:
-    - Metlay JP, et al. Diagnosis and treatment of adults with community-acquired pneumonia: an official clinical practice guideline of the ATS and IDSA. *Am J Respir Crit Care Med* 2019;200:e45.
+    - "Metlay JP, et al. Diagnosis and treatment of adults with community-acquired pneumonia: an official clinical practice guideline of the ATS and IDSA. *Am J Respir Crit Care Med* 2019;200:e45."
 
 - id: ID-002
   topic: Acute uncomplicated cystitis
@@ -117,7 +117,7 @@
   objective: |
     All adults aged 50 years or older who have not received a pneumococcal conjugate vaccine should get a single dose of PCV20 or PCV21 (or PCV15 followed by PPSV23).
   refs:
-    - Kobayashi M, et al. Expanded recommendations for use of pneumococcal conjugate vaccines among adults aged ≥50 years: ACIP, 2024. *MMWR Morb Mortal Wkly Rep* 2025;74:1.
+    - "Kobayashi M, et al. Expanded recommendations for use of pneumococcal conjugate vaccines among adults aged ≥50 years: ACIP, 2024. *MMWR Morb Mortal Wkly Rep* 2025;74:1."
     - CDC. Adult immunization schedule by age, United States, 2025.
 
 - id: ID-004
@@ -157,7 +157,7 @@
   objective: |
     Give a single preprocedure dose of amoxicillin 2 g before dental procedures involving the gingiva in patients with prosthetic valves, prior endocarditis, or certain congenital heart disease.
   refs:
-    - Wilson WR, et al. Prevention of viridans group streptococcal infective endocarditis: a scientific statement from the AHA. *Circulation* 2021;143:e963.
+    - "Wilson WR, et al. Prevention of viridans group streptococcal infective endocarditis: a scientific statement from the AHA. *Circulation* 2021;143:e963."
 
 - id: ID-005
   topic: Nonpurulent cellulitis
@@ -166,7 +166,7 @@
   stem: |
     A 45-year-old woman comes to the office with 2 days of a painful, red, swollen area on her left lower leg. She has no injury, recent travel or prolonged immobility. She has hypertension. She has no drug allergies.
 
-    Temperature is 37.7 °C (99.9 °F), blood pressure is 132/80 mm Hg and pulse is 88/min. There is a 10 × 8 cm warm, tender, poorly demarcated area of erythema on the anterior shin with no fluctuance, drainage, crepitus or bullae. Point-of-care ultrasound shows subcutaneous edema without a fluid collection. Scaling and maceration are present between the toes of the left foot.
+    Temperature is 37.7 °C (99.9 °F), blood pressure is 132/80 mm Hg and pulse rate is 88/min. There is a 10 × 8 cm warm, tender, poorly demarcated area of erythema on the anterior shin with no fluctuance, drainage, crepitus or bullae. Point-of-care ultrasound shows subcutaneous edema without a fluid collection. Scaling and maceration are present between the toes of the left foot.
   lead: Which of the following is the most appropriate treatment?
   choices:
     A: Cephalexin
@@ -194,7 +194,7 @@
   objective: |
     Treat mild nonpurulent cellulitis with an oral antistreptococcal beta-lactam such as cephalexin; reserve MRSA-active drugs for purulent infections and drainage for abscesses.
   refs:
-    - Stevens DL, et al. Practice guidelines for the diagnosis and management of skin and soft tissue infections: 2014 update by the IDSA. *Clin Infect Dis* 2014;59:e10.
+    - "Stevens DL, et al. Practice guidelines for the diagnosis and management of skin and soft tissue infections: 2014 update by the IDSA. *Clin Infect Dis* 2014;59:e10."
 
 
 - id: ID-006
@@ -282,7 +282,7 @@
     Start trimethoprim-sulfamethoxazole for PJP prophylaxis in patients with HIV and a CD4 count below 200/µL or oral candidiasis, and start ART promptly.
   refs:
     - Panel on Guidelines for the Prevention and Treatment of Opportunistic Infections in Adults and Adolescents with HIV. NIH/CDC/HIVMA/IDSA, updated 2024.
-    - Gandhi RT, et al. Antiretroviral drugs for treatment and prevention of HIV in adults: 2024 recommendations of the IAS-USA panel. *JAMA* 2025;333:609.
+    - "Gandhi RT, et al. Antiretroviral drugs for treatment and prevention of HIV in adults: 2024 recommendations of the IAS-USA panel. *JAMA* 2025;333:609."
 
 - id: ID-008
   topic: Acute HIV infection
@@ -326,7 +326,7 @@
   objective: |
     When acute HIV infection is suspected, test with a fourth-generation antigen/antibody assay plus HIV-1 RNA.
   refs:
-    - CDC. Laboratory testing for the diagnosis of HIV infection: updated recommendations, 2014 (technical update 2018).
+    - "CDC. Laboratory testing for the diagnosis of HIV infection: updated recommendations, 2014 (technical update 2018)."
     - Gandhi RT, et al. IAS-USA antiretroviral drug recommendations 2024. *JAMA* 2025;333:609.
 
 - id: ID-009
@@ -449,7 +449,7 @@
   objective: |
     Treat latent tuberculosis infection with a short rifamycin-based regimen, such as 4 months of daily rifampin, after excluding active disease.
   refs:
-    - Sterling TR, et al. Guidelines for the treatment of latent tuberculosis infection: recommendations from NTCA and CDC, 2020. *MMWR Recomm Rep* 2020;69(1):1.
+    - "Sterling TR, et al. Guidelines for the treatment of latent tuberculosis infection: recommendations from NTCA and CDC, 2020. *MMWR Recomm Rep* 2020;69(1):1."
 
 - id: ID-012
   topic: Early Lyme disease
@@ -487,7 +487,7 @@
   objective: |
     Diagnose early Lyme disease clinically by erythema migrans and treat with oral doxycycline for 10 days without serologic testing.
   refs:
-    - Lantos PM, et al. Clinical practice guidelines by IDSA, AAN and ACR: 2020 guidelines for the prevention, diagnosis and treatment of Lyme disease. *Clin Infect Dis* 2021;72:e1.
+    - "Lantos PM, et al. Clinical practice guidelines by IDSA, AAN and ACR: 2020 guidelines for the prevention, diagnosis and treatment of Lyme disease. *Clin Infect Dis* 2021;72:e1."
 
 - id: ID-013
   topic: Malaria in a returning traveler
@@ -568,7 +568,7 @@
   objective: |
     Treat MSSA bacteremia with an antistaphylococcal β-lactam, document clearance with repeat blood cultures and obtain transesophageal echocardiography.
   refs:
-    - Holland TL, et al. Clinical management of Staphylococcus aureus bacteremia: a review. *JAMA* 2014;312:1330.
+    - "Holland TL, et al. Clinical management of Staphylococcus aureus bacteremia: a review. *JAMA* 2014;312:1330."
     - Kaasch AJ, et al. Early oral switch therapy in low-risk S. aureus bloodstream infection (SABATO). *Lancet Infect Dis* 2024;24:523.
 
 - id: ID-015
@@ -612,7 +612,7 @@
     Treat suspected bacterial meningitis in adults older than 50 years with vancomycin, ceftriaxone and ampicillin, plus dexamethasone with the first antibiotic dose.
   refs:
     - Tunkel AR, et al. Practice guidelines for the management of bacterial meningitis. *Clin Infect Dis* 2004;39:1267.
-    - van de Beek D, et al. ESCMID guideline: diagnosis and treatment of acute bacterial meningitis. *Clin Microbiol Infect* 2016;22:S37.
+    - "van de Beek D, et al. ESCMID guideline: diagnosis and treatment of acute bacterial meningitis. *Clin Microbiol Infect* 2016;22:S37."
 
 - id: ID-016
   topic: Acute pyelonephritis — outpatient
@@ -694,7 +694,7 @@
   objective: |
     Do not screen for or treat asymptomatic bacteriuria (with or without pyuria) except in pregnancy and before urologic procedures that breach the mucosa.
   refs:
-    - Nicolle LE, et al. Clinical practice guideline for the management of asymptomatic bacteriuria: 2019 update by IDSA. *Clin Infect Dis* 2019;68:e83.
+    - "Nicolle LE, et al. Clinical practice guideline for the management of asymptomatic bacteriuria: 2019 update by IDSA. *Clin Infect Dis* 2019;68:e83."
 
 - id: ID-018
   topic: Diabetic foot osteomyelitis
@@ -774,7 +774,7 @@
   objective: |
     Suspected necrotizing fasciitis requires emergency surgical exploration and debridement plus broad-spectrum antibiotics with clindamycin; imaging must not delay surgery.
   refs:
-    - Stevens DL, et al. Practice guidelines for the diagnosis and management of skin and soft tissue infections: 2014 update by IDSA. *Clin Infect Dis* 2014;59:e10.
+    - "Stevens DL, et al. Practice guidelines for the diagnosis and management of skin and soft tissue infections: 2014 update by IDSA. *Clin Infect Dis* 2014;59:e10."
     - Stevens DL, Bryant AE. Necrotizing soft-tissue infections. *N Engl J Med* 2017;377:2253.
 
 - id: ID-020
@@ -810,7 +810,7 @@
     Give two doses of recombinant zoster vaccine to all adults aged 50 years or older and to immunocompromised adults aged 19 years or older, including those with prior shingles.
   refs:
     - CDC. Recommended adult immunization schedule, United States, 2025.
-    - Anderson TC, et al. Use of recombinant zoster vaccine in immunocompromised adults aged ≥19 years: ACIP recommendations. *MMWR* 2022;71:80.
+    - "Anderson TC, et al. Use of recombinant zoster vaccine in immunocompromised adults aged ≥19 years: ACIP recommendations. *MMWR* 2022;71:80."
 
 - id: ID-021
   topic: Influenza in a hospitalized patient
@@ -846,7 +846,7 @@
   objective: |
     Treat every hospitalized patient with influenza with oseltamivir as soon as possible, regardless of symptom duration or vaccination status.
   refs:
-    - Uyeki TM, et al. Clinical practice guidelines by IDSA: 2018 update on diagnosis, treatment, chemoprophylaxis and institutional outbreak management of seasonal influenza. *Clin Infect Dis* 2019;68:e1.
+    - "Uyeki TM, et al. Clinical practice guidelines by IDSA: 2018 update on diagnosis, treatment, chemoprophylaxis and institutional outbreak management of seasonal influenza. *Clin Infect Dis* 2019;68:e1."
 
 - id: ID-022
   topic: Hospital-acquired pneumonia
@@ -883,4 +883,4 @@
   objective: |
     Treat hospital-acquired pneumonia empirically with an antipseudomonal β-lactam, and add MRSA coverage when there are risk factors such as intravenous antibiotics in the previous 90 days.
   refs:
-    - Kalil AC, et al. Management of adults with hospital-acquired and ventilator-associated pneumonia: 2016 IDSA/ATS clinical practice guidelines. *Clin Infect Dis* 2016;63:e61.
+    - "Kalil AC, et al. Management of adults with hospital-acquired and ventilator-associated pneumonia: 2016 IDSA/ATS clinical practice guidelines. *Clin Infect Dis* 2016;63:e61."

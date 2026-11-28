@@ -1,0 +1,666 @@
+# Cardiovascular Disease — batch 2b: flutter, SVT, ventricular arrhythmias, channelopathies (ABIM CERT)
+- id: CV-048
+  topic: Typical atrial flutter — long-term management
+  task: Treatment/Care Decisions
+  chapters: [cardiology/flutter]
+  stem: |
+    A 64-year-old man is evaluated after his second electrical cardioversion in 5 months for atrial flutter. Each episode caused palpitations and fatigue with a ventricular rate near 150/min. He has hypertension and obstructive sleep apnea treated with CPAP. Medications are apixaban, metoprolol succinate and amlodipine.
+
+    On physical examination, blood pressure is 130/78 mm Hg and pulse rate is 64/min and regular. Examination is normal.
+
+    Electrocardiogram today shows sinus rhythm. An electrocardiogram from the last episode showed negative sawtooth flutter waves in leads II, III and aVF at an atrial rate of 300/min with 2:1 conduction. Echocardiogram shows normal left ventricular function and a mildly enlarged right atrium.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Atrioventricular node ablation with pacemaker implantation
+    B: Cavotricuspid isthmus ablation
+    C: Increase metoprolol and continue current strategy
+    D: Start digoxin
+    E: Start flecainide without an atrioventricular nodal blocker
+  answer: B
+  explain: |
+    The ECG shows **typical (counterclockwise) atrial flutter**: a macro-reentrant circuit around the tricuspid annulus that must pass through the **cavotricuspid isthmus (CTI)**. Burning a line across the isthmus breaks the circuit.
+
+    **CTI ablation** succeeds in more than 90% of patients with a very low complication rate, and it is more effective than antiarrhythmic drugs. The 2023 guideline recommends it (Class 1) for symptomatic or recurrent typical flutter — it is reasonable as **first-line** therapy.
+
+    Remember: about **30%–50%** of patients develop atrial fibrillation in the years after flutter ablation, so **anticoagulation decisions follow CHA₂DS₂-VASc**, not the success of the ablation.
+  why:
+    A: AV-node ablation with pacing is reserved for refractory rate control when rhythm control fails; it is never preferred over a curative flutter ablation.
+    C: Rate control in flutter is difficult (rates jump between 2:1 and 1:1), and recurrent episodes despite beta-blockade call for a definitive treatment.
+    D: Digoxin adds little rate control during exertion and does not prevent recurrence.
+    E: Class IC drugs can slow the flutter circuit enough to allow **1:1 AV conduction** with a very fast ventricular rate; they must always be given with an AV-nodal blocker — and they are inferior to ablation.
+  pearl: |
+    A regular narrow-complex tachycardia at almost exactly 150/min is **2:1 atrial flutter** until proven otherwise. Look for the second flutter wave hiding in the T wave or QRS.
+  objective: |
+    Treat recurrent typical atrial flutter with cavotricuspid isthmus ablation; continue anticoagulation according to CHA₂DS₂-VASc.
+  refs:
+    - "Joglar JA, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation. Circulation 2024;149:e1."
+    - "Page RL, et al. 2015 ACC/AHA/HRS guideline for the management of adult patients with supraventricular tachycardia. Circulation 2016;133:e506."
+
+- id: CV-049
+  topic: Multifocal atrial tachycardia
+  task: Diagnosis/Testing
+  chapters: [cardiology/svt, pulmonary/copd]
+  stem: |
+    A 74-year-old woman is hospitalized with an exacerbation of chronic obstructive pulmonary disease. She is receiving nebulized albuterol and ipratropium every 4 hours, prednisone and azithromycin. On the second hospital day the nurse reports an irregular pulse.
+
+    On physical examination, blood pressure is 138/82 mm Hg, pulse rate is 118/min and irregular, and respiration rate is 24/min. Oxygen saturation is 89% on 2 L/min of oxygen by nasal cannula. She has diffuse expiratory wheezes.
+
+    Electrocardiogram shows an irregular narrow-complex rhythm at 118/min. Every QRS complex is preceded by a P wave; the P waves have four different morphologies, and the PR and R-R intervals vary.
+  labs:
+    - [Potassium, 3.2 mEq/L]
+    - [Magnesium, 1.5 mg/dL]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Atrial fibrillation
+    B: Atrial flutter with variable block
+    C: Multifocal atrial tachycardia
+    D: Sinus tachycardia with frequent premature atrial complexes
+    E: Wandering atrial pacemaker
+  answer: C
+  explain: |
+    **Multifocal atrial tachycardia (MAT)** has three ECG features:
+    1. Atrial rate **>100/min**
+    2. **At least three distinct P-wave morphologies** in the same lead
+    3. Varying P-P, PR and R-R intervals (irregular rhythm), with an isoelectric baseline between P waves
+
+    MAT is strongly associated with **severe lung disease** (COPD exacerbation, hypoxemia, hypercapnia), **beta-agonist and theophylline** use, and **hypokalemia and hypomagnesemia** — all present here.
+
+    Treatment is aimed at the **cause**: treat the exacerbation, correct oxygenation, **replace potassium and magnesium**, and reduce theophylline or beta-agonist exposure where possible. If rate control is needed, a nondihydropyridine calcium channel blocker (verapamil, diltiazem) or a cardioselective beta-blocker (if bronchospasm allows) can be used. **Cardioversion and anticoagulation do not help** — there is no reentry circuit and no single focus.
+  why:
+    A: Atrial fibrillation has no discrete P waves — only fibrillatory baseline activity.
+    B: Flutter has uniform sawtooth waves at about 300/min, not discrete P waves of varying shape.
+    D: Sinus tachycardia with ectopy has one dominant P-wave morphology, interrupted by occasional premature beats.
+    E: Wandering atrial pacemaker has the same multiple P-wave morphologies but a rate below 100/min.
+  mnemonic: |
+    **MAT = "Many Atrial Types"** — 3 or more P-wave shapes, rate >100, sick lungs.
+  objective: |
+    Recognize multifocal atrial tachycardia (≥3 P-wave morphologies, rate >100/min) in severe lung disease and treat the underlying cause and electrolyte deficits.
+  refs:
+    - "Page RL, et al. 2015 ACC/AHA/HRS guideline for the management of adult patients with supraventricular tachycardia. Circulation 2016;133:e506."
+
+- id: CV-050
+  topic: AVNRT — acute termination
+  task: Treatment/Care Decisions
+  chapters: [cardiology/svt]
+  stem: |
+    A 29-year-old woman comes to the emergency department because of palpitations that began suddenly 40 minutes ago while she was climbing stairs. She has had similar brief episodes in the past that stopped on their own. She has no other medical history and takes no medications.
+
+    On physical examination, blood pressure is 118/74 mm Hg, pulse rate is 186/min and regular, and respiration rate is 18/min. She is alert and comfortable aside from palpitations. The lungs are clear.
+
+    Electrocardiogram shows a regular narrow-complex tachycardia at 186/min with no visible P waves and a small terminal positive deflection in lead V1 (pseudo-r′). A modified Valsalva maneuver (strain followed by leg elevation) was performed twice without effect.
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Adenosine, 6 mg by rapid intravenous push
+    B: Intravenous amiodarone
+    C: Intravenous digoxin
+    D: Intravenous procainamide
+    E: Synchronized electrical cardioversion
+  answer: A
+  explain: |
+    She has a **regular narrow-complex tachycardia** with no visible P waves and a **pseudo-r′ in V1** — the retrograde P wave buried at the end of the QRS — typical of **AV nodal reentrant tachycardia (AVNRT)**, the most common paroxysmal SVT in young women.
+
+    Both AVNRT and orthodromic AVRT use the **AV node** as part of the circuit, so transiently blocking the node terminates them. The stepwise approach (2015 SVT guideline, AHA ACLS):
+
+    1. **Vagal maneuvers** — the modified Valsalva with passive leg raise converts about 40%.
+    2. **Adenosine 6 mg rapid IV push** with a saline flush; repeat with **12 mg** if needed. Warn her about a brief sense of doom, flushing and chest tightness.
+    3. If adenosine fails or the arrhythmia recurs: **IV verapamil/diltiazem or a beta-blocker**.
+    4. **Synchronized cardioversion** if hemodynamically unstable or if drugs fail.
+
+    Record a rhythm strip during adenosine — what happens tells you the diagnosis (termination = AV-node–dependent; flutter waves unmasked = atrial flutter).
+  why:
+    B: Amiodarone is not a first-line drug for stable AV-node–dependent SVT; it acts slowly and has more adverse effects.
+    C: Digoxin acts slowly and is not used for acute termination of SVT.
+    D: Procainamide is used for stable wide-complex tachycardia and pre-excited AF, not for narrow-complex AVNRT.
+    E: Electrical cardioversion is reserved for hemodynamic instability or failure of vagal maneuvers and adenosine.
+  pearl: |
+    Use a **lower adenosine dose (3 mg)** through a central line or in heart transplant recipients and patients on dipyridamole; higher doses may be needed with caffeine or theophylline. Avoid adenosine in severe bronchospastic asthma.
+  objective: |
+    For stable AV-node–dependent SVT, use vagal maneuvers first, then rapid intravenous adenosine.
+  refs:
+    - "Page RL, et al. 2015 ACC/AHA/HRS guideline for the management of adult patients with supraventricular tachycardia. Circulation 2016;133:e506."
+    - "Appelboam A, et al. Postural modification to the standard Valsalva manoeuvre for emergency treatment of supraventricular tachycardias (REVERT). Lancet 2015;386:1747."
+
+- id: CV-051
+  topic: Recurrent SVT — definitive therapy
+  task: Treatment/Care Decisions
+  chapters: [cardiology/svt]
+  stem: |
+    A 36-year-old man is evaluated after his fourth emergency department visit this year for palpitations. Each episode was documented as a regular narrow-complex tachycardia at 190–200/min that terminated with adenosine; an electrophysiology consultant reviewed the tracings and diagnosed typical AV nodal reentrant tachycardia. He works as a firefighter and wants to avoid taking daily medication. He has no other medical history.
+
+    On physical examination, blood pressure is 122/76 mm Hg and pulse rate is 66/min and regular. Examination is normal.
+
+    Electrocardiogram in sinus rhythm is normal, with no pre-excitation. Echocardiogram is normal.
+  lead: Which of the following is the most appropriate management?
+  choices:
+    A: Amiodarone
+    B: Catheter ablation of the slow pathway
+    C: Daily diltiazem
+    D: Implantable loop recorder
+    E: Pill-in-the-pocket flecainide
+  answer: B
+  explain: |
+    For **recurrent symptomatic AVNRT**, **catheter ablation of the slow pathway** is first-line (Class 1). It **cures** about 95% of patients with a risk of complete heart block requiring a pacemaker under 1%. It is the best choice for someone who wants no daily medication and works in a job where sudden incapacitation is dangerous.
+
+    Drug options (beta-blockers, diltiazem, verapamil) are reasonable for patients who prefer them, but they reduce rather than eliminate episodes and must be taken indefinitely.
+
+    | Recurrent SVT option | Comment |
+    |---|---|
+    | **Catheter ablation** | Curative, Class 1 for AVNRT and AVRT |
+    | Beta-blocker, diltiazem, verapamil | Reasonable if ablation declined |
+    | Flecainide, propafenone | If no structural heart disease and nodal drugs fail |
+    | "Pill in the pocket" diltiazem + propranolol | For infrequent, well-tolerated episodes |
+    | Amiodarone | Rarely, when others fail or are contraindicated |
+  why:
+    A: Amiodarone's long-term toxicity is unjustified for a young patient with a curable arrhythmia.
+    C: Daily diltiazem reduces episodes but does not cure the arrhythmia, and he wants to avoid daily medication.
+    D: The diagnosis is already documented; a loop recorder adds no information.
+    E: A single-dose drug strategy suits infrequent, well-tolerated episodes; he has frequent episodes needing ED care and a safety-sensitive job.
+  pearl: |
+    Occupations in which sudden incapacitation endangers others (pilots, drivers, firefighters) push the decision toward curative ablation for SVT.
+  objective: |
+    Offer catheter ablation as first-line therapy for recurrent symptomatic AV nodal reentrant tachycardia.
+  refs:
+    - "Page RL, et al. 2015 ACC/AHA/HRS guideline for the management of adult patients with supraventricular tachycardia. Circulation 2016;133:e506."
+
+- id: CV-052
+  topic: Asymptomatic WPW pattern
+  task: Risk Assessment/Prognosis/Epidemiology
+  chapters: [cardiology/svt]
+  stem: |
+    A 26-year-old woman is referred after a preemployment electrocardiogram. She has never had palpitations, presyncope or syncope. She exercises regularly. There is no family history of sudden death. She takes no medications.
+
+    On physical examination, blood pressure is 112/70 mm Hg and pulse rate is 64/min and regular. Examination is normal.
+
+    Electrocardiogram shows sinus rhythm with a PR interval of 0.10 second, a slurred upstroke of the QRS complex (delta wave) and a QRS duration of 0.13 second. Echocardiogram is normal.
+  lead: Which of the following is the most appropriate next step in evaluation?
+  choices:
+    A: 30-day ambulatory event monitor
+    B: Exercise treadmill test
+    C: Reassurance with no further evaluation
+    D: Start flecainide
+    E: Start metoprolol
+  answer: B
+  explain: |
+    She has an asymptomatic **Wolff-Parkinson-White pattern** (pre-excitation without arrhythmia). The main risk is **sudden death**, which happens when atrial fibrillation conducts rapidly down an accessory pathway with a **short refractory period** and degenerates to ventricular fibrillation. The risk is low (about 1–2 per 1,000 patient-years) but not zero.
+
+    Risk stratification is recommended:
+    - **Exercise test** (noninvasive): **abrupt, complete loss of the delta wave** as heart rate rises means the pathway cannot conduct fast → **low risk**; no further testing needed.
+    - If pre-excitation persists, or the pattern is intermittent but unclear → **electrophysiology study**, which can measure pathway refractoriness and ablate a high-risk pathway in the same session.
+
+    Patients in high-risk occupations or competitive athletes often go straight to EP study.
+
+    | Low-risk features | High-risk features |
+    |---|---|
+    | Intermittent pre-excitation on resting ECG | Shortest pre-excited R-R in AF ≤250 ms |
+    | Abrupt loss with exercise | Multiple pathways |
+    | | Inducible AVRT or AF at EP study |
+  why:
+    A: An event monitor records symptoms and arrhythmias; it does not assess whether the pathway can conduct dangerously fast.
+    C: Reassurance alone is reasonable only after risk stratification shows a low-risk pathway.
+    D: Antiarrhythmic drugs are not used in asymptomatic pre-excitation.
+    E: Beta-blockers do not prevent rapid conduction over the accessory pathway, and they are not indicated without arrhythmia.
+  pearl: |
+    WPW **pattern** = pre-excitation without symptoms. WPW **syndrome** = pre-excitation plus arrhythmia. Symptomatic patients go straight to ablation.
+  objective: |
+    Risk-stratify asymptomatic pre-excitation with exercise testing (abrupt loss of pre-excitation = low risk) or electrophysiology study.
+  refs:
+    - "Page RL, et al. 2015 ACC/AHA/HRS guideline for the management of adult patients with supraventricular tachycardia. Circulation 2016;133:e506."
+    - "Cohen MI, et al. PACES/HRS expert consensus statement on the management of the asymptomatic young patient with a Wolff-Parkinson-White electrocardiographic pattern. Heart Rhythm 2012;9:1006."
+
+- id: CV-053
+  topic: Wide-complex tachycardia after myocardial infarction
+  task: Diagnosis/Testing
+  chapters: [cardiology/vt]
+  stem: |
+    A 68-year-old man comes to the emergency department because of 1 hour of palpitations and lightheadedness. He had an anterior myocardial infarction 4 years ago and has ischemic cardiomyopathy with a left ventricular ejection fraction of 30%. Medications are aspirin, atorvastatin, metoprolol succinate, sacubitril-valsartan, spironolactone and dapagliflozin.
+
+    On physical examination, blood pressure is 112/70 mm Hg, pulse rate is 158/min and regular, and respiration rate is 18/min. He is alert. Intermittent cannon *a* waves are seen in the jugular venous pulse.
+
+    Electrocardiogram shows a regular wide-complex tachycardia at 158/min with a QRS duration of 0.18 second, extreme (northwest) axis deviation, and occasional P waves that bear no fixed relation to the QRS complexes. Two narrower complexes that look intermediate between sinus and tachycardia beats are seen.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Antidromic atrioventricular reentrant tachycardia
+    B: Atrial flutter with aberrant conduction
+    C: Sinus tachycardia with preexisting bundle branch block
+    D: Supraventricular tachycardia with aberrancy
+    E: Ventricular tachycardia
+  answer: E
+  explain: |
+    In a patient with **structural heart disease (prior MI)**, a regular wide-complex tachycardia is **ventricular tachycardia (VT) in more than 80%–90% of cases** — history alone is the strongest predictor.
+
+    This ECG also shows features that are **specific for VT**:
+    - **AV dissociation** — independent P waves (and cannon *a* waves at the bedside)
+    - **Fusion beats** — a sinus impulse and a ventricular impulse activate the ventricles together, giving an intermediate QRS
+    - **Capture beats** (a sinus beat briefly conducts normally) — not seen here but equally specific
+    - **Northwest axis** and very wide QRS (>0.16 s)
+
+    | Favors VT | Favors SVT with aberrancy |
+    |---|---|
+    | Prior MI, cardiomyopathy, age >35 | Young, no structural disease |
+    | AV dissociation, fusion and capture beats | Typical RBBB or LBBB morphology |
+    | Northwest axis, QRS >0.16 s | Same QRS as baseline ECG in sinus rhythm |
+    | Concordance across precordial leads | Terminates with adenosine (usually) |
+
+    Hemodynamic stability does **not** distinguish VT from SVT. When in doubt, treat as VT.
+  why:
+    A: Antidromic AVRT is rare, occurs in patients with known pre-excitation, and does not produce AV dissociation.
+    B: Flutter with aberrancy has a 1:1 or 2:1 relationship between atrial and ventricular activity; AV dissociation excludes it.
+    C: Sinus tachycardia has a P wave before every QRS complex.
+    D: AV dissociation and fusion beats exclude a supraventricular origin.
+  pearl: |
+    Never give verapamil or diltiazem to a wide-complex tachycardia of uncertain origin — if it is VT, the patient can collapse.
+  objective: |
+    In a patient with prior myocardial infarction, assume a regular wide-complex tachycardia is ventricular tachycardia; AV dissociation and fusion or capture beats confirm it.
+  refs:
+    - "Al-Khatib SM, et al. 2017 AHA/ACC/HRS guideline for management of patients with ventricular arrhythmias and the prevention of sudden cardiac death. Circulation 2018;138:e272."
+    - "Brugada P, et al. A new approach to the differential diagnosis of a regular tachycardia with a wide QRS complex. Circulation 1991;83:1649."
+
+- id: CV-054
+  topic: Unstable VT with a pulse
+  task: Treatment/Care Decisions
+  chapters: [cardiology/vt]
+  stem: |
+    A 71-year-old woman is brought to the emergency department by ambulance with chest pressure and near-syncope that began 30 minutes ago. She has ischemic cardiomyopathy.
+
+    On physical examination, blood pressure is 76/42 mm Hg, pulse rate is 182/min and regular, and respiration rate is 26/min. Oxygen saturation is 90% breathing ambient air. She is confused and diaphoretic, with cool, mottled extremities. A carotid pulse is palpable.
+
+    The monitor shows a regular monomorphic wide-complex tachycardia at 182/min. Intravenous access is in place.
+  lead: Which of the following is the most appropriate immediate treatment?
+  choices:
+    A: Adenosine, 6 mg by rapid intravenous push
+    B: Intravenous amiodarone, 150 mg over 10 minutes
+    C: Intravenous procainamide
+    D: Synchronized electrical cardioversion
+    E: Unsynchronized defibrillation
+  answer: D
+  explain: |
+    She has **monomorphic ventricular tachycardia with a pulse** and signs of **instability**: hypotension, altered mental status, signs of shock and chest pain. The AHA adult ACLS algorithm calls for **immediate synchronized cardioversion** (with sedation if time allows). The 2025 AHA guidelines suggest starting at a higher energy (for example **200 J biphasic**), escalating if unsuccessful.
+
+    **Synchronization** times the shock to the R wave and avoids delivering energy during the vulnerable T wave, which could cause ventricular fibrillation.
+
+    | Tachycardia with a pulse | Unstable | Stable |
+    |---|---|---|
+    | Narrow regular | Synchronized cardioversion | Vagal → adenosine |
+    | Wide regular (monomorphic) | **Synchronized cardioversion** | Amiodarone or procainamide; adenosine only if SVT suspected |
+    | Polymorphic | **Defibrillation** (cannot synchronize) | Find the cause (ischemia, long QT) |
+  why:
+    A: Adenosine is not appropriate in unstable VT and would delay definitive treatment.
+    B: Antiarrhythmic drugs act too slowly for a patient in shock; amiodarone is for stable VT or after cardioversion to prevent recurrence.
+    C: Procainamide is reasonable for stable monomorphic VT, but it causes hypotension and is too slow here.
+    E: Unsynchronized shocks are for pulseless VT, ventricular fibrillation or polymorphic VT; synchronized cardioversion is preferred when an organized rhythm with a pulse is present.
+  pearl: |
+    If the defibrillator cannot sense the QRS well enough to synchronize and the patient is deteriorating, deliver an unsynchronized shock rather than wait.
+  objective: |
+    Treat unstable monomorphic ventricular tachycardia with a pulse by immediate synchronized cardioversion.
+  refs:
+    - "2025 American Heart Association guidelines for cardiopulmonary resuscitation and emergency cardiovascular care: adult advanced life support. Circulation 2025."
+    - "Al-Khatib SM, et al. 2017 AHA/ACC/HRS guideline for management of patients with ventricular arrhythmias and the prevention of sudden cardiac death. Circulation 2018;138:e272."
+
+- id: CV-055
+  topic: Idiopathic RVOT ventricular tachycardia
+  task: Diagnosis/Testing
+  chapters: [cardiology/vt]
+  stem: |
+    A 31-year-old woman is evaluated for palpitations that occur during exercise and after drinking coffee. She has had no syncope. There is no family history of sudden death or cardiomyopathy. She takes no medications.
+
+    On physical examination, blood pressure is 114/70 mm Hg and pulse rate is 72/min with occasional extra beats. Examination is otherwise normal.
+
+    A 24-hour ambulatory monitor shows frequent premature ventricular complexes (8% of beats) and three runs of nonsustained ventricular tachycardia during exercise, all with the same morphology: left bundle branch block pattern with an inferior axis (tall R waves in II, III and aVF). The resting electrocardiogram in sinus rhythm is normal, with no T-wave inversion in V1 through V3 and no epsilon waves.
+
+    Echocardiogram is normal. Cardiac MRI shows normal right and left ventricular size and function, and no late gadolinium enhancement.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Arrhythmogenic right ventricular cardiomyopathy
+    B: Brugada syndrome
+    C: Cardiac sarcoidosis
+    D: Catecholaminergic polymorphic ventricular tachycardia
+    E: Idiopathic outflow tract ventricular tachycardia
+  answer: E
+  explain: |
+    **Idiopathic outflow tract VT** is the most common ventricular arrhythmia in a **structurally normal heart**. Its features:
+    - **LBBB morphology with inferior axis** (the impulse starts high in the right ventricular outflow tract and travels down)
+    - Triggered by **exercise, stress, caffeine** — catecholamine-sensitive, cAMP-mediated triggered activity
+    - **Normal ECG in sinus rhythm** and **normal cardiac MRI**
+    - Excellent prognosis
+
+    Treatment for symptoms: beta-blockers or nondihydropyridine calcium channel blockers; **catheter ablation** is highly effective (>80%–90%). A very high PVC burden (>10%–15%) can cause cardiomyopathy, so follow ventricular function.
+
+    The key board task is to **exclude ARVC**, which can produce the same VT morphology — that is why the normal MRI and normal sinus-rhythm ECG matter.
+  why:
+    A: ARVC causes T-wave inversion in V1–V3, epsilon waves and right ventricular dilation, fatty-fibrous replacement or dysfunction on MRI; all are absent.
+    B: Brugada syndrome shows coved ST elevation in V1–V2 and causes polymorphic VT or VF, typically at rest or during sleep.
+    C: Sarcoidosis usually produces AV block, VT from scar, and late gadolinium enhancement on MRI.
+    D: CPVT causes exercise-induced bidirectional or polymorphic VT, not repetitive monomorphic VT from one focus.
+  pearl: |
+    Idiopathic VT that responds to **verapamil** is a different entity: fascicular VT from the left ventricle (RBBB pattern, superior axis).
+  objective: |
+    Recognize idiopathic right ventricular outflow tract VT (LBBB, inferior axis, normal heart) after excluding ARVC with ECG and cardiac MRI.
+  refs:
+    - "Al-Khatib SM, et al. 2017 AHA/ACC/HRS guideline for management of patients with ventricular arrhythmias and the prevention of sudden cardiac death. Circulation 2018;138:e272."
+    - "Cronin EM, et al. 2019 HRS/EHRA/APHRS/LAHRS expert consensus statement on catheter ablation of ventricular arrhythmias. Heart Rhythm 2020;17:e2."
+
+- id: CV-056
+  topic: Brugada pattern unmasked by fever
+  task: Diagnosis/Testing
+  chapters: [cardiology/vt]
+  stem: |
+    A 38-year-old man is brought to the emergency department after he lost consciousness while lying on the couch. His wife says he was unresponsive for about 30 seconds and then woke without confusion. He has had 2 days of fever, cough and myalgia; a rapid test is positive for influenza A. His brother died suddenly in his sleep at age 41. He takes no medications and does not use drugs.
+
+    On physical examination, temperature is 39.3 °C (102.7 °F), blood pressure is 124/76 mm Hg, pulse rate is 96/min and regular, and respiration rate is 18/min. Oxygen saturation is 97% breathing ambient air. Examination is otherwise normal.
+
+    Electrocardiogram shows sinus rhythm with 3-mm coved ST-segment elevation followed by a negative T wave in leads V1 and V2. There are no reciprocal ST depressions. An electrocardiogram from 1 year ago showed only incomplete right bundle branch block.
+  labs:
+    - [Potassium, 4.1 mEq/L]
+    - [High-sensitivity troponin I, below the 99th percentile on two measurements 1 hour apart]
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Acute anterior ST-elevation myocardial infarction
+    B: Acute pericarditis
+    C: Arrhythmogenic right ventricular cardiomyopathy
+    D: Brugada syndrome
+    E: Hyperkalemia
+  answer: D
+  explain: |
+    This is a **type 1 Brugada pattern**: **coved ST elevation ≥2 mm** with a negative T wave in **V1–V2**, appearing during **fever**. Combined with **arrhythmic syncope** and a **family history of sudden nocturnal death**, it establishes **Brugada syndrome**.
+
+    Brugada syndrome is usually caused by **loss-of-function variants in SCN5A** (cardiac sodium channel). Fever, sodium channel blockers (flecainide, procainamide, tricyclic antidepressants, cocaine), alcohol and high vagal tone (sleep, large meals) unmask the pattern and trigger **polymorphic VT/VF**, often at rest or during sleep.
+
+    Management:
+    - **Treat fever aggressively** (acetaminophen), monitor on telemetry
+    - Avoid triggering drugs (see brugadadrugs.org)
+    - **ICD** for patients with **arrhythmic syncope** or aborted sudden death (Class 1) — this patient qualifies
+    - **Quinidine** or catheter ablation of the RV outflow epicardium for recurrent shocks or electrical storm (isoproterenol acutely)
+  why:
+    A: The ST elevation is confined to V1–V2 with a coved shape, there is no reciprocal depression, and serial troponins are normal.
+    B: Pericarditis causes diffuse concave ST elevation with PR depression, not localized coved elevation in V1–V2.
+    C: ARVC shows T-wave inversion and epsilon waves in V1–V3 without coved ST elevation, and is triggered by exertion rather than fever.
+    E: Hyperkalemia can mimic a Brugada pattern, but his potassium is normal.
+  mnemonic: |
+    **Brugada: "Fever, Flecainide, Fast asleep"** — the three F's that unmask it.
+  pearl: |
+    Only the **type 1 (coved)** pattern is diagnostic. A **saddleback** (type 2) pattern needs a drug challenge (ajmaline or procainamide) or high-lead ECG (V1–V2 in the 2nd–3rd intercostal spaces) to confirm.
+  objective: |
+    Recognize a fever-induced type 1 Brugada pattern with arrhythmic syncope; treat fever, avoid sodium channel blockers and implant an ICD.
+  refs:
+    - "Al-Khatib SM, et al. 2017 AHA/ACC/HRS guideline for management of patients with ventricular arrhythmias and the prevention of sudden cardiac death. Circulation 2018;138:e272."
+    - "Wilde AAM, et al. European Heart Rhythm Association/HRS/APHRS/LAHRS expert consensus statement on the state of genetic testing for cardiac diseases. Heart Rhythm 2022;19:e1."
+
+- id: CV-057
+  topic: Congenital long QT syndrome
+  task: Treatment/Care Decisions
+  chapters: [cardiology/qt]
+  stem: |
+    A 19-year-old woman is evaluated after losing consciousness when her alarm clock rang early this morning. She fell back onto the bed and recovered within a minute. She had a similar episode at age 15 when a fire alarm went off at school. Her maternal uncle drowned at age 23 while being a strong swimmer. She takes no medications.
+
+    On physical examination, blood pressure is 112/68 mm Hg and pulse rate is 62/min and regular. Examination is normal.
+
+    Electrocardiogram shows sinus rhythm with a corrected QT interval (QTc) of 520 msec and broad, notched T waves. Electrocardiograms from two earlier visits show QTc values of 500 and 510 msec. Echocardiogram is normal.
+  labs:
+    - [Potassium, 4.3 mEq/L]
+    - [Magnesium, 2.1 mg/dL]
+    - [Calcium, 9.4 mg/dL]
+  lead: Which of the following is the most appropriate initial treatment?
+  choices:
+    A: Intravenous isoproterenol
+    B: Mexiletine
+    C: Nadolol
+    D: Permanent pacemaker
+    E: Verapamil
+  answer: C
+  explain: |
+    She has **congenital long QT syndrome (LQTS)**: persistently prolonged QTc (≥480–500 msec) without a reversible cause, syncope triggered by a **sudden loud noise** and a family history of sudden death in a young relative. **Auditory triggers** and notched T waves point to **LQT2** (KCNH2, the hERG potassium channel).
+
+    **Beta-blockers** are first-line for all symptomatic patients and for most asymptomatic patients with a prolonged QTc. **Nadolol** (or propranolol) is preferred over metoprolol. Other steps:
+    - Avoid **QT-prolonging drugs** (crediblemeds.org) and **hypokalemia/hypomagnesemia** (vomiting, diuretics)
+    - Genetic testing and **cascade screening** of first-degree relatives
+    - **ICD** if cardiac arrest, or syncope recurs despite beta-blockade; **left cardiac sympathetic denervation** for breakthrough events
+    - Avoid alarm clocks with jarring tones and abrupt noise exposures (LQT2)
+
+    | Type | Gene (channel) | Typical trigger | Notes |
+    |---|---|---|---|
+    | LQT1 | KCNQ1 (I_Ks) | **Exercise, swimming** | Beta-blockers work best |
+    | LQT2 | KCNH2 (I_Kr) | **Sudden noise**, emotion, postpartum | Notched T waves |
+    | LQT3 | SCN5A (I_Na) | **Sleep/rest** | Mexiletine adjunct |
+  why:
+    A: Isoproterenol shortens the QT in acquired, pause-dependent torsades; in congenital adrenergic-triggered LQTS it can provoke arrhythmias.
+    B: Mexiletine (sodium channel blocker) is an adjunct for LQT3, which is triggered during sleep; it is not first-line for LQT2.
+    D: Pacing is an adjunct for pause-dependent or bradycardia-related torsades, not initial therapy.
+    E: Verapamil has no role in long QT syndrome.
+  mnemonic: |
+    **LQT1 = Swimming** (one lap), **LQT2 = Two loud sounds** (alarm, phone), **LQT3 = Three a.m.** (sleep).
+  objective: |
+    Treat congenital long QT syndrome with a nonselective beta-blocker (nadolol or propranolol), avoid QT-prolonging drugs and electrolyte deficits, and screen relatives.
+  refs:
+    - "Al-Khatib SM, et al. 2017 AHA/ACC/HRS guideline for management of patients with ventricular arrhythmias and the prevention of sudden cardiac death. Circulation 2018;138:e272."
+    - "Schwartz PJ, et al. Inherited cardiac arrhythmias. Nat Rev Dis Primers 2020;6:58."
+
+- id: CV-058
+  topic: Arrhythmogenic right ventricular cardiomyopathy
+  task: Diagnosis/Testing
+  chapters: [cardiology/cardiomyopathies, cardiology/vt]
+  stem: |
+    A 24-year-old man who runs marathons is evaluated after an episode of palpitations and near-syncope during a race. His father died suddenly at age 45. He takes no medications or supplements.
+
+    On physical examination, blood pressure is 118/70 mm Hg and pulse rate is 54/min and regular. Examination is normal.
+
+    Electrocardiogram in sinus rhythm shows T-wave inversion in leads V1 through V4 and a small low-amplitude deflection at the end of the QRS complex in V1. Exercise testing provoked sustained ventricular tachycardia with left bundle branch block morphology and a superior axis, which terminated with cardioversion.
+
+    Cardiac MRI shows a dilated right ventricle with regional akinesia of the free wall and a right ventricular ejection fraction of 38%. Left ventricular size and function are normal.
+  lead: Which of the following is the most likely diagnosis?
+  choices:
+    A: Arrhythmogenic right ventricular cardiomyopathy
+    B: Athlete's heart
+    C: Brugada syndrome
+    D: Hypertrophic cardiomyopathy
+    E: Idiopathic right ventricular outflow tract tachycardia
+  answer: A
+  explain: |
+    **Arrhythmogenic right ventricular cardiomyopathy (ARVC)** is an inherited (usually **desmosomal**, for example PKP2) disease in which right ventricular myocardium is replaced by **fibrofatty tissue**. It is a leading cause of sudden death in young athletes. **Endurance exercise accelerates the disease.**
+
+    His findings meet major Task Force criteria:
+    - **T-wave inversion V1–V3 (or beyond)** in someone older than 14 without RBBB
+    - **Epsilon wave** — a small deflection after the QRS in V1–V3 (delayed activation of RV free wall)
+    - **VT with LBBB morphology and superior axis** (from the RV body or apex, not the outflow tract)
+    - **RV dilation with regional akinesia** and reduced RV ejection fraction on MRI
+    - Family history of premature sudden death
+
+    Management: **stop competitive and endurance sport**, beta-blocker, **ICD** for sustained VT or aborted arrest (this patient), genetic testing and **cascade screening** of relatives.
+  why:
+    B: Athlete's heart may enlarge the right ventricle but preserves function without regional wall motion abnormalities, and does not cause VT.
+    C: Brugada syndrome causes coved ST elevation in V1–V2 with a structurally normal heart, and events occur at rest or with fever rather than exercise.
+    D: Hypertrophic cardiomyopathy causes left ventricular hypertrophy; the left ventricle is normal here.
+    E: Idiopathic outflow tract VT has an inferior axis, a normal sinus-rhythm ECG and a normal MRI.
+  pearl: |
+    Distinguish ARVC VT from benign RVOT VT by three things: **sinus-rhythm ECG** (T inversion, epsilon waves), **MRI** (RV structural disease) and **axis** (superior axis points away from the outflow tract).
+  objective: |
+    Recognize ARVC (T-wave inversion V1–V3, epsilon wave, LBBB-pattern VT, RV dysfunction) and treat with exercise restriction, beta-blockade and an ICD when high risk.
+  refs:
+    - "Towbin JA, et al. 2019 HRS expert consensus statement on evaluation, risk stratification, and management of arrhythmogenic cardiomyopathy. Heart Rhythm 2019;16:e301."
+    - "Marcus FI, et al. Diagnosis of arrhythmogenic right ventricular cardiomyopathy/dysplasia: proposed modification of the Task Force criteria. Circulation 2010;121:1533."
+
+- id: CV-059
+  topic: Secondary-prevention ICD
+  task: Treatment/Care Decisions
+  chapters: [cardiology/devices, cardiology/vt]
+  stem: |
+    A 59-year-old man is hospitalized after an out-of-hospital cardiac arrest. He collapsed while gardening; a bystander started CPR, and paramedics found ventricular fibrillation, which was terminated with one shock. He now has full neurologic recovery. He has hypertension and hyperlipidemia.
+
+    Initial electrocardiogram after resuscitation showed no ST-segment elevation. Coronary angiography showed a chronic total occlusion of the right coronary artery with collaterals and no acute thrombotic lesion. Cardiac MRI shows an inferior wall scar with late gadolinium enhancement and a left ventricular ejection fraction of 45%.
+  labs:
+    - [Potassium on arrival, 4.0 mEq/L]
+    - [Magnesium, 2.0 mg/dL]
+    - [High-sensitivity troponin I, peak modestly elevated after resuscitation, consistent with defibrillation and CPR]
+    - [Urine drug screen, negative]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Amiodarone without device therapy
+    B: Beta-blocker therapy and repeat echocardiography in 3 months
+    C: Implantable cardioverter-defibrillator before discharge
+    D: Percutaneous coronary intervention of the chronic total occlusion alone
+    E: Wearable cardioverter-defibrillator for 90 days, then reassess
+  answer: C
+  explain: |
+    He survived **ventricular fibrillation that was not caused by a reversible problem** — no acute MI, no electrolyte disturbance, no drug. Myocardial **scar** from an old inferior infarction provides a substrate for reentrant VT/VF that will persist.
+
+    For **secondary prevention** after VF or hemodynamically unstable VT without a completely reversible cause, an **ICD** is recommended (Class 1) when meaningful survival over 1 year is expected — **regardless of ejection fraction**. Trials (AVID, CIDS, CASH) showed lower mortality with an ICD than with antiarrhythmic drugs.
+
+    | Situation | ICD timing |
+    |---|---|
+    | VF/unstable VT, no reversible cause | **ICD now (secondary prevention)** |
+    | VF within 48 h of acute MI | Revascularize; ICD usually not needed for this event |
+    | LVEF ≤35% within 40 days after MI or <90 days after revascularization | Wait, reassess; wearable defibrillator may bridge |
+    | LVEF ≤35%, NYHA II–III on GDMT ≥3 months | Primary-prevention ICD |
+  why:
+    A: Antiarrhythmic drugs are inferior to an ICD for preventing sudden death after cardiac arrest and are adjuncts at most.
+    B: Waiting for improvement in ejection fraction applies to primary prevention; secondary prevention does not depend on ejection fraction.
+    D: Revascularizing a chronic occlusion does not remove the scar substrate that caused VF and does not replace an ICD.
+    E: A wearable defibrillator is a bridge for patients with temporary or uncertain risk (early after MI or new cardiomyopathy), not for a survivor of scar-related VF.
+  pearl: |
+    **Primary** prevention = no arrhythmia yet, high risk (low EF). **Secondary** prevention = already survived VT/VF — EF does not matter.
+  objective: |
+    Implant an ICD for secondary prevention in survivors of ventricular fibrillation or unstable VT without a completely reversible cause, regardless of ejection fraction.
+  refs:
+    - "Al-Khatib SM, et al. 2017 AHA/ACC/HRS guideline for management of patients with ventricular arrhythmias and the prevention of sudden cardiac death. Circulation 2018;138:e272."
+
+- id: CV-060
+  topic: ECG of hypokalemia
+  task: Pathophysiology/Basic Science
+  chapters: [cardiology/qt, renal/hyperkalemia]
+  stem: |
+    A 46-year-old woman comes to the emergency department because of 3 days of vomiting from viral gastroenteritis, with leg cramps and weakness. She has hypertension treated with hydrochlorothiazide.
+
+    On physical examination, blood pressure is 104/66 mm Hg and pulse rate is 98/min and regular. Mucous membranes are dry. Muscle strength is 4/5 in the proximal lower extremities.
+  labs:
+    - [Sodium, 136 mEq/L]
+    - [Potassium, 2.4 mEq/L]
+    - [Chloride, 88 mEq/L]
+    - [Bicarbonate, 34 mEq/L]
+    - [Magnesium, 1.4 mg/dL]
+  lead: Which of the following electrocardiographic findings is most likely?
+  choices:
+    A: Delta waves with a short PR interval and wide QRS
+    B: J-point (Osborn) waves with sinus bradycardia
+    C: Peaked T waves with a widened QRS complex
+    D: Prominent U waves and ST-segment depression
+    E: Shortened QT interval with a short ST segment
+  answer: D
+  explain: |
+    She has severe **hypokalemia** with a **metabolic alkalosis** (vomiting plus a thiazide) and **hypomagnesemia**.
+
+    Low extracellular potassium **slows and prolongs ventricular repolarization** (reduced I_Kr current) and increases automaticity. On the ECG this appears as:
+    - **T-wave flattening** and **ST-segment depression**
+    - **Prominent U waves** (best seen in V2–V3), often taller than the T wave at K <2.5 mEq/L
+    - An apparent long QT (really a long **QU** interval) → risk of **torsades de pointes**, PVCs and VT, especially with digoxin
+
+    **Replace magnesium too** — hypomagnesemia increases renal potassium wasting and makes hypokalemia refractory.
+
+    | Electrolyte | ECG |
+    |---|---|
+    | **Hypokalemia** | Flat T, ST depression, **U waves**, long QU |
+    | Hyperkalemia | Peaked T → wide QRS → sine wave |
+    | Hypocalcemia | **Long QT** (long ST segment) |
+    | Hypercalcemia | **Short QT** |
+    | Hypothermia | Osborn (J) waves |
+  why:
+    A: Delta waves and a short PR interval indicate ventricular pre-excitation (WPW), not an electrolyte disturbance.
+    B: Osborn waves are characteristic of hypothermia.
+    C: Peaked T waves and QRS widening are signs of hyperkalemia.
+    E: A short QT interval suggests hypercalcemia or digoxin effect; hypokalemia prolongs repolarization.
+  objective: |
+    Recognize the ECG effects of hypokalemia (T-wave flattening, ST depression, prominent U waves) and replete magnesium along with potassium.
+  refs:
+    - "Mount DB. Disorders of potassium balance. In: Brenner and Rector's The Kidney, 11th ed. Elsevier; 2020."
+    - "Diercks DB, et al. Electrocardiographic manifestations: electrolyte abnormalities. J Emerg Med 2004;27:153."
+
+- id: CV-061
+  topic: Athlete's heart vs HCM
+  task: Diagnosis/Testing
+  chapters: [cardiology/hcm]
+  stem: |
+    A 21-year-old college basketball player is referred after a preparticipation electrocardiogram showed high QRS voltage. He has no symptoms with intense training. There is no family history of cardiomyopathy or sudden death.
+
+    On physical examination, blood pressure is 118/68 mm Hg and pulse rate is 48/min and regular. A soft midsystolic murmur does not change with Valsalva maneuver or standing. Examination is otherwise normal.
+
+    Electrocardiogram shows sinus bradycardia and isolated voltage criteria for left ventricular hypertrophy; there is no T-wave inversion, ST depression or pathologic Q waves.
+
+    Echocardiogram shows a maximal left ventricular wall thickness of 13 mm (symmetric), no left ventricular outflow obstruction, normal mitral valve motion and normal ejection fraction.
+  lead: Which of the following additional findings would most strongly support athlete's heart rather than hypertrophic cardiomyopathy?
+  choices:
+    A: Diastolic dysfunction with reduced tissue Doppler e′ velocity
+    B: Late gadolinium enhancement in the septum on cardiac MRI
+    C: Left ventricular end-diastolic diameter of 58 mm
+    D: Left ventricular end-diastolic diameter of 42 mm
+    E: Peak oxygen consumption of 70% of predicted on exercise testing
+  answer: C
+  explain: |
+    A wall thickness of **13–15 mm** is the "gray zone" where **physiologic athletic remodeling** and **mild hypertrophic cardiomyopathy (HCM)** overlap. The features that separate them:
+
+    | Favors athlete's heart | Favors HCM |
+    |---|---|
+    | **Enlarged LV cavity (>55 mm)** | Small LV cavity (<45 mm) |
+    | **Normal diastolic function** (normal e′) | Impaired relaxation, low e′ |
+    | Symmetric, mild thickening | Asymmetric septal hypertrophy, SAM |
+    | No late gadolinium enhancement | **LGE** (fibrosis) on MRI |
+    | High peak VO₂ (>110% predicted) | Reduced peak VO₂ |
+    | **Wall thickness regresses after 3 months of detraining** | No regression |
+    | No family history | Family history, sarcomere gene variant |
+    | Isolated QRS voltage | **T inversion, deep Q waves**, ST depression |
+
+    Endurance and mixed sports (basketball, rowing, cycling) produce **eccentric hypertrophy** — a big cavity with proportionally thick walls. A large chamber with normal relaxation is the athlete's pattern.
+  why:
+    A: Impaired relaxation is typical of HCM; athletes have normal or supranormal diastolic function.
+    B: Late gadolinium enhancement indicates myocardial fibrosis and favors cardiomyopathy.
+    D: A small left ventricular cavity with thick walls suggests HCM, not training adaptation.
+    E: Reduced exercise capacity favors disease; trained athletes exceed predicted values.
+  pearl: |
+    Isolated **QRS voltage criteria** are normal in athletes (2017 International Criteria). **T-wave inversion** beyond V2 (in non-Black athletes), ST depression and pathologic Q waves are not — they require evaluation.
+  objective: |
+    Distinguish athlete's heart from HCM: an enlarged LV cavity, normal diastolic function, no fibrosis and regression with detraining favor physiologic remodeling.
+  refs:
+    - "Ommen SR, et al. 2024 AHA/ACC/AMSSM/HRS/PACES/SCMR guideline for the management of hypertrophic cardiomyopathy. Circulation 2024;149:e1239."
+    - "Sharma S, et al. International recommendations for electrocardiographic interpretation in athletes. J Am Coll Cardiol 2017;69:1057."
+
+- id: CV-062
+  topic: Recurrent polymorphic VT during acute ischemia
+  task: Treatment/Care Decisions
+  chapters: [cardiology/vt, cardiology/nste-acs]
+  stem: |
+    A 63-year-old man is admitted to the cardiac care unit with a non–ST-elevation myocardial infarction. He received aspirin, ticagrelor and heparin, and coronary angiography is planned for the next morning. Overnight he has three episodes of polymorphic ventricular tachycardia, each terminated with defibrillation, despite an amiodarone bolus and infusion. Between episodes he reports ongoing chest pressure.
+
+    On physical examination, blood pressure is 108/68 mm Hg and pulse rate is 92/min and regular. The lungs have bibasilar crackles.
+
+    Electrocardiogram in sinus rhythm shows 2-mm ST-segment depression in leads V4 through V6. The QTc interval is 430 msec. The episodes of ventricular tachycardia begin without a preceding pause.
+  labs:
+    - [Potassium, 4.5 mEq/L]
+    - [Magnesium, 2.2 mg/dL]
+    - [High-sensitivity troponin I, rising]
+  lead: Which of the following is the most appropriate next step in management?
+  choices:
+    A: Immediate implantable cardioverter-defibrillator placement
+    B: Intravenous isoproterenol
+    C: Intravenous magnesium sulfate
+    D: Temporary transvenous overdrive pacing
+    E: Urgent coronary angiography with revascularization
+  answer: E
+  explain: |
+    **Polymorphic VT with a normal QT interval** in a patient with an acute coronary syndrome is almost always caused by **active myocardial ischemia**. Recurrent ventricular arrhythmias and refractory angina are **very-high-risk features** that call for an **immediate invasive strategy (<2 hours)** rather than waiting for the next day.
+
+    Removing the ischemic trigger is the most effective antiarrhythmic. Meanwhile: beta-blockade if blood pressure allows, amiodarone, correction of electrolytes and treatment of heart failure.
+
+    | Polymorphic VT | Normal QT | Long QT (torsades) |
+    |---|---|---|
+    | Usual cause | **Ischemia** | Drugs, low K/Mg, bradycardia, congenital |
+    | Pattern | No pause needed | Short–long–short "pause-dependent" onset |
+    | Treatment | **Revascularize**, beta-blocker, amiodarone | **IV magnesium**, stop drug, pace or isoproterenol to raise the rate |
+  why:
+    A: An ICD is not indicated for ventricular arrhythmias caused by acute ischemia within the first 48 hours; it does not prevent the episodes and revascularization addresses the cause.
+    B: Isoproterenol raises heart rate to treat pause-dependent torsades with a long QT; in ischemic VT it worsens ischemia.
+    C: Magnesium treats torsades de pointes with a long QT; his QT is normal and his magnesium level is normal.
+    D: Overdrive pacing helps pause-dependent torsades; it does not address ischemia.
+  pearl: |
+    The 2025 ACC/AHA ACS guideline lists **electrical storm or recurrent VT/VF, hemodynamic instability, cardiogenic shock and refractory chest pain** as indications for an immediate (<2 h) invasive strategy in NSTE-ACS.
+  objective: |
+    Treat recurrent polymorphic VT with a normal QT in acute coronary syndrome as ischemia-driven, with urgent coronary angiography and revascularization.
+  refs:
+    - "Rao SV, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI guideline for the management of patients with acute coronary syndromes. J Am Coll Cardiol 2025;85:2135."
+    - "Al-Khatib SM, et al. 2017 AHA/ACC/HRS guideline for management of patients with ventricular arrhythmias and the prevention of sudden cardiac death. Circulation 2018;138:e272."

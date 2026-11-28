@@ -6,7 +6,7 @@
   stem: |
     A 66-year-old man is evaluated in the emergency department after a 40-minute episode of weakness of the right hand and slurred speech that began while he was reading. Symptoms resolved completely 2 hours ago. He has hypertension and type 2 diabetes. He takes lisinopril and metformin.
 
-    Blood pressure is 158/88 mm Hg and pulse is 76/min, regular. Neurologic examination is normal (NIH Stroke Scale score 0).
+    Blood pressure is 158/88 mm Hg and pulse rate is 76/min, regular. Neurologic examination is normal (NIH Stroke Scale score 0).
   labs:
     - [Noncontrast head CT, no hemorrhage or acute infarct]
     - [MRI brain with diffusion-weighted imaging, no infarct]
@@ -53,7 +53,7 @@
   stem: |
     A 34-year-old woman comes to the office because of migraines. She has had migraine without aura since her teens, but over the past year attacks have become more frequent — now about 8 headache days per month — and she has missed work several times. Sumatriptan usually relieves an attack within 2 hours; she uses it 6–8 days a month. She also has hypertension, diagnosed 6 months ago and not yet treated. She uses a copper IUD.
 
-    Blood pressure is 142/90 mm Hg on two readings and pulse is 82/min. Neurologic examination, including fundoscopy, is normal.
+    Blood pressure is 142/90 mm Hg on two readings and pulse rate is 82/min. Neurologic examination, including fundoscopy, is normal.
   lead: Which of the following is the most appropriate preventive treatment?
   choices:
     A: Propranolol
@@ -84,8 +84,8 @@
   objective: |
     Offer migraine prevention for frequent or disabling migraine, selecting the agent by comorbidity (a β-blocker for coexisting hypertension), and avoid frequent acute-drug use that leads to medication-overuse headache.
   refs:
-    - Ailani J, et al. The American Headache Society consensus statement: update on integrating new migraine treatments into clinical practice. *Headache* 2021;61:1021.
-    - Charles AC, et al. Calcitonin gene-related peptide-targeting therapies are a first-line option for the prevention of migraine: an AHS position statement update. *Headache* 2024;64:333.
+    - "Ailani J, et al. The American Headache Society consensus statement: update on integrating new migraine treatments into clinical practice. *Headache* 2021;61:1021."
+    - "Charles AC, et al. Calcitonin gene-related peptide-targeting therapies are a first-line option for the prevention of migraine: an AHS position statement update. *Headache* 2024;64:333."
 
 
 - id: NR-003
@@ -124,7 +124,7 @@
   objective: |
     Lower blood pressure below 185/110 mm Hg before giving IV thrombolysis to eligible patients with acute ischemic stroke within 4.5 hours, without waiting for coagulation tests unless coagulopathy is suspected.
   refs:
-    - Powers WJ, et al. Guidelines for the early management of patients with acute ischemic stroke: 2019 update. *Stroke* 2019;50:e344.
+    - "Powers WJ, et al. Guidelines for the early management of patients with acute ischemic stroke: 2019 update. *Stroke* 2019;50:e344."
     - Menon BK, et al. Intravenous tenecteplase compared with alteplase for acute ischaemic stroke (AcT). *Lancet* 2022;400:161.
 
 - id: NR-004
@@ -201,7 +201,7 @@
   objective: |
     After diagnosing myasthenia gravis, obtain chest CT or MRI to look for thymoma.
   refs:
-    - Narayanaswami P, et al. International consensus guidance for management of myasthenia gravis: 2020 update. *Neurology* 2021;96:114.
+    - "Narayanaswami P, et al. International consensus guidance for management of myasthenia gravis: 2020 update. *Neurology* 2021;96:114."
     - Wolfe GI, et al. Randomized trial of thymectomy in myasthenia gravis (MGTX). *N Engl J Med* 2016;375:511.
 
 - id: NR-006
@@ -275,7 +275,7 @@
   objective: |
     Evaluate suspected multiple sclerosis after optic neuritis or a prior myelitis with gadolinium-enhanced MRI of the brain and spinal cord to show dissemination in space and time.
   refs:
-    - Thompson AJ, et al. Diagnosis of multiple sclerosis: 2017 revisions of the McDonald criteria. *Lancet Neurol* 2018;17:162.
+    - "Thompson AJ, et al. Diagnosis of multiple sclerosis: 2017 revisions of the McDonald criteria. *Lancet Neurol* 2018;17:162."
 
 - id: NR-008
   topic: Essential tremor
@@ -313,7 +313,7 @@
   objective: |
     Treat essential tremor with propranolol or primidone, choosing primidone when β-blockers are contraindicated (e.g., asthma).
   refs:
-    - Zesiewicz TA, et al. Evidence-based guideline update: treatment of essential tremor. *Neurology* 2011;77:1752.
+    - "Zesiewicz TA, et al. Evidence-based guideline update: treatment of essential tremor. *Neurology* 2011;77:1752."
     - Haubenberger D, Hallett M. Essential tremor. *N Engl J Med* 2018;378:1802.
 
 - id: NR-009
@@ -348,7 +348,7 @@
   objective: |
     Confirm idiopathic intracranial hypertension with lumbar puncture showing an opening pressure above 25 cm H₂O and normal CSF after MRI with venography excludes other causes.
   refs:
-    - Mollan SP, et al. Idiopathic intracranial hypertension: consensus guidelines on management. *J Neurol Neurosurg Psychiatry* 2018;89:1088.
+    - "Mollan SP, et al. Idiopathic intracranial hypertension: consensus guidelines on management. *J Neurol Neurosurg Psychiatry* 2018;89:1088."
     - Friedman DI, et al. Revised diagnostic criteria for the pseudotumor cerebri syndrome in adults and children. *Neurology* 2013;81:1159.
 
 - id: NR-010
@@ -390,4 +390,4 @@
   objective: |
     After a first unprovoked seizure with normal examination and imaging, obtain EEG and MRI, counsel on driving, and individualize the decision to start antiseizure medication based on recurrence risk.
   refs:
-    - Krumholz A, et al. Evidence-based guideline: management of an unprovoked first seizure in adults (AAN/AES). *Neurology* 2015;84:1705.
+    - "Krumholz A, et al. Evidence-based guideline: management of an unprovoked first seizure in adults (AAN/AES). *Neurology* 2015;84:1705."
